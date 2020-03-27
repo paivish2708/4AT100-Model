@@ -11,32 +11,54 @@
 			<_id type="a">GUID 34334493-b255-41d2-9d01-387d45fc1a3c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">TruckMFGReqs</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::11:36:5</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::11:36:5</_modifiedTime>
+			<Annotations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Annotations>
+			<_modifiedTimeWeak type="a">3.27.2020::14:26:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.27.2020::14:26:51</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">3.27.2020::11:36:5</weakCGTime>
-			<strongCGTime type="a">3.27.2020::11:35:17</strongCGTime>
+			<weakCGTime type="a">3.27.2020::14:26:51</weakCGTime>
+			<strongCGTime type="a">3.27.2020::14:18:41</strongCGTime>
 			<_defaultComposite type="s">GUID 44395d87-8acb-4d73-aeea-3caf522e6f22</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
-				<value>GUID f8723933-9fec-4bd4-99f2-f6b18667d35a</value>
+				<value>GUID 68dbfdae-4577-4368-a494-0dcfe8671580</value>
+				<value>GUID 5910a7ff-91ff-45f2-8e0c-5d157da99dd9</value>
+				<value>GUID d9cc5a31-e90a-4502-8a75-265439c57e60</value>
+				<value>GUID 7321071c-da0d-4695-81ba-f324e87ac8f6</value>
+				<value>GUID 547e35eb-9480-4f2c-ad53-f12efbe6b7a1</value>
 				<value>GUID 44395d87-8acb-4d73-aeea-3caf522e6f22</value>
 			</AggregatesList>
 		</ISubsystem>
-		<IRequirement type="e">
-			<_id type="a">GUID f8723933-9fec-4bd4-99f2-f6b18667d35a</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">requirement_0</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::11:36:5</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::11:36:5</_modifiedTime>
-		</IRequirement>
+		<ISubsystem type="e">
+			<fileName type="a">Costs</fileName>
+			<_id type="a">GUID 68dbfdae-4577-4368-a494-0dcfe8671580</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Emissions</fileName>
+			<_id type="a">GUID 5910a7ff-91ff-45f2-8e0c-5d157da99dd9</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Comfort</fileName>
+			<_id type="a">GUID d9cc5a31-e90a-4502-8a75-265439c57e60</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Research_Development</fileName>
+			<_id type="a">GUID 7321071c-da0d-4695-81ba-f324e87ac8f6</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Safety</fileName>
+			<_id type="a">GUID 547e35eb-9480-4f2c-ad53-f12efbe6b7a1</_id>
+		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID 44395d87-8acb-4d73-aeea-3caf522e6f22</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 652cd5bb-1dec-469c-b2d0-05edcc44c691</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Business</_name>
+			<_modifiedTimeWeak type="a">3.27.2020::14:48:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.27.2020::14:48:15</_modifiedTime>
+			<_lastID type="a">6</_lastID>
+			<weakCGTime type="a">3.27.2020::14:48:15</weakCGTime>
+			<strongCGTime type="a">3.27.2020::14:23:14</strongCGTime>
+			<_defaultComposite type="s">GUID 71e736d6-16b3-46ac-92fe-1f088e75f84a</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">3.27.2020::14:26:51</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 3e46e8b0-df44-466a-822f-344cd53f2e0b</value>
+				<value>GUID 989ca94c-e56a-480e-84c3-3b531f38d2ba</value>
+				<value>GUID 34334493-b255-41d2-9d01-387d45fc1a3c</value>
+				<value>GUID 94e28a2b-b7f0-47b5-976a-9d7879fa3eab</value>
+				<value>GUID 71e736d6-16b3-46ac-92fe-1f088e75f84a</value>
+			</AggregatesList>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">GovernmentReqs</fileName>
+			<_id type="a">GUID 3e46e8b0-df44-466a-822f-344cd53f2e0b</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">LogisticsReqs</fileName>
+			<_id type="a">GUID 989ca94c-e56a-480e-84c3-3b531f38d2ba</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">TruckMFGReqs</fileName>
+			<_id type="a">GUID 34334493-b255-41d2-9d01-387d45fc1a3c</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">DistributorReqs</fileName>
+			<_id type="a">GUID 94e28a2b-b7f0-47b5-976a-9d7879fa3eab</_id>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID 71e736d6-16b3-46ac-92fe-1f088e75f84a</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

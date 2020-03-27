@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID e7676f85-e9a8-4aef-8a16-da5f6b4c0201</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">-1</_rmmServerID>
+			<_name type="a">Emissions</_name>
+			<_modifiedTimeWeak type="a">3.27.2020::14:47:34</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<weakCGTime type="a">3.27.2020::14:47:34</weakCGTime>
+			<strongCGTime type="a">3.27.2020::14:24:35</strongCGTime>
+			<_defaultComposite type="s">GUID 88fecb4b-91de-40a8-a13d-e045a0c85e89</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID f2bf7d29-5127-4c32-ba3a-8ff1b60e1842</value>
+				<value>GUID 3de9ffb5-5ea5-4db9-871f-0245bf005a66</value>
+				<value>GUID 6fb111b5-e265-4536-bfbd-1a67c8232830</value>
+				<value>GUID 88fecb4b-91de-40a8-a13d-e045a0c85e89</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID f2bf7d29-5127-4c32-ba3a-8ff1b60e1842</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">-1</_rmmServerID>
+			<_name type="a">Friendly environmental image</_name>
+			<_modifiedTimeWeak type="a">3.27.2020::14:45:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system designed shall have reduced emissions, thus providing an environmental friendly image to the truck manufacturer and so that the trucks are more appealing to customers.\par%0D
+}%0D
+</_body>
+			<reqID type="a">2.3.1</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 3de9ffb5-5ea5-4db9-871f-0245bf005a66</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">-1</_rmmServerID>
+			<_name type="a">Regulated truck emissions</_name>
+			<_modifiedTimeWeak type="a">3.27.2020::14:45:54</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system designed, shall have emissions regulated and within the norms and standards set by the EU to allow the trucks to operate on the public roads.\par%0D
+}%0D
+</_body>
+			<reqID type="a">2.3.2</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 6fb111b5-e265-4536-bfbd-1a67c8232830</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">-1</_rmmServerID>
+			<_name type="a">High cost effectiveness</_name>
+			<_modifiedTimeWeak type="a">3.27.2020::14:47:17</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system designed should have high cost effectiveness for consumption of fuel/battery charge (lower Euro per KWh of energy).\par%0D
+}%0D
+</_body>
+			<reqID type="a">2.3.3</reqID>
+		</IRequirement>
+		<IClass type="e">
+			<_id type="a">GUID 88fecb4b-91de-40a8-a13d-e045a0c85e89</_id>
+			<_myState type="a">40960</_myState>
+			<_rmmServerID type="a">-1</_rmmServerID>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+
