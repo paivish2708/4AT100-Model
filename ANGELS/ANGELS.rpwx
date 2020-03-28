@@ -21,8 +21,8 @@
 						<_placement type="p">
 							<CCommon_WINDOWPLACEMENT type="e">
 								<m_nLength type="a">44</m_nLength>
-								<m_nFlags type="a">2</m_nFlags>
-								<m_showCmd type="a">3</m_showCmd>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
 								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
 								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
@@ -42,14 +42,14 @@
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">4945 2286 </_DownRight>
+						<_DownRight type="a">14656 6844 </_DownRight>
 						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
-						<m_bIsActiveView type="a">1</m_bIsActiveView>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 				</IRPYRawContainer>
 			</myViewsWithID>
-			<_fullName type="a">E:\Documents\Notes\Masters\Q3\4AT100\Rhapsody\4AT100-Model\ANGELS\ANGELS</_fullName>
+			<_fullName type="a">C:\Users\LAPTOP\Documents\TUE\Q3\Automotive Systems project\ANGELS\4AT100 Model\ANGELS\ANGELS</_fullName>
 			<m_SearchScopeList type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
