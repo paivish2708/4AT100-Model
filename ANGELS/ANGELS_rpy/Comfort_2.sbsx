@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 1c814139-7c24-4e8e-8453-d101499fa896</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Comfort</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::13:47:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:47:53</_modifiedTime>
+			<_lastID type="a">2</_lastID>
+			<weakCGTime type="a">3.29.2020::13:47:53</weakCGTime>
+			<strongCGTime type="a">3.29.2020::13:46:44</strongCGTime>
+			<_defaultComposite type="s">GUID 32b329dd-4937-43e5-8595-97d37359a448</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 7c217dd3-1c94-47ad-a02e-72aa3ff3f6ee</value>
+				<value>GUID 1192f361-2d09-4142-8751-36c020bf4023</value>
+				<value>GUID 32b329dd-4937-43e5-8595-97d37359a448</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID 7c217dd3-1c94-47ad-a02e-72aa3ff3f6ee</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Automatic transmission</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::13:47:30</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:47:30</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall have a powertrain with automatic transmission if any\par%0D
+}%0D
+</_body>
+			<reqID type="a">F_2.5.2.1</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 1192f361-2d09-4142-8751-36c020bf4023</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">No shift intervals</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::13:47:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:47:53</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system should have a powertrain without shifting intervals\par%0D
+}%0D
+</_body>
+			<reqID type="a">F_2.5.2.2</reqID>
+		</IRequirement>
+		<IClass type="e">
+			<_id type="a">GUID 32b329dd-4937-43e5-8595-97d37359a448</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

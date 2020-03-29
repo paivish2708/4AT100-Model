@@ -8,28 +8,45 @@
 	
 	<RHAPSODY-MODEL>
 	<ISubsystem type="e">
-			<_id type="a">GUID 0596830c-6a4a-438b-b077-527d0f0e9460</_id>
+			<_id type="a">GUID 96f0a4de-dd11-4812-99e1-a7e3ed28ca66</_id>
 			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
 			<_name type="a">Research_Development</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::14:47:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<weakCGTime type="a">3.27.2020::14:47:34</weakCGTime>
-			<strongCGTime type="a">3.27.2020::14:25:20</strongCGTime>
-			<_defaultComposite type="s">GUID 27aae5fa-94a7-49e4-b9e7-18a188be7cd6</_defaultComposite>
+			<_modifiedTimeWeak type="a">3.29.2020::13:8:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:29:15</_modifiedTime>
+			<weakCGTime type="a">3.29.2020::13:8:48</weakCGTime>
+			<strongCGTime type="a">3.29.2020::13:2:6</strongCGTime>
+			<_defaultComposite type="s">GUID 7d6bfdce-8e63-4ca9-9843-e0d96acc8540</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
-				<value>GUID 27aae5fa-94a7-49e4-b9e7-18a188be7cd6</value>
+				<value>GUID da2bc908-66c3-4258-8f11-7d9c66ab3b6c</value>
+				<value>GUID 7d6bfdce-8e63-4ca9-9843-e0d96acc8540</value>
 			</AggregatesList>
 		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID da2bc908-66c3-4258-8f11-7d9c66ab3b6c</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Existing components</_name>
+			<OwnedDependencies type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</OwnedDependencies>
+			<_modifiedTimeWeak type="a">3.29.2020::13:8:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:8:48</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil Calibri;}{\f1\fnil\fcharset0 Arial;}}%0D
+{\colortbl ;\red0\green0\blue0;}%0D
+\viewkind4\uc1\pard\cf1\f0\fs22 The system shall be implemented using components that are currently available on the market.\cf0\f1\fs20\par%0D
+}%0D
+</_body>
+			<reqID type="a">F_2.1.1</reqID>
+		</IRequirement>
 		<IClass type="e">
-			<_id type="a">GUID 27aae5fa-94a7-49e4-b9e7-18a188be7cd6</_id>
+			<_id type="a">GUID 7d6bfdce-8e63-4ca9-9843-e0d96acc8540</_id>
 			<_myState type="a">40960</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

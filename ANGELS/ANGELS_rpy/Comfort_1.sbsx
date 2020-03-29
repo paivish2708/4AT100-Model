@@ -8,71 +8,80 @@
 	
 	<RHAPSODY-MODEL>
 	<ISubsystem type="e">
-			<_id type="a">GUID 473b5044-807f-47a0-b5af-6cfb8701ba02</_id>
+			<_id type="a">GUID 97c4ca97-8d4b-45c7-bb9b-6240b4842b5e</_id>
 			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
 			<_name type="a">Comfort</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::14:47:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.29.2020::13:39:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:39:57</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">3.27.2020::14:47:34</weakCGTime>
-			<strongCGTime type="a">3.27.2020::14:26:38</strongCGTime>
-			<_defaultComposite type="s">GUID 85ee6d24-9158-48af-a459-b39aef00b012</_defaultComposite>
+			<weakCGTime type="a">3.29.2020::13:39:57</weakCGTime>
+			<strongCGTime type="a">3.29.2020::13:6:7</strongCGTime>
+			<_defaultComposite type="s">GUID fb22b4ea-32d8-4486-b910-a7119e47789b</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
-				<value>GUID 56e4ca90-7b67-4620-ab40-f7e4ab33feea</value>
-				<value>GUID 7d3656a6-4cf2-4ec5-bc83-6305a77a0ac4</value>
-				<value>GUID 2bd9d759-a77a-4ee2-9db9-b085cb6d8194</value>
-				<value>GUID 85ee6d24-9158-48af-a459-b39aef00b012</value>
+				<value>GUID c29d3882-6b75-4f95-9a28-a8027fe0964e</value>
+				<value>GUID fb22b4ea-32d8-4486-b910-a7119e47789b</value>
 			</AggregatesList>
 		</ISubsystem>
 		<IRequirement type="e">
-			<_id type="a">GUID 56e4ca90-7b67-4620-ab40-f7e4ab33feea</_id>
+			<_id type="a">GUID c29d3882-6b75-4f95-9a28-a8027fe0964e</_id>
 			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
+			<_name type="a">Noise level</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::13:39:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:39:57</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil Calibri;}{\f1\fnil\fcharset0 Arial;}}%0D
+{\colortbl ;\red0\green0\blue0;}%0D
+\viewkind4\uc1\pard\cf1\f0\fs22 The system shall have an average noise level that is less than 80 dB when driving\cf0\f1\fs20\par%0D
+}%0D
+</_body>
+			<reqID type="a">NF_2.5.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID 19ec7a3e-cbc1-4c0d-bebf-975e17ca570a</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 19ec7a3e-cbc1-4c0d-bebf-975e17ca570a</_id>
+			<_myState type="a">2048</_myState>
 			<_name type="a">Reduce Noise</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::14:30:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system shall have a powertrain that reduces noise to improve driver satisfaction.\par%0D
-}%0D
-</_body>
-			<reqID type="a">2.5.1</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 7d3656a6-4cf2-4ec5-bc83-6305a77a0ac4</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Improve Driving smoothness</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::14:29:14</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system shall have a powertrain that improves driving smoothness to improve driving comfort\par%0D
-}%0D
-</_body>
-			<reqID type="a">2.5.2.1</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 2bd9d759-a77a-4ee2-9db9-b085cb6d8194</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Intuitive controls</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::14:30:4</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system shall have a HMI that supports intuitive controls to the driver to improve driver satisfaction.\par%0D
-}%0D
-</_body>
-			<reqID type="a">2.5.2.2</reqID>
-		</IRequirement>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">refine</_hname>
+							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.29.2020::13:39:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:39:57</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Comfort.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_TruckMFGReqs::Comfort</_hsubsystem>
+					<_hname type="a">Reduce Noise</_hname>
+					<_hid type="a">GUID e4328d89-8aca-484d-9c57-71713d226616</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID c29d3882-6b75-4f95-9a28-a8027fe0964e</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IClass type="e">
-			<_id type="a">GUID 85ee6d24-9158-48af-a459-b39aef00b012</_id>
+			<_id type="a">GUID fb22b4ea-32d8-4486-b910-a7119e47789b</_id>
 			<_myState type="a">40960</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

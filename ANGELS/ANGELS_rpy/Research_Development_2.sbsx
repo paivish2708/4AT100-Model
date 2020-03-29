@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 704640dc-f368-421b-9c94-70056cb22d83</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Research_Development</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::13:28:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:29:16</_modifiedTime>
+			<_lastID type="a">2</_lastID>
+			<weakCGTime type="a">3.29.2020::13:28:46</weakCGTime>
+			<strongCGTime type="a">3.29.2020::13:4:40</strongCGTime>
+			<_defaultComposite type="s">GUID d4976e4b-6b52-4299-b8b0-e1f3eeedf029</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 2fb88397-9587-4f1f-a556-483c0b46f82f</value>
+				<value>GUID 1c9a1ca3-072f-4323-a796-1a56750359cb</value>
+				<value>GUID d4976e4b-6b52-4299-b8b0-e1f3eeedf029</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID 2fb88397-9587-4f1f-a556-483c0b46f82f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">System failure time</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::13:28:6</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:28:6</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil Calibri;}{\f1\fnil\fcharset0 Arial;}}%0D
+{\colortbl ;\red0\green0\blue0;}%0D
+\viewkind4\uc1\pard\cf1\f0\fs22 The mean time to failure of the system shall be more than X hours\cf0\f1\fs20\par%0D
+}%0D
+</_body>
+			<reqID type="a">NF_2.2.1</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 1c9a1ca3-072f-4323-a796-1a56750359cb</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Component life cycle</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::13:28:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:28:46</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil Calibri;}{\f1\fnil\fcharset0 Arial;}}%0D
+{\colortbl ;\red0\green0\blue0;}%0D
+\viewkind4\uc1\pard\cf1\f0\fs22 The life cycle of components in the system shall be more than X hours\cf0\f1\fs20\par%0D
+}%0D
+</_body>
+			<reqID type="a">NF_2.2.1</reqID>
+		</IRequirement>
+		<IClass type="e">
+			<_id type="a">GUID d4976e4b-6b52-4299-b8b0-e1f3eeedf029</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

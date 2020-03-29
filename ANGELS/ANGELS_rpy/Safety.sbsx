@@ -11,23 +11,102 @@
 			<_id type="a">GUID 547e35eb-9480-4f2c-ad53-f12efbe6b7a1</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Safety</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::14:26:24</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:26:24</_modifiedTime>
-			<weakCGTime type="a">3.27.2020::14:26:24</weakCGTime>
+			<_modifiedTimeWeak type="a">3.29.2020::13:34:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:34:50</_modifiedTime>
+			<_lastID type="a">5</_lastID>
+			<weakCGTime type="a">3.29.2020::13:34:50</weakCGTime>
 			<strongCGTime type="a">3.27.2020::14:26:24</strongCGTime>
 			<_defaultComposite type="s">GUID 9eec6f00-eabe-4ed0-a3bd-979fd5fdaa3f</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
+				<value>GUID 4c57fd13-8551-467e-b8e1-0aedb31d5bc7</value>
+				<value>GUID 1deba957-5182-40cf-813c-0fdc86eca13f</value>
+				<value>GUID a4db1fbb-79b0-4817-9550-bc9d7c0923f0</value>
+				<value>GUID 8f6af94c-6240-403c-909f-00a1703d10d0</value>
+				<value>GUID 482558ab-f496-4421-b74b-e5cb7f2800d5</value>
 				<value>GUID 9eec6f00-eabe-4ed0-a3bd-979fd5fdaa3f</value>
 			</AggregatesList>
 		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID 4c57fd13-8551-467e-b8e1-0aedb31d5bc7</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Improve driver safety</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::13:32:17</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:32:17</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Improve (perceived) driver safety so that the driver satisfaction is increased.\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_2.4.1</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 1deba957-5182-40cf-813c-0fdc86eca13f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Detect surrounding traffic</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::13:32:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:32:50</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Design a system that takes the surrounding traffic into account to improve their perceived safety, so that the trucks are getting more positive exposure.\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_2.4.2</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID a4db1fbb-79b0-4817-9550-bc9d7c0923f0</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Avoid obstacles</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::13:33:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:33:13</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Design a system that avoids obstacles and incidents to reduce negative publicity of the truck manufacturer.\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_2.4.3</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 8f6af94c-6240-403c-909f-00a1703d10d0</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Multiple safety protocols</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::13:33:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:33:46</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Design a system that has multiple safety/fail-safe protocols in place in case of emergencies \par%0D
+}%0D
+</_body>
+			<reqID type="a">B_2.4.4</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 482558ab-f496-4421-b74b-e5cb7f2800d5</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">System technical safe</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">HLR</_hname>
+							<_hid type="a">GUID 276e25c5-901c-47fa-a5db-53e39ceef058</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.29.2020::13:34:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::13:34:50</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Design a system that is technically sound and should keep the driver's safe at its various modes of operations\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_2.4.5</reqID>
+		</IRequirement>
 		<IClass type="e">
 			<_id type="a">GUID 9eec6f00-eabe-4ed0-a3bd-979fd5fdaa3f</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
