@@ -11,7 +11,7 @@ b. git status
 This will tell you if your repository is updated w.r.t repository on the server
 
 6. Once you're done with making changes to the local files, save it and then do the following steps
-a. git add.
+a. git add .
 This will add the changes to the origin repository not completely
 b. git commit -m "Put some text here"
 In the quotes add the details about the changes made in the respected files "Put some text here".
