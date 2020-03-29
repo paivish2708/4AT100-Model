@@ -11,11 +11,11 @@
 			<_id type="a">GUID 768f9d4b-0bac-4442-a56e-05ec28083744</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">NonFunctional</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::10:50:43</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::10:50:43</_modifiedTime>
-			<_lastID type="a">8</_lastID>
-			<weakCGTime type="a">3.29.2020::10:50:43</weakCGTime>
-			<strongCGTime type="a">3.29.2020::10:21:39</strongCGTime>
+			<_modifiedTimeWeak type="a">3.29.2020::15:13:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:13:51</_modifiedTime>
+			<_lastID type="a">11</_lastID>
+			<weakCGTime type="a">3.29.2020::15:13:51</weakCGTime>
+			<strongCGTime type="a">3.29.2020::14:28:14</strongCGTime>
 			<_defaultComposite type="s">GUID 2f9c2d77-0f35-4033-b583-798364700cd8</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">3.29.2020::10:40:42</_configurationRelatedTime>
@@ -24,6 +24,9 @@
 				<value>GUID 65f5770f-4999-4f7a-ac2d-170ed053c4f2</value>
 				<value>GUID c3f2a2fb-547e-4d9f-8c3e-f6d18567b95e</value>
 				<value>GUID bdcaadda-30c7-4471-adb7-63acf49419c4</value>
+				<value>GUID 8cb73b22-c14b-46e0-8246-a96bd0472281</value>
+				<value>GUID 0c50888a-1312-4650-94a5-93b77c38f77e</value>
+				<value>GUID b609d93c-f8d9-4b61-b96e-597ff2fccbba</value>
 				<value>GUID 2f9c2d77-0f35-4033-b583-798364700cd8</value>
 			</AggregatesList>
 		</ISubsystem>
@@ -43,14 +46,29 @@
 			<fileName type="a">NF_TruckMFGReqs</fileName>
 			<_id type="a">GUID bdcaadda-30c7-4471-adb7-63acf49419c4</_id>
 		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Powertrain_1</fileName>
+			<_id type="a">GUID 8cb73b22-c14b-46e0-8246-a96bd0472281</_id>
+			<_name type="a">Powertrain</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Path_controller_1</fileName>
+			<_id type="a">GUID 0c50888a-1312-4650-94a5-93b77c38f77e</_id>
+			<_name type="a">Path_controller</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Path_generator_1</fileName>
+			<_id type="a">GUID b609d93c-f8d9-4b61-b96e-597ff2fccbba</_id>
+			<_name type="a">Path_generator</_name>
+		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID 2f9c2d77-0f35-4033-b583-798364700cd8</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.29.2020::14:28:14</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
-			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<weakCGTime type="a">3.29.2020::14:28:14</weakCGTime>
+			<strongCGTime type="a">3.29.2020::14:28:14</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
