@@ -11,10 +11,10 @@
 			<_id type="a">GUID bdcaadda-30c7-4471-adb7-63acf49419c4</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">NF_TruckMFGReqs</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::16:9:13</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::16:9:13</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.29.2020::16:13:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::16:13:0</_modifiedTime>
 			<_lastID type="a">5</_lastID>
-			<weakCGTime type="a">3.29.2020::16:9:13</weakCGTime>
+			<weakCGTime type="a">3.29.2020::16:13:0</weakCGTime>
 			<strongCGTime type="a">3.29.2020::10:50:58</strongCGTime>
 			<_defaultComposite type="s">GUID 382e8d35-7340-45c0-9a36-ea995743f502</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -24,6 +24,7 @@
 				<value>GUID 1c039e58-26f0-4a94-9cc9-4df70a51d0f4</value>
 				<value>GUID 59355d78-62b3-4359-aa4e-191eb2935d98</value>
 				<value>GUID 97c4ca97-8d4b-45c7-bb9b-6240b4842b5e</value>
+				<value>GUID 32c13d14-04d1-493f-997e-9373f17263ba</value>
 				<value>GUID 382e8d35-7340-45c0-9a36-ea995743f502</value>
 			</AggregatesList>
 		</ISubsystem>
@@ -46,6 +47,10 @@
 			<fileName type="a">Comfort_1</fileName>
 			<_id type="a">GUID 97c4ca97-8d4b-45c7-bb9b-6240b4842b5e</_id>
 			<_name type="a">Comfort</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">NF_Research_and_Development</fileName>
+			<_id type="a">GUID 32c13d14-04d1-493f-997e-9373f17263ba</_id>
 		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID 382e8d35-7340-45c0-9a36-ea995743f502</_id>
