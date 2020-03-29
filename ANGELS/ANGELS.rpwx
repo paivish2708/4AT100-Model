@@ -41,10 +41,17 @@
 								<_hid type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_hid>
 							</IHandle>
 						</_theDiagram>
+<<<<<<< HEAD
 						<_UpLeft type="a">0 0 </_UpLeft>
 						<_DownRight type="a">4443 1453 </_DownRight>
 						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
+=======
+						<_UpLeft type="a">0 30 </_UpLeft>
+						<_DownRight type="a">1351 669 </_DownRight>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<m_bIsActiveView type="a">1</m_bIsActiveView>
+>>>>>>> 888e48d9eeb1ffc329f25e0914280cc78a01bbc1
 					</CGEMdiDiagramParams>
 					
 				</IRPYRawContainer>

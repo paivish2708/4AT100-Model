@@ -11,23 +11,102 @@
 			<_id type="a">GUID 7321071c-da0d-4695-81ba-f324e87ac8f6</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Research_Development</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::14:25:20</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:25:20</_modifiedTime>
-			<weakCGTime type="a">3.27.2020::14:25:20</weakCGTime>
-			<strongCGTime type="a">3.27.2020::14:25:20</strongCGTime>
+			<_modifiedTimeWeak type="a">3.29.2020::14:9:26</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:9:26</_modifiedTime>
+			<_lastID type="a">6</_lastID>
+			<weakCGTime type="a">3.29.2020::14:9:26</weakCGTime>
+			<strongCGTime type="a">3.29.2020::14:5:32</strongCGTime>
 			<_defaultComposite type="s">GUID 765156ab-204f-46c7-adaa-5059487e08a4</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
+				<value>GUID 6d8fa089-c624-4c16-b9d3-7326acbb7a26</value>
+				<value>GUID a515e449-3dad-4879-acd2-db8aecd3d58f</value>
+				<value>GUID ca159162-e29e-4cf7-9f65-94f9c389b49e</value>
+				<value>GUID 23b1c019-a981-4af0-b420-92bdea9b8c44</value>
+				<value>GUID f776dcaf-411e-453f-8ef8-b66c0e3ed44d</value>
+				<value>GUID bf4316c8-6688-4934-ae70-4596e4eea758</value>
 				<value>GUID 765156ab-204f-46c7-adaa-5059487e08a4</value>
 			</AggregatesList>
 		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID 6d8fa089-c624-4c16-b9d3-7326acbb7a26</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Improve system reliability</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:5:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:5:56</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Improve system reliability(mean time to failure) to reduce accidents and prevent a negative image of the truck manufacturer.\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_2.2.1.1</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID a515e449-3dad-4879-acd2-db8aecd3d58f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Reduce component failures</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:6:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:6:49</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Reduce component failures resulting in less repairs and satisfaction from customers (logistics companies).\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_2.2.1.2</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID ca159162-e29e-4cf7-9f65-94f9c389b49e</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Use existing technologies</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:7:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:7:37</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Design a system using existing technologies such that it can be implemented in the trucks.\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_2.2.2</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 23b1c019-a981-4af0-b420-92bdea9b8c44</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">High quality components</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:8:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:8:10</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Design the system using high quality components to improve overall truck performance and customer satisfaction\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_2.2.3</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID f776dcaf-411e-453f-8ef8-b66c0e3ed44d</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Availability for operation</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:9:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:9:2</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Design a system that has high availability for operation by its customers\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_2.2.4</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID bf4316c8-6688-4934-ae70-4596e4eea758</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Minimal time to repair</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:9:26</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:9:26</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Design a system that takes minimal time to repair in case of malfunctioning/failures\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_2.2.5</reqID>
+		</IRequirement>
 		<IClass type="e">
 			<_id type="a">GUID 765156ab-204f-46c7-adaa-5059487e08a4</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

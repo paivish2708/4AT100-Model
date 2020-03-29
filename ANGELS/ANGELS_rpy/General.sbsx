@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 7ad9f8be-660d-4661-9b9e-9e9c3ac0709e</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">General</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">HLR</_hname>
+							<_hid type="a">GUID 276e25c5-901c-47fa-a5db-53e39ceef058</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.29.2020::14:21:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:21:13</_modifiedTime>
+			<_lastID type="a">4</_lastID>
+			<weakCGTime type="a">3.29.2020::14:21:13</weakCGTime>
+			<strongCGTime type="a">3.29.2020::14:17:15</strongCGTime>
+			<_defaultComposite type="s">GUID 0f3bdb09-2879-4dc4-ad31-34b20bf78709</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">3.29.2020::14:18:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 18d37594-423c-4987-8fac-57f2e9d80de2</value>
+				<value>GUID 212a3f44-2351-4110-bed6-8cf78037609c</value>
+				<value>GUID 0f3bdb09-2879-4dc4-ad31-34b20bf78709</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID 18d37594-423c-4987-8fac-57f2e9d80de2</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Regenerate energy</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:19:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:19:2</_modifiedTime>
+			<_body type="a">{\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri Light;}{\f1\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\ltrpar\fi-360\li720\sa160\sl252\slmult1\f0\fs22 The powertrain shall be able to regenerate energy, for example during braking\par%0D
+\pard\ltrpar\f1\fs20\par%0D
+}%0D
+</_body>
+			<reqID type="a">F_PT_1.1</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 212a3f44-2351-4110-bed6-8cf78037609c</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Drive fully electric</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:19:43</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:19:43</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The vehicles shall be able to drive fully electric on the DC\par%0D
+}%0D
+</_body>
+			<reqID type="a">F_PT_1.2</reqID>
+		</IRequirement>
+		<IClass type="e">
+			<_id type="a">GUID 0f3bdb09-2879-4dc4-ad31-34b20bf78709</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

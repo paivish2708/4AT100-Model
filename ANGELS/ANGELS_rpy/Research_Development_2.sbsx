@@ -10,10 +10,17 @@
 	<ISubsystem type="e">
 			<_id type="a">GUID 704640dc-f368-421b-9c94-70056cb22d83</_id>
 			<_name type="a">Research_Development</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.29.2020::15:47:50</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.29.2020::15:47:50</_modifiedTime>
 			<_lastID type="a">3</_lastID>
 			<weakCGTime type="a">3.29.2020::15:47:50</weakCGTime>
+=======
+			<_modifiedTimeWeak type="a">3.29.2020::14:11:24</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:11:24</_modifiedTime>
+			<_lastID type="a">2</_lastID>
+			<weakCGTime type="a">3.29.2020::14:11:24</weakCGTime>
+>>>>>>> 888e48d9eeb1ffc329f25e0914280cc78a01bbc1
 			<strongCGTime type="a">3.29.2020::13:4:40</strongCGTime>
 			<_defaultComposite type="s">GUID d4976e4b-6b52-4299-b8b0-e1f3eeedf029</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -29,28 +36,71 @@
 			<_id type="a">GUID 2fb88397-9587-4f1f-a556-483c0b46f82f</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">System failure time</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::13:28:6</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::13:28:6</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.29.2020::14:10:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:10:51</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil Calibri;}{\f1\fnil\fcharset0 Arial;}}%0D
 {\colortbl ;\red0\green0\blue0;}%0D
 \viewkind4\uc1\pard\cf1\f0\fs22 The mean time to failure of the system shall be more than X hours\cf0\f1\fs20\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF_2.2.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID 1baecb55-b98d-4d8e-b821-591c5a5108f0</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 1baecb55-b98d-4d8e-b821-591c5a5108f0</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Improve system reliability</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.29.2020::14:10:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:10:51</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Research_Development.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_TruckMFGReqs::Research_Development</_hsubsystem>
+					<_hname type="a">Improve system reliability</_hname>
+					<_hid type="a">GUID 6d8fa089-c624-4c16-b9d3-7326acbb7a26</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 2fb88397-9587-4f1f-a556-483c0b46f82f</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 1c9a1ca3-072f-4323-a796-1a56750359cb</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Component life cycle</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::13:28:46</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::13:28:46</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.29.2020::14:11:24</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:11:24</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil Calibri;}{\f1\fnil\fcharset0 Arial;}}%0D
 {\colortbl ;\red0\green0\blue0;}%0D
 \viewkind4\uc1\pard\cf1\f0\fs22 The life cycle of components in the system shall be more than X hours\cf0\f1\fs20\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF_2.2.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID 88fafb99-31d3-4b9e-8284-19a2406d3cb3</value>
+			</AggregatesList>
 		</IRequirement>
+<<<<<<< HEAD
 		<IRequirement type="e">
 			<_id type="a">GUID 52d59971-c4e8-4e20-83a9-33044259b0ab</_id>
 			<_myState type="a">8192</_myState>
@@ -70,6 +120,12 @@
 			<_id type="a">GUID 1783e492-e8f1-4e40-85b7-1deace0c9b0c</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">System failure time</_name>
+=======
+		<IDependency type="e">
+			<_id type="a">GUID 88fafb99-31d3-4b9e-8284-19a2406d3cb3</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reduce component failures</_name>
+>>>>>>> 888e48d9eeb1ffc329f25e0914280cc78a01bbc1
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -84,18 +140,34 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.29.2020::15:47:50</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.29.2020::15:47:50</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
 					<_hid type="a">GUID 2fb88397-9587-4f1f-a556-483c0b46f82f</_hid>
+=======
+			<_modifiedTimeWeak type="a">3.29.2020::14:11:24</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:11:24</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Research_Development.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_TruckMFGReqs::Research_Development</_hsubsystem>
+					<_hname type="a">Reduce component failures</_hname>
+					<_hid type="a">GUID a515e449-3dad-4879-acd2-db8aecd3d58f</_hid>
+>>>>>>> 888e48d9eeb1ffc329f25e0914280cc78a01bbc1
 				</INObjectHandle>
 			</_dependsOn>
 			<_dependent type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
+<<<<<<< HEAD
 					<_hid type="a">GUID 52d59971-c4e8-4e20-83a9-33044259b0ab</_hid>
+=======
+					<_hid type="a">GUID 1c9a1ca3-072f-4323-a796-1a56750359cb</_hid>
+>>>>>>> 888e48d9eeb1ffc329f25e0914280cc78a01bbc1
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>

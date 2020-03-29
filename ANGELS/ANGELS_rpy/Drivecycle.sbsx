@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 914c293d-3827-44c4-b0c2-7e287b0d7cb1</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Drivecycle</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:40:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:40:46</_modifiedTime>
+			<_lastID type="a">5</_lastID>
+			<weakCGTime type="a">3.29.2020::14:40:46</weakCGTime>
+			<strongCGTime type="a">3.29.2020::14:17:10</strongCGTime>
+			<_defaultComposite type="s">GUID accb2be8-c1f9-4232-821f-380139d99bb2</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID cdd44ff2-563a-4389-8a3d-dee3cebd2caf</value>
+				<value>GUID 523f2ff2-f359-4142-81b9-e493f40791b9</value>
+				<value>GUID 0f3ca8ab-8d89-4495-a834-1cc5a5356653</value>
+				<value>GUID 77d0ed8a-ff8e-4634-a9ed-ca272c710615</value>
+				<value>GUID cb24bee9-528e-47c7-8e31-6b2282d1d8fd</value>
+				<value>GUID accb2be8-c1f9-4232-821f-380139d99bb2</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID cdd44ff2-563a-4389-8a3d-dee3cebd2caf</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Modes of driving</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:21:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:21:53</_modifiedTime>
+			<_body type="a">{\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri Light;}{\f1\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\ltrpar\fi-360\li720\sa160\sl252\slmult1\f0\fs22 The three most common modes of driving (inside DC, city driving and highway) shall be included in the drivecycle.\par%0D
+\pard\ltrpar\f1\fs20\par%0D
+}%0D
+</_body>
+			<reqID type="a">F_PT_2.1.1</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 523f2ff2-f359-4142-81b9-e493f40791b9</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Dedicated HD cycle</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:25:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:25:14</_modifiedTime>
+			<_body type="a">{\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri Light;}{\f1\fnil\fcharset0 Arial;}}%0D
+{\colortbl ;\red255\green255\blue0;}%0D
+\viewkind4\uc1\pard\ltrpar\fi-360\li720\sa160\sl252\slmult1\f0\fs22 The system speed profile shall be estimated based on a dedicated \highlight1 heavy duty drivecycle\highlight0 (outside of the DC).\par%0D
+\pard\ltrpar\f1\fs20\par%0D
+}%0D
+</_body>
+			<reqID type="a">F_PT_2.2</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 0f3ca8ab-8d89-4495-a834-1cc5a5356653</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Official cycle</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:26:8</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:26:8</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system should be tested according to an official test cycle\par%0D
+}%0D
+</_body>
+			<reqID type="a">F_PT_2.3</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 77d0ed8a-ff8e-4634-a9ed-ca272c710615</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Minimum time</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:27:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:27:14</_modifiedTime>
+			<_body type="a">{\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri Light;}{\f1\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\ltrpar\f0\fs22 The speed profile of the drivecycle on the DC should be according to minimum time within the constraints of acceleration, cornering and speed\f1\fs20 .\par%0D
+}%0D
+</_body>
+			<reqID type="a">F_PT_2.4</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID cb24bee9-528e-47c7-8e31-6b2282d1d8fd</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Vehicle limits</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:40:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:40:46</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The drivecycle shall be designed in such a way that it stays within the vehicle handling limits (tyres).\par%0D
+}%0D
+</_body>
+			<reqID type="a">F_PT_2.5</reqID>
+		</IRequirement>
+		<IClass type="e">
+			<_id type="a">GUID accb2be8-c1f9-4232-821f-380139d99bb2</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

@@ -11,10 +11,10 @@
 			<_id type="a">GUID b9a4aa92-a505-4301-a6af-654245de3bc9</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Functional</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::13:1:14</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::13:29:15</_modifiedTime>
-			<_lastID type="a">5</_lastID>
-			<weakCGTime type="a">3.29.2020::13:1:14</weakCGTime>
+			<_modifiedTimeWeak type="a">3.29.2020::15:3:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:3:10</_modifiedTime>
+			<_lastID type="a">8</_lastID>
+			<weakCGTime type="a">3.29.2020::15:3:10</weakCGTime>
 			<strongCGTime type="a">3.29.2020::10:21:2</strongCGTime>
 			<_defaultComposite type="s">GUID 9d33e66e-8fdb-407c-8f88-7662363fb0d9</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -24,6 +24,9 @@
 				<value>GUID cd34cbf0-e698-4840-b306-8ba5fffc50e6</value>
 				<value>GUID 0695ce4b-5d88-4051-92de-8530087c4081</value>
 				<value>GUID 5d269320-4649-4198-b7bc-d46ed3dbf83d</value>
+				<value>GUID 0ef1e690-a381-4439-a861-f29a318c23b1</value>
+				<value>GUID e5731d56-db42-491c-917c-b4a928a929d4</value>
+				<value>GUID 0e10ddf5-bbde-4e37-908a-9bcdfcee9473</value>
 				<value>GUID 9d33e66e-8fdb-407c-8f88-7662363fb0d9</value>
 			</AggregatesList>
 		</ISubsystem>
@@ -46,6 +49,18 @@
 			<fileName type="a">TruckMFGReqs_1</fileName>
 			<_id type="a">GUID 5d269320-4649-4198-b7bc-d46ed3dbf83d</_id>
 			<_name type="a">F_TruckMFGReqs</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Powertrain</fileName>
+			<_id type="a">GUID 0ef1e690-a381-4439-a861-f29a318c23b1</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Path_controller</fileName>
+			<_id type="a">GUID e5731d56-db42-491c-917c-b4a928a929d4</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Path_generator</fileName>
+			<_id type="a">GUID 0e10ddf5-bbde-4e37-908a-9bcdfcee9473</_id>
 		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID 9d33e66e-8fdb-407c-8f88-7662363fb0d9</_id>
