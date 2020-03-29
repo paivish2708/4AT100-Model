@@ -8,169 +8,26 @@
 	
 	<RHAPSODY-MODEL>
 	<ISubsystem type="e">
-			<_id type="a">GUID 81209646-1a29-47e6-8ad0-aeb6557b5339</_id>
+			<_id type="a">GUID 0695ce4b-5d88-4051-92de-8530087c4081</_id>
 			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
 			<_name type="a">LogisticsReqs</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::14:47:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_lastID type="a">10</_lastID>
-			<weakCGTime type="a">3.27.2020::14:47:34</weakCGTime>
-			<strongCGTime type="a">3.27.2020::14:18:41</strongCGTime>
-			<_defaultComposite type="s">GUID 12b125e4-8888-4d97-b925-de8b74ee6189</_defaultComposite>
+			<_modifiedTimeWeak type="a">3.29.2020::10:27:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::10:27:35</_modifiedTime>
+			<weakCGTime type="a">3.29.2020::10:27:35</weakCGTime>
+			<strongCGTime type="a">3.29.2020::10:27:35</strongCGTime>
+			<_defaultComposite type="s">GUID 261879f5-965d-4767-97b8-d40e22c0512e</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
-				<value>GUID a11e408a-6bb9-4552-b860-04ef6e1a1016</value>
-				<value>GUID cd4b6609-dadb-4cc1-8b31-ba6aabc0477a</value>
-				<value>GUID 74764ce0-a4a4-4f94-8178-5fe92dabc8bd</value>
-				<value>GUID 9505c339-b13d-4983-9242-5747feda1c38</value>
-				<value>GUID d6a222ae-c497-4942-b535-b19927e396a6</value>
-				<value>GUID 58d7acb9-07d4-40f5-b362-2e84a43c11d3</value>
-				<value>GUID b1bc935d-b41b-4f8a-82b8-241e54093a9c</value>
-				<value>GUID 1aba4c8d-ef94-46c7-8f60-80b860ec935f</value>
-				<value>GUID 76b3d46f-f437-48cb-8d6b-0ae0ad6bcd00</value>
-				<value>GUID 509d702e-361a-47c7-9e94-9f726cab69aa</value>
-				<value>GUID 12b125e4-8888-4d97-b925-de8b74ee6189</value>
+				<value>GUID 261879f5-965d-4767-97b8-d40e22c0512e</value>
 			</AggregatesList>
 		</ISubsystem>
-		<IRequirement type="e">
-			<_id type="a">GUID a11e408a-6bb9-4552-b860-04ef6e1a1016</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Driver Rest</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::14:1:9</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system must reduce the workload of the drivers so that they can rest or do other things while waiting for the truck to come back\par%0D
-}%0D
-</_body>
-			<reqID type="a">4.1.1.1</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID cd4b6609-dadb-4cc1-8b31-ba6aabc0477a</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Reducing Workload</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::14:2:18</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system must reduce the workload of the drivers by automating complex manoeuvres for driving inside the DC\par%0D
-}%0D
-</_body>
-			<reqID type="a">4.1.1.2</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 74764ce0-a4a4-4f94-8178-5fe92dabc8bd</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Automatically opening trailer door</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::14:3:28</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system could reduce the workload of the dock operators by automatically opening the trailer door when docking is completed\par%0D
-}%0D
-</_body>
-			<reqID type="a">4.1.2</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 9505c339-b13d-4983-9242-5747feda1c38</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Scheduling</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::14:4:22</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system must improve scheduling of the trucks in the DC, so that the efficiency will be increased\par%0D
-}%0D
-</_body>
-			<reqID type="a">4.2.1</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID d6a222ae-c497-4942-b535-b19927e396a6</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Number of trucks</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::14:8:40</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system must improve the flow of goods by allowing an increase in the number of trucks driving in the DC\par%0D
-}%0D
-</_body>
-			<reqID type="a">4.2.2</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 58d7acb9-07d4-40f5-b362-2e84a43c11d3</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Driver schedulability</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::14:11:1</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system could improve driver schedulability by allowing them to rest while the system is taking over\par%0D
-}%0D
-</_body>
-			<reqID type="a">4.2.3</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID b1bc935d-b41b-4f8a-82b8-241e54093a9c</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Maintenance costs</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::14:12:1</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system shall minimise the maintenance costs of the trucks and system\par%0D
-}%0D
-</_body>
-			<reqID type="a">4.3.1</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 1aba4c8d-ef94-46c7-8f60-80b860ec935f</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Driver training costs</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::14:12:43</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system shall minimise the costs of additional driver trainings\par%0D
-}%0D
-</_body>
-			<reqID type="a">4.3.2</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 76b3d46f-f437-48cb-8d6b-0ae0ad6bcd00</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Fuel costs</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::14:13:13</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system shall minimise the fuel costs (by implementing another powertrain solution)\par%0D
-}%0D
-</_body>
-			<reqID type="a">4.3.3</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 509d702e-361a-47c7-9e94-9f726cab69aa</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Driver salary</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::14:14:14</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system could minimise driver salary costs by allowing them to rest in the DC instead of on the road\par%0D
-}%0D
-</_body>
-			<reqID type="a">4.3.4</reqID>
-		</IRequirement>
 		<IClass type="e">
-			<_id type="a">GUID 12b125e4-8888-4d97-b925-de8b74ee6189</_id>
+			<_id type="a">GUID 261879f5-965d-4767-97b8-d40e22c0512e</_id>
 			<_myState type="a">40960</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

@@ -8,114 +8,26 @@
 	
 	<RHAPSODY-MODEL>
 	<ISubsystem type="e">
-			<_id type="a">GUID 5e670ae6-2222-4e92-a5ba-be74021c6fae</_id>
+			<_id type="a">GUID cd34cbf0-e698-4840-b306-8ba5fffc50e6</_id>
 			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
 			<_name type="a">GovernmentReqs</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::14:47:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">3.27.2020::14:47:34</weakCGTime>
-			<strongCGTime type="a">3.27.2020::14:18:41</strongCGTime>
-			<_defaultComposite type="s">GUID 4faa307f-4850-4c30-9f03-4d5f076c00cc</_defaultComposite>
+			<_modifiedTimeWeak type="a">3.29.2020::10:27:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::10:27:16</_modifiedTime>
+			<weakCGTime type="a">3.29.2020::10:27:16</weakCGTime>
+			<strongCGTime type="a">3.29.2020::10:27:16</strongCGTime>
+			<_defaultComposite type="s">GUID 1d33280f-44cc-46b1-a1a0-f0c9dad178d4</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
-				<value>GUID e497d01f-210b-474f-b585-093c5b4b75e2</value>
-				<value>GUID c3705e79-6b5f-4ec3-9a26-266f12138ead</value>
-				<value>GUID 5ca104f4-d6f4-41ff-a060-e1e07ba4d7bc</value>
-				<value>GUID d1a666c4-6bdd-4fc5-9f1f-fcc3db220773</value>
-				<value>GUID c4ee7d4f-d381-468d-93f1-db8321a2530a</value>
-				<value>GUID 0f1a5495-028f-45f2-82f2-826907e92c28</value>
-				<value>GUID 4faa307f-4850-4c30-9f03-4d5f076c00cc</value>
+				<value>GUID 1d33280f-44cc-46b1-a1a0-f0c9dad178d4</value>
 			</AggregatesList>
 		</ISubsystem>
-		<IRequirement type="e">
-			<_id type="a">GUID e497d01f-210b-474f-b585-093c5b4b75e2</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Applicable for subsidies</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::13:48:31</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system could keep the truck emissions within the norms and standards set by the EU such that it is applicable for subisidies\par%0D
-}%0D
-</_body>
-			<reqID type="a">3.2.2</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID c3705e79-6b5f-4ec3-9a26-266f12138ead</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Reduce Emissions</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::13:53:59</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The systems shall reduce emissions within the EU norms, such that the trucks are suitable for road usage\par%0D
-}%0D
-</_body>
-			<reqID type="a">3.2.1</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 5ca104f4-d6f4-41ff-a060-e1e07ba4d7bc</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Safety</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::13:49:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system shall ensure that trucks can drive safely within the DC\par%0D
-\par%0D
-}%0D
-</_body>
-			<reqID type="a">3.1.1.1</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID d1a666c4-6bdd-4fc5-9f1f-fcc3db220773</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Safety check</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::13:52:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system may come with a predescribed independent company that regularly checks if the safety rules are still met\par%0D
-}%0D
-</_body>
-			<reqID type="a">3.1.1.2</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID c4ee7d4f-d381-468d-93f1-db8321a2530a</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">Legislation Adjustments</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::13:59:28</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system could require adjustments in (existing) legislations in order to be enabled to drive autonomously in the DC and on the road\par%0D
-}%0D
-</_body>
-			<reqID type="a">3.3.1</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 0f1a5495-028f-45f2-82f2-826907e92c28</_id>
-			<_myState type="a">8192</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">New legislations</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::14:0:5</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:34</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system could require new legislations in order to be enable autonomous driving in the DC and for road usage\par%0D
-}%0D
-</_body>
-			<reqID type="a">3.3.2</reqID>
-		</IRequirement>
 		<IClass type="e">
-			<_id type="a">GUID 4faa307f-4850-4c30-9f03-4d5f076c00cc</_id>
+			<_id type="a">GUID 1d33280f-44cc-46b1-a1a0-f0c9dad178d4</_id>
 			<_myState type="a">40960</_myState>
-			<_rmmServerID type="a">-1</_rmmServerID>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

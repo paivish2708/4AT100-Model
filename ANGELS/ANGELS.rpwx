@@ -42,14 +42,14 @@
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">14656 6844 </_DownRight>
-						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<_DownRight type="a">14918 6844 </_DownRight>
+						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 				</IRPYRawContainer>
 			</myViewsWithID>
-			<_fullName type="a">C:\Users\LAPTOP\Documents\TUE\Q3\Automotive Systems project\ANGELS\4AT100 Model\ANGELS\ANGELS</_fullName>
+			<_fullName type="a">C:\Users\s157358\Documents\Tue\Master\Automotive Systems Engineering Project\Project\4AT100-Model\ANGELS\ANGELS</_fullName>
 			<m_SearchScopeList type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -73,6 +73,16 @@
 				<idOrFolder type="a">folder</idOrFolder>
 			</favoritesItem>
 			
+
+	- tableMatrixRowAdditionHight = {
+		count=1;
+		{ - TableMatrixView
+			id=c691cb6a-ba3a-44ca-8f4b-3a8b9ea0ff61;
+			rowAdditionalHight=;;
+			rowAdditionalHightExt=;
+		}
+	}
+
 		</CGEMdiWorkspace>
 		
 	</RHAPSODY-MODEL>
