@@ -11,17 +11,37 @@
 			<_id type="a">GUID 768f9d4b-0bac-4442-a56e-05ec28083744</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">NonFunctional</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::10:40:42</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::10:40:42</_modifiedTime>
-			<_lastID type="a">4</_lastID>
-			<weakCGTime type="a">3.29.2020::10:40:42</weakCGTime>
+			<_modifiedTimeWeak type="a">3.29.2020::10:50:43</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::10:50:43</_modifiedTime>
+			<_lastID type="a">8</_lastID>
+			<weakCGTime type="a">3.29.2020::10:50:43</weakCGTime>
 			<strongCGTime type="a">3.29.2020::10:21:39</strongCGTime>
 			<_defaultComposite type="s">GUID 2f9c2d77-0f35-4033-b583-798364700cd8</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">3.29.2020::10:40:42</_configurationRelatedTime>
 			<AggregatesList type="e">
+				<value>GUID 3ec6c3ac-48cc-45d8-b5dc-31d0a6653c8c</value>
+				<value>GUID 65f5770f-4999-4f7a-ac2d-170ed053c4f2</value>
+				<value>GUID c3f2a2fb-547e-4d9f-8c3e-f6d18567b95e</value>
+				<value>GUID bdcaadda-30c7-4471-adb7-63acf49419c4</value>
 				<value>GUID 2f9c2d77-0f35-4033-b583-798364700cd8</value>
 			</AggregatesList>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">NF_DistributorReqs</fileName>
+			<_id type="a">GUID 3ec6c3ac-48cc-45d8-b5dc-31d0a6653c8c</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">NF_GovernmentReqs</fileName>
+			<_id type="a">GUID 65f5770f-4999-4f7a-ac2d-170ed053c4f2</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">NF_LogisticsReqs</fileName>
+			<_id type="a">GUID c3f2a2fb-547e-4d9f-8c3e-f6d18567b95e</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">NF_TruckMFGReqs</fileName>
+			<_id type="a">GUID bdcaadda-30c7-4471-adb7-63acf49419c4</_id>
 		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID 2f9c2d77-0f35-4033-b583-798364700cd8</_id>

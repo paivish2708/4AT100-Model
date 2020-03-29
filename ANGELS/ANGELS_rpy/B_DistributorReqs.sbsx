@@ -8,21 +8,28 @@
 	
 	<RHAPSODY-MODEL>
 	<ISubsystem type="e">
-			<_id type="a">GUID 9f1b5690-73cb-4d49-a0e5-7da0d37d78f9</_id>
-			<_name type="a">F_DistributorReqs</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::10:51:28</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::10:51:28</_modifiedTime>
-			<weakCGTime type="a">3.29.2020::10:51:28</weakCGTime>
-			<strongCGTime type="a">3.29.2020::10:51:28</strongCGTime>
-			<_defaultComposite type="s">GUID 5bc91a28-0323-46de-9fa7-5ab5b5a1f6f8</_defaultComposite>
+			<_id type="a">GUID 94e28a2b-b7f0-47b5-976a-9d7879fa3eab</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">B_DistributorReqs</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::10:51:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::10:51:51</_modifiedTime>
+			<weakCGTime type="a">3.29.2020::10:51:51</weakCGTime>
+			<strongCGTime type="a">3.29.2020::10:51:51</strongCGTime>
+			<_defaultComposite type="s">GUID 4ba1b54a-1585-41a6-96c5-b7b922d441ab</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
-				<value>GUID 5bc91a28-0323-46de-9fa7-5ab5b5a1f6f8</value>
+				<value>GUID 16f7fa01-f781-435c-902c-cacb9214c1c5</value>
+				<value>GUID 4ba1b54a-1585-41a6-96c5-b7b922d441ab</value>
 			</AggregatesList>
 		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Costs_1</fileName>
+			<_id type="a">GUID 16f7fa01-f781-435c-902c-cacb9214c1c5</_id>
+			<_name type="a">Costs</_name>
+		</ISubsystem>
 		<IClass type="e">
-			<_id type="a">GUID 5bc91a28-0323-46de-9fa7-5ab5b5a1f6f8</_id>
+			<_id type="a">GUID 4ba1b54a-1585-41a6-96c5-b7b922d441ab</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
