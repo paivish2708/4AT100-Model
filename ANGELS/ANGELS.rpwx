@@ -43,6 +43,16 @@
 				<idOrFolder type="a">folder</idOrFolder>
 			</favoritesItem>
 			
+
+	- tableMatrixRowAdditionHight = {
+		count=1;
+		{ - TableMatrixView
+			id=c691cb6a-ba3a-44ca-8f4b-3a8b9ea0ff61;
+			rowAdditionalHight=;;
+			rowAdditionalHightExt=;
+		}
+	}
+
 		</CGEMdiWorkspace>
 		
 	</RHAPSODY-MODEL>

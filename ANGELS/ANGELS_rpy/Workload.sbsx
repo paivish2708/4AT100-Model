@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 26f66e4c-9562-4dea-81b9-291967f15de1</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Workload</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::11:54:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::11:54:53</_modifiedTime>
+			<weakCGTime type="a">3.29.2020::11:54:53</weakCGTime>
+			<strongCGTime type="a">3.29.2020::11:49:38</strongCGTime>
+			<_defaultComposite type="s">GUID b1754ac1-68fe-4ee9-b059-660305519532</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 4b94ed6c-ca5a-441d-9d66-fcb2f48ea1bc</value>
+				<value>GUID 6a3ab267-5472-4a19-b725-53fb45ad41fd</value>
+				<value>GUID b1754ac1-68fe-4ee9-b059-660305519532</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID 4b94ed6c-ca5a-441d-9d66-fcb2f48ea1bc</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Driver Rest Time</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::11:54:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::11:54:49</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall communicate to the driver the time it had spent in the DC and the remaining rest time of the driver.\par%0D
+}%0D
+</_body>
+			<reqID type="a">F_4.1.1</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 6a3ab267-5472-4a19-b725-53fb45ad41fd</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Trailer Door</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::11:54:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::11:54:53</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall communicate using V2I before the trailer door opens.\par%0D
+}%0D
+</_body>
+			<reqID type="a">F_4.1.2</reqID>
+		</IRequirement>
+		<IClass type="e">
+			<_id type="a">GUID b1754ac1-68fe-4ee9-b059-660305519532</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+
