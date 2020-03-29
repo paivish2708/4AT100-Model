@@ -10,15 +10,10 @@
 	<ISubsystem type="e">
 			<_id type="a">GUID 5d269320-4649-4198-b7bc-d46ed3dbf83d</_id>
 			<_name type="a">F_TruckMFGReqs</_name>
-			<Annotations type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</Annotations>
-			<_modifiedTimeWeak type="a">3.29.2020::13:46:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::13:46:38</_modifiedTime>
-			<_lastID type="a">5</_lastID>
-			<weakCGTime type="a">3.29.2020::13:46:38</weakCGTime>
+			<_modifiedTimeWeak type="a">3.29.2020::15:14:26</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:14:26</_modifiedTime>
+			<_lastID type="a">6</_lastID>
+			<weakCGTime type="a">3.29.2020::15:14:26</weakCGTime>
 			<strongCGTime type="a">3.29.2020::10:51:42</strongCGTime>
 			<_defaultComposite type="s">GUID 46b67fec-649f-454d-aae6-8c28cb1de6f7</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -27,6 +22,7 @@
 				<value>GUID 96f0a4de-dd11-4812-99e1-a7e3ed28ca66</value>
 				<value>GUID 81c78c80-5671-4c72-9042-e83f361e7732</value>
 				<value>GUID 1c814139-7c24-4e8e-8453-d101499fa896</value>
+				<value>GUID 039ae7ea-36f7-4342-b972-1548131c9107</value>
 				<value>GUID 46b67fec-649f-454d-aae6-8c28cb1de6f7</value>
 			</AggregatesList>
 		</ISubsystem>
@@ -44,6 +40,10 @@
 			<fileName type="a">Comfort_2</fileName>
 			<_id type="a">GUID 1c814139-7c24-4e8e-8453-d101499fa896</_id>
 			<_name type="a">Comfort</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">F_costs</fileName>
+			<_id type="a">GUID 039ae7ea-36f7-4342-b972-1548131c9107</_id>
 		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID 46b67fec-649f-454d-aae6-8c28cb1de6f7</_id>

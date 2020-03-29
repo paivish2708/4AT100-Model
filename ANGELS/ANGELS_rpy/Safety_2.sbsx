@@ -9,18 +9,20 @@
 	<RHAPSODY-MODEL>
 	<ISubsystem type="e">
 			<_id type="a">GUID 59355d78-62b3-4359-aa4e-191eb2935d98</_id>
-			<_myState type="a">8192</_myState>
 			<_name type="a">Safety</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::13:50:4</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::13:50:4</_modifiedTime>
-			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">3.29.2020::13:50:4</weakCGTime>
+			<_modifiedTimeWeak type="a">3.29.2020::15:43:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:43:37</_modifiedTime>
+			<_lastID type="a">2</_lastID>
+			<weakCGTime type="a">3.29.2020::15:43:37</weakCGTime>
 			<strongCGTime type="a">3.29.2020::13:4:59</strongCGTime>
 			<_defaultComposite type="s">GUID 9ef71f18-e777-4beb-a69f-030948e701bc</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 51f548b8-8afe-4d3c-9610-414e6ab2be0e</value>
+				<value>GUID 43b3721d-58a2-4d5a-9725-878af19861b2</value>
+				<value>GUID f728ab7f-e1ce-4ae0-89b6-ec4e7a9848e4</value>
+				<value>GUID 66985d7f-0e5a-4222-9f09-56c0d9af162e</value>
 				<value>GUID 9ef71f18-e777-4beb-a69f-030948e701bc</value>
 			</AggregatesList>
 		</ISubsystem>
@@ -113,12 +115,225 @@
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID 43b3721d-58a2-4d5a-9725-878af19861b2</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Minimal Latency for Shutdown</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::15:43:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:43:37</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall shut down with the least possible latency when the emergency shutoff siwtches are actuated.\par%0D
+}%0D
+</_body>
+			<reqID type="a">NF2.4.4</reqID>
+			<AggregatesList type="e">
+				<value>GUID 0d2a178b-8e2b-49f2-94a8-526e2433ad3e</value>
+				<value>GUID c35250c3-b9b1-4df9-90d9-44c86a5da538</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 0d2a178b-8e2b-49f2-94a8-526e2433ad3e</_id>
+			<_name type="a">Improve driver safety</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.29.2020::15:43:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:43:16</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">ISubsystem</_hm2Class>
+					<_hfilename type="a">.\Safety.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_TruckMFGReqs</_hsubsystem>
+					<_hname type="a">Safety</_hname>
+					<_hid type="a">GUID 547e35eb-9480-4f2c-ad53-f12efbe6b7a1</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 43b3721d-58a2-4d5a-9725-878af19861b2</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID c35250c3-b9b1-4df9-90d9-44c86a5da538</_id>
+			<_name type="a">Stop truck</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.29.2020::15:43:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:43:37</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">ISubsystem</_hm2Class>
+					<_hfilename type="a">.\Safety_1.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Functional::F_TruckMFGReqs</_hsubsystem>
+					<_hname type="a">Safety</_hname>
+					<_hid type="a">GUID 81c78c80-5671-4c72-9042-e83f361e7732</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 43b3721d-58a2-4d5a-9725-878af19861b2</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID f728ab7f-e1ce-4ae0-89b6-ec4e7a9848e4</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Take-over Request handling</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::15:42:47</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:42:47</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system should hand over control to the DC/driver in case of an override request with the least possible response time.\par%0D
+}%0D
+</_body>
+			<reqID type="a">NF2.4.5</reqID>
+			<AggregatesList type="e">
+				<value>GUID e179062a-455f-4227-a340-d584351d6bc8</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID e179062a-455f-4227-a340-d584351d6bc8</_id>
+			<_name type="a">Improve driver safety</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.29.2020::15:42:47</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:42:47</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">ISubsystem</_hm2Class>
+					<_hfilename type="a">.\Safety.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_TruckMFGReqs</_hsubsystem>
+					<_hname type="a">Safety</_hname>
+					<_hid type="a">GUID 547e35eb-9480-4f2c-ad53-f12efbe6b7a1</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID f728ab7f-e1ce-4ae0-89b6-ec4e7a9848e4</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID 66985d7f-0e5a-4222-9f09-56c0d9af162e</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Bounded Jitter for brakes actuation</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::15:40:52</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:40:52</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system should lock its wheels within a bounded activation interval and halt the vehicle in case of a shutdown request\par%0D
+}%0D
+</_body>
+			<AggregatesList type="e">
+				<value>GUID 3bb29c69-389d-4ba4-a135-8a6cc46bc0de</value>
+				<value>GUID 05b46e74-a5e6-447e-9c7b-e799a11d40ca</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 3bb29c69-389d-4ba4-a135-8a6cc46bc0de</_id>
+			<_name type="a">Minimal Latency for shutdown</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.29.2020::15:39:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:39:37</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">ISubsystem</_hm2Class>
+					<_hid type="a">GUID 59355d78-62b3-4359-aa4e-191eb2935d98</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 66985d7f-0e5a-4222-9f09-56c0d9af162e</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 05b46e74-a5e6-447e-9c7b-e799a11d40ca</_id>
+			<_name type="a">Stop truck</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.29.2020::15:40:52</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:40:52</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">ISubsystem</_hm2Class>
+					<_hfilename type="a">.\Safety_1.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Functional::F_TruckMFGReqs</_hsubsystem>
+					<_hname type="a">Safety</_hname>
+					<_hid type="a">GUID 81c78c80-5671-4c72-9042-e83f361e7732</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 66985d7f-0e5a-4222-9f09-56c0d9af162e</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IClass type="e">
 			<_id type="a">GUID 9ef71f18-e777-4beb-a69f-030948e701bc</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

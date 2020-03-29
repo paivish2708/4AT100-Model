@@ -21,12 +21,12 @@
 						<_placement type="p">
 							<CCommon_WINDOWPLACEMENT type="e">
 								<m_nLength type="a">44</m_nLength>
-								<m_nFlags type="a">2</m_nFlags>
-								<m_showCmd type="a">3</m_showCmd>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
 								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
-								<m_ptMaxPositionX type="a">-9</m_ptMaxPositionX>
-								<m_ptMaxPositionY type="a">-38</m_ptMaxPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
 								<m_nLeft type="a">32</m_nLeft>
 								<m_nTop type="a">32</m_nTop>
 								<m_nRight type="a">1286</m_nRight>
@@ -41,15 +41,15 @@
 								<_hid type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">20 0 </_UpLeft>
-						<_DownRight type="a">432 639 </_DownRight>
-						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
-						<m_bIsActiveView type="a">1</m_bIsActiveView>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">4443 1453 </_DownRight>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 				</IRPYRawContainer>
 			</myViewsWithID>
-			<_fullName type="a">C:\Users\s156407\Documents\courses\Master year 1\Kwartiel 3\4AT100\Gitbash\4AT100-Model\ANGELS\ANGELS</_fullName>
+			<_fullName type="a">C:\Users\LAPTOP\Documents\TUE\Q3\Automotive Systems project\ANGELS\4AT100 Model\ANGELS\ANGELS</_fullName>
 			<m_SearchScopeList type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -78,23 +78,13 @@
 				<name type="a">%ABHLR%BB B_TruckMFGReqs</name>
 				<idOrFolder type="a">#startHnd# INObjectHandle 
 	- _m2Class = &quot;ISubsystem&quot;#hndSem#
-	- _filename = &quot;C:\\Users\\s156407\\Documents\\courses\\Master year 1\\Kwartiel 3\\4AT100\\Gitbash\\4AT100-Model\\ANGELS\\ANGELS_rpy\\B_TruckMFGReqs.sbsx&quot;#hndSem#
+	- _filename = &quot;C:\\Users\\LAPTOP\\Documents\\TUE\\Q3\\Automotive Systems project\\ANGELS\\4AT100 Model\\ANGELS\\ANGELS_rpy\\B_TruckMFGReqs.sbsx&quot;#hndSem#
 	- _subsystem = &quot;RequirementsAnalysisPkg::Business&quot;#hndSem#
 	- _name = &quot;B_TruckMFGReqs&quot;#hndSem#
 	- _id = GUID 34334493-b255-41d2-9d01-387d45fc1a3c#hndSem#
 #endHnd#</idOrFolder>
 			</favoritesItem>
 			
-
-	- tableMatrixRowAdditionHight = {
-		count=1;
-		{ - TableMatrixView
-			id=c691cb6a-ba3a-44ca-8f4b-3a8b9ea0ff61;
-			rowAdditionalHight=;;
-			rowAdditionalHightExt=;
-		}
-	}
-
 		</CGEMdiWorkspace>
 		
 	</RHAPSODY-MODEL>
