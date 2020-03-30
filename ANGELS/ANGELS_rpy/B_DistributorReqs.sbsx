@@ -11,15 +11,22 @@
 			<_id type="a">GUID 94e28a2b-b7f0-47b5-976a-9d7879fa3eab</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">B_DistributorReqs</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::10:51:51</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::10:51:51</_modifiedTime>
-			<weakCGTime type="a">3.29.2020::10:51:51</weakCGTime>
+			<_modifiedTimeWeak type="a">3.30.2020::17:54:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.30.2020::17:56:50</_modifiedTime>
+			<_lastID type="a">6</_lastID>
+			<weakCGTime type="a">3.30.2020::17:54:21</weakCGTime>
 			<strongCGTime type="a">3.29.2020::10:51:51</strongCGTime>
 			<_defaultComposite type="s">GUID 4ba1b54a-1585-41a6-96c5-b7b922d441ab</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 16f7fa01-f781-435c-902c-cacb9214c1c5</value>
+				<value>GUID 75bcac54-28a2-457b-91df-d3bb8c1fe61e</value>
+				<value>GUID d6ad2aee-a945-4253-84ef-ffd90a31bea3</value>
+				<value>GUID 26b83f5e-5af0-4bae-81a8-6ee982778bf8</value>
+				<value>GUID e2ffea3a-9aa3-4624-b18d-ce39a121225c</value>
+				<value>GUID c347bc59-0ad2-4e53-a0bf-8600f1012438</value>
+				<value>GUID 0039facb-611b-4808-8e10-299f6fcb3231</value>
 				<value>GUID 4ba1b54a-1585-41a6-96c5-b7b922d441ab</value>
 			</AggregatesList>
 		</ISubsystem>
@@ -27,6 +34,30 @@
 			<fileName type="a">Costs_1</fileName>
 			<_id type="a">GUID 16f7fa01-f781-435c-902c-cacb9214c1c5</_id>
 			<_name type="a">Costs</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Efficiency_dist</fileName>
+			<_id type="a">GUID 75bcac54-28a2-457b-91df-d3bb8c1fe61e</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Safety_dist</fileName>
+			<_id type="a">GUID d6ad2aee-a945-4253-84ef-ffd90a31bea3</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Emission_dist</fileName>
+			<_id type="a">GUID 26b83f5e-5af0-4bae-81a8-6ee982778bf8</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Workload</fileName>
+			<_id type="a">GUID e2ffea3a-9aa3-4624-b18d-ce39a121225c</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Smart_dist</fileName>
+			<_id type="a">GUID c347bc59-0ad2-4e53-a0bf-8600f1012438</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Reliability_dist</fileName>
+			<_id type="a">GUID 0039facb-611b-4808-8e10-299f6fcb3231</_id>
 		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID 4ba1b54a-1585-41a6-96c5-b7b922d441ab</_id>
