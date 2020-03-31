@@ -45,8 +45,8 @@
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 -90 </_UpLeft>
-						<_DownRight type="a">1010 377 </_DownRight>
-						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<_DownRight type="a">1294 377 </_DownRight>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
 						<m_bIsActiveView type="a">1</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
