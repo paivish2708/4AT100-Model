@@ -11,11 +11,19 @@
 			<_id type="a">GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.31.2020::20:30:2</_modifiedTime>
 			<_lastID type="a">14</_lastID>
 			<weakCGTime type="a">3.31.2020::21:4:42</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:4:42</strongCGTime>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::20:30:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::20:30:2</_modifiedTime>
+			<_lastID type="a">14</_lastID>
+			<weakCGTime type="a">3.31.2020::20:30:2</weakCGTime>
+			<strongCGTime type="a">3.31.2020::19:35:2</strongCGTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_defaultComposite type="s">GUID fabbb408-de82-424e-8fce-216617ff1ef0</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
@@ -38,10 +46,17 @@
 			<_id type="a">GUID fabbb408-de82-424e-8fce-216617ff1ef0</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">3.31.2020::21:4:42</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:4:42</strongCGTime>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::19:35:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">3.31.2020::19:35:2</weakCGTime>
+			<strongCGTime type="a">3.31.2020::19:35:2</strongCGTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -52,19 +67,32 @@
 			<_id type="a">GUID 7ff30776-c3a5-45fc-820c-bff3158c6232</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DC</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\System_Context.omdx</_hfilename>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::19:35:2</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\System_Context.omdx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hname type="a">System Context</_hname>
 					<_hid type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_hid>
 				</IHandle>
 			</_theMainDiagram>
 			<_modifiedTime type="a">3.31.2020::18:56:12</_modifiedTime>
 			<_lastID type="a">2</_lastID>
+<<<<<<< HEAD
 			<weakCGTime type="a">3.31.2020::21:4:42</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:4:42</strongCGTime>
+=======
+			<weakCGTime type="a">3.31.2020::19:35:2</weakCGTime>
+			<strongCGTime type="a">3.31.2020::19:35:2</strongCGTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -85,7 +113,11 @@
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
+<<<<<<< HEAD
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\Default.sbsx</_hfilename>
+=======
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hname type="a">ANGELS</_hname>
 					<_hid type="a">GUID ba7ff1ec-3720-44d9-9f25-dd97ab9cf315</_hid>
@@ -107,7 +139,11 @@
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
+<<<<<<< HEAD
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\Default.sbsx</_hfilename>
+=======
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hname type="a">ANGELS</_hname>
 					<_hid type="a">GUID ba7ff1ec-3720-44d9-9f25-dd97ab9cf315</_hid>
@@ -127,7 +163,11 @@
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
+<<<<<<< HEAD
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\Default.sbsx</_hfilename>
+=======
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hname type="a">ANGELS</_hname>
 					<_hid type="a">GUID ba7ff1ec-3720-44d9-9f25-dd97ab9cf315</_hid>
@@ -140,18 +180,31 @@
 			<_id type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DC Operator</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\System_Context.omdx</_hfilename>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::19:35:2</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\System_Context.omdx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hname type="a">System Context</_hname>
 					<_hid type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_hid>
 				</IHandle>
 			</_theMainDiagram>
 			<_modifiedTime type="a">3.31.2020::19:8:8</_modifiedTime>
+<<<<<<< HEAD
 			<weakCGTime type="a">3.31.2020::21:4:42</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:4:42</strongCGTime>
+=======
+			<weakCGTime type="a">3.31.2020::19:35:2</weakCGTime>
+			<strongCGTime type="a">3.31.2020::19:35:2</strongCGTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -172,7 +225,11 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
+<<<<<<< HEAD
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\Default.sbsx</_hfilename>
+=======
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hname type="a">ANGELS</_hname>
 					<_hid type="a">GUID ba7ff1ec-3720-44d9-9f25-dd97ab9cf315</_hid>
@@ -193,7 +250,11 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
+<<<<<<< HEAD
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\Default.sbsx</_hfilename>
+=======
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hname type="a">ANGELS</_hname>
 					<_hid type="a">GUID ba7ff1ec-3720-44d9-9f25-dd97ab9cf315</_hid>
@@ -202,7 +263,11 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+<<<<<<< HEAD
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\Default.sbsx</_hfilename>
+=======
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hclass type="a">ANGELS</_hclass>
 					<_hname type="a">itsDC Operator_1</_hname>
@@ -216,18 +281,31 @@
 			<_id type="a">GUID 516c76cb-338f-40c3-a898-f904221cfb96</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\System_Context.omdx</_hfilename>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::20:30:40</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\System_Context.omdx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hname type="a">System Context</_hname>
 					<_hid type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_hid>
 				</IHandle>
 			</_theMainDiagram>
 			<_modifiedTime type="a">3.31.2020::20:30:40</_modifiedTime>
+<<<<<<< HEAD
 			<weakCGTime type="a">3.31.2020::21:4:42</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:4:42</strongCGTime>
+=======
+			<weakCGTime type="a">3.31.2020::20:30:40</weakCGTime>
+			<strongCGTime type="a">3.31.2020::19:35:2</strongCGTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -247,7 +325,11 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
+<<<<<<< HEAD
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\Default.sbsx</_hfilename>
+=======
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hname type="a">Truck</_hname>
 					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
@@ -256,7 +338,11 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+<<<<<<< HEAD
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\Default.sbsx</_hfilename>
+=======
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hclass type="a">Truck</_hclass>
 					<_hname type="a">itsDriver</_hname>
@@ -270,18 +356,31 @@
 			<_id type="a">GUID 8a324cdf-404e-469e-8e07-d8bcf2dec122</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Government</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\System_Context.omdx</_hfilename>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::19:35:2</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\System_Context.omdx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hname type="a">System Context</_hname>
 					<_hid type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_hid>
 				</IHandle>
 			</_theMainDiagram>
 			<_modifiedTime type="a">3.31.2020::18:9:10</_modifiedTime>
+<<<<<<< HEAD
 			<weakCGTime type="a">3.31.2020::21:4:42</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:4:42</strongCGTime>
+=======
+			<weakCGTime type="a">3.31.2020::19:35:2</weakCGTime>
+			<strongCGTime type="a">3.31.2020::19:35:2</strongCGTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -292,18 +391,31 @@
 			<_id type="a">GUID d863e4db-2f5a-44c1-8e9b-55f3ee45dc5e</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Localization System</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\System_Context.omdx</_hfilename>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::19:35:2</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\System_Context.omdx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hname type="a">System Context</_hname>
 					<_hid type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_hid>
 				</IHandle>
 			</_theMainDiagram>
 			<_modifiedTime type="a">3.31.2020::18:10:21</_modifiedTime>
+<<<<<<< HEAD
 			<weakCGTime type="a">3.31.2020::21:4:42</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:4:42</strongCGTime>
+=======
+			<weakCGTime type="a">3.31.2020::19:35:2</weakCGTime>
+			<strongCGTime type="a">3.31.2020::19:35:2</strongCGTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -314,18 +426,31 @@
 			<_id type="a">GUID 23c972f4-cc30-419c-a741-5d23c4eb9568</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Safety standards</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\System_Context.omdx</_hfilename>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::19:35:2</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\System_Context.omdx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hname type="a">System Context</_hname>
 					<_hid type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_hid>
 				</IHandle>
 			</_theMainDiagram>
 			<_modifiedTime type="a">3.31.2020::18:17:10</_modifiedTime>
+<<<<<<< HEAD
 			<weakCGTime type="a">3.31.2020::21:4:42</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:4:42</strongCGTime>
+=======
+			<weakCGTime type="a">3.31.2020::19:35:2</weakCGTime>
+			<strongCGTime type="a">3.31.2020::19:35:2</strongCGTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -336,18 +461,31 @@
 			<_id type="a">GUID cfb715d6-1ada-41e9-ab30-0cc0ca3a78ea</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Collision detection &amp; avoidance System</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\System_Context.omdx</_hfilename>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::20:22:29</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\System_Context.omdx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hname type="a">System Context</_hname>
 					<_hid type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_hid>
 				</IHandle>
 			</_theMainDiagram>
 			<_modifiedTime type="a">3.31.2020::20:22:29</_modifiedTime>
+<<<<<<< HEAD
 			<weakCGTime type="a">3.31.2020::21:4:42</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:4:42</strongCGTime>
+=======
+			<weakCGTime type="a">3.31.2020::20:22:29</weakCGTime>
+			<strongCGTime type="a">3.31.2020::19:35:2</strongCGTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -367,7 +505,11 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
+<<<<<<< HEAD
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\Default.sbsx</_hfilename>
+=======
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hname type="a">Obstacles</_hname>
 					<_hid type="a">GUID 44fb26d9-4a53-48c7-9fd6-54fd3ee82c1f</_hid>
@@ -376,7 +518,11 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+<<<<<<< HEAD
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\Default.sbsx</_hfilename>
+=======
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hclass type="a">Obstacles</_hclass>
 					<_hname type="a">itsCollision detection &amp; avoidance System</_hname>
@@ -390,18 +536,31 @@
 			<_id type="a">GUID e55d995a-9feb-4cb1-8f09-35cc29b55999</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Communication System</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\System_Context.omdx</_hfilename>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::19:35:2</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\System_Context.omdx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hname type="a">System Context</_hname>
 					<_hid type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_hid>
 				</IHandle>
 			</_theMainDiagram>
 			<_modifiedTime type="a">3.31.2020::18:22:2</_modifiedTime>
+<<<<<<< HEAD
 			<weakCGTime type="a">3.31.2020::21:4:42</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:4:42</strongCGTime>
+=======
+			<weakCGTime type="a">3.31.2020::19:35:2</weakCGTime>
+			<strongCGTime type="a">3.31.2020::19:35:2</strongCGTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -412,18 +571,31 @@
 			<_id type="a">GUID 8e5c4573-5211-40ef-91b1-e7700c343efe</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Charging System</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\System_Context.omdx</_hfilename>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::19:35:2</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\System_Context.omdx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hname type="a">System Context</_hname>
 					<_hid type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_hid>
 				</IHandle>
 			</_theMainDiagram>
 			<_modifiedTime type="a">3.31.2020::18:22:5</_modifiedTime>
+<<<<<<< HEAD
 			<weakCGTime type="a">3.31.2020::21:4:42</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:4:42</strongCGTime>
+=======
+			<weakCGTime type="a">3.31.2020::19:35:2</weakCGTime>
+			<strongCGTime type="a">3.31.2020::19:35:2</strongCGTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -434,18 +606,31 @@
 			<_id type="a">GUID 59d61bac-6cc7-4b73-b48d-f5b53bfc7646</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Docking System</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\System_Context.omdx</_hfilename>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::19:35:2</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\System_Context.omdx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hname type="a">System Context</_hname>
 					<_hid type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_hid>
 				</IHandle>
 			</_theMainDiagram>
 			<_modifiedTime type="a">3.31.2020::18:45:5</_modifiedTime>
+<<<<<<< HEAD
 			<weakCGTime type="a">3.31.2020::21:4:42</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:4:42</strongCGTime>
+=======
+			<weakCGTime type="a">3.31.2020::19:35:2</weakCGTime>
+			<strongCGTime type="a">3.31.2020::19:35:2</strongCGTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -465,7 +650,11 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
+<<<<<<< HEAD
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\Default.sbsx</_hfilename>
+=======
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hname type="a">ANGELS</_hname>
 					<_hid type="a">GUID ba7ff1ec-3720-44d9-9f25-dd97ab9cf315</_hid>
@@ -474,7 +663,11 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+<<<<<<< HEAD
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\Default.sbsx</_hfilename>
+=======
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hclass type="a">ANGELS</_hclass>
 					<_hname type="a">itsDocking System</_hname>
@@ -488,18 +681,31 @@
 			<_id type="a">GUID d1815240-c7ca-42c7-8552-c599700d0b3c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Pedestrian</_name>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\..\..\..\..\..\..\..\..\..\Desktop\System_Context.omdx</_hfilename>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::20:27:13</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\System_Context.omdx</_hfilename>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 					<_hname type="a">System Context</_hname>
 					<_hid type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_hid>
 				</IHandle>
 			</_theMainDiagram>
 			<_modifiedTime type="a">3.31.2020::20:27:13</_modifiedTime>
+<<<<<<< HEAD
 			<weakCGTime type="a">3.31.2020::21:4:42</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:4:42</strongCGTime>
+=======
+			<weakCGTime type="a">3.31.2020::20:27:13</weakCGTime>
+			<strongCGTime type="a">3.31.2020::20:27:11</strongCGTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>

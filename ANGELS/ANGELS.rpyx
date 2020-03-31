@@ -24,8 +24,13 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
+<<<<<<< HEAD
 			<_modifiedTimeWeak type="a">3.31.2020::21:4:42</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.31.2020::21:4:42</_modifiedTime>
+=======
+			<_modifiedTimeWeak type="a">3.31.2020::19:35:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::19:35:2</_modifiedTime>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 			<_lastID type="a">5</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">
@@ -134,10 +139,15 @@
 		</ISubsystem>
 		<IDiagram type="e">
 			<fileName type="a">System_Context</fileName>
+<<<<<<< HEAD
 			<_persistAs type="a">C:\Users\LAPTOP\Desktop</_persistAs>
 			<_id type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_id>
 			<_name type="a">System Context</_name>
 			<_partOfTheModelKind type="a">referenceunit</_partOfTheModelKind>
+=======
+			<_id type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_id>
+			<_name type="a">System Context</_name>
+>>>>>>> 6ae2c85f055048242b9c7dcd9ca1fa1103b79301
 		</IDiagram>
 		<IComponent type="e">
 			<fileName type="a">DefaultComponent</fileName>

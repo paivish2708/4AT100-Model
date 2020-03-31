@@ -13,7 +13,7 @@
 			<_properties type="p"><IPropertyContainer type="e">
 				<Subjects type="c">
 					<IRPYRawContainer type="e">
-						<size type="a">1</size>
+						<size type="a">3</size>
 						<IPropertySubject type="e">
 							<_Name type="a">Format</_Name>
 							<Metaclasses type="c">
@@ -164,6 +164,96 @@
 							</Metaclasses>
 						</IPropertySubject>
 						
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Graphics</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">ShowLabels</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+						<IPropertySubject type="e">
+							<_Name type="a">ObjectModelGe</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">2</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Class</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">5</size>
+												<IProperty type="e">
+													<_Name type="a">ShowAttributes</_Name>
+													<_Value type="a">Public</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">All,None,Public,Explicit</_ExtraTypeInfo>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ShowInheritedAttributes</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ShowInheritedOperations</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ShowName</_Name>
+													<_Value type="a">Name_only</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">Full_path,Relative,Name_only,Label</_ExtraTypeInfo>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">ShowOperations</_Name>
+													<_Value type="a">All</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">All,None,Public,Explicit</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Object</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">MultilineNameCompartment</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
 					</IRPYRawContainer>
 				</Subjects>
 			</IPropertyContainer>
@@ -184,8 +274,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::17:2:21</_modifiedTime>
-			<_lastModifiedTime type="a">3.31.2020::17:2:21</_lastModifiedTime>
+			<_modifiedTime type="a">3.31.2020::20:34:27</_modifiedTime>
+			<_lastModifiedTime type="a">3.31.2020::20:34:27</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -444,7 +534,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Maintenance costs</m_str>
+					<m_str type="a">(U)Maintenance costs</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -552,7 +642,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Driver training costs</m_str>
+					<m_str type="a">(U)Driver training costs</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -661,7 +751,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Driver salary</m_str>
+					<m_str type="a">(U)Driver salary</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -769,7 +859,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Fuel costs</m_str>
+					<m_str type="a">(U)Fuel costs</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -915,7 +1005,7 @@
 					<_hfilename type="a">.\B_LogisticsReqs.sbsx</_hfilename>
 					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_LogisticsReqs</_hsubsystem>
 					<_hname type="a">Costs_0</_hname>
-					<_hid type="a">GUID 4c756aba-cc24-498b-b90b-068bc893fd00</_hid>
+					<_hid type="a">GUID c811e31c-84fd-49a7-9a73-12d53c1a9bd6</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s"></m_pParent>
@@ -976,7 +1066,7 @@
 					<_hfilename type="a">.\B_LogisticsReqs.sbsx</_hfilename>
 					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_LogisticsReqs</_hsubsystem>
 					<_hname type="a">Costs_0</_hname>
-					<_hid type="a">GUID 64e0d65e-0f3f-43d1-b2d9-55e276d6b8fa</_hid>
+					<_hid type="a">GUID c811e31c-84fd-49a7-9a73-12d53c1a9bd6</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s"></m_pParent>
@@ -1104,7 +1194,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Maintenance Costs</m_str>
+					<m_str type="a">(U)Maintenance Costs</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1180,7 +1270,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Fuel Costs</m_str>
+					<m_str type="a">(U)Fuel Costs</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1288,7 +1378,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Driver Salary Costs</m_str>
+					<m_str type="a">(U)Driver Salary Costs</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1396,7 +1486,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Driver Training Costs</m_str>
+					<m_str type="a">(U)Driver Training Costs</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1756,7 +1846,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">ANGELS Costs</m_str>
+					<m_str type="a">(U)ANGELS Costs</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1827,7 +1917,7 @@
 					<_hfilename type="a">.\Costs_1.sbsx</_hfilename>
 					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Costs</_hsubsystem>
 					<_hname type="a">Costs</_hname>
-					<_hid type="a">GUID ee06f835-9fde-46fe-9cfc-f3d37c39c1a8</_hid>
+					<_hid type="a">GUID aa1d6575-2c76-4c71-995c-08711cd5c6fd</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s"></m_pParent>
@@ -1926,7 +2016,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">ANGELS R and D Costs</m_str>
+					<m_str type="a">(U)ANGELS R and D Costs</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2096,7 +2186,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Collision Cost</m_str>
+					<m_str type="a">(U)Collision Cost</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2166,7 +2256,7 @@
 					<_hfilename type="a">.\Costs_1.sbsx</_hfilename>
 					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Costs</_hsubsystem>
 					<_hname type="a">Costs</_hname>
-					<_hid type="a">GUID 0bf31d96-dd5b-4685-8d46-702821ad15ba</_hid>
+					<_hid type="a">GUID aa1d6575-2c76-4c71-995c-08711cd5c6fd</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s"></m_pParent>
@@ -2233,7 +2323,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Truck Repair Cost</m_str>
+					<m_str type="a">(U)Truck Repair Cost</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2303,7 +2393,7 @@
 					<_hfilename type="a">.\Costs_1.sbsx</_hfilename>
 					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Costs</_hsubsystem>
 					<_hname type="a">Collision Cost</_hname>
-					<_hid type="a">GUID 601f0f36-aebb-4cc1-a060-7e36919d7d88</_hid>
+					<_hid type="a">GUID ba74573f-0a37-4b85-b493-4cb30195fd8f</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s"></m_pParent>
@@ -2370,7 +2460,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Infrastructure Repair Cost</m_str>
+					<m_str type="a">(U)Infrastructure Repair Cost</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2440,7 +2530,7 @@
 					<_hfilename type="a">.\Costs_1.sbsx</_hfilename>
 					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Costs</_hsubsystem>
 					<_hname type="a">Collision Cost</_hname>
-					<_hid type="a">GUID c0f98f7c-ee95-4aa8-ac3a-37db15d78563</_hid>
+					<_hid type="a">GUID ba74573f-0a37-4b85-b493-4cb30195fd8f</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s"></m_pParent>
@@ -2507,7 +2597,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Human Insurance Cost</m_str>
+					<m_str type="a">(U)Human Insurance Cost</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2677,7 +2767,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Operator Training Cost</m_str>
+					<m_str type="a">(U)Operator Training Cost</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2907,7 +2997,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">System Operator Cost</m_str>
+					<m_str type="a">(U)System Operator Cost</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3044,7 +3134,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Actual Cost of Purchase ANGELS</m_str>
+					<m_str type="a">(U)Actual Cost of Purchase ANGELS</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3182,7 +3272,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Actual Cost for Truck Repair</m_str>
+					<m_str type="a">(U)Actual Cost for Truck Repair</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3319,7 +3409,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Actual Cost of Infrastructure Repair</m_str>
+					<m_str type="a">(U)Actual Cost of Infrastructure Repair</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3456,7 +3546,7 @@
 			<m_pParent type="s">GUID 9e690c6c-6bd2-4505-94a2-93382439f038</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Actual Cost of System Operator Training</m_str>
+					<m_str type="a">(U)Actual Cost of System Operator Training</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
