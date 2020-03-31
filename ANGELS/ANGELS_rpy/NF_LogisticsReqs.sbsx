@@ -11,10 +11,10 @@
 			<_id type="a">GUID c3f2a2fb-547e-4d9f-8c3e-f6d18567b95e</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">NF_LogisticsReqs</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:6:56</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:8:54</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:30:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:30:21</_modifiedTime>
 			<_lastID type="a">8</_lastID>
-			<weakCGTime type="a">3.29.2020::12:6:56</weakCGTime>
+			<weakCGTime type="a">3.31.2020::8:30:21</weakCGTime>
 			<strongCGTime type="a">3.29.2020::10:51:19</strongCGTime>
 			<_defaultComposite type="s">GUID 70fbce0d-aaad-4359-b294-52b2ecbedf04</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -34,94 +34,276 @@
 			<_id type="a">GUID c0b135ad-cc84-4964-92ba-52180bea8946</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Trailer Doors</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:0:57</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:0:57</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:26:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:26:22</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system must open the truck doors automatically within x seconds.\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF_4.1.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID c3bb836f-6409-460d-84fc-ca33bb1b52c9</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID c3bb836f-6409-460d-84fc-ca33bb1b52c9</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Automatically opening trailer door</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:26:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:26:22</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\B_LogisticsReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_LogisticsReqs</_hsubsystem>
+					<_hname type="a">Automatically opening trailer door</_hname>
+					<_hid type="a">GUID 7ad0be23-318c-4ab9-90e7-99a606574020</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID c0b135ad-cc84-4964-92ba-52180bea8946</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 273db399-a30f-4139-918c-07e0eef0d6f3</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Flow of Trucks</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:2:25</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:2:25</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:30:18</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:30:18</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall schedule a minimum of X trucks in the DC within an hour.\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF_4.2.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID 34de0ad6-9b55-4f0e-86df-9f856749b648</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 34de0ad6-9b55-4f0e-86df-9f856749b648</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Scheduling</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:30:18</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:30:18</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\B_LogisticsReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_LogisticsReqs</_hsubsystem>
+					<_hname type="a">Scheduling</_hname>
+					<_hid type="a">GUID 456c7d48-b20c-4a83-875e-78c753f9d5e4</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 273db399-a30f-4139-918c-07e0eef0d6f3</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 80479ab1-8d40-43a1-b286-d252cfc6d363</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Minimum Trucks</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:4:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:4:0</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:30:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:30:21</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall ensure a minimum of 2 trucks driving autonomously inside the DC.\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF_4.2.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID 8ffeb497-a74b-4cae-9261-79db348440c7</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 8ffeb497-a74b-4cae-9261-79db348440c7</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Number of trucks</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:30:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:30:21</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\B_LogisticsReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_LogisticsReqs</_hsubsystem>
+					<_hname type="a">Number of trucks</_hname>
+					<_hid type="a">GUID e5201a62-4b56-4ec0-9726-5bd939b5f89d</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 80479ab1-8d40-43a1-b286-d252cfc6d363</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID fe9d2a6b-3ea8-4169-af37-afdcc814737c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Maintenance Costs</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:5:1</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:5:1</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:13:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:13:4</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall not exceed X \'80 of maintenance costs.\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF_4.3.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID 429c23b5-171f-4322-b5eb-2463a03f3ffa</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 429c23b5-171f-4322-b5eb-2463a03f3ffa</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Maintenance costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:13:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:13:4</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\B_LogisticsReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_LogisticsReqs</_hsubsystem>
+					<_hname type="a">Maintenance costs</_hname>
+					<_hid type="a">GUID 10a4d4a4-c943-47a9-bd41-5ce330b12d6c</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID fe9d2a6b-3ea8-4169-af37-afdcc814737c</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 21f077b8-561c-4665-9d4d-0b0d30e5de56</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver Training Costs</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:5:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:5:38</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:13:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:13:14</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall not exceed X \'80 of driver training costs.\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF_4.3.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID 73461dcf-4f39-4190-b175-4f72898b34f8</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 73461dcf-4f39-4190-b175-4f72898b34f8</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Driver training costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:13:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:13:14</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\B_LogisticsReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_LogisticsReqs</_hsubsystem>
+					<_hname type="a">Driver training costs</_hname>
+					<_hid type="a">GUID 495d1375-44e8-409f-a3df-02717840f9c0</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 21f077b8-561c-4665-9d4d-0b0d30e5de56</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 227715e6-7a08-475d-a61b-caae21e7a0a1</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Fuel Costs</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:6:11</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:6:11</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:13:7</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:13:7</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall not exceed X \'80 of fuel costs.\par%0D
 \par%0D
 }%0D
 </_body>
 			<reqID type="a">NF_4.3.3</reqID>
+			<AggregatesList type="e">
+				<value>GUID 392821c7-8c7c-4b2d-a5f7-90979f607f7e</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 392821c7-8c7c-4b2d-a5f7-90979f607f7e</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Fuel costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:13:7</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:13:7</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\B_LogisticsReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_LogisticsReqs</_hsubsystem>
+					<_hname type="a">Fuel costs</_hname>
+					<_hid type="a">GUID 8bb076c8-02c6-4983-80bb-318279a0f291</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 227715e6-7a08-475d-a61b-caae21e7a0a1</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID ab6445c9-0a79-4da6-a7dc-b0dc09e69f4b</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver Salary Costs</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:6:56</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:6:56</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:13:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:13:11</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall not exceed X \'80 of driver salary costs.\par%0D
 \par%0D
 }%0D
 </_body>
 			<reqID type="a">NF_4.3.4</reqID>
+			<AggregatesList type="e">
+				<value>GUID 516e6d22-2937-4b31-b31c-3530ba9c46fa</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 516e6d22-2937-4b31-b31c-3530ba9c46fa</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Driver salary</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:13:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:13:11</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\B_LogisticsReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_LogisticsReqs</_hsubsystem>
+					<_hname type="a">Driver salary</_hname>
+					<_hid type="a">GUID 9de6220c-21fb-4111-8bc9-c9ef8fef0a4b</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID ab6445c9-0a79-4da6-a7dc-b0dc09e69f4b</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IClass type="e">
 			<_id type="a">GUID 70fbce0d-aaad-4359-b294-52b2ecbedf04</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

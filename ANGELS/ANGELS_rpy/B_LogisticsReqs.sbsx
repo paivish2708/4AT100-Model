@@ -11,10 +11,10 @@
 			<_id type="a">GUID 989ca94c-e56a-480e-84c3-3b531f38d2ba</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">B_LogisticsReqs</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:23:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:23:29</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:28:47</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:28:47</_modifiedTime>
 			<_lastID type="a">10</_lastID>
-			<weakCGTime type="a">3.29.2020::12:23:29</weakCGTime>
+			<weakCGTime type="a">3.31.2020::8:28:47</weakCGTime>
 			<strongCGTime type="a">3.29.2020::10:52:1</strongCGTime>
 			<_defaultComposite type="s">GUID 56436ab2-5b0f-4c46-ab9d-e44f5e903588</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -37,122 +37,474 @@
 			<_id type="a">GUID 126dec16-d0e6-424c-b0d1-42a6f45335a9</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver Rest</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:22:41</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:22:41</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:26:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:26:10</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system must reduce the workload of the drivers so that they can rest or do other things while waiting for the truck to come back\par%0D
 }%0D
 </_body>
 			<reqID type="a">B_4.1.1.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID c6f4a2e6-5112-48f5-ae74-bee1814b2fed</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID c6f4a2e6-5112-48f5-ae74-bee1814b2fed</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Workload</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:26:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:26:10</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Workload</_hname>
+					<_hid type="a">GUID 02fa1ee5-12b9-4df0-81ea-0a5716ac6599</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 126dec16-d0e6-424c-b0d1-42a6f45335a9</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 843696f3-22b7-416d-b35e-eed8e2a082ce</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Reducing Workload</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:23:23</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:23:23</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:26:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:26:16</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system must reduce the workload of the drivers by automating complex manoeuvres for driving inside the DC\par%0D
 }%0D
 </_body>
 			<reqID type="a">B_4.1.1.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID d524bf15-57d4-4bef-a31e-f4a5c5499dba</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID d524bf15-57d4-4bef-a31e-f4a5c5499dba</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Workload</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:26:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:26:16</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Workload</_hname>
+					<_hid type="a">GUID 02fa1ee5-12b9-4df0-81ea-0a5716ac6599</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 843696f3-22b7-416d-b35e-eed8e2a082ce</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 7ad0be23-318c-4ab9-90e7-99a606574020</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Automatically opening trailer door</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:22:36</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:22:36</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:26:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:26:14</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system could reduce the workload of the dock operators by automatically opening the trailer door when docking is completed\par%0D
 }%0D
 </_body>
 			<reqID type="a">B_4.1.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID 721e5d52-94fb-403d-99c5-d96e1a743fde</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 721e5d52-94fb-403d-99c5-d96e1a743fde</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Workload</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:26:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:26:14</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Workload</_hname>
+					<_hid type="a">GUID 02fa1ee5-12b9-4df0-81ea-0a5716ac6599</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 7ad0be23-318c-4ab9-90e7-99a606574020</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 456c7d48-b20c-4a83-875e-78c753f9d5e4</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Scheduling</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:23:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:23:29</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:28:41</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:28:41</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system must improve scheduling of the trucks in the DC, so that the efficiency will be increased\par%0D
 }%0D
 </_body>
 			<reqID type="a">B_4.2.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID e17fa87a-dca6-4492-b7d6-cf3d6a546a36</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID e17fa87a-dca6-4492-b7d6-cf3d6a546a36</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Efficiency</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:28:41</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:28:41</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Efficiency</_hname>
+					<_hid type="a">GUID e116f537-f484-4431-acd2-ff0b6d9a29fc</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 456c7d48-b20c-4a83-875e-78c753f9d5e4</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID e5201a62-4b56-4ec0-9726-5bd939b5f89d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Number of trucks</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:23:18</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:23:18</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:28:43</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:28:43</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system must improve the flow of goods by allowing an increase in the number of trucks driving in the DC\par%0D
 }%0D
 </_body>
 			<reqID type="a">B_4.2.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID 6632b9f7-ffc9-403a-9fda-c8aa484e7569</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 6632b9f7-ffc9-403a-9fda-c8aa484e7569</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Efficiency</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:28:43</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:28:43</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Efficiency</_hname>
+					<_hid type="a">GUID e116f537-f484-4431-acd2-ff0b6d9a29fc</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID e5201a62-4b56-4ec0-9726-5bd939b5f89d</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID fc9e2c14-0735-4280-9c62-072d3a781458</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver schedulability</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:22:51</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:22:51</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:28:47</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:28:47</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system could improve driver schedulability by allowing them to rest while the system is taking over\par%0D
 }%0D
 </_body>
 			<reqID type="a">B_4.2.3</reqID>
+			<AggregatesList type="e">
+				<value>GUID 0073a9f1-5103-4339-9ccf-11c8b8bad042</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 0073a9f1-5103-4339-9ccf-11c8b8bad042</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Efficiency</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:28:47</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:28:47</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Efficiency</_hname>
+					<_hid type="a">GUID e116f537-f484-4431-acd2-ff0b6d9a29fc</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID fc9e2c14-0735-4280-9c62-072d3a781458</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 10a4d4a4-c943-47a9-bd41-5ce330b12d6c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Maintenance costs</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:23:13</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:23:13</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:8:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:8:11</_modifiedTime>
+			<_lastID type="a">2</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall minimise the maintenance costs of the trucks and system\par%0D
 }%0D
 </_body>
 			<reqID type="a">B_4.3.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID 9ad012ae-5031-4be9-867e-757dbe31a79b</value>
+				<value>GUID 4c756aba-cc24-498b-b90b-068bc893fd00</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 9ad012ae-5031-4be9-867e-757dbe31a79b</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::7:34:34</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::7:34:34</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Costs</_hname>
+					<_hid type="a">GUID dd337908-1b22-46d9-93ac-54d1527c9f6a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 10a4d4a4-c943-47a9-bd41-5ce330b12d6c</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 4c756aba-cc24-498b-b90b-068bc893fd00</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Costs_0</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:8:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:8:11</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Costs</_hname>
+					<_hid type="a">GUID dd337908-1b22-46d9-93ac-54d1527c9f6a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 10a4d4a4-c943-47a9-bd41-5ce330b12d6c</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 495d1375-44e8-409f-a3df-02717840f9c0</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver training costs</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:22:59</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:22:59</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:8:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:8:14</_modifiedTime>
+			<_lastID type="a">2</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall minimise the costs of additional driver trainings\par%0D
 }%0D
 </_body>
 			<reqID type="a">B_4.3.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID c1660ad5-7ee4-4246-8785-50f110346dca</value>
+				<value>GUID bf7fd5d7-5bbe-4ed3-872e-740014be0e57</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID c1660ad5-7ee4-4246-8785-50f110346dca</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::7:35:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::7:35:1</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Costs</_hname>
+					<_hid type="a">GUID dd337908-1b22-46d9-93ac-54d1527c9f6a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 495d1375-44e8-409f-a3df-02717840f9c0</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID bf7fd5d7-5bbe-4ed3-872e-740014be0e57</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Costs_0</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:8:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:8:14</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Costs</_hname>
+					<_hid type="a">GUID dd337908-1b22-46d9-93ac-54d1527c9f6a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 495d1375-44e8-409f-a3df-02717840f9c0</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 8bb076c8-02c6-4983-80bb-318279a0f291</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Fuel costs</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:23:7</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:23:7</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:8:20</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:8:20</_modifiedTime>
+			<_lastID type="a">2</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall minimise the fuel costs (by implementing another powertrain solution)\par%0D
 }%0D
 </_body>
 			<reqID type="a">B_4.3.3</reqID>
+			<AggregatesList type="e">
+				<value>GUID 0e3bf925-2e15-4590-8945-c4306c058a89</value>
+				<value>GUID c811e31c-84fd-49a7-9a73-12d53c1a9bd6</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 0e3bf925-2e15-4590-8945-c4306c058a89</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::7:35:20</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::7:35:20</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Costs</_hname>
+					<_hid type="a">GUID dd337908-1b22-46d9-93ac-54d1527c9f6a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 8bb076c8-02c6-4983-80bb-318279a0f291</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID c811e31c-84fd-49a7-9a73-12d53c1a9bd6</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Costs_0</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:8:20</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:8:20</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Costs</_hname>
+					<_hid type="a">GUID dd337908-1b22-46d9-93ac-54d1527c9f6a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 8bb076c8-02c6-4983-80bb-318279a0f291</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 9de6220c-21fb-4111-8bc9-c9ef8fef0a4b</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver salary</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::12:22:47</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::12:22:47</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::8:8:17</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:8:17</_modifiedTime>
+			<_lastID type="a">2</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system could minimise driver salary costs by allowing them to rest in the DC instead of on the road\par%0D
 }%0D
 </_body>
 			<reqID type="a">B_4.3.4</reqID>
+			<AggregatesList type="e">
+				<value>GUID eba2d81c-55f2-45c1-a7d2-ddbcac2d24c7</value>
+				<value>GUID 64e0d65e-0f3f-43d1-b2d9-55e276d6b8fa</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID eba2d81c-55f2-45c1-a7d2-ddbcac2d24c7</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::7:35:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::7:35:13</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Costs</_hname>
+					<_hid type="a">GUID dd337908-1b22-46d9-93ac-54d1527c9f6a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 9de6220c-21fb-4111-8bc9-c9ef8fef0a4b</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 64e0d65e-0f3f-43d1-b2d9-55e276d6b8fa</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Costs_0</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::8:8:17</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::8:8:17</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Costs</_hname>
+					<_hid type="a">GUID dd337908-1b22-46d9-93ac-54d1527c9f6a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 9de6220c-21fb-4111-8bc9-c9ef8fef0a4b</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IClass type="e">
 			<_id type="a">GUID 56436ab2-5b0f-4c46-ab9d-e44f5e903588</_id>
 			<_myState type="a">40960</_myState>
