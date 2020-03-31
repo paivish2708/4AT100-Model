@@ -10,10 +10,10 @@
 	<ISubsystem type="e">
 			<_id type="a">GUID 59355d78-62b3-4359-aa4e-191eb2935d98</_id>
 			<_name type="a">Safety</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::15:43:37</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::15:43:37</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::12:21:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::12:21:35</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">3.29.2020::15:43:37</weakCGTime>
+			<weakCGTime type="a">3.31.2020::12:21:35</weakCGTime>
 			<strongCGTime type="a">3.29.2020::13:4:59</strongCGTime>
 			<_defaultComposite type="s">GUID 9ef71f18-e777-4beb-a69f-030948e701bc</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -30,11 +30,11 @@
 			<_id type="a">GUID 51f548b8-8afe-4d3c-9610-414e6ab2be0e</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Obstacle clearance</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::13:50:4</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::13:50:4</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil Calibri;}{\f1\fnil\fcharset0 Arial;}}%0D
+			<_modifiedTimeWeak type="a">3.31.2020::12:21:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::12:21:35</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil Calibri;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset0 Arial;}}%0D
 {\colortbl ;\red0\green0\blue0;}%0D
-\viewkind4\uc1\pard\cf1\f0\fs22 The system shall aviod obstacles by driving around with a clearance of at least X meters\cf0\f1\fs20\par%0D
+\viewkind4\uc1\pard\cf1\f0\fs22 The system shall aviod obstacles by driving around with a clearance of at least \lang1043\f1 5\lang1033\f0  meters\cf0\f2\fs20\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF_2.4.1</reqID>
