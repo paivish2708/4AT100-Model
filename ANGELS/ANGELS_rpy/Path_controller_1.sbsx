@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 0c50888a-1312-4650-94a5-93b77c38f77e</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Path_controller</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">LLR</_hname>
+							<_hid type="a">GUID 9f570309-11b1-4e35-89ea-ddbb8af4283d</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.29.2020::15:14:30</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:14:30</_modifiedTime>
+			<_lastID type="a">6</_lastID>
+			<weakCGTime type="a">3.29.2020::15:14:30</weakCGTime>
+			<strongCGTime type="a">3.29.2020::14:48:43</strongCGTime>
+			<_defaultComposite type="s">GUID bacd0a45-a6b0-4fe1-9d9a-8bb89dfb8e2f</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 4b62dccb-51c3-4459-b724-b8961c833afd</value>
+				<value>GUID b7934a8e-d575-46a9-be01-ccd782487a4f</value>
+				<value>GUID b60809dc-d907-40fd-af86-8d5e8aaf357f</value>
+				<value>GUID 75670958-c636-40b6-99ee-09fbb99486ca</value>
+				<value>GUID bacd0a45-a6b0-4fe1-9d9a-8bb89dfb8e2f</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID 4b62dccb-51c3-4459-b724-b8961c833afd</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Tracking accuracy</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:56:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:56:59</_modifiedTime>
+			<_body type="a">{\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri Light;}{\f1\fnil\fcharset0 Arial;}}%0D
+{\colortbl ;\red255\green255\blue0;}%0D
+\viewkind4\uc1\pard\ltrpar\fi-360\li720\sa160\sl252\slmult1\f0\fs22 The system shall follow the desired path \highlight1 within 1 meter\highlight0  accuracy (when no obstacles are present). \b Rationale: the 1 meter may be necessary for accurate docking\b0\par%0D
+\pard\ltrpar\f1\fs20\par%0D
+}%0D
+</_body>
+			<reqID type="a">NF_PC_1.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID c049b153-e051-45d0-86c2-270fb6fedf9f</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID c049b153-e051-45d0-86c2-270fb6fedf9f</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Tracking reference</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">refine</_hname>
+							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.29.2020::14:56:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:56:59</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Path_controller.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Functional::Path_controller</_hsubsystem>
+					<_hname type="a">Tracking reference</_hname>
+					<_hid type="a">GUID 3e8c3f7d-106e-43e5-94e5-ffd5382d7b58</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 4b62dccb-51c3-4459-b724-b8961c833afd</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID b7934a8e-d575-46a9-be01-ccd782487a4f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Speed limit</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:53:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:53:28</_modifiedTime>
+			<_body type="a">{\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri Light;}{\f1\fnil\fcharset0 Arial;}}%0D
+{\colortbl ;\red255\green255\blue0;}%0D
+\viewkind4\uc1\pard\ltrpar\fi-360\li720\sa160\sl252\slmult1\f0\fs22 The system shall stay below the DC speed limits at all times \highlight1 (X km/h\highlight0 ).\par%0D
+\pard\ltrpar\f1\fs20\par%0D
+}%0D
+</_body>
+			<reqID type="a">NF_PC_1.2</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID b60809dc-d907-40fd-af86-8d5e8aaf357f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Acceleration</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::14:54:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::14:54:15</_modifiedTime>
+			<_body type="a">{\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri Light;}{\f1\fnil\fcharset0 Arial;}}%0D
+{\colortbl ;\red255\green255\blue0;}%0D
+\viewkind4\uc1\pard\ltrpar\f0\fs22 The system shall accelerate with less than \highlight1 0.5G\highlight0 . \b Time should be minimized around the DC, but safety is more important. The trucks should not be racing around the DC, because then the pedestrians would not feel safe. Hence, acceleration, yaw rate etc. should be limited.\b0\f1\fs20\par%0D
+}%0D
+</_body>
+			<reqID type="a">NF_PC_1.3</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 75670958-c636-40b6-99ee-09fbb99486ca</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Minimum time adjustment</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::15:1:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:1:51</_modifiedTime>
+			<_body type="a">{\rtf1\fbidis\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Calibri Light;}{\f1\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\ltrpar\f0\fs22 The system should adjust the path with at most x seconds added. \b Rationale: optimal path following in order to maximize goods flow\b0\f1\fs20\par%0D
+}%0D
+</_body>
+			<reqID type="a">NF_PC_1.5</reqID>
+			<AggregatesList type="e">
+				<value>GUID 2a89d644-c4a2-472c-8359-dd25f95d11e8</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 2a89d644-c4a2-472c-8359-dd25f95d11e8</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Minimum additional time</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">refine</_hname>
+							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.29.2020::15:1:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::15:1:51</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Path_controller.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Functional::Path_controller</_hsubsystem>
+					<_hname type="a">Minimum additional time</_hname>
+					<_hid type="a">GUID 5b2a6afd-eec2-44d4-8142-6befc800bfc2</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 75670958-c636-40b6-99ee-09fbb99486ca</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IClass type="e">
+			<_id type="a">GUID bacd0a45-a6b0-4fe1-9d9a-8bb89dfb8e2f</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

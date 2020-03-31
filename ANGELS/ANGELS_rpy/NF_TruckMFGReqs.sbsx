@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID bdcaadda-30c7-4471-adb7-63acf49419c4</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">NF_TruckMFGReqs</_name>
+			<_modifiedTimeWeak type="a">3.29.2020::16:13:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.29.2020::16:13:0</_modifiedTime>
+			<_lastID type="a">5</_lastID>
+			<weakCGTime type="a">3.29.2020::16:13:0</weakCGTime>
+			<strongCGTime type="a">3.29.2020::10:50:58</strongCGTime>
+			<_defaultComposite type="s">GUID 382e8d35-7340-45c0-9a36-ea995743f502</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">3.29.2020::16:9:13</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 87b31e4f-28cd-45bd-9e45-85347f922e0b</value>
+				<value>GUID 1c039e58-26f0-4a94-9cc9-4df70a51d0f4</value>
+				<value>GUID 59355d78-62b3-4359-aa4e-191eb2935d98</value>
+				<value>GUID 97c4ca97-8d4b-45c7-bb9b-6240b4842b5e</value>
+				<value>GUID 32c13d14-04d1-493f-997e-9373f17263ba</value>
+				<value>GUID 382e8d35-7340-45c0-9a36-ea995743f502</value>
+			</AggregatesList>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Costs_2</fileName>
+			<_id type="a">GUID 87b31e4f-28cd-45bd-9e45-85347f922e0b</_id>
+			<_name type="a">Costs</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Emissions_1</fileName>
+			<_id type="a">GUID 1c039e58-26f0-4a94-9cc9-4df70a51d0f4</_id>
+			<_name type="a">Emissions</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Safety_2</fileName>
+			<_id type="a">GUID 59355d78-62b3-4359-aa4e-191eb2935d98</_id>
+			<_name type="a">Safety</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Comfort_1</fileName>
+			<_id type="a">GUID 97c4ca97-8d4b-45c7-bb9b-6240b4842b5e</_id>
+			<_name type="a">Comfort</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">NF_Research_and_Development</fileName>
+			<_id type="a">GUID 32c13d14-04d1-493f-997e-9373f17263ba</_id>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID 382e8d35-7340-45c0-9a36-ea995743f502</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

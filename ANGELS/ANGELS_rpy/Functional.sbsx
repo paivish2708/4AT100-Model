@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID b9a4aa92-a505-4301-a6af-654245de3bc9</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Functional</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::17:11:12</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::17:11:12</_modifiedTime>
+			<_lastID type="a">11</_lastID>
+			<weakCGTime type="a">3.31.2020::17:11:12</weakCGTime>
+			<strongCGTime type="a">3.29.2020::10:21:2</strongCGTime>
+			<_defaultComposite type="s">GUID 9d33e66e-8fdb-407c-8f88-7662363fb0d9</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">3.31.2020::17:10:50</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID cd34cbf0-e698-4840-b306-8ba5fffc50e6</value>
+				<value>GUID 0695ce4b-5d88-4051-92de-8530087c4081</value>
+				<value>GUID 5d269320-4649-4198-b7bc-d46ed3dbf83d</value>
+				<value>GUID 0ef1e690-a381-4439-a861-f29a318c23b1</value>
+				<value>GUID e5731d56-db42-491c-917c-b4a928a929d4</value>
+				<value>GUID 0e10ddf5-bbde-4e37-908a-9bcdfcee9473</value>
+				<value>GUID 3624a291-37c5-41c3-b8a5-254382a61644</value>
+				<value>GUID f51bd5c8-f505-4e77-a5b9-873c136dbba0</value>
+				<value>GUID 9f1b5690-73cb-4d49-a0e5-7da0d37d78f9</value>
+				<value>GUID 9d33e66e-8fdb-407c-8f88-7662363fb0d9</value>
+			</AggregatesList>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">GovernmentReqs_1</fileName>
+			<_id type="a">GUID cd34cbf0-e698-4840-b306-8ba5fffc50e6</_id>
+			<_name type="a">F_GovernmentReqs</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">LogisticsReqs_1</fileName>
+			<_id type="a">GUID 0695ce4b-5d88-4051-92de-8530087c4081</_id>
+			<_name type="a">F_LogisticsReqs</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">TruckMFGReqs_1</fileName>
+			<_id type="a">GUID 5d269320-4649-4198-b7bc-d46ed3dbf83d</_id>
+			<_name type="a">F_TruckMFGReqs</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Powertrain</fileName>
+			<_id type="a">GUID 0ef1e690-a381-4439-a861-f29a318c23b1</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Path_controller</fileName>
+			<_id type="a">GUID e5731d56-db42-491c-917c-b4a928a929d4</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Path_generator</fileName>
+			<_id type="a">GUID 0e10ddf5-bbde-4e37-908a-9bcdfcee9473</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">RTSE_reqs</fileName>
+			<_id type="a">GUID 3624a291-37c5-41c3-b8a5-254382a61644</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">HMI_FReq</fileName>
+			<_id type="a">GUID f51bd5c8-f505-4e77-a5b9-873c136dbba0</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">DistributorReqs_1</fileName>
+			<_id type="a">GUID 9f1b5690-73cb-4d49-a0e5-7da0d37d78f9</_id>
+			<_name type="a">F_DistributorReqs</_name>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID 9d33e66e-8fdb-407c-8f88-7662363fb0d9</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

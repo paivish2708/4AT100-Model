@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 16f7fa01-f781-435c-902c-cacb9214c1c5</_id>
+			<_name type="a">Costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::17:6:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:16:27</_modifiedTime>
+			<_lastID type="a">12</_lastID>
+			<weakCGTime type="a">3.31.2020::17:6:4</weakCGTime>
+			<strongCGTime type="a">3.31.2020::17:6:4</strongCGTime>
+			<_defaultComposite type="s">GUID b1582cd0-deee-4d4d-b101-294a7d02d053</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID a6262050-3cec-46ac-9d37-8710333e681b</value>
+				<value>GUID b3aa24c4-3c45-42be-a41b-d64d80621959</value>
+				<value>GUID 9c5d8af1-63eb-42fa-b3d9-9dc2f4924851</value>
+				<value>GUID 1b1168b2-ae87-42c2-a670-35043fd3afc8</value>
+				<value>GUID b2e4043d-e733-44b7-97f0-720244c4b9a1</value>
+				<value>GUID a9672815-acc3-45ca-99c7-81eac67e9638</value>
+				<value>GUID 83170f4b-b8a0-4344-9e2f-59285137749c</value>
+				<value>GUID 8e685475-729d-4d96-9731-ca6db8504f71</value>
+				<value>GUID 9485901d-4676-464e-b9f4-f870fa548b9d</value>
+				<value>GUID 79c7907a-0235-46cc-81ad-162c1ae91d58</value>
+				<value>GUID 9c05bdbe-3814-4531-89c6-187d73c1e727</value>
+				<value>GUID 7eed168c-33e5-407b-a834-dc38a7b87e2d</value>
+				<value>GUID b1582cd0-deee-4d4d-b101-294a7d02d053</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID a6262050-3cec-46ac-9d37-8710333e681b</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Operating Cost</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:0:39</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:0:39</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall be beneficial to reduce operating costs of the Distribution Center (DC)\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_1.1.1</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID b3aa24c4-3c45-42be-a41b-d64d80621959</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Logistics Employee Costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:0:34</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:0:34</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall be benificial to reduce the employee costs related to logistics - e.g, truck guidance and dock workers.\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_1.1.1.1</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 9c5d8af1-63eb-42fa-b3d9-9dc2f4924851</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ANGELS Costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:1:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:1:38</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall not cross the allocated budget. \par%0D
+}%0D
+</_body>
+			<reqID type="a">B_1.1.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID ee06f835-9fde-46fe-9cfc-f3d37c39c1a8</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID ee06f835-9fde-46fe-9cfc-f3d37c39c1a8</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:1:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:1:38</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Costs</_hname>
+					<_hid type="a">GUID dd337908-1b22-46d9-93ac-54d1527c9f6a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 9c5d8af1-63eb-42fa-b3d9-9dc2f4924851</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID 1b1168b2-ae87-42c2-a670-35043fd3afc8</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ANGELS R and D Costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:2:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:2:51</_modifiedTime>
+			<_lastID type="a">2</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall not exceed the allocated budget by cost of purchase and R&amp;D costs.\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_1.1.2.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID de4e217e-b238-4601-b3e1-aab0f9d91e4a</value>
+				<value>GUID 86b005ec-85d4-450a-ac0a-32d367281eda</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID de4e217e-b238-4601-b3e1-aab0f9d91e4a</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:1:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:1:57</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Costs</_hname>
+					<_hid type="a">GUID dd337908-1b22-46d9-93ac-54d1527c9f6a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 1b1168b2-ae87-42c2-a670-35043fd3afc8</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 86b005ec-85d4-450a-ac0a-32d367281eda</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">ANGELS Costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:2:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:2:51</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 9c5d8af1-63eb-42fa-b3d9-9dc2f4924851</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 1b1168b2-ae87-42c2-a670-35043fd3afc8</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID b2e4043d-e733-44b7-97f0-720244c4b9a1</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ANGELS Maintenance Cost</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::15:59:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::15:59:50</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall not exceed the allocated budget by spending a lot on maintenance.\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_1.1.2.2</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID a9672815-acc3-45ca-99c7-81eac67e9638</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Collision Cost</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:3:9</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:3:9</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall not cause excessive costs due to collision with other trucks, humans or infrastructure.\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_1.1.3</reqID>
+			<AggregatesList type="e">
+				<value>GUID 0bf31d96-dd5b-4685-8d46-702821ad15ba</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 0bf31d96-dd5b-4685-8d46-702821ad15ba</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:3:9</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:3:9</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Costs</_hname>
+					<_hid type="a">GUID dd337908-1b22-46d9-93ac-54d1527c9f6a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID a9672815-acc3-45ca-99c7-81eac67e9638</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID 83170f4b-b8a0-4344-9e2f-59285137749c</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Truck Repair Cost</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:3:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:3:31</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall not cause excessive costs in repair of the truck involved in the collision.\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_1.1.3.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID 601f0f36-aebb-4cc1-a060-7e36919d7d88</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 601f0f36-aebb-4cc1-a060-7e36919d7d88</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Collision Cost</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:3:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:3:31</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID a9672815-acc3-45ca-99c7-81eac67e9638</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 83170f4b-b8a0-4344-9e2f-59285137749c</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID 8e685475-729d-4d96-9731-ca6db8504f71</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Human Insurance Cost</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:4:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:4:3</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall not cause excessive costs in insurance and liability coverage of the humans involved in the collision.\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_1.1.3.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID ba74573f-0a37-4b85-b493-4cb30195fd8f</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID ba74573f-0a37-4b85-b493-4cb30195fd8f</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Collision Cost</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:4:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:4:3</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID a9672815-acc3-45ca-99c7-81eac67e9638</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 8e685475-729d-4d96-9731-ca6db8504f71</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID 9485901d-4676-464e-b9f4-f870fa548b9d</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Infrastructure Repair Cost</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:3:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:3:46</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall not cause excessive costs in repair of the infrastructure involved in the collision.\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_1.1.3.3</reqID>
+			<AggregatesList type="e">
+				<value>GUID c0f98f7c-ee95-4aa8-ac3a-37db15d78563</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID c0f98f7c-ee95-4aa8-ac3a-37db15d78563</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Collision Cost</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:3:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:3:46</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID a9672815-acc3-45ca-99c7-81eac67e9638</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 9485901d-4676-464e-b9f4-f870fa548b9d</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID 79c7907a-0235-46cc-81ad-162c1ae91d58</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Operator Training Cost</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:5:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:5:36</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall not be too complicated that expensive training sessions will need to be held to train the operators.\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_1.1.4</reqID>
+			<AggregatesList type="e">
+				<value>GUID aa1d6575-2c76-4c71-995c-08711cd5c6fd</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID aa1d6575-2c76-4c71-995c-08711cd5c6fd</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Costs</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:5:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:5:36</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\GeneralReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::GeneralReqs</_hsubsystem>
+					<_hname type="a">Costs</_hname>
+					<_hid type="a">GUID dd337908-1b22-46d9-93ac-54d1527c9f6a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 79c7907a-0235-46cc-81ad-162c1ae91d58</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IRequirement type="e">
+			<_id type="a">GUID 9c05bdbe-3814-4531-89c6-187d73c1e727</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Driver Training Cost</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:0:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:0:10</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall minimise the costs invovled in training the driver\par%0D
+\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_1.1.4.1</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 7eed168c-33e5-407b-a834-dc38a7b87e2d</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">System Operator Cost</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:7:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:7:33</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system shall minimise the costs involved in training the main system operator\par%0D
+\par%0D
+}%0D
+</_body>
+			<reqID type="a">B_1.1.4.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID 0d0d8639-0c7e-4fde-87f8-41e63d657f4b</value>
+			</AggregatesList>
+		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 0d0d8639-0c7e-4fde-87f8-41e63d657f4b</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Operator Training Cost</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::16:7:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::16:7:33</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 79c7907a-0235-46cc-81ad-162c1ae91d58</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 7eed168c-33e5-407b-a834-dc38a7b87e2d</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IClass type="e">
+			<_id type="a">GUID b1582cd0-deee-4d4d-b101-294a7d02d053</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">3.31.2020::17:6:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">3.31.2020::17:6:4</weakCGTime>
+			<strongCGTime type="a">3.31.2020::17:6:4</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+
