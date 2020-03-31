@@ -11,10 +11,10 @@
 			<_id type="a">GUID c3f2a2fb-547e-4d9f-8c3e-f6d18567b95e</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">NF_LogisticsReqs</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:30:21</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:30:21</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::13:19:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::13:19:31</_modifiedTime>
 			<_lastID type="a">8</_lastID>
-			<weakCGTime type="a">3.31.2020::8:30:21</weakCGTime>
+			<weakCGTime type="a">3.31.2020::13:19:31</weakCGTime>
 			<strongCGTime type="a">3.29.2020::10:51:19</strongCGTime>
 			<_defaultComposite type="s">GUID 70fbce0d-aaad-4359-b294-52b2ecbedf04</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -148,8 +148,8 @@
 			<_id type="a">GUID fe9d2a6b-3ea8-4169-af37-afdcc814737c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Maintenance Costs</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:13:4</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:13:4</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::13:19:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::13:19:31</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall not exceed X \'80 of maintenance costs.\par%0D
@@ -164,8 +164,22 @@
 			<_id type="a">GUID 429c23b5-171f-4322-b5eb-2463a03f3ffa</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Maintenance costs</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:13:4</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:13:4</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">refine</_hname>
+							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.31.2020::13:19:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::13:19:31</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -186,8 +200,8 @@
 			<_id type="a">GUID 21f077b8-561c-4665-9d4d-0b0d30e5de56</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver Training Costs</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:13:14</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:13:14</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::13:19:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::13:19:16</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall not exceed X \'80 of driver training costs.\par%0D
@@ -202,8 +216,22 @@
 			<_id type="a">GUID 73461dcf-4f39-4190-b175-4f72898b34f8</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Driver training costs</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:13:14</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:13:14</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">refine</_hname>
+							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.31.2020::13:19:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::13:19:16</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -224,8 +252,8 @@
 			<_id type="a">GUID 227715e6-7a08-475d-a61b-caae21e7a0a1</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Fuel Costs</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:13:7</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:13:7</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::13:19:26</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::13:19:26</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall not exceed X \'80 of fuel costs.\par%0D
@@ -241,8 +269,22 @@
 			<_id type="a">GUID 392821c7-8c7c-4b2d-a5f7-90979f607f7e</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Fuel costs</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:13:7</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:13:7</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">refine</_hname>
+							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.31.2020::13:19:26</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::13:19:26</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -263,8 +305,8 @@
 			<_id type="a">GUID ab6445c9-0a79-4da6-a7dc-b0dc09e69f4b</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver Salary Costs</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:13:11</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:13:11</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.31.2020::13:19:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::13:19:21</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall not exceed X \'80 of driver salary costs.\par%0D
@@ -280,8 +322,22 @@
 			<_id type="a">GUID 516e6d22-2937-4b31-b31c-3530ba9c46fa</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Driver salary</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:13:11</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:13:11</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">refine</_hname>
+							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.31.2020::13:19:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.31.2020::13:19:21</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
