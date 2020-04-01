@@ -56,9 +56,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.1.2020::11:42:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::11:42:10</_modifiedTime>
-			<_lastID type="a">6</_lastID>
+			<_modifiedTimeWeak type="a">4.1.2020::18:46:12</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::18:46:12</_modifiedTime>
+			<_lastID type="a">7</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">
 					<size type="a">16</size>
@@ -136,7 +136,6 @@
 				<value>GUID 7223f5d4-866f-4e39-bcbe-96f2132ff31f</value>
 				<value>GUID de656d0c-824e-401d-88a2-a108a59b1b85</value>
 				<value>GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</value>
-				<value>GUID 41bd2f17-1d66-46a6-89fc-582df8d0fbac</value>
 				<value>GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</value>
 				<value>GUID 7dba1274-9404-4f0f-b93c-831e00073cf1</value>
 			</AggregatesList>
@@ -162,10 +161,6 @@
 		<ISubsystem type="e">
 			<fileName type="a">ActorPkg</fileName>
 			<_id type="a">GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">Truck</fileName>
-			<_id type="a">GUID 41bd2f17-1d66-46a6-89fc-582df8d0fbac</_id>
 		</ISubsystem>
 		<IDiagram type="e">
 			<fileName type="a">System_Context</fileName>
