@@ -11,14 +11,23 @@
 			<_id type="a">GUID 5910a7ff-91ff-45f2-8e0c-5d157da99dd9</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Emissions</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::14:47:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:17</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::10:37:27</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\RequirementsAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg</_hsubsystem>
+					<_hname type="a">EmissionsReqDiagramV2</_hname>
+					<_hid type="a">GUID 1d6d7a57-313c-402f-8ca5-8d38f7a4630c</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">4.1.2020::10:37:27</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">3.27.2020::14:47:17</weakCGTime>
+			<weakCGTime type="a">4.1.2020::10:37:27</weakCGTime>
 			<strongCGTime type="a">3.27.2020::14:24:35</strongCGTime>
 			<_defaultComposite type="s">GUID c851d9ad-f944-4806-a98d-8114f9de91eb</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID fb7f2102-bf51-4499-81a9-e4f13b3ef41a</value>
 				<value>GUID c3c7a11d-22e4-4e35-a937-d4cab73990cd</value>
@@ -30,44 +39,83 @@
 			<_id type="a">GUID fb7f2102-bf51-4499-81a9-e4f13b3ef41a</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Friendly environmental image</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::14:45:2</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:45:2</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::10:37:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:37:22</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system designed shall have reduced emissions, thus providing an environmental friendly image to the truck manufacturer and so that the trucks are more appealing to customers.\par%0D
 }%0D
 </_body>
-			<reqID type="a">2.3.1</reqID>
+			<reqID type="a">B_2.3.1</reqID>
 		</IRequirement>
 		<IRequirement type="e">
 			<_id type="a">GUID c3c7a11d-22e4-4e35-a937-d4cab73990cd</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Regulated truck emissions</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::14:45:54</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:45:54</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::10:37:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:37:27</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system designed, shall have emissions regulated and within the norms and standards set by the EU to allow the trucks to operate on the public roads.\par%0D
 }%0D
 </_body>
-			<reqID type="a">2.3.2</reqID>
+			<reqID type="a">B_2.3.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID 15c529c9-1cf3-4edd-aee4-0426e812058e</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 15c529c9-1cf3-4edd-aee4-0426e812058e</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reduce Emissions</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">Merge</_hname>
+							<_hid type="a">GUID b8dd4a28-db54-459c-9070-cd6b4b3d2a33</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::10:13:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:13:15</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\B_GovernmentReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_GovernmentReqs</_hsubsystem>
+					<_hname type="a">Reduce Emissions</_hname>
+					<_hid type="a">GUID 966b4480-e12b-44a7-b2c7-3afc3bae8475</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID c3c7a11d-22e4-4e35-a937-d4cab73990cd</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 09daac3a-5a85-453f-8406-b4370b84b966</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">High cost effectiveness</_name>
-			<_modifiedTimeWeak type="a">3.27.2020::14:47:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.27.2020::14:47:17</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::10:37:17</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:37:17</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system designed should have high cost effectiveness for consumption of fuel/battery charge (lower Euro per KWh of energy).\par%0D
 }%0D
 </_body>
-			<reqID type="a">2.3.3</reqID>
+			<reqID type="a">B_2.3.3</reqID>
 		</IRequirement>
 		<IClass type="e">
 			<_id type="a">GUID c851d9ad-f944-4806-a98d-8114f9de91eb</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

@@ -11,19 +11,14 @@
 			<_id type="a">GUID de656d0c-824e-401d-88a2-a108a59b1b85</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCaseAnalysisPkg</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::15:11:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::15:11:0</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::10:6:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:9:53</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">3.31.2020::15:11:0</weakCGTime>
+			<weakCGTime type="a">4.1.2020::10:6:37</weakCGTime>
 			<strongCGTime type="a">3.31.2020::15:9:48</strongCGTime>
 			<_defaultComposite type="s">GUID 66af33e9-98b9-483e-9515-0798c195b3d2</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<UseCases type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCases>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID b50b8171-60eb-41fd-a773-449c8d94d20f</value>
 				<value>GUID 66af33e9-98b9-483e-9515-0798c195b3d2</value>
@@ -40,7 +35,7 @@
 							<_Name type="a">Format</_Name>
 							<Metaclasses type="c">
 								<IRPYRawContainer type="e">
-									<size type="a">1</size>
+									<size type="a">2</size>
 									<IPropertyMetaclass type="e">
 										<_Name type="a">DiagramFrame</_Name>
 										<Properties type="c">
@@ -98,6 +93,21 @@
 										</Properties>
 									</IPropertyMetaclass>
 									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Requirement</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">DefaultSize</_Name>
+													<_Value type="a">0,0,185,129</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
 								</IRPYRawContainer>
 							</Metaclasses>
 						</IPropertySubject>
@@ -108,8 +118,8 @@
 			</_properties>
 			<_name type="a">ANGELS_system</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::15:11:0</_modifiedTime>
-			<_lastModifiedTime type="a">3.31.2020::15:11:0</_lastModifiedTime>
+			<_modifiedTime type="a">4.1.2020::10:6:37</_modifiedTime>
+			<_lastModifiedTime type="a">4.1.2020::10:6:37</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -280,7 +290,7 @@
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

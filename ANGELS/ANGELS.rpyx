@@ -10,6 +10,38 @@
 	<IProject type="e">
 			<_id type="a">GUID 6b13b22f-8127-4059-b45b-ca0a2f88d807</_id>
 			<_myState type="a">8192</_myState>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Requirement</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">DefaultSize</_Name>
+													<_Value type="a">0,0,185,129</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<_name type="a">ANGELS</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
@@ -24,8 +56,8 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">3.31.2020::21:34:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::21:34:10</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::10:6:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:9:53</_modifiedTime>
 			<_lastID type="a">5</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">

@@ -11,10 +11,10 @@
 			<_id type="a">GUID 65f5770f-4999-4f7a-ac2d-170ed053c4f2</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">NF_GovernmentReqs</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:22:55</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:22:55</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::10:8:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:9:53</_modifiedTime>
 			<_lastID type="a">6</_lastID>
-			<weakCGTime type="a">3.31.2020::8:22:55</weakCGTime>
+			<weakCGTime type="a">4.1.2020::10:8:35</weakCGTime>
 			<strongCGTime type="a">3.29.2020::10:51:12</strongCGTime>
 			<_defaultComposite type="s">GUID 20f1ca13-661f-4669-b7b0-30d41aeb9748</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -33,8 +33,8 @@
 			<_id type="a">GUID 659bd6b8-f2e1-4a5f-8502-048ee73bdfb6</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CO Emissions</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:21:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:21:15</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::10:8:7</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:8:7</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall not exceed 4.0 g/kWh of CO emissions over the drive cycle.\par%0D
@@ -50,8 +50,22 @@
 			<_id type="a">GUID 79c560a8-ee13-42ea-a2ce-52f3716ff58f</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Reduce Emissions</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:21:12</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:21:12</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">refine</_hname>
+							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::9:59:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::9:59:49</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -72,8 +86,21 @@
 			<_id type="a">GUID 25d8a090-8f4f-4b15-95e5-2f768cdc14d5</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Applicable for subsidies</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:21:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:21:15</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">satisfy</_hname>
+							<_hid type="a">GUID 69acc50f-e21e-4b4a-a51e-863efe75ce18</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::10:8:7</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:8:7</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -94,8 +121,8 @@
 			<_id type="a">GUID 549cc63d-b924-49f7-9187-311fc32a82d9</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">NOx Emissions</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:21:26</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:21:26</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::10:8:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:8:35</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall not exceed 0.46 g/kWh NOx emissions over the drive cycle.\par%0D
@@ -112,8 +139,22 @@
 			<_id type="a">GUID 46d079b1-29b7-4f15-aa67-08774346079a</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Reduce Emissions</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:21:24</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:21:24</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">refine</_hname>
+							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::9:59:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::9:59:35</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -134,8 +175,21 @@
 			<_id type="a">GUID c93e7a38-d770-405a-9e99-35a73e49364c</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Applicable for subsidies</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:21:26</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:21:26</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">satisfy</_hname>
+							<_hid type="a">GUID 69acc50f-e21e-4b4a-a51e-863efe75ce18</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::10:8:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:8:35</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -156,8 +210,8 @@
 			<_id type="a">GUID 71d25fbf-7164-40e9-be7c-97bce4a4c9c0</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">HC Emissions</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:21:20</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:21:20</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::10:8:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:8:15</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall not exceed 0.16 g/kWh HC emissions over the drive cycle.\par%0D
@@ -173,8 +227,22 @@
 			<_id type="a">GUID 106620e0-c40b-4e3c-82e2-8fe5242879d0</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Reduce Emissions</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:21:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:21:17</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">refine</_hname>
+							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::9:59:43</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::9:59:43</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -195,8 +263,21 @@
 			<_id type="a">GUID 7a437833-b23b-429a-aa63-315d87be5acf</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Applicable for subsidies</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:21:20</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:21:20</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">satisfy</_hname>
+							<_hid type="a">GUID 69acc50f-e21e-4b4a-a51e-863efe75ce18</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::10:8:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:8:15</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -217,8 +298,8 @@
 			<_id type="a">GUID a032c217-ff86-4f94-abe8-cafc8b610239</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">PM Emissions</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:21:32</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:21:32</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::10:8:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:8:27</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall not exceed 0.01 g/kWh PM emissions over the drive cycle.\par%0D
@@ -234,8 +315,22 @@
 			<_id type="a">GUID f3b51f55-bb57-49e1-b9f4-e47074084f4a</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Reduce Emissions</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:21:30</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:21:30</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">refine</_hname>
+							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::9:59:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::9:59:31</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -256,8 +351,21 @@
 			<_id type="a">GUID 88e4fdf5-8213-4bc0-8adb-692dc5e50508</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Applicable for subsidies</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:21:32</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:21:32</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">satisfy</_hname>
+							<_hid type="a">GUID 69acc50f-e21e-4b4a-a51e-863efe75ce18</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::10:8:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:8:27</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>

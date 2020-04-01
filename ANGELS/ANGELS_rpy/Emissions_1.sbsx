@@ -10,10 +10,10 @@
 	<ISubsystem type="e">
 			<_id type="a">GUID 1c039e58-26f0-4a94-9cc9-4df70a51d0f4</_id>
 			<_name type="a">Emissions</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::12:6:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::12:6:10</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::11:6:18</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::11:6:18</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">3.31.2020::12:6:10</weakCGTime>
+			<weakCGTime type="a">4.1.2020::11:6:18</weakCGTime>
 			<strongCGTime type="a">3.29.2020::13:29:26</strongCGTime>
 			<_defaultComposite type="s">GUID 34077f4b-2871-4a14-96b1-9c0685b71744</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -28,8 +28,9 @@
 			<_id type="a">GUID ffbbbe9b-ad3e-45da-abe8-98c2443d70f0</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Truck emissions</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::12:6:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::12:6:10</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::10:9:55</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:9:55</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil Calibri;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset0 Arial;}}%0D
 {\colortbl ;\red0\green0\blue0;}%0D
 \viewkind4\uc1\pard\cf1\f0\fs22 The average emissions of the truck over the drive cycle shall be less than \lang1043\f1 350\lang1033\f0  g/km CO2\cf0\f2\fs20\par%0D
@@ -39,6 +40,7 @@
 			<AggregatesList type="e">
 				<value>GUID 8469b7a4-7024-4a1d-9548-5707fd7eabc1</value>
 				<value>GUID 995b530b-4810-4d97-b1bf-f4168a71b586</value>
+				<value>GUID 7187bf7c-aa08-49e9-b48b-3e977266ada6</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -113,19 +115,56 @@
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 7187bf7c-aa08-49e9-b48b-3e977266ada6</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reduce Emissions</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">satisfy</_hname>
+							<_hid type="a">GUID 69acc50f-e21e-4b4a-a51e-863efe75ce18</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::10:9:55</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::10:9:55</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\B_GovernmentReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_GovernmentReqs</_hsubsystem>
+					<_hname type="a">Reduce Emissions</_hname>
+					<_hid type="a">GUID 966b4480-e12b-44a7-b2c7-3afc3bae8475</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID ffbbbe9b-ad3e-45da-abe8-98c2443d70f0</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 84405ef6-1801-4a58-a14e-826936be45a1</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Cost effectiveness of system</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::15:46:8</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::15:46:8</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::11:6:18</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::11:6:18</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system designed should have a minimum cost effectiveness of X euros per KWh energy or Y euros per litre of fuel\par%0D
+\viewkind4\uc1\pard\fs20 The system designed should have a minimum cost effectiveness of 0.4euro per km.\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF2.3.2</reqID>
 			<AggregatesList type="e">
 				<value>GUID 43e6870e-f1b8-4a54-8235-68f56d7abb0c</value>
+				<value>GUID 98a5602c-8291-4a10-ac41-fa0f09d481f1</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -164,6 +203,34 @@
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
+		<IComment type="e">
+			<_id type="a">GUID 98a5602c-8291-4a10-ac41-fa0f09d481f1</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">rationale_0</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">rationale</_hname>
+							<_hid type="a">GUID abf9763f-69a6-4b58-92bc-9379a6faab65</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::11:6:18</_modifiedTimeWeak>
+			<_description type="p"><IDescription type="e">
+				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 On average, a HD truck consumer 3kWh/km (low speed urban driving). Diesel energy of 10kWh/\ulwave litre\ulnone  and price of 1.34 euro/\ulwave litre\ulnone  gives about 0.4euro/km\par%0D
+}%0D
+</_textRTF>
+			</IDescription>
+			</_description>
+			<_modifiedTime type="a">4.1.2020::11:6:18</_modifiedTime>
+		</IComment>
 		<IClass type="e">
 			<_id type="a">GUID 34077f4b-2871-4a14-96b1-9c0685b71744</_id>
 			<_myState type="a">40960</_myState>
