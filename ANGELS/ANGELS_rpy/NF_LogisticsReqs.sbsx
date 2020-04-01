@@ -11,11 +11,11 @@
 			<_id type="a">GUID c3f2a2fb-547e-4d9f-8c3e-f6d18567b95e</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">NF_LogisticsReqs</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::13:19:31</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::13:19:31</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::14:53:16</_modifiedTime>
 			<_lastID type="a">8</_lastID>
-			<weakCGTime type="a">3.31.2020::13:19:31</weakCGTime>
-			<strongCGTime type="a">3.29.2020::10:51:19</strongCGTime>
+			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_defaultComposite type="s">GUID 70fbce0d-aaad-4359-b294-52b2ecbedf04</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">3.29.2020::11:59:58</_configurationRelatedTime>
@@ -34,9 +34,9 @@
 			<_id type="a">GUID c0b135ad-cc84-4964-92ba-52180bea8946</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Trailer Doors</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:26:22</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:26:22</_modifiedTime>
-			<_lastID type="a">1</_lastID>
+			<_modifiedTimeWeak type="a">4.1.2020::14:53:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::14:53:16</_modifiedTime>
+			<_lastID type="a">2</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system must open the truck doors automatically within x seconds.\par%0D
 }%0D
@@ -44,14 +44,64 @@
 			<reqID type="a">NF_4.1.1</reqID>
 			<AggregatesList type="e">
 				<value>GUID c3bb836f-6409-460d-84fc-ca33bb1b52c9</value>
+				<value>GUID d488b7d2-e88f-4bbd-ab98-75b6707f42da</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
 			<_id type="a">GUID c3bb836f-6409-460d-84fc-ca33bb1b52c9</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Automatically opening trailer door</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:26:22</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:26:22</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">refine</_hname>
+							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::14:53:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::14:53:16</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\B_LogisticsReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_LogisticsReqs</_hsubsystem>
+					<_hname type="a">Automatically opening trailer door</_hname>
+					<_hid type="a">GUID 7ad0be23-318c-4ab9-90e7-99a606574020</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID c0b135ad-cc84-4964-92ba-52180bea8946</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID d488b7d2-e88f-4bbd-ab98-75b6707f42da</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Automatically opening trailer door_0</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">satisfy</_hname>
+							<_hid type="a">GUID 69acc50f-e21e-4b4a-a51e-863efe75ce18</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::12:24:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::12:24:22</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -72,8 +122,8 @@
 			<_id type="a">GUID 273db399-a30f-4139-918c-07e0eef0d6f3</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Flow of Trucks</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:30:18</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:30:18</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::14:45:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::14:45:11</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall schedule a minimum of X trucks in the DC within an hour.\par%0D
@@ -88,8 +138,22 @@
 			<_id type="a">GUID 34de0ad6-9b55-4f0e-86df-9f856749b648</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Scheduling</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:30:18</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:30:18</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::14:45:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::14:45:11</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -110,8 +174,8 @@
 			<_id type="a">GUID 80479ab1-8d40-43a1-b286-d252cfc6d363</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Minimum Trucks</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:30:21</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:30:21</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::14:49:40</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::14:49:40</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall ensure a minimum of 2 trucks driving autonomously inside the DC.\par%0D
@@ -126,8 +190,22 @@
 			<_id type="a">GUID 8ffeb497-a74b-4cae-9261-79db348440c7</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Number of trucks</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::8:30:21</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::8:30:21</_modifiedTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.1.2020::14:49:40</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.1.2020::14:49:40</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -358,10 +436,10 @@
 			<_id type="a">GUID 70fbce0d-aaad-4359-b294-52b2ecbedf04</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
-			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>

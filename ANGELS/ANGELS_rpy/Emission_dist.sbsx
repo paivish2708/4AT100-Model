@@ -11,7 +11,7 @@
 			<_id type="a">GUID 26b83f5e-5af0-4bae-81a8-6ee982778bf8</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Emission_dist</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::10:37:34</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -23,8 +23,8 @@
 			</_theMainDiagram>
 			<_modifiedTime type="a">4.1.2020::10:37:34</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">4.1.2020::10:37:34</weakCGTime>
-			<strongCGTime type="a">3.31.2020::17:6:4</strongCGTime>
+			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_defaultComposite type="s">GUID 5e4f58c5-1c98-47e8-953e-aca8dc499849</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
@@ -49,10 +49,10 @@
 			<_id type="a">GUID 5e4f58c5-1c98-47e8-953e-aca8dc499849</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::17:6:4</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<weakCGTime type="a">3.31.2020::17:6:4</weakCGTime>
-			<strongCGTime type="a">3.31.2020::17:6:4</strongCGTime>
+			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>

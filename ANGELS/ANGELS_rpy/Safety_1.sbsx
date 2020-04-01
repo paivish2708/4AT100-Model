@@ -9,16 +9,15 @@
 	<RHAPSODY-MODEL>
 	<ISubsystem type="e">
 			<_id type="a">GUID 81c78c80-5671-4c72-9042-e83f361e7732</_id>
-			<_myState type="a">8192</_myState>
 			<_name type="a">Safety</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::13:46:8</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.29.2020::13:46:8</_modifiedTime>
 			<_lastID type="a">6</_lastID>
-			<weakCGTime type="a">3.29.2020::13:46:8</weakCGTime>
-			<strongCGTime type="a">3.29.2020::13:2:57</strongCGTime>
+			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_defaultComposite type="s">GUID af63e5ac-0fe9-4c1a-857b-0540979c428f</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID bbe4f702-c691-4b5a-a64a-f7ab0f82370e</value>
 				<value>GUID ca69fabe-9ac5-4c7e-a5d8-e99dc9561ce6</value>
@@ -119,10 +118,10 @@
 			<_id type="a">GUID af63e5ac-0fe9-4c1a-857b-0540979c428f</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
-			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>

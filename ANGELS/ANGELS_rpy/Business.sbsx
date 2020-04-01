@@ -11,11 +11,20 @@
 			<_id type="a">GUID 652cd5bb-1dec-469c-b2d0-05edcc44c691</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Business</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::10:51:51</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::10:51:51</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\LegislationsReqDiagram.omdx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg</_hsubsystem>
+					<_hname type="a">LegislationsReqDiagram</_hname>
+					<_hid type="a">GUID 9b8e12fa-27ab-4a4d-9480-8a6dfe2cfed2</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">4.1.2020::12:48:9</_modifiedTime>
 			<_lastID type="a">8</_lastID>
-			<weakCGTime type="a">3.29.2020::10:51:51</weakCGTime>
-			<strongCGTime type="a">3.27.2020::14:23:14</strongCGTime>
+			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_defaultComposite type="s">GUID 71e736d6-16b3-46ac-92fe-1f088e75f84a</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">3.27.2020::21:9:11</_configurationRelatedTime>
@@ -47,10 +56,10 @@
 			<_id type="a">GUID 71e736d6-16b3-46ac-92fe-1f088e75f84a</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
-			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>

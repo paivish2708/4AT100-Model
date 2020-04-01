@@ -9,15 +9,14 @@
 	<RHAPSODY-MODEL>
 	<ISubsystem type="e">
 			<_id type="a">GUID 96f0a4de-dd11-4812-99e1-a7e3ed28ca66</_id>
-			<_myState type="a">8192</_myState>
 			<_name type="a">Research_Development</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::13:8:48</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.29.2020::13:29:15</_modifiedTime>
-			<weakCGTime type="a">3.29.2020::13:8:48</weakCGTime>
-			<strongCGTime type="a">3.29.2020::13:2:6</strongCGTime>
+			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_defaultComposite type="s">GUID 7d6bfdce-8e63-4ca9-9843-e0d96acc8540</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID da2bc908-66c3-4258-8f11-7d9c66ab3b6c</value>
 				<value>GUID 7d6bfdce-8e63-4ca9-9843-e0d96acc8540</value>
@@ -27,11 +26,6 @@
 			<_id type="a">GUID da2bc908-66c3-4258-8f11-7d9c66ab3b6c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Existing components</_name>
-			<OwnedDependencies type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</OwnedDependencies>
 			<_modifiedTimeWeak type="a">3.29.2020::13:8:48</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.29.2020::13:8:48</_modifiedTime>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil Calibri;}{\f1\fnil\fcharset0 Arial;}}%0D
@@ -45,10 +39,10 @@
 			<_id type="a">GUID 7d6bfdce-8e63-4ca9-9843-e0d96acc8540</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
-			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>

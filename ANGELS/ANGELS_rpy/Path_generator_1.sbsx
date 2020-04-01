@@ -9,7 +9,6 @@
 	<RHAPSODY-MODEL>
 	<ISubsystem type="e">
 			<_id type="a">GUID b609d93c-f8d9-4b61-b96e-597ff2fccbba</_id>
-			<_myState type="a">8192</_myState>
 			<_name type="a">Path_generator</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
@@ -24,14 +23,14 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">3.29.2020::15:15:6</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.29.2020::15:15:6</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">3.29.2020::15:15:6</weakCGTime>
-			<strongCGTime type="a">3.29.2020::15:14:5</strongCGTime>
+			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_defaultComposite type="s">GUID 1478cf67-af4b-4e7b-a21c-ef495ab72f28</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 3cb4b80e-d206-472b-90c4-bdd2c51b4d10</value>
 				<value>GUID 1478cf67-af4b-4e7b-a21c-ef495ab72f28</value>
@@ -55,10 +54,10 @@
 			<_id type="a">GUID 1478cf67-af4b-4e7b-a21c-ef495ab72f28</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
-			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
