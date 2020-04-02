@@ -11,10 +11,10 @@
 			<_id type="a">GUID 39b8bb0f-3c21-4878-9e98-4ed62d1ac09b</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Default</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::18:51:56</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.2.2020::15:39:2</_modifiedTimeWeak>
 			<_modifiedTime type="a">4.1.2020::18:51:56</_modifiedTime>
 			<_lastID type="a">19</_lastID>
-			<weakCGTime type="a">4.1.2020::18:51:56</weakCGTime>
+			<weakCGTime type="a">4.2.2020::15:39:2</weakCGTime>
 			<strongCGTime type="a">4.1.2020::11:37:3</strongCGTime>
 			<_defaultComposite type="s">GUID 4bbb62d1-41dc-4177-b44a-9846079be256</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -1111,7 +1111,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.1.2020::18:50:55</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.2.2020::15:39:15</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -1121,9 +1121,9 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">4.1.2020::18:50:55</_modifiedTime>
-			<_lastID type="a">3</_lastID>
-			<weakCGTime type="a">4.1.2020::18:50:55</weakCGTime>
+			<_modifiedTime type="a">4.2.2020::15:39:15</_modifiedTime>
+			<_lastID type="a">4</_lastID>
+			<weakCGTime type="a">4.2.2020::15:39:15</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:29:10</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -1132,11 +1132,13 @@
 			<_classModifier type="a">Unspecified</_classModifier>
 			<AggregatesList type="e">
 				<value>GUID c8a7c39c-6281-4e3b-88a9-ff7fdbdace0d</value>
+				<value>GUID 70627d73-4173-4900-a077-24e408304f5f</value>
 				<value>GUID 5c0041fe-84f5-4d78-b769-9b3659b41989</value>
 				<value>GUID 6baf4d2a-8633-4caf-9ba8-0a56e193f865</value>
 				<value>GUID a76d72de-a96a-4586-b4d0-1d18d9a29a09</value>
 				<value>GUID 920a6485-e6a9-4c01-be5c-7b83dce35f23</value>
 				<value>GUID 68f0166f-7314-422b-b710-8f47f8b77427</value>
+				<value>GUID 7d90be0e-f978-40d5-a2c9-df744e2b4f2e</value>
 			</AggregatesList>
 		</IClass>
 		<IDependency type="e">
@@ -1158,6 +1160,41 @@
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.1.2020::18:26:2</_modifiedTimeWeak>
 			<_modifiedTime type="a">4.1.2020::18:36:45</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hname type="a">Move Forward</_hname>
+					<_hid type="a">GUID 2353c088-cdfa-4be0-9042-24068a09d195</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 70627d73-4173-4900-a077-24e408304f5f</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Move Forward_0</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">include</_hname>
+							<_hid type="a">GUID 17ef9a2f-cb89-11d5-b5bf-00d0b780aafd</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.2.2020::15:39:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.2.2020::15:39:15</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -1294,6 +1331,35 @@
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hid type="a">GUID 6b7662eb-bbd8-4ac8-ae80-df38063813ac</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 7d90be0e-f978-40d5-a2c9-df744e2b4f2e</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsDriver_2</_name>
+			<_modifiedTimeWeak type="a">4.2.2020::15:39:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.2.2020::15:39:2</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IActor</_hm2Class>
+					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hname type="a">Driver</_hname>
+					<_hid type="a">GUID 516c76cb-338f-40c3-a898-f904221cfb96</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hclass type="a">Driver</_hclass>
+					<_hname type="a">itsTruck_2</_hname>
+					<_hid type="a">GUID 70b0049d-2e7e-4618-94e0-e16cb0879aa1</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -1648,11 +1714,6 @@
 			<_id type="a">GUID 365879c1-dcdd-4999-979a-ce422be9b964</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Collision_Detection</_name>
-			<OwnedDependencies type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</OwnedDependencies>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
