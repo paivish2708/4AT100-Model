@@ -11,10 +11,10 @@
 			<_id type="a">GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::15:38:35</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.3.2020::9:41:36</_modifiedTimeWeak>
 			<_modifiedTime type="a">4.1.2020::18:48:15</_modifiedTime>
 			<_lastID type="a">15</_lastID>
-			<weakCGTime type="a">4.2.2020::15:38:35</weakCGTime>
+			<weakCGTime type="a">4.3.2020::9:41:36</weakCGTime>
 			<strongCGTime type="a">4.1.2020::11:37:3</strongCGTime>
 			<_defaultComposite type="s">GUID fabbb408-de82-424e-8fce-216617ff1ef0</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -616,16 +616,48 @@
 			<_id type="a">GUID 8a324cdf-404e-469e-8e07-d8bcf2dec122</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Government</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::21:33:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::21:33:38</_modifiedTime>
-			<weakCGTime type="a">3.31.2020::21:33:38</weakCGTime>
+			<_modifiedTimeWeak type="a">4.3.2020::9:41:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.3.2020::9:41:36</_modifiedTime>
+			<weakCGTime type="a">4.3.2020::9:41:36</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:28:56</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID dd4f1be4-91b9-43b7-838c-6fa680138238</value>
+			</AggregatesList>
 		</IActor>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID dd4f1be4-91b9-43b7-838c-6fa680138238</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsANGELS</_name>
+			<_modifiedTimeWeak type="a">4.3.2020::9:41:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.3.2020::9:41:36</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hname type="a">ANGELS</_hname>
+					<_hid type="a">GUID ba7ff1ec-3720-44d9-9f25-dd97ab9cf315</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">ANGELS</_hclass>
+					<_hname type="a">itsGovernment</_hname>
+					<_hid type="a">GUID 6f1a88c7-bf74-4da3-87f2-7a60ff9264f6</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IActor type="e">
 			<_id type="a">GUID 23c972f4-cc30-419c-a741-5d23c4eb9568</_id>
 			<_myState type="a">8192</_myState>
