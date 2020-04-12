@@ -11,10 +11,10 @@
 			<_id type="a">GUID 65f5770f-4999-4f7a-ac2d-170ed053c4f2</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">NF_GovernmentReqs</_name>
-			<_modifiedTimeWeak type="a">4.12.2020::12:7:31</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.12.2020::12:7:31</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:48:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:48:50</_modifiedTime>
 			<_lastID type="a">6</_lastID>
-			<weakCGTime type="a">4.12.2020::12:7:31</weakCGTime>
+			<weakCGTime type="a">4.12.2020::12:48:50</weakCGTime>
 			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_defaultComposite type="s">GUID 20f1ca13-661f-4669-b7b0-30d41aeb9748</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -390,11 +390,11 @@
 			<_id type="a">GUID 120709cd-d391-418d-a14c-f0290afb906f</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Speed Limit</_name>
-			<_modifiedTimeWeak type="a">4.12.2020::12:6:14</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.12.2020::12:6:14</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:48:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:48:50</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 The system shall ensure that the trucks drive with a speed limit of X km/h in the DC.\par%0D
+\viewkind4\uc1\pard\fs20 The system shall ensure that the trucks drive with a speed limit of 20 km/h in the DC.\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF_3.3.1</reqID>
