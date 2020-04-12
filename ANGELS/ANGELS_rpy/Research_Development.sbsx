@@ -11,11 +11,20 @@
 			<_id type="a">GUID 7321071c-da0d-4695-81ba-f324e87ac8f6</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Research_Development</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::14:9:26</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::13:39:49</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\RequirementsAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg</_hsubsystem>
+					<_hname type="a">R&amp;DReqDiagram</_hname>
+					<_hid type="a">GUID 923fd164-4e85-4c92-851a-cc0d7885e354</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">4.12.2020::13:39:49</_modifiedTime>
 			<_lastID type="a">6</_lastID>
-			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
-			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
+			<weakCGTime type="a">4.12.2020::13:39:49</weakCGTime>
+			<strongCGTime type="a">4.12.2020::13:34:38</strongCGTime>
 			<_defaultComposite type="s">GUID 765156ab-204f-46c7-adaa-5059487e08a4</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
@@ -45,14 +54,54 @@
 			<_id type="a">GUID a515e449-3dad-4879-acd2-db8aecd3d58f</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Reduce component failures</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::14:6:49</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::14:6:49</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::13:39:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::13:39:49</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 Reduce component failures resulting in less repairs and satisfaction from customers (logistics companies).\par%0D
 }%0D
 </_body>
 			<reqID type="a">B_2.2.1.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID 1e28cfe3-5ed9-4800-9c04-e2e095d08ffe</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 1e28cfe3-5ed9-4800-9c04-e2e095d08ffe</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Optimal component selection</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.12.2020::13:39:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::13:39:49</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Costs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_TruckMFGReqs::Costs</_hsubsystem>
+					<_hname type="a">Optimal component selection</_hname>
+					<_hid type="a">GUID e0ba30f2-8058-47db-a729-484acff75567</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID a515e449-3dad-4879-acd2-db8aecd3d58f</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID ca159162-e29e-4cf7-9f65-94f9c389b49e</_id>
 			<_myState type="a">8192</_myState>
@@ -81,14 +130,53 @@
 			<_id type="a">GUID f776dcaf-411e-453f-8ef8-b66c0e3ed44d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Availability for operation</_name>
-			<_modifiedTimeWeak type="a">3.29.2020::14:9:2</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.29.2020::14:9:2</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::13:28:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::13:28:56</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 Design a system that has high availability for operation by its customers\par%0D
 }%0D
 </_body>
 			<reqID type="a">B_2.2.4</reqID>
+			<AggregatesList type="e">
+				<value>GUID 8a7ec365-5c99-4575-afa0-0922be6f25b3</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 8a7ec365-5c99-4575-afa0-0922be6f25b3</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">B_TruckMFGReqs</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.12.2020::13:28:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::13:28:56</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">ISubsystem</_hm2Class>
+					<_hfilename type="a">.\B_TruckMFGReqs.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business</_hsubsystem>
+					<_hname type="a">B_TruckMFGReqs</_hname>
+					<_hid type="a">GUID 34334493-b255-41d2-9d01-387d45fc1a3c</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID f776dcaf-411e-453f-8ef8-b66c0e3ed44d</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID bf4316c8-6688-4934-ae70-4596e4eea758</_id>
 			<_myState type="a">8192</_myState>

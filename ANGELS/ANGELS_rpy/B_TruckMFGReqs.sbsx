@@ -11,6 +11,11 @@
 			<_id type="a">GUID 34334493-b255-41d2-9d01-387d45fc1a3c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">B_TruckMFGReqs</_name>
+			<OwnedDependencies type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</OwnedDependencies>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -24,7 +29,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.12.2020::13:36:21</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -34,14 +39,15 @@
 					<_hid type="a">GUID 537e80d7-33f3-4d6e-ba3c-25b92b995a86</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">3.31.2020::12:24:54</_modifiedTime>
-			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
-			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
+			<_modifiedTime type="a">4.12.2020::13:34:17</_modifiedTime>
+			<_lastID type="a">4</_lastID>
+			<weakCGTime type="a">4.12.2020::13:36:21</weakCGTime>
+			<strongCGTime type="a">4.12.2020::13:34:38</strongCGTime>
 			<_defaultComposite type="s">GUID 44395d87-8acb-4d73-aeea-3caf522e6f22</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">3.29.2020::13:5:44</_configurationRelatedTime>
 			<AggregatesList type="e">
+				<value>GUID 523e9503-f5be-48aa-9e2c-a47c1333b6c9</value>
 				<value>GUID 68dbfdae-4577-4368-a494-0dcfe8671580</value>
 				<value>GUID 5910a7ff-91ff-45f2-8e0c-5d157da99dd9</value>
 				<value>GUID d9cc5a31-e90a-4502-8a75-265439c57e60</value>
@@ -50,6 +56,27 @@
 				<value>GUID 44395d87-8acb-4d73-aeea-3caf522e6f22</value>
 			</AggregatesList>
 		</ISubsystem>
+		<IComment type="e">
+			<_id type="a">GUID 523e9503-f5be-48aa-9e2c-a47c1333b6c9</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">rationale_3</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
+							<_hname type="a">rationale</_hname>
+							<_hid type="a">GUID abf9763f-69a6-4b58-92bc-9379a6faab65</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.12.2020::13:34:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::13:30:38</_modifiedTime>
+		</IComment>
 		<ISubsystem type="e">
 			<fileName type="a">Costs</fileName>
 			<_id type="a">GUID 68dbfdae-4577-4368-a494-0dcfe8671580</_id>
@@ -74,10 +101,10 @@
 			<_id type="a">GUID 44395d87-8acb-4d73-aeea-3caf522e6f22</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.12.2020::13:34:38</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
-			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
+			<weakCGTime type="a">4.12.2020::13:34:38</weakCGTime>
+			<strongCGTime type="a">4.12.2020::13:34:38</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
