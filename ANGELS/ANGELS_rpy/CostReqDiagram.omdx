@@ -184,8 +184,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:14:54</_modifiedTime>
-			<_lastModifiedTime type="a">4.2.2020::8:14:54</_lastModifiedTime>
+			<_modifiedTime type="a">4.12.2020::12:9:55</_modifiedTime>
+			<_lastModifiedTime type="a">4.12.2020::12:9:55</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -568,7 +568,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.173432 0 0 0.0672441 818 146.367 </m_transform>
+			<m_transform type="a">0.182657 0 0 0.0872356 818 124.476 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -590,7 +590,7 @@
 			<m_polygon type="a">4 0 3  0 1095  1084 1095  1084 3  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<frameset type="a">&lt;frameset rows=76%25,24%25&gt;
+			<frameset type="a">&lt;frameset rows=49%25,51%25&gt;
 &lt;frame name=IDTextCompartment&gt;
 &lt;frame name=SpecificationTextCompartment&gt;</frameset>
 			<_iTempdisplayTextFlag type="a">1</_iTempdisplayTextFlag>
@@ -1091,6 +1091,38 @@
 		</CGIInheritance>
 		<CGIAnnotation type="e">
 			<_id type="a">GUID db98abbf-88fc-471e-b308-cf8a864050f7</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Graphics</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">FitBoxToItsTextuals</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">176</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
@@ -1120,7 +1152,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.116236 0 0 0.10348 17 98.6896 </m_transform>
+			<m_transform type="a">0.116236 0 0 0.145235 17 98.9679 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1138,10 +1170,11 @@
 					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_AdditionalLabel>
+			<m_bFramesetModified type="a">1</m_bFramesetModified>
 			<m_polygon type="a">4 0 3  0 1095  1084 1095  1084 3  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<frameset type="a">&lt;frameset rows=42%25,58%25&gt;
+			<frameset type="a">&lt;frameset rows=23%25,77%25&gt;
 &lt;frame name=IDTextCompartment&gt;
 &lt;frame name=SpecificationTextCompartment&gt;</frameset>
 			<_iTempdisplayTextFlag type="a">1</_iTempdisplayTextFlag>
@@ -1497,7 +1530,7 @@
 			<m_direction type="a">' '</m_direction>
 			<m_rpn type="p">
 				<CGIText type="e">
-					<m_str type="a">refine</m_str>
+					<m_str type="a">deriveReqt</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1515,7 +1548,7 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">1084 544 </m_SourcePort>
+			<m_SourcePort type="a">1084 537 </m_SourcePort>
 			<m_TargetPort type="a">-7 428 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
@@ -1559,7 +1592,7 @@
 			<m_direction type="a">' '</m_direction>
 			<m_rpn type="p">
 				<CGIText type="e">
-					<m_str type="a">refine</m_str>
+					<m_str type="a">deriveReqt</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1621,7 +1654,7 @@
 			<m_direction type="a">' '</m_direction>
 			<m_rpn type="p">
 				<CGIText type="e">
-					<m_str type="a">refine</m_str>
+					<m_str type="a">deriveReqt</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1683,7 +1716,7 @@
 			<m_direction type="a">' '</m_direction>
 			<m_rpn type="p">
 				<CGIText type="e">
-					<m_str type="a">refine</m_str>
+					<m_str type="a">deriveReqt</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1705,7 +1738,7 @@
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
 			<m_SourcePort type="a">622 -7 </m_SourcePort>
-			<m_TargetPort type="a">727 1095 </m_TargetPort>
+			<m_TargetPort type="a">728 1095 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
 		</CGIInheritance>
@@ -2855,7 +2888,7 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">-6 351 </m_SourcePort>
+			<m_SourcePort type="a">-5 350 </m_SourcePort>
 			<m_TargetPort type="a">1084 444 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>

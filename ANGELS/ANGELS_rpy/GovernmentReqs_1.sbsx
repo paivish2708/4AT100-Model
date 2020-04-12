@@ -10,10 +10,10 @@
 	<ISubsystem type="e">
 			<_id type="a">GUID cd34cbf0-e698-4840-b306-8ba5fffc50e6</_id>
 			<_name type="a">F_GovernmentReqs</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::14:43:17</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:7:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:7:48</_modifiedTime>
 			<_lastID type="a">6</_lastID>
-			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<weakCGTime type="a">4.12.2020::12:7:48</weakCGTime>
 			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_defaultComposite type="s">GUID 1d33280f-44cc-46b1-a1a0-f0c9dad178d4</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -136,8 +136,8 @@
 			<_id type="a">GUID 2d0e0cec-9355-4ef1-b2d0-3cec8878c02d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Human Detection</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::12:45:18</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::12:45:18</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:6:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:6:21</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall detect humans in time and inform them by using visual aids.\par%0D
@@ -159,15 +159,15 @@
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
-							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
-							<_hname type="a">refine</_hname>
-							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.1.2020::12:45:18</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::12:45:18</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:6:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:6:21</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -188,8 +188,8 @@
 			<_id type="a">GUID 70527059-7a57-44b9-ae82-a871be0aec39</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Engine Size</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::10:8:55</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::10:8:55</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:0:23</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:0:23</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system should use a small as possible engine.\par%0D
@@ -211,15 +211,15 @@
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
-							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
-							<_hname type="a">refine</_hname>
-							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.1.2020::9:59:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::9:59:38</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:0:23</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:0:23</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -329,8 +329,8 @@
 			<_id type="a">GUID fc4cb4c0-e63b-4fe4-baae-ab1e2a53d4ac</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Adjustment Legislation</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::14:43:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::14:43:17</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:7:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:7:48</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall ensure that the trucks are allowed to drive with an automation level of 5 inside the DC.\par%0D
@@ -353,15 +353,15 @@
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
-							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
-							<_hname type="a">refine</_hname>
-							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.1.2020::14:41:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::14:41:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:7:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:7:35</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -388,15 +388,16 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
-							<_hname type="a">satisfy</_hname>
-							<_hid type="a">GUID 69acc50f-e21e-4b4a-a51e-863efe75ce18</_hid>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.1.2020::14:39:32</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::14:39:32</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:7:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:7:48</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>

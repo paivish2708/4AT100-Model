@@ -10,10 +10,10 @@
 	<ISubsystem type="e">
 			<_id type="a">GUID 0695ce4b-5d88-4051-92de-8530087c4081</_id>
 			<_name type="a">F_LogisticsReqs</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::14:51:51</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:8:40</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:8:40</_modifiedTime>
 			<_lastID type="a">3</_lastID>
-			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<weakCGTime type="a">4.12.2020::12:8:40</weakCGTime>
 			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_defaultComposite type="s">GUID 261879f5-965d-4767-97b8-d40e22c0512e</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -31,8 +31,8 @@
 			<_id type="a">GUID b85160d2-e032-4bd4-9b5a-652c024cc24e</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DC Time</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::14:43:59</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::14:43:59</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:8:34</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:8:34</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall communicate using V2I to the operator how much time was spent in the DC.\par%0D
@@ -54,15 +54,15 @@
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
-							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
-							<_hname type="a">refine</_hname>
-							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.1.2020::14:43:59</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::14:43:59</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:8:34</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:8:34</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -135,8 +135,8 @@
 			<_id type="a">GUID b4189e6c-442d-4c1c-bb1e-12829a380de6</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Truck Communication</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::14:49:2</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::14:49:2</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:8:40</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:8:40</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall communicate with other vehicles using V2V.\par%0D
@@ -158,15 +158,15 @@
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
-							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
-							<_hname type="a">refine</_hname>
-							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.1.2020::14:49:2</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::14:49:2</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:8:40</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:8:40</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
@@ -299,8 +299,8 @@
 			<_id type="a">GUID 6a3ab267-5472-4a19-b725-53fb45ad41fd</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Trailer Door</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::12:34:48</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::12:34:48</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:8:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:8:15</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall communicate using V2I before the trailer door opens.\par%0D
@@ -345,15 +345,15 @@
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
 							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
-							<_hsubsystem type="a">SysML::ModelElements</_hsubsystem>
-							<_hname type="a">refine</_hname>
-							<_hid type="a">GUID daa19553-3ef8-4893-93f5-79989a9c6916</_hid>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.1.2020::12:34:48</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::12:34:48</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.12.2020::12:8:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.12.2020::12:8:15</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
