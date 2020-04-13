@@ -11,10 +11,19 @@
 			<_id type="a">GUID 0039facb-611b-4808-8e10-299f6fcb3231</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Reliability_dist</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.30.2020::17:58:16</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:23:14</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\RequirementsAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg</_hsubsystem>
+					<_hname type="a">JumboReliabilityReqDiagram</_hname>
+					<_hid type="a">GUID c13b71db-267c-448c-9d62-bb12af45d43e</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">4.13.2020::9:27:13</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<weakCGTime type="a">4.13.2020::9:23:14</weakCGTime>
 			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_defaultComposite type="s">GUID 22057b3d-4869-4b91-97a0-2cb87c9e328f</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>

@@ -10,10 +10,19 @@
 	<ISubsystem type="e">
 			<_id type="a">GUID 16f7fa01-f781-435c-902c-cacb9214c1c5</_id>
 			<_name type="a">Costs</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::15:36:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::16:16:27</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:8:50</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\RequirementsAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg</_hsubsystem>
+					<_hname type="a">JumboCostReqDiagram</_hname>
+					<_hid type="a">GUID 24b4a4c3-9965-4619-8105-a91b297ddd63</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">4.13.2020::9:27:13</_modifiedTime>
 			<_lastID type="a">12</_lastID>
-			<weakCGTime type="a">4.1.2020::15:36:10</weakCGTime>
+			<weakCGTime type="a">4.13.2020::9:8:50</weakCGTime>
 			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_defaultComposite type="s">GUID b1582cd0-deee-4d4d-b101-294a7d02d053</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -158,14 +167,50 @@
 			<_id type="a">GUID b2e4043d-e733-44b7-97f0-720244c4b9a1</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ANGELS Maintenance Cost</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::15:59:50</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::15:59:50</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:2:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:2:11</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall not exceed the allocated budget by spending a lot on maintenance.\par%0D
 }%0D
 </_body>
 			<reqID type="a">B_1.1.2.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID c502e2a2-0e91-4540-9a4a-5c1d5bbe08f8</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID c502e2a2-0e91-4540-9a4a-5c1d5bbe08f8</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">ANGELS Costs</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:2:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:2:11</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 9c5d8af1-63eb-42fa-b3d9-9dc2f4924851</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID b2e4043d-e733-44b7-97f0-720244c4b9a1</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID a9672815-acc3-45ca-99c7-81eac67e9638</_id>
 			<_myState type="a">8192</_myState>
@@ -208,7 +253,7 @@
 			<_id type="a">GUID 83170f4b-b8a0-4344-9e2f-59285137749c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Truck Repair Cost</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::16:3:31</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.13.2020::9:5:42</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.31.2020::16:3:31</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
@@ -224,7 +269,7 @@
 			<_id type="a">GUID 601f0f36-aebb-4cc1-a060-7e36919d7d88</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">Collision Cost</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::16:3:31</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.13.2020::9:5:42</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.31.2020::16:3:31</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
@@ -351,15 +396,51 @@
 			<_id type="a">GUID 9c05bdbe-3814-4531-89c6-187d73c1e727</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver Training Cost</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::16:0:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::16:0:10</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:8:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:8:50</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall minimise the costs invovled in training the driver\par%0D
 \par%0D
 }%0D
 </_body>
 			<reqID type="a">B_1.1.4.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID 59096cf6-3f0f-42d0-a3bc-87ff5efa5100</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 59096cf6-3f0f-42d0-a3bc-87ff5efa5100</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Operator Training Cost</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:8:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:8:50</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 79c7907a-0235-46cc-81ad-162c1ae91d58</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 9c05bdbe-3814-4531-89c6-187d73c1e727</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 7eed168c-33e5-407b-a834-dc38a7b87e2d</_id>
 			<_myState type="a">8192</_myState>

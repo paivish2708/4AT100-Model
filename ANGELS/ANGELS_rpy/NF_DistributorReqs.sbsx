@@ -11,10 +11,10 @@
 			<_id type="a">GUID 3ec6c3ac-48cc-45d8-b5dc-31d0a6653c8c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">NF_DistributorReqs</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:19:27</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:19:27</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:31:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:31:3</_modifiedTime>
 			<_lastID type="a">22</_lastID>
-			<weakCGTime type="a">4.2.2020::8:19:27</weakCGTime>
+			<weakCGTime type="a">4.13.2020::9:31:3</weakCGTime>
 			<strongCGTime type="a">4.1.2020::15:36:10</strongCGTime>
 			<_defaultComposite type="s">GUID 26c38dec-afc2-4c10-81b9-44fcea4c7205</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -264,158 +264,819 @@
 			<_id type="a">GUID 27ba4ea1-550e-4b49-a4a3-1e55569bf515</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Efficiency Operating</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:6:11</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:6:11</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:17:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:17:2</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The System shall increase the Operating Efficiency by X percent\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.2.1.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID 64a106ba-c03e-481a-a5d1-1d854f479b38</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 64a106ba-c03e-481a-a5d1-1d854f479b38</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Operating Efficiency</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:17:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:17:2</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Efficiency_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Efficiency_dist</_hsubsystem>
+					<_hname type="a">Operating Efficiency</_hname>
+					<_hid type="a">GUID fdf25190-2265-41ad-abd7-a4bcc55b71ed</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 27ba4ea1-550e-4b49-a4a3-1e55569bf515</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 9f45ed73-9739-4e54-a4b1-5313769a2d52</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Efficiency Docking</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:6:23</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:6:23</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:17:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:17:0</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The System shall increase the Docking Efficiency by X percent\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.2.1.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID 3a03335a-fbed-4ee9-9109-6d8ac337e1bc</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 3a03335a-fbed-4ee9-9109-6d8ac337e1bc</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Operating Efficiency</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:17:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:17:0</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Efficiency_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Efficiency_dist</_hsubsystem>
+					<_hname type="a">Operating Efficiency</_hname>
+					<_hid type="a">GUID fdf25190-2265-41ad-abd7-a4bcc55b71ed</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 9f45ed73-9739-4e54-a4b1-5313769a2d52</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 5e51cd8f-c8de-4e2e-98e5-d6785b76fad9</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Efficiency CrossDock</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:6:18</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:6:18</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:16:55</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:16:55</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The System shall increase the Cross-Docking Efficiency by X percent\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.2.1.3</reqID>
+			<AggregatesList type="e">
+				<value>GUID 63b17dfc-6705-406b-9a3f-00431b62c7fb</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 63b17dfc-6705-406b-9a3f-00431b62c7fb</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Operating Efficiency</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:16:55</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:16:55</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Efficiency_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Efficiency_dist</_hsubsystem>
+					<_hname type="a">Operating Efficiency</_hname>
+					<_hid type="a">GUID fdf25190-2265-41ad-abd7-a4bcc55b71ed</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 5e51cd8f-c8de-4e2e-98e5-d6785b76fad9</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID be7381d3-4d0e-4c9e-b8e7-44be7b9f3a10</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">EfficiencyLocation Accuracy</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:9:39</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:9:39</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:16:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:16:53</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The System shall Maximise the Location Efficiency and Record Efficiency  by ensuring the percentage of orders and items picked Correctly\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.2.1.4</reqID>
+			<AggregatesList type="e">
+				<value>GUID fd6f5d28-3514-412e-af4d-0c4c219cd351</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID fd6f5d28-3514-412e-af4d-0c4c219cd351</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Operating Efficiency</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:16:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:16:53</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Efficiency_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Efficiency_dist</_hsubsystem>
+					<_hname type="a">Operating Efficiency</_hname>
+					<_hid type="a">GUID fdf25190-2265-41ad-abd7-a4bcc55b71ed</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID be7381d3-4d0e-4c9e-b8e7-44be7b9f3a10</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID ae5abca5-1f6a-441b-8f78-79e132504b30</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Efficiency Warehouse</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:9:20</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:9:20</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:17:7</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:17:7</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The System shall Maximise theWarehousing Efficiency and Effectiveness by reducing the Dock-to-Stock Cycle time by X percent\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.2.1.5</reqID>
+			<AggregatesList type="e">
+				<value>GUID 04f57471-cef2-4593-b423-54fd58f6b1b3</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 04f57471-cef2-4593-b423-54fd58f6b1b3</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Operating Efficiency</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:17:7</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:17:7</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Efficiency_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Efficiency_dist</_hsubsystem>
+					<_hname type="a">Operating Efficiency</_hname>
+					<_hid type="a">GUID fdf25190-2265-41ad-abd7-a4bcc55b71ed</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID ae5abca5-1f6a-441b-8f78-79e132504b30</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 7771733e-ba83-407d-a3e0-dda9e57ee690</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Reliability Weather</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:9:9</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:9:9</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:36</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The system shall be robust against all weather conditions\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.3.1.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID f7668079-d43c-4d53-b4ce-5e9ce2d00fd4</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID f7668079-d43c-4d53-b4ce-5e9ce2d00fd4</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reliable</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:36</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Reliability_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Reliability_dist</_hsubsystem>
+					<_hname type="a">Reliable</_hname>
+					<_hid type="a">GUID 92bbee33-0c5d-4afc-9dc7-4d34ee351e2d</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 7771733e-ba83-407d-a3e0-dda9e57ee690</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 885cad0c-ece3-43c4-beab-84e6857a6a7d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Relaibility Maintanence</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:10:25</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:10:25</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:28</_modifiedTime>
+			<_lastID type="a">3</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The System shall have a maintanance period of once in 3 months\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.3.1.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID 05013c5c-be79-471f-a05b-7923d719ac1a</value>
+				<value>GUID 5c4c26ab-77e3-4c56-8a00-51a1a534b2d3</value>
+				<value>GUID 1b5036b7-a16a-48bd-a42a-6cc1d63bdee7</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 05013c5c-be79-471f-a05b-7923d719ac1a</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reliable</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:24:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:24:49</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Reliability_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Reliability_dist</_hsubsystem>
+					<_hname type="a">Reliable</_hname>
+					<_hid type="a">GUID 92bbee33-0c5d-4afc-9dc7-4d34ee351e2d</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 885cad0c-ece3-43c4-beab-84e6857a6a7d</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 5c4c26ab-77e3-4c56-8a00-51a1a534b2d3</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reliable_0</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:12</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:12</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Reliability_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Reliability_dist</_hsubsystem>
+					<_hname type="a">Reliable</_hname>
+					<_hid type="a">GUID 92bbee33-0c5d-4afc-9dc7-4d34ee351e2d</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 885cad0c-ece3-43c4-beab-84e6857a6a7d</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 1b5036b7-a16a-48bd-a42a-6cc1d63bdee7</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reliable_1</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:28</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Reliability_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Reliability_dist</_hsubsystem>
+					<_hname type="a">Reliable</_hname>
+					<_hid type="a">GUID 92bbee33-0c5d-4afc-9dc7-4d34ee351e2d</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 885cad0c-ece3-43c4-beab-84e6857a6a7d</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 1c79f5b1-96c8-4a6d-8887-463f3f9eecb1</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Reliability collision</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:11:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:11:15</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:32</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:32</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The System shall not cause any collisions inside the DC \par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.3.1.3</reqID>
+			<AggregatesList type="e">
+				<value>GUID 8c742f8f-58eb-4e0c-b89e-808a0fe3c900</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 8c742f8f-58eb-4e0c-b89e-808a0fe3c900</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reliable</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:32</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:32</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Reliability_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Reliability_dist</_hsubsystem>
+					<_hname type="a">Reliable</_hname>
+					<_hid type="a">GUID 92bbee33-0c5d-4afc-9dc7-4d34ee351e2d</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 1c79f5b1-96c8-4a6d-8887-463f3f9eecb1</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 512859f6-777a-4044-931b-7ae93de30ed5</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Reliability Downtime</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:12:4</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:12:4</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:34</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:34</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The System shall be  easily Servicable in case of down time\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.3.1.4</reqID>
+			<AggregatesList type="e">
+				<value>GUID 7b4f7436-7660-40bf-9d87-d8507da45fe0</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 7b4f7436-7660-40bf-9d87-d8507da45fe0</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reliable</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:34</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:34</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Reliability_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Reliability_dist</_hsubsystem>
+					<_hname type="a">Reliable</_hname>
+					<_hid type="a">GUID 92bbee33-0c5d-4afc-9dc7-4d34ee351e2d</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 512859f6-777a-4044-931b-7ae93de30ed5</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID e427c21b-b0c5-42d9-bd71-9aeac7e9decf</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Reliability Integration</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:12:42</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:12:42</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:40</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:40</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The System shall be easily integratable with the Other Supply-chain Processes\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.3.1.5</reqID>
+			<AggregatesList type="e">
+				<value>GUID d878afd1-f57a-45a3-994f-7a3e0a760b79</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID d878afd1-f57a-45a3-994f-7a3e0a760b79</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reliable</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:40</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:40</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Reliability_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Reliability_dist</_hsubsystem>
+					<_hname type="a">Reliable</_hname>
+					<_hid type="a">GUID 92bbee33-0c5d-4afc-9dc7-4d34ee351e2d</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID e427c21b-b0c5-42d9-bd71-9aeac7e9decf</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID a485d848-abed-4982-9b6b-fb5852f0971d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Reliability No DC modifications</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:14:18</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:14:18</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:25</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:25</_modifiedTime>
+			<_lastID type="a">3</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The System shall not make any modifications in terms of DC layout\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.3.1.6</reqID>
+			<AggregatesList type="e">
+				<value>GUID 03693da2-7372-4ade-9c36-4c12415960d6</value>
+				<value>GUID 1f296f0d-3225-484a-b9e1-1772d904f328</value>
+				<value>GUID aedbe2ca-c158-46df-b6a5-5a76fe44f59b</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 03693da2-7372-4ade-9c36-4c12415960d6</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reliable</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:24:55</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:24:55</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Reliability_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Reliability_dist</_hsubsystem>
+					<_hname type="a">Reliable</_hname>
+					<_hid type="a">GUID 92bbee33-0c5d-4afc-9dc7-4d34ee351e2d</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID a485d848-abed-4982-9b6b-fb5852f0971d</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 1f296f0d-3225-484a-b9e1-1772d904f328</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reliable_0</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:9</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:9</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Reliability_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Reliability_dist</_hsubsystem>
+					<_hname type="a">Reliable</_hname>
+					<_hid type="a">GUID 92bbee33-0c5d-4afc-9dc7-4d34ee351e2d</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID a485d848-abed-4982-9b6b-fb5852f0971d</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID aedbe2ca-c158-46df-b6a5-5a76fe44f59b</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reliable_1</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:25:25</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:25:25</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Reliability_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Reliability_dist</_hsubsystem>
+					<_hname type="a">Reliable</_hname>
+					<_hid type="a">GUID 92bbee33-0c5d-4afc-9dc7-4d34ee351e2d</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID a485d848-abed-4982-9b6b-fb5852f0971d</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 150dcccb-b4ed-4f15-9ea6-c902b188807b</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Safety- Operational safety</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:16:48</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:16:48</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:31:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:31:0</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The System shall be designed according to the Safety legislations set by EU-OSHA\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.4.1.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID 09ab65c5-49cc-4703-86f5-7c19bb173d5f</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 09ab65c5-49cc-4703-86f5-7c19bb173d5f</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Overall Safety</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:31:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:31:0</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Safety_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Safety_dist</_hsubsystem>
+					<_hname type="a">Overall Safety</_hname>
+					<_hid type="a">GUID db9b15df-b698-4911-90eb-f87e82aa4b0a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 150dcccb-b4ed-4f15-9ea6-c902b188807b</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 6d42835b-dd23-49c3-b191-d5cdc32f2614</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Safety - Functional</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:17:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:17:17</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:31:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:31:3</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The System shall be designed according to the ISO26262 Standards\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.4.1.2</reqID>
+			<AggregatesList type="e">
+				<value>GUID af524a53-3f30-4b8d-a6d9-6090dc049d73</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID af524a53-3f30-4b8d-a6d9-6090dc049d73</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Overall Safety</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Requirements</_hsubsystem>
+							<_hname type="a">deriveReqt</_hname>
+							<_hid type="a">GUID bd4e59da-660e-4d0f-b509-206b2bd9daaf</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:31:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:31:3</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Safety_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Safety_dist</_hsubsystem>
+					<_hname type="a">Overall Safety</_hname>
+					<_hid type="a">GUID db9b15df-b698-4911-90eb-f87e82aa4b0a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 6d42835b-dd23-49c3-b191-d5cdc32f2614</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IRequirement type="e">
 			<_id type="a">GUID 032f4796-9698-4397-8af1-27989b4f2e6d</_id>
 			<_myState type="a">8192</_myState>
@@ -444,14 +1105,53 @@
 			<_id type="a">GUID 0d795b46-7986-4752-85c8-5d51b12b4597</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Emissions-Carbonfoot print in Supply chain process</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::8:19:27</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::8:19:27</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.13.2020::9:21:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:21:33</_modifiedTime>
+			<_lastID type="a">1</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 The System shall reduce the Carbon foot print in the Supply chain cycle by X percentage.\par%0D
 }%0D
 </_body>
 			<reqID type="a">NF1.5.1.1</reqID>
+			<AggregatesList type="e">
+				<value>GUID 0c64b8d2-98f7-4872-8396-39cd2727644c</value>
+			</AggregatesList>
 		</IRequirement>
+		<IDependency type="e">
+			<_id type="a">GUID 0c64b8d2-98f7-4872-8396-39cd2727644c</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Green logistics</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">derive</_hname>
+							<_hid type="a">GUID 77e51128-5c12-48fa-9a18-d782ae0ec76a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">4.13.2020::9:21:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.13.2020::9:21:33</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\Emission_dist.sbsx</_hfilename>
+					<_hsubsystem type="a">RequirementsAnalysisPkg::Business::B_DistributorReqs::Emission_dist</_hsubsystem>
+					<_hname type="a">Green logistics</_hname>
+					<_hid type="a">GUID 622dc8fe-3745-49c6-855f-616930b49a67</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hid type="a">GUID 0d795b46-7986-4752-85c8-5d51b12b4597</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		<IClass type="e">
 			<_id type="a">GUID 26c38dec-afc2-4c10-81b9-44fcea4c7205</_id>
 			<_myState type="a">40960</_myState>
