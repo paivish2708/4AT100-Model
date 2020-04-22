@@ -11,10 +11,10 @@
 			<_id type="a">GUID 39b8bb0f-3c21-4878-9e98-4ed62d1ac09b</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Default</_name>
-			<_modifiedTimeWeak type="a">4.7.2020::10:39:24</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.22.2020::13:22:51</_modifiedTimeWeak>
 			<_modifiedTime type="a">4.7.2020::10:34:49</_modifiedTime>
 			<_lastID type="a">20</_lastID>
-			<weakCGTime type="a">4.7.2020::10:39:24</weakCGTime>
+			<weakCGTime type="a">4.22.2020::13:22:51</weakCGTime>
 			<strongCGTime type="a">4.1.2020::11:37:3</strongCGTime>
 			<_defaultComposite type="s">GUID 4bbb62d1-41dc-4177-b44a-9846079be256</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -1371,7 +1371,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.7.2020::10:32:58</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.22.2020::13:26:13</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -1381,9 +1381,9 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">4.7.2020::10:32:58</_modifiedTime>
+			<_modifiedTime type="a">4.22.2020::13:26:13</_modifiedTime>
 			<_lastID type="a">4</_lastID>
-			<weakCGTime type="a">4.7.2020::10:32:58</weakCGTime>
+			<weakCGTime type="a">4.22.2020::13:26:13</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:29:10</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -1405,6 +1405,15 @@
 				<value>GUID e9a2666d-7564-48a8-b781-b57ac8e3e5e2</value>
 				<value>GUID 6bb7ca4d-ffbc-4280-a7bd-b421f6bb466a</value>
 				<value>GUID 4b09aa65-6223-4ade-a2b7-d9a33bbbde3f</value>
+				<value>GUID 41788fc2-b51a-4bae-bba1-367825778239</value>
+				<value>GUID 235e6aa7-8f2f-4f2b-8759-4f46cb52f5f3</value>
+				<value>GUID 32011c6d-772b-4c21-806a-104645bd167b</value>
+				<value>GUID e2130dd6-5219-4ea5-a9ef-9ae636d80675</value>
+				<value>GUID 0e3b5796-b558-43b1-865f-ffb33cf468ce</value>
+				<value>GUID c0444578-7a68-489d-834a-8daa290a4fe6</value>
+				<value>GUID 2a701ffa-c491-4d70-bbb0-94e24e3d4605</value>
+				<value>GUID 9e8a46d3-cdbf-4206-94a3-2bd7dddbd3f5</value>
+				<value>GUID a0fd504e-4a86-4027-ac94-d28a8bb12fad</value>
 			</AggregatesList>
 		</IClass>
 		<IDependency type="e">
@@ -1793,6 +1802,267 @@
 					<_hclass type="a">Provide new steering input</_hclass>
 					<_hname type="a">itsTruck</_hname>
 					<_hid type="a">GUID 74eac52c-fe46-4160-9880-266d39efff13</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 41788fc2-b51a-4bae-bba1-367825778239</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsDC Operator</_name>
+			<_modifiedTimeWeak type="a">4.22.2020::13:22:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.22.2020::13:22:51</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IActor</_hm2Class>
+					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hname type="a">DC Operator</_hname>
+					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hclass type="a">DC Operator</_hclass>
+					<_hname type="a">itsTruck</_hname>
+					<_hid type="a">GUID 0c260f2c-7172-464d-b9ae-0aeebcbe3ce1</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 235e6aa7-8f2f-4f2b-8759-4f46cb52f5f3</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsStop Truck</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.22.2020::13:22:55</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hname type="a">Stop Truck</_hname>
+					<_hid type="a">GUID 74cbb2dd-e33f-4154-afac-91ee21114314</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hclass type="a">Stop Truck</_hclass>
+					<_hname type="a">itsTruck</_hname>
+					<_hid type="a">GUID 5dcdb90e-de84-4abd-b582-591c780f3cfe</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 32011c6d-772b-4c21-806a-104645bd167b</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsLoad Goods</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.22.2020::13:23:38</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hname type="a">Load Goods</_hname>
+					<_hid type="a">GUID 181d9f1a-6f9b-4033-9613-54f41547e205</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hclass type="a">Load Goods</_hclass>
+					<_hname type="a">itsTruck</_hname>
+					<_hid type="a">GUID d355390e-3e23-4e20-8bec-45f864d9414f</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID e2130dd6-5219-4ea5-a9ef-9ae636d80675</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsClose Loading doors</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.22.2020::13:24:1</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hname type="a">Close Loading doors</_hname>
+					<_hid type="a">GUID 107b1941-b17f-49ca-9469-947ac2b179fe</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hclass type="a">Close Loading doors</_hclass>
+					<_hname type="a">itsTruck</_hname>
+					<_hid type="a">GUID ae23f8c8-fa09-4fa0-9c3b-62f9b735146d</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 0e3b5796-b558-43b1-865f-ffb33cf468ce</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsClose Loading doors_1</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.22.2020::13:24:9</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hname type="a">Close Loading doors</_hname>
+					<_hid type="a">GUID 107b1941-b17f-49ca-9469-947ac2b179fe</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hclass type="a">Close Loading doors</_hclass>
+					<_hname type="a">itsTruck_1</_hname>
+					<_hid type="a">GUID 864dfb8b-0c9a-468e-a697-edc857e714bc</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID c0444578-7a68-489d-834a-8daa290a4fe6</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsStop Truck_1</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.22.2020::13:24:53</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hname type="a">Stop Truck</_hname>
+					<_hid type="a">GUID 74cbb2dd-e33f-4154-afac-91ee21114314</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hclass type="a">Stop Truck</_hclass>
+					<_hname type="a">itsTruck_1</_hname>
+					<_hid type="a">GUID 0aed8f76-e59f-42df-8473-7c6d93ecb1f7</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 2a701ffa-c491-4d70-bbb0-94e24e3d4605</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsLoad Goods_1</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.22.2020::13:25:0</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hname type="a">Load Goods</_hname>
+					<_hid type="a">GUID 181d9f1a-6f9b-4033-9613-54f41547e205</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hclass type="a">Load Goods</_hclass>
+					<_hname type="a">itsTruck_1</_hname>
+					<_hid type="a">GUID 10cd737b-5680-42a5-818d-2084787f71f7</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 9e8a46d3-cdbf-4206-94a3-2bd7dddbd3f5</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsClose Loading doors_2</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.22.2020::13:25:1</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hname type="a">Close Loading doors</_hname>
+					<_hid type="a">GUID 107b1941-b17f-49ca-9469-947ac2b179fe</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hclass type="a">Close Loading doors</_hclass>
+					<_hname type="a">itsTruck_2</_hname>
+					<_hid type="a">GUID 1a509f06-a6ee-47b0-af03-676c9a0c7b6a</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID a0fd504e-4a86-4027-ac94-d28a8bb12fad</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsOpen Loading Doors</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.22.2020::13:26:13</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hname type="a">Open Loading Doors</_hname>
+					<_hid type="a">GUID c2741669-efd0-4c0e-9620-22f08fcffc33</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hclass type="a">Open Loading Doors</_hclass>
+					<_hname type="a">itsTruck</_hname>
+					<_hid type="a">GUID f4353c88-bcef-459f-8d05-3794f8dddecb</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>

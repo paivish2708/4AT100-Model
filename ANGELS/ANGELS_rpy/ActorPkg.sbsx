@@ -11,10 +11,10 @@
 			<_id type="a">GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
-			<_modifiedTimeWeak type="a">4.7.2020::10:42:30</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:33:48</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.22.2020::13:19:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.22.2020::13:22:14</_modifiedTime>
 			<_lastID type="a">15</_lastID>
-			<weakCGTime type="a">4.7.2020::10:42:30</weakCGTime>
+			<weakCGTime type="a">4.22.2020::13:19:56</weakCGTime>
 			<strongCGTime type="a">4.1.2020::11:37:3</strongCGTime>
 			<_defaultComposite type="s">GUID fabbb408-de82-424e-8fce-216617ff1ef0</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -158,7 +158,7 @@
 			<_id type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DC Operator</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::15:38:51</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.22.2020::13:22:51</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -168,9 +168,9 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">4.2.2020::15:38:51</_modifiedTime>
+			<_modifiedTime type="a">4.22.2020::13:22:51</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">4.2.2020::15:38:51</weakCGTime>
+			<weakCGTime type="a">4.22.2020::13:22:51</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:28:56</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -185,6 +185,8 @@
 				<value>GUID e8b79022-6650-4512-9770-724e6d71e364</value>
 				<value>GUID 51d2a73a-107c-496d-a2c1-b5927590389e</value>
 				<value>GUID 139a2800-c09b-439e-9304-21a1700c14a3</value>
+				<value>GUID 663c47fd-a02b-4b3f-a7d1-48b3c38f2b18</value>
+				<value>GUID 0c260f2c-7172-464d-b9ae-0aeebcbe3ce1</value>
 			</AggregatesList>
 		</IActor>
 		<IInformationFlow type="e">
@@ -371,6 +373,64 @@
 					<_hclass type="a">Parking Spot Input</_hclass>
 					<_hname type="a">itsDC Operator</_hname>
 					<_hid type="a">GUID ea8ce77b-d7bc-4805-81de-3a42ff842f11</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 663c47fd-a02b-4b3f-a7d1-48b3c38f2b18</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsOpen Loading Doors</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.22.2020::13:19:56</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hname type="a">Open Loading Doors</_hname>
+					<_hid type="a">GUID c2741669-efd0-4c0e-9620-22f08fcffc33</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hclass type="a">Open Loading Doors</_hclass>
+					<_hname type="a">itsDC Operator</_hname>
+					<_hid type="a">GUID f40facf6-2309-464d-912c-aadacce8de34</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 0c260f2c-7172-464d-b9ae-0aeebcbe3ce1</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsTruck</_name>
+			<_modifiedTimeWeak type="a">4.22.2020::13:22:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.22.2020::13:22:51</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hname type="a">Truck</_hname>
+					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\Default.sbsx</_hfilename>
+					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hclass type="a">Truck</_hclass>
+					<_hname type="a">itsDC Operator</_hname>
+					<_hid type="a">GUID 41788fc2-b51a-4bae-bba1-367825778239</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
