@@ -56,9 +56,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.13.2020::9:0:46</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.13.2020::9:27:13</_modifiedTime>
-			<_lastID type="a">8</_lastID>
+			<_modifiedTimeWeak type="a">4.22.2020::21:56:19</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.22.2020::21:56:19</_modifiedTime>
+			<_lastID type="a">11</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">
 					<size type="a">16</size>
@@ -137,6 +137,9 @@
 				<value>GUID de656d0c-824e-401d-88a2-a108a59b1b85</value>
 				<value>GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</value>
 				<value>GUID dd55cabb-699e-4724-9d69-dcc932a50bcc</value>
+				<value>GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</value>
+				<value>GUID 661c23ef-e37c-4d88-8aea-2af717860b40</value>
+				<value>GUID 363e27a5-edb8-44a5-82c4-8353be709de0</value>
 				<value>GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</value>
 				<value>GUID 7dba1274-9404-4f0f-b93c-831e00073cf1</value>
 			</AggregatesList>
@@ -164,8 +167,20 @@
 			<_id type="a">GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</_id>
 		</ISubsystem>
 		<ISubsystem type="e">
-			<fileName type="a">package_7</fileName>
+			<fileName type="a">LoadingSystemPkg</fileName>
 			<_id type="a">GUID dd55cabb-699e-4724-9d69-dcc932a50bcc</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">DockingSystemPkg</fileName>
+			<_id type="a">GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">ObstacleDetectionPkg</fileName>
+			<_id type="a">GUID 661c23ef-e37c-4d88-8aea-2af717860b40</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">ParkingSystemPkg</fileName>
+			<_id type="a">GUID 363e27a5-edb8-44a5-82c4-8353be709de0</_id>
 		</ISubsystem>
 		<IDiagram type="e">
 			<fileName type="a">System_Context</fileName>
