@@ -11,15 +11,19 @@
 			<_id type="a">GUID de656d0c-824e-401d-88a2-a108a59b1b85</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCaseAnalysisPkg</_name>
-			<_modifiedTimeWeak type="a">4.22.2020::21:56:55</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::21:56:55</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.28.2020::14:49:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.28.2020::14:49:45</_modifiedTime>
 			<_lastID type="a">30</_lastID>
-			<weakCGTime type="a">4.22.2020::21:56:55</weakCGTime>
+			<weakCGTime type="a">4.28.2020::14:49:45</weakCGTime>
 			<strongCGTime type="a">4.2.2020::15:41:39</strongCGTime>
 			<_defaultComposite type="s">GUID 66af33e9-98b9-483e-9515-0798c195b3d2</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
+				<value>GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</value>
+				<value>GUID dd55cabb-699e-4724-9d69-dcc932a50bcc</value>
+				<value>GUID 661c23ef-e37c-4d88-8aea-2af717860b40</value>
+				<value>GUID 363e27a5-edb8-44a5-82c4-8353be709de0</value>
 				<value>GUID 66af33e9-98b9-483e-9515-0798c195b3d2</value>
 				<value>GUID 2353c088-cdfa-4be0-9042-24068a09d195</value>
 				<value>GUID c4f77424-ee3a-4f6e-8800-d1b4ca6c37a6</value>
@@ -42,6 +46,22 @@
 				<value>GUID 107b1941-b17f-49ca-9469-947ac2b179fe</value>
 				<value>GUID 25ec47a8-4dc4-488b-b2e1-484c6f876cb8</value>
 			</AggregatesList>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">DockingSystemPkg</fileName>
+			<_id type="a">GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">LoadingSystemPkg</fileName>
+			<_id type="a">GUID dd55cabb-699e-4724-9d69-dcc932a50bcc</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">ObstacleDetectionPkg</fileName>
+			<_id type="a">GUID 661c23ef-e37c-4d88-8aea-2af717860b40</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">ParkingSystemPkg</fileName>
+			<_id type="a">GUID 363e27a5-edb8-44a5-82c4-8353be709de0</_id>
 		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID 66af33e9-98b9-483e-9515-0798c195b3d2</_id>
@@ -66,7 +86,7 @@
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\ParkingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ParkingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ParkingSystemPkg</_hsubsystem>
 					<_hname type="a">Manual_Parking_System</_hname>
 					<_hid type="a">GUID 54cc1026-4a21-42d7-881d-711fc4bddb40</_hid>
 				</IHandle>
@@ -579,7 +599,7 @@ The driver brings the truck to a stop.</_text>
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\ParkingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ParkingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ParkingSystemPkg</_hsubsystem>
 					<_hname type="a">Manual_Parking_System</_hname>
 					<_hid type="a">GUID 54cc1026-4a21-42d7-881d-711fc4bddb40</_hid>
 				</IHandle>
@@ -1534,7 +1554,7 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">LoadingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::LoadingSystemPkg</_hsubsystem>
 					<_hname type="a">Loading_system</_hname>
 					<_hid type="a">GUID 45049950-f431-444f-979f-61756654f665</_hid>
 				</IHandle>
@@ -1686,7 +1706,7 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">LoadingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::LoadingSystemPkg</_hsubsystem>
 					<_hname type="a">Loading_system</_hname>
 					<_hid type="a">GUID 45049950-f431-444f-979f-61756654f665</_hid>
 				</IHandle>
@@ -2059,7 +2079,7 @@ Alternative Scenario:\par%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\ParkingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ParkingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ParkingSystemPkg</_hsubsystem>
 					<_hname type="a">Manual_Parking_System</_hname>
 					<_hid type="a">GUID 54cc1026-4a21-42d7-881d-711fc4bddb40</_hid>
 				</IHandle>
@@ -2371,7 +2391,7 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\ParkingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ParkingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ParkingSystemPkg</_hsubsystem>
 					<_hname type="a">Steer truck</_hname>
 					<_hid type="a">GUID 82b5a8f1-27b2-486e-8e75-ed6fd825c4e8</_hid>
 				</IHandle>
@@ -2453,7 +2473,7 @@ Main flow: \par%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">LoadingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::LoadingSystemPkg</_hsubsystem>
 					<_hname type="a">Loading_system</_hname>
 					<_hid type="a">GUID 45049950-f431-444f-979f-61756654f665</_hid>
 				</IHandle>
@@ -3038,7 +3058,7 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">LoadingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::LoadingSystemPkg</_hsubsystem>
 					<_hname type="a">Loading_system</_hname>
 					<_hid type="a">GUID 45049950-f431-444f-979f-61756654f665</_hid>
 				</IHandle>

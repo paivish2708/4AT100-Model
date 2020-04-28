@@ -11,13 +11,13 @@
 			<_id type="a">GUID 363e27a5-edb8-44a5-82c4-8353be709de0</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ParkingSystemPkg</_name>
-			<_modifiedTimeWeak type="a">4.22.2020::21:56:55</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::21:56:55</_modifiedTime>
-			<weakCGTime type="a">4.22.2020::21:56:55</weakCGTime>
+			<_modifiedTimeWeak type="a">4.28.2020::14:53:12</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.28.2020::14:53:12</_modifiedTime>
+			<weakCGTime type="a">4.28.2020::14:53:12</weakCGTime>
 			<strongCGTime type="a">4.22.2020::21:56:36</strongCGTime>
 			<_defaultComposite type="s">GUID fd3dcb46-e9fd-4786-bce3-79f972efc280</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 54cc1026-4a21-42d7-881d-711fc4bddb40</value>
 				<value>GUID 82b5a8f1-27b2-486e-8e75-ed6fd825c4e8</value>
@@ -424,8 +424,8 @@
 			</_properties>
 			<_name type="a">Manual_Parking_System</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::21:56:55</_modifiedTime>
-			<_lastModifiedTime type="a">4.22.2020::21:56:55</_lastModifiedTime>
+			<_modifiedTime type="a">4.28.2020::14:51:32</_modifiedTime>
+			<_lastModifiedTime type="a">4.28.2020::14:51:32</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -654,7 +654,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Stop Truck</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Stop Truck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -670,7 +670,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.301299 0 0 0.152168 645.309 908.678 </m_transform>
+			<m_transform type="a">0.421204 0 0 0.213858 644.691 908.413 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -739,7 +739,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Reverse Truck manually</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Reverse Truck manually</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -755,7 +755,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.323812 0 0 0.215651 789.35 543.194 </m_transform>
+			<m_transform type="a">0.387963 0 0 0.264478 789.481 543.043 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -824,7 +824,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Move Forward</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Move Forward</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -840,7 +840,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.219948 0 0 0.152168 332.241 291.971 </m_transform>
+			<m_transform type="a">0.398136 0 0 0.267322 221.679 291.233 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -973,7 +973,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Parking Spot Input</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Parking Spot Input</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1380,7 +1380,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Steer Truck</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Steer Truck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1396,7 +1396,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.219948 0 0 0.152168 787.546 124.898 </m_transform>
+			<m_transform type="a">0.387964 0 0 0.152168 786.594 124.898 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1476,7 +1476,7 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">565 512 </m_SourcePort>
+			<m_SourcePort type="a">564 538 </m_SourcePort>
 			<m_TargetPort type="a">568 -7 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
@@ -1606,8 +1606,8 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">19 346 </m_SourcePort>
-			<m_TargetPort type="a">1022 883 </m_TargetPort>
+			<m_SourcePort type="a">16 349 </m_SourcePort>
+			<m_TargetPort type="a">1016 896 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
 		</CGIInheritance>
@@ -1669,8 +1669,8 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">5 580 </m_SourcePort>
-			<m_TargetPort type="a">565 512 </m_TargetPort>
+			<m_SourcePort type="a">-4 580 </m_SourcePort>
+			<m_TargetPort type="a">564 538 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
 		</CGIInheritance>
@@ -1731,7 +1731,7 @@
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
 			<m_SourcePort type="a">-9 709 </m_SourcePort>
-			<m_TargetPort type="a">1116 626 </m_TargetPort>
+			<m_TargetPort type="a">1120 620 </m_TargetPort>
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
@@ -1917,7 +1917,7 @@
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
 			<m_SourcePort type="a">1259 654 </m_SourcePort>
-			<m_TargetPort type="a">31 311 </m_TargetPort>
+			<m_TargetPort type="a">25 294 </m_TargetPort>
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
@@ -2101,8 +2101,8 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">568 519 </m_SourcePort>
-			<m_TargetPort type="a">817 998 </m_TargetPort>
+			<m_SourcePort type="a">555 533 </m_SourcePort>
+			<m_TargetPort type="a">816 1010 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
 		</CGIInheritance>
@@ -2506,8 +2506,8 @@
 			</_properties>
 			<_name type="a">Steer truck</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::21:56:55</_modifiedTime>
-			<_lastModifiedTime type="a">4.22.2020::21:56:55</_lastModifiedTime>
+			<_modifiedTime type="a">4.28.2020::14:53:13</_modifiedTime>
+			<_lastModifiedTime type="a">4.28.2020::14:53:13</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -2865,7 +2865,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">266246</m_drawBehavior>
-			<m_transform type="a">0.163362 0 0 0.0864528 541.673 216.557 </m_transform>
+			<m_transform type="a">0.163362 0 0 0.0864528 542.673 248.557 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -2964,6 +2964,38 @@
 		</CGIClass>
 		<CGIBasicClass type="e">
 			<_id type="a">GUID a11bb4c8-c083-40c1-9dda-1e56c95af49f</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Graphics</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">FitBoxToItsTextuals</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">125</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
@@ -2977,7 +3009,7 @@
 			<m_pParent type="s">GUID d012160c-e93d-4606-b080-fb0c05d23070</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Check next reference point</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Check next reference point</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2993,7 +3025,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.521494 0 0 0.143346 282.81 130.048 </m_transform>
+			<m_transform type="a">0.521494 0 0 0.23002 282.81 129.421 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -3017,6 +3049,38 @@
 		</CGIBasicClass>
 		<CGIBasicClass type="e">
 			<_id type="a">GUID f1fd2498-f64f-4642-bca4-5e4b803ff7f6</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Graphics</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">FitBoxToItsTextuals</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">125</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
@@ -3030,7 +3094,7 @@
 			<m_pParent type="s">GUID d012160c-e93d-4606-b080-fb0c05d23070</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Compare current position to reference</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Compare current position to reference</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3046,7 +3110,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.521494 0 0 0.143346 282.81 437.096 </m_transform>
+			<m_transform type="a">0.525219 0 0 0.224793 274.407 501.62 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -3070,6 +3134,38 @@
 		</CGIBasicClass>
 		<CGIBasicClass type="e">
 			<_id type="a">GUID b0fa8c17-4676-46ed-bc2f-e5bf6bce8ec0</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Graphics</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">FitBoxToItsTextuals</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">125</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
@@ -3083,7 +3179,7 @@
 			<m_pParent type="s">GUID d012160c-e93d-4606-b080-fb0c05d23070</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Provide new steering input</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Provide new steering input</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3099,7 +3195,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.521494 0 0 0.143346 282.81 753.591 </m_transform>
+			<m_transform type="a">0.517769 0 0 0.23002 282.803 887.592 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -3178,7 +3274,7 @@
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
 			<m_SourcePort type="a">-5 837 </m_SourcePort>
-			<m_TargetPort type="a">1111 386 </m_TargetPort>
+			<m_TargetPort type="a">1111 385 </m_TargetPort>
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
@@ -3220,9 +3316,9 @@
 					<m_position type="a">4 -6 -9  118 -9  118 5  -6 5  </m_position>
 					<m_nIdent type="a">2</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_transform type="a">1 0 0 1 420 216 </m_transform>
-					<m_nHorizontalSpacing type="a">-28</m_nHorizontalSpacing>
-					<m_nVerticalSpacing type="a">77</m_nVerticalSpacing>
+					<m_transform type="a">1 0 0 1 418 245 </m_transform>
+					<m_nHorizontalSpacing type="a">-38</m_nHorizontalSpacing>
+					<m_nVerticalSpacing type="a">116</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">2</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_sourceRole>
@@ -3240,9 +3336,9 @@
 					<m_position type="a">4 -6 -9  206 -9  206 5  -6 5  </m_position>
 					<m_nIdent type="a">3</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_transform type="a">1 0 0 1 365 166 </m_transform>
-					<m_nHorizontalSpacing type="a">-48</m_nHorizontalSpacing>
-					<m_nVerticalSpacing type="a">-60</m_nVerticalSpacing>
+					<m_transform type="a">1 0 0 1 381 188 </m_transform>
+					<m_nHorizontalSpacing type="a">-31</m_nHorizontalSpacing>
+					<m_nVerticalSpacing type="a">-65</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">0</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_targetRole>
@@ -3366,7 +3462,7 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">14 699 </m_SourcePort>
+			<m_SourcePort type="a">14 700 </m_SourcePort>
 			<m_TargetPort type="a">707 823 </m_TargetPort>
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
@@ -3554,8 +3650,8 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">522 7 </m_SourcePort>
-			<m_TargetPort type="a">530 1078 </m_TargetPort>
+			<m_SourcePort type="a">526 7 </m_SourcePort>
+			<m_TargetPort type="a">526 1078 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
 		</CGIInheritance>
@@ -3617,7 +3713,7 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">522 -9 </m_SourcePort>
+			<m_SourcePort type="a">518 -9 </m_SourcePort>
 			<m_TargetPort type="a">522 1070 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
@@ -3678,7 +3774,7 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">1103 353 </m_SourcePort>
+			<m_SourcePort type="a">1103 346 </m_SourcePort>
 			<m_TargetPort type="a">-4 699 </m_TargetPort>
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
@@ -3816,7 +3912,7 @@
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
