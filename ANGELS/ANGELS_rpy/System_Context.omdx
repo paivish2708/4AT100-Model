@@ -505,8 +505,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.3.2020::9:41:36</_modifiedTime>
-			<_lastModifiedTime type="a">4.3.2020::9:41:36</_lastModifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:19</_modifiedTime>
+			<_lastModifiedTime type="a">4.29.2020::15:0:19</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -1001,14 +1001,14 @@
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">DC Operator</_hname>
+					<_hname type="a">DCOperator</_hname>
 					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 8ed0b265-5f8a-4cbc-8d44-6a7487d6289f</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">ActorPkg::DC Operator</m_str>
+					<m_str type="a">ActorPkg::DCOperator</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1054,14 +1054,14 @@
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">Pedestrian &amp; other things</_hname>
+					<_hname type="a">PedestrianandObstacles</_hname>
 					<_hid type="a">GUID d1815240-c7ca-42c7-8552-c599700d0b3c</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 8ed0b265-5f8a-4cbc-8d44-6a7487d6289f</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">ActorPkg::Pedestrian &amp; other things</m_str>
+					<m_str type="a">ActorPkg::PedestrianandObstacles</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1884,7 +1884,7 @@
 					<_hm2Class type="a">IGeneralization</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hclass type="a">Pedestrian &amp; other things</_hclass>
+					<_hclass type="a">PedestrianandObstacles</_hclass>
 					<_hname type="a">Obstacle</_hname>
 					<_hid type="a">GUID 35e590fd-3a28-47ae-aeaf-fd0e539f5ff1</_hid>
 				</IHandle>
@@ -2507,7 +2507,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hclass type="a">DC Operator</_hclass>
+					<_hclass type="a">DCOperator</_hclass>
 					<_hname type="a">itsANGELS_3</_hname>
 					<_hid type="a">GUID e8b79022-6650-4512-9770-724e6d71e364</_hid>
 				</IHandle>
@@ -2564,7 +2564,7 @@
 					<_hfilename type="a">.\Default.sbsx</_hfilename>
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hclass type="a">ANGELS</_hclass>
-					<_hname type="a">itsDC Operator_3</_hname>
+					<_hname type="a">itsDCOperator_2</_hname>
 					<_hid type="a">GUID cedc7c41-6240-4f2a-aa7d-70ba1c15c3ef</_hid>
 				</IAssociationEndHandle>
 			</m_pInverseModelObject>

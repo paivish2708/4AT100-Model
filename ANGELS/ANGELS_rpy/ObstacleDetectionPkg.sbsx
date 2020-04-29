@@ -11,13 +11,13 @@
 			<_id type="a">GUID 661c23ef-e37c-4d88-8aea-2af717860b40</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ObstacleDetectionPkg</_name>
-			<_modifiedTimeWeak type="a">4.22.2020::21:55:50</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::21:55:50</_modifiedTime>
-			<weakCGTime type="a">4.22.2020::21:55:50</weakCGTime>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:19</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:19</_modifiedTime>
+			<weakCGTime type="a">4.29.2020::15:0:19</weakCGTime>
 			<strongCGTime type="a">4.22.2020::21:55:46</strongCGTime>
 			<_defaultComposite type="s">GUID 26163699-8f59-40a6-a0fa-4b670a654fab</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID c7754009-be5c-465f-92b8-96f8d1e259b5</value>
 				<value>GUID 26163699-8f59-40a6-a0fa-4b670a654fab</value>
@@ -456,8 +456,8 @@
 			</_properties>
 			<_name type="a">Obstacle_detection</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::21:55:50</_modifiedTime>
-			<_lastModifiedTime type="a">4.22.2020::21:55:50</_lastModifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:19</_modifiedTime>
+			<_lastModifiedTime type="a">4.29.2020::15:0:19</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -707,14 +707,14 @@
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">Pedestrian &amp; other things</_hname>
+					<_hname type="a">PedestrianandObstacles</_hname>
 					<_hid type="a">GUID d1815240-c7ca-42c7-8552-c599700d0b3c</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 344e7305-555c-432e-ad50-2870b58782ed</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">ActorPkg::Pedestrian &amp; other things</m_str>
+					<m_str type="a">ActorPkg::PedestrianandObstacles</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -895,7 +895,7 @@
 			<m_pParent type="s">GUID dfce76db-4766-443f-8188-6d15ac306afe</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Receive obstacle positions</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Receive obstacle positions</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1314,7 +1314,7 @@
 			<m_pParent type="s">GUID dfce76db-4766-443f-8188-6d15ac306afe</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Compare to predicted truck position</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Compare to predicted truck position</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1360,7 +1360,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hclass type="a">Pedestrian &amp; other things</_hclass>
+					<_hclass type="a">PedestrianandObstacles</_hclass>
 					<_hname type="a">itsReceive obstacle positions</_hname>
 					<_hid type="a">GUID ad8842b8-a5cb-422e-be6f-31a3f131981d</_hid>
 				</IHandle>
@@ -1416,7 +1416,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Receive obstacle positions</_hclass>
-					<_hname type="a">itsPedestrian &amp; other things</_hname>
+					<_hname type="a">itsPedestrianandObstacles</_hname>
 					<_hid type="a">GUID ad1d1793-0b41-4cc5-87ac-d395598cf3e0</_hid>
 				</IAssociationEndHandle>
 			</m_pInverseModelObject>
@@ -1439,7 +1439,7 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsPedestrian &amp; other things</m_str>
+					<m_str type="a">itsPedestrianandObstacles</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1613,7 +1613,7 @@
 			<m_pParent type="s">GUID dfce76db-4766-443f-8188-6d15ac306afe</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Avoid obstacle</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Avoid obstacle</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1719,7 +1719,7 @@
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

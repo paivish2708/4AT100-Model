@@ -11,9 +11,9 @@
 			<_id type="a">GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DockingSystemPkg</_name>
-			<_modifiedTimeWeak type="a">4.22.2020::21:54:59</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::21:54:59</_modifiedTime>
-			<weakCGTime type="a">4.22.2020::21:54:59</weakCGTime>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
+			<weakCGTime type="a">4.29.2020::15:0:5</weakCGTime>
 			<strongCGTime type="a">4.22.2020::21:54:59</strongCGTime>
 			<_defaultComposite type="s">GUID 54392d4f-99be-431f-8cc9-fdca96262d90</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -546,8 +546,8 @@
 			</_properties>
 			<_name type="a">Docking_System</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::21:54:59</_modifiedTime>
-			<_lastModifiedTime type="a">4.22.2020::21:54:59</_lastModifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:19</_modifiedTime>
+			<_lastModifiedTime type="a">4.29.2020::15:0:19</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -791,7 +791,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Move Forward</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Move Forward</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -876,7 +876,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Reverse Truck manually</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Reverse Truck manually</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -961,7 +961,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Obstacle detection</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Obstacle detection</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1046,7 +1046,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Obstacle Avoidance</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Obstacle Avoidance</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1131,7 +1131,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Load Goods</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Load Goods</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1216,7 +1216,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Request for Loading</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Request for Loading</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1379,14 +1379,14 @@
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">DC Operator</_hname>
+					<_hname type="a">DCOperator</_hname>
 					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID b26ddae9-cf52-482c-aeb0-8051c5518fad</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">ActorPkg::DC Operator</m_str>
+					<m_str type="a">ActorPkg::DCOperator</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1471,7 +1471,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Parking</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Parking</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1652,7 +1652,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Check for obstacles</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Check for obstacles</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1881,7 +1881,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hclass type="a">DC Operator</_hclass>
+					<_hclass type="a">DCOperator</_hclass>
 					<_hname type="a">itsRequest for Loading</_hname>
 					<_hid type="a">GUID 51d2a73a-107c-496d-a2c1-b5927590389e</_hid>
 				</IHandle>
@@ -1937,7 +1937,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Request for Loading</_hclass>
-					<_hname type="a">itsDC Operator</_hname>
+					<_hname type="a">itsDCOperator</_hname>
 					<_hid type="a">GUID bb0e92f4-a386-4973-b97b-9c970ff330db</_hid>
 				</IAssociationEndHandle>
 			</m_pInverseModelObject>
@@ -1960,7 +1960,7 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsDC Operator</m_str>
+					<m_str type="a">itsDCOperator</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2109,7 +2109,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Stop Truck</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Stop Truck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2155,14 +2155,14 @@
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">Pedestrian &amp; other things</_hname>
+					<_hname type="a">PedestrianandObstacles</_hname>
 					<_hid type="a">GUID d1815240-c7ca-42c7-8552-c599700d0b3c</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID b26ddae9-cf52-482c-aeb0-8051c5518fad</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">ActorPkg::Pedestrian &amp; other things</m_str>
+					<m_str type="a">ActorPkg::PedestrianandObstacles</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2209,7 +2209,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Check for obstacles</_hclass>
-					<_hname type="a">itsPedestrian &amp; other things</_hname>
+					<_hname type="a">itsPedestrianandObstacles</_hname>
 					<_hid type="a">GUID f3263c86-b76b-444c-85e8-6f80a7f9e2fd</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -2263,7 +2263,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hclass type="a">Pedestrian &amp; other things</_hclass>
+					<_hclass type="a">PedestrianandObstacles</_hclass>
 					<_hname type="a">itsCheck for obstacles</_hname>
 					<_hid type="a">GUID bb83dbb4-a0eb-499f-a1ee-60bbb98be464</_hid>
 				</IAssociationEndHandle>
@@ -2304,7 +2304,7 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsPedestrian &amp; other things</m_str>
+					<m_str type="a">itsPedestrianandObstacles</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2316,7 +2316,6 @@
 					<m_position type="a">1 0 0  </m_position>
 					<m_nIdent type="a">3</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nHorizontalSpacing type="a">-7</m_nHorizontalSpacing>
 					<m_nOrientationCtrlPt type="a">2</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_targetRole>
@@ -3552,7 +3551,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Open Loading Doors</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Open Loading Doors</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3658,7 +3657,7 @@
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

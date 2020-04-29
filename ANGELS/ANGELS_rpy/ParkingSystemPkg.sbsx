@@ -11,9 +11,9 @@
 			<_id type="a">GUID 363e27a5-edb8-44a5-82c4-8353be709de0</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ParkingSystemPkg</_name>
-			<_modifiedTimeWeak type="a">4.28.2020::14:53:12</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.28.2020::14:53:12</_modifiedTime>
-			<weakCGTime type="a">4.28.2020::14:53:12</weakCGTime>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
+			<weakCGTime type="a">4.29.2020::15:0:5</weakCGTime>
 			<strongCGTime type="a">4.22.2020::21:56:36</strongCGTime>
 			<_defaultComposite type="s">GUID fd3dcb46-e9fd-4786-bce3-79f972efc280</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -424,8 +424,8 @@
 			</_properties>
 			<_name type="a">Manual_Parking_System</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.28.2020::14:51:32</_modifiedTime>
-			<_lastModifiedTime type="a">4.28.2020::14:51:32</_lastModifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
+			<_lastModifiedTime type="a">4.29.2020::15:0:5</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -1019,14 +1019,14 @@
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">DC Operator</_hname>
+					<_hname type="a">DCOperator</_hname>
 					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 7df6e04d-93ba-4664-82da-cb51b2ca6532</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">ActorPkg::DC Operator</m_str>
+					<m_str type="a">ActorPkg::DCOperator</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1125,7 +1125,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hclass type="a">DC Operator</_hclass>
+					<_hclass type="a">DCOperator</_hclass>
 					<_hname type="a">itsParking Spot Input</_hname>
 					<_hid type="a">GUID 139a2800-c09b-439e-9304-21a1700c14a3</_hid>
 				</IHandle>
@@ -1181,7 +1181,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Parking Spot Input</_hclass>
-					<_hname type="a">itsDC Operator</_hname>
+					<_hname type="a">itsDCOperator</_hname>
 					<_hid type="a">GUID ea8ce77b-d7bc-4805-81de-3a42ff842f11</_hid>
 				</IAssociationEndHandle>
 			</m_pInverseModelObject>
@@ -1204,7 +1204,7 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsDC Operator</m_str>
+					<m_str type="a">itsDCOperator</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">

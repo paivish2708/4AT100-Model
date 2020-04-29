@@ -11,10 +11,10 @@
 			<_id type="a">GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
-			<_modifiedTimeWeak type="a">4.22.2020::13:19:56</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
 			<_modifiedTime type="a">4.22.2020::13:22:14</_modifiedTime>
 			<_lastID type="a">15</_lastID>
-			<weakCGTime type="a">4.22.2020::13:19:56</weakCGTime>
+			<weakCGTime type="a">4.29.2020::15:0:5</weakCGTime>
 			<strongCGTime type="a">4.1.2020::11:37:3</strongCGTime>
 			<_defaultComposite type="s">GUID fabbb408-de82-424e-8fce-216617ff1ef0</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -157,21 +157,21 @@
 		<IActor type="e">
 			<_id type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">DC Operator</_name>
-			<_modifiedTimeWeak type="a">4.22.2020::13:22:51</_modifiedTimeWeak>
+			<_name type="a">DCOperator</_name>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
-					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::DockingSystemPkg</_hsubsystem>
 					<_hname type="a">Docking_System</_hname>
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">4.22.2020::13:22:51</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">4.22.2020::13:22:51</weakCGTime>
-			<strongCGTime type="a">3.31.2020::21:28:56</strongCGTime>
+			<weakCGTime type="a">4.29.2020::15:0:5</weakCGTime>
+			<strongCGTime type="a">4.29.2020::15:0:5</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -192,9 +192,9 @@
 		<IInformationFlow type="e">
 			<_id type="a">GUID 72f34318-abcf-4437-bb8b-f5924d92c6f7</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">DC Operator_Request for Loading</_name>
+			<_name type="a">DCOperator_Request for Loading</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::11:41:45</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
@@ -237,8 +237,8 @@
 			<_id type="a">GUID 72424db5-4c2a-4388-ab7b-1e3da6c5c5d4</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsANGELS_1</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::19:8:8</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::19:8:8</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -255,7 +255,7 @@
 					<_hfilename type="a">.\Default.sbsx</_hfilename>
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hclass type="a">ANGELS</_hclass>
-					<_hname type="a">itsDC Operator_1</_hname>
+					<_hname type="a">itsDCOperator_1</_hname>
 					<_hid type="a">GUID 5ddad5d8-9ea9-4c58-aca4-a835cf9d9be1</_hid>
 				</IHandle>
 			</_inverse>
@@ -266,8 +266,8 @@
 			<_id type="a">GUID 68e5e0e4-87a5-46b0-ad85-d5ba11e46a10</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsANGELS_2</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::15:3:44</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::15:3:44</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -284,7 +284,7 @@
 					<_hfilename type="a">.\Default.sbsx</_hfilename>
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hclass type="a">ANGELS</_hclass>
-					<_hname type="a">itsDC Operator_2</_hname>
+					<_hname type="a">itsDCOperator_3</_hname>
 					<_hid type="a">GUID 654065c6-58a2-4c5c-bb82-e494b18215f0</_hid>
 				</IHandle>
 			</_inverse>
@@ -295,8 +295,8 @@
 			<_id type="a">GUID e8b79022-6650-4512-9770-724e6d71e364</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsANGELS_3</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::15:22:12</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::15:22:12</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -313,7 +313,7 @@
 					<_hfilename type="a">.\Default.sbsx</_hfilename>
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hclass type="a">ANGELS</_hclass>
-					<_hname type="a">itsDC Operator_3</_hname>
+					<_hname type="a">itsDCOperator_2</_hname>
 					<_hid type="a">GUID cedc7c41-6240-4f2a-aa7d-70ba1c15c3ef</_hid>
 				</IHandle>
 			</_inverse>
@@ -325,7 +325,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsRequest for Loading</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::18:24:48</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -342,7 +342,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Request for Loading</_hclass>
-					<_hname type="a">itsDC Operator</_hname>
+					<_hname type="a">itsDCOperator</_hname>
 					<_hid type="a">GUID bb0e92f4-a386-4973-b97b-9c970ff330db</_hid>
 				</IHandle>
 			</_inverse>
@@ -354,7 +354,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsParking Spot Input</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::15:38:51</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -371,7 +371,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Parking Spot Input</_hclass>
-					<_hname type="a">itsDC Operator</_hname>
+					<_hname type="a">itsDCOperator</_hname>
 					<_hid type="a">GUID ea8ce77b-d7bc-4805-81de-3a42ff842f11</_hid>
 				</IHandle>
 			</_inverse>
@@ -383,7 +383,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsOpen Loading Doors</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::13:19:56</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -400,7 +400,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Open Loading Doors</_hclass>
-					<_hname type="a">itsDC Operator</_hname>
+					<_hname type="a">itsDCOperator</_hname>
 					<_hid type="a">GUID f40facf6-2309-464d-912c-aadacce8de34</_hid>
 				</IHandle>
 			</_inverse>
@@ -411,8 +411,8 @@
 			<_id type="a">GUID 0c260f2c-7172-464d-b9ae-0aeebcbe3ce1</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsTruck</_name>
-			<_modifiedTimeWeak type="a">4.22.2020::13:22:51</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::13:22:51</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -429,7 +429,7 @@
 					<_hfilename type="a">.\Default.sbsx</_hfilename>
 					<_hsubsystem type="a">Default</_hsubsystem>
 					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsDC Operator</_hname>
+					<_hname type="a">itsDCOperator</_hname>
 					<_hid type="a">GUID 41788fc2-b51a-4bae-bba1-367825778239</_hid>
 				</IHandle>
 			</_inverse>
@@ -444,8 +444,8 @@
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
-					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::DockingSystemPkg</_hsubsystem>
 					<_hname type="a">Docking_System</_hname>
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
@@ -841,11 +841,11 @@
 		<IActor type="e">
 			<_id type="a">GUID 23c972f4-cc30-419c-a741-5d23c4eb9568</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Safety standards</_name>
-			<_modifiedTimeWeak type="a">3.31.2020::21:33:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::21:33:38</_modifiedTime>
-			<weakCGTime type="a">3.31.2020::21:33:38</weakCGTime>
-			<strongCGTime type="a">3.31.2020::21:28:56</strongCGTime>
+			<_name type="a">SafetyStandards</_name>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:28</_modifiedTime>
+			<weakCGTime type="a">4.29.2020::15:0:28</weakCGTime>
+			<strongCGTime type="a">4.29.2020::15:0:28</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -855,20 +855,20 @@
 		<IActor type="e">
 			<_id type="a">GUID d1815240-c7ca-42c7-8552-c599700d0b3c</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Pedestrian &amp; other things</_name>
-			<_modifiedTimeWeak type="a">4.7.2020::10:42:30</_modifiedTimeWeak>
+			<_name type="a">PedestrianandObstacles</_name>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:19</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
-					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::DockingSystemPkg</_hsubsystem>
 					<_hname type="a">Docking_System</_hname>
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">4.7.2020::10:42:30</_modifiedTime>
-			<weakCGTime type="a">4.7.2020::10:42:30</weakCGTime>
-			<strongCGTime type="a">4.1.2020::15:6:45</strongCGTime>
+			<_modifiedTime type="a">4.29.2020::15:0:19</_modifiedTime>
+			<weakCGTime type="a">4.29.2020::15:0:19</weakCGTime>
+			<strongCGTime type="a">4.29.2020::15:0:19</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -898,7 +898,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsCheck for obstacles</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::15:6:45</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:19</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -915,7 +915,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Check for obstacles</_hclass>
-					<_hname type="a">itsPedestrian &amp; other things</_hname>
+					<_hname type="a">itsPedestrianandObstacles</_hname>
 					<_hid type="a">GUID f3263c86-b76b-444c-85e8-6f80a7f9e2fd</_hid>
 				</IHandle>
 			</_inverse>
@@ -927,7 +927,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsReceive obstacle positions</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:42:30</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:19</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -944,7 +944,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Receive obstacle positions</_hclass>
-					<_hname type="a">itsPedestrian &amp; other things</_hname>
+					<_hname type="a">itsPedestrianandObstacles</_hname>
 					<_hid type="a">GUID ad1d1793-0b41-4cc5-87ac-d395598cf3e0</_hid>
 				</IHandle>
 			</_inverse>

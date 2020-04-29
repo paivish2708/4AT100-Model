@@ -11,7 +11,7 @@
 			<_id type="a">GUID dd55cabb-699e-4724-9d69-dcc932a50bcc</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">LoadingSystemPkg</_name>
-			<_modifiedTimeWeak type="a">4.22.2020::21:55:12</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -21,8 +21,8 @@
 					<_hid type="a">GUID 24b4a4c3-9965-4619-8105-a91b297ddd63</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">4.22.2020::21:55:12</_modifiedTime>
-			<weakCGTime type="a">4.22.2020::21:55:12</weakCGTime>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
+			<weakCGTime type="a">4.29.2020::15:0:5</weakCGTime>
 			<strongCGTime type="a">4.22.2020::21:55:12</strongCGTime>
 			<_defaultComposite type="s">GUID 083416a7-dfc1-4968-bb28-c8de7ccaa548</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -432,8 +432,8 @@
 			</_properties>
 			<_name type="a">Loading_system</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::21:55:12</_modifiedTime>
-			<_lastModifiedTime type="a">4.22.2020::21:55:12</_lastModifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
+			<_lastModifiedTime type="a">4.29.2020::15:0:5</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -724,7 +724,7 @@
 			<m_pParent type="s">GUID 69add057-7c9b-40e3-8112-bf6ca2a6bda0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Load Goods</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Load Goods</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -809,7 +809,7 @@
 			<m_pParent type="s">GUID 69add057-7c9b-40e3-8112-bf6ca2a6bda0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Stop Truck</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Stop Truck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -956,7 +956,7 @@
 			<m_pParent type="s">GUID 69add057-7c9b-40e3-8112-bf6ca2a6bda0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Open Loading Doors</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Open Loading Doors</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1103,7 +1103,7 @@
 			<m_pParent type="s">GUID 69add057-7c9b-40e3-8112-bf6ca2a6bda0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Close Loading doors</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::Close Loading doors</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1149,14 +1149,14 @@
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">DC Operator</_hname>
+					<_hname type="a">DCOperator</_hname>
 					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID f21ba7a1-f051-46fe-bba9-010dcbe2e1d2</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">ActorPkg::DC Operator</m_str>
+					<m_str type="a">ActorPkg::DCOperator</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1202,7 +1202,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hclass type="a">DC Operator</_hclass>
+					<_hclass type="a">DCOperator</_hclass>
 					<_hname type="a">itsOpen Loading Doors</_hname>
 					<_hid type="a">GUID 663c47fd-a02b-4b3f-a7d1-48b3c38f2b18</_hid>
 				</IHandle>
@@ -1258,7 +1258,7 @@
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
 					<_hclass type="a">Open Loading Doors</_hclass>
-					<_hname type="a">itsDC Operator</_hname>
+					<_hname type="a">itsDCOperator</_hname>
 					<_hid type="a">GUID f40facf6-2309-464d-912c-aadacce8de34</_hid>
 				</IAssociationEndHandle>
 			</m_pInverseModelObject>
@@ -1281,7 +1281,7 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsDC Operator</m_str>
+					<m_str type="a">itsDCOperator</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">

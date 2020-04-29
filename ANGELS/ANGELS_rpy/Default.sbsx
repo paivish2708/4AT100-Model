@@ -11,10 +11,10 @@
 			<_id type="a">GUID 39b8bb0f-3c21-4878-9e98-4ed62d1ac09b</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Default</_name>
-			<_modifiedTimeWeak type="a">4.22.2020::13:22:51</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:34:49</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_lastID type="a">20</_lastID>
-			<weakCGTime type="a">4.22.2020::13:22:51</weakCGTime>
+			<weakCGTime type="a">4.29.2020::15:0:5</weakCGTime>
 			<strongCGTime type="a">4.1.2020::11:37:3</strongCGTime>
 			<_defaultComposite type="s">GUID 4bbb62d1-41dc-4177-b44a-9846079be256</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -64,14 +64,14 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.3.2020::9:41:36</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:28</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
 				<_text type="a">A Software for Autonomous truck docking system inside the DC</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.3.2020::9:41:36</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:28</_modifiedTime>
 			<_lastID type="a">38</_lastID>
-			<weakCGTime type="a">4.3.2020::9:41:36</weakCGTime>
+			<weakCGTime type="a">4.29.2020::15:0:28</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:29:10</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -183,15 +183,15 @@
 		<IDependency type="e">
 			<_id type="a">GUID 3bf0eb99-dd5f-4519-95e6-b641afead51b</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Safety standards</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::18:49:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::18:58:56</_modifiedTime>
+			<_name type="a">SafetyStandards</_name>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:28</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">Safety standards</_hname>
+					<_hname type="a">SafetyStandards</_hname>
 					<_hid type="a">GUID 23c972f4-cc30-419c-a741-5d23c4eb9568</_hid>
 				</INObjectHandle>
 			</_dependsOn>
@@ -227,15 +227,15 @@
 		<IDependency type="e">
 			<_id type="a">GUID 3fb8b048-2274-4cc1-ad22-c9286d7be179</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">DC Operator</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::18:49:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::19:6:1</_modifiedTime>
+			<_name type="a">DCOperator</_name>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">DC Operator</_hname>
+					<_hname type="a">DCOperator</_hname>
 					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
 				</INObjectHandle>
 			</_dependsOn>
@@ -400,15 +400,15 @@
 		<IDependency type="e">
 			<_id type="a">GUID c922de28-dd6a-4ff7-83e7-ad0ba0a696b3</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Safety standards_0</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::18:49:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::15:13:18</_modifiedTime>
+			<_name type="a">SafetyStandards_1</_name>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:28</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">Safety standards</_hname>
+					<_hname type="a">SafetyStandards</_hname>
 					<_hid type="a">GUID 23c972f4-cc30-419c-a741-5d23c4eb9568</_hid>
 				</INObjectHandle>
 			</_dependsOn>
@@ -501,15 +501,15 @@
 		<IDependency type="e">
 			<_id type="a">GUID 285f591b-288c-43ad-9c8b-49a529f00c84</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Safety standards_1</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::18:49:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::15:17:21</_modifiedTime>
+			<_name type="a">SafetyStandards_0</_name>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:28</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">Safety standards</_hname>
+					<_hname type="a">SafetyStandards</_hname>
 					<_hid type="a">GUID 23c972f4-cc30-419c-a741-5d23c4eb9568</_hid>
 				</INObjectHandle>
 			</_dependsOn>
@@ -659,16 +659,16 @@
 		<IPart type="e">
 			<_id type="a">GUID 68569ccf-36c9-428d-8c96-cd81c93724e4</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDC Operator</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::18:49:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::19:6:1</_modifiedTime>
+			<_name type="a">itsDCOperator</_name>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">DC Operator</_hname>
+					<_hname type="a">DCOperator</_hname>
 					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -680,16 +680,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 5ddad5d8-9ea9-4c58-aca4-a835cf9d9be1</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDC Operator_1</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::18:49:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.31.2020::19:8:8</_modifiedTime>
+			<_name type="a">itsDCOperator_1</_name>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">DC Operator</_hname>
+					<_hname type="a">DCOperator</_hname>
 					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -698,7 +698,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hclass type="a">DC Operator</_hclass>
+					<_hclass type="a">DCOperator</_hclass>
 					<_hname type="a">itsANGELS_1</_hname>
 					<_hid type="a">GUID 72424db5-4c2a-4388-ab7b-1e3da6c5c5d4</_hid>
 				</IHandle>
@@ -773,16 +773,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 654065c6-58a2-4c5c-bb82-e494b18215f0</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDC Operator_2</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::18:49:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::15:3:44</_modifiedTime>
+			<_name type="a">itsDCOperator_3</_name>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">DC Operator</_hname>
+					<_hname type="a">DCOperator</_hname>
 					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -791,7 +791,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hclass type="a">DC Operator</_hclass>
+					<_hclass type="a">DCOperator</_hclass>
 					<_hname type="a">itsANGELS_2</_hname>
 					<_hid type="a">GUID 68e5e0e4-87a5-46b0-ad85-d5ba11e46a10</_hid>
 				</IHandle>
@@ -802,16 +802,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID cedc7c41-6240-4f2a-aa7d-70ba1c15c3ef</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDC Operator_3</_name>
-			<_modifiedTimeWeak type="a">4.1.2020::18:49:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::15:22:12</_modifiedTime>
+			<_name type="a">itsDCOperator_2</_name>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">DC Operator</_hname>
+					<_hname type="a">DCOperator</_hname>
 					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -820,7 +820,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hclass type="a">DC Operator</_hclass>
+					<_hclass type="a">DCOperator</_hclass>
 					<_hname type="a">itsANGELS_3</_hname>
 					<_hid type="a">GUID e8b79022-6650-4512-9770-724e6d71e364</_hid>
 				</IHandle>
@@ -1371,19 +1371,19 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.22.2020::13:26:13</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
-					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
+					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::DockingSystemPkg</_hsubsystem>
 					<_hname type="a">Docking_System</_hname>
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">4.22.2020::13:26:13</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_lastID type="a">4</_lastID>
-			<weakCGTime type="a">4.22.2020::13:26:13</weakCGTime>
+			<weakCGTime type="a">4.29.2020::15:0:5</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:29:10</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -1810,16 +1810,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 41788fc2-b51a-4bae-bba1-367825778239</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDC Operator</_name>
-			<_modifiedTimeWeak type="a">4.22.2020::13:22:51</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::13:22:51</_modifiedTime>
+			<_name type="a">itsDCOperator</_name>
+			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hname type="a">DC Operator</_hname>
+					<_hname type="a">DCOperator</_hname>
 					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -1828,7 +1828,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ActorPkg</_hsubsystem>
-					<_hclass type="a">DC Operator</_hclass>
+					<_hclass type="a">DCOperator</_hclass>
 					<_hname type="a">itsTruck</_hname>
 					<_hid type="a">GUID 0c260f2c-7172-464d-b9ae-0aeebcbe3ce1</_hid>
 				</IHandle>
