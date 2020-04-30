@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: LoadingSystemPkg
@@ -111,7 +111,10 @@ public :
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    OpenDoors(RhpBoolean p_CheckDoorStatus = 1);
+    OpenDoors();
+    
+    //## auto_generated
+    OpenDoors(RhpBoolean p_CheckDoorStatus);
     
     ////    Framework operations    ////
     

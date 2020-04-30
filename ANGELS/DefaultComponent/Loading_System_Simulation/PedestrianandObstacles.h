@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: PedestrianandObstacles
@@ -19,12 +19,10 @@
 #include <aom\aom.h>
 //## auto_generated
 #include "ActorPkg.h"
-//## actor PedestrianandObstacles
-#include "Obstacle.h"
 //## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
 //## actor PedestrianandObstacles
-class PedestrianandObstacles : public Obstacle {
+class PedestrianandObstacles {
     ////    Friends    ////
     
 public :
@@ -44,15 +42,13 @@ public :
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedPedestrianandObstacles : public OMAnimatedObstacle {
+class OMAnimatedPedestrianandObstacles : virtual public AOMInstance {
     DECLARE_META(PedestrianandObstacles, OMAnimatedPedestrianandObstacles)
     
     ////    Framework operations    ////
     
 public :
 
-    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
-    
     virtual void serializeRelations(AOMSRelations* aomsRelations) const;
 };
 //#]

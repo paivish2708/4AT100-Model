@@ -1,0 +1,65 @@
+
+Reverse Engineering Done.
+
+Removing LiteralSpecification '1' from Argument 'CheckDoorStatus'. 
+Removing Generalization 'Obstacle' from Actor 'PedestrianandObstacles'. 
+Source Artifacts have been added to the model to ensure that the generated code reflects details from the original code, such as global comments, preprocessor directives, and the order of elements. See the log file for more details.
+To view the Source Artifacts in the Rhapsody browser, open the View menu and select Browser Display Options > Show Source Artifacts.
+Source Artifacts were added for the following files:
+Adding File 'ActorPkg:impl' to Package 'ActorPkg'.
+Adding File 'ActorPkg:spec' to Package 'ActorPkg'.
+Adding File 'ANGELS:impl' to Class 'ANGELS'.
+Adding File 'ANGELS:spec' to Class 'ANGELS'.
+Adding File 'ANGELSPkg:impl' to Package 'ANGELSPkg'.
+Adding File 'ANGELSPkg:spec' to Package 'ANGELSPkg'.
+Adding File 'Collision_Avoidance:impl' to Class 'Collision_Avoidance'.
+Adding File 'Collision_Avoidance:spec' to Class 'Collision_Avoidance'.
+Adding File 'Collision_Detection:impl' to Class 'Collision_Detection'.
+Adding File 'Collision_Detection:spec' to Class 'Collision_Detection'.
+Adding File 'Communication_System:impl' to Class 'Communication_System'.
+Adding File 'Communication_System:spec' to Class 'Communication_System'.
+Adding File 'CommunicationPkg:impl' to Package 'CommunicationPkg'.
+Adding File 'CommunicationPkg:spec' to Package 'CommunicationPkg'.
+Adding File 'DC:impl' to Actor 'DC'.
+Adding File 'DC:spec' to Actor 'DC'.
+Adding File 'DCOperator:impl' to Actor 'DCOperator'.
+Adding File 'DCOperator:spec' to Actor 'DCOperator'.
+Adding File 'Docking_System:impl' to Class 'Docking_System'.
+Adding File 'Docking_System:spec' to Class 'Docking_System'.
+Adding File 'DockingSystemPkg:impl' to Package 'DockingSystemPkg'.
+Adding File 'DockingSystemPkg:spec' to Package 'DockingSystemPkg'.
+Adding File 'Driver:impl' to Actor 'Driver'.
+Adding File 'Driver:spec' to Actor 'Driver'.
+Adding File 'Government:impl' to Actor 'Government'.
+Adding File 'Government:spec' to Actor 'Government'.
+Adding File 'Loading_System:impl' to Class 'Loading_System'.
+Adding File 'Loading_System:spec' to Class 'Loading_System'.
+Adding File 'LoadingSystemPkg:impl' to Package 'LoadingSystemPkg'.
+Adding File 'LoadingSystemPkg:spec' to Package 'LoadingSystemPkg'.
+Adding File 'Localisation_System:impl' to Class 'Localisation_System'.
+Adding File 'Localisation_System:spec' to Class 'Localisation_System'.
+Adding File 'LocalisationPkg:impl' to Package 'LocalisationPkg'.
+Adding File 'LocalisationPkg:spec' to Package 'LocalisationPkg'.
+Adding File 'Obstacle:impl' to Actor 'Obstacle'.
+Adding File 'Obstacle:spec' to Actor 'Obstacle'.
+Adding File 'ObstacleAvoidancePkg:impl' to Package 'ObstacleAvoidancePkg'.
+Adding File 'ObstacleAvoidancePkg:spec' to Package 'ObstacleAvoidancePkg'.
+Adding File 'ObstacleDetectionPkg:impl' to Package 'ObstacleDetectionPkg'.
+Adding File 'ObstacleDetectionPkg:spec' to Package 'ObstacleDetectionPkg'.
+Adding File 'ParkingSystem:impl' to Class 'ParkingSystem'.
+Adding File 'ParkingSystem:spec' to Class 'ParkingSystem'.
+Adding File 'ParkingSystemPkg:impl' to Package 'ParkingSystemPkg'.
+Adding File 'ParkingSystemPkg:spec' to Package 'ParkingSystemPkg'.
+Adding File 'PedestrianandObstacles:impl' to Actor 'PedestrianandObstacles'.
+Adding File 'PedestrianandObstacles:spec' to Actor 'PedestrianandObstacles'.
+Adding File 'Safety_Standards:impl' to Class 'Safety_Standards'.
+Adding File 'Safety_Standards:spec' to Class 'Safety_Standards'.
+Adding File 'SafetyStandards:impl' to Package 'SafetyStandards'.
+Adding File 'SafetyStandards:spec' to Package 'SafetyStandards'.
+Adding File 'Truck:impl' to Class 'Truck'.
+Adding File 'Truck:spec' to Class 'Truck'.
+Adding File 'TruckPkg:impl' to Package 'TruckPkg'.
+Adding File 'TruckPkg:spec' to Package 'TruckPkg'.
+Adding File 'UseCaseAnalysisPkg:impl' to Package 'UseCaseAnalysisPkg'.
+Adding File 'UseCaseAnalysisPkg:spec' to Package 'UseCaseAnalysisPkg'.
+

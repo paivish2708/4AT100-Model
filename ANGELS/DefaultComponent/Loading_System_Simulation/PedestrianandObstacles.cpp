@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: PedestrianandObstacles
@@ -26,25 +26,16 @@ PedestrianandObstacles::PedestrianandObstacles() {
 }
 
 PedestrianandObstacles::~PedestrianandObstacles() {
-    NOTIFY_DESTRUCTOR(~PedestrianandObstacles, false);
+    NOTIFY_DESTRUCTOR(~PedestrianandObstacles, true);
 }
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-void OMAnimatedPedestrianandObstacles::serializeAttributes(AOMSAttributes* aomsAttributes) const {
-    OMAnimatedObstacle::serializeAttributes(aomsAttributes);
-}
-
 void OMAnimatedPedestrianandObstacles::serializeRelations(AOMSRelations* aomsRelations) const {
-    OMAnimatedObstacle::serializeRelations(aomsRelations);
 }
 //#]
 
-IMPLEMENT_META_S_P(PedestrianandObstacles, UseCaseAnalysisPkg::ANGELSPkg::ActorPkg, false, Obstacle, OMAnimatedObstacle, OMAnimatedPedestrianandObstacles)
-
-OMINIT_SUPERCLASS(Obstacle, OMAnimatedObstacle)
-
-OMREGISTER_CLASS
+IMPLEMENT_META_P(PedestrianandObstacles, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg, UseCaseAnalysisPkg::ANGELSPkg::ActorPkg, false, OMAnimatedPedestrianandObstacles)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

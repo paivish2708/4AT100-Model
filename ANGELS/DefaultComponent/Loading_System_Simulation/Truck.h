@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Truck
@@ -68,8 +68,6 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
-    Driver* itsDriver;		//## link itsDriver
-    
     ////    Framework operations    ////
 
 public :
@@ -91,6 +89,10 @@ public :
     
     //## auto_generated
     void _clearItsDriver();
+
+protected :
+
+    Driver* itsDriver;		//## link itsDriver
 };
 
 #ifdef _OMINSTRUMENT
