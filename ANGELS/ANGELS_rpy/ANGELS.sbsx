@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ANGELS</_name>
+			<_modifiedTimeWeak type="a">4.30.2020::10:0:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.30.2020::10:0:13</_modifiedTime>
+			<_lastID type="a">2</_lastID>
+			<weakCGTime type="a">4.30.2020::10:0:13</weakCGTime>
+			<strongCGTime type="a">4.30.2020::9:48:32</strongCGTime>
+			<_defaultComposite type="s">GUID 6b6ca664-289a-46cc-8bec-9fb31e27b22c</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</value>
+				<value>GUID dd55cabb-699e-4724-9d69-dcc932a50bcc</value>
+				<value>GUID 661c23ef-e37c-4d88-8aea-2af717860b40</value>
+				<value>GUID 363e27a5-edb8-44a5-82c4-8353be709de0</value>
+				<value>GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</value>
+				<value>GUID 7554a74b-52bb-4caa-90d3-744b41cefafd</value>
+				<value>GUID 4242030f-427c-425e-9162-96cd8e5ac609</value>
+				<value>GUID e1960b35-b5e1-417a-8195-97ab799fd210</value>
+				<value>GUID 6b6ca664-289a-46cc-8bec-9fb31e27b22c</value>
+				<value>GUID ba7ff1ec-3720-44d9-9f25-dd97ab9cf315</value>
+			</AggregatesList>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">DockingSystemPkg</fileName>
+			<_id type="a">GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">LoadingSystemPkg</fileName>
+			<_id type="a">GUID dd55cabb-699e-4724-9d69-dcc932a50bcc</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">ObstacleDetectionPkg</fileName>
+			<_id type="a">GUID 661c23ef-e37c-4d88-8aea-2af717860b40</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">ParkingSystemPkg</fileName>
+			<_id type="a">GUID 363e27a5-edb8-44a5-82c4-8353be709de0</_id>
+		</ISubsystem>
+		<IDiagram type="e">
+			<fileName type="a">System_Context</fileName>
+			<_persistAs type="a">C:\Users\LAPTOP\Desktop\New folder\4AT100-Model Copy 2\ANGELS\ANGELS_rpy</_persistAs>
+			<_id type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_id>
+			<_name type="a">System Context</_name>
+			<_partOfTheModelKind type="a">referenceunit</_partOfTheModelKind>
+		</IDiagram>
+		<ISubsystem type="e">
+			<fileName type="a">ObstacleAvoidancePkg</fileName>
+			<_id type="a">GUID 7554a74b-52bb-4caa-90d3-744b41cefafd</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">LocalisationPkg</fileName>
+			<_id type="a">GUID 4242030f-427c-425e-9162-96cd8e5ac609</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">CommunicationPkg</fileName>
+			<_id type="a">GUID e1960b35-b5e1-417a-8195-97ab799fd210</_id>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID 6b6ca664-289a-46cc-8bec-9fb31e27b22c</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">4.30.2020::9:48:32</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">4.30.2020::9:48:32</weakCGTime>
+			<strongCGTime type="a">4.30.2020::9:48:32</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IClass type="e">
+			<fileName type="a">ANGELS_block</fileName>
+			<_id type="a">GUID ba7ff1ec-3720-44d9-9f25-dd97ab9cf315</_id>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

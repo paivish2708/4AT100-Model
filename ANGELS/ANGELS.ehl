@@ -1,3 +1,7 @@
 [Op Calls]
 [Events]
+Docking_System[0]->GEN(CloseDoors())`Docking_System
+Docking_System[0]->GEN(OpenDoors(1))`Docking_System
+Docking_System[0]->GEN(AlertDCManager())`Docking_System
+Docking_System[0]->GEN(StartDockingProcedure())`Docking_System
 [Breakpoints]

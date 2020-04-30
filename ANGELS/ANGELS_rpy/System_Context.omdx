@@ -505,8 +505,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:0:19</_modifiedTime>
-			<_lastModifiedTime type="a">4.29.2020::15:0:19</_lastModifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:2:34</_modifiedTime>
+			<_lastModifiedTime type="a">4.29.2020::15:2:34</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -2723,8 +2723,8 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::DockingSystemPkg</_hsubsystem>
 					<_hname type="a">Docking_System</_hname>
 					<_hid type="a">GUID 0f2dc8c4-a324-4500-bc76-7190e7a8a4e2</_hid>
 				</IHandle>
@@ -2732,7 +2732,7 @@
 			<m_pParent type="s">GUID 8ed0b265-5f8a-4cbc-8d44-6a7487d6289f</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Docking_System</m_str>
+					<m_str type="a">UseCaseAnalysisPkg::DockingSystemPkg::Docking_System</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4094,8 +4094,8 @@
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
+					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::DockingSystemPkg</_hsubsystem>
 					<_hclass type="a">Docking_System</_hclass>
 					<_hname type="a">itsANGELS_2</_hname>
 					<_hid type="a">GUID 3bc5e3e9-c057-4fa6-ba3f-702035b7eb30</_hid>

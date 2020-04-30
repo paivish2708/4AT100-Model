@@ -13,7 +13,47 @@
 			<_properties type="p"><IPropertyContainer type="e">
 				<Subjects type="c">
 					<IRPYRawContainer type="e">
-						<size type="a">1</size>
+						<size type="a">2</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Animation</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">2</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Activity</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">ShowFlowToken</_Name>
+													<_Value type="a">True</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">General</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">AutoOpenBehavioralDiagrams</_Name>
+													<_Value type="a">Always</_Value>
+													<_Type type="a">Enum</_Type>
+													<_ExtraTypeInfo type="a">Never,WhileStepping,OnBreak,Always</_ExtraTypeInfo>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
 						<IPropertySubject type="e">
 							<_Name type="a">Format</_Name>
 							<Metaclasses type="c">
@@ -56,9 +96,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.28.2020::14:49:45</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.28.2020::14:49:45</_modifiedTime>
-			<_lastID type="a">11</_lastID>
+			<_modifiedTimeWeak type="a">4.30.2020::10:7:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.30.2020::10:7:3</_modifiedTime>
+			<_lastID type="a">15</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">
 					<size type="a">16</size>
@@ -83,8 +123,8 @@
 			<_defaultSubsystem type="r">
 				<ISubsystemHandle type="e">
 					<_hm2Class type="a">ISubsystem</_hm2Class>
-					<_hname type="a">Default</_hname>
-					<_hid type="a">GUID 39b8bb0f-3c21-4878-9e98-4ed62d1ac09b</_hid>
+					<_hname type="a">RequirementsAnalysisPkg</_hname>
+					<_hid type="a">GUID 7223f5d4-866f-4e39-bcbe-96f2132ff31f</_hid>
 				</ISubsystemHandle>
 			</_defaultSubsystem>
 			<_component type="r">
@@ -120,6 +160,11 @@
 				</IRPYRawContainer>
 			</Multiplicities>
 			<_isImportedFromDM type="a">0</_isImportedFromDM>
+			<Diagrams type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Diagrams>
 			<mapOslcAddedCollections type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -131,19 +176,12 @@
 				</IRPYRawContainer>
 			</mapAssociationsToRemove>
 			<AggregatesList type="e">
-				<value>GUID 39b8bb0f-3c21-4878-9e98-4ed62d1ac09b</value>
 				<value>GUID d9689b73-885e-44c4-896b-de43defa0a33</value>
 				<value>GUID 7223f5d4-866f-4e39-bcbe-96f2132ff31f</value>
 				<value>GUID de656d0c-824e-401d-88a2-a108a59b1b85</value>
-				<value>GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</value>
-				<value>GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</value>
 				<value>GUID 7dba1274-9404-4f0f-b93c-831e00073cf1</value>
 			</AggregatesList>
 		</IProject>
-		<ISubsystem type="e">
-			<fileName type="a">Default</fileName>
-			<_id type="a">GUID 39b8bb0f-3c21-4878-9e98-4ed62d1ac09b</_id>
-		</ISubsystem>
 		<IProfile type="e">
 			<fileName type="a">SysML</fileName>
 			<_persistAs type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy</_persistAs>
@@ -158,15 +196,6 @@
 			<fileName type="a">UseCaseAnalysisPkg</fileName>
 			<_id type="a">GUID de656d0c-824e-401d-88a2-a108a59b1b85</_id>
 		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">ActorPkg</fileName>
-			<_id type="a">GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</_id>
-		</ISubsystem>
-		<IDiagram type="e">
-			<fileName type="a">System_Context</fileName>
-			<_id type="a">GUID 4c56bea4-51cd-4f0b-ad95-c2a3d9d49822</_id>
-			<_name type="a">System Context</_name>
-		</IDiagram>
 		<IComponent type="e">
 			<fileName type="a">DefaultComponent</fileName>
 			<_id type="a">GUID 7dba1274-9404-4f0f-b93c-831e00073cf1</_id>

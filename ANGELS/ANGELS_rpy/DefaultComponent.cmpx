@@ -9,38 +9,17 @@
 	<RHAPSODY-MODEL>
 	<IComponent type="e">
 			<_id type="a">GUID 7dba1274-9404-4f0f-b93c-831e00073cf1</_id>
-			<_myState type="a">139264</_myState>
+			<_myState type="a">8192</_myState>
 			<_name type="a">DefaultComponent</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.26.2020::13:25:6</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.29.2020::14:28:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.30.2020::10:10:28</_modifiedTime>
 			<m_buildType type="a">Executable</m_buildType>
 			<m_configActive type="r">
 				<ICodeGenConfigInfoHandle type="e">
 					<_hm2Class type="a">ICodeGenConfigInfo</_hm2Class>
-					<_hid type="a">GUID 3e8a7e80-6bbb-44b2-a7bd-675d1c6ba0f1</_hid>
+					<_hid type="a">GUID 9d8dc6a9-b5b6-4b8c-8ca8-1608bdc05f4f</_hid>
 				</ICodeGenConfigInfoHandle>
 			</m_configActive>
-			<HandlesInMe type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">2</size>
-					
-						<IHandle type="e">
-							<_hm2Class type="a">ISubsystem</_hm2Class>
-							<_hfilename type="a">.\Default.sbsx</_hfilename>
-							<_hname type="a">Default</_hname>
-							<_hid type="a">GUID 39b8bb0f-3c21-4878-9e98-4ed62d1ac09b</_hid>
-						</IHandle>
-					
-					
-						<IHandle type="e">
-							<_hm2Class type="a">IProfile</_hm2Class>
-							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
-							<_hname type="a">SysML</_hname>
-							<_hid type="a">GUID d9689b73-885e-44c4-896b-de43defa0a33</_hid>
-						</IHandle>
-					
-				</IRPYRawContainer>
-			</HandlesInMe>
 			<VariationPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -51,22 +30,31 @@
 					<size type="a">0</size>
 				</IRPYRawContainer>
 			</SelectedVariants>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
-			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<weakCGTime type="a">4.29.2020::14:28:35</weakCGTime>
+			<strongCGTime type="a">4.29.2020::14:28:35</strongCGTime>
 			<AggregatesList type="e">
 				<value>GUID 3401e270-75bb-4a56-8888-7bf05e5d8473</value>
 				<value>GUID 3e8a7e80-6bbb-44b2-a7bd-675d1c6ba0f1</value>
+				<value>GUID 9d8dc6a9-b5b6-4b8c-8ca8-1608bdc05f4f</value>
 			</AggregatesList>
 		</IComponent>
 		<IFolder type="e">
 			<_id type="a">GUID 3401e270-75bb-4a56-8888-7bf05e5d8473</_id>
 			<_myState type="a">73728</_myState>
 			<_name type="a">Files</_name>
-			<_modifiedTimeWeak type="a">3.26.2020::13:25:6</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.26.2020::13:25:6</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.29.2020::14:28:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::14:28:35</_modifiedTime>
 			<Elements type="c">
 				<IRPYRawContainer type="e">
-					<size type="a">0</size>
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
+							<_hname type="a">UseCaseAnalysisPkg</_hname>
+							<_hid type="a">GUID de656d0c-824e-401d-88a2-a108a59b1b85</_hid>
+						</IHandle>
+					
 				</IRPYRawContainer>
 			</Elements>
 			<Files type="c">
@@ -108,13 +96,197 @@
 			<m_allInAnimScope type="a">1</m_allInAnimScope>
 			<m_generateUsecases type="a">0</m_generateUsecases>
 			<AggregatesList type="e">
+				<value>GUID 3dcfbd4e-f9ab-4fdc-aad3-ceacbb049d3d</value>
+				<value>GUID be16ceee-eff8-42a1-8ca1-537b7903c813</value>
 				<value>GUID afcd6522-1818-41bb-b689-67b125eb99a4</value>
 			</AggregatesList>
 		</ICodeGenConfigInfo>
+		<IMHyperLink type="e">
+			<_id type="a">GUID 3dcfbd4e-f9ab-4fdc-aad3-ceacbb049d3d</_id>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::14:28:14</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+				</INObjectHandle>
+			</_dependsOn>
+			<_linkDispName type="a">Edit Makefile</_linkDispName>
+			<_linkType type="a">FREE</_linkType>
+			<_linkTarget type="a">DefaultComponent.mak</_linkTarget>
+			<isConfigurationFileHyperLink type="a">1</isConfigurationFileHyperLink>
+		</IMHyperLink>
+		<IMHyperLink type="e">
+			<_id type="a">GUID be16ceee-eff8-42a1-8ca1-537b7903c813</_id>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::14:28:14</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+				</INObjectHandle>
+			</_dependsOn>
+			<_linkDispName type="a">Edit Main File</_linkDispName>
+			<_linkType type="a">FREE</_linkType>
+			<_linkTarget type="a">MainDefaultComponent</_linkTarget>
+			<isConfigurationFileHyperLink type="a">1</isConfigurationFileHyperLink>
+		</IMHyperLink>
 		<IFolder type="e">
 			<_id type="a">GUID afcd6522-1818-41bb-b689-67b125eb99a4</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DefaultConfig</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.26.2020::13:25:6</_modifiedTime>
+			<Elements type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Elements>
+			<Files type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Files>
+		</IFolder>
+		<ICodeGenConfigInfo type="e">
+			<_id type="a">GUID 9d8dc6a9-b5b6-4b8c-8ca8-1608bdc05f4f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Loading_System_Simulation</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.26.2020::13:25:6</_modifiedTime>
+			<_scopeType type="a">Derived</_scopeType>
+			<_instrumentation type="a">Animation</_instrumentation>
+			<_timeModel type="a">RealTime</_timeModel>
+			<m_generateActors type="a">1</m_generateActors>
+			<_statechartImplementation type="a">Flat</_statechartImplementation>
+			<_checksList type="a">0 ,</_checksList>
+			<_checksList_Default type="a">1</_checksList_Default>
+			<ScopeElements type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</ScopeElements>
+			<InitialInstances type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IClass</_hm2Class>
+							<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg</_hsubsystem>
+							<_hname type="a">Loading_System</_hname>
+							<_hid type="a">GUID 0f2dc8c4-a324-4500-bc76-7190e7a8a4e2</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</InitialInstances>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<AnimScopeElements type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</AnimScopeElements>
+			<m_allInAnimScope type="a">1</m_allInAnimScope>
+			<m_generateUsecases type="a">0</m_generateUsecases>
+			<AggregatesList type="e">
+				<value>GUID c26bfaae-be40-4d4d-a492-8bf97312e637</value>
+				<value>GUID dd9e7b9f-4ed5-45e3-82e8-38fd4d1fe80b</value>
+				<value>GUID 894e21d6-34f3-48a7-b8f2-4f2f4b6f05d0</value>
+				<value>GUID 04c984da-796f-40ee-895f-e438371fb6b2</value>
+			</AggregatesList>
+		</ICodeGenConfigInfo>
+		<IMHyperLink type="e">
+			<_id type="a">GUID c26bfaae-be40-4d4d-a492-8bf97312e637</_id>
+			<_rmmServerID type="a">-1</_rmmServerID>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::14:28:14</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+				</INObjectHandle>
+			</_dependsOn>
+			<_linkDispName type="a">Edit Makefile</_linkDispName>
+			<_linkType type="a">FREE</_linkType>
+			<_linkTarget type="a">DefaultComponent.mak</_linkTarget>
+			<isConfigurationFileHyperLink type="a">1</isConfigurationFileHyperLink>
+		</IMHyperLink>
+		<IMHyperLink type="e">
+			<_id type="a">GUID dd9e7b9f-4ed5-45e3-82e8-38fd4d1fe80b</_id>
+			<_rmmServerID type="a">-1</_rmmServerID>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.29.2020::14:28:14</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+				</INObjectHandle>
+			</_dependsOn>
+			<_linkDispName type="a">Edit Main File</_linkDispName>
+			<_linkType type="a">FREE</_linkType>
+			<_linkTarget type="a">MainDefaultComponent</_linkTarget>
+			<isConfigurationFileHyperLink type="a">1</isConfigurationFileHyperLink>
+		</IMHyperLink>
+		<ITag type="e">
+			<_id type="a">GUID 894e21d6-34f3-48a7-b8f2-4f2f4b6f05d0</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">SimulateModelFragment</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">RhpString</_hname>
+					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<AggregatesList type="e">
+				<value>GUID 78d6aa30-7718-4c21-99ff-4d091aedb822</value>
+				<value>GUID 8a18f7c3-0a0d-4d20-9af7-08723b04a5f6</value>
+				<value>GUID 0425b8d9-e05f-468c-a3b0-41c50f2e1d80</value>
+			</AggregatesList>
+		</ITag>
+		<IInstanceValue type="e">
+			<_id type="a">GUID 78d6aa30-7718-4c21-99ff-4d091aedb822</_id>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_value type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ICodeGenConfigInfo</_hm2Class>
+					<_hid type="a">GUID 9d8dc6a9-b5b6-4b8c-8ca8-1608bdc05f4f</_hid>
+				</IHandle>
+			</_value>
+		</IInstanceValue>
+		<IInstanceValue type="e">
+			<_id type="a">GUID 8a18f7c3-0a0d-4d20-9af7-08723b04a5f6</_id>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_value type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IActivityGraph</_hm2Class>
+					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg</_hsubsystem>
+					<_hclass type="a">Loading_System</_hclass>
+					<_hname type="a">MainFlow</_hname>
+					<_hid type="a">GUID ee640bec-0720-4af1-b5d4-9b2697f2208c</_hid>
+				</IHandle>
+			</_value>
+		</IInstanceValue>
+		<IInstanceValue type="e">
+			<_id type="a">GUID 0425b8d9-e05f-468c-a3b0-41c50f2e1d80</_id>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_value type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IActivityGraph</_hm2Class>
+					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg</_hsubsystem>
+					<_hclass type="a">Loading_System</_hclass>
+					<_hname type="a">MainFlow</_hname>
+					<_hid type="a">GUID ee640bec-0720-4af1-b5d4-9b2697f2208c</_hid>
+				</IHandle>
+			</_value>
+		</IInstanceValue>
+		<IFolder type="e">
+			<_id type="a">GUID 04c984da-796f-40ee-895f-e438371fb6b2</_id>
+			<_myState type="a">8192</_myState>
+			<_rmmServerID type="a">-1</_rmmServerID>
+			<_name type="a">Loading_System_Simulation</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.26.2020::13:25:6</_modifiedTime>
 			<Elements type="c">

@@ -11,19 +11,21 @@
 			<_id type="a">GUID de656d0c-824e-401d-88a2-a108a59b1b85</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCaseAnalysisPkg</_name>
-			<_modifiedTimeWeak type="a">4.29.2020::15:0:5</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
-			<_lastID type="a">30</_lastID>
-			<weakCGTime type="a">4.29.2020::15:0:5</weakCGTime>
-			<strongCGTime type="a">4.2.2020::15:41:39</strongCGTime>
+			<_modifiedTimeWeak type="a">4.30.2020::10:7:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.30.2020::10:7:57</_modifiedTime>
+			<_lastID type="a">32</_lastID>
+			<weakCGTime type="a">4.30.2020::10:7:57</weakCGTime>
+			<strongCGTime type="a">4.30.2020::9:51:17</strongCGTime>
 			<_defaultComposite type="s">GUID 66af33e9-98b9-483e-9515-0798c195b3d2</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
+			<Actors type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Actors>
+			<_configurationRelatedTime type="a">4.30.2020::10:5:55</_configurationRelatedTime>
 			<AggregatesList type="e">
-				<value>GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</value>
-				<value>GUID dd55cabb-699e-4724-9d69-dcc932a50bcc</value>
-				<value>GUID 661c23ef-e37c-4d88-8aea-2af717860b40</value>
-				<value>GUID 363e27a5-edb8-44a5-82c4-8353be709de0</value>
+				<value>GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11</value>
 				<value>GUID 66af33e9-98b9-483e-9515-0798c195b3d2</value>
 				<value>GUID 2353c088-cdfa-4be0-9042-24068a09d195</value>
 				<value>GUID c4f77424-ee3a-4f6e-8800-d1b4ca6c37a6</value>
@@ -44,24 +46,11 @@
 				<value>GUID 5562caec-49cb-4b93-b649-dbc529091ef5</value>
 				<value>GUID f77893aa-6963-47d9-94de-83fe976eeca9</value>
 				<value>GUID 107b1941-b17f-49ca-9469-947ac2b179fe</value>
-				<value>GUID 25ec47a8-4dc4-488b-b2e1-484c6f876cb8</value>
 			</AggregatesList>
 		</ISubsystem>
 		<ISubsystem type="e">
-			<fileName type="a">DockingSystemPkg</fileName>
-			<_id type="a">GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">LoadingSystemPkg</fileName>
-			<_id type="a">GUID dd55cabb-699e-4724-9d69-dcc932a50bcc</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">ObstacleDetectionPkg</fileName>
-			<_id type="a">GUID 661c23ef-e37c-4d88-8aea-2af717860b40</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">ParkingSystemPkg</fileName>
-			<_id type="a">GUID 363e27a5-edb8-44a5-82c4-8353be709de0</_id>
+			<fileName type="a">ANGELSPkg</fileName>
+			<_id type="a">GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11</_id>
 		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID 66af33e9-98b9-483e-9515-0798c195b3d2</_id>
@@ -86,7 +75,7 @@
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\ParkingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ParkingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ParkingSystemPkg</_hsubsystem>
 					<_hname type="a">Manual_Parking_System</_hname>
 					<_hid type="a">GUID 54cc1026-4a21-42d7-881d-711fc4bddb40</_hid>
 				</IHandle>
@@ -112,7 +101,7 @@ The driver goes reverse if necessary.%0D
 The driver brings the truck to a stop.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.22.2020::13:2:59</_modifiedTime>
+			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
 			<_lastID type="a">12</_lastID>
 			<weakCGTime type="a">4.6.2020::14:46:31</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -140,7 +129,6 @@ The driver brings the truck to a stop.</_text>
 				<value>GUID 39141c15-eddb-4707-a99f-21862fe8ded4</value>
 				<value>GUID d94afb77-3e95-40ad-a93a-97d980ab6718</value>
 				<value>GUID 52866805-26bb-4595-a257-cfc7bf77348b</value>
-				<value>GUID 47ad246a-b515-446b-b8e3-3753a9d09c17</value>
 				<value>GUID ae5ce0d7-8ecd-4002-be4b-79f8148f8d34</value>
 			</AggregatesList>
 		</IUseCase>
@@ -514,7 +502,7 @@ The driver brings the truck to a stop.</_text>
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hname type="a">Driver</_hname>
 					<_hid type="a">GUID 516c76cb-338f-40c3-a898-f904221cfb96</_hid>
 				</IClassifierHandle>
@@ -523,39 +511,10 @@ The driver brings the truck to a stop.</_text>
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">Driver</_hclass>
 					<_hname type="a">itsMove Forward</_hname>
 					<_hid type="a">GUID 7333a00c-2adb-48c4-8187-639b641587b6</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 47ad246a-b515-446b-b8e3-3753a9d09c17</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:34:40</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsMove Forward</_hname>
-					<_hid type="a">GUID 6bb7ca4d-ffbc-4280-a7bd-b421f6bb466a</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -572,7 +531,7 @@ The driver brings the truck to a stop.</_text>
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hname type="a">Driver</_hname>
 					<_hid type="a">GUID 516c76cb-338f-40c3-a898-f904221cfb96</_hid>
 				</IClassifierHandle>
@@ -581,7 +540,7 @@ The driver brings the truck to a stop.</_text>
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">Driver</_hclass>
 					<_hname type="a">itsMove Forward_1</_hname>
 					<_hid type="a">GUID d3fa922c-1a05-4fb4-acec-74eec64ebb8b</_hid>
@@ -599,7 +558,7 @@ The driver brings the truck to a stop.</_text>
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\ParkingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ParkingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ParkingSystemPkg</_hsubsystem>
 					<_hname type="a">Manual_Parking_System</_hname>
 					<_hid type="a">GUID 54cc1026-4a21-42d7-881d-711fc4bddb40</_hid>
 				</IHandle>
@@ -917,7 +876,7 @@ Alternative Scenario:%0D
 8. The driver can leave the parking spot.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.22.2020::13:7:31</_modifiedTime>
+			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
 			<_lastID type="a">3</_lastID>
 			<weakCGTime type="a">4.1.2020::18:25:34</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -932,48 +891,10 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</_EntryPoints>
 			<AggregatesList type="e">
-				<value>GUID 84995bb4-c80a-4028-90aa-dd00d831675b</value>
 				<value>GUID cfd7157d-767c-4aee-aed7-54c170a3f0b6</value>
-				<value>GUID 2f15a0c7-67d0-46b6-8673-532081118ab9</value>
 				<value>GUID 729563d0-ea1f-4b37-9772-5b92c363b0b9</value>
-				<value>GUID b2dc4031-02fb-4949-b2ca-45f2b1dae0ce</value>
 			</AggregatesList>
 		</IUseCase>
-		<IDependency type="e">
-			<_id type="a">GUID 84995bb4-c80a-4028-90aa-dd00d831675b</_id>
-			<_myState type="a">2048</_myState>
-			<_name type="a">Truck</_name>
-			<Stereotypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">1</size>
-					
-						<IHandle type="e">
-							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
-							<_hname type="a">include</_hname>
-							<_hid type="a">GUID 17ef9a2f-cb89-11d5-b5bf-00d0b780aafd</_hid>
-						</IHandle>
-					
-				</IRPYRawContainer>
-			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.1.2020::18:25:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::18:25:34</_modifiedTime>
-			<_dependsOn type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</INObjectHandle>
-			</_dependsOn>
-			<_dependent type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">IUseCase</_hm2Class>
-					<_hid type="a">GUID 0fd3ae68-99a9-41c2-acf0-1532db7a8f6b</_hid>
-				</INObjectHandle>
-			</_dependent>
-		</IDependency>
 		<IInformationFlow type="e">
 			<_id type="a">GUID cfd7157d-767c-4aee-aed7-54c170a3f0b6</_id>
 			<_myState type="a">2048</_myState>
@@ -994,29 +915,6 @@ Alternative Scenario:%0D
 			</end2_>
 			<direction_ type="a">toEnd2</direction_>
 		</IInformationFlow>
-		<IInformationFlow type="e">
-			<_id type="a">GUID 2f15a0c7-67d0-46b6-8673-532081118ab9</_id>
-			<_myState type="a">2048</_myState>
-			<_name type="a">Parking_Truck</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::11:43:16</_modifiedTime>
-			<end1_ type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IUseCase</_hm2Class>
-					<_hid type="a">GUID 0fd3ae68-99a9-41c2-acf0-1532db7a8f6b</_hid>
-				</IHandle>
-			</end1_>
-			<end2_ type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IHandle>
-			</end2_>
-			<direction_ type="a">toEnd2</direction_>
-		</IInformationFlow>
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 729563d0-ea1f-4b37-9772-5b92c363b0b9</_id>
 			<_myState type="a">10240</_myState>
@@ -1028,7 +926,7 @@ Alternative Scenario:%0D
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hname type="a">Driver</_hname>
 					<_hid type="a">GUID 516c76cb-338f-40c3-a898-f904221cfb96</_hid>
 				</IClassifierHandle>
@@ -1037,39 +935,10 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">Driver</_hclass>
 					<_hname type="a">itsParking</_hname>
 					<_hid type="a">GUID 0bc17462-5a13-49ed-b288-15346f052c95</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID b2dc4031-02fb-4949-b2ca-45f2b1dae0ce</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:32:37</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsParking</_hname>
-					<_hid type="a">GUID 3c0423de-9591-4ce0-92fa-7dd578e5744e</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -1103,11 +972,10 @@ Main scenario:\par%0D
  \par%0D
 Alternative Scenario:\par%0D
 1.1  In case of failure to the sensor system, the truck must come to a halt.\par%0D
-}%0D
-</_textRTF>
+}</_textRTF>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.22.2020::13:9:46</_modifiedTime>
+			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
 			<_lastID type="a">5</_lastID>
 			<weakCGTime type="a">4.6.2020::14:44:12</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -1115,6 +983,11 @@ Alternative Scenario:\par%0D
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
@@ -1127,7 +1000,6 @@ Alternative Scenario:\par%0D
 				<value>GUID 2a9880d2-128f-47bc-8363-728c29fc0a55</value>
 				<value>GUID 928a2533-1178-4f42-90cb-c65fc6d1100c</value>
 				<value>GUID 45af51c4-9b47-440b-ad6e-02ca7a3fa449</value>
-				<value>GUID c0464011-9beb-457f-850b-0269052bed0c</value>
 			</AggregatesList>
 		</IUseCase>
 		<IDependency type="e">
@@ -1278,35 +1150,6 @@ Alternative Scenario:\par%0D
 			</end2_>
 			<direction_ type="a">toEnd2</direction_>
 		</IInformationFlow>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID c0464011-9beb-457f-850b-0269052bed0c</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsLocalisation_System</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::11:53:44</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Localisation_System</_hname>
-					<_hid type="a">GUID ca6abf50-a02e-4266-ae71-27495013d3ea</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Localisation_System</_hclass>
-					<_hname type="a">itsObstacle detection</_hname>
-					<_hid type="a">GUID 63552777-9972-4cf4-9f9f-04340425f4ce</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
 		<IUseCase type="e">
 			<_id type="a">GUID 28daacca-c99b-464d-bee7-3bb30ea3af3a</_id>
 			<_myState type="a">8192</_myState>
@@ -1336,7 +1179,7 @@ Alternative Scenario:%0D
 2.1 In case of time to collision is less than 5 seconds, then the truck must come to a halt.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.22.2020::13:10:29</_modifiedTime>
+			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
 			<_lastID type="a">6</_lastID>
 			<weakCGTime type="a">4.1.2020::18:47:48</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -1344,6 +1187,11 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
@@ -1357,7 +1205,6 @@ Alternative Scenario:%0D
 				<value>GUID ef65f1da-e254-4b00-8e7f-b3ebff9e4a80</value>
 				<value>GUID 065b9d3e-4cc7-4056-9415-e2a11c87895a</value>
 				<value>GUID 1b37af9c-4c74-4f7b-9e2b-292a1c98a691</value>
-				<value>GUID 569f5930-cfca-4a0d-a3e5-5d47b0799f4a</value>
 			</AggregatesList>
 		</IUseCase>
 		<IDependency type="e">
@@ -1516,35 +1363,6 @@ Alternative Scenario:%0D
 			</end2_>
 			<direction_ type="a">toEnd2</direction_>
 		</IInformationFlow>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 569f5930-cfca-4a0d-a3e5-5d47b0799f4a</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsCollision_Avoidance</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::18:27:43</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Collision_Avoidance</_hname>
-					<_hid type="a">GUID 5119c251-6ddc-4989-81dc-cd28be013ef0</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Collision_Avoidance</_hclass>
-					<_hname type="a">itsObstacle Avoidance</_hname>
-					<_hid type="a">GUID ca0942c4-3188-41c6-8249-8e9de3afe673</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
 		<IUseCase type="e">
 			<_id type="a">GUID 181d9f1a-6f9b-4033-9613-54f41547e205</_id>
 			<_myState type="a">8192</_myState>
@@ -1554,7 +1372,7 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::LoadingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg</_hsubsystem>
 					<_hname type="a">Loading_system</_hname>
 					<_hid type="a">GUID 45049950-f431-444f-979f-61756654f665</_hid>
 				</IHandle>
@@ -1587,7 +1405,7 @@ Alternative Scenario:%0D
  1.2  System must check if the state of the trailer doors has changed.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.22.2020::13:25:0</_modifiedTime>
+			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">4.22.2020::13:13:41</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -1595,6 +1413,11 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
@@ -1603,8 +1426,6 @@ Alternative Scenario:%0D
 			</_EntryPoints>
 			<AggregatesList type="e">
 				<value>GUID 0333713e-fcd1-4275-a3e8-ce1eae852c51</value>
-				<value>GUID d355390e-3e23-4e20-8bec-45f864d9414f</value>
-				<value>GUID 10cd737b-5680-42a5-818d-2084787f71f7</value>
 			</AggregatesList>
 		</IUseCase>
 		<IDependency type="e">
@@ -1639,64 +1460,6 @@ Alternative Scenario:%0D
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID d355390e-3e23-4e20-8bec-45f864d9414f</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::13:23:38</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsLoad Goods</_hname>
-					<_hid type="a">GUID 32011c6d-772b-4c21-806a-104645bd167b</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 10cd737b-5680-42a5-818d-2084787f71f7</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck_1</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::13:25:0</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsLoad Goods_1</_hname>
-					<_hid type="a">GUID 2a701ffa-c491-4d70-bbb0-94e24e3d4605</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
 		<IUseCase type="e">
 			<_id type="a">GUID b841351b-f70c-4140-8ccf-0dec17a008d1</_id>
 			<_myState type="a">8192</_myState>
@@ -1706,7 +1469,7 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::LoadingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg</_hsubsystem>
 					<_hname type="a">Loading_system</_hname>
 					<_hid type="a">GUID 45049950-f431-444f-979f-61756654f665</_hid>
 				</IHandle>
@@ -1739,11 +1502,10 @@ Alternative Scenario:\par%0D
 4.2. If the above sign is unnoticed, the drivers\rquote  truck keys will illuminate to indicate the error made.\par%0D
 4.3. The driver must make the change to autonomous mode once again and reset the lights on the truck.\par%0D
 4.4. Go back to step 4.\par%0D
-}%0D
-</_textRTF>
+}</_textRTF>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
+			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
 			<_lastID type="a">4</_lastID>
 			<weakCGTime type="a">4.6.2020::14:32:50</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -1758,49 +1520,11 @@ Alternative Scenario:\par%0D
 				</IRPYRawContainer>
 			</_EntryPoints>
 			<AggregatesList type="e">
-				<value>GUID c873eb06-aec5-4c5d-8d0a-10f39dc00589</value>
 				<value>GUID a9093c21-bb25-4646-b80b-ce0d1305c108</value>
 				<value>GUID eadfa35a-2d8a-46d0-b4c0-e5c3d1d3e5bc</value>
-				<value>GUID 39ae7a63-e3f9-4686-85cf-f2bc5ed88077</value>
 				<value>GUID bb0e92f4-a386-4973-b97b-9c970ff330db</value>
-				<value>GUID 97d74891-8adc-4515-a4d1-bfe41d4b8a4c</value>
 			</AggregatesList>
 		</IUseCase>
-		<IDependency type="e">
-			<_id type="a">GUID c873eb06-aec5-4c5d-8d0a-10f39dc00589</_id>
-			<_myState type="a">2048</_myState>
-			<_name type="a">Truck</_name>
-			<Stereotypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">1</size>
-					
-						<IHandle type="e">
-							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
-							<_hname type="a">include</_hname>
-							<_hid type="a">GUID 17ef9a2f-cb89-11d5-b5bf-00d0b780aafd</_hid>
-						</IHandle>
-					
-				</IRPYRawContainer>
-			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.1.2020::18:25:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::18:25:29</_modifiedTime>
-			<_dependsOn type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</INObjectHandle>
-			</_dependsOn>
-			<_dependent type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">IUseCase</_hm2Class>
-					<_hid type="a">GUID b841351b-f70c-4140-8ccf-0dec17a008d1</_hid>
-				</INObjectHandle>
-			</_dependent>
-		</IDependency>
 		<IDependency type="e">
 			<_id type="a">GUID a9093c21-bb25-4646-b80b-ce0d1305c108</_id>
 			<_myState type="a">2048</_myState>
@@ -1853,41 +1577,18 @@ Alternative Scenario:\par%0D
 			</end2_>
 			<direction_ type="a">toEnd2</direction_>
 		</IInformationFlow>
-		<IInformationFlow type="e">
-			<_id type="a">GUID 39ae7a63-e3f9-4686-85cf-f2bc5ed88077</_id>
-			<_myState type="a">2048</_myState>
-			<_name type="a">Request for Loading_Truck</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::11:43:19</_modifiedTime>
-			<end1_ type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IUseCase</_hm2Class>
-					<_hid type="a">GUID b841351b-f70c-4140-8ccf-0dec17a008d1</_hid>
-				</IHandle>
-			</end1_>
-			<end2_ type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IHandle>
-			</end2_>
-			<direction_ type="a">toEnd2</direction_>
-		</IInformationFlow>
 		<IAssociationEnd type="e">
 			<_id type="a">GUID bb0e92f4-a386-4973-b97b-9c970ff330db</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDCOperator</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:2:18</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hname type="a">DCOperator</_hname>
 					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
 				</IClassifierHandle>
@@ -1896,39 +1597,10 @@ Alternative Scenario:\par%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">DCOperator</_hclass>
 					<_hname type="a">itsRequest for Loading</_hname>
 					<_hid type="a">GUID 51d2a73a-107c-496d-a2c1-b5927590389e</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 97d74891-8adc-4515-a4d1-bfe41d4b8a4c</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:32:30</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsRequest for Loading</_hname>
-					<_hid type="a">GUID 39167ea2-4548-4a27-96f7-1c07c4c98b10</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -1939,7 +1611,7 @@ Alternative Scenario:\par%0D
 			<_myState type="a">8192</_myState>
 			<_name type="a">Check for obstacles</_name>
 			<_modifiedTimeWeak type="a">4.6.2020::14:47:49</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:0:19</_modifiedTime>
+			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<weakCGTime type="a">4.6.2020::14:47:49</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -1957,7 +1629,6 @@ Alternative Scenario:\par%0D
 				<value>GUID 57964f93-d1a8-4737-bad7-a2454105c733</value>
 				<value>GUID a1de355f-0029-4d5a-b35d-4da098fcefb0</value>
 				<value>GUID f3263c86-b76b-444c-85e8-6f80a7f9e2fd</value>
-				<value>GUID af0890e1-db22-4385-97f0-b389846a5f19</value>
 			</AggregatesList>
 		</IUseCase>
 		<IDependency type="e">
@@ -2017,13 +1688,13 @@ Alternative Scenario:\par%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsPedestrianandObstacles</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:0:19</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:2:34</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hname type="a">PedestrianandObstacles</_hname>
 					<_hid type="a">GUID d1815240-c7ca-42c7-8552-c599700d0b3c</_hid>
 				</IClassifierHandle>
@@ -2032,39 +1703,10 @@ Alternative Scenario:\par%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">PedestrianandObstacles</_hclass>
 					<_hname type="a">itsCheck for obstacles</_hname>
 					<_hid type="a">GUID bb83dbb4-a0eb-499f-a1ee-60bbb98be464</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID af0890e1-db22-4385-97f0-b389846a5f19</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsCollision_Detection</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::18:28:15</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Collision_Detection</_hname>
-					<_hid type="a">GUID 365879c1-dcdd-4999-979a-ce422be9b964</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Collision_Detection</_hclass>
-					<_hname type="a">itsCheck for obstacles</_hname>
-					<_hid type="a">GUID 46e35961-a8e1-4368-9f62-2b35f38d2321</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -2079,7 +1721,7 @@ Alternative Scenario:\par%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\ParkingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ParkingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ParkingSystemPkg</_hsubsystem>
 					<_hname type="a">Manual_Parking_System</_hname>
 					<_hid type="a">GUID 54cc1026-4a21-42d7-881d-711fc4bddb40</_hid>
 				</IHandle>
@@ -2105,7 +1747,7 @@ Alternate Scenario:%0D
 The driver stops the truck if they see an obstacle.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.22.2020::13:24:53</_modifiedTime>
+			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
 			<_lastID type="a">4</_lastID>
 			<weakCGTime type="a">4.8.2020::10:42:10</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -2113,6 +1755,11 @@ The driver stops the truck if they see an obstacle.</_text>
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
@@ -2124,8 +1771,6 @@ The driver stops the truck if they see an obstacle.</_text>
 				<value>GUID 5d302b5e-4ba0-4be0-a8f8-667cfb6810a5</value>
 				<value>GUID 4183cc22-30c9-44b6-adfc-1ff24fc312bf</value>
 				<value>GUID 962fc81b-827a-4eac-9446-403c92e56d9c</value>
-				<value>GUID 5dcdb90e-de84-4abd-b582-591c780f3cfe</value>
-				<value>GUID 0aed8f76-e59f-42df-8473-7c6d93ecb1f7</value>
 			</AggregatesList>
 		</IUseCase>
 		<IDependency type="e">
@@ -2256,64 +1901,6 @@ The driver stops the truck if they see an obstacle.</_text>
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 5dcdb90e-de84-4abd-b582-591c780f3cfe</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::13:22:55</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsStop Truck</_hname>
-					<_hid type="a">GUID 235e6aa7-8f2f-4f2b-8759-4f46cb52f5f3</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 0aed8f76-e59f-42df-8473-7c6d93ecb1f7</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck_1</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::13:24:53</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsStop Truck_1</_hname>
-					<_hid type="a">GUID c0444578-7a68-489d-834a-8daa290a4fe6</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
 		<IUseCase type="e">
 			<_id type="a">GUID 374d1e8a-432d-4233-834d-f21fe317a9d1</_id>
 			<_myState type="a">8192</_myState>
@@ -2336,7 +1923,7 @@ Alternative Scenario:%0D
 2.2 Once a spot has been vacated by another driver, the DC operator will allocate the parking spot. </_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:2:18</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
@@ -2358,13 +1945,13 @@ Alternative Scenario:%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDCOperator</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:2:18</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hname type="a">DCOperator</_hname>
 					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
 				</IClassifierHandle>
@@ -2373,7 +1960,7 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">DCOperator</_hclass>
 					<_hname type="a">itsParking Spot Input</_hname>
 					<_hid type="a">GUID 139a2800-c09b-439e-9304-21a1700c14a3</_hid>
@@ -2391,7 +1978,7 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\ParkingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ParkingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ParkingSystemPkg</_hsubsystem>
 					<_hname type="a">Steer truck</_hname>
 					<_hid type="a">GUID 82b5a8f1-27b2-486e-8e75-ed6fd825c4e8</_hid>
 				</IHandle>
@@ -2473,7 +2060,7 @@ Main flow: \par%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::LoadingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg</_hsubsystem>
 					<_hname type="a">Loading_system</_hname>
 					<_hid type="a">GUID 45049950-f431-444f-979f-61756654f665</_hid>
 				</IHandle>
@@ -2497,7 +2084,7 @@ Alternative Scenario:%0D
       1.2  The Driver must check if the state of the trailer doors has changed sufficiently.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
+			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">4.6.2020::14:48:30</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -2514,7 +2101,6 @@ Alternative Scenario:%0D
 			<AggregatesList type="e">
 				<value>GUID 636121a5-f39b-4286-9421-032abb6074e5</value>
 				<value>GUID f40facf6-2309-464d-912c-aadacce8de34</value>
-				<value>GUID f4353c88-bcef-459f-8d05-3794f8dddecb</value>
 			</AggregatesList>
 		</IUseCase>
 		<IDependency type="e">
@@ -2554,13 +2140,13 @@ Alternative Scenario:%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDCOperator</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:0:5</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:2:18</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hname type="a">DCOperator</_hname>
 					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
 				</IClassifierHandle>
@@ -2569,39 +2155,10 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">DCOperator</_hclass>
 					<_hname type="a">itsOpen Loading Doors</_hname>
 					<_hid type="a">GUID 663c47fd-a02b-4b3f-a7d1-48b3c38f2b18</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID f4353c88-bcef-459f-8d05-3794f8dddecb</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::13:26:13</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsOpen Loading Doors</_hname>
-					<_hid type="a">GUID a0fd504e-4a86-4027-ac94-d28a8bb12fad</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -2640,7 +2197,7 @@ Alternative Scenario:%0D
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hname type="a">Driver</_hname>
 					<_hid type="a">GUID 516c76cb-338f-40c3-a898-f904221cfb96</_hid>
 				</IClassifierHandle>
@@ -2649,7 +2206,7 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">Driver</_hclass>
 					<_hname type="a">itsCheck next reference point</_hname>
 					<_hid type="a">GUID afcd9261-8b3a-4e7c-bbcb-5d7eae02f319</_hid>
@@ -2663,7 +2220,7 @@ Alternative Scenario:%0D
 			<_myState type="a">8192</_myState>
 			<_name type="a">Compare current position to reference</_name>
 			<_modifiedTimeWeak type="a">4.7.2020::10:32:41</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:32:41</_modifiedTime>
+			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">4.7.2020::10:32:41</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -2671,6 +2228,11 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
@@ -2679,7 +2241,6 @@ Alternative Scenario:%0D
 			</_EntryPoints>
 			<AggregatesList type="e">
 				<value>GUID c73e2979-fcaa-469c-b215-c41616e3fd61</value>
-				<value>GUID b61c7d2e-9b91-4add-bba1-13c6a7f4cb22</value>
 			</AggregatesList>
 		</IUseCase>
 		<IDependency type="e">
@@ -2714,41 +2275,12 @@ Alternative Scenario:%0D
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID b61c7d2e-9b91-4add-bba1-13c6a7f4cb22</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsLocalisation_System</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:31:22</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Localisation_System</_hname>
-					<_hid type="a">GUID ca6abf50-a02e-4266-ae71-27495013d3ea</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Localisation_System</_hclass>
-					<_hname type="a">itsCompare current position to reference</_hname>
-					<_hid type="a">GUID 5b35bdfc-a5f0-4fd8-84ab-b7fe12a122a8</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
 		<IUseCase type="e">
 			<_id type="a">GUID 02f8c657-6954-4782-a675-28508384fa45</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Provide new steering input</_name>
 			<_modifiedTimeWeak type="a">4.7.2020::10:32:30</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:32:58</_modifiedTime>
+			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">4.7.2020::10:32:30</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -2756,6 +2288,11 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
@@ -2764,7 +2301,6 @@ Alternative Scenario:%0D
 			</_EntryPoints>
 			<AggregatesList type="e">
 				<value>GUID 51591bcd-738f-4a9c-be86-a8af5c67ce85</value>
-				<value>GUID 74eac52c-fe46-4160-9880-266d39efff13</value>
 			</AggregatesList>
 		</IUseCase>
 		<IDependency type="e">
@@ -2799,41 +2335,12 @@ Alternative Scenario:%0D
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 74eac52c-fe46-4160-9880-266d39efff13</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:32:58</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsProvide new steering input</_hname>
-					<_hid type="a">GUID 4b09aa65-6223-4ade-a2b7-d9a33bbbde3f</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
 		<IUseCase type="e">
 			<_id type="a">GUID 630266d3-81fc-4e1f-ad20-83d1cbcd7200</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Receive obstacle positions</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:0:19</_modifiedTime>
+			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
@@ -2847,81 +2354,21 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</_EntryPoints>
 			<AggregatesList type="e">
-				<value>GUID c9681dc6-9db0-42b5-95a4-bdd3b2acf025</value>
-				<value>GUID eeda25be-a25c-4f72-9c65-b34db4a6fa32</value>
 				<value>GUID ad1d1793-0b41-4cc5-87ac-d395598cf3e0</value>
 			</AggregatesList>
 		</IUseCase>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID c9681dc6-9db0-42b5-95a4-bdd3b2acf025</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsLocalisation_System</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:39:24</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Localisation_System</_hname>
-					<_hid type="a">GUID ca6abf50-a02e-4266-ae71-27495013d3ea</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Localisation_System</_hclass>
-					<_hname type="a">itsReceive obstacle positions</_hname>
-					<_hid type="a">GUID 303d61de-d8ad-426d-8982-7b527bc72a0e</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID eeda25be-a25c-4f72-9c65-b34db4a6fa32</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsCommunication_System</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:39:29</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Communication_System</_hname>
-					<_hid type="a">GUID 9f39a54a-16f7-462c-9042-179f5cec7ca6</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Communication_System</_hclass>
-					<_hname type="a">itsReceive obstacle positions</_hname>
-					<_hid type="a">GUID b1994616-bc49-4d14-b3a5-ef447d1aadeb</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
 		<IAssociationEnd type="e">
 			<_id type="a">GUID ad1d1793-0b41-4cc5-87ac-d395598cf3e0</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsPedestrianandObstacles</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:0:19</_modifiedTime>
+			<_modifiedTime type="a">4.29.2020::15:2:34</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hname type="a">PedestrianandObstacles</_hname>
 					<_hid type="a">GUID d1815240-c7ca-42c7-8552-c599700d0b3c</_hid>
 				</IClassifierHandle>
@@ -2930,7 +2377,7 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ActorPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">PedestrianandObstacles</_hclass>
 					<_hname type="a">itsReceive obstacle positions</_hname>
 					<_hid type="a">GUID ad8842b8-a5cb-422e-be6f-31a3f131981d</_hid>
@@ -3058,7 +2505,7 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
 					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::LoadingSystemPkg</_hsubsystem>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg</_hsubsystem>
 					<_hname type="a">Loading_system</_hname>
 					<_hid type="a">GUID 45049950-f431-444f-979f-61756654f665</_hid>
 				</IHandle>
@@ -3082,7 +2529,7 @@ Alternative Scenario:%0D
 4.1  In case of docking spot change, the truck must move to the other spot for further loading.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.22.2020::13:26:5</_modifiedTime>
+			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">4.22.2020::13:26:5</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -3090,6 +2537,11 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
@@ -3098,9 +2550,6 @@ Alternative Scenario:%0D
 			</_EntryPoints>
 			<AggregatesList type="e">
 				<value>GUID fc2d9b46-d53e-4cb9-8842-78d3f36d1f6c</value>
-				<value>GUID ae23f8c8-fa09-4fa0-9c3b-62f9b735146d</value>
-				<value>GUID 864dfb8b-0c9a-468e-a697-edc857e714bc</value>
-				<value>GUID 1a509f06-a6ee-47b0-af03-676c9a0c7b6a</value>
 			</AggregatesList>
 		</IUseCase>
 		<IDependency type="e">
@@ -3135,107 +2584,6 @@ Alternative Scenario:%0D
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID ae23f8c8-fa09-4fa0-9c3b-62f9b735146d</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::13:24:1</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsClose Loading doors</_hname>
-					<_hid type="a">GUID e2130dd6-5219-4ea5-a9ef-9ae636d80675</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 864dfb8b-0c9a-468e-a697-edc857e714bc</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck_1</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::13:24:9</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsClose Loading doors_1</_hname>
-					<_hid type="a">GUID 0e3b5796-b558-43b1-865f-ffb33cf468ce</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 1a509f06-a6ee-47b0-af03-676c9a0c7b6a</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck_2</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::13:25:1</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\Default.sbsx</_hfilename>
-					<_hsubsystem type="a">Default</_hsubsystem>
-					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsClose Loading doors_2</_hname>
-					<_hid type="a">GUID 9e8a46d3-cdbf-4206-94a3-2bd7dddbd3f5</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IActor type="e">
-			<_id type="a">GUID 25ec47a8-4dc4-488b-b2e1-484c6f876cb8</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">actor_13</_name>
-			<_modifiedTimeWeak type="a">4.2.2020::15:41:39</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::11:41:3</_modifiedTime>
-			<weakCGTime type="a">4.2.2020::15:41:39</weakCGTime>
-			<strongCGTime type="a">4.2.2020::15:41:39</strongCGTime>
-			<_itsStateChart type="r">
-				<IHandle type="e">
-				</IHandle>
-			</_itsStateChart>
-			<_classModifier type="a">Unspecified</_classModifier>
-		</IActor>
 		
 	</RHAPSODY-MODEL>
 	<OslcLinks type="c">
