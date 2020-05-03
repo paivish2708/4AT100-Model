@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: SafetyStandards
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\SafetyStandards.cpp
 *********************************************************************/
 
@@ -14,23 +14,18 @@
 
 //## auto_generated
 #include "SafetyStandards.h"
-//#[ ignore
-#define ActorPkg_SafetyStandards_SafetyStandards_SERIALIZE OM_NO_OP
-//#]
+//## auto_generated
+#include "Safety_Standards.h"
+//## package UseCaseAnalysisPkg::ANGELSPkg::SafetyStandards
 
-//## package ActorPkg
-
-//## actor SafetyStandards
-SafetyStandards::SafetyStandards() {
-    NOTIFY_CONSTRUCTOR(SafetyStandards, SafetyStandards(), 0, ActorPkg_SafetyStandards_SafetyStandards_SERIALIZE);
-}
-
-SafetyStandards::~SafetyStandards() {
-    NOTIFY_DESTRUCTOR(~SafetyStandards, true);
-}
 
 #ifdef _OMINSTRUMENT
-IMPLEMENT_META_P(SafetyStandards, ActorPkg, ActorPkg, false, OMAnimatedSafetyStandards)
+static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
+
+IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_ANGELSPkg_SafetyStandards, UseCaseAnalysisPkg::ANGELSPkg::SafetyStandards)
+
+static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
+}
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

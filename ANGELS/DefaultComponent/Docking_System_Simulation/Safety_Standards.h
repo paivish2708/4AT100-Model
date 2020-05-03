@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Safety_Standards
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\Safety_Standards.h
 *********************************************************************/
 
@@ -18,8 +18,11 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include "Default.h"
-//## package Default
+#include "SafetyStandards.h"
+//## link itsANGELS
+class ANGELS;
+
+//## package UseCaseAnalysisPkg::ANGELSPkg::SafetyStandards
 
 //## class Safety_Standards
 class Safety_Standards {
@@ -38,6 +41,36 @@ public :
     
     //## auto_generated
     ~Safety_Standards();
+    
+    ////    Additional operations    ////
+    
+    //## auto_generated
+    ANGELS* getItsANGELS() const;
+    
+    //## auto_generated
+    void setItsANGELS(ANGELS* p_ANGELS);
+
+protected :
+
+    //## auto_generated
+    void cleanUpRelations();
+    
+    ////    Relations and components    ////
+    
+    ANGELS* itsANGELS;		//## link itsANGELS
+    
+    ////    Framework operations    ////
+
+public :
+
+    //## auto_generated
+    void __setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _clearItsANGELS();
 };
 
 #ifdef _OMINSTRUMENT

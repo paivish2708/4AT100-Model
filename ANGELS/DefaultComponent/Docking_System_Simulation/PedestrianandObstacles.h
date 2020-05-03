@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: PedestrianandObstacles
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\PedestrianandObstacles.h
 *********************************************************************/
 
@@ -24,7 +24,7 @@
 //## auto_generated
 class Collision_Detection;
 
-//## package ActorPkg
+//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
 //## actor PedestrianandObstacles
 class PedestrianandObstacles : public Obstacle {

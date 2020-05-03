@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: SafetyStandards
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\SafetyStandards.h
 *********************************************************************/
 
@@ -18,35 +18,13 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include "ActorPkg.h"
-//## package ActorPkg
+#include "ANGELSPkg.h"
+//## auto_generated
+class Safety_Standards;
 
-//## actor SafetyStandards
-class SafetyStandards {
-    ////    Friends    ////
-    
-public :
+//## package UseCaseAnalysisPkg::ANGELSPkg::SafetyStandards
 
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedSafetyStandards;
-#endif // _OMINSTRUMENT
 
-    ////    Constructors and destructors    ////
-    
-    //## auto_generated
-    SafetyStandards();
-    
-    //## auto_generated
-    ~SafetyStandards();
-};
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedSafetyStandards : virtual public AOMInstance {
-    DECLARE_META(SafetyStandards, OMAnimatedSafetyStandards)
-};
-//#]
-#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

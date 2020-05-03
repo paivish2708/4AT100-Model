@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: ActorPkg
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\ActorPkg.cpp
 *********************************************************************/
 
@@ -14,13 +14,13 @@
 
 //## auto_generated
 #include "ActorPkg.h"
-//## package ActorPkg
+//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(ActorPkg, ActorPkg)
+IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_ANGELSPkg_ActorPkg, UseCaseAnalysisPkg::ANGELSPkg::ActorPkg)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }

@@ -11,18 +11,21 @@
 			<_id type="a">GUID de656d0c-824e-401d-88a2-a108a59b1b85</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCaseAnalysisPkg</_name>
-			<_modifiedTimeWeak type="a">4.30.2020::10:32:44</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.30.2020::10:32:44</_modifiedTime>
+			<_modifiedTimeWeak type="a">4.30.2020::10:7:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">4.30.2020::10:7:57</_modifiedTime>
 			<_lastID type="a">32</_lastID>
-			<weakCGTime type="a">4.30.2020::10:32:44</weakCGTime>
+			<weakCGTime type="a">4.30.2020::10:7:57</weakCGTime>
 			<strongCGTime type="a">4.30.2020::9:51:17</strongCGTime>
 			<_defaultComposite type="s">GUID 66af33e9-98b9-483e-9515-0798c195b3d2</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<Actors type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Actors>
 			<_configurationRelatedTime type="a">4.30.2020::10:5:55</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11</value>
-				<value>GUID f24a1a52-c3e7-4451-a716-a349c4943fc8</value>
-				<value>GUID fd6d687a-a220-4d02-9939-e85e835c9222</value>
 				<value>GUID 66af33e9-98b9-483e-9515-0798c195b3d2</value>
 				<value>GUID 2353c088-cdfa-4be0-9042-24068a09d195</value>
 				<value>GUID c4f77424-ee3a-4f6e-8800-d1b4ca6c37a6</value>
@@ -49,131 +52,13 @@
 			<fileName type="a">ANGELSPkg</fileName>
 			<_id type="a">GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11</_id>
 		</ISubsystem>
-		<IFile type="e">
-			<_id type="a">GUID f24a1a52-c3e7-4451-a716-a349c4943fc8</_id>
-			<_myState type="a">139264</_myState>
-			<_name type="a">UseCaseAnalysisPkg</_name>
-			<OwnedDependencies type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</OwnedDependencies>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
-			<m_type type="a">specFile</m_type>
-			<AggregatesList type="e">
-				<value>GUID 9f761dbe-b0f6-4e82-9ca1-e7b8b80e20f2</value>
-				<value>GUID e93f96a3-8796-4a80-8d88-7d4c27f1c1cd</value>
-				<value>GUID 74d974c1-b55d-42ef-877d-5f8f185ab8cf</value>
-			</AggregatesList>
-		</IFile>
-		<IFileFragment type="e">
-			<_id type="a">GUID 9f761dbe-b0f6-4e82-9ca1-e7b8b80e20f2</_id>
-			<_name type="a">oxf:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">//## auto:dependency oxf:spec</m_text>
-			<m_startRow type="a">15</m_startRow>
-			<m_startCol_Short type="a">1</m_startCol_Short>
-			<m_endRow type="a">15</m_endRow>
-			<m_endCol_Short type="a">21</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-			<Fragments type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</Fragments>
-		</IFileFragment>
-		<IFileFragment type="e">
-			<_id type="a">GUID e93f96a3-8796-4a80-8d88-7d4c27f1c1cd</_id>
-			<_name type="a">SIDefinitions:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">//## auto:dependency SIDefinitions:spec</m_text>
-			<m_startRow type="a">17</m_startRow>
-			<m_startCol_Short type="a">1</m_startCol_Short>
-			<m_endRow type="a">17</m_endRow>
-			<m_endCol_Short type="a">45</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-			<Fragments type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</Fragments>
-		</IFileFragment>
-		<IFileFragment type="e">
-			<_id type="a">GUID 74d974c1-b55d-42ef-877d-5f8f185ab8cf</_id>
-			<_name type="a">aom:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">//## auto:dependency aom:spec</m_text>
-			<m_startRow type="a">19</m_startRow>
-			<m_startCol_Short type="a">1</m_startCol_Short>
-			<m_endRow type="a">19</m_endRow>
-			<m_endCol_Short type="a">21</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-			<Fragments type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</Fragments>
-		</IFileFragment>
-		<IFile type="e">
-			<_id type="a">GUID fd6d687a-a220-4d02-9939-e85e835c9222</_id>
-			<_myState type="a">139264</_myState>
-			<_name type="a">UseCaseAnalysisPkg</_name>
-			<OwnedDependencies type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</OwnedDependencies>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
-			<m_type type="a">implFile</m_type>
-			<AggregatesList type="e">
-				<value>GUID 64708804-162d-4cbb-9d0d-24c32f3754f8</value>
-			</AggregatesList>
-		</IFile>
-		<IFileFragment type="e">
-			<_id type="a">GUID 64708804-162d-4cbb-9d0d-24c32f3754f8</_id>
-			<_name type="a">UseCaseAnalysisPkg:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">//## auto:dependency UseCaseAnalysisPkg:spec</m_text>
-			<m_startRow type="a">16</m_startRow>
-			<m_startCol_Short type="a">1</m_startCol_Short>
-			<m_endRow type="a">16</m_endRow>
-			<m_endCol_Short type="a">32</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-			<Fragments type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</Fragments>
-		</IFileFragment>
 		<IClass type="e">
 			<_id type="a">GUID 66af33e9-98b9-483e-9515-0798c195b3d2</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">4.30.2020::10:32:44</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.30.2020::10:32:44</_modifiedTime>
-			<weakCGTime type="a">4.30.2020::10:32:44</weakCGTime>
+			<_modifiedTimeWeak type="a">4.2.2020::15:41:39</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">4.2.2020::15:41:39</weakCGTime>
 			<strongCGTime type="a">4.2.2020::15:41:39</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -1098,6 +983,11 @@ Alternative Scenario:\par%0D
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
@@ -1297,6 +1187,11 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
@@ -1518,6 +1413,11 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
@@ -1855,6 +1755,11 @@ The driver stops the truck if they see an obstacle.</_text>
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
@@ -2323,6 +2228,11 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
@@ -2378,6 +2288,11 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
@@ -2622,6 +2537,11 @@ Alternative Scenario:%0D
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">

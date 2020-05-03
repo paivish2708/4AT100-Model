@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Driver
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\Driver.h
 *********************************************************************/
 
@@ -19,10 +19,10 @@
 #include <aom\aom.h>
 //## auto_generated
 #include "ActorPkg.h"
-//## link itsTruck
+//## link itsTruck_4
 class Truck;
 
-//## package ActorPkg
+//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
 //## actor Driver
 class Driver {
@@ -45,28 +45,10 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
-    Truck* getItsTruck() const;
+    Truck* getItsTruck_4() const;
     
     //## auto_generated
-    void setItsTruck(Truck* p_Truck);
-    
-    //## auto_generated
-    Truck* getItsTruck_1() const;
-    
-    //## auto_generated
-    void setItsTruck_1(Truck* p_Truck);
-    
-    //## auto_generated
-    Truck* getItsTruck_2() const;
-    
-    //## auto_generated
-    void setItsTruck_2(Truck* p_Truck);
-    
-    //## auto_generated
-    Truck* getItsTruck_3() const;
-    
-    //## auto_generated
-    void setItsTruck_3(Truck* p_Truck);
+    void setItsTruck_4(Truck* p_Truck);
 
 protected :
 
@@ -75,53 +57,20 @@ protected :
     
     ////    Relations and components    ////
     
-    Truck* itsTruck;		//## link itsTruck
-    
-    Truck* itsTruck_1;		//## link itsTruck_1
-    
-    Truck* itsTruck_2;		//## link itsTruck_2
-    
-    Truck* itsTruck_3;		//## link itsTruck_3
+    Truck* itsTruck_4;		//## link itsTruck_4
     
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsTruck(Truck* p_Truck);
+    void __setItsTruck_4(Truck* p_Truck);
     
     //## auto_generated
-    void _setItsTruck(Truck* p_Truck);
+    void _setItsTruck_4(Truck* p_Truck);
     
     //## auto_generated
-    void _clearItsTruck();
-    
-    //## auto_generated
-    void __setItsTruck_1(Truck* p_Truck);
-    
-    //## auto_generated
-    void _setItsTruck_1(Truck* p_Truck);
-    
-    //## auto_generated
-    void _clearItsTruck_1();
-    
-    //## auto_generated
-    void __setItsTruck_2(Truck* p_Truck);
-    
-    //## auto_generated
-    void _setItsTruck_2(Truck* p_Truck);
-    
-    //## auto_generated
-    void _clearItsTruck_2();
-    
-    //## auto_generated
-    void __setItsTruck_3(Truck* p_Truck);
-    
-    //## auto_generated
-    void _setItsTruck_3(Truck* p_Truck);
-    
-    //## auto_generated
-    void _clearItsTruck_3();
+    void _clearItsTruck_4();
 };
 
 #ifdef _OMINSTRUMENT

@@ -3,9 +3,9 @@
 	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
-	Model Element	: AngelsPkg
-//!	Generated Date	: Wed, 29, Apr 2020  
-	File Path	: DefaultComponent\Docking_System_Simulation\AngelsPkg.cpp
+	Model Element	: ANGELSPkg
+//!	Generated Date	: Sun, 3, May 2020  
+	File Path	: DefaultComponent\Docking_System_Simulation\ANGELSPkg.cpp
 *********************************************************************/
 
 //#[ ignore
@@ -13,21 +13,21 @@
 //#]
 
 //## auto_generated
-#include "AngelsPkg.h"
+#include "ANGELSPkg.h"
 //## auto_generated
 #include "ANGELS.h"
-//## package UseCaseAnalysisPkg::AngelsPkg
+//## package UseCaseAnalysisPkg::ANGELSPkg
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_AngelsPkg, UseCaseAnalysisPkg::AngelsPkg)
+IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_ANGELSPkg, UseCaseAnalysisPkg::ANGELSPkg)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }
 #endif // _OMINSTRUMENT
 
 /*********************************************************************
-	File Path	: DefaultComponent\Docking_System_Simulation\AngelsPkg.cpp
+	File Path	: DefaultComponent\Docking_System_Simulation\ANGELSPkg.cpp
 *********************************************************************/

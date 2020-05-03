@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Communication_System
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\Communication_System.h
 *********************************************************************/
 
@@ -18,8 +18,11 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include "Default.h"
-//## package Default
+#include "CommunicationPkg.h"
+//## link itsANGELS
+class ANGELS;
+
+//## package UseCaseAnalysisPkg::ANGELSPkg::CommunicationPkg
 
 //## class Communication_System
 class Communication_System {
@@ -38,6 +41,36 @@ public :
     
     //## auto_generated
     ~Communication_System();
+    
+    ////    Additional operations    ////
+    
+    //## auto_generated
+    ANGELS* getItsANGELS() const;
+    
+    //## auto_generated
+    void setItsANGELS(ANGELS* p_ANGELS);
+
+protected :
+
+    //## auto_generated
+    void cleanUpRelations();
+    
+    ////    Relations and components    ////
+    
+    ANGELS* itsANGELS;		//## link itsANGELS
+    
+    ////    Framework operations    ////
+
+public :
+
+    //## auto_generated
+    void __setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _clearItsANGELS();
 };
 
 #ifdef _OMINSTRUMENT

@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: Pranav
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Loading_System
@@ -31,206 +31,6 @@
 //## package UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg
 
 //## class Loading_System
-Loading_System::Loading_System() : CheckDoorStatus(true) {
-    NOTIFY_ACTIVITY_CONSTRUCTOR(Loading_System, Loading_System(), 0, UseCaseAnalysisPkg_ANGELSPkg_LoadingSystemPkg_Loading_System_Loading_System_SERIALIZE);
-    itsANGELS = NULL;
-    itsDC = NULL;
-    itsDCOperator = NULL;
-}
-
-Loading_System::~Loading_System() {
-    NOTIFY_DESTRUCTOR(~Loading_System, true);
-    cleanUpRelations();
-}
-
-void Loading_System::LoadingProcess() {
-    NOTIFY_OPERATION(LoadingProcess, LoadingProcess(), 0, UseCaseAnalysisPkg_ANGELSPkg_LoadingSystemPkg_Loading_System_LoadingProcess_SERIALIZE);
-    //#[ operation LoadingProcess()
-    //#]
-}
-
-void Loading_System::StoptheTruck(double speed) {
-    NOTIFY_OPERATION(StoptheTruck, StoptheTruck(double), 1, UseCaseAnalysisPkg_ANGELSPkg_LoadingSystemPkg_Loading_System_StoptheTruck_SERIALIZE);
-    //#[ operation StoptheTruck(double)
-    speed=0;    
-    
-    //#]
-}
-
-RhpBoolean Loading_System::getCheckDoorStatus() const {
-    return CheckDoorStatus;
-}
-
-void Loading_System::setCheckDoorStatus(RhpBoolean p_CheckDoorStatus) {
-    CheckDoorStatus = p_CheckDoorStatus;
-}
-
-double Loading_System::getDockingTime() const {
-    return DockingTime;
-}
-
-void Loading_System::setDockingTime(double p_DockingTime) {
-    DockingTime = p_DockingTime;
-}
-
-int Loading_System::getSpeed() const {
-    return speed;
-}
-
-void Loading_System::setSpeed(int p_speed) {
-    speed = p_speed;
-}
-
-ANGELS* Loading_System::getItsANGELS() const {
-    return itsANGELS;
-}
-
-void Loading_System::setItsANGELS(ANGELS* p_ANGELS) {
-    if(p_ANGELS != NULL)
-        {
-            p_ANGELS->_setItsLoading_System(this);
-        }
-    _setItsANGELS(p_ANGELS);
-}
-
-DC* Loading_System::getItsDC() const {
-    return itsDC;
-}
-
-void Loading_System::setItsDC(DC* p_DC) {
-    if(p_DC != NULL)
-        {
-            p_DC->_setItsLoading_System(this);
-        }
-    _setItsDC(p_DC);
-}
-
-DCOperator* Loading_System::getItsDCOperator() const {
-    return itsDCOperator;
-}
-
-void Loading_System::setItsDCOperator(DCOperator* p_DCOperator) {
-    if(p_DCOperator != NULL)
-        {
-            p_DCOperator->_setItsLoading_System(this);
-        }
-    _setItsDCOperator(p_DCOperator);
-}
-
-bool Loading_System::startBehavior() {
-    bool done = false;
-    done = OMActivityContext::startBehavior();
-    return done;
-}
-
-void Loading_System::cleanUpRelations() {
-    if(itsANGELS != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
-            Loading_System* p_Loading_System = itsANGELS->getItsLoading_System();
-            if(p_Loading_System != NULL)
-                {
-                    itsANGELS->__setItsLoading_System(NULL);
-                }
-            itsANGELS = NULL;
-        }
-    if(itsDC != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsDC");
-            Loading_System* p_Loading_System = itsDC->getItsLoading_System();
-            if(p_Loading_System != NULL)
-                {
-                    itsDC->__setItsLoading_System(NULL);
-                }
-            itsDC = NULL;
-        }
-    if(itsDCOperator != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsDCOperator");
-            Loading_System* p_Loading_System = itsDCOperator->getItsLoading_System();
-            if(p_Loading_System != NULL)
-                {
-                    itsDCOperator->__setItsLoading_System(NULL);
-                }
-            itsDCOperator = NULL;
-        }
-}
-
-void Loading_System::__setItsANGELS(ANGELS* p_ANGELS) {
-    itsANGELS = p_ANGELS;
-    if(p_ANGELS != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
-        }
-}
-
-void Loading_System::_setItsANGELS(ANGELS* p_ANGELS) {
-    if(itsANGELS != NULL)
-        {
-            itsANGELS->__setItsLoading_System(NULL);
-        }
-    __setItsANGELS(p_ANGELS);
-}
-
-void Loading_System::_clearItsANGELS() {
-    NOTIFY_RELATION_CLEARED("itsANGELS");
-    itsANGELS = NULL;
-}
-
-void Loading_System::__setItsDC(DC* p_DC) {
-    itsDC = p_DC;
-    if(p_DC != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsDC", p_DC, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsDC");
-        }
-}
-
-void Loading_System::_setItsDC(DC* p_DC) {
-    if(itsDC != NULL)
-        {
-            itsDC->__setItsLoading_System(NULL);
-        }
-    __setItsDC(p_DC);
-}
-
-void Loading_System::_clearItsDC() {
-    NOTIFY_RELATION_CLEARED("itsDC");
-    itsDC = NULL;
-}
-
-void Loading_System::__setItsDCOperator(DCOperator* p_DCOperator) {
-    itsDCOperator = p_DCOperator;
-    if(p_DCOperator != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsDCOperator", p_DCOperator, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsDCOperator");
-        }
-}
-
-void Loading_System::_setItsDCOperator(DCOperator* p_DCOperator) {
-    if(itsDCOperator != NULL)
-        {
-            itsDCOperator->__setItsLoading_System(NULL);
-        }
-    __setItsDCOperator(p_DCOperator);
-}
-
-void Loading_System::_clearItsDCOperator() {
-    NOTIFY_RELATION_CLEARED("itsDCOperator");
-    itsDCOperator = NULL;
-}
-
 //#[ ignore
 Loading_System::LoadGoodsOfLoading_System::ActionCalloperation_1InActivityLoadGoodsOfLoading_System::ActionCalloperation_1InActivityLoadGoodsOfLoading_System(const OMString& id, LoadGoodsOfLoading_System& activity, Loading_System& context) : OMContextualAction(id, activity), mContext(&context) {
 }
@@ -474,7 +274,35 @@ double Loading_System::StopTruckOfLoading_System::getSpeed() {
 void Loading_System::StopTruckOfLoading_System::setSpeed(double value) {
     this->speed = value;
 }
+//#]
 
+Loading_System::Loading_System() : CheckDoorStatus(true) {
+    NOTIFY_ACTIVITY_CONSTRUCTOR(Loading_System, Loading_System(), 0, UseCaseAnalysisPkg_ANGELSPkg_LoadingSystemPkg_Loading_System_Loading_System_SERIALIZE);
+    itsANGELS = NULL;
+    itsDC = NULL;
+    itsDCOperator = NULL;
+}
+
+Loading_System::~Loading_System() {
+    NOTIFY_DESTRUCTOR(~Loading_System, true);
+    cleanUpRelations();
+}
+
+void Loading_System::LoadingProcess() {
+    NOTIFY_OPERATION(LoadingProcess, LoadingProcess(), 0, UseCaseAnalysisPkg_ANGELSPkg_LoadingSystemPkg_Loading_System_LoadingProcess_SERIALIZE);
+    //#[ operation LoadingProcess()
+    //#]
+}
+
+void Loading_System::StoptheTruck(double speed) {
+    NOTIFY_OPERATION(StoptheTruck, StoptheTruck(double), 1, UseCaseAnalysisPkg_ANGELSPkg_LoadingSystemPkg_Loading_System_StoptheTruck_SERIALIZE);
+    //#[ operation StoptheTruck(double)
+    speed=0;    
+    
+    //#]
+}
+
+//#[ ignore
 void* Loading_System::getMe() {
     return this;
 }
@@ -610,6 +438,180 @@ OMList<OMString> Loading_System::delegatedFilterPassableFlowsFromActionFlowfinal
     OMList<OMString> ans;
     return ans;
     //#]
+}
+
+RhpBoolean Loading_System::getCheckDoorStatus() const {
+    return CheckDoorStatus;
+}
+
+void Loading_System::setCheckDoorStatus(RhpBoolean p_CheckDoorStatus) {
+    CheckDoorStatus = p_CheckDoorStatus;
+}
+
+double Loading_System::getDockingTime() const {
+    return DockingTime;
+}
+
+void Loading_System::setDockingTime(double p_DockingTime) {
+    DockingTime = p_DockingTime;
+}
+
+int Loading_System::getSpeed() const {
+    return speed;
+}
+
+void Loading_System::setSpeed(int p_speed) {
+    speed = p_speed;
+}
+
+ANGELS* Loading_System::getItsANGELS() const {
+    return itsANGELS;
+}
+
+void Loading_System::setItsANGELS(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
+        {
+            p_ANGELS->_setItsLoading_System(this);
+        }
+    _setItsANGELS(p_ANGELS);
+}
+
+DC* Loading_System::getItsDC() const {
+    return itsDC;
+}
+
+void Loading_System::setItsDC(DC* p_DC) {
+    if(p_DC != NULL)
+        {
+            p_DC->_setItsLoading_System(this);
+        }
+    _setItsDC(p_DC);
+}
+
+DCOperator* Loading_System::getItsDCOperator() const {
+    return itsDCOperator;
+}
+
+void Loading_System::setItsDCOperator(DCOperator* p_DCOperator) {
+    if(p_DCOperator != NULL)
+        {
+            p_DCOperator->_setItsLoading_System(this);
+        }
+    _setItsDCOperator(p_DCOperator);
+}
+
+bool Loading_System::startBehavior() {
+    bool done = false;
+    done = OMActivityContext::startBehavior();
+    return done;
+}
+
+void Loading_System::cleanUpRelations() {
+    if(itsANGELS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+            Loading_System* p_Loading_System = itsANGELS->getItsLoading_System();
+            if(p_Loading_System != NULL)
+                {
+                    itsANGELS->__setItsLoading_System(NULL);
+                }
+            itsANGELS = NULL;
+        }
+    if(itsDC != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDC");
+            Loading_System* p_Loading_System = itsDC->getItsLoading_System();
+            if(p_Loading_System != NULL)
+                {
+                    itsDC->__setItsLoading_System(NULL);
+                }
+            itsDC = NULL;
+        }
+    if(itsDCOperator != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDCOperator");
+            Loading_System* p_Loading_System = itsDCOperator->getItsLoading_System();
+            if(p_Loading_System != NULL)
+                {
+                    itsDCOperator->__setItsLoading_System(NULL);
+                }
+            itsDCOperator = NULL;
+        }
+}
+
+void Loading_System::__setItsANGELS(ANGELS* p_ANGELS) {
+    itsANGELS = p_ANGELS;
+    if(p_ANGELS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+        }
+}
+
+void Loading_System::_setItsANGELS(ANGELS* p_ANGELS) {
+    if(itsANGELS != NULL)
+        {
+            itsANGELS->__setItsLoading_System(NULL);
+        }
+    __setItsANGELS(p_ANGELS);
+}
+
+void Loading_System::_clearItsANGELS() {
+    NOTIFY_RELATION_CLEARED("itsANGELS");
+    itsANGELS = NULL;
+}
+
+void Loading_System::__setItsDC(DC* p_DC) {
+    itsDC = p_DC;
+    if(p_DC != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDC", p_DC, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDC");
+        }
+}
+
+void Loading_System::_setItsDC(DC* p_DC) {
+    if(itsDC != NULL)
+        {
+            itsDC->__setItsLoading_System(NULL);
+        }
+    __setItsDC(p_DC);
+}
+
+void Loading_System::_clearItsDC() {
+    NOTIFY_RELATION_CLEARED("itsDC");
+    itsDC = NULL;
+}
+
+void Loading_System::__setItsDCOperator(DCOperator* p_DCOperator) {
+    itsDCOperator = p_DCOperator;
+    if(p_DCOperator != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDCOperator", p_DCOperator, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDCOperator");
+        }
+}
+
+void Loading_System::_setItsDCOperator(DCOperator* p_DCOperator) {
+    if(itsDCOperator != NULL)
+        {
+            itsDCOperator->__setItsLoading_System(NULL);
+        }
+    __setItsDCOperator(p_DCOperator);
+}
+
+void Loading_System::_clearItsDCOperator() {
+    NOTIFY_RELATION_CLEARED("itsDCOperator");
+    itsDCOperator = NULL;
 }
 
 #ifdef _OMINSTRUMENT

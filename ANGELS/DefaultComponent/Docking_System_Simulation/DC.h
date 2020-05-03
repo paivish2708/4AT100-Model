@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: DC
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\DC.h
 *********************************************************************/
 
@@ -19,10 +19,13 @@
 #include <aom\aom.h>
 //## auto_generated
 #include "ActorPkg.h"
-//## link itsDocking_System_5
-class Docking_System;
+//## link itsANGELS
+class ANGELS;
 
-//## package ActorPkg
+//## link itsLoading_System
+class Loading_System;
+
+//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
 //## actor DC
 class DC {
@@ -45,10 +48,16 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
-    Docking_System* getItsDocking_System_5() const;
+    ANGELS* getItsANGELS() const;
     
     //## auto_generated
-    void setItsDocking_System_5(Docking_System* p_Docking_System);
+    void setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    Loading_System* getItsLoading_System() const;
+    
+    //## auto_generated
+    void setItsLoading_System(Loading_System* p_Loading_System);
 
 protected :
 
@@ -57,20 +66,31 @@ protected :
     
     ////    Relations and components    ////
     
-    Docking_System* itsDocking_System_5;		//## link itsDocking_System_5
+    ANGELS* itsANGELS;		//## link itsANGELS
+    
+    Loading_System* itsLoading_System;		//## link itsLoading_System
     
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsDocking_System_5(Docking_System* p_Docking_System);
+    void __setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _setItsDocking_System_5(Docking_System* p_Docking_System);
+    void _setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _clearItsDocking_System_5();
+    void _clearItsANGELS();
+    
+    //## auto_generated
+    void __setItsLoading_System(Loading_System* p_Loading_System);
+    
+    //## auto_generated
+    void _setItsLoading_System(Loading_System* p_Loading_System);
+    
+    //## auto_generated
+    void _clearItsLoading_System();
 };
 
 #ifdef _OMINSTRUMENT

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\DCOperator.cpp
 *********************************************************************/
 
@@ -14,26 +14,41 @@
 
 //## auto_generated
 #include "DCOperator.h"
+//## link itsANGELS
+#include "ANGELS.h"
 //## link itsDocking_System
 #include "Docking_System.h"
-//## link itsTruck
-#include "Truck.h"
+//## link itsLoading_System
+#include "Loading_System.h"
 //#[ ignore
-#define ActorPkg_DCOperator_DCOperator_SERIALIZE OM_NO_OP
+#define UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_DCOperator_DCOperator_SERIALIZE OM_NO_OP
 //#]
 
-//## package ActorPkg
+//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
 //## actor DCOperator
 DCOperator::DCOperator() {
-    NOTIFY_CONSTRUCTOR(DCOperator, DCOperator(), 0, ActorPkg_DCOperator_DCOperator_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(DCOperator, DCOperator(), 0, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_DCOperator_DCOperator_SERIALIZE);
+    itsANGELS = NULL;
     itsDocking_System = NULL;
-    itsTruck = NULL;
+    itsLoading_System = NULL;
 }
 
 DCOperator::~DCOperator() {
     NOTIFY_DESTRUCTOR(~DCOperator, true);
     cleanUpRelations();
+}
+
+ANGELS* DCOperator::getItsANGELS() const {
+    return itsANGELS;
+}
+
+void DCOperator::setItsANGELS(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
+        {
+            p_ANGELS->_setItsDCOperator(this);
+        }
+    _setItsANGELS(p_ANGELS);
 }
 
 Docking_System* DCOperator::getItsDocking_System() const {
@@ -48,19 +63,29 @@ void DCOperator::setItsDocking_System(Docking_System* p_Docking_System) {
     _setItsDocking_System(p_Docking_System);
 }
 
-Truck* DCOperator::getItsTruck() const {
-    return itsTruck;
+Loading_System* DCOperator::getItsLoading_System() const {
+    return itsLoading_System;
 }
 
-void DCOperator::setItsTruck(Truck* p_Truck) {
-    if(p_Truck != NULL)
+void DCOperator::setItsLoading_System(Loading_System* p_Loading_System) {
+    if(p_Loading_System != NULL)
         {
-            p_Truck->_setItsDCOperator(this);
+            p_Loading_System->_setItsDCOperator(this);
         }
-    _setItsTruck(p_Truck);
+    _setItsLoading_System(p_Loading_System);
 }
 
 void DCOperator::cleanUpRelations() {
+    if(itsANGELS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+            DCOperator* p_DCOperator = itsANGELS->getItsDCOperator();
+            if(p_DCOperator != NULL)
+                {
+                    itsANGELS->__setItsDCOperator(NULL);
+                }
+            itsANGELS = NULL;
+        }
     if(itsDocking_System != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsDocking_System");
@@ -71,16 +96,41 @@ void DCOperator::cleanUpRelations() {
                 }
             itsDocking_System = NULL;
         }
-    if(itsTruck != NULL)
+    if(itsLoading_System != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsTruck");
-            DCOperator* p_DCOperator = itsTruck->getItsDCOperator();
+            NOTIFY_RELATION_CLEARED("itsLoading_System");
+            DCOperator* p_DCOperator = itsLoading_System->getItsDCOperator();
             if(p_DCOperator != NULL)
                 {
-                    itsTruck->__setItsDCOperator(NULL);
+                    itsLoading_System->__setItsDCOperator(NULL);
                 }
-            itsTruck = NULL;
+            itsLoading_System = NULL;
         }
+}
+
+void DCOperator::__setItsANGELS(ANGELS* p_ANGELS) {
+    itsANGELS = p_ANGELS;
+    if(p_ANGELS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+        }
+}
+
+void DCOperator::_setItsANGELS(ANGELS* p_ANGELS) {
+    if(itsANGELS != NULL)
+        {
+            itsANGELS->__setItsDCOperator(NULL);
+        }
+    __setItsANGELS(p_ANGELS);
+}
+
+void DCOperator::_clearItsANGELS() {
+    NOTIFY_RELATION_CLEARED("itsANGELS");
+    itsANGELS = NULL;
 }
 
 void DCOperator::__setItsDocking_System(Docking_System* p_Docking_System) {
@@ -108,38 +158,43 @@ void DCOperator::_clearItsDocking_System() {
     itsDocking_System = NULL;
 }
 
-void DCOperator::__setItsTruck(Truck* p_Truck) {
-    itsTruck = p_Truck;
-    if(p_Truck != NULL)
+void DCOperator::__setItsLoading_System(Loading_System* p_Loading_System) {
+    itsLoading_System = p_Loading_System;
+    if(p_Loading_System != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsTruck", p_Truck, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsLoading_System", p_Loading_System, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsTruck");
+            NOTIFY_RELATION_CLEARED("itsLoading_System");
         }
 }
 
-void DCOperator::_setItsTruck(Truck* p_Truck) {
-    if(itsTruck != NULL)
+void DCOperator::_setItsLoading_System(Loading_System* p_Loading_System) {
+    if(itsLoading_System != NULL)
         {
-            itsTruck->__setItsDCOperator(NULL);
+            itsLoading_System->__setItsDCOperator(NULL);
         }
-    __setItsTruck(p_Truck);
+    __setItsLoading_System(p_Loading_System);
 }
 
-void DCOperator::_clearItsTruck() {
-    NOTIFY_RELATION_CLEARED("itsTruck");
-    itsTruck = NULL;
+void DCOperator::_clearItsLoading_System() {
+    NOTIFY_RELATION_CLEARED("itsLoading_System");
+    itsLoading_System = NULL;
 }
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedDCOperator::serializeRelations(AOMSRelations* aomsRelations) const {
-    aomsRelations->addRelation("itsTruck", false, true);
-    if(myReal->itsTruck)
+    aomsRelations->addRelation("itsLoading_System", false, true);
+    if(myReal->itsLoading_System)
         {
-            aomsRelations->ADD_ITEM(myReal->itsTruck);
+            aomsRelations->ADD_ITEM(myReal->itsLoading_System);
+        }
+    aomsRelations->addRelation("itsANGELS", false, true);
+    if(myReal->itsANGELS)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsANGELS);
         }
     aomsRelations->addRelation("itsDocking_System", false, true);
     if(myReal->itsDocking_System)
@@ -149,7 +204,7 @@ void OMAnimatedDCOperator::serializeRelations(AOMSRelations* aomsRelations) cons
 }
 //#]
 
-IMPLEMENT_META_P(DCOperator, ActorPkg, ActorPkg, false, OMAnimatedDCOperator)
+IMPLEMENT_META_P(DCOperator, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg, UseCaseAnalysisPkg::ANGELSPkg::ActorPkg, false, OMAnimatedDCOperator)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: DC
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\DC.cpp
 *********************************************************************/
 
@@ -14,18 +14,21 @@
 
 //## auto_generated
 #include "DC.h"
-//## link itsDocking_System_5
-#include "Docking_System.h"
+//## link itsANGELS
+#include "ANGELS.h"
+//## link itsLoading_System
+#include "Loading_System.h"
 //#[ ignore
-#define ActorPkg_DC_DC_SERIALIZE OM_NO_OP
+#define UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_DC_DC_SERIALIZE OM_NO_OP
 //#]
 
-//## package ActorPkg
+//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
 //## actor DC
 DC::DC() {
-    NOTIFY_CONSTRUCTOR(DC, DC(), 0, ActorPkg_DC_DC_SERIALIZE);
-    itsDocking_System_5 = NULL;
+    NOTIFY_CONSTRUCTOR(DC, DC(), 0, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_DC_DC_SERIALIZE);
+    itsANGELS = NULL;
+    itsLoading_System = NULL;
 }
 
 DC::~DC() {
@@ -33,68 +36,120 @@ DC::~DC() {
     cleanUpRelations();
 }
 
-Docking_System* DC::getItsDocking_System_5() const {
-    return itsDocking_System_5;
+ANGELS* DC::getItsANGELS() const {
+    return itsANGELS;
 }
 
-void DC::setItsDocking_System_5(Docking_System* p_Docking_System) {
-    if(p_Docking_System != NULL)
+void DC::setItsANGELS(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
         {
-            p_Docking_System->_setItsDC(this);
+            p_ANGELS->_setItsDC(this);
         }
-    _setItsDocking_System_5(p_Docking_System);
+    _setItsANGELS(p_ANGELS);
+}
+
+Loading_System* DC::getItsLoading_System() const {
+    return itsLoading_System;
+}
+
+void DC::setItsLoading_System(Loading_System* p_Loading_System) {
+    if(p_Loading_System != NULL)
+        {
+            p_Loading_System->_setItsDC(this);
+        }
+    _setItsLoading_System(p_Loading_System);
 }
 
 void DC::cleanUpRelations() {
-    if(itsDocking_System_5 != NULL)
+    if(itsANGELS != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsDocking_System_5");
-            DC* p_DC = itsDocking_System_5->getItsDC();
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+            DC* p_DC = itsANGELS->getItsDC();
             if(p_DC != NULL)
                 {
-                    itsDocking_System_5->__setItsDC(NULL);
+                    itsANGELS->__setItsDC(NULL);
                 }
-            itsDocking_System_5 = NULL;
+            itsANGELS = NULL;
+        }
+    if(itsLoading_System != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsLoading_System");
+            DC* p_DC = itsLoading_System->getItsDC();
+            if(p_DC != NULL)
+                {
+                    itsLoading_System->__setItsDC(NULL);
+                }
+            itsLoading_System = NULL;
         }
 }
 
-void DC::__setItsDocking_System_5(Docking_System* p_Docking_System) {
-    itsDocking_System_5 = p_Docking_System;
-    if(p_Docking_System != NULL)
+void DC::__setItsANGELS(ANGELS* p_ANGELS) {
+    itsANGELS = p_ANGELS;
+    if(p_ANGELS != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsDocking_System_5", p_Docking_System, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsDocking_System_5");
+            NOTIFY_RELATION_CLEARED("itsANGELS");
         }
 }
 
-void DC::_setItsDocking_System_5(Docking_System* p_Docking_System) {
-    if(itsDocking_System_5 != NULL)
+void DC::_setItsANGELS(ANGELS* p_ANGELS) {
+    if(itsANGELS != NULL)
         {
-            itsDocking_System_5->__setItsDC(NULL);
+            itsANGELS->__setItsDC(NULL);
         }
-    __setItsDocking_System_5(p_Docking_System);
+    __setItsANGELS(p_ANGELS);
 }
 
-void DC::_clearItsDocking_System_5() {
-    NOTIFY_RELATION_CLEARED("itsDocking_System_5");
-    itsDocking_System_5 = NULL;
+void DC::_clearItsANGELS() {
+    NOTIFY_RELATION_CLEARED("itsANGELS");
+    itsANGELS = NULL;
+}
+
+void DC::__setItsLoading_System(Loading_System* p_Loading_System) {
+    itsLoading_System = p_Loading_System;
+    if(p_Loading_System != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsLoading_System", p_Loading_System, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsLoading_System");
+        }
+}
+
+void DC::_setItsLoading_System(Loading_System* p_Loading_System) {
+    if(itsLoading_System != NULL)
+        {
+            itsLoading_System->__setItsDC(NULL);
+        }
+    __setItsLoading_System(p_Loading_System);
+}
+
+void DC::_clearItsLoading_System() {
+    NOTIFY_RELATION_CLEARED("itsLoading_System");
+    itsLoading_System = NULL;
 }
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedDC::serializeRelations(AOMSRelations* aomsRelations) const {
-    aomsRelations->addRelation("itsDocking_System_5", false, true);
-    if(myReal->itsDocking_System_5)
+    aomsRelations->addRelation("itsLoading_System", false, true);
+    if(myReal->itsLoading_System)
         {
-            aomsRelations->ADD_ITEM(myReal->itsDocking_System_5);
+            aomsRelations->ADD_ITEM(myReal->itsLoading_System);
+        }
+    aomsRelations->addRelation("itsANGELS", false, true);
+    if(myReal->itsANGELS)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsANGELS);
         }
 }
 //#]
 
-IMPLEMENT_META_P(DC, ActorPkg, ActorPkg, false, OMAnimatedDC)
+IMPLEMENT_META_P(DC, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg, UseCaseAnalysisPkg::ANGELSPkg::ActorPkg, false, OMAnimatedDC)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

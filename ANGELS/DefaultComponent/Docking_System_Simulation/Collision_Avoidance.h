@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Collision_Avoidance
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\Collision_Avoidance.h
 *********************************************************************/
 
@@ -18,11 +18,14 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include "Default.h"
-//## link itsCollision_Detection
-class Collision_Detection;
+#include "ObstacleAvoidancePkg.h"
+//## link itsANGELS
+class ANGELS;
 
-//## package Default
+//## link itsDocking_System
+class Docking_System;
+
+//## package UseCaseAnalysisPkg::ANGELSPkg::ObstacleAvoidancePkg
 
 //## class Collision_Avoidance
 class Collision_Avoidance {
@@ -45,10 +48,16 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
-    Collision_Detection* getItsCollision_Detection() const;
+    ANGELS* getItsANGELS() const;
     
     //## auto_generated
-    void setItsCollision_Detection(Collision_Detection* p_Collision_Detection);
+    void setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    Docking_System* getItsDocking_System() const;
+    
+    //## auto_generated
+    void setItsDocking_System(Docking_System* p_Docking_System);
 
 protected :
 
@@ -57,20 +66,31 @@ protected :
     
     ////    Relations and components    ////
     
-    Collision_Detection* itsCollision_Detection;		//## link itsCollision_Detection
+    ANGELS* itsANGELS;		//## link itsANGELS
+    
+    Docking_System* itsDocking_System;		//## link itsDocking_System
     
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsCollision_Detection(Collision_Detection* p_Collision_Detection);
+    void __setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _setItsCollision_Detection(Collision_Detection* p_Collision_Detection);
+    void _setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _clearItsCollision_Detection();
+    void _clearItsANGELS();
+    
+    //## auto_generated
+    void __setItsDocking_System(Docking_System* p_Docking_System);
+    
+    //## auto_generated
+    void _setItsDocking_System(Docking_System* p_Docking_System);
+    
+    //## auto_generated
+    void _clearItsDocking_System();
 };
 
 #ifdef _OMINSTRUMENT

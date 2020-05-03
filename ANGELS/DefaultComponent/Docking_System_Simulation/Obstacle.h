@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Obstacle
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\Obstacle.h
 *********************************************************************/
 
@@ -19,10 +19,10 @@
 #include <aom\aom.h>
 //## auto_generated
 #include "ActorPkg.h"
-//## link itsCollision_Detection
+//## link itsCollision_Detection_1
 class Collision_Detection;
 
-//## package ActorPkg
+//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
 //## actor Obstacle
 class Obstacle {
@@ -45,10 +45,10 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
-    Collision_Detection* getItsCollision_Detection() const;
+    Collision_Detection* getItsCollision_Detection_1() const;
     
     //## auto_generated
-    void setItsCollision_Detection(Collision_Detection* p_Collision_Detection);
+    void setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);
 
 protected :
 
@@ -57,20 +57,20 @@ protected :
     
     ////    Relations and components    ////
     
-    Collision_Detection* itsCollision_Detection;		//## link itsCollision_Detection
+    Collision_Detection* itsCollision_Detection_1;		//## link itsCollision_Detection_1
     
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsCollision_Detection(Collision_Detection* p_Collision_Detection);
+    void __setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);
     
     //## auto_generated
-    void _setItsCollision_Detection(Collision_Detection* p_Collision_Detection);
+    void _setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);
     
     //## auto_generated
-    void _clearItsCollision_Detection();
+    void _clearItsCollision_Detection_1();
 };
 
 #ifdef _OMINSTRUMENT

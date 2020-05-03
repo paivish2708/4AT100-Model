@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: DockingSystemPkg
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\DockingSystemPkg.h
 *********************************************************************/
 
@@ -20,23 +20,21 @@
 //## auto_generated
 #include <oxf\event.h>
 //## auto_generated
-#include "UseCaseAnalysisPkg.h"
+#include "ANGELSPkg.h"
 //## auto_generated
 class Docking_System;
 
 //#[ ignore
-#define StartDockingProcedure_DockingSystemPkg_UseCaseAnalysisPkg_id 26001
+#define StartDockingProcedure_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18201
 
-#define OpenDoors_DockingSystemPkg_UseCaseAnalysisPkg_id 26002
+#define ParkingSpotInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18202
 
-#define CloseDoors_DockingSystemPkg_UseCaseAnalysisPkg_id 26003
+#define BeginMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18203
 
-#define AlertDCManager_DockingSystemPkg_UseCaseAnalysisPkg_id 26004
-
-#define StopLoadingProc_DockingSystemPkg_UseCaseAnalysisPkg_id 26005
+#define DCManagerInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18204
 //#]
 
-//## package UseCaseAnalysisPkg::DockingSystemPkg
+//## package UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg
 
 
 
@@ -69,20 +67,20 @@ class OMAnimatedStartDockingProcedure : virtual public AOMEvent {
 //#]
 #endif // _OMINSTRUMENT
 
-//## event OpenDoors(RhpBoolean)
-class OpenDoors : public OMEvent {
+//## event ParkingSpotInput(double)
+class ParkingSpotInput : public OMEvent {
     ////    Friends    ////
     
 public :
 
 #ifdef _OMINSTRUMENT
-    friend class OMAnimatedOpenDoors;
+    friend class OMAnimatedParkingSpotInput;
 #endif // _OMINSTRUMENT
 
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    OpenDoors(RhpBoolean p_CheckDoorStatus = 1);
+    ParkingSpotInput(double p_Parkingspot = 1);
     
     ////    Framework operations    ////
     
@@ -91,31 +89,31 @@ public :
     
     ////    Framework    ////
     
-    RhpBoolean CheckDoorStatus;		//## auto_generated
+    double Parkingspot;		//## auto_generated
 };
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedOpenDoors : virtual public AOMEvent {
-    DECLARE_META_EVENT(OpenDoors)
+class OMAnimatedParkingSpotInput : virtual public AOMEvent {
+    DECLARE_META_EVENT(ParkingSpotInput)
 };
 //#]
 #endif // _OMINSTRUMENT
 
-//## event CloseDoors()
-class CloseDoors : public OMEvent {
+//## event BeginMovement()
+class BeginMovement : public OMEvent {
     ////    Friends    ////
     
 public :
 
 #ifdef _OMINSTRUMENT
-    friend class OMAnimatedCloseDoors;
+    friend class OMAnimatedBeginMovement;
 #endif // _OMINSTRUMENT
 
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    CloseDoors();
+    BeginMovement();
     
     ////    Framework operations    ////
     
@@ -125,26 +123,26 @@ public :
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedCloseDoors : virtual public AOMEvent {
-    DECLARE_META_EVENT(CloseDoors)
+class OMAnimatedBeginMovement : virtual public AOMEvent {
+    DECLARE_META_EVENT(BeginMovement)
 };
 //#]
 #endif // _OMINSTRUMENT
 
-//## event AlertDCManager()
-class AlertDCManager : public OMEvent {
+//## event DCManagerInput()
+class DCManagerInput : public OMEvent {
     ////    Friends    ////
     
 public :
 
 #ifdef _OMINSTRUMENT
-    friend class OMAnimatedAlertDCManager;
+    friend class OMAnimatedDCManagerInput;
 #endif // _OMINSTRUMENT
 
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    AlertDCManager();
+    DCManagerInput();
     
     ////    Framework operations    ////
     
@@ -154,37 +152,8 @@ public :
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedAlertDCManager : virtual public AOMEvent {
-    DECLARE_META_EVENT(AlertDCManager)
-};
-//#]
-#endif // _OMINSTRUMENT
-
-//## event StopLoadingProc()
-class StopLoadingProc : public OMEvent {
-    ////    Friends    ////
-    
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedStopLoadingProc;
-#endif // _OMINSTRUMENT
-
-    ////    Constructors and destructors    ////
-    
-    //## auto_generated
-    StopLoadingProc();
-    
-    ////    Framework operations    ////
-    
-    //## statechart_method
-    virtual bool isTypeOf(const short id) const;
-};
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedStopLoadingProc : virtual public AOMEvent {
-    DECLARE_META_EVENT(StopLoadingProc)
+class OMAnimatedDCManagerInput : virtual public AOMEvent {
+    DECLARE_META_EVENT(DCManagerInput)
 };
 //#]
 #endif // _OMINSTRUMENT

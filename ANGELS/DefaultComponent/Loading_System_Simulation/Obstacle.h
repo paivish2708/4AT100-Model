@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: Pranav
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Obstacle
@@ -36,17 +36,13 @@ public :
 
     ////    Constructors and destructors    ////
     
-    ////    Additional operations    ////
-    
-    ////    Relations and components    ////
-    
-    ////    Framework operations    ////
-    
     //## auto_generated
     Obstacle();
     
     //## auto_generated
     ~Obstacle();
+    
+    ////    Additional operations    ////
     
     //## auto_generated
     Collision_Detection* getItsCollision_Detection_1() const;
@@ -59,7 +55,11 @@ protected :
     //## auto_generated
     void cleanUpRelations();
     
+    ////    Relations and components    ////
+    
     Collision_Detection* itsCollision_Detection_1;		//## link itsCollision_Detection_1
+    
+    ////    Framework operations    ////
 
 public :
 

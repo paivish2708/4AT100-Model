@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: DockingSystemPkg
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\DockingSystemPkg.cpp
 *********************************************************************/
 
@@ -23,38 +23,32 @@
 
 #define StartDockingProcedure_CONSTRUCTOR StartDockingProcedure()
 
-#define OpenDoors_SERIALIZE OMADD_SER(CheckDoorStatus, x2String(myEvent->CheckDoorStatus))
+#define ParkingSpotInput_SERIALIZE OMADD_SER(Parkingspot, x2String(myEvent->Parkingspot))
 
-#define OpenDoors_UNSERIALIZE OMADD_UNSER(RhpBoolean, CheckDoorStatus, OMDestructiveString2X)
+#define ParkingSpotInput_UNSERIALIZE OMADD_UNSER(double, Parkingspot, OMDestructiveString2X)
 
-#define OpenDoors_CONSTRUCTOR OpenDoors(CheckDoorStatus)
+#define ParkingSpotInput_CONSTRUCTOR ParkingSpotInput(Parkingspot)
 
-#define CloseDoors_SERIALIZE OM_NO_OP
+#define BeginMovement_SERIALIZE OM_NO_OP
 
-#define CloseDoors_UNSERIALIZE OM_NO_OP
+#define BeginMovement_UNSERIALIZE OM_NO_OP
 
-#define CloseDoors_CONSTRUCTOR CloseDoors()
+#define BeginMovement_CONSTRUCTOR BeginMovement()
 
-#define AlertDCManager_SERIALIZE OM_NO_OP
+#define DCManagerInput_SERIALIZE OM_NO_OP
 
-#define AlertDCManager_UNSERIALIZE OM_NO_OP
+#define DCManagerInput_UNSERIALIZE OM_NO_OP
 
-#define AlertDCManager_CONSTRUCTOR AlertDCManager()
-
-#define StopLoadingProc_SERIALIZE OM_NO_OP
-
-#define StopLoadingProc_UNSERIALIZE OM_NO_OP
-
-#define StopLoadingProc_CONSTRUCTOR StopLoadingProc()
+#define DCManagerInput_CONSTRUCTOR DCManagerInput()
 //#]
 
-//## package UseCaseAnalysisPkg::DockingSystemPkg
+//## package UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_DockingSystemPkg, UseCaseAnalysisPkg::DockingSystemPkg)
+IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }
@@ -63,62 +57,50 @@ static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 //## event StartDockingProcedure()
 StartDockingProcedure::StartDockingProcedure() {
     NOTIFY_EVENT_CONSTRUCTOR(StartDockingProcedure)
-    setId(StartDockingProcedure_DockingSystemPkg_UseCaseAnalysisPkg_id);
+    setId(StartDockingProcedure_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
 }
 
 bool StartDockingProcedure::isTypeOf(const short id) const {
-    return (StartDockingProcedure_DockingSystemPkg_UseCaseAnalysisPkg_id==id);
+    return (StartDockingProcedure_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(StartDockingProcedure, UseCaseAnalysisPkg_DockingSystemPkg, UseCaseAnalysisPkg::DockingSystemPkg, StartDockingProcedure())
+IMPLEMENT_META_EVENT_P(StartDockingProcedure, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, StartDockingProcedure())
 
-//## event OpenDoors(RhpBoolean)
-OpenDoors::OpenDoors(RhpBoolean p_CheckDoorStatus) : CheckDoorStatus(p_CheckDoorStatus) {
-    NOTIFY_EVENT_CONSTRUCTOR(OpenDoors)
-    setId(OpenDoors_DockingSystemPkg_UseCaseAnalysisPkg_id);
+//## event ParkingSpotInput(double)
+ParkingSpotInput::ParkingSpotInput(double p_Parkingspot) : Parkingspot(p_Parkingspot) {
+    NOTIFY_EVENT_CONSTRUCTOR(ParkingSpotInput)
+    setId(ParkingSpotInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
 }
 
-bool OpenDoors::isTypeOf(const short id) const {
-    return (OpenDoors_DockingSystemPkg_UseCaseAnalysisPkg_id==id);
+bool ParkingSpotInput::isTypeOf(const short id) const {
+    return (ParkingSpotInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(OpenDoors, UseCaseAnalysisPkg_DockingSystemPkg, UseCaseAnalysisPkg::DockingSystemPkg, OpenDoors(RhpBoolean))
+IMPLEMENT_META_EVENT_P(ParkingSpotInput, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, ParkingSpotInput(double))
 
-//## event CloseDoors()
-CloseDoors::CloseDoors() {
-    NOTIFY_EVENT_CONSTRUCTOR(CloseDoors)
-    setId(CloseDoors_DockingSystemPkg_UseCaseAnalysisPkg_id);
+//## event BeginMovement()
+BeginMovement::BeginMovement() {
+    NOTIFY_EVENT_CONSTRUCTOR(BeginMovement)
+    setId(BeginMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
 }
 
-bool CloseDoors::isTypeOf(const short id) const {
-    return (CloseDoors_DockingSystemPkg_UseCaseAnalysisPkg_id==id);
+bool BeginMovement::isTypeOf(const short id) const {
+    return (BeginMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(CloseDoors, UseCaseAnalysisPkg_DockingSystemPkg, UseCaseAnalysisPkg::DockingSystemPkg, CloseDoors())
+IMPLEMENT_META_EVENT_P(BeginMovement, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, BeginMovement())
 
-//## event AlertDCManager()
-AlertDCManager::AlertDCManager() {
-    NOTIFY_EVENT_CONSTRUCTOR(AlertDCManager)
-    setId(AlertDCManager_DockingSystemPkg_UseCaseAnalysisPkg_id);
+//## event DCManagerInput()
+DCManagerInput::DCManagerInput() {
+    NOTIFY_EVENT_CONSTRUCTOR(DCManagerInput)
+    setId(DCManagerInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
 }
 
-bool AlertDCManager::isTypeOf(const short id) const {
-    return (AlertDCManager_DockingSystemPkg_UseCaseAnalysisPkg_id==id);
+bool DCManagerInput::isTypeOf(const short id) const {
+    return (DCManagerInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(AlertDCManager, UseCaseAnalysisPkg_DockingSystemPkg, UseCaseAnalysisPkg::DockingSystemPkg, AlertDCManager())
-
-//## event StopLoadingProc()
-StopLoadingProc::StopLoadingProc() {
-    NOTIFY_EVENT_CONSTRUCTOR(StopLoadingProc)
-    setId(StopLoadingProc_DockingSystemPkg_UseCaseAnalysisPkg_id);
-}
-
-bool StopLoadingProc::isTypeOf(const short id) const {
-    return (StopLoadingProc_DockingSystemPkg_UseCaseAnalysisPkg_id==id);
-}
-
-IMPLEMENT_META_EVENT_P(StopLoadingProc, UseCaseAnalysisPkg_DockingSystemPkg, UseCaseAnalysisPkg::DockingSystemPkg, StopLoadingProc())
+IMPLEMENT_META_EVENT_P(DCManagerInput, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, DCManagerInput())
 
 /*********************************************************************
 	File Path	: DefaultComponent\Docking_System_Simulation\DockingSystemPkg.cpp

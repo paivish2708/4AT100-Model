@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: Pranav
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Driver
@@ -36,17 +36,13 @@ public :
 
     ////    Constructors and destructors    ////
     
-    ////    Additional operations    ////
-    
-    ////    Relations and components    ////
-    
-    ////    Framework operations    ////
-    
     //## auto_generated
     Driver();
     
     //## auto_generated
     ~Driver();
+    
+    ////    Additional operations    ////
     
     //## auto_generated
     Truck* getItsTruck_4() const;
@@ -59,7 +55,11 @@ protected :
     //## auto_generated
     void cleanUpRelations();
     
+    ////    Relations and components    ////
+    
     Truck* itsTruck_4;		//## link itsTruck_4
+    
+    ////    Framework operations    ////
 
 public :
 

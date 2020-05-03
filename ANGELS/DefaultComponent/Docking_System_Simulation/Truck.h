@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Truck
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\Truck.h
 *********************************************************************/
 
@@ -18,9 +18,9 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include "Default.h"
-//## link itsDCOperator
-class DCOperator;
+#include "TruckPkg.h"
+//## link itsANGELS
+class ANGELS;
 
 //## link itsDocking_System
 class Docking_System;
@@ -28,7 +28,7 @@ class Docking_System;
 //## link itsDriver
 class Driver;
 
-//## package Default
+//## package UseCaseAnalysisPkg::ANGELSPkg::TruckPkg
 
 //## class Truck
 class Truck {
@@ -51,10 +51,10 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
-    DCOperator* getItsDCOperator() const;
+    ANGELS* getItsANGELS() const;
     
     //## auto_generated
-    void setItsDCOperator(DCOperator* p_DCOperator);
+    void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
     Docking_System* getItsDocking_System() const;
@@ -67,24 +67,6 @@ public :
     
     //## auto_generated
     void setItsDriver(Driver* p_Driver);
-    
-    //## auto_generated
-    Driver* getItsDriver_1() const;
-    
-    //## auto_generated
-    void setItsDriver_1(Driver* p_Driver);
-    
-    //## auto_generated
-    Driver* getItsDriver_2() const;
-    
-    //## auto_generated
-    void setItsDriver_2(Driver* p_Driver);
-    
-    //## auto_generated
-    Driver* getItsDriver_3() const;
-    
-    //## auto_generated
-    void setItsDriver_3(Driver* p_Driver);
 
 protected :
 
@@ -93,30 +75,24 @@ protected :
     
     ////    Relations and components    ////
     
-    DCOperator* itsDCOperator;		//## link itsDCOperator
+    ANGELS* itsANGELS;		//## link itsANGELS
     
     Docking_System* itsDocking_System;		//## link itsDocking_System
     
     Driver* itsDriver;		//## link itsDriver
-    
-    Driver* itsDriver_1;		//## link itsDriver_1
-    
-    Driver* itsDriver_2;		//## link itsDriver_2
-    
-    Driver* itsDriver_3;		//## link itsDriver_3
     
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsDCOperator(DCOperator* p_DCOperator);
+    void __setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _setItsDCOperator(DCOperator* p_DCOperator);
+    void _setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _clearItsDCOperator();
+    void _clearItsANGELS();
     
     //## auto_generated
     void __setItsDocking_System(Docking_System* p_Docking_System);
@@ -135,33 +111,6 @@ public :
     
     //## auto_generated
     void _clearItsDriver();
-    
-    //## auto_generated
-    void __setItsDriver_1(Driver* p_Driver);
-    
-    //## auto_generated
-    void _setItsDriver_1(Driver* p_Driver);
-    
-    //## auto_generated
-    void _clearItsDriver_1();
-    
-    //## auto_generated
-    void __setItsDriver_2(Driver* p_Driver);
-    
-    //## auto_generated
-    void _setItsDriver_2(Driver* p_Driver);
-    
-    //## auto_generated
-    void _clearItsDriver_2();
-    
-    //## auto_generated
-    void __setItsDriver_3(Driver* p_Driver);
-    
-    //## auto_generated
-    void _setItsDriver_3(Driver* p_Driver);
-    
-    //## auto_generated
-    void _clearItsDriver_3();
 };
 
 #ifdef _OMINSTRUMENT

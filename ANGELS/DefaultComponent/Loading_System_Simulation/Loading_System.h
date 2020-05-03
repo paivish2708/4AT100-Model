@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: Pranav
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Loading_System
@@ -17,10 +17,10 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include <aom\aom.h>
-//## auto_generated
-#include "LoadingSystemPkg.h"
 //##   ignore
 #include <simulation\OMActivityContext.h>
+//## auto_generated
+#include "LoadingSystemPkg.h"
 //## link itsANGELS
 class ANGELS;
 
@@ -44,117 +44,6 @@ public :
     
     //## auto_generated
     class StopTruckOfLoading_System;
-    
-    ////    Friends    ////
-    
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedLoading_System;
-#endif // _OMINSTRUMENT
-
-    ////    Constructors and destructors    ////
-    
-    //## auto_generated
-    Loading_System();
-    
-    //## auto_generated
-    virtual ~Loading_System();
-    
-    ////    Operations    ////
-    
-    //## operation LoadingProcess()
-    virtual void LoadingProcess();
-    
-    //## operation StoptheTruck(double)
-    virtual void StoptheTruck(double speed);
-    
-    ////    Additional operations    ////
-    
-    //## auto_generated
-    RhpBoolean getCheckDoorStatus() const;
-    
-    //## auto_generated
-    void setCheckDoorStatus(RhpBoolean p_CheckDoorStatus);
-    
-    //## auto_generated
-    double getDockingTime() const;
-    
-    //## auto_generated
-    void setDockingTime(double p_DockingTime);
-    
-    //## auto_generated
-    int getSpeed() const;
-    
-    //## auto_generated
-    void setSpeed(int p_speed);
-    
-    //## auto_generated
-    ANGELS* getItsANGELS() const;
-    
-    //## auto_generated
-    void setItsANGELS(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    DC* getItsDC() const;
-    
-    //## auto_generated
-    void setItsDC(DC* p_DC);
-    
-    //## auto_generated
-    DCOperator* getItsDCOperator() const;
-    
-    //## auto_generated
-    void setItsDCOperator(DCOperator* p_DCOperator);
-    
-    //## auto_generated
-    virtual bool startBehavior();
-
-protected :
-
-    //## auto_generated
-    void cleanUpRelations();
-    
-    ////    Attributes    ////
-    
-    RhpBoolean CheckDoorStatus;		//## attribute CheckDoorStatus
-    
-    double DockingTime;		//## attribute DockingTime
-    
-    int speed;		//## attribute speed
-    
-    ////    Relations and components    ////
-    
-    ANGELS* itsANGELS;		//## link itsANGELS
-    
-    ////    Framework operations    ////
-
-public :
-
-    //## auto_generated
-    void __setItsANGELS(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _setItsANGELS(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _clearItsANGELS();
-    
-    //## auto_generated
-    void __setItsDC(DC* p_DC);
-    
-    //## auto_generated
-    void _setItsDC(DC* p_DC);
-    
-    //## auto_generated
-    void _clearItsDC();
-    
-    //## auto_generated
-    void __setItsDCOperator(DCOperator* p_DCOperator);
-    
-    //## auto_generated
-    void _setItsDCOperator(DCOperator* p_DCOperator);
-    
-    //## auto_generated
-    void _clearItsDCOperator();
     
 //#[ ignore
     class LoadGoodsOfLoading_System : virtual public OMActivity {
@@ -476,7 +365,31 @@ public :
         
         double speed;
     };
+//#]
+
+    ////    Friends    ////
     
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedLoading_System;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    Loading_System();
+    
+    //## auto_generated
+    virtual ~Loading_System();
+    
+    ////    Operations    ////
+    
+    //## operation LoadingProcess()
+    virtual void LoadingProcess();
+    
+    //## operation StoptheTruck(double)
+    virtual void StoptheTruck(double speed);
+    
+//#[ ignore
     virtual void* getMe();
 //#]
 
@@ -537,12 +450,99 @@ public :
     
     //## activity_action StopTruck:ROOT.flowfinal_1
     OMList<OMString> delegatedFilterPassableFlowsFromActionFlowfinal_1InActivityStopTruckOfLoading_System();
+    
+    ////    Additional operations    ////
+    
+    //## auto_generated
+    RhpBoolean getCheckDoorStatus() const;
+    
+    //## auto_generated
+    void setCheckDoorStatus(RhpBoolean p_CheckDoorStatus);
+    
+    //## auto_generated
+    double getDockingTime() const;
+    
+    //## auto_generated
+    void setDockingTime(double p_DockingTime);
+    
+    //## auto_generated
+    int getSpeed() const;
+    
+    //## auto_generated
+    void setSpeed(int p_speed);
+    
+    //## auto_generated
+    ANGELS* getItsANGELS() const;
+    
+    //## auto_generated
+    void setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    DC* getItsDC() const;
+    
+    //## auto_generated
+    void setItsDC(DC* p_DC);
+    
+    //## auto_generated
+    DCOperator* getItsDCOperator() const;
+    
+    //## auto_generated
+    void setItsDCOperator(DCOperator* p_DCOperator);
+    
+    //## auto_generated
+    virtual bool startBehavior();
 
 protected :
 
+    //## auto_generated
+    void cleanUpRelations();
+    
+    ////    Attributes    ////
+    
+    RhpBoolean CheckDoorStatus;		//## attribute CheckDoorStatus
+    
+    double DockingTime;		//## attribute DockingTime
+    
+    int speed;		//## attribute speed
+    
+    ////    Relations and components    ////
+    
+    ANGELS* itsANGELS;		//## link itsANGELS
+    
     DC* itsDC;		//## link itsDC
     
     DCOperator* itsDCOperator;		//## link itsDCOperator
+    
+    ////    Framework operations    ////
+
+public :
+
+    //## auto_generated
+    void __setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _clearItsANGELS();
+    
+    //## auto_generated
+    void __setItsDC(DC* p_DC);
+    
+    //## auto_generated
+    void _setItsDC(DC* p_DC);
+    
+    //## auto_generated
+    void _clearItsDC();
+    
+    //## auto_generated
+    void __setItsDCOperator(DCOperator* p_DCOperator);
+    
+    //## auto_generated
+    void _setItsDCOperator(DCOperator* p_DCOperator);
+    
+    //## auto_generated
+    void _clearItsDCOperator();
 };
 
 #ifdef _OMINSTRUMENT
