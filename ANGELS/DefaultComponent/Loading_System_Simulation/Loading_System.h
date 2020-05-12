@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Loading_System
@@ -131,10 +131,6 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
-    DC* itsDC;		//## link itsDC
-    
-    DCOperator* itsDCOperator;		//## link itsDCOperator
-    
     Truck itsTruck;		//## classInstance itsTruck
     
     ////    Framework operations    ////
@@ -168,6 +164,16 @@ public :
     //## auto_generated
     void _clearItsDCOperator();
     
+    ////    Framework    ////
+
+protected :
+
+    DC* itsDC;		//## link itsDC
+    
+    DCOperator* itsDCOperator;		//## link itsDCOperator
+
+public :
+
     // rootState:
     //## statechart_method
     inline bool rootState_IN() const;
@@ -215,8 +221,6 @@ public :
     // DockedState:
     //## statechart_method
     inline bool DockedState_IN() const;
-    
-    ////    Framework    ////
 
 protected :
 

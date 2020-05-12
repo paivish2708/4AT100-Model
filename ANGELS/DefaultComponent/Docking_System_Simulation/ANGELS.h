@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: ANGELS
@@ -155,12 +155,6 @@ public :
     void setItsCollision_Detection(Collision_Detection* p_Collision_Detection);
     
     //## auto_generated
-    Collision_Detection* getItsCollision_Detection_1() const;
-    
-    //## auto_generated
-    void setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);
-    
-    //## auto_generated
     Collision_Detection* getItsCollision_Detection_2() const;
     
     //## auto_generated
@@ -282,8 +276,6 @@ protected :
     
     Collision_Detection* itsCollision_Detection;		//## link itsCollision_Detection
     
-    Collision_Detection* itsCollision_Detection_1;		//## link itsCollision_Detection_1
-    
     Collision_Detection itsCollision_Detection_2;		//## classInstance itsCollision_Detection_2
     
     Collision_Detection itsCollision_Detection_3;		//## classInstance itsCollision_Detection_3
@@ -292,15 +284,9 @@ protected :
     
     Communication_System itsCommunication_System_1;		//## classInstance itsCommunication_System_1
     
-    DC* itsDC;		//## link itsDC
-    
-    DCOperator* itsDCOperator;		//## link itsDCOperator
-    
     Docking_System* itsDocking_System;		//## link itsDocking_System
     
     Docking_System itsDocking_System_1;		//## classInstance itsDocking_System_1
-    
-    Government* itsGovernment;		//## link itsGovernment
     
     Loading_System* itsLoading_System;		//## link itsLoading_System
     
@@ -341,15 +327,6 @@ public :
     
     //## auto_generated
     void _clearItsCollision_Detection();
-    
-    //## auto_generated
-    void __setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);
-    
-    //## auto_generated
-    void _setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);
-    
-    //## auto_generated
-    void _clearItsCollision_Detection_1();
     
     //## auto_generated
     void __setItsCommunication_System(Communication_System* p_Communication_System);
@@ -446,6 +423,14 @@ public :
     
     //## auto_generated
     virtual void destroy();
+
+protected :
+
+    DC* itsDC;		//## link itsDC
+    
+    DCOperator* itsDCOperator;		//## link itsDCOperator
+    
+    Government* itsGovernment;		//## link itsGovernment
 };
 
 #ifdef _OMINSTRUMENT

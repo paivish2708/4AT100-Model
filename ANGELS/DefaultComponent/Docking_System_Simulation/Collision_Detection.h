@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Collision_Detection
-//!	Generated Date	: Sun, 3, May 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\Collision_Detection.h
 *********************************************************************/
 
@@ -87,8 +87,6 @@ protected :
     
     Docking_System* itsDocking_System;		//## link itsDocking_System
     
-    Obstacle* itsObstacle;		//## link itsObstacle
-    
     ////    Framework operations    ////
 
 public :
@@ -101,15 +99,6 @@ public :
     
     //## auto_generated
     void _clearItsANGELS();
-    
-    //## auto_generated
-    void __setItsANGELS_1(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _setItsANGELS_1(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _clearItsANGELS_1();
     
     //## auto_generated
     void __setItsDocking_System(Docking_System* p_Docking_System);
@@ -128,6 +117,10 @@ public :
     
     //## auto_generated
     void _clearItsObstacle();
+
+protected :
+
+    Obstacle* itsObstacle;		//## link itsObstacle
 };
 
 #ifdef _OMINSTRUMENT

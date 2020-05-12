@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Loading_System
@@ -27,8 +27,8 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
-//## classInstance itsDocking_System
-#include "Docking_System.h"
+//## classInstance itsTruck
+#include "Truck.h"
 //## link itsANGELS
 class ANGELS;
 
@@ -102,7 +102,7 @@ public :
     void setItsDCOperator(DCOperator* p_DCOperator);
     
     //## auto_generated
-    Docking_System* getItsDocking_System() const;
+    Truck* getItsTruck() const;
     
     //## auto_generated
     virtual bool startBehavior();
@@ -131,11 +131,7 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
-    DC* itsDC;		//## link itsDC
-    
-    DCOperator* itsDCOperator;		//## link itsDCOperator
-    
-    Docking_System itsDocking_System;		//## classInstance itsDocking_System
+    Truck itsTruck;		//## classInstance itsTruck
     
     ////    Framework operations    ////
 
@@ -168,21 +164,32 @@ public :
     //## auto_generated
     void _clearItsDCOperator();
     
-    //## auto_generated
-    void setActiveContext(IOxfActive* theActiveContext, bool activeInstance);
+    ////    Framework    ////
+
+protected :
+
+    DC* itsDC;		//## link itsDC
     
-    //## auto_generated
-    virtual void destroy();
-    
+    DCOperator* itsDCOperator;		//## link itsDCOperator
+
+public :
+
     // rootState:
     //## statechart_method
     inline bool rootState_IN() const;
+    
+    //## statechart_method
+    inline bool rootState_isCompleted();
     
     //## statechart_method
     virtual void rootState_entDef();
     
     //## statechart_method
     virtual IOxfReactive::TakeEventStatus rootState_processEvent();
+    
+    // terminationstate_9:
+    //## statechart_method
+    inline bool terminationstate_9_IN() const;
     
     // ReadyForParking:
     //## statechart_method
@@ -214,21 +221,20 @@ public :
     // DockedState:
     //## statechart_method
     inline bool DockedState_IN() const;
-    
-    ////    Framework    ////
 
 protected :
 
 //#[ ignore
     enum Loading_System_Enum {
         OMNonState = 0,
-        ReadyForParking = 1,
-        LoadingState = 2,
-        StartLoading = 3,
-        LoadedState = 4,
-        IdleState = 5,
-        DoorsClosed = 6,
-        DockedState = 7
+        terminationstate_9 = 1,
+        ReadyForParking = 2,
+        LoadingState = 3,
+        StartLoading = 4,
+        LoadedState = 5,
+        IdleState = 6,
+        DoorsClosed = 7,
+        DockedState = 8
     };
     
     int rootState_subState;
@@ -258,6 +264,9 @@ public :
     void rootState_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
+    void terminationstate_9_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
     void ReadyForParking_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
@@ -283,6 +292,14 @@ public :
 
 inline bool Loading_System::rootState_IN() const {
     return true;
+}
+
+inline bool Loading_System::rootState_isCompleted() {
+    return ( IS_IN(terminationstate_9) );
+}
+
+inline bool Loading_System::terminationstate_9_IN() const {
+    return rootState_subState == terminationstate_9;
 }
 
 inline bool Loading_System::ReadyForParking_IN() const {

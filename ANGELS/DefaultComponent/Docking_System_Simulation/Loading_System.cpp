@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Loading_System
@@ -35,14 +35,9 @@
 //## package UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg
 
 //## class Loading_System
-Loading_System::Loading_System(IOxfActive* theActiveContext) : Doorstatus(0) {
+Loading_System::Loading_System(IOxfActive* theActiveContext) : Doorstatus(0), LoadingTime(0) {
     NOTIFY_REACTIVE_CONSTRUCTOR(Loading_System, Loading_System(), 0, UseCaseAnalysisPkg_ANGELSPkg_LoadingSystemPkg_Loading_System_Loading_System_SERIALIZE);
     setActiveContext(theActiveContext, false);
-    {
-        {
-            itsDocking_System.setShouldDelete(false);
-        }
-    }
     itsANGELS = NULL;
     itsDC = NULL;
     itsDCOperator = NULL;
@@ -130,13 +125,12 @@ void Loading_System::setItsDCOperator(DCOperator* p_DCOperator) {
     _setItsDCOperator(p_DCOperator);
 }
 
-Docking_System* Loading_System::getItsDocking_System() const {
-    return (Docking_System*) &itsDocking_System;
+Truck* Loading_System::getItsTruck() const {
+    return (Truck*) &itsTruck;
 }
 
 bool Loading_System::startBehavior() {
     bool done = true;
-    done &= itsDocking_System.startBehavior();
     done &= OMReactive::startBehavior();
     return done;
 }
@@ -270,18 +264,6 @@ void Loading_System::_clearItsDCOperator() {
     itsDCOperator = NULL;
 }
 
-void Loading_System::setActiveContext(IOxfActive* theActiveContext, bool activeInstance) {
-    OMReactive::setActiveContext(theActiveContext, activeInstance);
-    {
-        itsDocking_System.setActiveContext(theActiveContext, false);
-    }
-}
-
-void Loading_System::destroy() {
-    itsDocking_System.destroy();
-    OMReactive::destroy();
-}
-
 void Loading_System::rootState_entDef() {
     {
         NOTIFY_STATE_ENTERED("ROOT");
@@ -296,6 +278,61 @@ void Loading_System::rootState_entDef() {
 IOxfReactive::TakeEventStatus Loading_System::rootState_processEvent() {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
     switch (rootState_active) {
+        // State IdleState
+        case IdleState:
+        {
+            if(IS_EVENT_TYPE_OF(StartLoadingProcedure_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("0");
+                    NOTIFY_STATE_EXITED("ROOT.IdleState");
+                    //#[ transition 0 
+                    OpenDoors(1);
+                    //#]
+                    NOTIFY_STATE_ENTERED("ROOT.DoorsClosed");
+                    rootState_subState = DoorsClosed;
+                    rootState_active = DoorsClosed;
+                    NOTIFY_TRANSITION_TERMINATED("0");
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        // State LoadedState
+        case LoadedState:
+        {
+            if(IS_EVENT_TYPE_OF(ReturnToDockedState_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("4");
+                    switch (LoadingState_subState) {
+                        // State LoadedState
+                        case LoadedState:
+                        {
+                            NOTIFY_STATE_EXITED("ROOT.LoadingState.LoadedState");
+                        }
+                        break;
+                        // State StartLoading
+                        case StartLoading:
+                        {
+                            cancel(LoadingState_timeout);
+                            NOTIFY_STATE_EXITED("ROOT.LoadingState.StartLoading");
+                        }
+                        break;
+                        default:
+                            break;
+                    }
+                    LoadingState_subState = OMNonState;
+                    NOTIFY_STATE_EXITED("ROOT.LoadingState");
+                    NOTIFY_STATE_ENTERED("ROOT.ReadyForParking");
+                    pushNullTransition();
+                    rootState_subState = ReadyForParking;
+                    rootState_active = ReadyForParking;
+                    NOTIFY_TRANSITION_TERMINATED("4");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
         // State StartLoading
         case StartLoading:
         {
@@ -332,64 +369,6 @@ IOxfReactive::TakeEventStatus Loading_System::rootState_processEvent() {
             
         }
         break;
-        // State LoadedState
-        case LoadedState:
-        {
-            if(IS_EVENT_TYPE_OF(ReturnToDockedState_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
-                {
-                    NOTIFY_TRANSITION_STARTED("4");
-                    switch (LoadingState_subState) {
-                        // State StartLoading
-                        case StartLoading:
-                        {
-                            cancel(LoadingState_timeout);
-                            NOTIFY_STATE_EXITED("ROOT.LoadingState.StartLoading");
-                        }
-                        break;
-                        // State LoadedState
-                        case LoadedState:
-                        {
-                            NOTIFY_STATE_EXITED("ROOT.LoadingState.LoadedState");
-                        }
-                        break;
-                        default:
-                            break;
-                    }
-                    LoadingState_subState = OMNonState;
-                    NOTIFY_STATE_EXITED("ROOT.LoadingState");
-                    NOTIFY_STATE_ENTERED("ROOT.ReadyForParking");
-                    rootState_subState = ReadyForParking;
-                    rootState_active = ReadyForParking;
-                    NOTIFY_TRANSITION_TERMINATED("4");
-                    res = eventConsumed;
-                }
-            
-            
-        }
-        break;
-        // State IdleState
-        case IdleState:
-        {
-            if(IS_EVENT_TYPE_OF(StartLoadingProcedure_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
-                {
-                    //## transition 0 
-                    if(Doorstatus)
-                        {
-                            NOTIFY_TRANSITION_STARTED("0");
-                            NOTIFY_STATE_EXITED("ROOT.IdleState");
-                            //#[ transition 0 
-                            OpenDoors(1);
-                            //#]
-                            NOTIFY_STATE_ENTERED("ROOT.DoorsClosed");
-                            rootState_subState = DoorsClosed;
-                            rootState_active = DoorsClosed;
-                            NOTIFY_TRANSITION_TERMINATED("0");
-                            res = eventConsumed;
-                        }
-                }
-            
-        }
-        break;
         // State DoorsClosed
         case DoorsClosed:
         {
@@ -399,6 +378,23 @@ IOxfReactive::TakeEventStatus Loading_System::rootState_processEvent() {
                     NOTIFY_STATE_EXITED("ROOT.DoorsClosed");
                     LoadingState_entDef();
                     NOTIFY_TRANSITION_TERMINATED("5");
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        // State ReadyForParking
+        case ReadyForParking:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    NOTIFY_TRANSITION_STARTED("8");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.ReadyForParking");
+                    NOTIFY_STATE_ENTERED("ROOT.terminationstate_9");
+                    rootState_subState = terminationstate_9;
+                    rootState_active = terminationstate_9;
+                    NOTIFY_TRANSITION_TERMINATED("8");
                     res = eventConsumed;
                 }
             
@@ -420,6 +416,7 @@ IOxfReactive::TakeEventStatus Loading_System::rootState_processEvent() {
             
         }
         break;
+        
         default:
             break;
     }
@@ -445,6 +442,8 @@ void OMAnimatedLoading_System::serializeAttributes(AOMSAttributes* aomsAttribute
 }
 
 void OMAnimatedLoading_System::serializeRelations(AOMSRelations* aomsRelations) const {
+    aomsRelations->addRelation("itsTruck", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsTruck);
     aomsRelations->addRelation("itsDC", false, true);
     if(myReal->itsDC)
         {
@@ -460,21 +459,19 @@ void OMAnimatedLoading_System::serializeRelations(AOMSRelations* aomsRelations) 
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS);
         }
-    aomsRelations->addRelation("itsDocking_System", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsDocking_System);
 }
 
 void OMAnimatedLoading_System::rootState_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT");
     switch (myReal->rootState_subState) {
-        case Loading_System::LoadingState:
-        {
-            LoadingState_serializeStates(aomsState);
-        }
-        break;
         case Loading_System::IdleState:
         {
             IdleState_serializeStates(aomsState);
+        }
+        break;
+        case Loading_System::LoadingState:
+        {
+            LoadingState_serializeStates(aomsState);
         }
         break;
         case Loading_System::DoorsClosed:
@@ -492,9 +489,18 @@ void OMAnimatedLoading_System::rootState_serializeStates(AOMSState* aomsState) c
             DockedState_serializeStates(aomsState);
         }
         break;
+        case Loading_System::terminationstate_9:
+        {
+            terminationstate_9_serializeStates(aomsState);
+        }
+        break;
         default:
             break;
     }
+}
+
+void OMAnimatedLoading_System::terminationstate_9_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.terminationstate_9");
 }
 
 void OMAnimatedLoading_System::ReadyForParking_serializeStates(AOMSState* aomsState) const {
@@ -504,14 +510,14 @@ void OMAnimatedLoading_System::ReadyForParking_serializeStates(AOMSState* aomsSt
 void OMAnimatedLoading_System::LoadingState_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.LoadingState");
     switch (myReal->LoadingState_subState) {
-        case Loading_System::StartLoading:
-        {
-            StartLoading_serializeStates(aomsState);
-        }
-        break;
         case Loading_System::LoadedState:
         {
             LoadedState_serializeStates(aomsState);
+        }
+        break;
+        case Loading_System::StartLoading:
+        {
+            StartLoading_serializeStates(aomsState);
         }
         break;
         default:

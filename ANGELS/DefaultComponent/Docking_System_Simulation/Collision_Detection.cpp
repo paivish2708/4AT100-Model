@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Collision_Detection
-//!	Generated Date	: Sun, 3, May 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\Collision_Detection.cpp
 *********************************************************************/
 
@@ -57,11 +57,15 @@ ANGELS* Collision_Detection::getItsANGELS_1() const {
 }
 
 void Collision_Detection::setItsANGELS_1(ANGELS* p_ANGELS) {
+    itsANGELS_1 = p_ANGELS;
     if(p_ANGELS != NULL)
         {
-            p_ANGELS->_setItsCollision_Detection_1(this);
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS_1", p_ANGELS, false, true);
         }
-    _setItsANGELS_1(p_ANGELS);
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+        }
 }
 
 Docking_System* Collision_Detection::getItsDocking_System() const {
@@ -102,11 +106,6 @@ void Collision_Detection::cleanUpRelations() {
     if(itsANGELS_1 != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsANGELS_1");
-            Collision_Detection* p_Collision_Detection = itsANGELS_1->getItsCollision_Detection_1();
-            if(p_Collision_Detection != NULL)
-                {
-                    itsANGELS_1->__setItsCollision_Detection_1(NULL);
-                }
             itsANGELS_1 = NULL;
         }
     if(itsDocking_System != NULL)
@@ -154,31 +153,6 @@ void Collision_Detection::_setItsANGELS(ANGELS* p_ANGELS) {
 void Collision_Detection::_clearItsANGELS() {
     NOTIFY_RELATION_CLEARED("itsANGELS");
     itsANGELS = NULL;
-}
-
-void Collision_Detection::__setItsANGELS_1(ANGELS* p_ANGELS) {
-    itsANGELS_1 = p_ANGELS;
-    if(p_ANGELS != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsANGELS_1", p_ANGELS, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS_1");
-        }
-}
-
-void Collision_Detection::_setItsANGELS_1(ANGELS* p_ANGELS) {
-    if(itsANGELS_1 != NULL)
-        {
-            itsANGELS_1->__setItsCollision_Detection_1(NULL);
-        }
-    __setItsANGELS_1(p_ANGELS);
-}
-
-void Collision_Detection::_clearItsANGELS_1() {
-    NOTIFY_RELATION_CLEARED("itsANGELS_1");
-    itsANGELS_1 = NULL;
 }
 
 void Collision_Detection::__setItsDocking_System(Docking_System* p_Docking_System) {

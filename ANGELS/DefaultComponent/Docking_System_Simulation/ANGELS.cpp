@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: ANGELS
@@ -14,14 +14,14 @@
 
 //## auto_generated
 #include "ANGELS.h"
+//## link itsSafety_Standards
+#include "Safety_Standards.h"
 //## link itsDC
 #include "DC.h"
 //## link itsDCOperator
 #include "DCOperator.h"
 //## link itsGovernment
 #include "Government.h"
-//## link itsSafety_Standards
-#include "Safety_Standards.h"
 //#[ ignore
 #define UseCaseAnalysisPkg_ANGELSPkg_ANGELS_ANGELS_SERIALIZE OM_NO_OP
 //#]
@@ -42,7 +42,6 @@ ANGELS::ANGELS(IOxfActive* theActiveContext) : dt(10) {
     }
     itsCollision_Avoidance = NULL;
     itsCollision_Detection = NULL;
-    itsCollision_Detection_1 = NULL;
     itsCommunication_System = NULL;
     itsDC = NULL;
     itsDCOperator = NULL;
@@ -167,18 +166,6 @@ void ANGELS::setItsCollision_Detection(Collision_Detection* p_Collision_Detectio
             p_Collision_Detection->_setItsANGELS(this);
         }
     _setItsCollision_Detection(p_Collision_Detection);
-}
-
-Collision_Detection* ANGELS::getItsCollision_Detection_1() const {
-    return itsCollision_Detection_1;
-}
-
-void ANGELS::setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection) {
-    if(p_Collision_Detection != NULL)
-        {
-            p_Collision_Detection->_setItsANGELS_1(this);
-        }
-    _setItsCollision_Detection_1(p_Collision_Detection);
 }
 
 Collision_Detection* ANGELS::getItsCollision_Detection_2() const {
@@ -362,16 +349,6 @@ void ANGELS::cleanUpRelations() {
                 }
             itsCollision_Detection = NULL;
         }
-    if(itsCollision_Detection_1 != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsCollision_Detection_1");
-            ANGELS* p_ANGELS = itsCollision_Detection_1->getItsANGELS_1();
-            if(p_ANGELS != NULL)
-                {
-                    itsCollision_Detection_1->__setItsANGELS_1(NULL);
-                }
-            itsCollision_Detection_1 = NULL;
-        }
     if(itsCommunication_System != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsCommunication_System");
@@ -522,31 +499,6 @@ void ANGELS::_setItsCollision_Detection(Collision_Detection* p_Collision_Detecti
 void ANGELS::_clearItsCollision_Detection() {
     NOTIFY_RELATION_CLEARED("itsCollision_Detection");
     itsCollision_Detection = NULL;
-}
-
-void ANGELS::__setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection) {
-    itsCollision_Detection_1 = p_Collision_Detection;
-    if(p_Collision_Detection != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsCollision_Detection_1", p_Collision_Detection, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsCollision_Detection_1");
-        }
-}
-
-void ANGELS::_setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection) {
-    if(itsCollision_Detection_1 != NULL)
-        {
-            itsCollision_Detection_1->__setItsANGELS_1(NULL);
-        }
-    __setItsCollision_Detection_1(p_Collision_Detection);
-}
-
-void ANGELS::_clearItsCollision_Detection_1() {
-    NOTIFY_RELATION_CLEARED("itsCollision_Detection_1");
-    itsCollision_Detection_1 = NULL;
 }
 
 void ANGELS::__setItsCommunication_System(Communication_System* p_Communication_System) {
@@ -829,6 +781,24 @@ void OMAnimatedANGELS::serializeAttributes(AOMSAttributes* aomsAttributes) const
 }
 
 void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
+    aomsRelations->addRelation("itsCollision_Avoidance_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsCollision_Avoidance_1);
+    aomsRelations->addRelation("itsLoading_System_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsLoading_System_1);
+    aomsRelations->addRelation("itsCommunication_System_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsCommunication_System_1);
+    aomsRelations->addRelation("itsCollision_Detection_2", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_2);
+    aomsRelations->addRelation("itsDocking_System_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsDocking_System_1);
+    aomsRelations->addRelation("itsLocalisation_System_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsLocalisation_System_1);
+    aomsRelations->addRelation("itsCollision_Detection_3", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_3);
+    aomsRelations->addRelation("itsParkingSystem_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsParkingSystem_1);
+    aomsRelations->addRelation("itsTruck_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsTruck_1);
     aomsRelations->addRelation("itsCollision_Avoidance", false, true);
     if(myReal->itsCollision_Avoidance)
         {
@@ -858,11 +828,6 @@ void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
     if(myReal->itsParkingSystem)
         {
             aomsRelations->ADD_ITEM(myReal->itsParkingSystem);
-        }
-    aomsRelations->addRelation("itsCollision_Detection_1", false, true);
-    if(myReal->itsCollision_Detection_1)
-        {
-            aomsRelations->ADD_ITEM(myReal->itsCollision_Detection_1);
         }
     aomsRelations->addRelation("itsTruck", false, true);
     if(myReal->itsTruck)
@@ -894,24 +859,6 @@ void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
         {
             aomsRelations->ADD_ITEM(myReal->itsDCOperator);
         }
-    aomsRelations->addRelation("itsCollision_Avoidance_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCollision_Avoidance_1);
-    aomsRelations->addRelation("itsLoading_System_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsLoading_System_1);
-    aomsRelations->addRelation("itsCommunication_System_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCommunication_System_1);
-    aomsRelations->addRelation("itsCollision_Detection_2", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_2);
-    aomsRelations->addRelation("itsDocking_System_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsDocking_System_1);
-    aomsRelations->addRelation("itsLocalisation_System_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsLocalisation_System_1);
-    aomsRelations->addRelation("itsCollision_Detection_3", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_3);
-    aomsRelations->addRelation("itsParkingSystem_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsParkingSystem_1);
-    aomsRelations->addRelation("itsTruck_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsTruck_1);
 }
 //#]
 

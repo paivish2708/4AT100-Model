@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Docking_System
@@ -27,21 +27,21 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
+//## classInstance itsTruck
+#include "Truck.h"
+//## classInstance itsLoading_System
+#include "Loading_System.h"
+//## link itsANGELS
+class ANGELS;
+
 //## link itsCollision_Avoidance_1
 class Collision_Avoidance;
 
 //## link itsCollision_Detection_1
 class Collision_Detection;
 
-//## classInstance itsTruck
-#include "Truck.h"
-//## classInstance itsLoading_System
-#include "Loading_System.h"
 //## link itsDCOperator
 class DCOperator;
-
-//## link itsANGELS
-class ANGELS;
 
 //## package UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg
 
@@ -127,8 +127,6 @@ protected :
     Collision_Avoidance* itsCollision_Avoidance_1;		//## link itsCollision_Avoidance_1
     
     Collision_Detection* itsCollision_Detection_1;		//## link itsCollision_Detection_1
-    
-    DCOperator* itsDCOperator;		//## link itsDCOperator
     
     Truck* itsTruck_1;		//## link itsTruck_1
     
@@ -248,8 +246,6 @@ protected :
     
     double SteerAngle;		//## attribute SteerAngle
     
-    DCOperator* itsDCOperator_1;		//## link itsDCOperator_1
-    
     Loading_System itsLoading_System;		//## classInstance itsLoading_System
     
     Truck itsTruck;		//## classInstance itsTruck
@@ -270,7 +266,15 @@ public :
     
     //## auto_generated
     virtual void destroy();
+
+protected :
+
+    DCOperator* itsDCOperator;		//## link itsDCOperator
     
+    DCOperator* itsDCOperator_1;		//## link itsDCOperator_1
+
+public :
+
     // rootState:
     //## statechart_method
     inline bool rootState_IN() const;

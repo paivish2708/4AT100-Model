@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Sun, 10, May 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\DCOperator.h
 *********************************************************************/
 
@@ -42,13 +42,17 @@ public :
 
     ////    Constructors and destructors    ////
     
+    ////    Additional operations    ////
+    
+    ////    Relations and components    ////
+    
+    ////    Framework operations    ////
+    
     //## auto_generated
     DCOperator();
     
     //## auto_generated
     ~DCOperator();
-    
-    ////    Additional operations    ////
     
     //## auto_generated
     ANGELS* getItsANGELS() const;
@@ -79,8 +83,6 @@ protected :
     //## auto_generated
     void cleanUpRelations();
     
-    ////    Relations and components    ////
-    
     ANGELS* itsANGELS;		//## link itsANGELS
     
     Docking_System* itsDocking_System;		//## link itsDocking_System
@@ -88,8 +90,6 @@ protected :
     Docking_System* itsDocking_System_1;		//## link itsDocking_System_1
     
     Loading_System* itsLoading_System;		//## link itsLoading_System
-    
-    ////    Framework operations    ////
 
 public :
 

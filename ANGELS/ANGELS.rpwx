@@ -17,7 +17,40 @@
 			<isLoadOnDemand type="a">0</isLoadOnDemand>
 			<myViewsWithID type="c">
 				<IRPYRawContainer type="e">
-					<size type="a">1</size>
+					<size type="a">4</size>
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">78</m_nLeft>
+								<m_nTop type="a">78</m_nTop>
+								<m_nRight type="a">953</m_nRight>
+								<m_nBottom type="a">410</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hfilename type="a">.\ANGELS_rpy\DockingSystemPkg.sbsx</_hfilename>
+								<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg</_hsubsystem>
+								<_hclass type="a">Docking_System</_hclass>
+								<_hname type="a">StatechartDiagram</_hname>
+								<_hid type="a">GUID 98d40fae-4f70-4126-a754-e5bad9205bde</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">838 272 </_DownRight>
+						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
 					<CGEMdiDiagramParams type="e">
 						<_placement type="p">
 							<CCommon_WINDOWPLACEMENT type="e">
@@ -28,10 +61,44 @@
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
 								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
 								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
-								<m_nLeft type="a">52</m_nLeft>
-								<m_nTop type="a">52</m_nTop>
-								<m_nRight type="a">1083</m_nRight>
-								<m_nBottom type="a">334</m_nBottom>
+								<m_nLeft type="a">130</m_nLeft>
+								<m_nTop type="a">130</m_nTop>
+								<m_nRight type="a">1031</m_nRight>
+								<m_nBottom type="a">457</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hfilename type="a">.\ANGELS_rpy\DockingSystemPkg.sbsx</_hfilename>
+								<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg</_hsubsystem>
+								<_hclass type="a">Docking_System</_hclass>
+								<_hname type="a">StatechartDiagram</_hname>
+								<_hid type="a">GUID 98d40fae-4f70-4126-a754-e5bad9205bde</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">17 224 </_UpLeft>
+						<_DownRight type="a">1027 691 </_DownRight>
+						<_instanceName type="a">Docking_System[0]</_instanceName>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<m_bIsActiveView type="a">1</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">104</m_nLeft>
+								<m_nTop type="a">104</m_nTop>
+								<m_nRight type="a">1005</m_nRight>
+								<m_nBottom type="a">431</m_nBottom>
 							</CCommon_WINDOWPLACEMENT>
 						</_placement>
 						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
@@ -45,16 +112,50 @@
 								<_hid type="a">GUID ce639e7a-358e-4c5d-b010-4d1f20912785</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 313 </_UpLeft>
-						<_DownRight type="a">904 648 </_DownRight>
-						<_instanceName type="a">Loading_System[0]</_instanceName>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">864 267 </_DownRight>
+						<_instanceName type="a">Docking_System[0]-&gt;itsLoading_System</_instanceName>
 						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
-						<m_bIsActiveView type="a">1</m_bIsActiveView>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">52</m_nLeft>
+								<m_nTop type="a">52</m_nTop>
+								<m_nRight type="a">1083</m_nRight>
+								<m_nBottom type="a">334</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">0</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hfilename type="a">.\ANGELS_rpy\LoadingSystemPkg.sbsx</_hfilename>
+								<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg</_hsubsystem>
+								<_hclass type="a">Loading_System</_hclass>
+								<_hname type="a">StatechartDiagram</_hname>
+								<_hid type="a">GUID ce639e7a-358e-4c5d-b010-4d1f20912785</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 289 </_UpLeft>
+						<_DownRight type="a">1513 627 </_DownRight>
+						<_instanceName type="a">Loading_System[0]</_instanceName>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 				</IRPYRawContainer>
 			</myViewsWithID>
-			<_fullName type="a">C:\Users\LAPTOP\Documents\TUE\Q3\Automotive Systems project\4AT100 Model\ANGELS\ANGELS</_fullName>
+			<_fullName type="a">E:\Documents\Notes\Masters\4AT100\Rhapsody\ANGELS_GIT\4AT100-Model\4AT100-Model\ANGELS\ANGELS</_fullName>
 			<m_SearchScopeList type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -83,7 +184,7 @@
 				<name type="a">DS</name>
 				<idOrFolder type="a">#startHnd# INObjectHandle 
 	- _m2Class = &quot;IArgument&quot;#hndSem#
-	- _filename = &quot;C:\\Users\\LAPTOP\\Documents\\TUE\\Q3\\Automotive Systems project\\4AT100 Model\\ANGELS\\ANGELS_rpy\\DockingSystemPkg.sbsx&quot;#hndSem#
+	- _filename = &quot;E:\\Documents\\Notes\\Masters\\4AT100\\Rhapsody\\ANGELS_GIT\\4AT100-Model\\4AT100-Model\\ANGELS\\ANGELS_rpy\\DockingSystemPkg.sbsx&quot;#hndSem#
 	- _subsystem = &quot;UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg&quot;#hndSem#
 	- _name = &quot;DockInput(double).0&quot;#hndSem#
 	- _id = GUID 1a093f53-9ef2-48aa-b317-07542a23447c#hndSem#

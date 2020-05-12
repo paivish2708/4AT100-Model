@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: ANGELS
@@ -14,14 +14,14 @@
 
 //## auto_generated
 #include "ANGELS.h"
+//## link itsSafety_Standards
+#include "Safety_Standards.h"
 //## link itsDC
 #include "DC.h"
 //## link itsDCOperator
 #include "DCOperator.h"
 //## link itsGovernment
 #include "Government.h"
-//## link itsSafety_Standards
-#include "Safety_Standards.h"
 //#[ ignore
 #define UseCaseAnalysisPkg_ANGELSPkg_ANGELS_ANGELS_SERIALIZE OM_NO_OP
 //#]
@@ -781,6 +781,24 @@ void OMAnimatedANGELS::serializeAttributes(AOMSAttributes* aomsAttributes) const
 }
 
 void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
+    aomsRelations->addRelation("itsCollision_Avoidance_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsCollision_Avoidance_1);
+    aomsRelations->addRelation("itsLoading_System_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsLoading_System_1);
+    aomsRelations->addRelation("itsCommunication_System_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsCommunication_System_1);
+    aomsRelations->addRelation("itsCollision_Detection_2", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_2);
+    aomsRelations->addRelation("itsDocking_System_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsDocking_System_1);
+    aomsRelations->addRelation("itsLocalisation_System_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsLocalisation_System_1);
+    aomsRelations->addRelation("itsCollision_Detection_3", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_3);
+    aomsRelations->addRelation("itsParkingSystem_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsParkingSystem_1);
+    aomsRelations->addRelation("itsTruck_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsTruck_1);
     aomsRelations->addRelation("itsCollision_Avoidance", false, true);
     if(myReal->itsCollision_Avoidance)
         {
@@ -841,24 +859,6 @@ void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
         {
             aomsRelations->ADD_ITEM(myReal->itsDCOperator);
         }
-    aomsRelations->addRelation("itsCollision_Avoidance_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCollision_Avoidance_1);
-    aomsRelations->addRelation("itsLoading_System_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsLoading_System_1);
-    aomsRelations->addRelation("itsCommunication_System_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCommunication_System_1);
-    aomsRelations->addRelation("itsCollision_Detection_2", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_2);
-    aomsRelations->addRelation("itsDocking_System_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsDocking_System_1);
-    aomsRelations->addRelation("itsLocalisation_System_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsLocalisation_System_1);
-    aomsRelations->addRelation("itsCollision_Detection_3", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_3);
-    aomsRelations->addRelation("itsParkingSystem_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsParkingSystem_1);
-    aomsRelations->addRelation("itsTruck_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsTruck_1);
 }
 //#]
 

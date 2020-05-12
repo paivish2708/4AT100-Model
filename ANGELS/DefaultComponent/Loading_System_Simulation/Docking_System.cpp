@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: Pranav
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Docking_System
@@ -18,12 +18,12 @@
 #include "Docking_System.h"
 //## link itsANGELS
 #include "ANGELS.h"
-//## link itsDCOperator
-#include "DCOperator.h"
 //## link itsCollision_Avoidance_1
 #include "Collision_Avoidance.h"
 //## link itsCollision_Detection_1
 #include "Collision_Detection.h"
+//## link itsDCOperator
+#include "DCOperator.h"
 //#[ ignore
 #define UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_MoveTruck_SERIALIZE \
     aomsmethod->addAttribute("SteeringAngle", x2String(SteeringAngle));\
@@ -649,6 +649,10 @@ void OMAnimatedDocking_System::serializeAttributes(AOMSAttributes* aomsAttribute
 }
 
 void OMAnimatedDocking_System::serializeRelations(AOMSRelations* aomsRelations) const {
+    aomsRelations->addRelation("itsTruck", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsTruck);
+    aomsRelations->addRelation("itsLoading_System", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsLoading_System);
     aomsRelations->addRelation("itsANGELS", false, true);
     if(myReal->itsANGELS)
         {
@@ -679,10 +683,6 @@ void OMAnimatedDocking_System::serializeRelations(AOMSRelations* aomsRelations) 
         {
             aomsRelations->ADD_ITEM(myReal->itsDCOperator_1);
         }
-    aomsRelations->addRelation("itsTruck", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsTruck);
-    aomsRelations->addRelation("itsLoading_System", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsLoading_System);
 }
 
 void OMAnimatedDocking_System::rootState_serializeStates(AOMSState* aomsState) const {
