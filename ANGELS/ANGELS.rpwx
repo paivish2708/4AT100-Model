@@ -22,8 +22,8 @@
 						<_placement type="p">
 							<CCommon_WINDOWPLACEMENT type="e">
 								<m_nLength type="a">44</m_nLength>
-								<m_nFlags type="a">0</m_nFlags>
-								<m_showCmd type="a">1</m_showCmd>
+								<m_nFlags type="a">2</m_nFlags>
+								<m_showCmd type="a">3</m_showCmd>
 								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
 								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
@@ -45,16 +45,16 @@
 								<_hid type="a">GUID ce639e7a-358e-4c5d-b010-4d1f20912785</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 183 </_UpLeft>
-						<_DownRight type="a">2397 718 </_DownRight>
+						<_UpLeft type="a">0 313 </_UpLeft>
+						<_DownRight type="a">904 648 </_DownRight>
 						<_instanceName type="a">Loading_System[0]</_instanceName>
 						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
-						<m_bIsActiveView type="a">0</m_bIsActiveView>
+						<m_bIsActiveView type="a">1</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 				</IRPYRawContainer>
 			</myViewsWithID>
-			<_fullName type="a">C:\Users\LAPTOP\Documents\TUE\Q4\Automotive Systems engg\4AT100-Model(with AD)\ANGELS\ANGELS</_fullName>
+			<_fullName type="a">C:\Users\LAPTOP\Documents\TUE\Q3\Automotive Systems project\4AT100 Model\ANGELS\ANGELS</_fullName>
 			<m_SearchScopeList type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -83,7 +83,7 @@
 				<name type="a">DS</name>
 				<idOrFolder type="a">#startHnd# INObjectHandle 
 	- _m2Class = &quot;IArgument&quot;#hndSem#
-	- _filename = &quot;C:\\Users\\LAPTOP\\Documents\\TUE\\Q4\\Automotive Systems engg\\4AT100-Model(with AD)\\ANGELS\\ANGELS_rpy\\DockingSystemPkg.sbsx&quot;#hndSem#
+	- _filename = &quot;C:\\Users\\LAPTOP\\Documents\\TUE\\Q3\\Automotive Systems project\\4AT100 Model\\ANGELS\\ANGELS_rpy\\DockingSystemPkg.sbsx&quot;#hndSem#
 	- _subsystem = &quot;UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg&quot;#hndSem#
 	- _name = &quot;DockInput(double).0&quot;#hndSem#
 	- _id = GUID 1a093f53-9ef2-48aa-b317-07542a23447c#hndSem#

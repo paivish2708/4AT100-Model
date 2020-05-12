@@ -2,7 +2,4 @@
 [Events]
 Loading_System[0]->GEN(ReturnToDockedState())`UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg::Loading_System
 Loading_System[0]->GEN(StopLoadingProc())`UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg::Loading_System
-Loading_System[0]->GEN(LoadingProcess())`UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg::Loading_System
-Loading_System[0]->GEN(StartLoadingProcedure())`UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg::Loading_System
-Loading_System[0]->GEN(AlertDCManager())`UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg::Loading_System
 [Breakpoints]
