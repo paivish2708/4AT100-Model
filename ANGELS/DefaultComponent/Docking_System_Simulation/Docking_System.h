@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Docking_System
-//!	Generated Date	: Sun, 3, May 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\Docking_System.h
 *********************************************************************/
 
@@ -17,457 +17,40 @@
 #include <..\Profiles\SysML\SIDefinitions.h>
 //## auto_generated
 #include <aom\aom.h>
-//##   ignore
-#include <simulation\OMActivityContext.h>
 //## auto_generated
 #include "DockingSystemPkg.h"
-//## classInstance itsCollision_Avoidance
-#include "Collision_Avoidance.h"
-//## classInstance itsCollision_Detection
-#include "Collision_Detection.h"
+//## auto_generated
+#include <oxf\omthread.h>
+//## auto_generated
+#include <oxf\omreactive.h>
+//## auto_generated
+#include <oxf\state.h>
+//## auto_generated
+#include <oxf\event.h>
+//## link itsCollision_Avoidance_1
+class Collision_Avoidance;
+
+//## link itsCollision_Detection_1
+class Collision_Detection;
+
 //## classInstance itsTruck
 #include "Truck.h"
-//## link itsANGELS
-class ANGELS;
-
+//## classInstance itsLoading_System
+#include "Loading_System.h"
 //## link itsDCOperator
 class DCOperator;
+
+//## link itsANGELS
+class ANGELS;
 
 //## package UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg
 
 //## class Docking_System
-class Docking_System : virtual public OMActivityContext {
-public :
-
-    //## auto_generated
-    class MainFlowOfDocking_System;
-    
-    //## auto_generated
-    class MoveTruckForwardOfDocking_System;
-    
-    //## auto_generated
-    class ParkingSpotOfDocking_System;
-    
-//#[ ignore
-    class MainFlowOfDocking_System : virtual public OMActivity {
-    public :
-    
-        class ActionAccepteventaction_0InActivityMainFlowOfDocking_System : virtual public OMAcceptEventAction {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            ActionAccepteventaction_0InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& activity, IOxfEvent::ID eventId, Docking_System& context);
-            
-            virtual OMList<OMString> filterPassableFlows();
-            
-            virtual void acceptEventData();
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            Docking_System* mContext;
-        };
-        
-        class ActionParkingSpotInActivityMainFlowOfDocking_System : virtual public OMCallBehaviorAction {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            ActionParkingSpotInActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& parentActivity, ParkingSpotOfDocking_System& calledActivity, Docking_System& context);
-            
-            virtual OMList<OMString> filterPassableFlows();
-            
-            virtual void setPinsFromParameters();
-            
-            virtual void setParametersFromPins();
-            
-            virtual void setParkingSpot(int value);
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            Docking_System* mContext;
-            
-            ParkingSpotOfDocking_System* mCalledActivity;
-            
-            int ParkingSpot;
-        };
-        
-        class ActionAccepteventaction_4InActivityMainFlowOfDocking_System : virtual public OMAcceptEventAction {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            ActionAccepteventaction_4InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& activity, IOxfEvent::ID eventId, Docking_System& context);
-            
-            virtual OMList<OMString> filterPassableFlows();
-            
-            virtual int getSteeringAngle();
-            
-            virtual int getSpeed();
-            
-            void serializeTokens(AOMSAttributes& tokens);
-            
-            virtual void acceptEventData();
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            Docking_System* mContext;
-            
-            int SteeringAngle;
-            
-            int speed;
-        };
-        
-        class ActionMoveTruckForwardInActivityMainFlowOfDocking_System : virtual public OMCallBehaviorAction {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            ActionMoveTruckForwardInActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& parentActivity, MoveTruckForwardOfDocking_System& calledActivity, Docking_System& context);
-            
-            virtual OMList<OMString> filterPassableFlows();
-            
-            virtual void setPinsFromParameters();
-            
-            virtual void setParametersFromPins();
-            
-            virtual void setSpeed(int value);
-            
-            virtual void setSteeringAngle(int value);
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            Docking_System* mContext;
-            
-            MoveTruckForwardOfDocking_System* mCalledActivity;
-            
-            int speed;
-            
-            int SteeringAngle;
-        };
-        
-        class ActionActivityfinal_8InActivityMainFlowOfDocking_System : virtual public OMActivityFinalNode {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            ActionActivityfinal_8InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& activity, Docking_System& context);
-            
-            virtual OMList<OMString> filterPassableFlows();
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            Docking_System* mContext;
-        };
-        
-        class ActionAccepteventaction_9InActivityMainFlowOfDocking_System : virtual public OMAcceptEventAction {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            ActionAccepteventaction_9InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& activity, IOxfEvent::ID eventId, Docking_System& context);
-            
-            virtual OMList<OMString> filterPassableFlows();
-            
-            virtual int getParkingSpot();
-            
-            void serializeTokens(AOMSAttributes& tokens);
-            
-            virtual void acceptEventData();
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            Docking_System* mContext;
-            
-            int ParkingSpot;
-        };
-        
-        class DataFlow2InActivityMainFlowOfDocking_System : virtual public OMDataFlow<int> {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            DataFlow2InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& context, ActionAccepteventaction_9InActivityMainFlowOfDocking_System& sourceAction, ActionParkingSpotInActivityMainFlowOfDocking_System& targetAction);
-            
-            virtual void giveToken();
-            
-            virtual void takeToken();
-            
-            void serializeTokens(AOMSAttributes& tokens);
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            ActionAccepteventaction_9InActivityMainFlowOfDocking_System* dataSource;
-            
-            ActionParkingSpotInActivityMainFlowOfDocking_System* dataTarget;
-        };
-        
-        class DataFlow4InActivityMainFlowOfDocking_System : virtual public OMDataFlow<int> {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            DataFlow4InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& context, ActionAccepteventaction_4InActivityMainFlowOfDocking_System& sourceAction, ActionMoveTruckForwardInActivityMainFlowOfDocking_System& targetAction);
-            
-            virtual void giveToken();
-            
-            virtual void takeToken();
-            
-            void serializeTokens(AOMSAttributes& tokens);
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            ActionAccepteventaction_4InActivityMainFlowOfDocking_System* dataSource;
-            
-            ActionMoveTruckForwardInActivityMainFlowOfDocking_System* dataTarget;
-        };
-        
-        class DataFlow5InActivityMainFlowOfDocking_System : virtual public OMDataFlow<int> {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            DataFlow5InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& context, ActionAccepteventaction_4InActivityMainFlowOfDocking_System& sourceAction, ActionMoveTruckForwardInActivityMainFlowOfDocking_System& targetAction);
-            
-            virtual void giveToken();
-            
-            virtual void takeToken();
-            
-            void serializeTokens(AOMSAttributes& tokens);
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            ActionAccepteventaction_4InActivityMainFlowOfDocking_System* dataSource;
-            
-            ActionMoveTruckForwardInActivityMainFlowOfDocking_System* dataTarget;
-        };
-        
-        ////    Constructors and destructors    ////
-        
-        MainFlowOfDocking_System(Docking_System& context);
-        
-        ////    Framework    ////
-        
-        Docking_System* mContext;
-    };
-    
-    class MoveTruckForwardOfDocking_System : virtual public OMActivity {
-    public :
-    
-        class ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System : virtual public OMContextualAction {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System(const OMString& id, MoveTruckForwardOfDocking_System& activity, Docking_System& context);
-            
-            virtual OMList<OMString> filterPassableFlows();
-            
-            virtual void setSteeringAngle(double value);
-            
-            virtual void setSpeed(double value);
-            
-            void serializeTokens(AOMSAttributes& tokens);
-            
-            virtual void invokeContextMethod();
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            Docking_System* mContext;
-            
-            double SteeringAngle;
-            
-            double speed;
-        };
-        
-        class ActionFlowfinal_4InActivityMoveTruckForwardOfDocking_System : virtual public OMFlowFinalNode {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            ActionFlowfinal_4InActivityMoveTruckForwardOfDocking_System(const OMString& id, MoveTruckForwardOfDocking_System& activity, Docking_System& context);
-            
-            virtual OMList<OMString> filterPassableFlows();
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            Docking_System* mContext;
-        };
-        
-        class DataFlow0InActivityMoveTruckForwardOfDocking_System : virtual public OMDataFlow<int> {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            DataFlow0InActivityMoveTruckForwardOfDocking_System(const OMString& id, MoveTruckForwardOfDocking_System& context, ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System& targetAction);
-            
-            virtual void giveToken();
-            
-            virtual void takeToken();
-            
-            void serializeTokens(AOMSAttributes& tokens);
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            MoveTruckForwardOfDocking_System* dataSource;
-            
-            ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System* dataTarget;
-        };
-        
-        class DataFlow1InActivityMoveTruckForwardOfDocking_System : virtual public OMDataFlow<int> {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            DataFlow1InActivityMoveTruckForwardOfDocking_System(const OMString& id, MoveTruckForwardOfDocking_System& context, ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System& targetAction);
-            
-            virtual void giveToken();
-            
-            virtual void takeToken();
-            
-            void serializeTokens(AOMSAttributes& tokens);
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            MoveTruckForwardOfDocking_System* dataSource;
-            
-            ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System* dataTarget;
-        };
-        
-        ////    Constructors and destructors    ////
-        
-        MoveTruckForwardOfDocking_System(Docking_System& context);
-        
-        virtual int getSpeed();
-        
-        virtual void setSpeed(int value);
-        
-        virtual int getSteeringAngle();
-        
-        virtual void setSteeringAngle(int value);
-        
-        ////    Framework operations    ////
-        
-        ////    Framework    ////
-        
-        Docking_System* mContext;
-        
-        int speed;
-        
-        int SteeringAngle;
-    };
-    
-    class ParkingSpotOfDocking_System : virtual public OMActivity {
-    public :
-    
-        class ActionFlowfinal_1InActivityParkingSpotOfDocking_System : virtual public OMFlowFinalNode {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            ActionFlowfinal_1InActivityParkingSpotOfDocking_System(const OMString& id, ParkingSpotOfDocking_System& activity, Docking_System& context);
-            
-            virtual OMList<OMString> filterPassableFlows();
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            Docking_System* mContext;
-        };
-        
-        class ActionCalloperation_3InActivityParkingSpotOfDocking_System : virtual public OMContextualAction {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            ActionCalloperation_3InActivityParkingSpotOfDocking_System(const OMString& id, ParkingSpotOfDocking_System& activity, Docking_System& context);
-            
-            virtual OMList<OMString> filterPassableFlows();
-            
-            virtual void setPS(double value);
-            
-            void serializeTokens(AOMSAttributes& tokens);
-            
-            virtual void invokeContextMethod();
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            Docking_System* mContext;
-            
-            double PS;
-        };
-        
-        class DataFlow0InActivityParkingSpotOfDocking_System : virtual public OMDataFlow<int> {
-            ////    Constructors and destructors    ////
-            
-        public :
-        
-            DataFlow0InActivityParkingSpotOfDocking_System(const OMString& id, ParkingSpotOfDocking_System& context, ActionCalloperation_3InActivityParkingSpotOfDocking_System& targetAction);
-            
-            virtual void giveToken();
-            
-            virtual void takeToken();
-            
-            void serializeTokens(AOMSAttributes& tokens);
-            
-            ////    Framework operations    ////
-            
-            ////    Framework    ////
-            
-            ParkingSpotOfDocking_System* dataSource;
-            
-            ActionCalloperation_3InActivityParkingSpotOfDocking_System* dataTarget;
-        };
-        
-        ////    Constructors and destructors    ////
-        
-        ParkingSpotOfDocking_System(Docking_System& context);
-        
-        virtual int getParkingSpot();
-        
-        virtual void setParkingSpot(int value);
-        
-        ////    Framework operations    ////
-        
-        ////    Framework    ////
-        
-        Docking_System* mContext;
-        
-        int ParkingSpot;
-    };
-//#]
-
+class Docking_System : public OMReactive {
     ////    Friends    ////
     
+public :
+
 #ifdef _OMINSTRUMENT
     friend class OMAnimatedDocking_System;
 #endif // _OMINSTRUMENT
@@ -475,89 +58,17 @@ public :
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    Docking_System();
+    Docking_System(IOxfActive* theActiveContext = 0);
     
     //## auto_generated
     virtual ~Docking_System();
     
     ////    Operations    ////
     
-    //## operation MoveTruck(double,double)
-    virtual void MoveTruck(double SteeringAngle, double speed);
-    
-    //## operation PSInput(double)
-    virtual void PSInput(double PS = 0);
-    
-//#[ ignore
-    virtual OMActivity* createMainActivity();
-    
-    virtual void* getMe();
-//#]
-
-    //## activity_action MainFlow:ROOT.accepteventaction_0
-    OMList<OMString> delegatedFilterPassableFlowsFromActionAccepteventaction_0InActivityMainFlowOfDocking_System();
-    
-    //## activity_action MainFlow:ROOT.accepteventaction_0
-    void delegatedAcceptEventDataFromActionAccepteventaction_0InActivityMainFlowOfDocking_System();
-    
-    //## activity_action MainFlow:ROOT.ParkingSpot
-    OMList<OMString> delegatedFilterPassableFlowsFromActionParkingSpotInActivityMainFlowOfDocking_System(int ParkingSpot);
-    
-    //## activity_action MainFlow:ROOT.accepteventaction_4
-    OMList<OMString> delegatedFilterPassableFlowsFromActionAccepteventaction_4InActivityMainFlowOfDocking_System(int& SteeringAngle, int& speed);
-    
-    //## activity_action MainFlow:ROOT.accepteventaction_4
-    void delegatedAcceptEventDataFromActionAccepteventaction_4InActivityMainFlowOfDocking_System(int& SteeringAngle, int& speed);
-    
-    //## activity_action MainFlow:ROOT.MoveTruckForward
-    OMList<OMString> delegatedFilterPassableFlowsFromActionMoveTruckForwardInActivityMainFlowOfDocking_System(int speed, int SteeringAngle);
-    
-    //## activity_action MainFlow:ROOT.activityfinal_8
-    OMList<OMString> delegatedFilterPassableFlowsFromActionActivityfinal_8InActivityMainFlowOfDocking_System();
-    
-    //## activity_action MainFlow:ROOT.accepteventaction_9
-    OMList<OMString> delegatedFilterPassableFlowsFromActionAccepteventaction_9InActivityMainFlowOfDocking_System(int& ParkingSpot);
-    
-    //## activity_action MainFlow:ROOT.accepteventaction_9
-    void delegatedAcceptEventDataFromActionAccepteventaction_9InActivityMainFlowOfDocking_System(int& ParkingSpot);
-    
-    //## activity_action MoveTruckForward:ROOT.calloperation_2
-    OMList<OMString> delegatedFilterPassableFlowsFromActionCalloperation_2InActivityMoveTruckForwardOfDocking_System(double SteeringAngle, double speed);
-    
-    //## activity_action MoveTruckForward:ROOT.calloperation_2
-    void delegatedInvokeContextMethodFromActionCalloperation_2InActivityMoveTruckForwardOfDocking_System(double SteeringAngle, double speed);
-    
-    //## activity_action MoveTruckForward:ROOT.flowfinal_4
-    OMList<OMString> delegatedFilterPassableFlowsFromActionFlowfinal_4InActivityMoveTruckForwardOfDocking_System();
-    
-    //## activity_action ParkingSpot:ROOT.flowfinal_1
-    OMList<OMString> delegatedFilterPassableFlowsFromActionFlowfinal_1InActivityParkingSpotOfDocking_System();
-    
-    //## activity_action ParkingSpot:ROOT.calloperation_3
-    OMList<OMString> delegatedFilterPassableFlowsFromActionCalloperation_3InActivityParkingSpotOfDocking_System(double PS);
-    
-    //## activity_action ParkingSpot:ROOT.calloperation_3
-    void delegatedInvokeContextMethodFromActionCalloperation_3InActivityParkingSpotOfDocking_System(double PS);
+    //## operation MoveTruck(double,double,double)
+    virtual void MoveTruck(double SteeringAngle, double speed, double DockingStatus);
     
     ////    Additional operations    ////
-    
-    //## auto_generated
-    double getParkingSpotInput() const;
-    
-    //## auto_generated
-    void setParkingSpotInput(double p_ParkingSpotInput);
-    
-    //## auto_generated
-    double getSteerAngle() const;
-    
-    //## auto_generated
-    void setSteerAngle(double p_SteerAngle);
-    
-    //## auto_generated
-    double getTruckSpeed() const;
-    
-    //## auto_generated
-    void setTruckSpeed(double p_TruckSpeed);
     
     //## auto_generated
     ANGELS* getItsANGELS() const;
@@ -566,16 +77,10 @@ public :
     void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    Collision_Avoidance* getItsCollision_Avoidance() const;
-    
-    //## auto_generated
     Collision_Avoidance* getItsCollision_Avoidance_1() const;
     
     //## auto_generated
     void setItsCollision_Avoidance_1(Collision_Avoidance* p_Collision_Avoidance);
-    
-    //## auto_generated
-    Collision_Detection* getItsCollision_Detection() const;
     
     //## auto_generated
     Collision_Detection* getItsCollision_Detection_1() const;
@@ -604,31 +109,26 @@ public :
 protected :
 
     //## auto_generated
+    void initStatechart();
+    
+    //## auto_generated
     void cleanUpRelations();
     
-    ////    Attributes    ////
+    //## auto_generated
+    void cancelTimeouts();
     
-    double ParkingSpotInput;		//## attribute ParkingSpotInput
-    
-    double SteerAngle;		//## attribute SteerAngle
-    
-    double TruckSpeed;		//## attribute TruckSpeed
+    //## auto_generated
+    bool cancelTimeout(const IOxfTimeout* arg);
     
     ////    Relations and components    ////
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
-    Collision_Avoidance itsCollision_Avoidance;		//## classInstance itsCollision_Avoidance
-    
     Collision_Avoidance* itsCollision_Avoidance_1;		//## link itsCollision_Avoidance_1
-    
-    Collision_Detection itsCollision_Detection;		//## classInstance itsCollision_Detection
     
     Collision_Detection* itsCollision_Detection_1;		//## link itsCollision_Detection_1
     
     DCOperator* itsDCOperator;		//## link itsDCOperator
-    
-    Truck itsTruck;		//## classInstance itsTruck
     
     Truck* itsTruck_1;		//## link itsTruck_1
     
@@ -680,11 +180,170 @@ public :
     
     //## auto_generated
     void _clearItsTruck_1();
+    
+    ////    Framework    ////
+    
+    //## operation CheckDockingStatus()
+    virtual void CheckDockingStatus();
+    
+    //## operation DockInput(double)
+    virtual void DockInput(double DS);
+    
+    //## auto_generated
+    double getDSInput() const;
+    
+    //## auto_generated
+    void setDSInput(double p_DSInput);
+    
+    //## auto_generated
+    double getDockingStatus() const;
+    
+    //## auto_generated
+    void setDockingStatus(double p_DockingStatus);
+    
+    //## auto_generated
+    double getDockingTime() const;
+    
+    //## auto_generated
+    void setDockingTime(double p_DockingTime);
+    
+    //## auto_generated
+    RhpBoolean getDoorstatus() const;
+    
+    //## auto_generated
+    void setDoorstatus(RhpBoolean p_Doorstatus);
+    
+    //## auto_generated
+    double getSpeed() const;
+    
+    //## auto_generated
+    void setSpeed(double p_Speed);
+    
+    //## auto_generated
+    double getSteerAngle() const;
+    
+    //## auto_generated
+    void setSteerAngle(double p_SteerAngle);
+    
+    //## auto_generated
+    DCOperator* getItsDCOperator_1() const;
+    
+    //## auto_generated
+    void setItsDCOperator_1(DCOperator* p_DCOperator);
+    
+    //## auto_generated
+    Loading_System* getItsLoading_System() const;
+
+protected :
+
+    double DSInput;		//## attribute DSInput
+    
+    double DockingStatus;		//## attribute DockingStatus
+    
+    double DockingTime;		//## attribute DockingTime
+    
+    RhpBoolean Doorstatus;		//## attribute Doorstatus
+    
+    double Speed;		//## attribute Speed
+    
+    double SteerAngle;		//## attribute SteerAngle
+    
+    DCOperator* itsDCOperator_1;		//## link itsDCOperator_1
+    
+    Loading_System itsLoading_System;		//## classInstance itsLoading_System
+    
+    Truck itsTruck;		//## classInstance itsTruck
+
+public :
+
+    //## auto_generated
+    void __setItsDCOperator_1(DCOperator* p_DCOperator);
+    
+    //## auto_generated
+    void _setItsDCOperator_1(DCOperator* p_DCOperator);
+    
+    //## auto_generated
+    void _clearItsDCOperator_1();
+    
+    //## auto_generated
+    void setActiveContext(IOxfActive* theActiveContext, bool activeInstance);
+    
+    //## auto_generated
+    virtual void destroy();
+    
+    // rootState:
+    //## statechart_method
+    inline bool rootState_IN() const;
+    
+    //## statechart_method
+    inline bool rootState_isCompleted();
+    
+    //## statechart_method
+    virtual void rootState_entDef();
+    
+    //## statechart_method
+    virtual IOxfReactive::TakeEventStatus rootState_processEvent();
+    
+    // terminationstate_7:
+    //## statechart_method
+    inline bool terminationstate_7_IN() const;
+    
+    // ManualState:
+    //## statechart_method
+    inline bool ManualState_IN() const;
+    
+    // IdleTruck:
+    //## statechart_method
+    inline bool IdleTruck_IN() const;
+    
+    // Docking:
+    //## statechart_method
+    inline bool Docking_IN() const;
+    
+    //## statechart_method
+    void Docking_entDef();
+    
+    // MoveTheTruck:
+    //## statechart_method
+    inline bool MoveTheTruck_IN() const;
+    
+    // BeginMovement:
+    //## statechart_method
+    inline bool BeginMovement_IN() const;
+    
+    // AutonomousState:
+    //## statechart_method
+    inline bool AutonomousState_IN() const;
+
+protected :
+
+//#[ ignore
+    enum Docking_System_Enum {
+        OMNonState = 0,
+        terminationstate_7 = 1,
+        ManualState = 2,
+        IdleTruck = 3,
+        Docking = 4,
+        MoveTheTruck = 5,
+        BeginMovement = 6,
+        AutonomousState = 7
+    };
+    
+    int rootState_subState;
+    
+    int rootState_active;
+    
+    int Docking_subState;
+    
+    IOxfTimeout* Docking_timeout;
+//#]
 };
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
 class OMAnimatedDocking_System : virtual public AOMInstance {
+    DECLARE_REACTIVE_META(Docking_System, OMAnimatedDocking_System)
+    
     ////    Framework operations    ////
     
 public :
@@ -692,11 +351,69 @@ public :
     virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
     
     virtual void serializeRelations(AOMSRelations* aomsRelations) const;
-
-    DECLARE_ACTIVITY_META(Docking_System, OMAnimatedDocking_System)
+    
+    //## statechart_method
+    void rootState_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void terminationstate_7_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void ManualState_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void IdleTruck_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void Docking_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void MoveTheTruck_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void BeginMovement_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void AutonomousState_serializeStates(AOMSState* aomsState) const;
 };
 //#]
 #endif // _OMINSTRUMENT
+
+inline bool Docking_System::rootState_IN() const {
+    return true;
+}
+
+inline bool Docking_System::rootState_isCompleted() {
+    return ( IS_IN(terminationstate_7) );
+}
+
+inline bool Docking_System::terminationstate_7_IN() const {
+    return rootState_subState == terminationstate_7;
+}
+
+inline bool Docking_System::ManualState_IN() const {
+    return rootState_subState == ManualState;
+}
+
+inline bool Docking_System::IdleTruck_IN() const {
+    return rootState_subState == IdleTruck;
+}
+
+inline bool Docking_System::Docking_IN() const {
+    return rootState_subState == Docking;
+}
+
+inline bool Docking_System::MoveTheTruck_IN() const {
+    return Docking_subState == MoveTheTruck;
+}
+
+inline bool Docking_System::BeginMovement_IN() const {
+    return Docking_subState == BeginMovement;
+}
+
+inline bool Docking_System::AutonomousState_IN() const {
+    return rootState_subState == AutonomousState;
+}
 
 #endif
 /*********************************************************************

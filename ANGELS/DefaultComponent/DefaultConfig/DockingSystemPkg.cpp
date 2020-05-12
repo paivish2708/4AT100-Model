@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DockingSystemPkg
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\DefaultConfig\DockingSystemPkg.cpp
 *********************************************************************/
 
@@ -12,53 +12,71 @@
 #include "DockingSystemPkg.h"
 //## auto_generated
 #include "Docking_System.h"
-//## package UseCaseAnalysisPkg::DockingSystemPkg
+//## package UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg
 
 
 
 //## event StartDockingProcedure()
 StartDockingProcedure::StartDockingProcedure() {
-    setId(StartDockingProcedure_DockingSystemPkg_UseCaseAnalysisPkg_id);
+    setId(StartDockingProcedure_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
 }
 
 bool StartDockingProcedure::isTypeOf(const short id) const {
-    return (StartDockingProcedure_DockingSystemPkg_UseCaseAnalysisPkg_id==id);
+    return (StartDockingProcedure_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
 }
 
-//## event OpenDoors(int)
-OpenDoors::OpenDoors(int p_argument_0) : argument_0(p_argument_0) {
-    setId(OpenDoors_DockingSystemPkg_UseCaseAnalysisPkg_id);
+//## event BeginTruckMovement()
+BeginTruckMovement::BeginTruckMovement() {
+    setId(BeginTruckMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
 }
 
-bool OpenDoors::isTypeOf(const short id) const {
-    return (OpenDoors_DockingSystemPkg_UseCaseAnalysisPkg_id==id);
+bool BeginTruckMovement::isTypeOf(const short id) const {
+    return (BeginTruckMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
 }
 
-//## event CloseDoors()
-CloseDoors::CloseDoors() {
-    setId(CloseDoors_DockingSystemPkg_UseCaseAnalysisPkg_id);
+//## event DCManagerInput()
+DCManagerInput::DCManagerInput() {
+    setId(DCManagerInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
 }
 
-bool CloseDoors::isTypeOf(const short id) const {
-    return (CloseDoors_DockingSystemPkg_UseCaseAnalysisPkg_id==id);
+bool DCManagerInput::isTypeOf(const short id) const {
+    return (DCManagerInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
 }
 
-//## event AlertDCManager()
-AlertDCManager::AlertDCManager() {
-    setId(AlertDCManager_DockingSystemPkg_UseCaseAnalysisPkg_id);
+//## event Autonomousmode()
+Autonomousmode::Autonomousmode() {
+    setId(Autonomousmode_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
 }
 
-bool AlertDCManager::isTypeOf(const short id) const {
-    return (AlertDCManager_DockingSystemPkg_UseCaseAnalysisPkg_id==id);
+bool Autonomousmode::isTypeOf(const short id) const {
+    return (Autonomousmode_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
 }
 
-//## event StopLoadingProc()
-StopLoadingProc::StopLoadingProc() {
-    setId(StopLoadingProc_DockingSystemPkg_UseCaseAnalysisPkg_id);
+//## event EndDocking()
+EndDocking::EndDocking() {
+    setId(EndDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
 }
 
-bool StopLoadingProc::isTypeOf(const short id) const {
-    return (StopLoadingProc_DockingSystemPkg_UseCaseAnalysisPkg_id==id);
+bool EndDocking::isTypeOf(const short id) const {
+    return (EndDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+}
+
+//## event TruckDocking()
+TruckDocking::TruckDocking() {
+    setId(TruckDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+}
+
+bool TruckDocking::isTypeOf(const short id) const {
+    return (TruckDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+}
+
+//## event DockInput(double)
+DockInput::DockInput(double p_DS) : DS(p_DS) {
+    setId(DockInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+}
+
+bool DockInput::isTypeOf(const short id) const {
+    return (DockInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
 }
 
 /*********************************************************************

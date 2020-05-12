@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: DockingSystemPkg
-//!	Generated Date	: Sun, 3, May 2020  
+//!	Generated Date	: Mon, 11, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\DockingSystemPkg.h
 *********************************************************************/
 
@@ -27,11 +27,17 @@ class Docking_System;
 //#[ ignore
 #define StartDockingProcedure_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18201
 
-#define ParkingSpotInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18202
+#define BeginTruckMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18202
 
-#define BeginMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18203
+#define DCManagerInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18203
 
-#define DCManagerInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18204
+#define Autonomousmode_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18204
+
+#define EndDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18205
+
+#define TruckDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18206
+
+#define DockInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18207
 //#]
 
 //## package UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg
@@ -67,53 +73,20 @@ class OMAnimatedStartDockingProcedure : virtual public AOMEvent {
 //#]
 #endif // _OMINSTRUMENT
 
-//## event ParkingSpotInput(double)
-class ParkingSpotInput : public OMEvent {
+//## event BeginTruckMovement()
+class BeginTruckMovement : public OMEvent {
     ////    Friends    ////
     
 public :
 
 #ifdef _OMINSTRUMENT
-    friend class OMAnimatedParkingSpotInput;
+    friend class OMAnimatedBeginTruckMovement;
 #endif // _OMINSTRUMENT
 
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    ParkingSpotInput(double p_Parkingspot = 1);
-    
-    ////    Framework operations    ////
-    
-    //## statechart_method
-    virtual bool isTypeOf(const short id) const;
-    
-    ////    Framework    ////
-    
-    double Parkingspot;		//## auto_generated
-};
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedParkingSpotInput : virtual public AOMEvent {
-    DECLARE_META_EVENT(ParkingSpotInput)
-};
-//#]
-#endif // _OMINSTRUMENT
-
-//## event BeginMovement()
-class BeginMovement : public OMEvent {
-    ////    Friends    ////
-    
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedBeginMovement;
-#endif // _OMINSTRUMENT
-
-    ////    Constructors and destructors    ////
-    
-    //## auto_generated
-    BeginMovement();
+    BeginTruckMovement();
     
     ////    Framework operations    ////
     
@@ -123,8 +96,8 @@ public :
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedBeginMovement : virtual public AOMEvent {
-    DECLARE_META_EVENT(BeginMovement)
+class OMAnimatedBeginTruckMovement : virtual public AOMEvent {
+    DECLARE_META_EVENT(BeginTruckMovement)
 };
 //#]
 #endif // _OMINSTRUMENT
@@ -154,6 +127,129 @@ public :
 //#[ ignore
 class OMAnimatedDCManagerInput : virtual public AOMEvent {
     DECLARE_META_EVENT(DCManagerInput)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event Autonomousmode()
+class Autonomousmode : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedAutonomousmode;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    Autonomousmode();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedAutonomousmode : virtual public AOMEvent {
+    DECLARE_META_EVENT(Autonomousmode)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event EndDocking()
+class EndDocking : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedEndDocking;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    EndDocking();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedEndDocking : virtual public AOMEvent {
+    DECLARE_META_EVENT(EndDocking)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event TruckDocking()
+class TruckDocking : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedTruckDocking;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    TruckDocking();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedTruckDocking : virtual public AOMEvent {
+    DECLARE_META_EVENT(TruckDocking)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event DockInput(double)
+class DockInput : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedDockInput;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    DockInput();
+    
+    //## auto_generated
+    DockInput(double p_DS);
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+    
+    ////    Framework    ////
+    
+    double DS;		//## auto_generated
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedDockInput : virtual public AOMEvent {
+    DECLARE_META_EVENT(DockInput)
 };
 //#]
 #endif // _OMINSTRUMENT

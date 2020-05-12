@@ -17,7 +17,7 @@
 			<strongCGTime type="a">4.30.2020::10:0:20</strongCGTime>
 			<_defaultComposite type="s">GUID 3d6d6801-106c-42a2-878e-f58035eb79aa</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 3d6d6801-106c-42a2-878e-f58035eb79aa</value>
 				<value>GUID 9f39a54a-16f7-462c-9042-179f5cec7ca6</value>
@@ -28,7 +28,7 @@
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

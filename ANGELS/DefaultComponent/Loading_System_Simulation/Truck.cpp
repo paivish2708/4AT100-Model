@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Truck
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Sun, 10, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\Truck.cpp
 *********************************************************************/
 
@@ -16,6 +16,8 @@
 #include "Truck.h"
 //## link itsANGELS
 #include "ANGELS.h"
+//## link itsDocking_System
+#include "Docking_System.h"
 //## link itsDriver
 #include "Driver.h"
 //#[ ignore
@@ -28,6 +30,7 @@
 Truck::Truck() {
     NOTIFY_CONSTRUCTOR(Truck, Truck(), 0, UseCaseAnalysisPkg_ANGELSPkg_TruckPkg_Truck_Truck_SERIALIZE);
     itsANGELS = NULL;
+    itsDocking_System = NULL;
     itsDriver = NULL;
 }
 
@@ -46,6 +49,18 @@ void Truck::setItsANGELS(ANGELS* p_ANGELS) {
             p_ANGELS->_setItsTruck(this);
         }
     _setItsANGELS(p_ANGELS);
+}
+
+Docking_System* Truck::getItsDocking_System() const {
+    return itsDocking_System;
+}
+
+void Truck::setItsDocking_System(Docking_System* p_Docking_System) {
+    if(p_Docking_System != NULL)
+        {
+            p_Docking_System->_setItsTruck_1(this);
+        }
+    _setItsDocking_System(p_Docking_System);
 }
 
 Driver* Truck::getItsDriver() const {
@@ -70,6 +85,16 @@ void Truck::cleanUpRelations() {
                     itsANGELS->__setItsTruck(NULL);
                 }
             itsANGELS = NULL;
+        }
+    if(itsDocking_System != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDocking_System");
+            Truck* p_Truck = itsDocking_System->getItsTruck_1();
+            if(p_Truck != NULL)
+                {
+                    itsDocking_System->__setItsTruck_1(NULL);
+                }
+            itsDocking_System = NULL;
         }
     if(itsDriver != NULL)
         {
@@ -106,6 +131,31 @@ void Truck::_setItsANGELS(ANGELS* p_ANGELS) {
 void Truck::_clearItsANGELS() {
     NOTIFY_RELATION_CLEARED("itsANGELS");
     itsANGELS = NULL;
+}
+
+void Truck::__setItsDocking_System(Docking_System* p_Docking_System) {
+    itsDocking_System = p_Docking_System;
+    if(p_Docking_System != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDocking_System", p_Docking_System, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDocking_System");
+        }
+}
+
+void Truck::_setItsDocking_System(Docking_System* p_Docking_System) {
+    if(itsDocking_System != NULL)
+        {
+            itsDocking_System->__setItsTruck_1(NULL);
+        }
+    __setItsDocking_System(p_Docking_System);
+}
+
+void Truck::_clearItsDocking_System() {
+    NOTIFY_RELATION_CLEARED("itsDocking_System");
+    itsDocking_System = NULL;
 }
 
 void Truck::__setItsDriver(Driver* p_Driver) {
@@ -145,6 +195,11 @@ void OMAnimatedTruck::serializeRelations(AOMSRelations* aomsRelations) const {
     if(myReal->itsDriver)
         {
             aomsRelations->ADD_ITEM(myReal->itsDriver);
+        }
+    aomsRelations->addRelation("itsDocking_System", false, true);
+    if(myReal->itsDocking_System)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDocking_System);
         }
 }
 //#]

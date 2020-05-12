@@ -4,12 +4,16 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Loading_System
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\DefaultConfig\Loading_System.cpp
 *********************************************************************/
 
 //## auto_generated
+#include <oxf\omthread.h>
+//## auto_generated
 #include "Loading_System.h"
+//## link itsANGELS
+#include "ANGELS.h"
 //## link itsDC
 #include "DC.h"
 //## link itsDCOperator
@@ -17,222 +21,22 @@
 //## package UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg
 
 //## class Loading_System
-//#[ ignore
-Loading_System::LoadGoodsOfLoading_System::ActionCalloperation_1InActivityLoadGoodsOfLoading_System::ActionCalloperation_1InActivityLoadGoodsOfLoading_System(const OMString& id, LoadGoodsOfLoading_System& activity, Loading_System& context) : OMContextualAction(id, activity), mContext(&context) {
-}
-
-OMList<OMString> Loading_System::LoadGoodsOfLoading_System::ActionCalloperation_1InActivityLoadGoodsOfLoading_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionCalloperation_1InActivityLoadGoodsOfLoading_System();
-}
-
-void Loading_System::LoadGoodsOfLoading_System::ActionCalloperation_1InActivityLoadGoodsOfLoading_System::invokeContextMethod() {
-    mContext->delegatedInvokeContextMethodFromActionCalloperation_1InActivityLoadGoodsOfLoading_System();
-}
-
-Loading_System::LoadGoodsOfLoading_System::ActionAccepttimeevent_2InActivityLoadGoodsOfLoading_System::ActionAccepttimeevent_2InActivityLoadGoodsOfLoading_System(const OMString& id, LoadGoodsOfLoading_System& activity, int duration, Loading_System& context) : OMTimeEventAction(id, activity, duration), mContext(&context) {
-}
-
-OMList<OMString> Loading_System::LoadGoodsOfLoading_System::ActionAccepttimeevent_2InActivityLoadGoodsOfLoading_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionAccepttimeevent_2InActivityLoadGoodsOfLoading_System();
-}
-
-Loading_System::LoadGoodsOfLoading_System::ActionFlowfinal_3InActivityLoadGoodsOfLoading_System::ActionFlowfinal_3InActivityLoadGoodsOfLoading_System(const OMString& id, LoadGoodsOfLoading_System& activity, Loading_System& context) : OMFlowFinalNode(id, activity), mContext(&context) {
-}
-
-OMList<OMString> Loading_System::LoadGoodsOfLoading_System::ActionFlowfinal_3InActivityLoadGoodsOfLoading_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionFlowfinal_3InActivityLoadGoodsOfLoading_System();
-}
-
-Loading_System::LoadGoodsOfLoading_System::LoadGoodsOfLoading_System(Loading_System& context) : OMActivity(&context), mContext(&context) {
-    // Setup nodes
-    ActionCalloperation_1InActivityLoadGoodsOfLoading_System* varCalloperation_1 = new ActionCalloperation_1InActivityLoadGoodsOfLoading_System("LoadGoods:ROOT.calloperation_1", *this, *mContext);
-    ActionAccepttimeevent_2InActivityLoadGoodsOfLoading_System* varAccepttimeevent_2 = new ActionAccepttimeevent_2InActivityLoadGoodsOfLoading_System("LoadGoods:ROOT.accepttimeevent_2", *this, 10, *mContext);
-    ActionFlowfinal_3InActivityLoadGoodsOfLoading_System* varFlowfinal_3 = new ActionFlowfinal_3InActivityLoadGoodsOfLoading_System("LoadGoods:ROOT.flowfinal_3", *this, *mContext);
-    OMInitialAction* varInitialNode0 = new OMInitialAction("LoadGoods:0", *this);
-    
-    // Setup flows
-    new OMControlFlow("LoadGoods:0", *this, *varInitialNode0, *varCalloperation_1);
-    new OMControlFlow("LoadGoods:1", *this, *varCalloperation_1, *varAccepttimeevent_2);
-    new OMControlFlow("LoadGoods:2", *this, *varAccepttimeevent_2, *varFlowfinal_3);
-}
-
-Loading_System::MainFlowOfLoading_System::ActionAccepteventaction_0InActivityMainFlowOfLoading_System::ActionAccepteventaction_0InActivityMainFlowOfLoading_System(const OMString& id, MainFlowOfLoading_System& activity, IOxfEvent::ID eventId, Loading_System& context) : OMAcceptEventAction(id, activity, eventId), mContext(&context) {
-}
-
-OMList<OMString> Loading_System::MainFlowOfLoading_System::ActionAccepteventaction_0InActivityMainFlowOfLoading_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionAccepteventaction_0InActivityMainFlowOfLoading_System();
-}
-
-void Loading_System::MainFlowOfLoading_System::ActionAccepteventaction_0InActivityMainFlowOfLoading_System::acceptEventData() {
-    mContext->delegatedAcceptEventDataFromActionAccepteventaction_0InActivityMainFlowOfLoading_System();
-}
-
-Loading_System::MainFlowOfLoading_System::ActionAction_15InActivityMainFlowOfLoading_System::ActionAction_15InActivityMainFlowOfLoading_System(const OMString& id, MainFlowOfLoading_System& activity, Loading_System& context) : OMContextualAction(id, activity), mContext(&context) {
-}
-
-OMList<OMString> Loading_System::MainFlowOfLoading_System::ActionAction_15InActivityMainFlowOfLoading_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionAction_15InActivityMainFlowOfLoading_System(speed);
-}
-
-double Loading_System::MainFlowOfLoading_System::ActionAction_15InActivityMainFlowOfLoading_System::getSpeed() {
-    return speed;
-}
-
-void Loading_System::MainFlowOfLoading_System::ActionAction_15InActivityMainFlowOfLoading_System::invokeContextMethod() {
-    mContext->delegatedInvokeContextMethodFromActionAction_15InActivityMainFlowOfLoading_System(speed);
-}
-
-Loading_System::MainFlowOfLoading_System::ActionAccepteventaction_16InActivityMainFlowOfLoading_System::ActionAccepteventaction_16InActivityMainFlowOfLoading_System(const OMString& id, MainFlowOfLoading_System& activity, IOxfEvent::ID eventId, Loading_System& context) : OMAcceptEventAction(id, activity, eventId), mContext(&context) {
-}
-
-OMList<OMString> Loading_System::MainFlowOfLoading_System::ActionAccepteventaction_16InActivityMainFlowOfLoading_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionAccepteventaction_16InActivityMainFlowOfLoading_System();
-}
-
-void Loading_System::MainFlowOfLoading_System::ActionAccepteventaction_16InActivityMainFlowOfLoading_System::acceptEventData() {
-    mContext->delegatedAcceptEventDataFromActionAccepteventaction_16InActivityMainFlowOfLoading_System();
-}
-
-Loading_System::MainFlowOfLoading_System::ActionActivityfinal_19InActivityMainFlowOfLoading_System::ActionActivityfinal_19InActivityMainFlowOfLoading_System(const OMString& id, MainFlowOfLoading_System& activity, Loading_System& context) : OMActivityFinalNode(id, activity), mContext(&context) {
-}
-
-OMList<OMString> Loading_System::MainFlowOfLoading_System::ActionActivityfinal_19InActivityMainFlowOfLoading_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionActivityfinal_19InActivityMainFlowOfLoading_System();
-}
-
-Loading_System::MainFlowOfLoading_System::ActionStopTruckInActivityMainFlowOfLoading_System::ActionStopTruckInActivityMainFlowOfLoading_System(const OMString& id, MainFlowOfLoading_System& parentActivity, StopTruckOfLoading_System& calledActivity, Loading_System& context) : OMCallBehaviorAction(id, parentActivity, calledActivity), mContext(&context), mCalledActivity(&calledActivity) {
-}
-
-OMList<OMString> Loading_System::MainFlowOfLoading_System::ActionStopTruckInActivityMainFlowOfLoading_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionStopTruckInActivityMainFlowOfLoading_System(speed);
-}
-
-void Loading_System::MainFlowOfLoading_System::ActionStopTruckInActivityMainFlowOfLoading_System::setPinsFromParameters() {
-}
-
-void Loading_System::MainFlowOfLoading_System::ActionStopTruckInActivityMainFlowOfLoading_System::setParametersFromPins() {
-    mCalledActivity->setSpeed(speed);
-}
-
-void Loading_System::MainFlowOfLoading_System::ActionStopTruckInActivityMainFlowOfLoading_System::setSpeed(double value) {
-    this->speed = value;
-}
-
-Loading_System::MainFlowOfLoading_System::ActionAccepteventaction_21InActivityMainFlowOfLoading_System::ActionAccepteventaction_21InActivityMainFlowOfLoading_System(const OMString& id, MainFlowOfLoading_System& activity, IOxfEvent::ID eventId, Loading_System& context) : OMAcceptEventAction(id, activity, eventId), mContext(&context) {
-}
-
-OMList<OMString> Loading_System::MainFlowOfLoading_System::ActionAccepteventaction_21InActivityMainFlowOfLoading_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionAccepteventaction_21InActivityMainFlowOfLoading_System();
-}
-
-void Loading_System::MainFlowOfLoading_System::ActionAccepteventaction_21InActivityMainFlowOfLoading_System::acceptEventData() {
-    mContext->delegatedAcceptEventDataFromActionAccepteventaction_21InActivityMainFlowOfLoading_System();
-}
-
-Loading_System::MainFlowOfLoading_System::ActionLoadGoodsInActivityMainFlowOfLoading_System::ActionLoadGoodsInActivityMainFlowOfLoading_System(const OMString& id, MainFlowOfLoading_System& parentActivity, LoadGoodsOfLoading_System& calledActivity, Loading_System& context) : OMCallBehaviorAction(id, parentActivity, calledActivity), mContext(&context), mCalledActivity(&calledActivity) {
-}
-
-OMList<OMString> Loading_System::MainFlowOfLoading_System::ActionLoadGoodsInActivityMainFlowOfLoading_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionLoadGoodsInActivityMainFlowOfLoading_System();
-}
-
-void Loading_System::MainFlowOfLoading_System::ActionLoadGoodsInActivityMainFlowOfLoading_System::setPinsFromParameters() {
-}
-
-void Loading_System::MainFlowOfLoading_System::ActionLoadGoodsInActivityMainFlowOfLoading_System::setParametersFromPins() {
-}
-
-Loading_System::MainFlowOfLoading_System::DataFlow2InActivityMainFlowOfLoading_System::DataFlow2InActivityMainFlowOfLoading_System(const OMString& id, MainFlowOfLoading_System& context, ActionAction_15InActivityMainFlowOfLoading_System& sourceAction, ActionStopTruckInActivityMainFlowOfLoading_System& targetAction) : OMDataFlow<double>(id, context, sourceAction, targetAction), dataSource(&sourceAction), dataTarget(&targetAction) {
-}
-
-void Loading_System::MainFlowOfLoading_System::DataFlow2InActivityMainFlowOfLoading_System::giveToken() {
-    dataTarget->setSpeed(dequeueToken());
-}
-
-void Loading_System::MainFlowOfLoading_System::DataFlow2InActivityMainFlowOfLoading_System::takeToken() {
-    enqueueToken(dataSource->getSpeed());
-}
-
-Loading_System::MainFlowOfLoading_System::MainFlowOfLoading_System(Loading_System& context) : OMActivity(&context), mContext(&context) {
-    // Setup nodes
-    ActionAccepteventaction_0InActivityMainFlowOfLoading_System* varAccepteventaction_0 = new ActionAccepteventaction_0InActivityMainFlowOfLoading_System("MainFlow:ROOT.accepteventaction_0", *this, StartDockingProcedure_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id, *mContext);
-    ActionAction_15InActivityMainFlowOfLoading_System* varAction_15 = new ActionAction_15InActivityMainFlowOfLoading_System("MainFlow:ROOT.action_15", *this, *mContext);
-    ActionAccepteventaction_16InActivityMainFlowOfLoading_System* varAccepteventaction_16 = new ActionAccepteventaction_16InActivityMainFlowOfLoading_System("MainFlow:ROOT.accepteventaction_16", *this, CloseDoors_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id, *mContext);
-    ActionActivityfinal_19InActivityMainFlowOfLoading_System* varActivityfinal_19 = new ActionActivityfinal_19InActivityMainFlowOfLoading_System("MainFlow:ROOT.activityfinal_19", *this, *mContext);
-    ActionStopTruckInActivityMainFlowOfLoading_System* varStopTruck = new ActionStopTruckInActivityMainFlowOfLoading_System("MainFlow:ROOT.StopTruck", *this, *(new StopTruckOfLoading_System(context)), *mContext);
-    ActionAccepteventaction_21InActivityMainFlowOfLoading_System* varAccepteventaction_21 = new ActionAccepteventaction_21InActivityMainFlowOfLoading_System("MainFlow:ROOT.accepteventaction_21", *this, OpenDoors_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id, *mContext);
-    ActionLoadGoodsInActivityMainFlowOfLoading_System* varLoadGoods = new ActionLoadGoodsInActivityMainFlowOfLoading_System("MainFlow:ROOT.LoadGoods", *this, *(new LoadGoodsOfLoading_System(context)), *mContext);
-    OMInitialAction* varInitialNode0 = new OMInitialAction("MainFlow:0", *this);
-    
-    // Setup flows
-    new OMControlFlow("MainFlow:0", *this, *varInitialNode0, *varAccepteventaction_0);
-    new OMControlFlow("MainFlow:1", *this, *varAccepteventaction_0, *varAction_15);
-    new DataFlow2InActivityMainFlowOfLoading_System("MainFlow:2", *this, *varAction_15, *varStopTruck);
-    new OMControlFlow("MainFlow:3", *this, *varStopTruck, *varAccepteventaction_21);
-    new OMControlFlow("MainFlow:4", *this, *varAccepteventaction_16, *varActivityfinal_19);
-    new OMControlFlow("MainFlow:5", *this, *varLoadGoods, *varAccepteventaction_16);
-    new OMControlFlow("MainFlow:6", *this, *varAccepteventaction_21, *varLoadGoods);
-}
-
-Loading_System::StopTruckOfLoading_System::ActionCalloperation_0InActivityStopTruckOfLoading_System::ActionCalloperation_0InActivityStopTruckOfLoading_System(const OMString& id, StopTruckOfLoading_System& activity, Loading_System& context) : OMContextualAction(id, activity), mContext(&context) {
-}
-
-OMList<OMString> Loading_System::StopTruckOfLoading_System::ActionCalloperation_0InActivityStopTruckOfLoading_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionCalloperation_0InActivityStopTruckOfLoading_System(speed);
-}
-
-void Loading_System::StopTruckOfLoading_System::ActionCalloperation_0InActivityStopTruckOfLoading_System::setSpeed(double value) {
-    this->speed = value;
-}
-
-void Loading_System::StopTruckOfLoading_System::ActionCalloperation_0InActivityStopTruckOfLoading_System::invokeContextMethod() {
-    mContext->delegatedInvokeContextMethodFromActionCalloperation_0InActivityStopTruckOfLoading_System(speed);
-}
-
-Loading_System::StopTruckOfLoading_System::ActionFlowfinal_1InActivityStopTruckOfLoading_System::ActionFlowfinal_1InActivityStopTruckOfLoading_System(const OMString& id, StopTruckOfLoading_System& activity, Loading_System& context) : OMFlowFinalNode(id, activity), mContext(&context) {
-}
-
-OMList<OMString> Loading_System::StopTruckOfLoading_System::ActionFlowfinal_1InActivityStopTruckOfLoading_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionFlowfinal_1InActivityStopTruckOfLoading_System();
-}
-
-Loading_System::StopTruckOfLoading_System::DataFlow0InActivityStopTruckOfLoading_System::DataFlow0InActivityStopTruckOfLoading_System(const OMString& id, StopTruckOfLoading_System& context, ActionCalloperation_0InActivityStopTruckOfLoading_System& targetAction) : OMDataFlow<double>(id, context, *(new OMInitialAction("speed", context)), targetAction), dataSource(&context), dataTarget(&targetAction) {
-}
-
-void Loading_System::StopTruckOfLoading_System::DataFlow0InActivityStopTruckOfLoading_System::giveToken() {
-    dataTarget->setSpeed(dequeueToken());
-}
-
-void Loading_System::StopTruckOfLoading_System::DataFlow0InActivityStopTruckOfLoading_System::takeToken() {
-    enqueueToken(dataSource->getSpeed());
-}
-
-Loading_System::StopTruckOfLoading_System::StopTruckOfLoading_System(Loading_System& context) : OMActivity(&context), mContext(&context) {
-    // Setup nodes
-    ActionCalloperation_0InActivityStopTruckOfLoading_System* varCalloperation_0 = new ActionCalloperation_0InActivityStopTruckOfLoading_System("StopTruck:ROOT.calloperation_0", *this, *mContext);
-    ActionFlowfinal_1InActivityStopTruckOfLoading_System* varFlowfinal_1 = new ActionFlowfinal_1InActivityStopTruckOfLoading_System("StopTruck:ROOT.flowfinal_1", *this, *mContext);
-    
-    // Setup flows
-    new DataFlow0InActivityStopTruckOfLoading_System("StopTruck:0", *this, *varCalloperation_0);
-    new OMControlFlow("StopTruck:1", *this, *varCalloperation_0, *varFlowfinal_1);
-}
-
-double Loading_System::StopTruckOfLoading_System::getSpeed() {
-    return speed;
-}
-
-void Loading_System::StopTruckOfLoading_System::setSpeed(double value) {
-    this->speed = value;
-}
-//#]
-
-Loading_System::Loading_System() : CheckDoorStatus(true) {
+Loading_System::Loading_System(IOxfActive* theActiveContext) : Doorstatus(0) {
+    setActiveContext(theActiveContext, false);
+    {
+        {
+            itsDocking_System.setShouldDelete(false);
+        }
+    }
+    itsANGELS = NULL;
     itsDC = NULL;
     itsDCOperator = NULL;
+    initStatechart();
 }
 
 Loading_System::~Loading_System() {
     cleanUpRelations();
+    cancelTimeouts();
 }
 
 void Loading_System::LoadingProcess() {
@@ -240,167 +44,47 @@ void Loading_System::LoadingProcess() {
     //#]
 }
 
+void Loading_System::OpenDoors(RhpBoolean Doorstate) {
+    //#[ operation OpenDoors(RhpBoolean)
+    if (Doorstatus != Doorstate)
+    {Doorstatus=1;}
+    //#]
+}
+
 void Loading_System::StoptheTruck(double speed) {
     //#[ operation StoptheTruck(double)
-    speed=0;    
+    speed = 0;
+    double Speed = speed;
     
     //#]
 }
 
-OMList<OMString> Loading_System::delegatedFilterPassableFlowsFromActionCalloperation_1InActivityLoadGoodsOfLoading_System() {
-    //#[ activity_action LoadGoods:ROOT.calloperation_1
-    OMList<OMString> ans;
-    ans.add("LoadGoods:1");
-    return ans;
-    //#]
+RhpBoolean Loading_System::getDoorstatus() const {
+    return Doorstatus;
 }
 
-void Loading_System::delegatedInvokeContextMethodFromActionCalloperation_1InActivityLoadGoodsOfLoading_System() {
-    //#[ activity_action LoadGoods:ROOT.calloperation_1
-    LoadingProcess();
-    //#]
+void Loading_System::setDoorstatus(RhpBoolean p_Doorstatus) {
+    Doorstatus = p_Doorstatus;
 }
 
-OMList<OMString> Loading_System::delegatedFilterPassableFlowsFromActionAccepttimeevent_2InActivityLoadGoodsOfLoading_System() {
-    //#[ activity_action LoadGoods:ROOT.accepttimeevent_2
-    OMList<OMString> ans;
-    ans.add("LoadGoods:2");
-    return ans;
-    //#]
+int Loading_System::getLoadingTime() const {
+    return LoadingTime;
 }
 
-OMList<OMString> Loading_System::delegatedFilterPassableFlowsFromActionFlowfinal_3InActivityLoadGoodsOfLoading_System() {
-    //#[ activity_action LoadGoods:ROOT.flowfinal_3
-    OMList<OMString> ans;
-    return ans;
-    //#]
+void Loading_System::setLoadingTime(int p_LoadingTime) {
+    LoadingTime = p_LoadingTime;
 }
 
-//#[ ignore
-OMActivity* Loading_System::createMainActivity() {
-    return new MainFlowOfLoading_System(*this);
-}
-//#]
-
-OMList<OMString> Loading_System::delegatedFilterPassableFlowsFromActionAccepteventaction_0InActivityMainFlowOfLoading_System() {
-    //#[ activity_action MainFlow:ROOT.accepteventaction_0
-    OMList<OMString> ans;
-    ans.add("MainFlow:1");
-    return ans;
-    //#]
+ANGELS* Loading_System::getItsANGELS() const {
+    return itsANGELS;
 }
 
-void Loading_System::delegatedAcceptEventDataFromActionAccepteventaction_0InActivityMainFlowOfLoading_System() {
-    //#[ activity_action MainFlow:ROOT.accepteventaction_0
-    //#]
-}
-
-OMList<OMString> Loading_System::delegatedFilterPassableFlowsFromActionAction_15InActivityMainFlowOfLoading_System(double& speed) {
-    //#[ activity_action MainFlow:ROOT.action_15
-    OMList<OMString> ans;
-    ans.add("MainFlow:2");
-    return ans;
-    //#]
-}
-
-void Loading_System::delegatedInvokeContextMethodFromActionAction_15InActivityMainFlowOfLoading_System(double& speed) {
-    //#[ activity_action MainFlow:ROOT.action_15
-    //#]
-}
-
-OMList<OMString> Loading_System::delegatedFilterPassableFlowsFromActionAccepteventaction_16InActivityMainFlowOfLoading_System() {
-    //#[ activity_action MainFlow:ROOT.accepteventaction_16
-    OMList<OMString> ans;
-    ans.add("MainFlow:4");
-    return ans;
-    //#]
-}
-
-void Loading_System::delegatedAcceptEventDataFromActionAccepteventaction_16InActivityMainFlowOfLoading_System() {
-    //#[ activity_action MainFlow:ROOT.accepteventaction_16
-    //#]
-}
-
-OMList<OMString> Loading_System::delegatedFilterPassableFlowsFromActionActivityfinal_19InActivityMainFlowOfLoading_System() {
-    //#[ activity_action MainFlow:ROOT.activityfinal_19
-    OMList<OMString> ans;
-    return ans;
-    //#]
-}
-
-OMList<OMString> Loading_System::delegatedFilterPassableFlowsFromActionStopTruckInActivityMainFlowOfLoading_System(double speed) {
-    //#[ activity_action MainFlow:ROOT.StopTruck
-    OMList<OMString> ans;
-    if (CheckDoorStatus) { ans.add("MainFlow:3"); }
-    return ans;
-    //#]
-}
-
-OMList<OMString> Loading_System::delegatedFilterPassableFlowsFromActionAccepteventaction_21InActivityMainFlowOfLoading_System() {
-    //#[ activity_action MainFlow:ROOT.accepteventaction_21
-    OMList<OMString> ans;
-    ans.add("MainFlow:6");
-    return ans;
-    //#]
-}
-
-void Loading_System::delegatedAcceptEventDataFromActionAccepteventaction_21InActivityMainFlowOfLoading_System() {
-    //#[ activity_action MainFlow:ROOT.accepteventaction_21
-    CheckDoorStatus = ((OpenDoors*)getCurrentEvent())->CheckDoorStatus;
-    //#]
-}
-
-OMList<OMString> Loading_System::delegatedFilterPassableFlowsFromActionLoadGoodsInActivityMainFlowOfLoading_System() {
-    //#[ activity_action MainFlow:ROOT.LoadGoods
-    OMList<OMString> ans;
-    ans.add("MainFlow:5");
-    return ans;
-    //#]
-}
-
-OMList<OMString> Loading_System::delegatedFilterPassableFlowsFromActionCalloperation_0InActivityStopTruckOfLoading_System(double speed) {
-    //#[ activity_action StopTruck:ROOT.calloperation_0
-    OMList<OMString> ans;
-    ans.add("StopTruck:1");
-    return ans;
-    //#]
-}
-
-void Loading_System::delegatedInvokeContextMethodFromActionCalloperation_0InActivityStopTruckOfLoading_System(double speed) {
-    //#[ activity_action StopTruck:ROOT.calloperation_0
-    StoptheTruck(speed);
-    //#]
-}
-
-OMList<OMString> Loading_System::delegatedFilterPassableFlowsFromActionFlowfinal_1InActivityStopTruckOfLoading_System() {
-    //#[ activity_action StopTruck:ROOT.flowfinal_1
-    OMList<OMString> ans;
-    return ans;
-    //#]
-}
-
-RhpBoolean Loading_System::getCheckDoorStatus() const {
-    return CheckDoorStatus;
-}
-
-void Loading_System::setCheckDoorStatus(RhpBoolean p_CheckDoorStatus) {
-    CheckDoorStatus = p_CheckDoorStatus;
-}
-
-double Loading_System::getDockingTime() const {
-    return DockingTime;
-}
-
-void Loading_System::setDockingTime(double p_DockingTime) {
-    DockingTime = p_DockingTime;
-}
-
-int Loading_System::getSpeed() const {
-    return speed;
-}
-
-void Loading_System::setSpeed(int p_speed) {
-    speed = p_speed;
+void Loading_System::setItsANGELS(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
+        {
+            p_ANGELS->_setItsLoading_System(this);
+        }
+    _setItsANGELS(p_ANGELS);
 }
 
 DC* Loading_System::getItsDC() const {
@@ -427,13 +111,34 @@ void Loading_System::setItsDCOperator(DCOperator* p_DCOperator) {
     _setItsDCOperator(p_DCOperator);
 }
 
+Docking_System* Loading_System::getItsDocking_System() const {
+    return (Docking_System*) &itsDocking_System;
+}
+
 bool Loading_System::startBehavior() {
-    bool done = false;
-    done = OMActivityContext::startBehavior();
+    bool done = true;
+    done &= itsDocking_System.startBehavior();
+    done &= OMReactive::startBehavior();
     return done;
 }
 
+void Loading_System::initStatechart() {
+    rootState_subState = OMNonState;
+    rootState_active = OMNonState;
+    LoadingState_subState = OMNonState;
+    LoadingState_timeout = NULL;
+}
+
 void Loading_System::cleanUpRelations() {
+    if(itsANGELS != NULL)
+        {
+            Loading_System* p_Loading_System = itsANGELS->getItsLoading_System();
+            if(p_Loading_System != NULL)
+                {
+                    itsANGELS->__setItsLoading_System(NULL);
+                }
+            itsANGELS = NULL;
+        }
     if(itsDC != NULL)
         {
             Loading_System* p_Loading_System = itsDC->getItsLoading_System();
@@ -452,6 +157,36 @@ void Loading_System::cleanUpRelations() {
                 }
             itsDCOperator = NULL;
         }
+}
+
+void Loading_System::cancelTimeouts() {
+    cancel(LoadingState_timeout);
+}
+
+bool Loading_System::cancelTimeout(const IOxfTimeout* arg) {
+    bool res = false;
+    if(LoadingState_timeout == arg)
+        {
+            LoadingState_timeout = NULL;
+            res = true;
+        }
+    return res;
+}
+
+void Loading_System::__setItsANGELS(ANGELS* p_ANGELS) {
+    itsANGELS = p_ANGELS;
+}
+
+void Loading_System::_setItsANGELS(ANGELS* p_ANGELS) {
+    if(itsANGELS != NULL)
+        {
+            itsANGELS->__setItsLoading_System(NULL);
+        }
+    __setItsANGELS(p_ANGELS);
+}
+
+void Loading_System::_clearItsANGELS() {
+    itsANGELS = NULL;
 }
 
 void Loading_System::__setItsDC(DC* p_DC) {
@@ -484,6 +219,155 @@ void Loading_System::_setItsDCOperator(DCOperator* p_DCOperator) {
 
 void Loading_System::_clearItsDCOperator() {
     itsDCOperator = NULL;
+}
+
+void Loading_System::setActiveContext(IOxfActive* theActiveContext, bool activeInstance) {
+    OMReactive::setActiveContext(theActiveContext, activeInstance);
+    {
+        itsDocking_System.setActiveContext(theActiveContext, false);
+    }
+}
+
+void Loading_System::destroy() {
+    itsDocking_System.destroy();
+    OMReactive::destroy();
+}
+
+void Loading_System::rootState_entDef() {
+    {
+        rootState_subState = DockedState;
+        rootState_active = DockedState;
+    }
+}
+
+IOxfReactive::TakeEventStatus Loading_System::rootState_processEvent() {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    switch (rootState_active) {
+        // State StartLoading
+        case StartLoading:
+        {
+            if(IS_EVENT_TYPE_OF(StopLoadingProc_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+                {
+                    cancel(LoadingState_timeout);
+                    LoadingState_subState = LoadedState;
+                    rootState_active = LoadedState;
+                    res = eventConsumed;
+                }
+            else if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
+                {
+                    if(getCurrentEvent() == LoadingState_timeout)
+                        {
+                            cancel(LoadingState_timeout);
+                            pushNullTransition();
+                            LoadingState_subState = accepttimeevent_6;
+                            rootState_active = accepttimeevent_6;
+                            res = eventConsumed;
+                        }
+                }
+            
+            
+        }
+        break;
+        case accepttimeevent_6:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    popNullTransition();
+                    //#[ transition 2 
+                    LoadingTime++;
+                    //#]
+                    LoadingState_subState = StartLoading;
+                    rootState_active = StartLoading;
+                    LoadingState_timeout = scheduleTimeout(1000, NULL);
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        // State LoadedState
+        case LoadedState:
+        {
+            if(IS_EVENT_TYPE_OF(ReturnToDockedState_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+                {
+                    switch (LoadingState_subState) {
+                        // State StartLoading
+                        case StartLoading:
+                        {
+                            cancel(LoadingState_timeout);
+                        }
+                        break;
+                        case accepttimeevent_6:
+                        {
+                            popNullTransition();
+                        }
+                        break;
+                        
+                        default:
+                            break;
+                    }
+                    LoadingState_subState = OMNonState;
+                    rootState_subState = ReadyForParking;
+                    rootState_active = ReadyForParking;
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        // State IdleState
+        case IdleState:
+        {
+            if(IS_EVENT_TYPE_OF(StartLoadingProcedure_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+                {
+                    //## transition 0 
+                    if(Doorstatus)
+                        {
+                            //#[ transition 0 
+                            OpenDoors(1);
+                            //#]
+                            rootState_subState = DoorsClosed;
+                            rootState_active = DoorsClosed;
+                            res = eventConsumed;
+                        }
+                }
+            
+        }
+        break;
+        // State DoorsClosed
+        case DoorsClosed:
+        {
+            if(IS_EVENT_TYPE_OF(LoadingProcess_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+                {
+                    LoadingState_entDef();
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        // State DockedState
+        case DockedState:
+        {
+            if(IS_EVENT_TYPE_OF(AlertDCManager_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+                {
+                    rootState_subState = IdleState;
+                    rootState_active = IdleState;
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        default:
+            break;
+    }
+    return res;
+}
+
+void Loading_System::LoadingState_entDef() {
+    rootState_subState = LoadingState;
+    LoadingState_subState = StartLoading;
+    rootState_active = StartLoading;
+    LoadingState_timeout = scheduleTimeout(1000, NULL);
 }
 
 /*********************************************************************

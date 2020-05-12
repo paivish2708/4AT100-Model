@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: LoadingSystemPkg
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\LoadingSystemPkg.h
 *********************************************************************/
 
@@ -31,9 +31,15 @@ class Loading_System;
 
 #define OpenDoors_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14203
 
-#define StartDockingProcedure_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14204
+#define StartLoadingProcedure_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14204
 
 #define StopLoadingProc_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14205
+
+#define DoorStatus_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14206
+
+#define LoadingProcess_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14207
+
+#define ReturnToDockedState_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14208
 //#]
 
 //## package UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg
@@ -69,7 +75,7 @@ class OMAnimatedAlertDCManager : virtual public AOMEvent {
 //#]
 #endif // _OMINSTRUMENT
 
-//## event CloseDoors()
+//## event CloseDoors(double)
 class CloseDoors : public OMEvent {
     ////    Friends    ////
     
@@ -82,12 +88,16 @@ public :
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    CloseDoors();
+    CloseDoors(double p_doorstate = 1);
     
     ////    Framework operations    ////
     
     //## statechart_method
     virtual bool isTypeOf(const short id) const;
+    
+    ////    Framework    ////
+    
+    double doorstate;		//## auto_generated
 };
 
 #ifdef _OMINSTRUMENT
@@ -98,7 +108,7 @@ class OMAnimatedCloseDoors : virtual public AOMEvent {
 //#]
 #endif // _OMINSTRUMENT
 
-//## event OpenDoors(RhpBoolean)
+//## event OpenDoors()
 class OpenDoors : public OMEvent {
     ////    Friends    ////
     
@@ -111,16 +121,12 @@ public :
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    OpenDoors(RhpBoolean p_CheckDoorStatus = 1);
+    OpenDoors();
     
     ////    Framework operations    ////
     
     //## statechart_method
     virtual bool isTypeOf(const short id) const;
-    
-    ////    Framework    ////
-    
-    RhpBoolean CheckDoorStatus;		//## auto_generated
 };
 
 #ifdef _OMINSTRUMENT
@@ -131,20 +137,20 @@ class OMAnimatedOpenDoors : virtual public AOMEvent {
 //#]
 #endif // _OMINSTRUMENT
 
-//## event StartDockingProcedure()
-class StartDockingProcedure : public OMEvent {
+//## event StartLoadingProcedure()
+class StartLoadingProcedure : public OMEvent {
     ////    Friends    ////
     
 public :
 
 #ifdef _OMINSTRUMENT
-    friend class OMAnimatedStartDockingProcedure;
+    friend class OMAnimatedStartLoadingProcedure;
 #endif // _OMINSTRUMENT
 
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    StartDockingProcedure();
+    StartLoadingProcedure();
     
     ////    Framework operations    ////
     
@@ -154,8 +160,8 @@ public :
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedStartDockingProcedure : virtual public AOMEvent {
-    DECLARE_META_EVENT(StartDockingProcedure)
+class OMAnimatedStartLoadingProcedure : virtual public AOMEvent {
+    DECLARE_META_EVENT(StartLoadingProcedure)
 };
 //#]
 #endif // _OMINSTRUMENT
@@ -185,6 +191,93 @@ public :
 //#[ ignore
 class OMAnimatedStopLoadingProc : virtual public AOMEvent {
     DECLARE_META_EVENT(StopLoadingProc)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event DoorStatus()
+class DoorStatus : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedDoorStatus;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    DoorStatus();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedDoorStatus : virtual public AOMEvent {
+    DECLARE_META_EVENT(DoorStatus)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event LoadingProcess()
+class LoadingProcess : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedLoadingProcess;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    LoadingProcess();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedLoadingProcess : virtual public AOMEvent {
+    DECLARE_META_EVENT(LoadingProcess)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event ReturnToDockedState()
+class ReturnToDockedState : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedReturnToDockedState;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    ReturnToDockedState();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedReturnToDockedState : virtual public AOMEvent {
+    DECLARE_META_EVENT(ReturnToDockedState)
 };
 //#]
 #endif // _OMINSTRUMENT

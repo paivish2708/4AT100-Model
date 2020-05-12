@@ -12,7 +12,7 @@
 			<_myState type="a">8192</_myState>
 			<_name type="a">DefaultComponent</_name>
 			<_modifiedTimeWeak type="a">4.29.2020::14:28:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.30.2020::10:10:28</_modifiedTime>
+			<_modifiedTime type="a">5.12.2020::20:10:33</_modifiedTime>
 			<m_buildType type="a">Executable</m_buildType>
 			<m_configActive type="r">
 				<ICodeGenConfigInfoHandle type="e">
@@ -225,7 +225,7 @@
 			<_myState type="a">8192</_myState>
 			<_name type="a">SimulateModelFragment</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
@@ -236,13 +236,13 @@
 			</_typeOf>
 			<_isOrdered type="a">0</_isOrdered>
 			<AggregatesList type="e">
-				<value>GUID 78d6aa30-7718-4c21-99ff-4d091aedb822</value>
-				<value>GUID 8a18f7c3-0a0d-4d20-9af7-08723b04a5f6</value>
-				<value>GUID 0425b8d9-e05f-468c-a3b0-41c50f2e1d80</value>
+				<value>GUID 2e36cc5b-70e9-4113-a349-0245644b1f55</value>
+				<value>GUID 29de1db6-9293-4061-98f9-9a7e499f4924</value>
+				<value>GUID e9d31026-0c49-460b-bcca-afde1ac6bc65</value>
 			</AggregatesList>
 		</ITag>
 		<IInstanceValue type="e">
-			<_id type="a">GUID 78d6aa30-7718-4c21-99ff-4d091aedb822</_id>
+			<_id type="a">GUID 2e36cc5b-70e9-4113-a349-0245644b1f55</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
 			<_value type="r">
@@ -253,32 +253,32 @@
 			</_value>
 		</IInstanceValue>
 		<IInstanceValue type="e">
-			<_id type="a">GUID 8a18f7c3-0a0d-4d20-9af7-08723b04a5f6</_id>
+			<_id type="a">GUID 29de1db6-9293-4061-98f9-9a7e499f4924</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
 			<_value type="r">
 				<IHandle type="e">
-					<_hm2Class type="a">IActivityGraph</_hm2Class>
+					<_hm2Class type="a">IStateChart</_hm2Class>
 					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg</_hsubsystem>
 					<_hclass type="a">Loading_System</_hclass>
-					<_hname type="a">MainFlow</_hname>
-					<_hid type="a">GUID ee640bec-0720-4af1-b5d4-9b2697f2208c</_hid>
+					<_hname type="a">statechart_1</_hname>
+					<_hid type="a">GUID 9ba505c2-2c3b-4e43-a68d-268a893b066d</_hid>
 				</IHandle>
 			</_value>
 		</IInstanceValue>
 		<IInstanceValue type="e">
-			<_id type="a">GUID 0425b8d9-e05f-468c-a3b0-41c50f2e1d80</_id>
+			<_id type="a">GUID e9d31026-0c49-460b-bcca-afde1ac6bc65</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
 			<_value type="r">
 				<IHandle type="e">
-					<_hm2Class type="a">IActivityGraph</_hm2Class>
+					<_hm2Class type="a">IStateChart</_hm2Class>
 					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg</_hsubsystem>
 					<_hclass type="a">Loading_System</_hclass>
-					<_hname type="a">MainFlow</_hname>
-					<_hid type="a">GUID ee640bec-0720-4af1-b5d4-9b2697f2208c</_hid>
+					<_hname type="a">statechart_1</_hname>
+					<_hid type="a">GUID 9ba505c2-2c3b-4e43-a68d-268a893b066d</_hid>
 				</IHandle>
 			</_value>
 		</IInstanceValue>

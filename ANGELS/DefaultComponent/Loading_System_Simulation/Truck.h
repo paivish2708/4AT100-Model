@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Truck
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Sun, 10, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\Truck.h
 *********************************************************************/
 
@@ -21,6 +21,9 @@
 #include "TruckPkg.h"
 //## link itsANGELS
 class ANGELS;
+
+//## link itsDocking_System
+class Docking_System;
 
 //## link itsDriver
 class Driver;
@@ -54,6 +57,12 @@ public :
     void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
+    Docking_System* getItsDocking_System() const;
+    
+    //## auto_generated
+    void setItsDocking_System(Docking_System* p_Docking_System);
+    
+    //## auto_generated
     Driver* getItsDriver() const;
     
     //## auto_generated
@@ -67,6 +76,8 @@ protected :
     ////    Relations and components    ////
     
     ANGELS* itsANGELS;		//## link itsANGELS
+    
+    Docking_System* itsDocking_System;		//## link itsDocking_System
     
     Driver* itsDriver;		//## link itsDriver
     
@@ -82,6 +93,15 @@ public :
     
     //## auto_generated
     void _clearItsANGELS();
+    
+    //## auto_generated
+    void __setItsDocking_System(Docking_System* p_Docking_System);
+    
+    //## auto_generated
+    void _setItsDocking_System(Docking_System* p_Docking_System);
+    
+    //## auto_generated
+    void _clearItsDocking_System();
     
     //## auto_generated
     void __setItsDriver(Driver* p_Driver);

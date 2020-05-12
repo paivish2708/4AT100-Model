@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Driver
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Sun, 10, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\Driver.h
 *********************************************************************/
 
@@ -19,13 +19,18 @@
 #include <aom\aom.h>
 //## auto_generated
 #include "ActorPkg.h"
-//## link itsTruck_4
-class Truck;
+//## actor Driver
+#include "Truck.h"
+//## auto_generated
+class ANGELS;
+
+//## auto_generated
+class Docking_System;
 
 //## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
 //## actor Driver
-class Driver {
+class Driver : public Truck {
     ////    Friends    ////
     
 public :
@@ -75,13 +80,15 @@ public :
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedDriver : virtual public AOMInstance {
+class OMAnimatedDriver : public OMAnimatedTruck {
     DECLARE_META(Driver, OMAnimatedDriver)
     
     ////    Framework operations    ////
     
 public :
 
+    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
+    
     virtual void serializeRelations(AOMSRelations* aomsRelations) const;
 };
 //#]

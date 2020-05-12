@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Collision_Detection
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Sun, 10, May 2020  
 	File Path	: DefaultComponent\DefaultConfig\Collision_Detection.h
 *********************************************************************/
 
@@ -15,8 +15,11 @@
 #include <oxf\oxf.h>
 //## auto_generated
 #include <..\Profiles\SysML\SIDefinitions.h>
-//## link itsCollision_Avoidance
-class Collision_Avoidance;
+//## link itsANGELS
+class ANGELS;
+
+//## link itsDocking_System
+class Docking_System;
 
 //## link itsObstacle
 class Obstacle;
@@ -38,10 +41,22 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
-    Collision_Avoidance* getItsCollision_Avoidance() const;
+    ANGELS* getItsANGELS() const;
     
     //## auto_generated
-    void setItsCollision_Avoidance(Collision_Avoidance* p_Collision_Avoidance);
+    void setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    ANGELS* getItsANGELS_1() const;
+    
+    //## auto_generated
+    void setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    Docking_System* getItsDocking_System() const;
+    
+    //## auto_generated
+    void setItsDocking_System(Docking_System* p_Docking_System);
     
     //## auto_generated
     Obstacle* getItsObstacle() const;
@@ -56,7 +71,11 @@ protected :
     
     ////    Relations and components    ////
     
-    Collision_Avoidance* itsCollision_Avoidance;		//## link itsCollision_Avoidance
+    ANGELS* itsANGELS;		//## link itsANGELS
+    
+    ANGELS* itsANGELS_1;		//## link itsANGELS_1
+    
+    Docking_System* itsDocking_System;		//## link itsDocking_System
     
     Obstacle* itsObstacle;		//## link itsObstacle
     
@@ -65,13 +84,31 @@ protected :
 public :
 
     //## auto_generated
-    void __setItsCollision_Avoidance(Collision_Avoidance* p_Collision_Avoidance);
+    void __setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _setItsCollision_Avoidance(Collision_Avoidance* p_Collision_Avoidance);
+    void _setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _clearItsCollision_Avoidance();
+    void _clearItsANGELS();
+    
+    //## auto_generated
+    void __setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _clearItsANGELS_1();
+    
+    //## auto_generated
+    void __setItsDocking_System(Docking_System* p_Docking_System);
+    
+    //## auto_generated
+    void _setItsDocking_System(Docking_System* p_Docking_System);
+    
+    //## auto_generated
+    void _clearItsDocking_System();
     
     //## auto_generated
     void __setItsObstacle(Obstacle* p_Obstacle);

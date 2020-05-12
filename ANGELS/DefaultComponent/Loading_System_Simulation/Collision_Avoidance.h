@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Collision_Avoidance
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Sun, 10, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\Collision_Avoidance.h
 *********************************************************************/
 
@@ -21,6 +21,9 @@
 #include "ObstacleAvoidancePkg.h"
 //## link itsANGELS
 class ANGELS;
+
+//## link itsDocking_System
+class Docking_System;
 
 //## package UseCaseAnalysisPkg::ANGELSPkg::ObstacleAvoidancePkg
 
@@ -49,6 +52,12 @@ public :
     
     //## auto_generated
     void setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    Docking_System* getItsDocking_System() const;
+    
+    //## auto_generated
+    void setItsDocking_System(Docking_System* p_Docking_System);
 
 protected :
 
@@ -58,6 +67,8 @@ protected :
     ////    Relations and components    ////
     
     ANGELS* itsANGELS;		//## link itsANGELS
+    
+    Docking_System* itsDocking_System;		//## link itsDocking_System
     
     ////    Framework operations    ////
 
@@ -71,6 +82,15 @@ public :
     
     //## auto_generated
     void _clearItsANGELS();
+    
+    //## auto_generated
+    void __setItsDocking_System(Docking_System* p_Docking_System);
+    
+    //## auto_generated
+    void _setItsDocking_System(Docking_System* p_Docking_System);
+    
+    //## auto_generated
+    void _clearItsDocking_System();
 };
 
 #ifdef _OMINSTRUMENT

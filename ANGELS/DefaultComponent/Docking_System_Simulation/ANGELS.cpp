@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: ANGELS
-//!	Generated Date	: Sun, 3, May 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\ANGELS.cpp
 *********************************************************************/
 
@@ -14,30 +14,14 @@
 
 //## auto_generated
 #include "ANGELS.h"
-//## link itsCollision_Avoidance
-#include "Collision_Avoidance.h"
-//## link itsCollision_Detection
-#include "Collision_Detection.h"
-//## link itsCommunication_System
-#include "Communication_System.h"
 //## link itsDC
 #include "DC.h"
 //## link itsDCOperator
 #include "DCOperator.h"
-//## link itsDocking_System
-#include "Docking_System.h"
 //## link itsGovernment
 #include "Government.h"
-//## link itsLoading_System
-#include "Loading_System.h"
-//## link itsLocalisation_System
-#include "Localisation_System.h"
-//## link itsParkingSystem
-#include "ParkingSystem.h"
 //## link itsSafety_Standards
 #include "Safety_Standards.h"
-//## link itsTruck
-#include "Truck.h"
 //#[ ignore
 #define UseCaseAnalysisPkg_ANGELSPkg_ANGELS_ANGELS_SERIALIZE OM_NO_OP
 //#]
@@ -45,8 +29,17 @@
 //## package UseCaseAnalysisPkg::ANGELSPkg
 
 //## class ANGELS
-ANGELS::ANGELS() {
-    NOTIFY_CONSTRUCTOR(ANGELS, ANGELS(), 0, UseCaseAnalysisPkg_ANGELSPkg_ANGELS_ANGELS_SERIALIZE);
+ANGELS::ANGELS(IOxfActive* theActiveContext) : dt(10) {
+    NOTIFY_REACTIVE_CONSTRUCTOR(ANGELS, ANGELS(), 0, UseCaseAnalysisPkg_ANGELSPkg_ANGELS_ANGELS_SERIALIZE);
+    setActiveContext(theActiveContext, false);
+    {
+        {
+            itsLoading_System_1.setShouldDelete(false);
+        }
+        {
+            itsDocking_System_1.setShouldDelete(false);
+        }
+    }
     itsCollision_Avoidance = NULL;
     itsCollision_Detection = NULL;
     itsCollision_Detection_1 = NULL;
@@ -67,6 +60,87 @@ ANGELS::~ANGELS() {
     cleanUpRelations();
 }
 
+double ANGELS::getDSInput() const {
+    return DSInput;
+}
+
+void ANGELS::setDSInput(double p_DSInput) {
+    DSInput = p_DSInput;
+}
+
+double ANGELS::getDockingStatus() const {
+    return DockingStatus;
+}
+
+void ANGELS::setDockingStatus(double p_DockingStatus) {
+    DockingStatus = p_DockingStatus;
+}
+
+double ANGELS::getDockingTime() const {
+    return DockingTime;
+}
+
+void ANGELS::setDockingTime(double p_DockingTime) {
+    DockingTime = p_DockingTime;
+}
+
+RhpBoolean ANGELS::getDoorstatus() const {
+    return Doorstatus;
+}
+
+void ANGELS::setDoorstatus(RhpBoolean p_Doorstatus) {
+    Doorstatus = p_Doorstatus;
+}
+
+OMIterator<double> ANGELS::getLoadingTime() const {
+    OMIterator<double> iter(LoadingTime);
+    return iter;
+}
+
+void ANGELS::setLoadingTime(double p_LoadingTime) {
+    LoadingTime.add(p_LoadingTime);
+}
+
+double ANGELS::getPSInput() const {
+    return PSInput;
+}
+
+void ANGELS::setPSInput(double p_PSInput) {
+    PSInput = p_PSInput;
+}
+
+double ANGELS::getParkingStatus() const {
+    return ParkingStatus;
+}
+
+void ANGELS::setParkingStatus(double p_ParkingStatus) {
+    ParkingStatus = p_ParkingStatus;
+}
+
+double ANGELS::getSpeed() const {
+    return Speed;
+}
+
+void ANGELS::setSpeed(double p_Speed) {
+    Speed = p_Speed;
+}
+
+double ANGELS::getSteerAngle() const {
+    return SteerAngle;
+}
+
+void ANGELS::setSteerAngle(double p_SteerAngle) {
+    SteerAngle = p_SteerAngle;
+}
+
+double ANGELS::getDt() const {
+    return dt;
+}
+
+void ANGELS::setDt(double p_dt) {
+    dt = p_dt;
+}
+
 Collision_Avoidance* ANGELS::getItsCollision_Avoidance() const {
     return itsCollision_Avoidance;
 }
@@ -77,6 +151,10 @@ void ANGELS::setItsCollision_Avoidance(Collision_Avoidance* p_Collision_Avoidanc
             p_Collision_Avoidance->_setItsANGELS(this);
         }
     _setItsCollision_Avoidance(p_Collision_Avoidance);
+}
+
+Collision_Avoidance* ANGELS::getItsCollision_Avoidance_1() const {
+    return (Collision_Avoidance*) &itsCollision_Avoidance_1;
 }
 
 Collision_Detection* ANGELS::getItsCollision_Detection() const {
@@ -103,6 +181,14 @@ void ANGELS::setItsCollision_Detection_1(Collision_Detection* p_Collision_Detect
     _setItsCollision_Detection_1(p_Collision_Detection);
 }
 
+Collision_Detection* ANGELS::getItsCollision_Detection_2() const {
+    return (Collision_Detection*) &itsCollision_Detection_2;
+}
+
+Collision_Detection* ANGELS::getItsCollision_Detection_3() const {
+    return (Collision_Detection*) &itsCollision_Detection_3;
+}
+
 Communication_System* ANGELS::getItsCommunication_System() const {
     return itsCommunication_System;
 }
@@ -113,6 +199,10 @@ void ANGELS::setItsCommunication_System(Communication_System* p_Communication_Sy
             p_Communication_System->_setItsANGELS(this);
         }
     _setItsCommunication_System(p_Communication_System);
+}
+
+Communication_System* ANGELS::getItsCommunication_System_1() const {
+    return (Communication_System*) &itsCommunication_System_1;
 }
 
 DC* ANGELS::getItsDC() const {
@@ -151,6 +241,10 @@ void ANGELS::setItsDocking_System(Docking_System* p_Docking_System) {
     _setItsDocking_System(p_Docking_System);
 }
 
+Docking_System* ANGELS::getItsDocking_System_1() const {
+    return (Docking_System*) &itsDocking_System_1;
+}
+
 Government* ANGELS::getItsGovernment() const {
     return itsGovernment;
 }
@@ -175,6 +269,10 @@ void ANGELS::setItsLoading_System(Loading_System* p_Loading_System) {
     _setItsLoading_System(p_Loading_System);
 }
 
+Loading_System* ANGELS::getItsLoading_System_1() const {
+    return (Loading_System*) &itsLoading_System_1;
+}
+
 Localisation_System* ANGELS::getItsLocalisation_System() const {
     return itsLocalisation_System;
 }
@@ -187,6 +285,10 @@ void ANGELS::setItsLocalisation_System(Localisation_System* p_Localisation_Syste
     _setItsLocalisation_System(p_Localisation_System);
 }
 
+Localisation_System* ANGELS::getItsLocalisation_System_1() const {
+    return (Localisation_System*) &itsLocalisation_System_1;
+}
+
 ParkingSystem* ANGELS::getItsParkingSystem() const {
     return itsParkingSystem;
 }
@@ -197,6 +299,10 @@ void ANGELS::setItsParkingSystem(ParkingSystem* p_ParkingSystem) {
             p_ParkingSystem->_setItsANGELS(this);
         }
     _setItsParkingSystem(p_ParkingSystem);
+}
+
+ParkingSystem* ANGELS::getItsParkingSystem_1() const {
+    return (ParkingSystem*) &itsParkingSystem_1;
 }
 
 Safety_Standards* ANGELS::getItsSafety_Standards() const {
@@ -221,6 +327,18 @@ void ANGELS::setItsTruck(Truck* p_Truck) {
             p_Truck->_setItsANGELS(this);
         }
     _setItsTruck(p_Truck);
+}
+
+Truck* ANGELS::getItsTruck_1() const {
+    return (Truck*) &itsTruck_1;
+}
+
+bool ANGELS::startBehavior() {
+    bool done = true;
+    done &= itsDocking_System_1.startBehavior();
+    done &= itsLoading_System_1.startBehavior();
+    done &= OMReactive::startBehavior();
+    return done;
 }
 
 void ANGELS::cleanUpRelations() {
@@ -681,8 +799,35 @@ void ANGELS::_clearItsTruck() {
     itsTruck = NULL;
 }
 
+void ANGELS::setActiveContext(IOxfActive* theActiveContext, bool activeInstance) {
+    OMReactive::setActiveContext(theActiveContext, activeInstance);
+    {
+        itsLoading_System_1.setActiveContext(theActiveContext, false);
+        itsDocking_System_1.setActiveContext(theActiveContext, false);
+    }
+}
+
+void ANGELS::destroy() {
+    itsDocking_System_1.destroy();
+    itsLoading_System_1.destroy();
+    OMReactive::destroy();
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
+void OMAnimatedANGELS::serializeAttributes(AOMSAttributes* aomsAttributes) const {
+    aomsAttributes->addAttribute("Speed", x2String(myReal->Speed));
+    aomsAttributes->addAttribute("SteerAngle", x2String(myReal->SteerAngle));
+    aomsAttributes->addAttribute("PSInput", x2String(myReal->PSInput));
+    aomsAttributes->addAttribute("DockingTime", x2String(myReal->DockingTime));
+    aomsAttributes->addAttribute("Doorstatus", x2String(myReal->Doorstatus));
+    aomsAttributes->addAttribute("DSInput", x2String(myReal->DSInput));
+    aomsAttributes->addAttribute("DockingStatus", x2String(myReal->DockingStatus));
+    aomsAttributes->addAttribute("ParkingStatus", x2String(myReal->ParkingStatus));
+    aomsAttributes->addAttribute("dt", x2String(myReal->dt));
+    aomsAttributes->addAttribute("LoadingTime", UNKNOWN2STRING(myReal->LoadingTime));
+}
+
 void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
     aomsRelations->addRelation("itsCollision_Avoidance", false, true);
     if(myReal->itsCollision_Avoidance)
@@ -749,10 +894,28 @@ void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
         {
             aomsRelations->ADD_ITEM(myReal->itsDCOperator);
         }
+    aomsRelations->addRelation("itsCollision_Avoidance_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsCollision_Avoidance_1);
+    aomsRelations->addRelation("itsLoading_System_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsLoading_System_1);
+    aomsRelations->addRelation("itsCommunication_System_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsCommunication_System_1);
+    aomsRelations->addRelation("itsCollision_Detection_2", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_2);
+    aomsRelations->addRelation("itsDocking_System_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsDocking_System_1);
+    aomsRelations->addRelation("itsLocalisation_System_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsLocalisation_System_1);
+    aomsRelations->addRelation("itsCollision_Detection_3", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_3);
+    aomsRelations->addRelation("itsParkingSystem_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsParkingSystem_1);
+    aomsRelations->addRelation("itsTruck_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsTruck_1);
 }
 //#]
 
-IMPLEMENT_META_P(ANGELS, UseCaseAnalysisPkg_ANGELSPkg, UseCaseAnalysisPkg::ANGELSPkg, false, OMAnimatedANGELS)
+IMPLEMENT_REACTIVE_META_SIMPLE_P(ANGELS, UseCaseAnalysisPkg_ANGELSPkg, UseCaseAnalysisPkg::ANGELSPkg, false, OMAnimatedANGELS)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

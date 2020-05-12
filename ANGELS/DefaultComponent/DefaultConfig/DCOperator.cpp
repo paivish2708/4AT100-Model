@@ -4,23 +4,66 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DCOperator
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Sun, 10, May 2020  
 	File Path	: DefaultComponent\DefaultConfig\DCOperator.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "DCOperator.h"
+//## link itsANGELS
+#include "ANGELS.h"
+//## link itsDocking_System
+#include "Docking_System.h"
 //## link itsLoading_System
 #include "Loading_System.h"
 //## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
 //## actor DCOperator
 DCOperator::DCOperator() {
+    itsANGELS = NULL;
+    itsDocking_System = NULL;
+    itsDocking_System_1 = NULL;
     itsLoading_System = NULL;
 }
 
 DCOperator::~DCOperator() {
     cleanUpRelations();
+}
+
+ANGELS* DCOperator::getItsANGELS() const {
+    return itsANGELS;
+}
+
+void DCOperator::setItsANGELS(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
+        {
+            p_ANGELS->_setItsDCOperator(this);
+        }
+    _setItsANGELS(p_ANGELS);
+}
+
+Docking_System* DCOperator::getItsDocking_System() const {
+    return itsDocking_System;
+}
+
+void DCOperator::setItsDocking_System(Docking_System* p_Docking_System) {
+    if(p_Docking_System != NULL)
+        {
+            p_Docking_System->_setItsDCOperator(this);
+        }
+    _setItsDocking_System(p_Docking_System);
+}
+
+Docking_System* DCOperator::getItsDocking_System_1() const {
+    return itsDocking_System_1;
+}
+
+void DCOperator::setItsDocking_System_1(Docking_System* p_Docking_System) {
+    if(p_Docking_System != NULL)
+        {
+            p_Docking_System->_setItsDCOperator_1(this);
+        }
+    _setItsDocking_System_1(p_Docking_System);
 }
 
 Loading_System* DCOperator::getItsLoading_System() const {
@@ -36,6 +79,33 @@ void DCOperator::setItsLoading_System(Loading_System* p_Loading_System) {
 }
 
 void DCOperator::cleanUpRelations() {
+    if(itsANGELS != NULL)
+        {
+            DCOperator* p_DCOperator = itsANGELS->getItsDCOperator();
+            if(p_DCOperator != NULL)
+                {
+                    itsANGELS->__setItsDCOperator(NULL);
+                }
+            itsANGELS = NULL;
+        }
+    if(itsDocking_System != NULL)
+        {
+            DCOperator* p_DCOperator = itsDocking_System->getItsDCOperator();
+            if(p_DCOperator != NULL)
+                {
+                    itsDocking_System->__setItsDCOperator(NULL);
+                }
+            itsDocking_System = NULL;
+        }
+    if(itsDocking_System_1 != NULL)
+        {
+            DCOperator* p_DCOperator = itsDocking_System_1->getItsDCOperator_1();
+            if(p_DCOperator != NULL)
+                {
+                    itsDocking_System_1->__setItsDCOperator_1(NULL);
+                }
+            itsDocking_System_1 = NULL;
+        }
     if(itsLoading_System != NULL)
         {
             DCOperator* p_DCOperator = itsLoading_System->getItsDCOperator();
@@ -45,6 +115,54 @@ void DCOperator::cleanUpRelations() {
                 }
             itsLoading_System = NULL;
         }
+}
+
+void DCOperator::__setItsANGELS(ANGELS* p_ANGELS) {
+    itsANGELS = p_ANGELS;
+}
+
+void DCOperator::_setItsANGELS(ANGELS* p_ANGELS) {
+    if(itsANGELS != NULL)
+        {
+            itsANGELS->__setItsDCOperator(NULL);
+        }
+    __setItsANGELS(p_ANGELS);
+}
+
+void DCOperator::_clearItsANGELS() {
+    itsANGELS = NULL;
+}
+
+void DCOperator::__setItsDocking_System(Docking_System* p_Docking_System) {
+    itsDocking_System = p_Docking_System;
+}
+
+void DCOperator::_setItsDocking_System(Docking_System* p_Docking_System) {
+    if(itsDocking_System != NULL)
+        {
+            itsDocking_System->__setItsDCOperator(NULL);
+        }
+    __setItsDocking_System(p_Docking_System);
+}
+
+void DCOperator::_clearItsDocking_System() {
+    itsDocking_System = NULL;
+}
+
+void DCOperator::__setItsDocking_System_1(Docking_System* p_Docking_System) {
+    itsDocking_System_1 = p_Docking_System;
+}
+
+void DCOperator::_setItsDocking_System_1(Docking_System* p_Docking_System) {
+    if(itsDocking_System_1 != NULL)
+        {
+            itsDocking_System_1->__setItsDCOperator_1(NULL);
+        }
+    __setItsDocking_System_1(p_Docking_System);
+}
+
+void DCOperator::_clearItsDocking_System_1() {
+    itsDocking_System_1 = NULL;
 }
 
 void DCOperator::__setItsLoading_System(Loading_System* p_Loading_System) {

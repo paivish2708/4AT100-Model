@@ -4,12 +4,14 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Docking_System
-//!	Generated Date	: Sun, 3, May 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\Docking_System.cpp
 *********************************************************************/
 
 //#[ ignore
 #define NAMESPACE_PREFIX
+
+#define _OMSTATECHART_ANIMATED
 //#]
 
 //## auto_generated
@@ -18,558 +20,60 @@
 #include "ANGELS.h"
 //## link itsDCOperator
 #include "DCOperator.h"
+//## link itsCollision_Avoidance_1
+#include "Collision_Avoidance.h"
+//## link itsCollision_Detection_1
+#include "Collision_Detection.h"
 //#[ ignore
 #define UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_MoveTruck_SERIALIZE \
     aomsmethod->addAttribute("SteeringAngle", x2String(SteeringAngle));\
-    aomsmethod->addAttribute("speed", x2String(speed));
+    aomsmethod->addAttribute("speed", x2String(speed));\
+    aomsmethod->addAttribute("DockingStatus", x2String(DockingStatus));
 #define UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_Docking_System_SERIALIZE OM_NO_OP
 
-#define UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_PSInput_SERIALIZE aomsmethod->addAttribute("PS", x2String(PS));
+#define UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_CheckDockingStatus_SERIALIZE OM_NO_OP
+
+#define UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_DockInput_SERIALIZE aomsmethod->addAttribute("DS", x2String(DS));
 //#]
 
 //## package UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg
 
 //## class Docking_System
-//#[ ignore
-Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_0InActivityMainFlowOfDocking_System::ActionAccepteventaction_0InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& activity, IOxfEvent::ID eventId, Docking_System& context) : OMAcceptEventAction(id, activity, eventId), mContext(&context) {
-}
-
-OMList<OMString> Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_0InActivityMainFlowOfDocking_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionAccepteventaction_0InActivityMainFlowOfDocking_System();
-}
-
-void Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_0InActivityMainFlowOfDocking_System::acceptEventData() {
-    mContext->delegatedAcceptEventDataFromActionAccepteventaction_0InActivityMainFlowOfDocking_System();
-}
-
-Docking_System::MainFlowOfDocking_System::ActionParkingSpotInActivityMainFlowOfDocking_System::ActionParkingSpotInActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& parentActivity, ParkingSpotOfDocking_System& calledActivity, Docking_System& context) : OMCallBehaviorAction(id, parentActivity, calledActivity), mContext(&context), mCalledActivity(&calledActivity) {
-}
-
-OMList<OMString> Docking_System::MainFlowOfDocking_System::ActionParkingSpotInActivityMainFlowOfDocking_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionParkingSpotInActivityMainFlowOfDocking_System(ParkingSpot);
-}
-
-void Docking_System::MainFlowOfDocking_System::ActionParkingSpotInActivityMainFlowOfDocking_System::setPinsFromParameters() {
-}
-
-void Docking_System::MainFlowOfDocking_System::ActionParkingSpotInActivityMainFlowOfDocking_System::setParametersFromPins() {
-    mCalledActivity->setParkingSpot(ParkingSpot);
-}
-
-void Docking_System::MainFlowOfDocking_System::ActionParkingSpotInActivityMainFlowOfDocking_System::setParkingSpot(int value) {
-    this->ParkingSpot = value;
-}
-
-Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_4InActivityMainFlowOfDocking_System::ActionAccepteventaction_4InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& activity, IOxfEvent::ID eventId, Docking_System& context) : OMAcceptEventAction(id, activity, eventId), mContext(&context) {
-}
-
-OMList<OMString> Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_4InActivityMainFlowOfDocking_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionAccepteventaction_4InActivityMainFlowOfDocking_System(SteeringAngle, speed);
-}
-
-int Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_4InActivityMainFlowOfDocking_System::getSteeringAngle() {
-    return SteeringAngle;
-}
-
-int Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_4InActivityMainFlowOfDocking_System::getSpeed() {
-    return speed;
-}
-
-void Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_4InActivityMainFlowOfDocking_System::serializeTokens(AOMSAttributes& tokens) {
-    tokens.setCount(2);
-    tokens.addAttribute("SteeringAngle", x2String(SteeringAngle));
-    tokens.addAttribute("speed", x2String(speed));
-}
-
-void Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_4InActivityMainFlowOfDocking_System::acceptEventData() {
-    mContext->delegatedAcceptEventDataFromActionAccepteventaction_4InActivityMainFlowOfDocking_System(SteeringAngle, speed);
-}
-
-Docking_System::MainFlowOfDocking_System::ActionMoveTruckForwardInActivityMainFlowOfDocking_System::ActionMoveTruckForwardInActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& parentActivity, MoveTruckForwardOfDocking_System& calledActivity, Docking_System& context) : OMCallBehaviorAction(id, parentActivity, calledActivity), mContext(&context), mCalledActivity(&calledActivity) {
-}
-
-OMList<OMString> Docking_System::MainFlowOfDocking_System::ActionMoveTruckForwardInActivityMainFlowOfDocking_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionMoveTruckForwardInActivityMainFlowOfDocking_System(speed, SteeringAngle);
-}
-
-void Docking_System::MainFlowOfDocking_System::ActionMoveTruckForwardInActivityMainFlowOfDocking_System::setPinsFromParameters() {
-}
-
-void Docking_System::MainFlowOfDocking_System::ActionMoveTruckForwardInActivityMainFlowOfDocking_System::setParametersFromPins() {
-    mCalledActivity->setSpeed(speed);
-    mCalledActivity->setSteeringAngle(SteeringAngle);
-}
-
-void Docking_System::MainFlowOfDocking_System::ActionMoveTruckForwardInActivityMainFlowOfDocking_System::setSpeed(int value) {
-    this->speed = value;
-}
-
-void Docking_System::MainFlowOfDocking_System::ActionMoveTruckForwardInActivityMainFlowOfDocking_System::setSteeringAngle(int value) {
-    this->SteeringAngle = value;
-}
-
-Docking_System::MainFlowOfDocking_System::ActionActivityfinal_8InActivityMainFlowOfDocking_System::ActionActivityfinal_8InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& activity, Docking_System& context) : OMActivityFinalNode(id, activity), mContext(&context) {
-}
-
-OMList<OMString> Docking_System::MainFlowOfDocking_System::ActionActivityfinal_8InActivityMainFlowOfDocking_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionActivityfinal_8InActivityMainFlowOfDocking_System();
-}
-
-Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_9InActivityMainFlowOfDocking_System::ActionAccepteventaction_9InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& activity, IOxfEvent::ID eventId, Docking_System& context) : OMAcceptEventAction(id, activity, eventId), mContext(&context) {
-}
-
-OMList<OMString> Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_9InActivityMainFlowOfDocking_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionAccepteventaction_9InActivityMainFlowOfDocking_System(ParkingSpot);
-}
-
-int Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_9InActivityMainFlowOfDocking_System::getParkingSpot() {
-    return ParkingSpot;
-}
-
-void Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_9InActivityMainFlowOfDocking_System::serializeTokens(AOMSAttributes& tokens) {
-    tokens.setCount(1);
-    tokens.addAttribute("ParkingSpot", x2String(ParkingSpot));
-}
-
-void Docking_System::MainFlowOfDocking_System::ActionAccepteventaction_9InActivityMainFlowOfDocking_System::acceptEventData() {
-    mContext->delegatedAcceptEventDataFromActionAccepteventaction_9InActivityMainFlowOfDocking_System(ParkingSpot);
-}
-
-Docking_System::MainFlowOfDocking_System::DataFlow2InActivityMainFlowOfDocking_System::DataFlow2InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& context, ActionAccepteventaction_9InActivityMainFlowOfDocking_System& sourceAction, ActionParkingSpotInActivityMainFlowOfDocking_System& targetAction) : OMDataFlow<int>(id, context, sourceAction, targetAction), dataSource(&sourceAction), dataTarget(&targetAction) {
-}
-
-void Docking_System::MainFlowOfDocking_System::DataFlow2InActivityMainFlowOfDocking_System::giveToken() {
-    dataTarget->setParkingSpot(dequeueToken());
-}
-
-void Docking_System::MainFlowOfDocking_System::DataFlow2InActivityMainFlowOfDocking_System::takeToken() {
-    enqueueToken(dataSource->getParkingSpot());
-}
-
-void Docking_System::MainFlowOfDocking_System::DataFlow2InActivityMainFlowOfDocking_System::serializeTokens(AOMSAttributes& tokens) {
-    if(getTokenCount() > 0)
+Docking_System::Docking_System(IOxfActive* theActiveContext) : DSInput(1), DockingStatus(0), DockingTime(10), Doorstatus(1), Speed(15), SteerAngle(10) {
+    NOTIFY_REACTIVE_CONSTRUCTOR(Docking_System, Docking_System(), 0, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_Docking_System_SERIALIZE);
+    setActiveContext(theActiveContext, false);
     {
-    	tokens.setCount(getTokenCount());
-    	for(int i = 0 ; i < getTokenCount() ; i++)
-    	{
-    		char idx[10];
-    		OMitoa(i, idx, 10);
-    		tokens.addAttribute(idx, x2String(mTokens.getAt(i)));
-    	}
+        {
+            itsLoading_System.setShouldDelete(false);
+        }
     }
-}
-
-Docking_System::MainFlowOfDocking_System::DataFlow4InActivityMainFlowOfDocking_System::DataFlow4InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& context, ActionAccepteventaction_4InActivityMainFlowOfDocking_System& sourceAction, ActionMoveTruckForwardInActivityMainFlowOfDocking_System& targetAction) : OMDataFlow<int>(id, context, sourceAction, targetAction), dataSource(&sourceAction), dataTarget(&targetAction) {
-}
-
-void Docking_System::MainFlowOfDocking_System::DataFlow4InActivityMainFlowOfDocking_System::giveToken() {
-    dataTarget->setSteeringAngle(dequeueToken());
-}
-
-void Docking_System::MainFlowOfDocking_System::DataFlow4InActivityMainFlowOfDocking_System::takeToken() {
-    enqueueToken(dataSource->getSteeringAngle());
-}
-
-void Docking_System::MainFlowOfDocking_System::DataFlow4InActivityMainFlowOfDocking_System::serializeTokens(AOMSAttributes& tokens) {
-    if(getTokenCount() > 0)
-    {
-    	tokens.setCount(getTokenCount());
-    	for(int i = 0 ; i < getTokenCount() ; i++)
-    	{
-    		char idx[10];
-    		OMitoa(i, idx, 10);
-    		tokens.addAttribute(idx, x2String(mTokens.getAt(i)));
-    	}
-    }
-}
-
-Docking_System::MainFlowOfDocking_System::DataFlow5InActivityMainFlowOfDocking_System::DataFlow5InActivityMainFlowOfDocking_System(const OMString& id, MainFlowOfDocking_System& context, ActionAccepteventaction_4InActivityMainFlowOfDocking_System& sourceAction, ActionMoveTruckForwardInActivityMainFlowOfDocking_System& targetAction) : OMDataFlow<int>(id, context, sourceAction, targetAction), dataSource(&sourceAction), dataTarget(&targetAction) {
-}
-
-void Docking_System::MainFlowOfDocking_System::DataFlow5InActivityMainFlowOfDocking_System::giveToken() {
-    dataTarget->setSpeed(dequeueToken());
-}
-
-void Docking_System::MainFlowOfDocking_System::DataFlow5InActivityMainFlowOfDocking_System::takeToken() {
-    enqueueToken(dataSource->getSpeed());
-}
-
-void Docking_System::MainFlowOfDocking_System::DataFlow5InActivityMainFlowOfDocking_System::serializeTokens(AOMSAttributes& tokens) {
-    if(getTokenCount() > 0)
-    {
-    	tokens.setCount(getTokenCount());
-    	for(int i = 0 ; i < getTokenCount() ; i++)
-    	{
-    		char idx[10];
-    		OMitoa(i, idx, 10);
-    		tokens.addAttribute(idx, x2String(mTokens.getAt(i)));
-    	}
-    }
-}
-
-Docking_System::MainFlowOfDocking_System::MainFlowOfDocking_System(Docking_System& context) : OMActivity(&context), mContext(&context) {
-    // Setup nodes
-    ActionAccepteventaction_0InActivityMainFlowOfDocking_System* varAccepteventaction_0 = new ActionAccepteventaction_0InActivityMainFlowOfDocking_System("MainFlow:ROOT.accepteventaction_0", *this, StartDockingProcedure_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id, *mContext);
-    ActionParkingSpotInActivityMainFlowOfDocking_System* varParkingSpot = new ActionParkingSpotInActivityMainFlowOfDocking_System("MainFlow:ROOT.ParkingSpot", *this, *(new ParkingSpotOfDocking_System(context)), *mContext);
-    ActionAccepteventaction_4InActivityMainFlowOfDocking_System* varAccepteventaction_4 = new ActionAccepteventaction_4InActivityMainFlowOfDocking_System("MainFlow:ROOT.accepteventaction_4", *this, BeginMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id, *mContext);
-    ActionMoveTruckForwardInActivityMainFlowOfDocking_System* varMoveTruckForward = new ActionMoveTruckForwardInActivityMainFlowOfDocking_System("MainFlow:ROOT.MoveTruckForward", *this, *(new MoveTruckForwardOfDocking_System(context)), *mContext);
-    ActionActivityfinal_8InActivityMainFlowOfDocking_System* varActivityfinal_8 = new ActionActivityfinal_8InActivityMainFlowOfDocking_System("MainFlow:ROOT.activityfinal_8", *this, *mContext);
-    ActionAccepteventaction_9InActivityMainFlowOfDocking_System* varAccepteventaction_9 = new ActionAccepteventaction_9InActivityMainFlowOfDocking_System("MainFlow:ROOT.accepteventaction_9", *this, DCManagerInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id, *mContext);
-    OMInitialAction* varInitialNode0 = new OMInitialAction("MainFlow:0", *this);
-    
-    // Setup flows
-    new OMControlFlow("MainFlow:0", *this, *varInitialNode0, *varAccepteventaction_0);
-    new OMControlFlow("MainFlow:1", *this, *varAccepteventaction_0, *varAccepteventaction_9);
-    new DataFlow2InActivityMainFlowOfDocking_System("MainFlow:2", *this, *varAccepteventaction_9, *varParkingSpot);
-    new OMControlFlow("MainFlow:3", *this, *varParkingSpot, *varAccepteventaction_4);
-    new DataFlow4InActivityMainFlowOfDocking_System("MainFlow:4", *this, *varAccepteventaction_4, *varMoveTruckForward);
-    new DataFlow5InActivityMainFlowOfDocking_System("MainFlow:5", *this, *varAccepteventaction_4, *varMoveTruckForward);
-    new OMControlFlow("MainFlow:6", *this, *varMoveTruckForward, *varActivityfinal_8);
-}
-
-Docking_System::MoveTruckForwardOfDocking_System::ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System::ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System(const OMString& id, MoveTruckForwardOfDocking_System& activity, Docking_System& context) : OMContextualAction(id, activity), mContext(&context) {
-}
-
-OMList<OMString> Docking_System::MoveTruckForwardOfDocking_System::ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionCalloperation_2InActivityMoveTruckForwardOfDocking_System(SteeringAngle, speed);
-}
-
-void Docking_System::MoveTruckForwardOfDocking_System::ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System::setSteeringAngle(double value) {
-    this->SteeringAngle = value;
-}
-
-void Docking_System::MoveTruckForwardOfDocking_System::ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System::setSpeed(double value) {
-    this->speed = value;
-}
-
-void Docking_System::MoveTruckForwardOfDocking_System::ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System::serializeTokens(AOMSAttributes& tokens) {
-    tokens.setCount(2);
-    tokens.addAttribute("SteeringAngle", x2String(SteeringAngle));
-    tokens.addAttribute("speed", x2String(speed));
-}
-
-void Docking_System::MoveTruckForwardOfDocking_System::ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System::invokeContextMethod() {
-    mContext->delegatedInvokeContextMethodFromActionCalloperation_2InActivityMoveTruckForwardOfDocking_System(SteeringAngle, speed);
-}
-
-Docking_System::MoveTruckForwardOfDocking_System::ActionFlowfinal_4InActivityMoveTruckForwardOfDocking_System::ActionFlowfinal_4InActivityMoveTruckForwardOfDocking_System(const OMString& id, MoveTruckForwardOfDocking_System& activity, Docking_System& context) : OMFlowFinalNode(id, activity), mContext(&context) {
-}
-
-OMList<OMString> Docking_System::MoveTruckForwardOfDocking_System::ActionFlowfinal_4InActivityMoveTruckForwardOfDocking_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionFlowfinal_4InActivityMoveTruckForwardOfDocking_System();
-}
-
-Docking_System::MoveTruckForwardOfDocking_System::DataFlow0InActivityMoveTruckForwardOfDocking_System::DataFlow0InActivityMoveTruckForwardOfDocking_System(const OMString& id, MoveTruckForwardOfDocking_System& context, ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System& targetAction) : OMDataFlow<int>(id, context, *(new OMInitialAction("SteeringAngle", context)), targetAction), dataSource(&context), dataTarget(&targetAction) {
-}
-
-void Docking_System::MoveTruckForwardOfDocking_System::DataFlow0InActivityMoveTruckForwardOfDocking_System::giveToken() {
-    dataTarget->setSteeringAngle(dequeueToken());
-}
-
-void Docking_System::MoveTruckForwardOfDocking_System::DataFlow0InActivityMoveTruckForwardOfDocking_System::takeToken() {
-    enqueueToken(dataSource->getSteeringAngle());
-}
-
-void Docking_System::MoveTruckForwardOfDocking_System::DataFlow0InActivityMoveTruckForwardOfDocking_System::serializeTokens(AOMSAttributes& tokens) {
-    if(getTokenCount() > 0)
-    {
-    	tokens.setCount(getTokenCount());
-    	for(int i = 0 ; i < getTokenCount() ; i++)
-    	{
-    		char idx[10];
-    		OMitoa(i, idx, 10);
-    		tokens.addAttribute(idx, x2String(mTokens.getAt(i)));
-    	}
-    }
-}
-
-Docking_System::MoveTruckForwardOfDocking_System::DataFlow1InActivityMoveTruckForwardOfDocking_System::DataFlow1InActivityMoveTruckForwardOfDocking_System(const OMString& id, MoveTruckForwardOfDocking_System& context, ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System& targetAction) : OMDataFlow<int>(id, context, *(new OMInitialAction("speed", context)), targetAction), dataSource(&context), dataTarget(&targetAction) {
-}
-
-void Docking_System::MoveTruckForwardOfDocking_System::DataFlow1InActivityMoveTruckForwardOfDocking_System::giveToken() {
-    dataTarget->setSpeed(dequeueToken());
-}
-
-void Docking_System::MoveTruckForwardOfDocking_System::DataFlow1InActivityMoveTruckForwardOfDocking_System::takeToken() {
-    enqueueToken(dataSource->getSpeed());
-}
-
-void Docking_System::MoveTruckForwardOfDocking_System::DataFlow1InActivityMoveTruckForwardOfDocking_System::serializeTokens(AOMSAttributes& tokens) {
-    if(getTokenCount() > 0)
-    {
-    	tokens.setCount(getTokenCount());
-    	for(int i = 0 ; i < getTokenCount() ; i++)
-    	{
-    		char idx[10];
-    		OMitoa(i, idx, 10);
-    		tokens.addAttribute(idx, x2String(mTokens.getAt(i)));
-    	}
-    }
-}
-
-Docking_System::MoveTruckForwardOfDocking_System::MoveTruckForwardOfDocking_System(Docking_System& context) : OMActivity(&context), mContext(&context) {
-    // Setup nodes
-    ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System* varCalloperation_2 = new ActionCalloperation_2InActivityMoveTruckForwardOfDocking_System("MoveTruckForward:ROOT.calloperation_2", *this, *mContext);
-    ActionFlowfinal_4InActivityMoveTruckForwardOfDocking_System* varFlowfinal_4 = new ActionFlowfinal_4InActivityMoveTruckForwardOfDocking_System("MoveTruckForward:ROOT.flowfinal_4", *this, *mContext);
-    
-    // Setup flows
-    new DataFlow0InActivityMoveTruckForwardOfDocking_System("MoveTruckForward:0", *this, *varCalloperation_2);
-    new DataFlow1InActivityMoveTruckForwardOfDocking_System("MoveTruckForward:1", *this, *varCalloperation_2);
-    new OMControlFlow("MoveTruckForward:2", *this, *varCalloperation_2, *varFlowfinal_4);
-}
-
-int Docking_System::MoveTruckForwardOfDocking_System::getSpeed() {
-    return speed;
-}
-
-void Docking_System::MoveTruckForwardOfDocking_System::setSpeed(int value) {
-    this->speed = value;
-}
-
-int Docking_System::MoveTruckForwardOfDocking_System::getSteeringAngle() {
-    return SteeringAngle;
-}
-
-void Docking_System::MoveTruckForwardOfDocking_System::setSteeringAngle(int value) {
-    this->SteeringAngle = value;
-}
-
-Docking_System::ParkingSpotOfDocking_System::ActionFlowfinal_1InActivityParkingSpotOfDocking_System::ActionFlowfinal_1InActivityParkingSpotOfDocking_System(const OMString& id, ParkingSpotOfDocking_System& activity, Docking_System& context) : OMFlowFinalNode(id, activity), mContext(&context) {
-}
-
-OMList<OMString> Docking_System::ParkingSpotOfDocking_System::ActionFlowfinal_1InActivityParkingSpotOfDocking_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionFlowfinal_1InActivityParkingSpotOfDocking_System();
-}
-
-Docking_System::ParkingSpotOfDocking_System::ActionCalloperation_3InActivityParkingSpotOfDocking_System::ActionCalloperation_3InActivityParkingSpotOfDocking_System(const OMString& id, ParkingSpotOfDocking_System& activity, Docking_System& context) : OMContextualAction(id, activity), mContext(&context) {
-}
-
-OMList<OMString> Docking_System::ParkingSpotOfDocking_System::ActionCalloperation_3InActivityParkingSpotOfDocking_System::filterPassableFlows() {
-    return mContext->delegatedFilterPassableFlowsFromActionCalloperation_3InActivityParkingSpotOfDocking_System(PS);
-}
-
-void Docking_System::ParkingSpotOfDocking_System::ActionCalloperation_3InActivityParkingSpotOfDocking_System::setPS(double value) {
-    this->PS = value;
-}
-
-void Docking_System::ParkingSpotOfDocking_System::ActionCalloperation_3InActivityParkingSpotOfDocking_System::serializeTokens(AOMSAttributes& tokens) {
-    tokens.setCount(1);
-    tokens.addAttribute("PS", x2String(PS));
-}
-
-void Docking_System::ParkingSpotOfDocking_System::ActionCalloperation_3InActivityParkingSpotOfDocking_System::invokeContextMethod() {
-    mContext->delegatedInvokeContextMethodFromActionCalloperation_3InActivityParkingSpotOfDocking_System(PS);
-}
-
-Docking_System::ParkingSpotOfDocking_System::DataFlow0InActivityParkingSpotOfDocking_System::DataFlow0InActivityParkingSpotOfDocking_System(const OMString& id, ParkingSpotOfDocking_System& context, ActionCalloperation_3InActivityParkingSpotOfDocking_System& targetAction) : OMDataFlow<int>(id, context, *(new OMInitialAction("ParkingSpot", context)), targetAction), dataSource(&context), dataTarget(&targetAction) {
-}
-
-void Docking_System::ParkingSpotOfDocking_System::DataFlow0InActivityParkingSpotOfDocking_System::giveToken() {
-    dataTarget->setPS(dequeueToken());
-}
-
-void Docking_System::ParkingSpotOfDocking_System::DataFlow0InActivityParkingSpotOfDocking_System::takeToken() {
-    enqueueToken(dataSource->getParkingSpot());
-}
-
-void Docking_System::ParkingSpotOfDocking_System::DataFlow0InActivityParkingSpotOfDocking_System::serializeTokens(AOMSAttributes& tokens) {
-    if(getTokenCount() > 0)
-    {
-    	tokens.setCount(getTokenCount());
-    	for(int i = 0 ; i < getTokenCount() ; i++)
-    	{
-    		char idx[10];
-    		OMitoa(i, idx, 10);
-    		tokens.addAttribute(idx, x2String(mTokens.getAt(i)));
-    	}
-    }
-}
-
-Docking_System::ParkingSpotOfDocking_System::ParkingSpotOfDocking_System(Docking_System& context) : OMActivity(&context), mContext(&context) {
-    // Setup nodes
-    ActionFlowfinal_1InActivityParkingSpotOfDocking_System* varFlowfinal_1 = new ActionFlowfinal_1InActivityParkingSpotOfDocking_System("ParkingSpot:ROOT.flowfinal_1", *this, *mContext);
-    ActionCalloperation_3InActivityParkingSpotOfDocking_System* varCalloperation_3 = new ActionCalloperation_3InActivityParkingSpotOfDocking_System("ParkingSpot:ROOT.calloperation_3", *this, *mContext);
-    
-    // Setup flows
-    new DataFlow0InActivityParkingSpotOfDocking_System("ParkingSpot:0", *this, *varCalloperation_3);
-    new OMControlFlow("ParkingSpot:1", *this, *varCalloperation_3, *varFlowfinal_1);
-}
-
-int Docking_System::ParkingSpotOfDocking_System::getParkingSpot() {
-    return ParkingSpot;
-}
-
-void Docking_System::ParkingSpotOfDocking_System::setParkingSpot(int value) {
-    this->ParkingSpot = value;
-}
-//#]
-
-Docking_System::Docking_System() : ParkingSpotInput(1) {
-    NOTIFY_ACTIVITY_CONSTRUCTOR(Docking_System, Docking_System(), 0, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_Docking_System_SERIALIZE);
     itsANGELS = NULL;
     itsCollision_Avoidance_1 = NULL;
     itsCollision_Detection_1 = NULL;
     itsDCOperator = NULL;
+    itsDCOperator_1 = NULL;
     itsTruck_1 = NULL;
+    initStatechart();
 }
 
 Docking_System::~Docking_System() {
     NOTIFY_DESTRUCTOR(~Docking_System, true);
     cleanUpRelations();
+    cancelTimeouts();
 }
 
-void Docking_System::MoveTruck(double SteeringAngle, double speed) {
-    NOTIFY_OPERATION(MoveTruck, MoveTruck(double,double), 2, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_MoveTruck_SERIALIZE);
-    //#[ operation MoveTruck(double,double)
-    SteeringAngle = SteerAngle;
-    speed = TruckSpeed;
+void Docking_System::MoveTruck(double SteeringAngle, double speed, double DockingStatus) {
+    NOTIFY_OPERATION(MoveTruck, MoveTruck(double,double,double), 3, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_MoveTruck_SERIALIZE);
+    //#[ operation MoveTruck(double,double,double)
+    if (DockingStatus !=1)
+    {SteeringAngle = SteerAngle;
+    speed = Speed;}
+    else
+    { 
+    SteerAngle = 0;
+    Speed = 0;}  
+    
     //#]
-}
-
-void Docking_System::PSInput(double PS) {
-    NOTIFY_OPERATION(PSInput, PSInput(double), 1, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_PSInput_SERIALIZE);
-    //#[ operation PSInput(double)
-    PS = ParkingSpotInput;
-    //#]
-}
-
-//#[ ignore
-OMActivity* Docking_System::createMainActivity() {
-    return new MainFlowOfDocking_System(*this);
-}
-
-void* Docking_System::getMe() {
-    return this;
-}
-//#]
-
-OMList<OMString> Docking_System::delegatedFilterPassableFlowsFromActionAccepteventaction_0InActivityMainFlowOfDocking_System() {
-    //#[ activity_action MainFlow:ROOT.accepteventaction_0
-    OMList<OMString> ans;
-    ans.add("MainFlow:1");
-    return ans;
-    //#]
-}
-
-void Docking_System::delegatedAcceptEventDataFromActionAccepteventaction_0InActivityMainFlowOfDocking_System() {
-    //#[ activity_action MainFlow:ROOT.accepteventaction_0
-    //#]
-}
-
-OMList<OMString> Docking_System::delegatedFilterPassableFlowsFromActionParkingSpotInActivityMainFlowOfDocking_System(int ParkingSpot) {
-    //#[ activity_action MainFlow:ROOT.ParkingSpot
-    OMList<OMString> ans;
-    ans.add("MainFlow:3");
-    return ans;
-    //#]
-}
-
-OMList<OMString> Docking_System::delegatedFilterPassableFlowsFromActionAccepteventaction_4InActivityMainFlowOfDocking_System(int& SteeringAngle, int& speed) {
-    //#[ activity_action MainFlow:ROOT.accepteventaction_4
-    OMList<OMString> ans;
-    ans.add("MainFlow:4");
-    ans.add("MainFlow:5");
-    return ans;
-    //#]
-}
-
-void Docking_System::delegatedAcceptEventDataFromActionAccepteventaction_4InActivityMainFlowOfDocking_System(int& SteeringAngle, int& speed) {
-    //#[ activity_action MainFlow:ROOT.accepteventaction_4
-    //#]
-}
-
-OMList<OMString> Docking_System::delegatedFilterPassableFlowsFromActionMoveTruckForwardInActivityMainFlowOfDocking_System(int speed, int SteeringAngle) {
-    //#[ activity_action MainFlow:ROOT.MoveTruckForward
-    OMList<OMString> ans;
-    ans.add("MainFlow:6");
-    return ans;
-    //#]
-}
-
-OMList<OMString> Docking_System::delegatedFilterPassableFlowsFromActionActivityfinal_8InActivityMainFlowOfDocking_System() {
-    //#[ activity_action MainFlow:ROOT.activityfinal_8
-    OMList<OMString> ans;
-    return ans;
-    //#]
-}
-
-OMList<OMString> Docking_System::delegatedFilterPassableFlowsFromActionAccepteventaction_9InActivityMainFlowOfDocking_System(int& ParkingSpot) {
-    //#[ activity_action MainFlow:ROOT.accepteventaction_9
-    OMList<OMString> ans;
-    ans.add("MainFlow:2");
-    return ans;
-    //#]
-}
-
-void Docking_System::delegatedAcceptEventDataFromActionAccepteventaction_9InActivityMainFlowOfDocking_System(int& ParkingSpot) {
-    //#[ activity_action MainFlow:ROOT.accepteventaction_9
-    //#]
-}
-
-OMList<OMString> Docking_System::delegatedFilterPassableFlowsFromActionCalloperation_2InActivityMoveTruckForwardOfDocking_System(double SteeringAngle, double speed) {
-    //#[ activity_action MoveTruckForward:ROOT.calloperation_2
-    OMList<OMString> ans;
-    ans.add("MoveTruckForward:2");
-    return ans;
-    //#]
-}
-
-void Docking_System::delegatedInvokeContextMethodFromActionCalloperation_2InActivityMoveTruckForwardOfDocking_System(double SteeringAngle, double speed) {
-    //#[ activity_action MoveTruckForward:ROOT.calloperation_2
-    MoveTruck(SteeringAngle, speed);
-    //#]
-}
-
-OMList<OMString> Docking_System::delegatedFilterPassableFlowsFromActionFlowfinal_4InActivityMoveTruckForwardOfDocking_System() {
-    //#[ activity_action MoveTruckForward:ROOT.flowfinal_4
-    OMList<OMString> ans;
-    return ans;
-    //#]
-}
-
-OMList<OMString> Docking_System::delegatedFilterPassableFlowsFromActionFlowfinal_1InActivityParkingSpotOfDocking_System() {
-    //#[ activity_action ParkingSpot:ROOT.flowfinal_1
-    OMList<OMString> ans;
-    return ans;
-    //#]
-}
-
-OMList<OMString> Docking_System::delegatedFilterPassableFlowsFromActionCalloperation_3InActivityParkingSpotOfDocking_System(double PS) {
-    //#[ activity_action ParkingSpot:ROOT.calloperation_3
-    OMList<OMString> ans;
-    ans.add("ParkingSpot:1");
-    return ans;
-    //#]
-}
-
-void Docking_System::delegatedInvokeContextMethodFromActionCalloperation_3InActivityParkingSpotOfDocking_System(double PS) {
-    //#[ activity_action ParkingSpot:ROOT.calloperation_3
-    PSInput(PS);
-    //#]
-}
-
-double Docking_System::getParkingSpotInput() const {
-    return ParkingSpotInput;
-}
-
-void Docking_System::setParkingSpotInput(double p_ParkingSpotInput) {
-    ParkingSpotInput = p_ParkingSpotInput;
-}
-
-double Docking_System::getSteerAngle() const {
-    return SteerAngle;
-}
-
-void Docking_System::setSteerAngle(double p_SteerAngle) {
-    SteerAngle = p_SteerAngle;
-}
-
-double Docking_System::getTruckSpeed() const {
-    return TruckSpeed;
-}
-
-void Docking_System::setTruckSpeed(double p_TruckSpeed) {
-    TruckSpeed = p_TruckSpeed;
 }
 
 ANGELS* Docking_System::getItsANGELS() const {
@@ -584,10 +88,6 @@ void Docking_System::setItsANGELS(ANGELS* p_ANGELS) {
     _setItsANGELS(p_ANGELS);
 }
 
-Collision_Avoidance* Docking_System::getItsCollision_Avoidance() const {
-    return (Collision_Avoidance*) &itsCollision_Avoidance;
-}
-
 Collision_Avoidance* Docking_System::getItsCollision_Avoidance_1() const {
     return itsCollision_Avoidance_1;
 }
@@ -598,10 +98,6 @@ void Docking_System::setItsCollision_Avoidance_1(Collision_Avoidance* p_Collisio
             p_Collision_Avoidance->_setItsDocking_System(this);
         }
     _setItsCollision_Avoidance_1(p_Collision_Avoidance);
-}
-
-Collision_Detection* Docking_System::getItsCollision_Detection() const {
-    return (Collision_Detection*) &itsCollision_Detection;
 }
 
 Collision_Detection* Docking_System::getItsCollision_Detection_1() const {
@@ -646,8 +142,16 @@ void Docking_System::setItsTruck_1(Truck* p_Truck) {
 
 bool Docking_System::startBehavior() {
     bool done = true;
-    done &= OMActivityContext::startBehavior();
+    done &= itsLoading_System.startBehavior();
+    done &= OMReactive::startBehavior();
     return done;
+}
+
+void Docking_System::initStatechart() {
+    rootState_subState = OMNonState;
+    rootState_active = OMNonState;
+    Docking_subState = OMNonState;
+    Docking_timeout = NULL;
 }
 
 void Docking_System::cleanUpRelations() {
@@ -691,6 +195,16 @@ void Docking_System::cleanUpRelations() {
                 }
             itsDCOperator = NULL;
         }
+    if(itsDCOperator_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDCOperator_1");
+            Docking_System* p_Docking_System = itsDCOperator_1->getItsDocking_System_1();
+            if(p_Docking_System != NULL)
+                {
+                    itsDCOperator_1->__setItsDocking_System_1(NULL);
+                }
+            itsDCOperator_1 = NULL;
+        }
     if(itsTruck_1 != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsTruck_1");
@@ -701,6 +215,20 @@ void Docking_System::cleanUpRelations() {
                 }
             itsTruck_1 = NULL;
         }
+}
+
+void Docking_System::cancelTimeouts() {
+    cancel(Docking_timeout);
+}
+
+bool Docking_System::cancelTimeout(const IOxfTimeout* arg) {
+    bool res = false;
+    if(Docking_timeout == arg)
+        {
+            Docking_timeout = NULL;
+            res = true;
+        }
+    return res;
 }
 
 void Docking_System::__setItsANGELS(ANGELS* p_ANGELS) {
@@ -828,12 +356,296 @@ void Docking_System::_clearItsTruck_1() {
     itsTruck_1 = NULL;
 }
 
+void Docking_System::CheckDockingStatus() {
+    NOTIFY_OPERATION(CheckDockingStatus, CheckDockingStatus(), 0, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_CheckDockingStatus_SERIALIZE);
+    //#[ operation CheckDockingStatus()
+    if (DockingStatus != 0)
+    {   Speed = 0;
+        SteerAngle = 0 ; }
+     
+    //#]
+}
+
+void Docking_System::DockInput(double DS) {
+    NOTIFY_OPERATION(DockInput, DockInput(double), 1, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_DockInput_SERIALIZE);
+    //#[ operation DockInput(double)
+    DSInput = DS;
+    //#]
+}
+
+double Docking_System::getDSInput() const {
+    return DSInput;
+}
+
+void Docking_System::setDSInput(double p_DSInput) {
+    DSInput = p_DSInput;
+}
+
+double Docking_System::getDockingStatus() const {
+    return DockingStatus;
+}
+
+void Docking_System::setDockingStatus(double p_DockingStatus) {
+    DockingStatus = p_DockingStatus;
+}
+
+double Docking_System::getDockingTime() const {
+    return DockingTime;
+}
+
+void Docking_System::setDockingTime(double p_DockingTime) {
+    DockingTime = p_DockingTime;
+}
+
+RhpBoolean Docking_System::getDoorstatus() const {
+    return Doorstatus;
+}
+
+void Docking_System::setDoorstatus(RhpBoolean p_Doorstatus) {
+    Doorstatus = p_Doorstatus;
+}
+
+double Docking_System::getSpeed() const {
+    return Speed;
+}
+
+void Docking_System::setSpeed(double p_Speed) {
+    Speed = p_Speed;
+}
+
+double Docking_System::getSteerAngle() const {
+    return SteerAngle;
+}
+
+void Docking_System::setSteerAngle(double p_SteerAngle) {
+    SteerAngle = p_SteerAngle;
+}
+
+DCOperator* Docking_System::getItsDCOperator_1() const {
+    return itsDCOperator_1;
+}
+
+void Docking_System::setItsDCOperator_1(DCOperator* p_DCOperator) {
+    if(p_DCOperator != NULL)
+        {
+            p_DCOperator->_setItsDocking_System_1(this);
+        }
+    _setItsDCOperator_1(p_DCOperator);
+}
+
+Loading_System* Docking_System::getItsLoading_System() const {
+    return (Loading_System*) &itsLoading_System;
+}
+
+void Docking_System::__setItsDCOperator_1(DCOperator* p_DCOperator) {
+    itsDCOperator_1 = p_DCOperator;
+    if(p_DCOperator != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDCOperator_1", p_DCOperator, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDCOperator_1");
+        }
+}
+
+void Docking_System::_setItsDCOperator_1(DCOperator* p_DCOperator) {
+    if(itsDCOperator_1 != NULL)
+        {
+            itsDCOperator_1->__setItsDocking_System_1(NULL);
+        }
+    __setItsDCOperator_1(p_DCOperator);
+}
+
+void Docking_System::_clearItsDCOperator_1() {
+    NOTIFY_RELATION_CLEARED("itsDCOperator_1");
+    itsDCOperator_1 = NULL;
+}
+
+void Docking_System::setActiveContext(IOxfActive* theActiveContext, bool activeInstance) {
+    OMReactive::setActiveContext(theActiveContext, activeInstance);
+    {
+        itsLoading_System.setActiveContext(theActiveContext, false);
+    }
+}
+
+void Docking_System::destroy() {
+    itsLoading_System.destroy();
+    OMReactive::destroy();
+}
+
+void Docking_System::rootState_entDef() {
+    {
+        NOTIFY_STATE_ENTERED("ROOT");
+        NOTIFY_TRANSITION_STARTED("0");
+        NOTIFY_STATE_ENTERED("ROOT.ManualState");
+        rootState_subState = ManualState;
+        rootState_active = ManualState;
+        NOTIFY_TRANSITION_TERMINATED("0");
+    }
+}
+
+IOxfReactive::TakeEventStatus Docking_System::rootState_processEvent() {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    switch (rootState_active) {
+        // State ManualState
+        case ManualState:
+        {
+            if(IS_EVENT_TYPE_OF(Autonomousmode_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("1");
+                    NOTIFY_STATE_EXITED("ROOT.ManualState");
+                    NOTIFY_STATE_ENTERED("ROOT.AutonomousState");
+                    rootState_subState = AutonomousState;
+                    rootState_active = AutonomousState;
+                    NOTIFY_TRANSITION_TERMINATED("1");
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        // State AutonomousState
+        case AutonomousState:
+        {
+            if(IS_EVENT_TYPE_OF(StartDockingProcedure_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("2");
+                    NOTIFY_STATE_EXITED("ROOT.AutonomousState");
+                    //#[ transition 2 
+                    DockInput(2);
+                    //#]
+                    Docking_entDef();
+                    NOTIFY_TRANSITION_TERMINATED("2");
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        // State MoveTheTruck
+        case MoveTheTruck:
+        {
+            if(IS_EVENT_TYPE_OF(EndDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("7");
+                    switch (Docking_subState) {
+                        // State MoveTheTruck
+                        case MoveTheTruck:
+                        {
+                            cancel(Docking_timeout);
+                            NOTIFY_STATE_EXITED("ROOT.Docking.MoveTheTruck");
+                        }
+                        break;
+                        // State BeginMovement
+                        case BeginMovement:
+                        {
+                            NOTIFY_STATE_EXITED("ROOT.Docking.BeginMovement");
+                        }
+                        break;
+                        default:
+                            break;
+                    }
+                    Docking_subState = OMNonState;
+                    NOTIFY_STATE_EXITED("ROOT.Docking");
+                    //#[ transition 7 
+                    MoveTruck(0,0,1);
+                    //#]
+                    NOTIFY_STATE_ENTERED("ROOT.IdleTruck");
+                    pushNullTransition();
+                    rootState_subState = IdleTruck;
+                    rootState_active = IdleTruck;
+                    NOTIFY_TRANSITION_TERMINATED("7");
+                    res = eventConsumed;
+                }
+            else if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
+                {
+                    if(getCurrentEvent() == Docking_timeout)
+                        {
+                            NOTIFY_TRANSITION_STARTED("5");
+                            cancel(Docking_timeout);
+                            NOTIFY_STATE_EXITED("ROOT.Docking.MoveTheTruck");
+                            //#[ transition 5 
+                            CheckDockingStatus();
+                            DockingTime++;
+                            //#]
+                            NOTIFY_STATE_ENTERED("ROOT.Docking.MoveTheTruck");
+                            Docking_subState = MoveTheTruck;
+                            rootState_active = MoveTheTruck;
+                            Docking_timeout = scheduleTimeout(1000, "ROOT.Docking.MoveTheTruck");
+                            NOTIFY_TRANSITION_TERMINATED("5");
+                            res = eventConsumed;
+                        }
+                }
+            else if(IS_EVENT_TYPE_OF(TruckDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("6");
+                    NOTIFY_TRANSITION_TERMINATED("6");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        // State BeginMovement
+        case BeginMovement:
+        {
+            if(IS_EVENT_TYPE_OF(BeginTruckMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("4");
+                    NOTIFY_STATE_EXITED("ROOT.Docking.BeginMovement");
+                    NOTIFY_STATE_ENTERED("ROOT.Docking.MoveTheTruck");
+                    Docking_subState = MoveTheTruck;
+                    rootState_active = MoveTheTruck;
+                    Docking_timeout = scheduleTimeout(1000, "ROOT.Docking.MoveTheTruck");
+                    NOTIFY_TRANSITION_TERMINATED("4");
+                    res = eventConsumed;
+                }
+            
+            
+        }
+        break;
+        // State IdleTruck
+        case IdleTruck:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    NOTIFY_TRANSITION_STARTED("8");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.IdleTruck");
+                    NOTIFY_STATE_ENTERED("ROOT.terminationstate_7");
+                    rootState_subState = terminationstate_7;
+                    rootState_active = terminationstate_7;
+                    NOTIFY_TRANSITION_TERMINATED("8");
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        
+        default:
+            break;
+    }
+    return res;
+}
+
+void Docking_System::Docking_entDef() {
+    NOTIFY_STATE_ENTERED("ROOT.Docking");
+    rootState_subState = Docking;
+    NOTIFY_TRANSITION_STARTED("3");
+    NOTIFY_STATE_ENTERED("ROOT.Docking.BeginMovement");
+    Docking_subState = BeginMovement;
+    rootState_active = BeginMovement;
+    NOTIFY_TRANSITION_TERMINATED("3");
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedDocking_System::serializeAttributes(AOMSAttributes* aomsAttributes) const {
+    aomsAttributes->addAttribute("DockingStatus", x2String(myReal->DockingStatus));
+    aomsAttributes->addAttribute("DockingTime", x2String(myReal->DockingTime));
+    aomsAttributes->addAttribute("Doorstatus", x2String(myReal->Doorstatus));
+    aomsAttributes->addAttribute("DSInput", x2String(myReal->DSInput));
+    aomsAttributes->addAttribute("Speed", x2String(myReal->Speed));
     aomsAttributes->addAttribute("SteerAngle", x2String(myReal->SteerAngle));
-    aomsAttributes->addAttribute("TruckSpeed", x2String(myReal->TruckSpeed));
-    aomsAttributes->addAttribute("ParkingSpotInput", x2String(myReal->ParkingSpotInput));
 }
 
 void OMAnimatedDocking_System::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -847,12 +659,6 @@ void OMAnimatedDocking_System::serializeRelations(AOMSRelations* aomsRelations) 
         {
             aomsRelations->ADD_ITEM(myReal->itsDCOperator);
         }
-    aomsRelations->addRelation("itsCollision_Avoidance", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCollision_Avoidance);
-    aomsRelations->addRelation("itsCollision_Detection", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection);
-    aomsRelations->addRelation("itsTruck", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsTruck);
     aomsRelations->addRelation("itsCollision_Avoidance_1", false, true);
     if(myReal->itsCollision_Avoidance_1)
         {
@@ -868,10 +674,94 @@ void OMAnimatedDocking_System::serializeRelations(AOMSRelations* aomsRelations) 
         {
             aomsRelations->ADD_ITEM(myReal->itsTruck_1);
         }
+    aomsRelations->addRelation("itsDCOperator_1", false, true);
+    if(myReal->itsDCOperator_1)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDCOperator_1);
+        }
+    aomsRelations->addRelation("itsTruck", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsTruck);
+    aomsRelations->addRelation("itsLoading_System", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsLoading_System);
+}
+
+void OMAnimatedDocking_System::rootState_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT");
+    switch (myReal->rootState_subState) {
+        case Docking_System::ManualState:
+        {
+            ManualState_serializeStates(aomsState);
+        }
+        break;
+        case Docking_System::AutonomousState:
+        {
+            AutonomousState_serializeStates(aomsState);
+        }
+        break;
+        case Docking_System::Docking:
+        {
+            Docking_serializeStates(aomsState);
+        }
+        break;
+        case Docking_System::IdleTruck:
+        {
+            IdleTruck_serializeStates(aomsState);
+        }
+        break;
+        case Docking_System::terminationstate_7:
+        {
+            terminationstate_7_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
+}
+
+void OMAnimatedDocking_System::terminationstate_7_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.terminationstate_7");
+}
+
+void OMAnimatedDocking_System::ManualState_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.ManualState");
+}
+
+void OMAnimatedDocking_System::IdleTruck_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.IdleTruck");
+}
+
+void OMAnimatedDocking_System::Docking_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.Docking");
+    switch (myReal->Docking_subState) {
+        case Docking_System::MoveTheTruck:
+        {
+            MoveTheTruck_serializeStates(aomsState);
+        }
+        break;
+        case Docking_System::BeginMovement:
+        {
+            BeginMovement_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
+}
+
+void OMAnimatedDocking_System::MoveTheTruck_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.Docking.MoveTheTruck");
+}
+
+void OMAnimatedDocking_System::BeginMovement_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.Docking.BeginMovement");
+}
+
+void OMAnimatedDocking_System::AutonomousState_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.AutonomousState");
 }
 //#]
 
-IMPLEMENT_ACTIVITY_META_P(Docking_System, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, false, OMAnimatedDocking_System)
+IMPLEMENT_REACTIVE_META_P(Docking_System, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, false, OMAnimatedDocking_System)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

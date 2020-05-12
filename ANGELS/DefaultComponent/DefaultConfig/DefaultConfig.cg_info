@@ -1,52 +1,55 @@
 I-Logix-RPY-Archive version 8.15.0 * 9841247
 
 - m_fileModifyTime = { IRPYRawContainer 
-	- size = 40;
-	- value = "DefaultComponent\\DefaultConfig\\ANGELS.cpp" 4.30.2020::10:10:19
-	"DefaultComponent\\DefaultConfig\\ANGELS.h" 4.30.2020::10:10:19
+	- size = 42;
+	- value = "DefaultComponent\\DefaultConfig\\ANGELS.cpp" 5.12.2020::20:10:28
+	"DefaultComponent\\DefaultConfig\\ANGELS.h" 5.12.2020::20:10:27
 	"DefaultComponent\\DefaultConfig\\Charging_System.cpp" 4.30.2020::10:10:21
 	"DefaultComponent\\DefaultConfig\\Charging_System.h" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\Collision_Avoidance.cpp" 4.30.2020::10:10:20
-	"DefaultComponent\\DefaultConfig\\Collision_Avoidance.h" 4.30.2020::10:10:20
-	"DefaultComponent\\DefaultConfig\\Collision_Detection.cpp" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\Collision_Detection.h" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\Communication_System.cpp" 4.30.2020::10:10:20
-	"DefaultComponent\\DefaultConfig\\Communication_System.h" 4.30.2020::10:10:20
-	"DefaultComponent\\DefaultConfig\\DC.cpp" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\DC.h" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\DCOperator.cpp" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\DCOperator.h" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\DockingSystemPkg.cpp" 4.29.2020::21:18:17
-	"DefaultComponent\\DefaultConfig\\DockingSystemPkg.h" 4.29.2020::21:18:16
-	"DefaultComponent\\DefaultConfig\\Docking_System.cpp" 4.30.2020::10:10:20
-	"DefaultComponent\\DefaultConfig\\Docking_System.h" 4.30.2020::10:10:20
-	"DefaultComponent\\DefaultConfig\\Driver.cpp" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\Driver.h" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\Government.cpp" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\Government.h" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\LoadingSystemPkg.cpp" 4.30.2020::10:10:22
-	"DefaultComponent\\DefaultConfig\\LoadingSystemPkg.h" 4.30.2020::10:10:22
-	"DefaultComponent\\DefaultConfig\\Loading_System.cpp" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\Loading_System.h" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\Localisation_System.cpp" 4.30.2020::10:10:20
-	"DefaultComponent\\DefaultConfig\\Localisation_System.h" 4.30.2020::10:10:20
-	"DefaultComponent\\DefaultConfig\\Obstacle.cpp" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\Obstacle.h" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\PedestrianandObstacles.cpp" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\PedestrianandObstacles.h" 4.30.2020::10:10:21
+	"DefaultComponent\\DefaultConfig\\Collision_Avoidance.cpp" 5.10.2020::21:12:33
+	"DefaultComponent\\DefaultConfig\\Collision_Avoidance.h" 5.10.2020::21:12:33
+	"DefaultComponent\\DefaultConfig\\Collision_Detection.cpp" 5.10.2020::21:4:9
+	"DefaultComponent\\DefaultConfig\\Collision_Detection.h" 5.10.2020::21:4:9
+	"DefaultComponent\\DefaultConfig\\Communication_System.cpp" 5.10.2020::21:12:33
+	"DefaultComponent\\DefaultConfig\\Communication_System.h" 5.10.2020::21:12:33
+	"DefaultComponent\\DefaultConfig\\DC.cpp" 5.10.2020::21:12:33
+	"DefaultComponent\\DefaultConfig\\DC.h" 5.10.2020::21:12:33
+	"DefaultComponent\\DefaultConfig\\DCOperator.cpp" 5.10.2020::21:12:34
+	"DefaultComponent\\DefaultConfig\\DCOperator.h" 5.10.2020::21:12:34
+	"DefaultComponent\\DefaultConfig\\DockingSystemPkg.cpp" 5.12.2020::20:10:28
+	"DefaultComponent\\DefaultConfig\\DockingSystemPkg.h" 5.12.2020::20:10:27
+	"DefaultComponent\\DefaultConfig\\Docking_System.cpp" 5.12.2020::20:10:28
+	"DefaultComponent\\DefaultConfig\\Docking_System.h" 5.12.2020::20:10:27
+	"DefaultComponent\\DefaultConfig\\Driver.cpp" 5.10.2020::21:12:34
+	"DefaultComponent\\DefaultConfig\\Driver.h" 5.10.2020::21:12:34
+	"DefaultComponent\\DefaultConfig\\Government.cpp" 5.10.2020::21:12:35
+	"DefaultComponent\\DefaultConfig\\Government.h" 5.10.2020::21:12:34
+	"DefaultComponent\\DefaultConfig\\LoadingSystemPkg.cpp" 5.12.2020::20:10:28
+	"DefaultComponent\\DefaultConfig\\LoadingSystemPkg.h" 5.12.2020::20:10:28
+	"DefaultComponent\\DefaultConfig\\Loading_System.cpp" 5.12.2020::20:10:28
+	"DefaultComponent\\DefaultConfig\\Loading_System.h" 5.12.2020::20:10:27
+	"DefaultComponent\\DefaultConfig\\Localisation_System.cpp" 5.10.2020::21:12:33
+	"DefaultComponent\\DefaultConfig\\Localisation_System.h" 5.10.2020::21:12:33
+	"DefaultComponent\\DefaultConfig\\Obstacle.cpp" 5.10.2020::21:12:36
+	"DefaultComponent\\DefaultConfig\\Obstacle.h" 5.10.2020::21:12:36
+	"DefaultComponent\\DefaultConfig\\ParkingSystem.cpp" 5.10.2020::21:12:32
+	"DefaultComponent\\DefaultConfig\\ParkingSystem.h" 5.10.2020::21:12:32
+	"DefaultComponent\\DefaultConfig\\PedestrianandObstacles.cpp" 5.10.2020::21:12:36
+	"DefaultComponent\\DefaultConfig\\PedestrianandObstacles.h" 5.10.2020::21:12:36
 	"DefaultComponent\\DefaultConfig\\SafetyStandards.cpp" 4.30.2020::10:10:21
 	"DefaultComponent\\DefaultConfig\\SafetyStandards.h" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\Safety_Standards.cpp" 4.30.2020::10:10:22
-	"DefaultComponent\\DefaultConfig\\Safety_Standards.h" 4.30.2020::10:10:22
-	"DefaultComponent\\DefaultConfig\\Truck.cpp" 4.30.2020::10:10:21
-	"DefaultComponent\\DefaultConfig\\Truck.h" 4.30.2020::10:10:21
+	"DefaultComponent\\DefaultConfig\\Safety_Standards.cpp" 5.10.2020::21:12:36
+	"DefaultComponent\\DefaultConfig\\Safety_Standards.h" 5.10.2020::21:12:35
+	"DefaultComponent\\DefaultConfig\\Truck.cpp" 5.10.2020::21:12:34
+	"DefaultComponent\\DefaultConfig\\Truck.h" 5.10.2020::21:12:34
 	"DefaultComponent\\DefaultConfig\\actor_13.cpp" 4.29.2020::14:32:57
 	"DefaultComponent\\DefaultConfig\\actor_13.h" 4.29.2020::14:32:57
 	
 }
 - m_saveUnitAndOwnerSaveUnit = { IRPYRawContainer 
-	- size = 13;
-	- value = "GUID 4242030f-427c-425e-9162-96cd8e5ac609" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
+	- size = 14;
+	- value = "GUID 363e27a5-edb8-44a5-82c4-8353be709de0" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
+	"GUID 4242030f-427c-425e-9162-96cd8e5ac609" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
 	"GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11" "GUID de656d0c-824e-401d-88a2-a108a59b1b85"
 	"GUID 661c23ef-e37c-4d88-8aea-2af717860b40" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
 	"GUID 7554a74b-52bb-4caa-90d3-744b41cefafd" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
@@ -61,7 +64,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	"GUID fac390a0-ea0b-487d-8594-4a339b172cf8" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
 	
 }
-- size = 22;
+- size = 21;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\TruckPkg.sbsx";
@@ -69,7 +72,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "Truck";
 	- _id = GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.10.2020::21:12:37;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\ChargingSystemPkg.sbsx";
@@ -77,7 +80,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "Charging_System";
 	- _id = GUID a793ceb4-ff4d-4df9-a88a-619d8991be61;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.10.2020::21:12:37;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
@@ -85,12 +88,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "Government";
 	- _id = GUID 8a324cdf-404e-469e-8e07-d8bcf2dec122;
 }
-- genTime = 4.30.2020::10:10:22;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID 25ec47a8-4dc4-488b-b2e1-484c6f876cb8;
-}
-- genTime = 4.29.2020::14:58:19;
+- genTime = 5.10.2020::21:12:37;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\LocalisationPkg.sbsx";
@@ -98,7 +96,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "Localisation_System";
 	- _id = GUID ca6abf50-a02e-4266-ae71-27495013d3ea;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.10.2020::21:12:37;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\CommunicationPkg.sbsx";
@@ -106,7 +104,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "Communication_System";
 	- _id = GUID 9f39a54a-16f7-462c-9042-179f5cec7ca6;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.10.2020::21:12:37;
 - hElement = { IHandle 
 	- _m2Class = "ISubsystem";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\DockingSystemPkg.sbsx";
@@ -114,7 +112,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "DockingSystemPkg";
 	- _id = GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507;
 }
-- genTime = 4.29.2020::21:18:17;
+- genTime = 5.12.2020::20:10:28;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\ObstacleAvoidancePkg.sbsx";
@@ -122,7 +120,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "Collision_Avoidance";
 	- _id = GUID 5119c251-6ddc-4989-81dc-cd28be013ef0;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.10.2020::21:12:37;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\ObstacleDetectionPkg.sbsx";
@@ -130,7 +128,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "Collision_Detection";
 	- _id = GUID 365879c1-dcdd-4999-979a-ce422be9b964;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.10.2020::21:4:9;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
@@ -138,7 +136,15 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "Obstacle";
 	- _id = GUID 6c39ba65-f02e-46e1-8062-78d3fd6e2b1c;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.10.2020::21:12:37;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ParkingSystemPkg.sbsx";
+	- _subsystem = "UseCaseAnalysisPkg::ANGELSPkg::ParkingSystemPkg";
+	- _name = "ParkingSystem";
+	- _id = GUID b61a4aaf-a0ac-4e13-802f-fe5b11fb7b99;
+}
+- genTime = 5.10.2020::21:12:37;
 - hElement = { IHandle 
 	- _m2Class = "ISubsystem";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\LoadingSystemPkg.sbsx";
@@ -146,7 +152,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "LoadingSystemPkg";
 	- _id = GUID dd55cabb-699e-4724-9d69-dcc932a50bcc;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.12.2020::20:10:28;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
@@ -154,12 +160,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "Driver";
 	- _id = GUID 516c76cb-338f-40c3-a898-f904221cfb96;
 }
-- genTime = 4.30.2020::10:10:22;
-- hElement = { IHandle 
-	- _m2Class = "*";
-	- _id = GUID ba7ff1ec-3720-44d9-9f25-dd97ab9cf315;
-}
-- genTime = 4.29.2020::21:18:17;
+- genTime = 5.10.2020::21:12:37;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\LoadingSystemPkg.sbsx";
@@ -167,7 +168,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "Loading_System";
 	- _id = GUID 0f2dc8c4-a324-4500-bc76-7190e7a8a4e2;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.12.2020::20:10:28;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
@@ -175,7 +176,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "PedestrianandObstacles";
 	- _id = GUID d1815240-c7ca-42c7-8552-c599700d0b3c;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.10.2020::21:12:37;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\DockingSystemPkg.sbsx";
@@ -183,7 +184,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "Docking_System";
 	- _id = GUID 419eb000-a805-48d7-8cc1-6b18694ad318;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.12.2020::20:10:28;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\ANGELSPkg.sbsx";
@@ -191,7 +192,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "ANGELS";
 	- _id = GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.12.2020::20:10:28;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
@@ -199,7 +200,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "DCOperator";
 	- _id = GUID 1363a688-b2df-4751-bd7d-7353a11cd859;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.10.2020::21:12:37;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
@@ -207,7 +208,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "DC";
 	- _id = GUID 7ff30776-c3a5-45fc-820c-bff3158c6232;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.10.2020::21:12:37;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\SafetyStandards.sbsx";
@@ -215,7 +216,7 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "Safety_Standards";
 	- _id = GUID 2131ef10-fa00-433b-8080-7a14f2fb4ed5;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.10.2020::21:12:37;
 - hElement = { IHandle 
 	- _m2Class = "IActor";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
@@ -223,12 +224,12 @@ I-Logix-RPY-Archive version 8.15.0 * 9841247
 	- _name = "SafetyStandards";
 	- _id = GUID 23c972f4-cc30-419c-a741-5d23c4eb9568;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.10.2020::21:12:37;
 - hElement = { IHandle 
 	- _m2Class = "ICodeGenConfigInfo";
 	- _filename = ".\\..\\..\\ANGELS_rpy\\DefaultComponent.cmpx";
 	- _name = "DefaultComponent\\DefaultConfig";
 	- _id = GUID 3e8a7e80-6bbb-44b2-a7bd-675d1c6ba0f1;
 }
-- genTime = 4.30.2020::10:10:22;
+- genTime = 5.12.2020::20:10:28;
 

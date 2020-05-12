@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Collision_Detection
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\Collision_Detection.h
 *********************************************************************/
 
@@ -21,6 +21,9 @@
 #include "ObstacleDetectionPkg.h"
 //## link itsANGELS
 class ANGELS;
+
+//## link itsDocking_System
+class Docking_System;
 
 //## link itsObstacle
 class Obstacle;
@@ -60,6 +63,12 @@ public :
     void setItsANGELS_1(ANGELS* p_ANGELS);
     
     //## auto_generated
+    Docking_System* getItsDocking_System() const;
+    
+    //## auto_generated
+    void setItsDocking_System(Docking_System* p_Docking_System);
+    
+    //## auto_generated
     Obstacle* getItsObstacle() const;
     
     //## auto_generated
@@ -75,6 +84,8 @@ protected :
     ANGELS* itsANGELS;		//## link itsANGELS
     
     ANGELS* itsANGELS_1;		//## link itsANGELS_1
+    
+    Docking_System* itsDocking_System;		//## link itsDocking_System
     
     Obstacle* itsObstacle;		//## link itsObstacle
     
@@ -92,13 +103,13 @@ public :
     void _clearItsANGELS();
     
     //## auto_generated
-    void __setItsANGELS_1(ANGELS* p_ANGELS);
+    void __setItsDocking_System(Docking_System* p_Docking_System);
     
     //## auto_generated
-    void _setItsANGELS_1(ANGELS* p_ANGELS);
+    void _setItsDocking_System(Docking_System* p_Docking_System);
     
     //## auto_generated
-    void _clearItsANGELS_1();
+    void _clearItsDocking_System();
     
     //## auto_generated
     void __setItsObstacle(Obstacle* p_Obstacle);

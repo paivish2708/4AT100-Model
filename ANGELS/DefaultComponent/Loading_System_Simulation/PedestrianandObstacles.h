@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: PedestrianandObstacles
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Sun, 10, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\PedestrianandObstacles.h
 *********************************************************************/
 
@@ -21,6 +21,9 @@
 #include "ActorPkg.h"
 //## actor PedestrianandObstacles
 #include "Obstacle.h"
+//## auto_generated
+class Collision_Detection;
+
 //## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
 //## actor PedestrianandObstacles

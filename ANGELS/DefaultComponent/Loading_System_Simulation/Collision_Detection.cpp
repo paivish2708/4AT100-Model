@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Collision_Detection
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\Collision_Detection.cpp
 *********************************************************************/
 
@@ -16,6 +16,8 @@
 #include "Collision_Detection.h"
 //## link itsANGELS
 #include "ANGELS.h"
+//## link itsDocking_System
+#include "Docking_System.h"
 //## link itsObstacle
 #include "Obstacle.h"
 //#[ ignore
@@ -29,6 +31,7 @@ Collision_Detection::Collision_Detection() {
     NOTIFY_CONSTRUCTOR(Collision_Detection, Collision_Detection(), 0, UseCaseAnalysisPkg_ANGELSPkg_ObstacleDetectionPkg_Collision_Detection_Collision_Detection_SERIALIZE);
     itsANGELS = NULL;
     itsANGELS_1 = NULL;
+    itsDocking_System = NULL;
     itsObstacle = NULL;
 }
 
@@ -54,11 +57,27 @@ ANGELS* Collision_Detection::getItsANGELS_1() const {
 }
 
 void Collision_Detection::setItsANGELS_1(ANGELS* p_ANGELS) {
+    itsANGELS_1 = p_ANGELS;
     if(p_ANGELS != NULL)
         {
-            p_ANGELS->_setItsCollision_Detection_1(this);
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS_1", p_ANGELS, false, true);
         }
-    _setItsANGELS_1(p_ANGELS);
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+        }
+}
+
+Docking_System* Collision_Detection::getItsDocking_System() const {
+    return itsDocking_System;
+}
+
+void Collision_Detection::setItsDocking_System(Docking_System* p_Docking_System) {
+    if(p_Docking_System != NULL)
+        {
+            p_Docking_System->_setItsCollision_Detection_1(this);
+        }
+    _setItsDocking_System(p_Docking_System);
 }
 
 Obstacle* Collision_Detection::getItsObstacle() const {
@@ -87,12 +106,17 @@ void Collision_Detection::cleanUpRelations() {
     if(itsANGELS_1 != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsANGELS_1");
-            Collision_Detection* p_Collision_Detection = itsANGELS_1->getItsCollision_Detection_1();
+            itsANGELS_1 = NULL;
+        }
+    if(itsDocking_System != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDocking_System");
+            Collision_Detection* p_Collision_Detection = itsDocking_System->getItsCollision_Detection_1();
             if(p_Collision_Detection != NULL)
                 {
-                    itsANGELS_1->__setItsCollision_Detection_1(NULL);
+                    itsDocking_System->__setItsCollision_Detection_1(NULL);
                 }
-            itsANGELS_1 = NULL;
+            itsDocking_System = NULL;
         }
     if(itsObstacle != NULL)
         {
@@ -131,29 +155,29 @@ void Collision_Detection::_clearItsANGELS() {
     itsANGELS = NULL;
 }
 
-void Collision_Detection::__setItsANGELS_1(ANGELS* p_ANGELS) {
-    itsANGELS_1 = p_ANGELS;
-    if(p_ANGELS != NULL)
+void Collision_Detection::__setItsDocking_System(Docking_System* p_Docking_System) {
+    itsDocking_System = p_Docking_System;
+    if(p_Docking_System != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsANGELS_1", p_ANGELS, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsDocking_System", p_Docking_System, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+            NOTIFY_RELATION_CLEARED("itsDocking_System");
         }
 }
 
-void Collision_Detection::_setItsANGELS_1(ANGELS* p_ANGELS) {
-    if(itsANGELS_1 != NULL)
+void Collision_Detection::_setItsDocking_System(Docking_System* p_Docking_System) {
+    if(itsDocking_System != NULL)
         {
-            itsANGELS_1->__setItsCollision_Detection_1(NULL);
+            itsDocking_System->__setItsCollision_Detection_1(NULL);
         }
-    __setItsANGELS_1(p_ANGELS);
+    __setItsDocking_System(p_Docking_System);
 }
 
-void Collision_Detection::_clearItsANGELS_1() {
-    NOTIFY_RELATION_CLEARED("itsANGELS_1");
-    itsANGELS_1 = NULL;
+void Collision_Detection::_clearItsDocking_System() {
+    NOTIFY_RELATION_CLEARED("itsDocking_System");
+    itsDocking_System = NULL;
 }
 
 void Collision_Detection::__setItsObstacle(Obstacle* p_Obstacle) {
@@ -198,6 +222,11 @@ void OMAnimatedCollision_Detection::serializeRelations(AOMSRelations* aomsRelati
     if(myReal->itsObstacle)
         {
             aomsRelations->ADD_ITEM(myReal->itsObstacle);
+        }
+    aomsRelations->addRelation("itsDocking_System", false, true);
+    if(myReal->itsDocking_System)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDocking_System);
         }
 }
 //#]

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DC
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Sun, 10, May 2020  
 	File Path	: DefaultComponent\DefaultConfig\DC.h
 *********************************************************************/
 
@@ -15,6 +15,9 @@
 #include <oxf\oxf.h>
 //## auto_generated
 #include <..\Profiles\SysML\SIDefinitions.h>
+//## link itsANGELS
+class ANGELS;
+
 //## link itsLoading_System
 class Loading_System;
 
@@ -35,6 +38,12 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
+    ANGELS* getItsANGELS() const;
+    
+    //## auto_generated
+    void setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
     Loading_System* getItsLoading_System() const;
     
     //## auto_generated
@@ -47,12 +56,23 @@ protected :
     
     ////    Relations and components    ////
     
+    ANGELS* itsANGELS;		//## link itsANGELS
+    
     Loading_System* itsLoading_System;		//## link itsLoading_System
     
     ////    Framework operations    ////
 
 public :
 
+    //## auto_generated
+    void __setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _clearItsANGELS();
+    
     //## auto_generated
     void __setItsLoading_System(Loading_System* p_Loading_System);
     

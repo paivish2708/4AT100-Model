@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Safety_Standards
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Sun, 10, May 2020  
 	File Path	: DefaultComponent\DefaultConfig\Safety_Standards.h
 *********************************************************************/
 
@@ -15,6 +15,9 @@
 #include <oxf\oxf.h>
 //## auto_generated
 #include <..\Profiles\SysML\SIDefinitions.h>
+//## link itsANGELS
+class ANGELS;
+
 //## package UseCaseAnalysisPkg::ANGELSPkg::SafetyStandards
 
 //## class Safety_Standards
@@ -28,6 +31,36 @@ public :
     
     //## auto_generated
     ~Safety_Standards();
+    
+    ////    Additional operations    ////
+    
+    //## auto_generated
+    ANGELS* getItsANGELS() const;
+    
+    //## auto_generated
+    void setItsANGELS(ANGELS* p_ANGELS);
+
+protected :
+
+    //## auto_generated
+    void cleanUpRelations();
+    
+    ////    Relations and components    ////
+    
+    ANGELS* itsANGELS;		//## link itsANGELS
+    
+    ////    Framework operations    ////
+
+public :
+
+    //## auto_generated
+    void __setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _clearItsANGELS();
 };
 
 #endif

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: LoadingSystemPkg
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\DefaultConfig\LoadingSystemPkg.h
 *********************************************************************/
 
@@ -27,9 +27,15 @@ class Loading_System;
 
 #define OpenDoors_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14203
 
-#define StartDockingProcedure_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14204
+#define StartLoadingProcedure_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14204
 
 #define StopLoadingProc_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14205
+
+#define DoorStatus_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14206
+
+#define LoadingProcess_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14207
+
+#define ReturnToDockedState_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14208
 //#]
 
 //## package UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg
@@ -51,29 +57,14 @@ public :
     virtual bool isTypeOf(const short id) const;
 };
 
-//## event CloseDoors()
+//## event CloseDoors(double)
 class CloseDoors : public OMEvent {
     ////    Constructors and destructors    ////
     
 public :
 
     //## auto_generated
-    CloseDoors();
-    
-    ////    Framework operations    ////
-    
-    //## statechart_method
-    virtual bool isTypeOf(const short id) const;
-};
-
-//## event OpenDoors(RhpBoolean)
-class OpenDoors : public OMEvent {
-    ////    Constructors and destructors    ////
-    
-public :
-
-    //## auto_generated
-    OpenDoors(RhpBoolean p_CheckDoorStatus = 1);
+    CloseDoors(double p_doorstate = 1);
     
     ////    Framework operations    ////
     
@@ -82,17 +73,32 @@ public :
     
     ////    Framework    ////
     
-    RhpBoolean CheckDoorStatus;		//## auto_generated
+    double doorstate;		//## auto_generated
 };
 
-//## event StartDockingProcedure()
-class StartDockingProcedure : public OMEvent {
+//## event OpenDoors()
+class OpenDoors : public OMEvent {
     ////    Constructors and destructors    ////
     
 public :
 
     //## auto_generated
-    StartDockingProcedure();
+    OpenDoors();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+//## event StartLoadingProcedure()
+class StartLoadingProcedure : public OMEvent {
+    ////    Constructors and destructors    ////
+    
+public :
+
+    //## auto_generated
+    StartLoadingProcedure();
     
     ////    Framework operations    ////
     
@@ -108,6 +114,51 @@ public :
 
     //## auto_generated
     StopLoadingProc();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+//## event DoorStatus()
+class DoorStatus : public OMEvent {
+    ////    Constructors and destructors    ////
+    
+public :
+
+    //## auto_generated
+    DoorStatus();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+//## event LoadingProcess()
+class LoadingProcess : public OMEvent {
+    ////    Constructors and destructors    ////
+    
+public :
+
+    //## auto_generated
+    LoadingProcess();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+//## event ReturnToDockedState()
+class ReturnToDockedState : public OMEvent {
+    ////    Constructors and destructors    ////
+    
+public :
+
+    //## auto_generated
+    ReturnToDockedState();
     
     ////    Framework operations    ////
     

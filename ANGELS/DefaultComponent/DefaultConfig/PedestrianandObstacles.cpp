@@ -4,12 +4,14 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: PedestrianandObstacles
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Sun, 10, May 2020  
 	File Path	: DefaultComponent\DefaultConfig\PedestrianandObstacles.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "PedestrianandObstacles.h"
+//## auto_generated
+#include "Collision_Detection.h"
 //## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
 //## actor PedestrianandObstacles

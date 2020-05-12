@@ -194,7 +194,7 @@ SOCK_LIB=
 
 
 
-Docking_System.obj : Docking_System.cpp Docking_System.h    DockingSystemPkg.h ANGELS.h DCOperator.h Collision_Avoidance.h Collision_Detection.h Truck.h 
+Docking_System.obj : Docking_System.cpp Docking_System.h    DockingSystemPkg.h ANGELS.h DCOperator.h Collision_Avoidance.h Collision_Detection.h Truck.h Loading_System.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Docking_System.obj" "Docking_System.cpp" 
 
@@ -224,7 +224,7 @@ PedestrianandObstacles.obj : PedestrianandObstacles.cpp PedestrianandObstacles.h
 
 
 
-Driver.obj : Driver.cpp Driver.h    ActorPkg.h Truck.h 
+Driver.obj : Driver.cpp Driver.h    ActorPkg.h Truck.h ANGELS.h Docking_System.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Driver.obj" "Driver.cpp" 
 
@@ -236,7 +236,7 @@ DCOperator.obj : DCOperator.cpp DCOperator.h    ActorPkg.h Loading_System.h ANGE
 
 
 
-Loading_System.obj : Loading_System.cpp Loading_System.h    LoadingSystemPkg.h DC.h DCOperator.h ANGELS.h 
+Loading_System.obj : Loading_System.cpp Loading_System.h    LoadingSystemPkg.h DC.h DCOperator.h ANGELS.h Docking_System.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Loading_System.obj" "Loading_System.cpp" 
 

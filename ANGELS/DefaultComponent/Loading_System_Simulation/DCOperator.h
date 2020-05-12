@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Sun, 10, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\DCOperator.h
 *********************************************************************/
 
@@ -21,6 +21,9 @@
 #include "ActorPkg.h"
 //## link itsANGELS
 class ANGELS;
+
+//## link itsDocking_System
+class Docking_System;
 
 //## link itsLoading_System
 class Loading_System;
@@ -54,6 +57,18 @@ public :
     void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
+    Docking_System* getItsDocking_System() const;
+    
+    //## auto_generated
+    void setItsDocking_System(Docking_System* p_Docking_System);
+    
+    //## auto_generated
+    Docking_System* getItsDocking_System_1() const;
+    
+    //## auto_generated
+    void setItsDocking_System_1(Docking_System* p_Docking_System);
+    
+    //## auto_generated
     Loading_System* getItsLoading_System() const;
     
     //## auto_generated
@@ -67,6 +82,10 @@ protected :
     ////    Relations and components    ////
     
     ANGELS* itsANGELS;		//## link itsANGELS
+    
+    Docking_System* itsDocking_System;		//## link itsDocking_System
+    
+    Docking_System* itsDocking_System_1;		//## link itsDocking_System_1
     
     Loading_System* itsLoading_System;		//## link itsLoading_System
     
@@ -82,6 +101,24 @@ public :
     
     //## auto_generated
     void _clearItsANGELS();
+    
+    //## auto_generated
+    void __setItsDocking_System(Docking_System* p_Docking_System);
+    
+    //## auto_generated
+    void _setItsDocking_System(Docking_System* p_Docking_System);
+    
+    //## auto_generated
+    void _clearItsDocking_System();
+    
+    //## auto_generated
+    void __setItsDocking_System_1(Docking_System* p_Docking_System);
+    
+    //## auto_generated
+    void _setItsDocking_System_1(Docking_System* p_Docking_System);
+    
+    //## auto_generated
+    void _clearItsDocking_System_1();
     
     //## auto_generated
     void __setItsLoading_System(Loading_System* p_Loading_System);

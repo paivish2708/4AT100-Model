@@ -4,41 +4,53 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Truck
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Sun, 10, May 2020  
 	File Path	: DefaultComponent\DefaultConfig\Truck.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "Truck.h"
-//## link itsDCOperator
-#include "DCOperator.h"
+//## link itsANGELS
+#include "ANGELS.h"
+//## link itsDocking_System
+#include "Docking_System.h"
 //## link itsDriver
 #include "Driver.h"
 //## package UseCaseAnalysisPkg::ANGELSPkg::TruckPkg
 
 //## class Truck
 Truck::Truck() {
-    itsDCOperator = NULL;
+    itsANGELS = NULL;
+    itsDocking_System = NULL;
     itsDriver = NULL;
-    itsDriver_1 = NULL;
-    itsDriver_2 = NULL;
-    itsDriver_3 = NULL;
 }
 
 Truck::~Truck() {
     cleanUpRelations();
 }
 
-DCOperator* Truck::getItsDCOperator() const {
-    return itsDCOperator;
+ANGELS* Truck::getItsANGELS() const {
+    return itsANGELS;
 }
 
-void Truck::setItsDCOperator(DCOperator* p_DCOperator) {
-    if(p_DCOperator != NULL)
+void Truck::setItsANGELS(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
         {
-            p_DCOperator->_setItsTruck(this);
+            p_ANGELS->_setItsTruck(this);
         }
-    _setItsDCOperator(p_DCOperator);
+    _setItsANGELS(p_ANGELS);
+}
+
+Docking_System* Truck::getItsDocking_System() const {
+    return itsDocking_System;
+}
+
+void Truck::setItsDocking_System(Docking_System* p_Docking_System) {
+    if(p_Docking_System != NULL)
+        {
+            p_Docking_System->_setItsTruck_1(this);
+        }
+    _setItsDocking_System(p_Docking_System);
 }
 
 Driver* Truck::getItsDriver() const {
@@ -48,109 +60,71 @@ Driver* Truck::getItsDriver() const {
 void Truck::setItsDriver(Driver* p_Driver) {
     if(p_Driver != NULL)
         {
-            p_Driver->_setItsTruck(this);
+            p_Driver->_setItsTruck_4(this);
         }
     _setItsDriver(p_Driver);
 }
 
-Driver* Truck::getItsDriver_1() const {
-    return itsDriver_1;
-}
-
-void Truck::setItsDriver_1(Driver* p_Driver) {
-    if(p_Driver != NULL)
-        {
-            p_Driver->_setItsTruck_1(this);
-        }
-    _setItsDriver_1(p_Driver);
-}
-
-Driver* Truck::getItsDriver_2() const {
-    return itsDriver_2;
-}
-
-void Truck::setItsDriver_2(Driver* p_Driver) {
-    if(p_Driver != NULL)
-        {
-            p_Driver->_setItsTruck_2(this);
-        }
-    _setItsDriver_2(p_Driver);
-}
-
-Driver* Truck::getItsDriver_3() const {
-    return itsDriver_3;
-}
-
-void Truck::setItsDriver_3(Driver* p_Driver) {
-    if(p_Driver != NULL)
-        {
-            p_Driver->_setItsTruck_3(this);
-        }
-    _setItsDriver_3(p_Driver);
-}
-
 void Truck::cleanUpRelations() {
-    if(itsDCOperator != NULL)
+    if(itsANGELS != NULL)
         {
-            Truck* p_Truck = itsDCOperator->getItsTruck();
+            Truck* p_Truck = itsANGELS->getItsTruck();
             if(p_Truck != NULL)
                 {
-                    itsDCOperator->__setItsTruck(NULL);
+                    itsANGELS->__setItsTruck(NULL);
                 }
-            itsDCOperator = NULL;
+            itsANGELS = NULL;
+        }
+    if(itsDocking_System != NULL)
+        {
+            Truck* p_Truck = itsDocking_System->getItsTruck_1();
+            if(p_Truck != NULL)
+                {
+                    itsDocking_System->__setItsTruck_1(NULL);
+                }
+            itsDocking_System = NULL;
         }
     if(itsDriver != NULL)
         {
-            Truck* p_Truck = itsDriver->getItsTruck();
+            Truck* p_Truck = itsDriver->getItsTruck_4();
             if(p_Truck != NULL)
                 {
-                    itsDriver->__setItsTruck(NULL);
+                    itsDriver->__setItsTruck_4(NULL);
                 }
             itsDriver = NULL;
         }
-    if(itsDriver_1 != NULL)
-        {
-            Truck* p_Truck = itsDriver_1->getItsTruck_1();
-            if(p_Truck != NULL)
-                {
-                    itsDriver_1->__setItsTruck_1(NULL);
-                }
-            itsDriver_1 = NULL;
-        }
-    if(itsDriver_2 != NULL)
-        {
-            Truck* p_Truck = itsDriver_2->getItsTruck_2();
-            if(p_Truck != NULL)
-                {
-                    itsDriver_2->__setItsTruck_2(NULL);
-                }
-            itsDriver_2 = NULL;
-        }
-    if(itsDriver_3 != NULL)
-        {
-            Truck* p_Truck = itsDriver_3->getItsTruck_3();
-            if(p_Truck != NULL)
-                {
-                    itsDriver_3->__setItsTruck_3(NULL);
-                }
-            itsDriver_3 = NULL;
-        }
 }
 
-void Truck::__setItsDCOperator(DCOperator* p_DCOperator) {
-    itsDCOperator = p_DCOperator;
+void Truck::__setItsANGELS(ANGELS* p_ANGELS) {
+    itsANGELS = p_ANGELS;
 }
 
-void Truck::_setItsDCOperator(DCOperator* p_DCOperator) {
-    if(itsDCOperator != NULL)
+void Truck::_setItsANGELS(ANGELS* p_ANGELS) {
+    if(itsANGELS != NULL)
         {
-            itsDCOperator->__setItsTruck(NULL);
+            itsANGELS->__setItsTruck(NULL);
         }
-    __setItsDCOperator(p_DCOperator);
+    __setItsANGELS(p_ANGELS);
 }
 
-void Truck::_clearItsDCOperator() {
-    itsDCOperator = NULL;
+void Truck::_clearItsANGELS() {
+    itsANGELS = NULL;
+}
+
+void Truck::__setItsDocking_System(Docking_System* p_Docking_System) {
+    itsDocking_System = p_Docking_System;
+}
+
+void Truck::_setItsDocking_System(Docking_System* p_Docking_System) {
+    if(itsDocking_System != NULL)
+        {
+            itsDocking_System->__setItsTruck_1(NULL);
+        }
+    __setItsDocking_System(p_Docking_System);
+}
+
+void Truck::_clearItsDocking_System() {
+    itsDocking_System = NULL;
 }
 
 void Truck::__setItsDriver(Driver* p_Driver) {
@@ -160,61 +134,13 @@ void Truck::__setItsDriver(Driver* p_Driver) {
 void Truck::_setItsDriver(Driver* p_Driver) {
     if(itsDriver != NULL)
         {
-            itsDriver->__setItsTruck(NULL);
+            itsDriver->__setItsTruck_4(NULL);
         }
     __setItsDriver(p_Driver);
 }
 
 void Truck::_clearItsDriver() {
     itsDriver = NULL;
-}
-
-void Truck::__setItsDriver_1(Driver* p_Driver) {
-    itsDriver_1 = p_Driver;
-}
-
-void Truck::_setItsDriver_1(Driver* p_Driver) {
-    if(itsDriver_1 != NULL)
-        {
-            itsDriver_1->__setItsTruck_1(NULL);
-        }
-    __setItsDriver_1(p_Driver);
-}
-
-void Truck::_clearItsDriver_1() {
-    itsDriver_1 = NULL;
-}
-
-void Truck::__setItsDriver_2(Driver* p_Driver) {
-    itsDriver_2 = p_Driver;
-}
-
-void Truck::_setItsDriver_2(Driver* p_Driver) {
-    if(itsDriver_2 != NULL)
-        {
-            itsDriver_2->__setItsTruck_2(NULL);
-        }
-    __setItsDriver_2(p_Driver);
-}
-
-void Truck::_clearItsDriver_2() {
-    itsDriver_2 = NULL;
-}
-
-void Truck::__setItsDriver_3(Driver* p_Driver) {
-    itsDriver_3 = p_Driver;
-}
-
-void Truck::_setItsDriver_3(Driver* p_Driver) {
-    if(itsDriver_3 != NULL)
-        {
-            itsDriver_3->__setItsTruck_3(NULL);
-        }
-    __setItsDriver_3(p_Driver);
-}
-
-void Truck::_clearItsDriver_3() {
-    itsDriver_3 = NULL;
 }
 
 /*********************************************************************

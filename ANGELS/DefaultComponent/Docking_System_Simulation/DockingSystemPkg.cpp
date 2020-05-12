@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: DockingSystemPkg
-//!	Generated Date	: Sun, 3, May 2020  
+//!	Generated Date	: Mon, 11, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\DockingSystemPkg.cpp
 *********************************************************************/
 
@@ -23,23 +23,41 @@
 
 #define StartDockingProcedure_CONSTRUCTOR StartDockingProcedure()
 
-#define ParkingSpotInput_SERIALIZE OMADD_SER(Parkingspot, x2String(myEvent->Parkingspot))
+#define BeginTruckMovement_SERIALIZE OM_NO_OP
 
-#define ParkingSpotInput_UNSERIALIZE OMADD_UNSER(double, Parkingspot, OMDestructiveString2X)
+#define BeginTruckMovement_UNSERIALIZE OM_NO_OP
 
-#define ParkingSpotInput_CONSTRUCTOR ParkingSpotInput(Parkingspot)
-
-#define BeginMovement_SERIALIZE OM_NO_OP
-
-#define BeginMovement_UNSERIALIZE OM_NO_OP
-
-#define BeginMovement_CONSTRUCTOR BeginMovement()
+#define BeginTruckMovement_CONSTRUCTOR BeginTruckMovement()
 
 #define DCManagerInput_SERIALIZE OM_NO_OP
 
 #define DCManagerInput_UNSERIALIZE OM_NO_OP
 
 #define DCManagerInput_CONSTRUCTOR DCManagerInput()
+
+#define Autonomousmode_SERIALIZE OM_NO_OP
+
+#define Autonomousmode_UNSERIALIZE OM_NO_OP
+
+#define Autonomousmode_CONSTRUCTOR Autonomousmode()
+
+#define EndDocking_SERIALIZE OM_NO_OP
+
+#define EndDocking_UNSERIALIZE OM_NO_OP
+
+#define EndDocking_CONSTRUCTOR EndDocking()
+
+#define TruckDocking_SERIALIZE OM_NO_OP
+
+#define TruckDocking_UNSERIALIZE OM_NO_OP
+
+#define TruckDocking_CONSTRUCTOR TruckDocking()
+
+#define DockInput_SERIALIZE OMADD_SER(DS, x2String(myEvent->DS))
+
+#define DockInput_UNSERIALIZE OMADD_UNSER(double, DS, OMDestructiveString2X)
+
+#define DockInput_CONSTRUCTOR DockInput(DS)
 //#]
 
 //## package UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg
@@ -66,29 +84,17 @@ bool StartDockingProcedure::isTypeOf(const short id) const {
 
 IMPLEMENT_META_EVENT_P(StartDockingProcedure, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, StartDockingProcedure())
 
-//## event ParkingSpotInput(double)
-ParkingSpotInput::ParkingSpotInput(double p_Parkingspot) : Parkingspot(p_Parkingspot) {
-    NOTIFY_EVENT_CONSTRUCTOR(ParkingSpotInput)
-    setId(ParkingSpotInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+//## event BeginTruckMovement()
+BeginTruckMovement::BeginTruckMovement() {
+    NOTIFY_EVENT_CONSTRUCTOR(BeginTruckMovement)
+    setId(BeginTruckMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
 }
 
-bool ParkingSpotInput::isTypeOf(const short id) const {
-    return (ParkingSpotInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+bool BeginTruckMovement::isTypeOf(const short id) const {
+    return (BeginTruckMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(ParkingSpotInput, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, ParkingSpotInput(double))
-
-//## event BeginMovement()
-BeginMovement::BeginMovement() {
-    NOTIFY_EVENT_CONSTRUCTOR(BeginMovement)
-    setId(BeginMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
-}
-
-bool BeginMovement::isTypeOf(const short id) const {
-    return (BeginMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
-}
-
-IMPLEMENT_META_EVENT_P(BeginMovement, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, BeginMovement())
+IMPLEMENT_META_EVENT_P(BeginTruckMovement, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, BeginTruckMovement())
 
 //## event DCManagerInput()
 DCManagerInput::DCManagerInput() {
@@ -101,6 +107,59 @@ bool DCManagerInput::isTypeOf(const short id) const {
 }
 
 IMPLEMENT_META_EVENT_P(DCManagerInput, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, DCManagerInput())
+
+//## event Autonomousmode()
+Autonomousmode::Autonomousmode() {
+    NOTIFY_EVENT_CONSTRUCTOR(Autonomousmode)
+    setId(Autonomousmode_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+}
+
+bool Autonomousmode::isTypeOf(const short id) const {
+    return (Autonomousmode_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(Autonomousmode, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, Autonomousmode())
+
+//## event EndDocking()
+EndDocking::EndDocking() {
+    NOTIFY_EVENT_CONSTRUCTOR(EndDocking)
+    setId(EndDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+}
+
+bool EndDocking::isTypeOf(const short id) const {
+    return (EndDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(EndDocking, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, EndDocking())
+
+//## event TruckDocking()
+TruckDocking::TruckDocking() {
+    NOTIFY_EVENT_CONSTRUCTOR(TruckDocking)
+    setId(TruckDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+}
+
+bool TruckDocking::isTypeOf(const short id) const {
+    return (TruckDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(TruckDocking, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, TruckDocking())
+
+//## event DockInput(double)
+DockInput::DockInput() {
+    NOTIFY_EVENT_CONSTRUCTOR(DockInput)
+    setId(DockInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+}
+
+DockInput::DockInput(double p_DS) : DS(p_DS) {
+    NOTIFY_EVENT_CONSTRUCTOR(DockInput)
+    setId(DockInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+}
+
+bool DockInput::isTypeOf(const short id) const {
+    return (DockInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(DockInput, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg, DockInput(double))
 
 /*********************************************************************
 	File Path	: DefaultComponent\Docking_System_Simulation\DockingSystemPkg.cpp

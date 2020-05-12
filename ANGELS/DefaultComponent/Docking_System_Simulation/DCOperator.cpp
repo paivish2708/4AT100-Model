@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Sun, 3, May 2020  
+//!	Generated Date	: Sun, 10, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\DCOperator.cpp
 *********************************************************************/
 
@@ -31,6 +31,7 @@ DCOperator::DCOperator() {
     NOTIFY_CONSTRUCTOR(DCOperator, DCOperator(), 0, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_DCOperator_DCOperator_SERIALIZE);
     itsANGELS = NULL;
     itsDocking_System = NULL;
+    itsDocking_System_1 = NULL;
     itsLoading_System = NULL;
 }
 
@@ -61,6 +62,18 @@ void DCOperator::setItsDocking_System(Docking_System* p_Docking_System) {
             p_Docking_System->_setItsDCOperator(this);
         }
     _setItsDocking_System(p_Docking_System);
+}
+
+Docking_System* DCOperator::getItsDocking_System_1() const {
+    return itsDocking_System_1;
+}
+
+void DCOperator::setItsDocking_System_1(Docking_System* p_Docking_System) {
+    if(p_Docking_System != NULL)
+        {
+            p_Docking_System->_setItsDCOperator_1(this);
+        }
+    _setItsDocking_System_1(p_Docking_System);
 }
 
 Loading_System* DCOperator::getItsLoading_System() const {
@@ -95,6 +108,16 @@ void DCOperator::cleanUpRelations() {
                     itsDocking_System->__setItsDCOperator(NULL);
                 }
             itsDocking_System = NULL;
+        }
+    if(itsDocking_System_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDocking_System_1");
+            DCOperator* p_DCOperator = itsDocking_System_1->getItsDCOperator_1();
+            if(p_DCOperator != NULL)
+                {
+                    itsDocking_System_1->__setItsDCOperator_1(NULL);
+                }
+            itsDocking_System_1 = NULL;
         }
     if(itsLoading_System != NULL)
         {
@@ -158,6 +181,31 @@ void DCOperator::_clearItsDocking_System() {
     itsDocking_System = NULL;
 }
 
+void DCOperator::__setItsDocking_System_1(Docking_System* p_Docking_System) {
+    itsDocking_System_1 = p_Docking_System;
+    if(p_Docking_System != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDocking_System_1", p_Docking_System, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDocking_System_1");
+        }
+}
+
+void DCOperator::_setItsDocking_System_1(Docking_System* p_Docking_System) {
+    if(itsDocking_System_1 != NULL)
+        {
+            itsDocking_System_1->__setItsDCOperator_1(NULL);
+        }
+    __setItsDocking_System_1(p_Docking_System);
+}
+
+void DCOperator::_clearItsDocking_System_1() {
+    NOTIFY_RELATION_CLEARED("itsDocking_System_1");
+    itsDocking_System_1 = NULL;
+}
+
 void DCOperator::__setItsLoading_System(Loading_System* p_Loading_System) {
     itsLoading_System = p_Loading_System;
     if(p_Loading_System != NULL)
@@ -200,6 +248,11 @@ void OMAnimatedDCOperator::serializeRelations(AOMSRelations* aomsRelations) cons
     if(myReal->itsDocking_System)
         {
             aomsRelations->ADD_ITEM(myReal->itsDocking_System);
+        }
+    aomsRelations->addRelation("itsDocking_System_1", false, true);
+    if(myReal->itsDocking_System_1)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDocking_System_1);
         }
 }
 //#]

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DockingSystemPkg
-//!	Generated Date	: Wed, 29, Apr 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\DefaultConfig\DockingSystemPkg.h
 *********************************************************************/
 
@@ -21,18 +21,22 @@
 class Docking_System;
 
 //#[ ignore
-#define StartDockingProcedure_DockingSystemPkg_UseCaseAnalysisPkg_id 26001
+#define StartDockingProcedure_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18201
 
-#define OpenDoors_DockingSystemPkg_UseCaseAnalysisPkg_id 26002
+#define BeginTruckMovement_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18202
 
-#define CloseDoors_DockingSystemPkg_UseCaseAnalysisPkg_id 26003
+#define DCManagerInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18203
 
-#define AlertDCManager_DockingSystemPkg_UseCaseAnalysisPkg_id 26004
+#define Autonomousmode_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18204
 
-#define StopLoadingProc_DockingSystemPkg_UseCaseAnalysisPkg_id 26005
+#define EndDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18205
+
+#define TruckDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18206
+
+#define DockInput_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18207
 //#]
 
-//## package UseCaseAnalysisPkg::DockingSystemPkg
+//## package UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg
 
 
 
@@ -51,14 +55,89 @@ public :
     virtual bool isTypeOf(const short id) const;
 };
 
-//## event OpenDoors(int)
-class OpenDoors : public OMEvent {
+//## event BeginTruckMovement()
+class BeginTruckMovement : public OMEvent {
     ////    Constructors and destructors    ////
     
 public :
 
     //## auto_generated
-    OpenDoors(int p_argument_0);
+    BeginTruckMovement();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+//## event DCManagerInput()
+class DCManagerInput : public OMEvent {
+    ////    Constructors and destructors    ////
+    
+public :
+
+    //## auto_generated
+    DCManagerInput();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+//## event Autonomousmode()
+class Autonomousmode : public OMEvent {
+    ////    Constructors and destructors    ////
+    
+public :
+
+    //## auto_generated
+    Autonomousmode();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+//## event EndDocking()
+class EndDocking : public OMEvent {
+    ////    Constructors and destructors    ////
+    
+public :
+
+    //## auto_generated
+    EndDocking();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+//## event TruckDocking()
+class TruckDocking : public OMEvent {
+    ////    Constructors and destructors    ////
+    
+public :
+
+    //## auto_generated
+    TruckDocking();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+//## event DockInput(double)
+class DockInput : public OMEvent {
+    ////    Constructors and destructors    ////
+    
+public :
+
+    //## auto_generated
+    DockInput(double p_DS);
     
     ////    Framework operations    ////
     
@@ -67,52 +146,7 @@ public :
     
     ////    Framework    ////
     
-    int argument_0;		//## auto_generated
-};
-
-//## event CloseDoors()
-class CloseDoors : public OMEvent {
-    ////    Constructors and destructors    ////
-    
-public :
-
-    //## auto_generated
-    CloseDoors();
-    
-    ////    Framework operations    ////
-    
-    //## statechart_method
-    virtual bool isTypeOf(const short id) const;
-};
-
-//## event AlertDCManager()
-class AlertDCManager : public OMEvent {
-    ////    Constructors and destructors    ////
-    
-public :
-
-    //## auto_generated
-    AlertDCManager();
-    
-    ////    Framework operations    ////
-    
-    //## statechart_method
-    virtual bool isTypeOf(const short id) const;
-};
-
-//## event StopLoadingProc()
-class StopLoadingProc : public OMEvent {
-    ////    Constructors and destructors    ////
-    
-public :
-
-    //## auto_generated
-    StopLoadingProc();
-    
-    ////    Framework operations    ////
-    
-    //## statechart_method
-    virtual bool isTypeOf(const short id) const;
+    double DS;		//## auto_generated
 };
 
 #endif
