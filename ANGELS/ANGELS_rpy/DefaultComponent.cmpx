@@ -12,12 +12,12 @@
 			<_myState type="a">8192</_myState>
 			<_name type="a">DefaultComponent</_name>
 			<_modifiedTimeWeak type="a">4.29.2020::14:28:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.12.2020::20:10:33</_modifiedTime>
+			<_modifiedTime type="a">5.12.2020::21:37:34</_modifiedTime>
 			<m_buildType type="a">Executable</m_buildType>
 			<m_configActive type="r">
 				<ICodeGenConfigInfoHandle type="e">
 					<_hm2Class type="a">ICodeGenConfigInfo</_hm2Class>
-					<_hid type="a">GUID 9d8dc6a9-b5b6-4b8c-8ca8-1608bdc05f4f</_hid>
+					<_hid type="a">GUID 3e8a7e80-6bbb-44b2-a7bd-675d1c6ba0f1</_hid>
 				</ICodeGenConfigInfoHandle>
 			</m_configActive>
 			<VariationPoints type="c">
@@ -244,7 +244,7 @@
 		<IInstanceValue type="e">
 			<_id type="a">GUID 2e36cc5b-70e9-4113-a349-0245644b1f55</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_value type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">ICodeGenConfigInfo</_hm2Class>
@@ -255,14 +255,14 @@
 		<IInstanceValue type="e">
 			<_id type="a">GUID 29de1db6-9293-4061-98f9-9a7e499f4924</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_value type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IStateChart</_hm2Class>
 					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg</_hsubsystem>
 					<_hclass type="a">Loading_System</_hclass>
-					<_hname type="a">statechart_1</_hname>
+					<_hname type="a">Loading</_hname>
 					<_hid type="a">GUID 9ba505c2-2c3b-4e43-a68d-268a893b066d</_hid>
 				</IHandle>
 			</_value>
@@ -270,14 +270,14 @@
 		<IInstanceValue type="e">
 			<_id type="a">GUID e9d31026-0c49-460b-bcca-afde1ac6bc65</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_value type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IStateChart</_hm2Class>
 					<_hfilename type="a">.\LoadingSystemPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg</_hsubsystem>
 					<_hclass type="a">Loading_System</_hclass>
-					<_hname type="a">statechart_1</_hname>
+					<_hname type="a">Loading</_hname>
 					<_hid type="a">GUID 9ba505c2-2c3b-4e43-a68d-268a893b066d</_hid>
 				</IHandle>
 			</_value>

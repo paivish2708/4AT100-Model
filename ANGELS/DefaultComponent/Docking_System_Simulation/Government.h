@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: Pranav
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Government
-//!	Generated Date	: Tue, 12, May 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\Government.h
 *********************************************************************/
 
@@ -36,17 +36,13 @@ public :
 
     ////    Constructors and destructors    ////
     
-    ////    Additional operations    ////
-    
-    ////    Relations and components    ////
-    
-    ////    Framework operations    ////
-    
     //## auto_generated
     Government();
     
     //## auto_generated
     ~Government();
+    
+    ////    Additional operations    ////
     
     //## auto_generated
     ANGELS* getItsANGELS() const;
@@ -59,7 +55,11 @@ protected :
     //## auto_generated
     void cleanUpRelations();
     
+    ////    Relations and components    ////
+    
     ANGELS* itsANGELS;		//## link itsANGELS
+    
+    ////    Framework operations    ////
 
 public :
 

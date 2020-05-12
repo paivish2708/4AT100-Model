@@ -23,8 +23,8 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
-//## classInstance itsDocking_System
-#include "Docking_System.h"
+//## classInstance itsTruck
+#include "Truck.h"
 //## link itsANGELS
 class ANGELS;
 
@@ -92,7 +92,7 @@ public :
     void setItsDCOperator(DCOperator* p_DCOperator);
     
     //## auto_generated
-    Docking_System* getItsDocking_System() const;
+    Truck* getItsTruck() const;
     
     //## auto_generated
     virtual bool startBehavior();
@@ -125,7 +125,7 @@ protected :
     
     DCOperator* itsDCOperator;		//## link itsDCOperator
     
-    Docking_System itsDocking_System;		//## classInstance itsDocking_System
+    Truck itsTruck;		//## classInstance itsTruck
     
     ////    Framework operations    ////
 
@@ -158,21 +158,22 @@ public :
     //## auto_generated
     void _clearItsDCOperator();
     
-    //## auto_generated
-    void setActiveContext(IOxfActive* theActiveContext, bool activeInstance);
-    
-    //## auto_generated
-    virtual void destroy();
-    
     // rootState:
     //## statechart_method
     inline bool rootState_IN() const;
+    
+    //## statechart_method
+    inline bool rootState_isCompleted();
     
     //## statechart_method
     virtual void rootState_entDef();
     
     //## statechart_method
     virtual IOxfReactive::TakeEventStatus rootState_processEvent();
+    
+    // terminationstate_9:
+    //## statechart_method
+    inline bool terminationstate_9_IN() const;
     
     // ReadyForParking:
     //## statechart_method
@@ -193,10 +194,6 @@ public :
     //## statechart_method
     inline bool LoadedState_IN() const;
     
-    // accepttimeevent_6:
-    //## statechart_method
-    inline bool accepttimeevent_6_IN() const;
-    
     // IdleState:
     //## statechart_method
     inline bool IdleState_IN() const;
@@ -216,11 +213,11 @@ protected :
 //#[ ignore
     enum Loading_System_Enum {
         OMNonState = 0,
-        ReadyForParking = 1,
-        LoadingState = 2,
-        StartLoading = 3,
-        LoadedState = 4,
-        accepttimeevent_6 = 5,
+        terminationstate_9 = 1,
+        ReadyForParking = 2,
+        LoadingState = 3,
+        StartLoading = 4,
+        LoadedState = 5,
         IdleState = 6,
         DoorsClosed = 7,
         DockedState = 8
@@ -240,6 +237,14 @@ inline bool Loading_System::rootState_IN() const {
     return true;
 }
 
+inline bool Loading_System::rootState_isCompleted() {
+    return ( IS_IN(terminationstate_9) );
+}
+
+inline bool Loading_System::terminationstate_9_IN() const {
+    return rootState_subState == terminationstate_9;
+}
+
 inline bool Loading_System::ReadyForParking_IN() const {
     return rootState_subState == ReadyForParking;
 }
@@ -254,10 +259,6 @@ inline bool Loading_System::StartLoading_IN() const {
 
 inline bool Loading_System::LoadedState_IN() const {
     return LoadingState_subState == LoadedState;
-}
-
-inline bool Loading_System::accepttimeevent_6_IN() const {
-    return LoadingState_subState == accepttimeevent_6;
 }
 
 inline bool Loading_System::IdleState_IN() const {

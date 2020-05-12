@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: Pranav
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: ANGELS
@@ -284,9 +284,15 @@ protected :
     
     Communication_System itsCommunication_System_1;		//## classInstance itsCommunication_System_1
     
+    DC* itsDC;		//## link itsDC
+    
+    DCOperator* itsDCOperator;		//## link itsDCOperator
+    
     Docking_System* itsDocking_System;		//## link itsDocking_System
     
     Docking_System itsDocking_System_1;		//## classInstance itsDocking_System_1
+    
+    Government* itsGovernment;		//## link itsGovernment
     
     Loading_System* itsLoading_System;		//## link itsLoading_System
     
@@ -423,14 +429,6 @@ public :
     
     //## auto_generated
     virtual void destroy();
-
-protected :
-
-    DC* itsDC;		//## link itsDC
-    
-    DCOperator* itsDCOperator;		//## link itsDCOperator
-    
-    Government* itsGovernment;		//## link itsGovernment
 };
 
 #ifdef _OMINSTRUMENT

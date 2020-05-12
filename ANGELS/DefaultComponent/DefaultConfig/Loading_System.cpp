@@ -21,13 +21,8 @@
 //## package UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg
 
 //## class Loading_System
-Loading_System::Loading_System(IOxfActive* theActiveContext) : Doorstatus(0) {
+Loading_System::Loading_System(IOxfActive* theActiveContext) : Doorstatus(0), LoadingTime(0) {
     setActiveContext(theActiveContext, false);
-    {
-        {
-            itsDocking_System.setShouldDelete(false);
-        }
-    }
     itsANGELS = NULL;
     itsDC = NULL;
     itsDCOperator = NULL;
@@ -111,13 +106,12 @@ void Loading_System::setItsDCOperator(DCOperator* p_DCOperator) {
     _setItsDCOperator(p_DCOperator);
 }
 
-Docking_System* Loading_System::getItsDocking_System() const {
-    return (Docking_System*) &itsDocking_System;
+Truck* Loading_System::getItsTruck() const {
+    return (Truck*) &itsTruck;
 }
 
 bool Loading_System::startBehavior() {
     bool done = true;
-    done &= itsDocking_System.startBehavior();
     done &= OMReactive::startBehavior();
     return done;
 }
@@ -221,18 +215,6 @@ void Loading_System::_clearItsDCOperator() {
     itsDCOperator = NULL;
 }
 
-void Loading_System::setActiveContext(IOxfActive* theActiveContext, bool activeInstance) {
-    OMReactive::setActiveContext(theActiveContext, activeInstance);
-    {
-        itsDocking_System.setActiveContext(theActiveContext, false);
-    }
-}
-
-void Loading_System::destroy() {
-    itsDocking_System.destroy();
-    OMReactive::destroy();
-}
-
 void Loading_System::rootState_entDef() {
     {
         rootState_subState = DockedState;
@@ -243,45 +225,18 @@ void Loading_System::rootState_entDef() {
 IOxfReactive::TakeEventStatus Loading_System::rootState_processEvent() {
     IOxfReactive::TakeEventStatus res = eventNotConsumed;
     switch (rootState_active) {
-        // State StartLoading
-        case StartLoading:
+        // State IdleState
+        case IdleState:
         {
-            if(IS_EVENT_TYPE_OF(StopLoadingProc_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(StartLoadingProcedure_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
                 {
-                    cancel(LoadingState_timeout);
-                    LoadingState_subState = LoadedState;
-                    rootState_active = LoadedState;
-                    res = eventConsumed;
-                }
-            else if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
-                {
-                    if(getCurrentEvent() == LoadingState_timeout)
-                        {
-                            cancel(LoadingState_timeout);
-                            pushNullTransition();
-                            LoadingState_subState = accepttimeevent_6;
-                            rootState_active = accepttimeevent_6;
-                            res = eventConsumed;
-                        }
-                }
-            
-            
-        }
-        break;
-        case accepttimeevent_6:
-        {
-            if(IS_EVENT_TYPE_OF(OMNullEventId))
-                {
-                    popNullTransition();
-                    //#[ transition 2 
-                    LoadingTime++;
+                    //#[ transition 0 
+                    OpenDoors(1);
                     //#]
-                    LoadingState_subState = StartLoading;
-                    rootState_active = StartLoading;
-                    LoadingState_timeout = scheduleTimeout(1000, NULL);
+                    rootState_subState = DoorsClosed;
+                    rootState_active = DoorsClosed;
                     res = eventConsumed;
                 }
-            
             
         }
         break;
@@ -297,16 +252,11 @@ IOxfReactive::TakeEventStatus Loading_System::rootState_processEvent() {
                             cancel(LoadingState_timeout);
                         }
                         break;
-                        case accepttimeevent_6:
-                        {
-                            popNullTransition();
-                        }
-                        break;
-                        
                         default:
                             break;
                     }
                     LoadingState_subState = OMNonState;
+                    pushNullTransition();
                     rootState_subState = ReadyForParking;
                     rootState_active = ReadyForParking;
                     res = eventConsumed;
@@ -315,22 +265,31 @@ IOxfReactive::TakeEventStatus Loading_System::rootState_processEvent() {
             
         }
         break;
-        // State IdleState
-        case IdleState:
+        // State StartLoading
+        case StartLoading:
         {
-            if(IS_EVENT_TYPE_OF(StartLoadingProcedure_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(StopLoadingProc_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
                 {
-                    //## transition 0 
-                    if(Doorstatus)
+                    cancel(LoadingState_timeout);
+                    LoadingState_subState = LoadedState;
+                    rootState_active = LoadedState;
+                    res = eventConsumed;
+                }
+            else if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
+                {
+                    if(getCurrentEvent() == LoadingState_timeout)
                         {
-                            //#[ transition 0 
-                            OpenDoors(1);
+                            cancel(LoadingState_timeout);
+                            //#[ transition 7 
+                            LoadingTime++;
                             //#]
-                            rootState_subState = DoorsClosed;
-                            rootState_active = DoorsClosed;
+                            LoadingState_subState = StartLoading;
+                            rootState_active = StartLoading;
+                            LoadingState_timeout = scheduleTimeout(100, NULL);
                             res = eventConsumed;
                         }
                 }
+            
             
         }
         break;
@@ -340,6 +299,19 @@ IOxfReactive::TakeEventStatus Loading_System::rootState_processEvent() {
             if(IS_EVENT_TYPE_OF(LoadingProcess_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
                 {
                     LoadingState_entDef();
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        // State ReadyForParking
+        case ReadyForParking:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId))
+                {
+                    popNullTransition();
+                    rootState_subState = terminationstate_9;
+                    rootState_active = terminationstate_9;
                     res = eventConsumed;
                 }
             
@@ -357,6 +329,7 @@ IOxfReactive::TakeEventStatus Loading_System::rootState_processEvent() {
             
         }
         break;
+        
         default:
             break;
     }
@@ -367,7 +340,7 @@ void Loading_System::LoadingState_entDef() {
     rootState_subState = LoadingState;
     LoadingState_subState = StartLoading;
     rootState_active = StartLoading;
-    LoadingState_timeout = scheduleTimeout(1000, NULL);
+    LoadingState_timeout = scheduleTimeout(100, NULL);
 }
 
 /*********************************************************************

@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: Pranav
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: LoadingSystemPkg
@@ -91,11 +91,6 @@ bool AlertDCManager::isTypeOf(const short id) const {
 IMPLEMENT_META_EVENT_P(AlertDCManager, UseCaseAnalysisPkg_ANGELSPkg_LoadingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::LoadingSystemPkg, AlertDCManager())
 
 //## event CloseDoors(double)
-CloseDoors::CloseDoors() {
-    NOTIFY_EVENT_CONSTRUCTOR(CloseDoors)
-    setId(CloseDoors_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
-}
-
 CloseDoors::CloseDoors(double p_doorstate) : doorstate(p_doorstate) {
     NOTIFY_EVENT_CONSTRUCTOR(CloseDoors)
     setId(CloseDoors_LoadingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);

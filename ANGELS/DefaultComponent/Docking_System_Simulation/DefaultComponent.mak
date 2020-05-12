@@ -85,33 +85,33 @@ ADDITIONAL_OBJS=
 
 OBJS= \
   Docking_System.obj \
-  Truck.obj \
   ANGELS.obj \
   Collision_Avoidance.obj \
+  Communication_System.obj \
+  PedestrianandObstacles.obj \
+  Driver.obj \
+  DCOperator.obj \
   Loading_System.obj \
   DC.obj \
-  DCOperator.obj \
-  Driver.obj \
-  PedestrianandObstacles.obj \
-  Communication_System.obj \
-  Collision_Detection.obj \
+  Truck.obj \
   Obstacle.obj \
-  Localisation_System.obj \
-  ParkingSystem.obj \
+  Collision_Detection.obj \
   Safety_Standards.obj \
+  ParkingSystem.obj \
+  Localisation_System.obj \
   Government.obj \
   DockingSystemPkg.obj \
-  TruckPkg.obj \
   ANGELSPkg.obj \
   ObstacleAvoidancePkg.obj \
   UseCaseAnalysisPkg.obj \
-  LoadingSystemPkg.obj \
-  ActorPkg.obj \
   CommunicationPkg.obj \
+  ActorPkg.obj \
+  LoadingSystemPkg.obj \
+  TruckPkg.obj \
   ObstacleDetectionPkg.obj \
-  LocalisationPkg.obj \
+  SafetyStandards.obj \
   ParkingSystemPkg.obj \
-  SafetyStandards.obj
+  LocalisationPkg.obj
 
 
 
@@ -194,19 +194,13 @@ SOCK_LIB=
 
 
 
-Docking_System.obj : Docking_System.cpp Docking_System.h    DockingSystemPkg.h Truck.h Loading_System.h ANGELS.h DCOperator.h Collision_Avoidance.h Collision_Detection.h 
+Docking_System.obj : Docking_System.cpp Docking_System.h    DockingSystemPkg.h ANGELS.h DCOperator.h Collision_Avoidance.h Collision_Detection.h Truck.h Loading_System.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Docking_System.obj" "Docking_System.cpp" 
 
 
 
-Truck.obj : Truck.cpp Truck.h    TruckPkg.h ANGELS.h Driver.h Docking_System.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Truck.obj" "Truck.cpp" 
-
-
-
-ANGELS.obj : ANGELS.cpp ANGELS.h    ANGELSPkg.h Collision_Avoidance.h Loading_System.h Communication_System.h Collision_Detection.h Docking_System.h Localisation_System.h ParkingSystem.h Truck.h Safety_Standards.h Government.h DC.h DCOperator.h 
+ANGELS.obj : ANGELS.cpp ANGELS.h    ANGELSPkg.h Collision_Avoidance.h Communication_System.h Collision_Detection.h Loading_System.h Safety_Standards.h ParkingSystem.h Truck.h Localisation_System.h Docking_System.h Government.h DC.h DCOperator.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ANGELS.obj" "ANGELS.cpp" 
 
@@ -218,7 +212,31 @@ Collision_Avoidance.obj : Collision_Avoidance.cpp Collision_Avoidance.h    Obsta
 
 
 
-Loading_System.obj : Loading_System.cpp Loading_System.h    LoadingSystemPkg.h Truck.h DC.h DCOperator.h ANGELS.h 
+Communication_System.obj : Communication_System.cpp Communication_System.h    CommunicationPkg.h ANGELS.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Communication_System.obj" "Communication_System.cpp" 
+
+
+
+PedestrianandObstacles.obj : PedestrianandObstacles.cpp PedestrianandObstacles.h    ActorPkg.h Obstacle.h Collision_Detection.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PedestrianandObstacles.obj" "PedestrianandObstacles.cpp" 
+
+
+
+Driver.obj : Driver.cpp Driver.h    ActorPkg.h Truck.h ANGELS.h Docking_System.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Driver.obj" "Driver.cpp" 
+
+
+
+DCOperator.obj : DCOperator.cpp DCOperator.h    ActorPkg.h Loading_System.h ANGELS.h Docking_System.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DCOperator.obj" "DCOperator.cpp" 
+
+
+
+Loading_System.obj : Loading_System.cpp Loading_System.h    LoadingSystemPkg.h DC.h DCOperator.h ANGELS.h Truck.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Loading_System.obj" "Loading_System.cpp" 
 
@@ -230,33 +248,9 @@ DC.obj : DC.cpp DC.h    ActorPkg.h Loading_System.h ANGELS.h
 
 
 
-DCOperator.obj : DCOperator.cpp DCOperator.h    ActorPkg.h Loading_System.h ANGELS.h Docking_System.h 
+Truck.obj : Truck.cpp Truck.h    TruckPkg.h ANGELS.h Driver.h Docking_System.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DCOperator.obj" "DCOperator.cpp" 
-
-
-
-Driver.obj : Driver.cpp Driver.h    ActorPkg.h Truck.h ANGELS.h Docking_System.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Driver.obj" "Driver.cpp" 
-
-
-
-PedestrianandObstacles.obj : PedestrianandObstacles.cpp PedestrianandObstacles.h    ActorPkg.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PedestrianandObstacles.obj" "PedestrianandObstacles.cpp" 
-
-
-
-Communication_System.obj : Communication_System.cpp Communication_System.h    CommunicationPkg.h ANGELS.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Communication_System.obj" "Communication_System.cpp" 
-
-
-
-Collision_Detection.obj : Collision_Detection.cpp Collision_Detection.h    ObstacleDetectionPkg.h ANGELS.h Obstacle.h Docking_System.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Collision_Detection.obj" "Collision_Detection.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Truck.obj" "Truck.cpp" 
 
 
 
@@ -266,9 +260,15 @@ Obstacle.obj : Obstacle.cpp Obstacle.h    ActorPkg.h Collision_Detection.h
 
 
 
-Localisation_System.obj : Localisation_System.cpp Localisation_System.h    LocalisationPkg.h ANGELS.h 
+Collision_Detection.obj : Collision_Detection.cpp Collision_Detection.h    ObstacleDetectionPkg.h ANGELS.h Obstacle.h Docking_System.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Localisation_System.obj" "Localisation_System.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Collision_Detection.obj" "Collision_Detection.cpp" 
+
+
+
+Safety_Standards.obj : Safety_Standards.cpp Safety_Standards.h    SafetyStandards.h ANGELS.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Safety_Standards.obj" "Safety_Standards.cpp" 
 
 
 
@@ -278,9 +278,9 @@ ParkingSystem.obj : ParkingSystem.cpp ParkingSystem.h    ParkingSystemPkg.h ANGE
 
 
 
-Safety_Standards.obj : Safety_Standards.cpp Safety_Standards.h    SafetyStandards.h ANGELS.h 
+Localisation_System.obj : Localisation_System.cpp Localisation_System.h    LocalisationPkg.h ANGELS.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Safety_Standards.obj" "Safety_Standards.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Localisation_System.obj" "Localisation_System.cpp" 
 
 
 
@@ -293,12 +293,6 @@ Government.obj : Government.cpp Government.h    ActorPkg.h ANGELS.h
 DockingSystemPkg.obj : DockingSystemPkg.cpp DockingSystemPkg.h    Docking_System.h ANGELSPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DockingSystemPkg.obj" "DockingSystemPkg.cpp" 
-
-
-
-TruckPkg.obj : TruckPkg.cpp TruckPkg.h    Truck.h ANGELSPkg.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"TruckPkg.obj" "TruckPkg.cpp" 
 
 
 
@@ -320,9 +314,9 @@ UseCaseAnalysisPkg.obj : UseCaseAnalysisPkg.cpp UseCaseAnalysisPkg.h
 
 
 
-LoadingSystemPkg.obj : LoadingSystemPkg.cpp LoadingSystemPkg.h    Loading_System.h ANGELSPkg.h 
+CommunicationPkg.obj : CommunicationPkg.cpp CommunicationPkg.h    Communication_System.h ANGELSPkg.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LoadingSystemPkg.obj" "LoadingSystemPkg.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"CommunicationPkg.obj" "CommunicationPkg.cpp" 
 
 
 
@@ -332,9 +326,15 @@ ActorPkg.obj : ActorPkg.cpp ActorPkg.h    ANGELSPkg.h
 
 
 
-CommunicationPkg.obj : CommunicationPkg.cpp CommunicationPkg.h    Communication_System.h ANGELSPkg.h 
+LoadingSystemPkg.obj : LoadingSystemPkg.cpp LoadingSystemPkg.h    Loading_System.h ANGELSPkg.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"CommunicationPkg.obj" "CommunicationPkg.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LoadingSystemPkg.obj" "LoadingSystemPkg.cpp" 
+
+
+
+TruckPkg.obj : TruckPkg.cpp TruckPkg.h    Truck.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"TruckPkg.obj" "TruckPkg.cpp" 
 
 
 
@@ -344,9 +344,9 @@ ObstacleDetectionPkg.obj : ObstacleDetectionPkg.cpp ObstacleDetectionPkg.h    Co
 
 
 
-LocalisationPkg.obj : LocalisationPkg.cpp LocalisationPkg.h    Localisation_System.h ANGELSPkg.h 
+SafetyStandards.obj : SafetyStandards.cpp SafetyStandards.h    Safety_Standards.h ANGELSPkg.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LocalisationPkg.obj" "LocalisationPkg.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SafetyStandards.obj" "SafetyStandards.cpp" 
 
 
 
@@ -356,9 +356,9 @@ ParkingSystemPkg.obj : ParkingSystemPkg.cpp ParkingSystemPkg.h    ParkingSystem.
 
 
 
-SafetyStandards.obj : SafetyStandards.cpp SafetyStandards.h    Safety_Standards.h ANGELSPkg.h 
+LocalisationPkg.obj : LocalisationPkg.cpp LocalisationPkg.h    Localisation_System.h ANGELSPkg.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SafetyStandards.obj" "SafetyStandards.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LocalisationPkg.obj" "LocalisationPkg.cpp" 
 
 
 
@@ -390,33 +390,33 @@ $(TARGET_NAME)$(LIB_EXT) : $(OBJS) $(ADDITIONAL_OBJS) DefaultComponent.mak
 clean:
 	@echo Cleanup
 	if exist Docking_System.obj erase Docking_System.obj
-	if exist Truck.obj erase Truck.obj
 	if exist ANGELS.obj erase ANGELS.obj
 	if exist Collision_Avoidance.obj erase Collision_Avoidance.obj
+	if exist Communication_System.obj erase Communication_System.obj
+	if exist PedestrianandObstacles.obj erase PedestrianandObstacles.obj
+	if exist Driver.obj erase Driver.obj
+	if exist DCOperator.obj erase DCOperator.obj
 	if exist Loading_System.obj erase Loading_System.obj
 	if exist DC.obj erase DC.obj
-	if exist DCOperator.obj erase DCOperator.obj
-	if exist Driver.obj erase Driver.obj
-	if exist PedestrianandObstacles.obj erase PedestrianandObstacles.obj
-	if exist Communication_System.obj erase Communication_System.obj
-	if exist Collision_Detection.obj erase Collision_Detection.obj
+	if exist Truck.obj erase Truck.obj
 	if exist Obstacle.obj erase Obstacle.obj
-	if exist Localisation_System.obj erase Localisation_System.obj
-	if exist ParkingSystem.obj erase ParkingSystem.obj
+	if exist Collision_Detection.obj erase Collision_Detection.obj
 	if exist Safety_Standards.obj erase Safety_Standards.obj
+	if exist ParkingSystem.obj erase ParkingSystem.obj
+	if exist Localisation_System.obj erase Localisation_System.obj
 	if exist Government.obj erase Government.obj
 	if exist DockingSystemPkg.obj erase DockingSystemPkg.obj
-	if exist TruckPkg.obj erase TruckPkg.obj
 	if exist ANGELSPkg.obj erase ANGELSPkg.obj
 	if exist ObstacleAvoidancePkg.obj erase ObstacleAvoidancePkg.obj
 	if exist UseCaseAnalysisPkg.obj erase UseCaseAnalysisPkg.obj
-	if exist LoadingSystemPkg.obj erase LoadingSystemPkg.obj
-	if exist ActorPkg.obj erase ActorPkg.obj
 	if exist CommunicationPkg.obj erase CommunicationPkg.obj
+	if exist ActorPkg.obj erase ActorPkg.obj
+	if exist LoadingSystemPkg.obj erase LoadingSystemPkg.obj
+	if exist TruckPkg.obj erase TruckPkg.obj
 	if exist ObstacleDetectionPkg.obj erase ObstacleDetectionPkg.obj
-	if exist LocalisationPkg.obj erase LocalisationPkg.obj
-	if exist ParkingSystemPkg.obj erase ParkingSystemPkg.obj
 	if exist SafetyStandards.obj erase SafetyStandards.obj
+	if exist ParkingSystemPkg.obj erase ParkingSystemPkg.obj
+	if exist LocalisationPkg.obj erase LocalisationPkg.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)
 	if exist $(TARGET_NAME).pdb erase $(TARGET_NAME).pdb

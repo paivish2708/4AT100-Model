@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: Pranav
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Loading_System
@@ -442,8 +442,6 @@ void OMAnimatedLoading_System::serializeAttributes(AOMSAttributes* aomsAttribute
 }
 
 void OMAnimatedLoading_System::serializeRelations(AOMSRelations* aomsRelations) const {
-    aomsRelations->addRelation("itsTruck", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsTruck);
     aomsRelations->addRelation("itsDC", false, true);
     if(myReal->itsDC)
         {
@@ -459,6 +457,8 @@ void OMAnimatedLoading_System::serializeRelations(AOMSRelations* aomsRelations) 
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS);
         }
+    aomsRelations->addRelation("itsTruck", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsTruck);
 }
 
 void OMAnimatedLoading_System::rootState_serializeStates(AOMSState* aomsState) const {

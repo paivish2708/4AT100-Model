@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: Pranav
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: DC
-//!	Generated Date	: Tue, 12, May 2020  
+//!	Generated Date	: Thu, 30, Apr 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\DC.h
 *********************************************************************/
 
@@ -39,17 +39,13 @@ public :
 
     ////    Constructors and destructors    ////
     
-    ////    Additional operations    ////
-    
-    ////    Relations and components    ////
-    
-    ////    Framework operations    ////
-    
     //## auto_generated
     DC();
     
     //## auto_generated
     ~DC();
+    
+    ////    Additional operations    ////
     
     //## auto_generated
     ANGELS* getItsANGELS() const;
@@ -68,9 +64,13 @@ protected :
     //## auto_generated
     void cleanUpRelations();
     
+    ////    Relations and components    ////
+    
     ANGELS* itsANGELS;		//## link itsANGELS
     
     Loading_System* itsLoading_System;		//## link itsLoading_System
+    
+    ////    Framework operations    ////
 
 public :
 

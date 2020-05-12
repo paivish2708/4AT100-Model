@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Collision_Detection
-//!	Generated Date	: Sun, 10, May 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\DefaultConfig\Collision_Detection.cpp
 *********************************************************************/
 
@@ -47,11 +47,7 @@ ANGELS* Collision_Detection::getItsANGELS_1() const {
 }
 
 void Collision_Detection::setItsANGELS_1(ANGELS* p_ANGELS) {
-    if(p_ANGELS != NULL)
-        {
-            p_ANGELS->_setItsCollision_Detection_1(this);
-        }
-    _setItsANGELS_1(p_ANGELS);
+    itsANGELS_1 = p_ANGELS;
 }
 
 Docking_System* Collision_Detection::getItsDocking_System() const {
@@ -90,11 +86,6 @@ void Collision_Detection::cleanUpRelations() {
         }
     if(itsANGELS_1 != NULL)
         {
-            Collision_Detection* p_Collision_Detection = itsANGELS_1->getItsCollision_Detection_1();
-            if(p_Collision_Detection != NULL)
-                {
-                    itsANGELS_1->__setItsCollision_Detection_1(NULL);
-                }
             itsANGELS_1 = NULL;
         }
     if(itsDocking_System != NULL)
@@ -131,22 +122,6 @@ void Collision_Detection::_setItsANGELS(ANGELS* p_ANGELS) {
 
 void Collision_Detection::_clearItsANGELS() {
     itsANGELS = NULL;
-}
-
-void Collision_Detection::__setItsANGELS_1(ANGELS* p_ANGELS) {
-    itsANGELS_1 = p_ANGELS;
-}
-
-void Collision_Detection::_setItsANGELS_1(ANGELS* p_ANGELS) {
-    if(itsANGELS_1 != NULL)
-        {
-            itsANGELS_1->__setItsCollision_Detection_1(NULL);
-        }
-    __setItsANGELS_1(p_ANGELS);
-}
-
-void Collision_Detection::_clearItsANGELS_1() {
-    itsANGELS_1 = NULL;
 }
 
 void Collision_Detection::__setItsDocking_System(Docking_System* p_Docking_System) {

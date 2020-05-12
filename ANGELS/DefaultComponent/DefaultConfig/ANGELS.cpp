@@ -35,7 +35,6 @@ ANGELS::ANGELS(IOxfActive* theActiveContext) : dt(10) {
     }
     itsCollision_Avoidance = NULL;
     itsCollision_Detection = NULL;
-    itsCollision_Detection_1 = NULL;
     itsCommunication_System = NULL;
     itsDC = NULL;
     itsDCOperator = NULL;
@@ -159,18 +158,6 @@ void ANGELS::setItsCollision_Detection(Collision_Detection* p_Collision_Detectio
             p_Collision_Detection->_setItsANGELS(this);
         }
     _setItsCollision_Detection(p_Collision_Detection);
-}
-
-Collision_Detection* ANGELS::getItsCollision_Detection_1() const {
-    return itsCollision_Detection_1;
-}
-
-void ANGELS::setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection) {
-    if(p_Collision_Detection != NULL)
-        {
-            p_Collision_Detection->_setItsANGELS_1(this);
-        }
-    _setItsCollision_Detection_1(p_Collision_Detection);
 }
 
 Collision_Detection* ANGELS::getItsCollision_Detection_2() const {
@@ -352,15 +339,6 @@ void ANGELS::cleanUpRelations() {
                 }
             itsCollision_Detection = NULL;
         }
-    if(itsCollision_Detection_1 != NULL)
-        {
-            ANGELS* p_ANGELS = itsCollision_Detection_1->getItsANGELS_1();
-            if(p_ANGELS != NULL)
-                {
-                    itsCollision_Detection_1->__setItsANGELS_1(NULL);
-                }
-            itsCollision_Detection_1 = NULL;
-        }
     if(itsCommunication_System != NULL)
         {
             ANGELS* p_ANGELS = itsCommunication_System->getItsANGELS();
@@ -483,22 +461,6 @@ void ANGELS::_setItsCollision_Detection(Collision_Detection* p_Collision_Detecti
 
 void ANGELS::_clearItsCollision_Detection() {
     itsCollision_Detection = NULL;
-}
-
-void ANGELS::__setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection) {
-    itsCollision_Detection_1 = p_Collision_Detection;
-}
-
-void ANGELS::_setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection) {
-    if(itsCollision_Detection_1 != NULL)
-        {
-            itsCollision_Detection_1->__setItsANGELS_1(NULL);
-        }
-    __setItsCollision_Detection_1(p_Collision_Detection);
-}
-
-void ANGELS::_clearItsCollision_Detection_1() {
-    itsCollision_Detection_1 = NULL;
 }
 
 void ANGELS::__setItsCommunication_System(Communication_System* p_Communication_System) {

@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: Pranav
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Collision_Detection
@@ -87,6 +87,8 @@ protected :
     
     Docking_System* itsDocking_System;		//## link itsDocking_System
     
+    Obstacle* itsObstacle;		//## link itsObstacle
+    
     ////    Framework operations    ////
 
 public :
@@ -117,10 +119,6 @@ public :
     
     //## auto_generated
     void _clearItsObstacle();
-
-protected :
-
-    Obstacle* itsObstacle;		//## link itsObstacle
 };
 
 #ifdef _OMINSTRUMENT

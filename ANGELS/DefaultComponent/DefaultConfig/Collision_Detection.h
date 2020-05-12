@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Collision_Detection
-//!	Generated Date	: Sun, 10, May 2020  
+//!	Generated Date	: Tue, 12, May 2020  
 	File Path	: DefaultComponent\DefaultConfig\Collision_Detection.h
 *********************************************************************/
 
@@ -91,15 +91,6 @@ public :
     
     //## auto_generated
     void _clearItsANGELS();
-    
-    //## auto_generated
-    void __setItsANGELS_1(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _setItsANGELS_1(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _clearItsANGELS_1();
     
     //## auto_generated
     void __setItsDocking_System(Docking_System* p_Docking_System);

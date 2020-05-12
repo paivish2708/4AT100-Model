@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: Pranav
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: Truck
-//!	Generated Date	: Tue, 12, May 2020  
+//!	Generated Date	: Sun, 3, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\Truck.h
 *********************************************************************/
 
@@ -79,6 +79,8 @@ protected :
     
     Docking_System* itsDocking_System;		//## link itsDocking_System
     
+    Driver* itsDriver;		//## link itsDriver
+    
     ////    Framework operations    ////
 
 public :
@@ -109,10 +111,6 @@ public :
     
     //## auto_generated
     void _clearItsDriver();
-
-protected :
-
-    Driver* itsDriver;		//## link itsDriver
 };
 
 #ifdef _OMINSTRUMENT

@@ -143,12 +143,6 @@ public :
     void setItsCollision_Detection(Collision_Detection* p_Collision_Detection);
     
     //## auto_generated
-    Collision_Detection* getItsCollision_Detection_1() const;
-    
-    //## auto_generated
-    void setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);
-    
-    //## auto_generated
     Collision_Detection* getItsCollision_Detection_2() const;
     
     //## auto_generated
@@ -270,8 +264,6 @@ protected :
     
     Collision_Detection* itsCollision_Detection;		//## link itsCollision_Detection
     
-    Collision_Detection* itsCollision_Detection_1;		//## link itsCollision_Detection_1
-    
     Collision_Detection itsCollision_Detection_2;		//## classInstance itsCollision_Detection_2
     
     Collision_Detection itsCollision_Detection_3;		//## classInstance itsCollision_Detection_3
@@ -329,15 +321,6 @@ public :
     
     //## auto_generated
     void _clearItsCollision_Detection();
-    
-    //## auto_generated
-    void __setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);
-    
-    //## auto_generated
-    void _setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);
-    
-    //## auto_generated
-    void _clearItsCollision_Detection_1();
     
     //## auto_generated
     void __setItsCommunication_System(Communication_System* p_Communication_System);
