@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Docking_System
-//!	Generated Date	: Tue, 12, May 2020  
+//!	Generated Date	: Wed, 13, May 2020  
 	File Path	: DefaultComponent\DefaultConfig\Docking_System.h
 *********************************************************************/
 
@@ -58,7 +58,7 @@ public :
     ////    Operations    ////
     
     //## operation MoveTruck(double,double,double)
-    virtual void MoveTruck(double SteeringAngle, double speed, double DockingStatus);
+    virtual void MoveTruck(double SteeringAngle, double speed, double DockingState);
     
     ////    Additional operations    ////
     

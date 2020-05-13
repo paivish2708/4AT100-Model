@@ -103,7 +103,8 @@ OBJS= \
   Charging_System.obj \
   Safety_Standards.obj \
   DockingSystemPkg.obj \
-  LoadingSystemPkg.obj
+  LoadingSystemPkg.obj \
+  ChargingSystemPkg.obj
 
 
 
@@ -192,13 +193,13 @@ ANGELS.obj : ANGELS.cpp ANGELS.h    Collision_Avoidance.h Communication_System.h
 
 
 
-Docking_System.obj : Docking_System.cpp Docking_System.h    DockingSystemPkg.h ANGELS.h DCOperator.h Collision_Avoidance.h Collision_Detection.h Truck.h 
+Docking_System.obj : Docking_System.cpp Docking_System.h    DockingSystemPkg.h ANGELS.h DCOperator.h Collision_Avoidance.h Collision_Detection.h Truck.h Loading_System.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Docking_System.obj" "Docking_System.cpp" 
 
 
 
-Loading_System.obj : Loading_System.cpp Loading_System.h    LoadingSystemPkg.h DC.h DCOperator.h ANGELS.h 
+Loading_System.obj : Loading_System.cpp Loading_System.h    LoadingSystemPkg.h DC.h DCOperator.h ANGELS.h Truck.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Loading_System.obj" "Loading_System.cpp" 
 
@@ -282,7 +283,7 @@ Obstacle.obj : Obstacle.cpp Obstacle.h    Collision_Detection.h
 
 
 
-Charging_System.obj : Charging_System.cpp Charging_System.h    
+Charging_System.obj : Charging_System.cpp Charging_System.h    ChargingSystemPkg.h Truck.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Charging_System.obj" "Charging_System.cpp" 
 
@@ -303,6 +304,12 @@ DockingSystemPkg.obj : DockingSystemPkg.cpp DockingSystemPkg.h    Docking_System
 LoadingSystemPkg.obj : LoadingSystemPkg.cpp LoadingSystemPkg.h    Loading_System.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LoadingSystemPkg.obj" "LoadingSystemPkg.cpp" 
+
+
+
+ChargingSystemPkg.obj : ChargingSystemPkg.cpp ChargingSystemPkg.h    Charging_System.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ChargingSystemPkg.obj" "ChargingSystemPkg.cpp" 
 
 
 
@@ -353,6 +360,7 @@ clean:
 	if exist Safety_Standards.obj erase Safety_Standards.obj
 	if exist DockingSystemPkg.obj erase DockingSystemPkg.obj
 	if exist LoadingSystemPkg.obj erase LoadingSystemPkg.obj
+	if exist ChargingSystemPkg.obj erase ChargingSystemPkg.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)
 	if exist $(TARGET_NAME).pdb erase $(TARGET_NAME).pdb

@@ -11,10 +11,10 @@
 			<_id type="a">GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
-			<_modifiedTimeWeak type="a">5.10.2020::21:9:2</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.10.2020::15:27:15</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::14:37:37</_modifiedTime>
 			<_lastID type="a">15</_lastID>
-			<weakCGTime type="a">5.10.2020::21:9:2</weakCGTime>
+			<weakCGTime type="a">5.13.2020::14:37:37</weakCGTime>
 			<strongCGTime type="a">4.30.2020::9:51:17</strongCGTime>
 			<_defaultComposite type="s">GUID fabbb408-de82-424e-8fce-216617ff1ef0</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -134,7 +134,7 @@
 			<_id type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DCOperator</_name>
-			<_modifiedTimeWeak type="a">5.10.2020::21:9:2</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:37</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -144,9 +144,9 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.10.2020::21:9:2</_modifiedTime>
+			<_modifiedTime type="a">5.13.2020::14:37:37</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">5.10.2020::21:9:2</weakCGTime>
+			<weakCGTime type="a">5.13.2020::14:37:37</weakCGTime>
 			<strongCGTime type="a">4.29.2020::15:2:18</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -162,6 +162,7 @@
 				<value>GUID efd22ebd-2108-4d50-a975-551708a9c3fe</value>
 				<value>GUID 43407466-752a-4062-8d53-544509c5b1c3</value>
 				<value>GUID 9b9e8841-8888-480d-ab43-afe7107f8da4</value>
+				<value>GUID aa75b22b-ad70-4c35-a702-17d02bbe4604</value>
 			</AggregatesList>
 		</IActor>
 		<IInformationFlow type="e">
@@ -365,8 +366,8 @@
 			<_id type="a">GUID 9b9e8841-8888-480d-ab43-afe7107f8da4</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDocking_System_1</_name>
-			<_modifiedTimeWeak type="a">5.10.2020::21:9:2</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.10.2020::21:9:2</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::14:37:37</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -379,12 +380,35 @@
 			</_otherClass>
 			<_inverse type="r">
 				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID aa75b22b-ad70-4c35-a702-17d02bbe4604</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsCharging_System</_name>
+			<_modifiedTimeWeak type="a">5.13.2020::13:25:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::13:25:46</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\ChargingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg</_hsubsystem>
+					<_hname type="a">Charging_System</_hname>
+					<_hid type="a">GUID a793ceb4-ff4d-4df9-a88a-619d8991be61</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg</_hsubsystem>
-					<_hclass type="a">Docking_System</_hclass>
-					<_hname type="a">itsDCOperator_1</_hname>
-					<_hid type="a">GUID e218809d-f25a-4b36-863b-189f74fada5e</_hid>
+					<_hfilename type="a">.\ChargingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg</_hsubsystem>
+					<_hclass type="a">Charging_System</_hclass>
+					<_hname type="a">itsDCOperator</_hname>
+					<_hid type="a">GUID 60ff92a9-7de2-4c64-9e24-08d5d71e45ff</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>

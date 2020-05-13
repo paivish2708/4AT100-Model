@@ -96,6 +96,7 @@ OBJS= \
   Communication_System.obj \
   Obstacle.obj \
   Collision_Detection.obj \
+  Charging_System.obj \
   Safety_Standards.obj \
   ParkingSystem.obj \
   Localisation_System.obj \
@@ -109,6 +110,7 @@ OBJS= \
   TruckPkg.obj \
   CommunicationPkg.obj \
   ObstacleDetectionPkg.obj \
+  ChargingSystemPkg.obj \
   SafetyStandards.obj \
   ParkingSystemPkg.obj \
   LocalisationPkg.obj
@@ -224,7 +226,7 @@ Docking_System.obj : Docking_System.cpp Docking_System.h    DockingSystemPkg.h A
 
 
 
-DCOperator.obj : DCOperator.cpp DCOperator.h    ActorPkg.h Loading_System.h ANGELS.h Docking_System.h 
+DCOperator.obj : DCOperator.cpp DCOperator.h    ActorPkg.h Loading_System.h ANGELS.h Docking_System.h Charging_System.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DCOperator.obj" "DCOperator.cpp" 
 
@@ -263,6 +265,12 @@ Obstacle.obj : Obstacle.cpp Obstacle.h    ActorPkg.h Collision_Detection.h
 Collision_Detection.obj : Collision_Detection.cpp Collision_Detection.h    ObstacleDetectionPkg.h ANGELS.h Obstacle.h Docking_System.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Collision_Detection.obj" "Collision_Detection.cpp" 
+
+
+
+Charging_System.obj : Charging_System.cpp Charging_System.h    ChargingSystemPkg.h Truck.h DCOperator.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Charging_System.obj" "Charging_System.cpp" 
 
 
 
@@ -344,6 +352,12 @@ ObstacleDetectionPkg.obj : ObstacleDetectionPkg.cpp ObstacleDetectionPkg.h    Co
 
 
 
+ChargingSystemPkg.obj : ChargingSystemPkg.cpp ChargingSystemPkg.h    Charging_System.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ChargingSystemPkg.obj" "ChargingSystemPkg.cpp" 
+
+
+
 SafetyStandards.obj : SafetyStandards.cpp SafetyStandards.h    Safety_Standards.h ANGELSPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SafetyStandards.obj" "SafetyStandards.cpp" 
@@ -401,6 +415,7 @@ clean:
 	if exist Communication_System.obj erase Communication_System.obj
 	if exist Obstacle.obj erase Obstacle.obj
 	if exist Collision_Detection.obj erase Collision_Detection.obj
+	if exist Charging_System.obj erase Charging_System.obj
 	if exist Safety_Standards.obj erase Safety_Standards.obj
 	if exist ParkingSystem.obj erase ParkingSystem.obj
 	if exist Localisation_System.obj erase Localisation_System.obj
@@ -414,6 +429,7 @@ clean:
 	if exist TruckPkg.obj erase TruckPkg.obj
 	if exist CommunicationPkg.obj erase CommunicationPkg.obj
 	if exist ObstacleDetectionPkg.obj erase ObstacleDetectionPkg.obj
+	if exist ChargingSystemPkg.obj erase ChargingSystemPkg.obj
 	if exist SafetyStandards.obj erase SafetyStandards.obj
 	if exist ParkingSystemPkg.obj erase ParkingSystemPkg.obj
 	if exist LocalisationPkg.obj erase LocalisationPkg.obj

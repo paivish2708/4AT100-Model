@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Docking_System
-//!	Generated Date	: Tue, 12, May 2020  
+//!	Generated Date	: Wed, 13, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\Docking_System.cpp
 *********************************************************************/
 
@@ -28,7 +28,7 @@
 #define UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_MoveTruck_SERIALIZE \
     aomsmethod->addAttribute("SteeringAngle", x2String(SteeringAngle));\
     aomsmethod->addAttribute("speed", x2String(speed));\
-    aomsmethod->addAttribute("DockingStatus", x2String(DockingStatus));
+    aomsmethod->addAttribute("DockingState", x2String(DockingState));
 #define UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_Docking_System_SERIALIZE OM_NO_OP
 
 #define UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_CheckDockingStatus_SERIALIZE OM_NO_OP
@@ -39,7 +39,7 @@
 //## package UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg
 
 //## class Docking_System
-Docking_System::Docking_System(IOxfActive* theActiveContext) : DSInput(1), DockingStatus(0), DockingTime(10), Doorstatus(1), Speed(15), SteerAngle(10) {
+Docking_System::Docking_System(IOxfActive* theActiveContext) : DSInput(1), DockingStatus(1), DockingTime(10), Doorstatus(1), Speed(15), SteerAngle(10) {
     NOTIFY_REACTIVE_CONSTRUCTOR(Docking_System, Docking_System(), 0, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_Docking_System_SERIALIZE);
     setActiveContext(theActiveContext, false);
     {
@@ -62,7 +62,7 @@ Docking_System::~Docking_System() {
     cancelTimeouts();
 }
 
-void Docking_System::MoveTruck(double SteeringAngle, double speed, double DockingStatus) {
+void Docking_System::MoveTruck(double SteeringAngle, double speed, double DockingState) {
     NOTIFY_OPERATION(MoveTruck, MoveTruck(double,double,double), 3, UseCaseAnalysisPkg_ANGELSPkg_DockingSystemPkg_Docking_System_MoveTruck_SERIALIZE);
     //#[ operation MoveTruck(double,double,double)
     if (DockingStatus !=1)
@@ -71,7 +71,8 @@ void Docking_System::MoveTruck(double SteeringAngle, double speed, double Dockin
     else
     { 
     SteerAngle = 0;
-    Speed = 0;}  
+    Speed = 0;
+    DockingStatus = DockingState;}  
     
     //#]
 }
@@ -526,12 +527,15 @@ IOxfReactive::TakeEventStatus Docking_System::rootState_processEvent() {
         {
             if(IS_EVENT_TYPE_OF(EndDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
                 {
-                    NOTIFY_TRANSITION_STARTED("7");
+                    NOTIFY_TRANSITION_STARTED("6");
                     switch (Docking_subState) {
                         // State MoveTheTruck
                         case MoveTheTruck:
                         {
                             cancel(Docking_timeout);
+                            //#[ state Docking.MoveTheTruck.(Exit) 
+                            CheckDockingStatus();
+                            //#]
                             NOTIFY_STATE_EXITED("ROOT.Docking.MoveTheTruck");
                         }
                         break;
@@ -546,14 +550,14 @@ IOxfReactive::TakeEventStatus Docking_System::rootState_processEvent() {
                     }
                     Docking_subState = OMNonState;
                     NOTIFY_STATE_EXITED("ROOT.Docking");
-                    //#[ transition 7 
+                    //#[ transition 6 
                     MoveTruck(0,0,1);
                     //#]
                     NOTIFY_STATE_ENTERED("ROOT.IdleTruck");
                     pushNullTransition();
                     rootState_subState = IdleTruck;
                     rootState_active = IdleTruck;
-                    NOTIFY_TRANSITION_TERMINATED("7");
+                    NOTIFY_TRANSITION_TERMINATED("6");
                     res = eventConsumed;
                 }
             else if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
@@ -562,6 +566,9 @@ IOxfReactive::TakeEventStatus Docking_System::rootState_processEvent() {
                         {
                             NOTIFY_TRANSITION_STARTED("5");
                             cancel(Docking_timeout);
+                            //#[ state Docking.MoveTheTruck.(Exit) 
+                            CheckDockingStatus();
+                            //#]
                             NOTIFY_STATE_EXITED("ROOT.Docking.MoveTheTruck");
                             //#[ transition 5 
                             CheckDockingStatus();
@@ -574,12 +581,6 @@ IOxfReactive::TakeEventStatus Docking_System::rootState_processEvent() {
                             NOTIFY_TRANSITION_TERMINATED("5");
                             res = eventConsumed;
                         }
-                }
-            else if(IS_EVENT_TYPE_OF(TruckDocking_DockingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
-                {
-                    NOTIFY_TRANSITION_STARTED("6");
-                    NOTIFY_TRANSITION_TERMINATED("6");
-                    res = eventConsumed;
                 }
             
             
@@ -608,13 +609,13 @@ IOxfReactive::TakeEventStatus Docking_System::rootState_processEvent() {
         {
             if(IS_EVENT_TYPE_OF(OMNullEventId))
                 {
-                    NOTIFY_TRANSITION_STARTED("8");
+                    NOTIFY_TRANSITION_STARTED("7");
                     popNullTransition();
                     NOTIFY_STATE_EXITED("ROOT.IdleTruck");
                     NOTIFY_STATE_ENTERED("ROOT.terminationstate_7");
                     rootState_subState = terminationstate_7;
                     rootState_active = terminationstate_7;
-                    NOTIFY_TRANSITION_TERMINATED("8");
+                    NOTIFY_TRANSITION_TERMINATED("7");
                     res = eventConsumed;
                 }
             

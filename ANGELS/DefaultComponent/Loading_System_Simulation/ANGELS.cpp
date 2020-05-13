@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: ANGELS
-//!	Generated Date	: Tue, 12, May 2020  
+//!	Generated Date	: Wed, 13, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\ANGELS.cpp
 *********************************************************************/
 
@@ -29,7 +29,7 @@
 //## package UseCaseAnalysisPkg::ANGELSPkg
 
 //## class ANGELS
-ANGELS::ANGELS(IOxfActive* theActiveContext) : dt(10) {
+ANGELS::ANGELS(IOxfActive* theActiveContext) : ChargingState(15), dt(10) {
     NOTIFY_REACTIVE_CONSTRUCTOR(ANGELS, ANGELS(), 0, UseCaseAnalysisPkg_ANGELSPkg_ANGELS_ANGELS_SERIALIZE);
     setActiveContext(theActiveContext, false);
     {
@@ -57,6 +57,14 @@ ANGELS::ANGELS(IOxfActive* theActiveContext) : dt(10) {
 ANGELS::~ANGELS() {
     NOTIFY_DESTRUCTOR(~ANGELS, true);
     cleanUpRelations();
+}
+
+double ANGELS::getChargingState() const {
+    return ChargingState;
+}
+
+void ANGELS::setChargingState(double p_ChargingState) {
+    ChargingState = p_ChargingState;
 }
 
 double ANGELS::getDSInput() const {
@@ -778,6 +786,7 @@ void OMAnimatedANGELS::serializeAttributes(AOMSAttributes* aomsAttributes) const
     aomsAttributes->addAttribute("ParkingStatus", x2String(myReal->ParkingStatus));
     aomsAttributes->addAttribute("dt", x2String(myReal->dt));
     aomsAttributes->addAttribute("LoadingTime", UNKNOWN2STRING(myReal->LoadingTime));
+    aomsAttributes->addAttribute("ChargingState", x2String(myReal->ChargingState));
 }
 
 void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {

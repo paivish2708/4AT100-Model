@@ -11,9 +11,9 @@
 			<_id type="a">GUID fac390a0-ea0b-487d-8594-4a339b172cf8</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">TruckPkg</_name>
-			<_modifiedTimeWeak type="a">5.3.2020::18:36:14</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.30.2020::10:12:6</_modifiedTime>
-			<weakCGTime type="a">5.3.2020::18:36:14</weakCGTime>
+			<_modifiedTimeWeak type="a">5.13.2020::14:36:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::14:36:35</_modifiedTime>
+			<weakCGTime type="a">5.13.2020::14:36:35</weakCGTime>
 			<strongCGTime type="a">4.30.2020::10:3:49</strongCGTime>
 			<_defaultComposite type="s">GUID a0440f85-b7c4-4bcb-841b-9a8dfea0ca82</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -55,7 +55,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.3.2020::18:36:14</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:36:35</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -65,9 +65,9 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.3.2020::18:36:14</_modifiedTime>
+			<_modifiedTime type="a">5.13.2020::14:36:35</_modifiedTime>
 			<_lastID type="a">4</_lastID>
-			<weakCGTime type="a">5.3.2020::18:36:14</weakCGTime>
+			<weakCGTime type="a">5.13.2020::14:36:35</weakCGTime>
 			<strongCGTime type="a">4.30.2020::10:3:54</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -142,8 +142,8 @@
 			<_id type="a">GUID 440f2102-f39f-4bee-9a4e-37f7071b7375</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDocking_System</_name>
-			<_modifiedTimeWeak type="a">5.3.2020::18:36:14</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.3.2020::18:36:14</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.13.2020::14:36:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::14:36:35</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -156,12 +156,6 @@
 			</_otherClass>
 			<_inverse type="r">
 				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg</_hsubsystem>
-					<_hclass type="a">Docking_System</_hclass>
-					<_hname type="a">itsTruck_1</_hname>
-					<_hid type="a">GUID e99f270a-934c-443b-ad7f-74ef7d55c880</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>

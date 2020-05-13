@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: ANGELS
-//!	Generated Date	: Tue, 12, May 2020  
+//!	Generated Date	: Wed, 13, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\ANGELS.h
 *********************************************************************/
 
@@ -29,6 +29,8 @@
 #include <oxf\event.h>
 //## auto_generated
 #include <oxf\omcollec.h>
+//## classInstance itsCharging_System
+#include "Charging_System.h"
 //## classInstance itsCollision_Avoidance_1
 #include "Collision_Avoidance.h"
 //## classInstance itsCollision_Detection_2
@@ -78,6 +80,12 @@ public :
     ~ANGELS();
     
     ////    Additional operations    ////
+    
+    //## auto_generated
+    double getChargeState() const;
+    
+    //## auto_generated
+    void setChargeState(double p_ChargeState);
     
     //## auto_generated
     double getDSInput() const;
@@ -138,6 +146,9 @@ public :
     
     //## auto_generated
     void setDt(double p_dt);
+    
+    //## auto_generated
+    Charging_System* getItsCharging_System() const;
     
     //## auto_generated
     Collision_Avoidance* getItsCollision_Avoidance() const;
@@ -248,6 +259,8 @@ protected :
     
     ////    Attributes    ////
     
+    double ChargeState;		//## attribute ChargeState
+    
     double DSInput;		//## attribute DSInput
     
     double DockingStatus;		//## attribute DockingStatus
@@ -269,6 +282,8 @@ protected :
     double dt;		//## attribute dt
     
     ////    Relations and components    ////
+    
+    Charging_System itsCharging_System;		//## classInstance itsCharging_System
     
     Collision_Avoidance* itsCollision_Avoidance;		//## link itsCollision_Avoidance
     

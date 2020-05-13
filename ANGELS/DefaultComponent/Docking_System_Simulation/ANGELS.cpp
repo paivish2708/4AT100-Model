@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Docking_System_Simulation
 	Model Element	: ANGELS
-//!	Generated Date	: Tue, 12, May 2020  
+//!	Generated Date	: Wed, 13, May 2020  
 	File Path	: DefaultComponent\Docking_System_Simulation\ANGELS.cpp
 *********************************************************************/
 
@@ -29,7 +29,7 @@
 //## package UseCaseAnalysisPkg::ANGELSPkg
 
 //## class ANGELS
-ANGELS::ANGELS(IOxfActive* theActiveContext) : dt(10) {
+ANGELS::ANGELS(IOxfActive* theActiveContext) : ChargeState(15), dt(10) {
     NOTIFY_REACTIVE_CONSTRUCTOR(ANGELS, ANGELS(), 0, UseCaseAnalysisPkg_ANGELSPkg_ANGELS_ANGELS_SERIALIZE);
     setActiveContext(theActiveContext, false);
     {
@@ -38,6 +38,9 @@ ANGELS::ANGELS(IOxfActive* theActiveContext) : dt(10) {
         }
         {
             itsDocking_System_1.setShouldDelete(false);
+        }
+        {
+            itsCharging_System.setShouldDelete(false);
         }
     }
     itsCollision_Avoidance = NULL;
@@ -57,6 +60,14 @@ ANGELS::ANGELS(IOxfActive* theActiveContext) : dt(10) {
 ANGELS::~ANGELS() {
     NOTIFY_DESTRUCTOR(~ANGELS, true);
     cleanUpRelations();
+}
+
+double ANGELS::getChargeState() const {
+    return ChargeState;
+}
+
+void ANGELS::setChargeState(double p_ChargeState) {
+    ChargeState = p_ChargeState;
 }
 
 double ANGELS::getDSInput() const {
@@ -138,6 +149,10 @@ double ANGELS::getDt() const {
 
 void ANGELS::setDt(double p_dt) {
     dt = p_dt;
+}
+
+Charging_System* ANGELS::getItsCharging_System() const {
+    return (Charging_System*) &itsCharging_System;
 }
 
 Collision_Avoidance* ANGELS::getItsCollision_Avoidance() const {
@@ -322,6 +337,7 @@ Truck* ANGELS::getItsTruck_1() const {
 
 bool ANGELS::startBehavior() {
     bool done = true;
+    done &= itsCharging_System.startBehavior();
     done &= itsDocking_System_1.startBehavior();
     done &= itsLoading_System_1.startBehavior();
     done &= OMReactive::startBehavior();
@@ -756,10 +772,12 @@ void ANGELS::setActiveContext(IOxfActive* theActiveContext, bool activeInstance)
     {
         itsLoading_System_1.setActiveContext(theActiveContext, false);
         itsDocking_System_1.setActiveContext(theActiveContext, false);
+        itsCharging_System.setActiveContext(theActiveContext, false);
     }
 }
 
 void ANGELS::destroy() {
+    itsCharging_System.destroy();
     itsDocking_System_1.destroy();
     itsLoading_System_1.destroy();
     OMReactive::destroy();
@@ -778,6 +796,7 @@ void OMAnimatedANGELS::serializeAttributes(AOMSAttributes* aomsAttributes) const
     aomsAttributes->addAttribute("ParkingStatus", x2String(myReal->ParkingStatus));
     aomsAttributes->addAttribute("dt", x2String(myReal->dt));
     aomsAttributes->addAttribute("LoadingTime", UNKNOWN2STRING(myReal->LoadingTime));
+    aomsAttributes->addAttribute("ChargeState", x2String(myReal->ChargeState));
 }
 
 void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -859,6 +878,8 @@ void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
     aomsRelations->ADD_ITEM(&myReal->itsParkingSystem_1);
     aomsRelations->addRelation("itsTruck_1", true, true);
     aomsRelations->ADD_ITEM(&myReal->itsTruck_1);
+    aomsRelations->addRelation("itsCharging_System", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsCharging_System);
 }
 //#]
 

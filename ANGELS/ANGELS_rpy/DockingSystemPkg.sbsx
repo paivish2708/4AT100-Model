@@ -11,10 +11,10 @@
 			<_id type="a">GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DockingSystemPkg</_name>
-			<_modifiedTimeWeak type="a">5.12.2020::21:34:4</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.12.2020::21:37:34</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.13.2020::14:36:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::14:36:21</_modifiedTime>
 			<_lastID type="a">17</_lastID>
-			<weakCGTime type="a">5.12.2020::21:34:4</weakCGTime>
+			<weakCGTime type="a">5.13.2020::14:36:21</weakCGTime>
 			<strongCGTime type="a">5.10.2020::10:1:57</strongCGTime>
 			<_defaultComposite type="s">GUID 54392d4f-99be-431f-8cc9-fdca96262d90</_defaultComposite>
 			<_eventsBaseID type="a">18201</_eventsBaseID>
@@ -339,8 +339,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">5.3.2020::17:55:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.12.2020::20:19:55</_modifiedTime>
-			<_lastModifiedTime type="a">5.12.2020::20:19:55</_lastModifiedTime>
+			<_modifiedTime type="a">5.13.2020::14:38:0</_modifiedTime>
+			<_lastModifiedTime type="a">5.13.2020::14:38:0</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -842,8 +842,6 @@
 			<m_TargetPort type="a">323 329 </m_TargetPort>
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hid type="a">GUID e218809d-f25a-4b36-863b-189f74fada5e</_hid>
 				</IAssociationEndHandle>
 			</m_pInverseModelObject>
 			<m_pInstance type="r">
@@ -865,7 +863,6 @@
 			<m_bShowQualifier2 type="a">1</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsDCOperator_1</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -894,12 +891,12 @@
 					<m_position type="a">1 0 0  </m_position>
 					<m_nIdent type="a">3</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nVerticalSpacing type="a">-7</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">4</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_targetRole>
 			<m_sourceMultiplicity type="p">
 				<CGIText type="e">
-					<m_str type="a">1</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -928,6 +925,7 @@
 					<m_position type="a">1 0 0  </m_position>
 					<m_nIdent type="a">5</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nVerticalSpacing type="a">-7</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">6</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_targetMultiplicity>
@@ -963,7 +961,7 @@
 					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_targetQualifier>
-			<m_specificType type="a">symmetric_type</m_specificType>
+			<m_specificType type="a">type_122</m_specificType>
 		</CGIAssociationEnd>
 		<CGIAssociationEnd type="e">
 			<_id type="a">GUID c0f9edc3-fcfc-41d7-9a2c-23c89ed3ccd6</_id>
@@ -4340,7 +4338,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.12.2020::21:41:38</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:38:0</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -4350,10 +4348,10 @@
 					<_hid type="a">GUID fc39eeec-342a-4713-bb7a-00e35c8865fc</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.12.2020::21:41:38</_modifiedTime>
+			<_modifiedTime type="a">5.13.2020::14:38:0</_modifiedTime>
 			<_lastID type="a">12</_lastID>
-			<weakCGTime type="a">5.12.2020::21:41:38</weakCGTime>
-			<strongCGTime type="a">4.30.2020::10:5:15</strongCGTime>
+			<weakCGTime type="a">5.13.2020::14:38:0</weakCGTime>
+			<strongCGTime type="a">5.13.2020::14:37:23</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IStateChart</_hm2Class>
@@ -4384,21 +4382,18 @@
 				<value>GUID 1040bd39-ed81-4ea9-8562-1e670fee5b38</value>
 				<value>GUID 1f316acc-73a7-47b3-b87e-2ee38f4de438</value>
 				<value>GUID ddd55c5f-69d2-4df1-a928-cd97b2e384c6</value>
-				<value>GUID c8380be0-24f8-4470-b4ad-a523e789af05</value>
 				<value>GUID 2a7ba911-513a-40d4-b9c9-123cb3f95265</value>
-				<value>GUID f2dd5db6-b37e-4239-af89-6d18079b1e6e</value>
-				<value>GUID c4d601fa-3bdd-48e4-9b51-4ac8b2d711a4</value>
-				<value>GUID e99f270a-934c-443b-ad7f-74ef7d55c880</value>
-				<value>GUID e218809d-f25a-4b36-863b-189f74fada5e</value>
 				<value>GUID b13af9e0-706f-4e24-b0d8-88402a3429b5</value>
 				<value>GUID ab22ec24-b610-4121-aebd-cde1d232a03b</value>
+				<value>GUID 3a0a0f0c-6d31-4203-a8fe-2abda65c9edb</value>
+				<value>GUID 9f6e2bb2-9378-4468-87d5-c3290c158731</value>
 			</AggregatesList>
 		</IClass>
 		<IPrimitiveOperation type="e">
 			<_id type="a">GUID e11ac8f4-5786-4d2b-a9b5-eda357efdabf</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">MoveTruck</_name>
-			<_modifiedTimeWeak type="a">5.12.2020::21:41:38</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.12.2020::21:41:38</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<_virtual type="a">1</_virtual>
@@ -4488,7 +4483,7 @@ DockingStatus = DockingState;}  %0D
 		<IReception type="e">
 			<_id type="a">GUID 7a8c70d4-6348-477b-bb7a-c2cb4b344ad6</_id>
 			<_myState type="a">8192</_myState>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
@@ -4506,7 +4501,7 @@ DockingStatus = DockingState;}  %0D
 		<IReception type="e">
 			<_id type="a">GUID 0e9f00bf-e83c-4f8c-a1f4-1422ad11c550</_id>
 			<_myState type="a">8192</_myState>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
@@ -4524,7 +4519,7 @@ DockingStatus = DockingState;}  %0D
 		<IReception type="e">
 			<_id type="a">GUID b643606c-f8f0-4a70-8b96-f860dd3c097d</_id>
 			<_myState type="a">8192</_myState>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
@@ -4542,7 +4537,7 @@ DockingStatus = DockingState;}  %0D
 		<IReception type="e">
 			<_id type="a">GUID 6a98f78d-8496-4be6-8c27-295f9262ff4b</_id>
 			<_myState type="a">8192</_myState>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
@@ -4560,7 +4555,7 @@ DockingStatus = DockingState;}  %0D
 		<IReception type="e">
 			<_id type="a">GUID 9b344ccb-6b4b-4c73-bc3b-04bf8abeba5e</_id>
 			<_myState type="a">8192</_myState>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
@@ -4578,7 +4573,7 @@ DockingStatus = DockingState;}  %0D
 		<IReception type="e">
 			<_id type="a">GUID a84d3422-a9f2-4825-9435-f098b8597be5</_id>
 			<_myState type="a">8192</_myState>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
@@ -4630,7 +4625,7 @@ DockingStatus = DockingState;}  %0D
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">DockInput</_name>
-			<_modifiedTimeWeak type="a">5.10.2020::21:19:13</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::21:19:13</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<_virtual type="a">1</_virtual>
@@ -4710,7 +4705,7 @@ DockingStatus = DockingState;}  %0D
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">CheckDockingStatus</_name>
-			<_modifiedTimeWeak type="a">5.10.2020::21:31:47</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::21:31:47</_modifiedTime>
 			<_virtual type="a">1</_virtual>
 			<Args type="c">
@@ -4743,7 +4738,7 @@ DockingStatus = DockingState;}  %0D
 		<IReception type="e">
 			<_id type="a">GUID 6de19617-e07d-4a10-86ca-a98d79b60a0f</_id>
 			<_myState type="a">8192</_myState>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
@@ -4776,7 +4771,7 @@ DockingStatus = DockingState;}  %0D
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.12.2020::21:34:4</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.12.2020::21:34:4</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
@@ -4820,7 +4815,7 @@ DockingStatus = DockingState;}  %0D
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.10.2020::21:49:41</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::21:49:41</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
@@ -4863,7 +4858,7 @@ DockingStatus = DockingState;}  %0D
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.10.2020::21:49:36</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::21:49:36</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
@@ -4906,7 +4901,7 @@ DockingStatus = DockingState;}  %0D
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.10.2020::21:49:29</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::21:49:29</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
@@ -4949,7 +4944,7 @@ DockingStatus = DockingState;}  %0D
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.10.2020::21:49:23</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::21:49:23</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
@@ -4992,7 +4987,7 @@ DockingStatus = DockingState;}  %0D
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.10.2020::21:49:18</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::21:49:18</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
@@ -5021,8 +5016,8 @@ DockingStatus = DockingState;}  %0D
 			<_id type="a">GUID 069759c4-dcc9-42f7-b0e4-2379620075e7</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">Docking_System</_name>
-			<_modifiedTimeWeak type="a">5.12.2020::21:38:26</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.12.2020::21:38:26</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::14:37:56</_modifiedTime>
 			<m_type type="a">specFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 6d8c41f1-046d-4a32-8df3-204171a3dfdc</value>
@@ -5235,8 +5230,8 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID a2f86417-5cb6-4262-9028-d9f6f94bc704</_id>
 			<_name type="a">Docking_System</_name>
-			<_modifiedTimeWeak type="a">5.12.2020::21:38:26</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.12.2020::21:38:26</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::14:37:56</_modifiedTime>
 			<m_type type="a">specFragment</m_type>
 			<m_startRow type="a">45</m_startRow>
 			<m_startCol_Short type="a">1</m_startCol_Short>
@@ -5280,11 +5275,7 @@ DockingStatus = DockingState;}  %0D
 				<value>GUID 426c83fc-0545-4d97-84f5-fbc5c2d34c95</value>
 				<value>GUID 92537f1c-19c6-47e2-bc07-2729d07f79ff</value>
 				<value>GUID ce129fa6-f737-42b5-a409-ee181d796646</value>
-				<value>GUID 0e8814fb-ef6e-4f9b-a2d6-ed6346da7a9a</value>
-				<value>GUID 60f75b62-e274-4898-bf78-82c89feb83a2</value>
-				<value>GUID 882ae9e5-95df-4299-a86d-1e4716e2bb42</value>
 				<value>GUID 7a634110-78bf-4104-9f66-d5801e45bad4</value>
-				<value>GUID 3bf4cb00-d867-4f12-8ef6-4466176c9d06</value>
 				<value>GUID 9cad7480-2fa4-4d19-b456-33f7c944c7f5</value>
 				<value>GUID fbea4105-f170-4c3e-b092-8b54eacfcd8f</value>
 				<value>GUID 2867de0b-e59d-4f5e-87a7-68a1ad2e128c</value>
@@ -5308,7 +5299,7 @@ DockingStatus = DockingState;}  %0D
 			<_id type="a">GUID 357dbe91-dfc6-4b28-a34d-47c2a6dd54c2</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">BodyStartLine</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
@@ -5333,7 +5324,7 @@ DockingStatus = DockingState;}  %0D
 			<_id type="a">GUID 9a96d585-cb1b-4ce7-b55c-c6dbc615d611</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">BodyStartCol</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
@@ -5357,7 +5348,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 8797af21-2413-4b76-9cf2-3bad3667d340</_id>
 			<_name type="a">////    Friends    ////</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">////    Friends    ////
@@ -5374,7 +5365,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID ec3989ff-75d6-4fa7-b907-5a70d570304d</_id>
 			<_name type="a">////    Constructors and destructors    ////</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">////    Constructors and destructors    ////
@@ -5391,7 +5382,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID d8b8f328-5087-4a5b-9fd2-ac1686ca9186</_id>
 			<_name type="a">Docking_System:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation Docking_System():spec</m_text>
@@ -5407,7 +5398,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 2ad9a11b-21a0-428f-bd5a-c72d90f559ed</_id>
 			<_name type="a">~Docking_System:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation ~Docking_System():spec</m_text>
@@ -5423,7 +5414,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 0ac4e5d8-22f6-4479-9c27-b8a5a3272fb3</_id>
 			<_name type="a">////    Operations    ////</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">////    Operations    ////
@@ -5440,7 +5431,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 86620d79-08f0-48da-8de3-ac08bd3e5ee0</_id>
 			<_name type="a">MoveTruck</_name>
-			<_modifiedTimeWeak type="a">5.12.2020::21:38:26</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.12.2020::21:38:26</_modifiedTime>
 			<m_type type="a">specFragment</m_type>
 			<m_startRow type="a">68</m_startRow>
@@ -5457,7 +5448,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 49807477-c97a-462f-a0cd-d17f0536a343</_id>
 			<_name type="a">////    Additional operations    ////</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">////    Additional operations    ////
@@ -5474,7 +5465,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 1fe9fd3c-5ea9-4cdb-9420-a929e34e0e72</_id>
 			<_name type="a">getItsANGELS:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation getItsANGELS() const:spec</m_text>
@@ -5490,7 +5481,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID dc304e2d-9a01-4ee8-92c8-908bad41acf6</_id>
 			<_name type="a">setItsANGELS:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation setItsANGELS(ANGELS *):spec</m_text>
@@ -5506,7 +5497,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 3a5f9cbb-ced2-4501-973d-73a02542c672</_id>
 			<_name type="a">getItsCollision_Avoidance:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation getItsCollision_Avoidance() const:spec</m_text>
@@ -5522,7 +5513,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 8901a49a-563a-4ec3-a98c-2a0067c40d0e</_id>
 			<_name type="a">getItsCollision_Avoidance_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation getItsCollision_Avoidance_1() const:spec</m_text>
@@ -5538,7 +5529,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID c0e4ef7b-6d2e-49f5-9f15-4a0162ec9f65</_id>
 			<_name type="a">setItsCollision_Avoidance_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation setItsCollision_Avoidance_1(Collision_Avoidance *):spec</m_text>
@@ -5554,7 +5545,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID b4b758d3-6932-4640-960e-702e464b0a31</_id>
 			<_name type="a">getItsCollision_Avoidance_2:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation getItsCollision_Avoidance_2() const:spec</m_text>
@@ -5570,7 +5561,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 287a4952-e2ad-43fd-abaf-d1e60f10f032</_id>
 			<_name type="a">getItsCollision_Detection:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation getItsCollision_Detection() const:spec</m_text>
@@ -5586,7 +5577,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 4da6dcdb-d53d-49ad-b1b3-f37174ba14ca</_id>
 			<_name type="a">getItsCollision_Detection_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation getItsCollision_Detection_1() const:spec</m_text>
@@ -5602,7 +5593,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 2df898b7-5d3c-4354-8e71-3c19421eb4e8</_id>
 			<_name type="a">setItsCollision_Detection_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation setItsCollision_Detection_1(Collision_Detection *):spec</m_text>
@@ -5618,7 +5609,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID d9faa538-f9e4-4306-9daf-447a2dc16dad</_id>
 			<_name type="a">getItsCollision_Detection_2:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation getItsCollision_Detection_2() const:spec</m_text>
@@ -5634,7 +5625,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID dd296f94-6fee-454e-b253-c7d39ec5ba66</_id>
 			<_name type="a">getItsDCOperator:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation getItsDCOperator() const:spec</m_text>
@@ -5650,7 +5641,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID c88a62be-f0c7-45d5-bbe2-ca41f1fc2add</_id>
 			<_name type="a">setItsDCOperator:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation setItsDCOperator(DCOperator *):spec</m_text>
@@ -5666,7 +5657,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID f639b2ff-84c3-4145-a635-96ce0c986073</_id>
 			<_name type="a">getItsTruck:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation getItsTruck() const:spec</m_text>
@@ -5682,7 +5673,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 3e5aa48d-175a-44ff-b5c0-88e3304254d3</_id>
 			<_name type="a">getItsTruck_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation getItsTruck_1() const:spec</m_text>
@@ -5698,7 +5689,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID d29b0b94-d146-4b83-b659-6a3adb5d51af</_id>
 			<_name type="a">setItsTruck_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation setItsTruck_1(Truck *):spec</m_text>
@@ -5714,7 +5705,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 8ebdc559-4334-4f17-a9f4-d24e9fbe2df2</_id>
 			<_name type="a">getItsTruck_2:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation getItsTruck_2() const:spec</m_text>
@@ -5730,7 +5721,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID cab1c1a9-56e1-434a-b694-63f95d629ccf</_id>
 			<_name type="a">startBehavior:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation startBehavior():spec</m_text>
@@ -5746,7 +5737,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 391e57b9-47fa-40d6-bcf0-e4a5c37907c5</_id>
 			<_name type="a">initStatechart:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation initStatechart():spec</m_text>
@@ -5762,7 +5753,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID ab2677a9-4ace-42d1-8b72-2849eaf91923</_id>
 			<_name type="a">cleanUpRelations:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation cleanUpRelations():spec</m_text>
@@ -5778,7 +5769,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 426c83fc-0545-4d97-84f5-fbc5c2d34c95</_id>
 			<_name type="a">cancelTimeouts:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation cancelTimeouts():spec</m_text>
@@ -5794,7 +5785,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 92537f1c-19c6-47e2-bc07-2729d07f79ff</_id>
 			<_name type="a">cancelTimeout:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation cancelTimeout(const IOxfTimeout *):spec</m_text>
@@ -5810,7 +5801,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID ce129fa6-f737-42b5-a409-ee181d796646</_id>
 			<_name type="a">////    Relations and components    ////</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">////    Relations and components    ////
@@ -5825,60 +5816,9 @@ DockingStatus = DockingState;}  %0D
 			</m_subject>
 		</IFileFragment>
 		<IFileFragment type="e">
-			<_id type="a">GUID 0e8814fb-ef6e-4f9b-a2d6-ed6346da7a9a</_id>
-			<_name type="a">itsANGELS</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.10.2020::15:31:21</_modifiedTime>
-			<m_type type="a">specFragment</m_type>
-			<m_startRow type="a">139</m_startRow>
-			<m_startCol_Short type="a">13</m_startCol_Short>
-			<m_endRow type="a">139</m_endRow>
-			<m_endCol_Short type="a">22</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hid type="a">GUID c8380be0-24f8-4470-b4ad-a523e789af05</_hid>
-				</INObjectHandle>
-			</m_subject>
-		</IFileFragment>
-		<IFileFragment type="e">
-			<_id type="a">GUID 60f75b62-e274-4898-bf78-82c89feb83a2</_id>
-			<_name type="a">itsCollision_Avoidance_1</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.10.2020::15:31:21</_modifiedTime>
-			<m_type type="a">specFragment</m_type>
-			<m_startRow type="a">143</m_startRow>
-			<m_startCol_Short type="a">26</m_startCol_Short>
-			<m_endRow type="a">143</m_endRow>
-			<m_endCol_Short type="a">50</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hid type="a">GUID f2dd5db6-b37e-4239-af89-6d18079b1e6e</_hid>
-				</INObjectHandle>
-			</m_subject>
-		</IFileFragment>
-		<IFileFragment type="e">
-			<_id type="a">GUID 882ae9e5-95df-4299-a86d-1e4716e2bb42</_id>
-			<_name type="a">itsCollision_Detection_1</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.10.2020::15:31:21</_modifiedTime>
-			<m_type type="a">specFragment</m_type>
-			<m_startRow type="a">149</m_startRow>
-			<m_startCol_Short type="a">26</m_startCol_Short>
-			<m_endRow type="a">149</m_endRow>
-			<m_endCol_Short type="a">50</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hid type="a">GUID c4d601fa-3bdd-48e4-9b51-4ac8b2d711a4</_hid>
-				</INObjectHandle>
-			</m_subject>
-		</IFileFragment>
-		<IFileFragment type="e">
 			<_id type="a">GUID 7a634110-78bf-4104-9f66-d5801e45bad4</_id>
 			<_name type="a">itsDCOperator</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:21</_modifiedTime>
 			<m_type type="a">specFragment</m_type>
 			<m_startRow type="a">153</m_startRow>
@@ -5893,26 +5833,9 @@ DockingStatus = DockingState;}  %0D
 			</m_subject>
 		</IFileFragment>
 		<IFileFragment type="e">
-			<_id type="a">GUID 3bf4cb00-d867-4f12-8ef6-4466176c9d06</_id>
-			<_name type="a">itsTruck_1</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.10.2020::15:31:21</_modifiedTime>
-			<m_type type="a">specFragment</m_type>
-			<m_startRow type="a">157</m_startRow>
-			<m_startCol_Short type="a">12</m_startCol_Short>
-			<m_endRow type="a">157</m_endRow>
-			<m_endCol_Short type="a">22</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hid type="a">GUID e99f270a-934c-443b-ad7f-74ef7d55c880</_hid>
-				</INObjectHandle>
-			</m_subject>
-		</IFileFragment>
-		<IFileFragment type="e">
 			<_id type="a">GUID 9cad7480-2fa4-4d19-b456-33f7c944c7f5</_id>
 			<_name type="a">////    Framework operations    ////</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">////    Framework operations    ////
@@ -5929,7 +5852,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID fbea4105-f170-4c3e-b092-8b54eacfcd8f</_id>
 			<_name type="a">__setItsANGELS:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation __setItsANGELS(ANGELS *):spec</m_text>
@@ -5945,7 +5868,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 2867de0b-e59d-4f5e-87a7-68a1ad2e128c</_id>
 			<_name type="a">_setItsANGELS:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation _setItsANGELS(ANGELS *):spec</m_text>
@@ -5961,7 +5884,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 647f13cc-8473-4807-99f0-0b770766611b</_id>
 			<_name type="a">_clearItsANGELS:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation _clearItsANGELS():spec</m_text>
@@ -5977,7 +5900,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID a9617601-ae02-4a97-a50d-25903131a400</_id>
 			<_name type="a">__setItsCollision_Avoidance_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation __setItsCollision_Avoidance_1(Collision_Avoidance *):spec</m_text>
@@ -5993,7 +5916,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 19f0ef26-425d-423e-a5cd-b0405b5cc7ed</_id>
 			<_name type="a">_setItsCollision_Avoidance_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation _setItsCollision_Avoidance_1(Collision_Avoidance *):spec</m_text>
@@ -6009,7 +5932,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 6693070d-2c48-4c1b-be11-873fd0f49a78</_id>
 			<_name type="a">_clearItsCollision_Avoidance_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation _clearItsCollision_Avoidance_1():spec</m_text>
@@ -6025,7 +5948,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 5f8b2b0e-b75a-40c1-9b7a-3dd61eb6e0fa</_id>
 			<_name type="a">__setItsCollision_Detection_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation __setItsCollision_Detection_1(Collision_Detection *):spec</m_text>
@@ -6041,7 +5964,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 716cbb69-276c-43f7-8c0b-a159a16a0686</_id>
 			<_name type="a">_setItsCollision_Detection_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation _setItsCollision_Detection_1(Collision_Detection *):spec</m_text>
@@ -6057,7 +5980,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 52016414-00e5-4594-a9e9-f5e2e94496ed</_id>
 			<_name type="a">_clearItsCollision_Detection_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation _clearItsCollision_Detection_1():spec</m_text>
@@ -6073,7 +5996,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 9d7afe0a-0a6e-4c64-8de7-706c5331f10f</_id>
 			<_name type="a">__setItsDCOperator:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation __setItsDCOperator(DCOperator *):spec</m_text>
@@ -6089,7 +6012,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 09d545de-83b6-42c2-b253-e4117125f1e6</_id>
 			<_name type="a">_setItsDCOperator:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation _setItsDCOperator(DCOperator *):spec</m_text>
@@ -6105,7 +6028,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 7bf4c599-92bb-4bc2-a1f8-cfa48fe1b9fc</_id>
 			<_name type="a">_clearItsDCOperator:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation _clearItsDCOperator():spec</m_text>
@@ -6121,7 +6044,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 84ace982-f75e-4223-a1f9-162d5705148d</_id>
 			<_name type="a">__setItsTruck_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation __setItsTruck_1(Truck *):spec</m_text>
@@ -6137,7 +6060,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 3a1d0e53-3b3d-449d-9d4e-c29dbf5b56ae</_id>
 			<_name type="a">_setItsTruck_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation _setItsTruck_1(Truck *):spec</m_text>
@@ -6153,7 +6076,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 7c2a7456-cd03-4b89-9a6c-265353d91fbd</_id>
 			<_name type="a">_clearItsTruck_1:spec</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::15:31:20</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">//## auto:operation _clearItsTruck_1():spec</m_text>
@@ -6169,7 +6092,7 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 8f9195c3-0373-4337-bf75-6fb2d917c2a1</_id>
 			<_name type="a">////    Framework    ////</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<m_type type="a">textFragment</m_type>
 			<m_text type="a">////    Framework    ////
@@ -6187,8 +6110,8 @@ DockingStatus = DockingState;}  %0D
 			<_id type="a">GUID e14c37c8-8184-4ca0-a979-34403e60fc5e</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">Docking_System</_name>
-			<_modifiedTimeWeak type="a">5.12.2020::21:38:26</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.12.2020::21:38:26</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::14:37:56</_modifiedTime>
 			<m_type type="a">implFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 69e23c65-9c2f-4547-9d4a-675758b5c9cb</value>
@@ -6248,8 +6171,8 @@ DockingStatus = DockingState;}  %0D
 		<IFileFragment type="e">
 			<_id type="a">GUID 0485a914-de0f-4f71-b658-014d85eb5b3b</_id>
 			<_name type="a">Docking_System</_name>
-			<_modifiedTimeWeak type="a">5.12.2020::21:38:26</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.12.2020::21:38:26</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::14:37:56</_modifiedTime>
 			<m_type type="a">implFragment</m_type>
 			<m_startRow type="a">36</m_startRow>
 			<m_startCol_Short type="a">17</m_startCol_Short>
@@ -9038,11 +8961,11 @@ DockingStatus = DockingState;}  %0D
 			<_id type="a">GUID 87fa70e8-ceb3-445d-a3ad-7fcf46ca9f32</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">MainFlow</_name>
-			<_modifiedTimeWeak type="a">5.10.2020::22:37:28</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::22:37:28</_modifiedTime>
 			<_lastID type="a">36</_lastID>
-			<weakCGTime type="a">5.10.2020::22:37:28</weakCGTime>
-			<strongCGTime type="a">5.3.2020::18:37:44</strongCGTime>
+			<weakCGTime type="a">5.13.2020::14:37:23</weakCGTime>
+			<strongCGTime type="a">5.13.2020::14:37:23</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -11627,18 +11550,18 @@ DockingStatus = DockingState;}  %0D
 			<_id type="a">GUID 1040bd39-ed81-4ea9-8562-1e670fee5b38</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">MoveTruckForward</_name>
-			<_modifiedTimeWeak type="a">5.12.2020::21:37:24</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.10.2020::10:57:15</_modifiedTime>
-			<_lastID type="a">24</_lastID>
-			<weakCGTime type="a">5.12.2020::21:37:24</weakCGTime>
-			<strongCGTime type="a">5.3.2020::18:37:58</strongCGTime>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::13:18:27</_modifiedTime>
+			<_lastID type="a">27</_lastID>
+			<weakCGTime type="a">5.13.2020::14:37:23</weakCGTime>
+			<strongCGTime type="a">5.13.2020::14:37:23</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_defNumber type="a">5</_defNumber>
-			<_version type="a">5.10.2020::12:58:2</_version>
+			<_version type="a">5.13.2020::15:18:27</_version>
 			<_baseVersion type="a">1.2.1990::0:0:0</_baseVersion>
 			<_diagram type="s">GUID 701ecc3c-ace2-4a9f-ab08-84b4d9762635</_diagram>
 			<_AnalysisMode type="a">1</_AnalysisMode>
@@ -11646,13 +11569,13 @@ DockingStatus = DockingState;}  %0D
 				<value>GUID 4e3bbf48-dea7-4eb8-a9cb-90794b717d48</value>
 				<value>GUID 7fd32708-41e5-4c1d-affc-5eae7bc1921f</value>
 				<value>GUID 8517d5c9-1a9d-4147-94a6-d4ec882b58c0</value>
-				<value>GUID 46d17e58-735c-422b-be57-5b95f0754980</value>
+				<value>GUID bbbc67bf-fd66-43d6-ac63-fe419e975ef3</value>
 				<value>GUID 35c1dd9b-e882-4147-96e9-cb99251c2169</value>
 				<value>GUID 660d6242-5544-40c9-ab94-bca0b75cda5f</value>
 				<value>GUID 18a91e40-8fe7-47e6-8122-842273b6991f</value>
 				<value>GUID 69cbfa6e-541a-450a-89f0-2e5d5acd74d7</value>
 				<value>GUID 72ed6d05-f11a-42fe-b853-25bb6995a6cb</value>
-				<value>GUID e83e6fe3-154a-47de-ac92-3a179f0d1744</value>
+				<value>GUID 1627ee42-5c83-4910-a5d9-50cfb5804108</value>
 				<value>GUID 8f492ff3-45a8-48ff-bdb3-b58d3ef51098</value>
 				<value>GUID 93874b37-4a1a-4424-b3aa-fcf8e8288e19</value>
 				<value>GUID 01a9e16c-255c-4243-b314-8ef1080abe17</value>
@@ -11762,9 +11685,9 @@ DockingStatus = DockingState;}  %0D
 			<_itsAction>NULL</_itsAction>
 		</ILabel>
 		<ITransition type="e">
-			<_id type="a">GUID 46d17e58-735c-422b-be57-5b95f0754980</_id>
+			<_id type="a">GUID bbbc67bf-fd66-43d6-ac63-fe419e975ef3</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">objectflow_23</_name>
+			<_name type="a">objectflow_26</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -11778,19 +11701,19 @@ DockingStatus = DockingState;}  %0D
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.10.2020::10:57:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.10.2020::10:57:15</_modifiedTime>
-			<_itsTarget type="s">GUID e83e6fe3-154a-47de-ac92-3a179f0d1744</_itsTarget>
+			<_modifiedTimeWeak type="a">5.13.2020::13:18:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::13:18:27</_modifiedTime>
+			<_itsTarget type="s">GUID 1627ee42-5c83-4910-a5d9-50cfb5804108</_itsTarget>
 			<_staticReaction type="a">0</_staticReaction>
 			<_itsSource type="s">GUID 72ed6d05-f11a-42fe-b853-25bb6995a6cb</_itsSource>
 			<AggregatesList type="e">
-				<value>GUID 7bb5ffa3-c77e-4043-ab11-642492ebed0c</value>
+				<value>GUID 4f9abc13-7522-4079-a1ad-744f6bd0a952</value>
 			</AggregatesList>
 		</ITransition>
 		<ILabel type="e">
-			<_id type="a">GUID 7bb5ffa3-c77e-4043-ab11-642492ebed0c</_id>
+			<_id type="a">GUID 4f9abc13-7522-4079-a1ad-744f6bd0a952</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
 			<_itsTrigger>NULL</_itsTrigger>
 			<_itsGuard>NULL</_itsGuard>
 			<_itsAction>NULL</_itsAction>
@@ -11886,8 +11809,8 @@ DockingStatus = DockingState;}  %0D
 		<IPin type="e">
 			<_id type="a">GUID 72ed6d05-f11a-42fe-b853-25bb6995a6cb</_id>
 			<_name type="a">DockStatus</_name>
-			<_modifiedTimeWeak type="a">5.10.2020::21:3:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.10.2020::21:3:38</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.13.2020::13:18:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::13:18:27</_modifiedTime>
 			<_parent type="s">GUID 8f492ff3-45a8-48ff-bdb3-b58d3ef51098</_parent>
 			<_connectorType type="a">InPin</_connectorType>
 			<m_type type="r">
@@ -11907,10 +11830,10 @@ DockingStatus = DockingState;}  %0D
 			</m_corePin>
 		</IPin>
 		<IPin type="e">
-			<_id type="a">GUID e83e6fe3-154a-47de-ac92-3a179f0d1744</_id>
-			<_name type="a">DockingStatus</_name>
-			<_modifiedTimeWeak type="a">5.10.2020::21:21:20</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.10.2020::21:21:20</_modifiedTime>
+			<_id type="a">GUID 1627ee42-5c83-4910-a5d9-50cfb5804108</_id>
+			<_name type="a">DockingState</_name>
+			<_modifiedTimeWeak type="a">5.13.2020::13:18:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::13:18:27</_modifiedTime>
 			<_parent type="s">GUID 93874b37-4a1a-4424-b3aa-fcf8e8288e19</_parent>
 			<_connectorType type="a">InPin</_connectorType>
 			<m_type type="r">
@@ -11938,8 +11861,8 @@ DockingStatus = DockingState;}  %0D
 			<_id type="a">GUID 93874b37-4a1a-4424-b3aa-fcf8e8288e19</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">calloperation_2</_name>
-			<_modifiedTimeWeak type="a">5.10.2020::10:47:57</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.10.2020::10:47:57</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.13.2020::13:18:18</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::13:18:18</_modifiedTime>
 			<_parent type="s">GUID 8f492ff3-45a8-48ff-bdb3-b58d3ef51098</_parent>
 			<_stateType type="a">CallOperation</_stateType>
 			<_defaultTrans type="s"></_defaultTrans>
@@ -12377,9 +12300,9 @@ DockingStatus = DockingState;}  %0D
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">activitydiagram_0</_name>
-			<_modifiedTimeWeak type="a">5.12.2020::21:37:24</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.10.2020::10:57:15</_modifiedTime>
-			<_lastModifiedTime type="a">5.12.2020::21:41:38</_lastModifiedTime>
+			<_modifiedTimeWeak type="a">5.13.2020::13:18:18</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::13:18:27</_modifiedTime>
+			<_lastModifiedTime type="a">5.13.2020::13:18:27</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -12445,8 +12368,8 @@ DockingStatus = DockingState;}  %0D
 				<value>GUID 3b1e9ef9-7196-4c8f-b586-f9131629f587</value>
 				<value>GUID 672dad63-014c-4a32-bef3-84399a43495f</value>
 				<value>GUID 80e05508-eb90-4e36-b512-76b5b5f38ca2</value>
-				<value>GUID f2d30343-97a2-4222-8b0a-cc03ddf8869e</value>
-				<value>GUID 7f18a749-a13c-40db-8ef6-a37de3a4e755</value>
+				<value>GUID 3693f7c5-63f6-4185-993e-cf4513b1c98e</value>
+				<value>GUID 61b9cca9-6ad3-40c5-9d59-0841744463cb</value>
 			</AggregatesList>
 		</CGIStateChart>
 		<CGIState type="e">
@@ -13121,18 +13044,17 @@ DockingStatus = DockingState;}  %0D
 			<m_SubType type="a">0</m_SubType>
 		</CGIConnector>
 		<CGIConnector type="e">
-			<_id type="a">GUID f2d30343-97a2-4222-8b0a-cc03ddf8869e</_id>
+			<_id type="a">GUID 3693f7c5-63f6-4185-993e-cf4513b1c98e</_id>
 			<m_type type="a">194</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IPin</_hm2Class>
-					<_hid type="a">GUID e83e6fe3-154a-47de-ac92-3a179f0d1744</_hid>
+					<_hid type="a">GUID 1627ee42-5c83-4910-a5d9-50cfb5804108</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 4deb228b-c5ae-4e9e-b625-32fb4e37b4bc</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">DockingStatus</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -13149,8 +13071,8 @@ DockingStatus = DockingState;}  %0D
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0 13.5897 -6.08332 0 1168 815.385 </m_transform>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_transform type="a">6.26078e-006 13.5897 -6.08332 1.39862e-005 1168 431.461 </m_transform>
+			<m_bIsPreferencesInitialized type="a">0</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
@@ -13177,12 +13099,12 @@ DockingStatus = DockingState;}  %0D
 			<m_SubType type="a">0</m_SubType>
 		</CGIConnector>
 		<CGITrans type="e">
-			<_id type="a">GUID 7f18a749-a13c-40db-8ef6-a37de3a4e755</_id>
+			<_id type="a">GUID 61b9cca9-6ad3-40c5-9d59-0841744463cb</_id>
 			<m_type type="a">28</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">ITransition</_hm2Class>
-					<_hid type="a">GUID 46d17e58-735c-422b-be57-5b95f0754980</_hid>
+					<_hid type="a">GUID bbbc67bf-fd66-43d6-ac63-fe419e975ef3</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s"></m_pParent>
@@ -13207,7 +13129,7 @@ DockingStatus = DockingState;}  %0D
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_pSource type="s">GUID 80e05508-eb90-4e36-b512-76b5b5f38ca2</m_pSource>
 			<m_sourceType type="a">'F'</m_sourceType>
-			<m_pTarget type="s">GUID f2d30343-97a2-4222-8b0a-cc03ddf8869e</m_pTarget>
+			<m_pTarget type="s">GUID 3693f7c5-63f6-4185-993e-cf4513b1c98e</m_pTarget>
 			<m_targetType type="a">'T'</m_targetType>
 			<m_direction type="a">' '</m_direction>
 			<m_rpn type="p">
@@ -13226,12 +13148,11 @@ DockingStatus = DockingState;}  %0D
 					<m_nOrientationCtrlPt type="a">0</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
-			<m_arrow type="a">1 496 375  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">1</m_line_style>
-			<m_SourcePort type="a">0 13 </m_SourcePort>
-			<m_TargetPort type="a">7 0 </m_TargetPort>
+			<m_SourcePort type="a">0 19 </m_SourcePort>
+			<m_TargetPort type="a">6 0 </m_TargetPort>
 			<m_pInheritsFrom type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -13243,11 +13164,11 @@ DockingStatus = DockingState;}  %0D
 			<_id type="a">GUID 1f316acc-73a7-47b3-b87e-2ee38f4de438</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DockingSpot</_name>
-			<_modifiedTimeWeak type="a">5.10.2020::21:20:38</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::21:20:38</_modifiedTime>
 			<_lastID type="a">22</_lastID>
-			<weakCGTime type="a">5.10.2020::21:20:38</weakCGTime>
-			<strongCGTime type="a">5.10.2020::10:11:39</strongCGTime>
+			<weakCGTime type="a">5.13.2020::14:37:23</weakCGTime>
+			<strongCGTime type="a">5.13.2020::14:37:23</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -14293,11 +14214,11 @@ DockingStatus = DockingState;}  %0D
 			<_id type="a">GUID ddd55c5f-69d2-4df1-a928-cd97b2e384c6</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Docking</_name>
-			<_modifiedTimeWeak type="a">5.12.2020::21:35:43</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.12.2020::21:35:43</_modifiedTime>
 			<_lastID type="a">12</_lastID>
-			<weakCGTime type="a">5.12.2020::21:35:43</weakCGTime>
-			<strongCGTime type="a">5.10.2020::11:7:13</strongCGTime>
+			<weakCGTime type="a">5.13.2020::14:37:23</weakCGTime>
+			<strongCGTime type="a">5.13.2020::14:37:23</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -14630,7 +14551,7 @@ DockingTime++;</_body>
 			<_exitAction type="p"><IAction type="e">
 				<_id type="a">GUID 3a04a96a-8db3-4b6f-b6ee-80133c28dfae</_id>
 				<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-				<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+				<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 				<_body type="a">CheckDockingStatus();</_body>
 			</IAction>
 			</_exitAction>
@@ -15650,6 +15571,8 @@ DockingTime++;</_body>
 			<m_displayOption type="a">All</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
+			<_itemValueOfFontPropertiesMapCount type="a">1</_itemValueOfFontPropertiesMapCount>
+			<_fontPropValues type="a">Tahoma 8 400 0 0 0 0</_fontPropValues>
 		</CGICompartment>
 		<CGIState type="e">
 			<_id type="a">GUID 07b24898-8cae-4a2b-bcbd-651990d32f68</_id>
@@ -16100,39 +16023,10 @@ DockingTime++;</m_str>
 			<m_bShowName type="a">1</m_bShowName>
 		</CGITrans>
 		<IAssociationEnd type="e">
-			<_id type="a">GUID c8380be0-24f8-4470-b4ad-a523e789af05</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsANGELS</_name>
-			<_modifiedTimeWeak type="a">4.30.2020::10:18:1</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.30.2020::10:18:1</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg</_hsubsystem>
-					<_hname type="a">ANGELS</_hname>
-					<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg</_hsubsystem>
-					<_hclass type="a">ANGELS</_hclass>
-					<_hname type="a">itsDocking_System</_hname>
-					<_hid type="a">GUID 82655530-91d1-4e54-acca-3786f2cd927a</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
 			<_id type="a">GUID 2a7ba911-513a-40d4-b9c9-123cb3f95265</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDCOperator</_name>
-			<_modifiedTimeWeak type="a">5.3.2020::17:56:48</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.3.2020::17:56:48</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
@@ -16157,127 +16051,11 @@ DockingTime++;</m_str>
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID f2dd5db6-b37e-4239-af89-6d18079b1e6e</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsCollision_Avoidance_1</_name>
-			<_modifiedTimeWeak type="a">5.3.2020::18:36:8</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.3.2020::18:36:8</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ObstacleAvoidancePkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ObstacleAvoidancePkg</_hsubsystem>
-					<_hname type="a">Collision_Avoidance</_hname>
-					<_hid type="a">GUID 5119c251-6ddc-4989-81dc-cd28be013ef0</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ObstacleAvoidancePkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ObstacleAvoidancePkg</_hsubsystem>
-					<_hclass type="a">Collision_Avoidance</_hclass>
-					<_hname type="a">itsDocking_System</_hname>
-					<_hid type="a">GUID 5582d46a-a20c-42ff-93f5-0080d4382c92</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID c4d601fa-3bdd-48e4-9b51-4ac8b2d711a4</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsCollision_Detection_1</_name>
-			<_modifiedTimeWeak type="a">5.3.2020::18:36:11</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.3.2020::18:36:11</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ObstacleDetectionPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ObstacleDetectionPkg</_hsubsystem>
-					<_hname type="a">Collision_Detection</_hname>
-					<_hid type="a">GUID 365879c1-dcdd-4999-979a-ce422be9b964</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ObstacleDetectionPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ObstacleDetectionPkg</_hsubsystem>
-					<_hclass type="a">Collision_Detection</_hclass>
-					<_hname type="a">itsDocking_System</_hname>
-					<_hid type="a">GUID 1be106a9-6af0-495a-a114-839ed1ff271c</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID e99f270a-934c-443b-ad7f-74ef7d55c880</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck_1</_name>
-			<_modifiedTimeWeak type="a">5.3.2020::18:36:14</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.3.2020::18:36:14</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\TruckPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::TruckPkg</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\TruckPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::TruckPkg</_hsubsystem>
-					<_hclass type="a">Truck</_hclass>
-					<_hname type="a">itsDocking_System</_hname>
-					<_hid type="a">GUID 440f2102-f39f-4bee-9a4e-37f7071b7375</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID e218809d-f25a-4b36-863b-189f74fada5e</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsDCOperator_1</_name>
-			<_modifiedTimeWeak type="a">5.10.2020::21:9:2</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.10.2020::21:9:2</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IActor</_hm2Class>
-					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
-					<_hname type="a">DCOperator</_hname>
-					<_hid type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg</_hsubsystem>
-					<_hclass type="a">DCOperator</_hclass>
-					<_hname type="a">itsDocking_System_1</_hname>
-					<_hid type="a">GUID 9b9e8841-8888-480d-ab43-afe7107f8da4</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
 		<IPart type="e">
 			<_id type="a">GUID b13af9e0-706f-4e24-b0d8-88402a3429b5</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsTruck</_name>
-			<_modifiedTimeWeak type="a">5.10.2020::21:9:15</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::21:9:15</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
@@ -16298,7 +16076,7 @@ DockingTime++;</m_str>
 			<_id type="a">GUID ab22ec24-b610-4121-aebd-cde1d232a03b</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsLoading_System</_name>
-			<_modifiedTimeWeak type="a">5.12.2020::19:34:30</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.12.2020::19:34:30</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
@@ -16315,6 +16093,52 @@ DockingTime++;</m_str>
 				</IHandle>
 			</_inverse>
 		</IPart>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 3a0a0f0c-6d31-4203-a8fe-2abda65c9edb</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsANGELS</_name>
+			<_modifiedTimeWeak type="a">5.13.2020::14:37:23</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::14:36:26</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg</_hsubsystem>
+					<_hname type="a">ANGELS</_hname>
+					<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 9f6e2bb2-9378-4468-87d5-c3290c158731</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsTruck_1</_name>
+			<_modifiedTimeWeak type="a">5.13.2020::14:38:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.13.2020::14:38:0</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\TruckPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::TruckPkg</_hsubsystem>
+					<_hname type="a">Truck</_hname>
+					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IEvent type="e">
 			<_id type="a">GUID a041fc18-000e-48a3-acf3-a1240d4e1aaa</_id>
 			<_myState type="a">8192</_myState>

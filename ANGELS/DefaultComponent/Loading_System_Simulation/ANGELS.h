@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: ANGELS
-//!	Generated Date	: Tue, 12, May 2020  
+//!	Generated Date	: Wed, 13, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\ANGELS.h
 *********************************************************************/
 
@@ -78,6 +78,12 @@ public :
     ~ANGELS();
     
     ////    Additional operations    ////
+    
+    //## auto_generated
+    double getChargingState() const;
+    
+    //## auto_generated
+    void setChargingState(double p_ChargingState);
     
     //## auto_generated
     double getDSInput() const;
@@ -247,6 +253,8 @@ protected :
     void cleanUpRelations();
     
     ////    Attributes    ////
+    
+    double ChargingState;		//## attribute ChargingState
     
     double DSInput;		//## attribute DSInput
     

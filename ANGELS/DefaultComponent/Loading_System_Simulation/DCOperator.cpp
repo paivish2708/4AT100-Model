@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Sun, 10, May 2020  
+//!	Generated Date	: Wed, 13, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\DCOperator.cpp
 *********************************************************************/
 
@@ -16,6 +16,8 @@
 #include "DCOperator.h"
 //## link itsANGELS
 #include "ANGELS.h"
+//## link itsCharging_System
+#include "Charging_System.h"
 //## link itsDocking_System
 #include "Docking_System.h"
 //## link itsLoading_System
@@ -30,6 +32,7 @@
 DCOperator::DCOperator() {
     NOTIFY_CONSTRUCTOR(DCOperator, DCOperator(), 0, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_DCOperator_DCOperator_SERIALIZE);
     itsANGELS = NULL;
+    itsCharging_System = NULL;
     itsDocking_System = NULL;
     itsDocking_System_1 = NULL;
     itsLoading_System = NULL;
@@ -50,6 +53,18 @@ void DCOperator::setItsANGELS(ANGELS* p_ANGELS) {
             p_ANGELS->_setItsDCOperator(this);
         }
     _setItsANGELS(p_ANGELS);
+}
+
+Charging_System* DCOperator::getItsCharging_System() const {
+    return itsCharging_System;
+}
+
+void DCOperator::setItsCharging_System(Charging_System* p_Charging_System) {
+    if(p_Charging_System != NULL)
+        {
+            p_Charging_System->_setItsDCOperator(this);
+        }
+    _setItsCharging_System(p_Charging_System);
 }
 
 Docking_System* DCOperator::getItsDocking_System() const {
@@ -98,6 +113,16 @@ void DCOperator::cleanUpRelations() {
                     itsANGELS->__setItsDCOperator(NULL);
                 }
             itsANGELS = NULL;
+        }
+    if(itsCharging_System != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsCharging_System");
+            DCOperator* p_DCOperator = itsCharging_System->getItsDCOperator();
+            if(p_DCOperator != NULL)
+                {
+                    itsCharging_System->__setItsDCOperator(NULL);
+                }
+            itsCharging_System = NULL;
         }
     if(itsDocking_System != NULL)
         {
@@ -154,6 +179,31 @@ void DCOperator::_setItsANGELS(ANGELS* p_ANGELS) {
 void DCOperator::_clearItsANGELS() {
     NOTIFY_RELATION_CLEARED("itsANGELS");
     itsANGELS = NULL;
+}
+
+void DCOperator::__setItsCharging_System(Charging_System* p_Charging_System) {
+    itsCharging_System = p_Charging_System;
+    if(p_Charging_System != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsCharging_System", p_Charging_System, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsCharging_System");
+        }
+}
+
+void DCOperator::_setItsCharging_System(Charging_System* p_Charging_System) {
+    if(itsCharging_System != NULL)
+        {
+            itsCharging_System->__setItsDCOperator(NULL);
+        }
+    __setItsCharging_System(p_Charging_System);
+}
+
+void DCOperator::_clearItsCharging_System() {
+    NOTIFY_RELATION_CLEARED("itsCharging_System");
+    itsCharging_System = NULL;
 }
 
 void DCOperator::__setItsDocking_System(Docking_System* p_Docking_System) {
@@ -253,6 +303,11 @@ void OMAnimatedDCOperator::serializeRelations(AOMSRelations* aomsRelations) cons
     if(myReal->itsDocking_System_1)
         {
             aomsRelations->ADD_ITEM(myReal->itsDocking_System_1);
+        }
+    aomsRelations->addRelation("itsCharging_System", false, true);
+    if(myReal->itsCharging_System)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsCharging_System);
         }
 }
 //#]

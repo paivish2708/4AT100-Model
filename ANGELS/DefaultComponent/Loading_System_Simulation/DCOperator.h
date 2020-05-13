@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Sun, 10, May 2020  
+//!	Generated Date	: Wed, 13, May 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\DCOperator.h
 *********************************************************************/
 
@@ -21,6 +21,9 @@
 #include "ActorPkg.h"
 //## link itsANGELS
 class ANGELS;
+
+//## link itsCharging_System
+class Charging_System;
 
 //## link itsDocking_System
 class Docking_System;
@@ -57,6 +60,12 @@ public :
     void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
+    Charging_System* getItsCharging_System() const;
+    
+    //## auto_generated
+    void setItsCharging_System(Charging_System* p_Charging_System);
+    
+    //## auto_generated
     Docking_System* getItsDocking_System() const;
     
     //## auto_generated
@@ -83,6 +92,8 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
+    Charging_System* itsCharging_System;		//## link itsCharging_System
+    
     Docking_System* itsDocking_System;		//## link itsDocking_System
     
     Docking_System* itsDocking_System_1;		//## link itsDocking_System_1
@@ -101,6 +112,15 @@ public :
     
     //## auto_generated
     void _clearItsANGELS();
+    
+    //## auto_generated
+    void __setItsCharging_System(Charging_System* p_Charging_System);
+    
+    //## auto_generated
+    void _setItsCharging_System(Charging_System* p_Charging_System);
+    
+    //## auto_generated
+    void _clearItsCharging_System();
     
     //## auto_generated
     void __setItsDocking_System(Docking_System* p_Docking_System);
