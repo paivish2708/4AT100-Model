@@ -11,9 +11,18 @@
 			<_id type="a">GUID fac390a0-ea0b-487d-8594-4a339b172cf8</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">TruckPkg</_name>
-			<_modifiedTimeWeak type="a">5.13.2020::14:36:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.13.2020::14:36:35</_modifiedTime>
-			<weakCGTime type="a">5.13.2020::14:36:35</weakCGTime>
+			<_modifiedTimeWeak type="a">5.14.2020::10:55:11</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg</_hsubsystem>
+					<_hname type="a">System_context</_hname>
+					<_hid type="a">GUID 58673645-b6cb-4922-86fc-9d3cdafdd2c4</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">5.14.2020::11:9:24</_modifiedTime>
+			<weakCGTime type="a">5.14.2020::10:55:11</weakCGTime>
 			<strongCGTime type="a">4.30.2020::10:3:49</strongCGTime>
 			<_defaultComposite type="s">GUID a0440f85-b7c4-4bcb-841b-9a8dfea0ca82</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -55,19 +64,19 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.13.2020::14:36:35</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.14.2020::10:44:22</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
-					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg</_hsubsystem>
+					<_hfilename type="a">.\DockingProcessPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::DockingProcessPkg</_hsubsystem>
 					<_hname type="a">Docking_System</_hname>
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.13.2020::14:36:35</_modifiedTime>
+			<_modifiedTime type="a">5.14.2020::10:44:22</_modifiedTime>
 			<_lastID type="a">4</_lastID>
-			<weakCGTime type="a">5.13.2020::14:36:35</weakCGTime>
+			<weakCGTime type="a">5.14.2020::10:44:22</weakCGTime>
 			<strongCGTime type="a">4.30.2020::10:3:54</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -141,16 +150,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 440f2102-f39f-4bee-9a4e-37f7071b7375</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDocking_System</_name>
-			<_modifiedTimeWeak type="a">5.13.2020::14:36:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.13.2020::14:36:35</_modifiedTime>
+			<_name type="a">itsDocking_Process</_name>
+			<_modifiedTimeWeak type="a">5.14.2020::10:44:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.14.2020::10:44:22</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::DockingSystemPkg</_hsubsystem>
-					<_hname type="a">Docking_System</_hname>
+					<_hfilename type="a">.\DockingProcessPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg::DockingProcessPkg</_hsubsystem>
+					<_hname type="a">Docking_Process</_hname>
 					<_hid type="a">GUID 419eb000-a805-48d7-8cc1-6b18694ad318</_hid>
 				</IClassifierHandle>
 			</_otherClass>

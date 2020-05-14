@@ -11,9 +11,18 @@
 			<_id type="a">GUID 4242030f-427c-425e-9162-96cd8e5ac609</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">LocalisationPkg</_name>
-			<_modifiedTimeWeak type="a">4.30.2020::10:12:31</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.30.2020::10:12:31</_modifiedTime>
-			<weakCGTime type="a">4.30.2020::10:12:31</weakCGTime>
+			<_modifiedTimeWeak type="a">5.14.2020::10:55:0</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg</_hsubsystem>
+					<_hname type="a">System_context</_hname>
+					<_hid type="a">GUID 58673645-b6cb-4922-86fc-9d3cdafdd2c4</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">5.14.2020::11:9:24</_modifiedTime>
+			<weakCGTime type="a">5.14.2020::10:55:0</weakCGTime>
 			<strongCGTime type="a">4.30.2020::9:59:47</strongCGTime>
 			<_defaultComposite type="s">GUID 76d720b1-3b0f-44a8-a65e-9b0d3a58b79e</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
