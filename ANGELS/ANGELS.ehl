@@ -1,4 +1,7 @@
 [Op Calls]
 [Events]
 Charging_System[0]->GEN(EndCharging())`UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg::Charging_System
+Charging_System[0]->GEN(InitiateChargingProcess())`UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg::Charging_System
+Charging_System[0]->GEN(StartTheCharging())`UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg::Charging_System
+Charging_System[0]->GEN(Beginthecharging())`UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg::Charging_System
 [Breakpoints]

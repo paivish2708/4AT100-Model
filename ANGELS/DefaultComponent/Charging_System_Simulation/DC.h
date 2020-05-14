@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: DC
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 14, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\DC.h
 *********************************************************************/
 
@@ -22,8 +22,8 @@
 //## link itsANGELS
 class ANGELS;
 
-//## link itsLoading_System
-class Loading_System;
+//## link itsLoading_Process
+class Loading_Process;
 
 //## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
@@ -54,10 +54,16 @@ public :
     void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    Loading_System* getItsLoading_System() const;
+    ANGELS* getItsANGELS_1() const;
     
     //## auto_generated
-    void setItsLoading_System(Loading_System* p_Loading_System);
+    void setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    Loading_Process* getItsLoading_Process() const;
+    
+    //## auto_generated
+    void setItsLoading_Process(Loading_Process* p_Loading_Process);
 
 protected :
 
@@ -68,7 +74,9 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
-    Loading_System* itsLoading_System;		//## link itsLoading_System
+    ANGELS* itsANGELS_1;		//## link itsANGELS_1
+    
+    Loading_Process* itsLoading_Process;		//## link itsLoading_Process
     
     ////    Framework operations    ////
 
@@ -84,13 +92,22 @@ public :
     void _clearItsANGELS();
     
     //## auto_generated
-    void __setItsLoading_System(Loading_System* p_Loading_System);
+    void __setItsANGELS_1(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _setItsLoading_System(Loading_System* p_Loading_System);
+    void _setItsANGELS_1(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _clearItsLoading_System();
+    void _clearItsANGELS_1();
+    
+    //## auto_generated
+    void __setItsLoading_Process(Loading_Process* p_Loading_Process);
+    
+    //## auto_generated
+    void _setItsLoading_Process(Loading_Process* p_Loading_Process);
+    
+    //## auto_generated
+    void _clearItsLoading_Process();
 };
 
 #ifdef _OMINSTRUMENT

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: ParkingSystem
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 14, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\ParkingSystem.cpp
 *********************************************************************/
 
@@ -17,14 +17,14 @@
 //## link itsANGELS
 #include "ANGELS.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_ParkingSystemPkg_ParkingSystem_ParkingSystem_SERIALIZE OM_NO_OP
+#define UseCaseAnalysisPkg_ANGELSPkg_ParkingProcessPkg_ParkingSystem_ParkingSystem_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ParkingSystemPkg
+//## package UseCaseAnalysisPkg::ANGELSPkg::ParkingProcessPkg
 
 //## class ParkingSystem
 ParkingSystem::ParkingSystem() {
-    NOTIFY_CONSTRUCTOR(ParkingSystem, ParkingSystem(), 0, UseCaseAnalysisPkg_ANGELSPkg_ParkingSystemPkg_ParkingSystem_ParkingSystem_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(ParkingSystem, ParkingSystem(), 0, UseCaseAnalysisPkg_ANGELSPkg_ParkingProcessPkg_ParkingSystem_ParkingSystem_SERIALIZE);
     itsANGELS = NULL;
 }
 
@@ -94,7 +94,7 @@ void OMAnimatedParkingSystem::serializeRelations(AOMSRelations* aomsRelations) c
 }
 //#]
 
-IMPLEMENT_META_P(ParkingSystem, UseCaseAnalysisPkg_ANGELSPkg_ParkingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::ParkingSystemPkg, false, OMAnimatedParkingSystem)
+IMPLEMENT_META_P(ParkingSystem, UseCaseAnalysisPkg_ANGELSPkg_ParkingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::ParkingProcessPkg, false, OMAnimatedParkingSystem)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

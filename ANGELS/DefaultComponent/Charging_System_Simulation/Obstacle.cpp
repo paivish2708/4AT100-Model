@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Obstacle
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 14, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Obstacle.cpp
 *********************************************************************/
 
@@ -14,6 +14,8 @@
 
 //## auto_generated
 #include "Obstacle.h"
+//## link itsANGELS
+#include "ANGELS.h"
 //## link itsCollision_Detection_1
 #include "Collision_Detection.h"
 //#[ ignore
@@ -25,12 +27,38 @@
 //## actor Obstacle
 Obstacle::Obstacle() {
     NOTIFY_CONSTRUCTOR(Obstacle, Obstacle(), 0, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_Obstacle_Obstacle_SERIALIZE);
+    itsANGELS = NULL;
+    itsANGELS_1 = NULL;
     itsCollision_Detection_1 = NULL;
 }
 
 Obstacle::~Obstacle() {
     NOTIFY_DESTRUCTOR(~Obstacle, true);
     cleanUpRelations();
+}
+
+ANGELS* Obstacle::getItsANGELS() const {
+    return itsANGELS;
+}
+
+void Obstacle::setItsANGELS(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
+        {
+            p_ANGELS->_setItsObstacle(this);
+        }
+    _setItsANGELS(p_ANGELS);
+}
+
+ANGELS* Obstacle::getItsANGELS_1() const {
+    return itsANGELS_1;
+}
+
+void Obstacle::setItsANGELS_1(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
+        {
+            p_ANGELS->_setItsObstacle_1(this);
+        }
+    _setItsANGELS_1(p_ANGELS);
 }
 
 Collision_Detection* Obstacle::getItsCollision_Detection_1() const {
@@ -46,6 +74,26 @@ void Obstacle::setItsCollision_Detection_1(Collision_Detection* p_Collision_Dete
 }
 
 void Obstacle::cleanUpRelations() {
+    if(itsANGELS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+            Obstacle* p_Obstacle = itsANGELS->getItsObstacle();
+            if(p_Obstacle != NULL)
+                {
+                    itsANGELS->__setItsObstacle(NULL);
+                }
+            itsANGELS = NULL;
+        }
+    if(itsANGELS_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+            Obstacle* p_Obstacle = itsANGELS_1->getItsObstacle_1();
+            if(p_Obstacle != NULL)
+                {
+                    itsANGELS_1->__setItsObstacle_1(NULL);
+                }
+            itsANGELS_1 = NULL;
+        }
     if(itsCollision_Detection_1 != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsCollision_Detection_1");
@@ -56,6 +104,56 @@ void Obstacle::cleanUpRelations() {
                 }
             itsCollision_Detection_1 = NULL;
         }
+}
+
+void Obstacle::__setItsANGELS(ANGELS* p_ANGELS) {
+    itsANGELS = p_ANGELS;
+    if(p_ANGELS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+        }
+}
+
+void Obstacle::_setItsANGELS(ANGELS* p_ANGELS) {
+    if(itsANGELS != NULL)
+        {
+            itsANGELS->__setItsObstacle(NULL);
+        }
+    __setItsANGELS(p_ANGELS);
+}
+
+void Obstacle::_clearItsANGELS() {
+    NOTIFY_RELATION_CLEARED("itsANGELS");
+    itsANGELS = NULL;
+}
+
+void Obstacle::__setItsANGELS_1(ANGELS* p_ANGELS) {
+    itsANGELS_1 = p_ANGELS;
+    if(p_ANGELS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS_1", p_ANGELS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+        }
+}
+
+void Obstacle::_setItsANGELS_1(ANGELS* p_ANGELS) {
+    if(itsANGELS_1 != NULL)
+        {
+            itsANGELS_1->__setItsObstacle_1(NULL);
+        }
+    __setItsANGELS_1(p_ANGELS);
+}
+
+void Obstacle::_clearItsANGELS_1() {
+    NOTIFY_RELATION_CLEARED("itsANGELS_1");
+    itsANGELS_1 = NULL;
 }
 
 void Obstacle::__setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection) {
@@ -90,6 +188,16 @@ void OMAnimatedObstacle::serializeRelations(AOMSRelations* aomsRelations) const 
     if(myReal->itsCollision_Detection_1)
         {
             aomsRelations->ADD_ITEM(myReal->itsCollision_Detection_1);
+        }
+    aomsRelations->addRelation("itsANGELS", false, true);
+    if(myReal->itsANGELS)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsANGELS);
+        }
+    aomsRelations->addRelation("itsANGELS_1", false, true);
+    if(myReal->itsANGELS_1)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsANGELS_1);
         }
 }
 //#]

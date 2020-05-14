@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 14, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\DCOperator.h
 *********************************************************************/
 
@@ -25,11 +25,11 @@ class ANGELS;
 //## link itsCharging_System
 class Charging_System;
 
-//## link itsDocking_System
-class Docking_System;
+//## link itsDocking_Process
+class Docking_Process;
 
-//## link itsLoading_System
-class Loading_System;
+//## link itsLoading_Process
+class Loading_Process;
 
 //## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
@@ -66,22 +66,22 @@ public :
     void setItsCharging_System(Charging_System* p_Charging_System);
     
     //## auto_generated
-    Docking_System* getItsDocking_System() const;
+    Docking_Process* getItsDocking_Process() const;
     
     //## auto_generated
-    void setItsDocking_System(Docking_System* p_Docking_System);
+    void setItsDocking_Process(Docking_Process* p_Docking_Process);
     
     //## auto_generated
-    Docking_System* getItsDocking_System_1() const;
+    Docking_Process* getItsDocking_Process_1() const;
     
     //## auto_generated
-    void setItsDocking_System_1(Docking_System* p_Docking_System);
+    void setItsDocking_Process_1(Docking_Process* p_Docking_Process);
     
     //## auto_generated
-    Loading_System* getItsLoading_System() const;
+    Loading_Process* getItsLoading_Process() const;
     
     //## auto_generated
-    void setItsLoading_System(Loading_System* p_Loading_System);
+    void setItsLoading_Process(Loading_Process* p_Loading_Process);
 
 protected :
 
@@ -94,11 +94,11 @@ protected :
     
     Charging_System* itsCharging_System;		//## link itsCharging_System
     
-    Docking_System* itsDocking_System;		//## link itsDocking_System
+    Docking_Process* itsDocking_Process;		//## link itsDocking_Process
     
-    Docking_System* itsDocking_System_1;		//## link itsDocking_System_1
+    Docking_Process* itsDocking_Process_1;		//## link itsDocking_Process_1
     
-    Loading_System* itsLoading_System;		//## link itsLoading_System
+    Loading_Process* itsLoading_Process;		//## link itsLoading_Process
     
     ////    Framework operations    ////
 
@@ -123,22 +123,22 @@ public :
     void _clearItsCharging_System();
     
     //## auto_generated
-    void __setItsDocking_System(Docking_System* p_Docking_System);
+    void __setItsDocking_Process(Docking_Process* p_Docking_Process);
     
     //## auto_generated
-    void _setItsDocking_System(Docking_System* p_Docking_System);
+    void _setItsDocking_Process(Docking_Process* p_Docking_Process);
     
     //## auto_generated
-    void _clearItsDocking_System();
+    void _clearItsDocking_Process();
     
     //## auto_generated
-    void __setItsLoading_System(Loading_System* p_Loading_System);
+    void __setItsLoading_Process(Loading_Process* p_Loading_Process);
     
     //## auto_generated
-    void _setItsLoading_System(Loading_System* p_Loading_System);
+    void _setItsLoading_Process(Loading_Process* p_Loading_Process);
     
     //## auto_generated
-    void _clearItsLoading_System();
+    void _clearItsLoading_Process();
 };
 
 #ifdef _OMINSTRUMENT

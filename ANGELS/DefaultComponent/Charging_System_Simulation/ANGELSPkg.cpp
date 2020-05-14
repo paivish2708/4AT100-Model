@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: ANGELSPkg
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 14, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\ANGELSPkg.cpp
 *********************************************************************/
 
@@ -16,6 +16,14 @@
 #include "ANGELSPkg.h"
 //## auto_generated
 #include "ANGELS.h"
+//## auto_generated
+#include "ChargingInfrastructure.h"
+//## auto_generated
+#include "Localization.h"
+//## auto_generated
+#include "ObjectDetecttion.h"
+//## auto_generated
+#include "Truck1.h"
 //## package UseCaseAnalysisPkg::ANGELSPkg
 
 

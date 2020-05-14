@@ -11,11 +11,11 @@
 			<_id type="a">GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DockingProcessPkg</_name>
-			<_modifiedTimeWeak type="a">5.14.2020::10:43:50</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.14.2020::10:43:50</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.14.2020::12:45:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.14.2020::12:49:34</_modifiedTime>
 			<_lastID type="a">17</_lastID>
-			<weakCGTime type="a">5.14.2020::10:43:50</weakCGTime>
-			<strongCGTime type="a">5.14.2020::10:43:50</strongCGTime>
+			<weakCGTime type="a">5.14.2020::12:45:45</weakCGTime>
+			<strongCGTime type="a">5.14.2020::12:41:19</strongCGTime>
 			<_defaultComposite type="s">GUID 54392d4f-99be-431f-8cc9-fdca96262d90</_defaultComposite>
 			<_eventsBaseID type="a">18201</_eventsBaseID>
 			<_configurationRelatedTime type="a">4.30.2020::9:38:56</_configurationRelatedTime>
@@ -323,7 +323,7 @@
 				</Subjects>
 			</IPropertyContainer>
 			</_properties>
-			<_name type="a">DockingSystemDiagram</_name>
+			<_name type="a">DockingProcessDiagram</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -339,8 +339,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">5.3.2020::17:55:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.14.2020::10:44:22</_modifiedTime>
-			<_lastModifiedTime type="a">5.14.2020::10:44:22</_lastModifiedTime>
+			<_modifiedTime type="a">5.14.2020::12:45:45</_modifiedTime>
+			<_lastModifiedTime type="a">5.14.2020::12:45:45</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -5817,7 +5817,7 @@ DockingStatus = DockingState;}  %0D
 		</IFileFragment>
 		<IFileFragment type="e">
 			<_id type="a">GUID 7a634110-78bf-4104-9f66-d5801e45bad4</_id>
-			<_name type="a">itsDocking_Process</_name>
+			<_name type="a">itsDCOperator</_name>
 			<_modifiedTimeWeak type="a">5.14.2020::10:44:22</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.14.2020::10:44:22</_modifiedTime>
 			<m_type type="a">specFragment</m_type>

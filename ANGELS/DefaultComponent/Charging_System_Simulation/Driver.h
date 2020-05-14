@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Driver
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 14, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Driver.h
 *********************************************************************/
 
@@ -25,7 +25,7 @@
 class ANGELS;
 
 //## auto_generated
-class Docking_System;
+class Docking_Process;
 
 //## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
 
@@ -50,6 +50,12 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
+    ANGELS* getItsANGELS_1() const;
+    
+    //## auto_generated
+    void setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
     Truck* getItsTruck_4() const;
     
     //## auto_generated
@@ -62,12 +68,23 @@ protected :
     
     ////    Relations and components    ////
     
+    ANGELS* itsANGELS_1;		//## link itsANGELS_1
+    
     Truck* itsTruck_4;		//## link itsTruck_4
     
     ////    Framework operations    ////
 
 public :
 
+    //## auto_generated
+    void __setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _clearItsANGELS_1();
+    
     //## auto_generated
     void __setItsTruck_4(Truck* p_Truck);
     

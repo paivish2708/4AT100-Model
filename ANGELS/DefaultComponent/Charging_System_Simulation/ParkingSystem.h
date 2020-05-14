@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: ParkingSystem
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 14, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\ParkingSystem.h
 *********************************************************************/
 
@@ -18,11 +18,11 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include "ParkingSystemPkg.h"
+#include "ParkingProcessPkg.h"
 //## link itsANGELS
 class ANGELS;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ParkingSystemPkg
+//## package UseCaseAnalysisPkg::ANGELSPkg::ParkingProcessPkg
 
 //## class ParkingSystem
 class ParkingSystem {

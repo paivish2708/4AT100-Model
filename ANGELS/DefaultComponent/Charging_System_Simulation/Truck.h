@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Truck
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 14, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Truck.h
 *********************************************************************/
 
@@ -22,8 +22,8 @@
 //## link itsANGELS
 class ANGELS;
 
-//## link itsDocking_System
-class Docking_System;
+//## link itsDocking_Process
+class Docking_Process;
 
 //## link itsDriver
 class Driver;
@@ -57,10 +57,16 @@ public :
     void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    Docking_System* getItsDocking_System() const;
+    ANGELS* getItsANGELS_1() const;
     
     //## auto_generated
-    void setItsDocking_System(Docking_System* p_Docking_System);
+    void setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    Docking_Process* getItsDocking_Process() const;
+    
+    //## auto_generated
+    void setItsDocking_Process(Docking_Process* p_Docking_Process);
     
     //## auto_generated
     Driver* getItsDriver() const;
@@ -77,7 +83,9 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
-    Docking_System* itsDocking_System;		//## link itsDocking_System
+    ANGELS* itsANGELS_1;		//## link itsANGELS_1
+    
+    Docking_Process* itsDocking_Process;		//## link itsDocking_Process
     
     Driver* itsDriver;		//## link itsDriver
     
@@ -93,6 +101,15 @@ public :
     
     //## auto_generated
     void _clearItsANGELS();
+    
+    //## auto_generated
+    void __setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _clearItsANGELS_1();
     
     //## auto_generated
     void __setItsDriver(Driver* p_Driver);

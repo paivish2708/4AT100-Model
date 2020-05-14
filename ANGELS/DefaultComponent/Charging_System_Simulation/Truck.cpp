@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Truck
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 14, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Truck.cpp
 *********************************************************************/
 
@@ -16,8 +16,8 @@
 #include "Truck.h"
 //## link itsANGELS
 #include "ANGELS.h"
-//## link itsDocking_System
-#include "Docking_System.h"
+//## link itsDocking_Process
+#include "Docking_Process.h"
 //## link itsDriver
 #include "Driver.h"
 //#[ ignore
@@ -30,7 +30,8 @@
 Truck::Truck() {
     NOTIFY_CONSTRUCTOR(Truck, Truck(), 0, UseCaseAnalysisPkg_ANGELSPkg_TruckPkg_Truck_Truck_SERIALIZE);
     itsANGELS = NULL;
-    itsDocking_System = NULL;
+    itsANGELS_1 = NULL;
+    itsDocking_Process = NULL;
     itsDriver = NULL;
 }
 
@@ -51,19 +52,31 @@ void Truck::setItsANGELS(ANGELS* p_ANGELS) {
     _setItsANGELS(p_ANGELS);
 }
 
-Docking_System* Truck::getItsDocking_System() const {
-    return itsDocking_System;
+ANGELS* Truck::getItsANGELS_1() const {
+    return itsANGELS_1;
 }
 
-void Truck::setItsDocking_System(Docking_System* p_Docking_System) {
-    itsDocking_System = p_Docking_System;
-    if(p_Docking_System != NULL)
+void Truck::setItsANGELS_1(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsDocking_System", p_Docking_System, false, true);
+            p_ANGELS->_setItsTruck_2(this);
+        }
+    _setItsANGELS_1(p_ANGELS);
+}
+
+Docking_Process* Truck::getItsDocking_Process() const {
+    return itsDocking_Process;
+}
+
+void Truck::setItsDocking_Process(Docking_Process* p_Docking_Process) {
+    itsDocking_Process = p_Docking_Process;
+    if(p_Docking_Process != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDocking_Process", p_Docking_Process, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsDocking_System");
+            NOTIFY_RELATION_CLEARED("itsDocking_Process");
         }
 }
 
@@ -90,10 +103,20 @@ void Truck::cleanUpRelations() {
                 }
             itsANGELS = NULL;
         }
-    if(itsDocking_System != NULL)
+    if(itsANGELS_1 != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsDocking_System");
-            itsDocking_System = NULL;
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+            Truck* p_Truck = itsANGELS_1->getItsTruck_2();
+            if(p_Truck != NULL)
+                {
+                    itsANGELS_1->__setItsTruck_2(NULL);
+                }
+            itsANGELS_1 = NULL;
+        }
+    if(itsDocking_Process != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDocking_Process");
+            itsDocking_Process = NULL;
         }
     if(itsDriver != NULL)
         {
@@ -130,6 +153,31 @@ void Truck::_setItsANGELS(ANGELS* p_ANGELS) {
 void Truck::_clearItsANGELS() {
     NOTIFY_RELATION_CLEARED("itsANGELS");
     itsANGELS = NULL;
+}
+
+void Truck::__setItsANGELS_1(ANGELS* p_ANGELS) {
+    itsANGELS_1 = p_ANGELS;
+    if(p_ANGELS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS_1", p_ANGELS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+        }
+}
+
+void Truck::_setItsANGELS_1(ANGELS* p_ANGELS) {
+    if(itsANGELS_1 != NULL)
+        {
+            itsANGELS_1->__setItsTruck_2(NULL);
+        }
+    __setItsANGELS_1(p_ANGELS);
+}
+
+void Truck::_clearItsANGELS_1() {
+    NOTIFY_RELATION_CLEARED("itsANGELS_1");
+    itsANGELS_1 = NULL;
 }
 
 void Truck::__setItsDriver(Driver* p_Driver) {
@@ -170,10 +218,15 @@ void OMAnimatedTruck::serializeRelations(AOMSRelations* aomsRelations) const {
         {
             aomsRelations->ADD_ITEM(myReal->itsDriver);
         }
-    aomsRelations->addRelation("itsDocking_System", false, true);
-    if(myReal->itsDocking_System)
+    aomsRelations->addRelation("itsDocking_Process", false, true);
+    if(myReal->itsDocking_Process)
         {
-            aomsRelations->ADD_ITEM(myReal->itsDocking_System);
+            aomsRelations->ADD_ITEM(myReal->itsDocking_Process);
+        }
+    aomsRelations->addRelation("itsANGELS_1", false, true);
+    if(myReal->itsANGELS_1)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsANGELS_1);
         }
 }
 //#]

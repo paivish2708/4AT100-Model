@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Collision_Avoidance
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 14, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Collision_Avoidance.h
 *********************************************************************/
 
@@ -22,8 +22,8 @@
 //## link itsANGELS
 class ANGELS;
 
-//## link itsDocking_System
-class Docking_System;
+//## link itsDocking_Process
+class Docking_Process;
 
 //## package UseCaseAnalysisPkg::ANGELSPkg::ObstacleAvoidancePkg
 
@@ -54,10 +54,10 @@ public :
     void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    Docking_System* getItsDocking_System() const;
+    Docking_Process* getItsDocking_Process() const;
     
     //## auto_generated
-    void setItsDocking_System(Docking_System* p_Docking_System);
+    void setItsDocking_Process(Docking_Process* p_Docking_Process);
 
 protected :
 
@@ -68,7 +68,7 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
-    Docking_System* itsDocking_System;		//## link itsDocking_System
+    Docking_Process* itsDocking_Process;		//## link itsDocking_Process
     
     ////    Framework operations    ////
 
