@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: ChargingInfrastructure
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\ChargingInfrastructure.h
 *********************************************************************/
 
@@ -22,7 +22,10 @@
 //## link itsANGELS
 class ANGELS;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg
+//## link itsCharging_System
+class Charging_System;
+
+//## package ANGELSPkg
 
 //## class ChargingInfrastructure
 class ChargingInfrastructure {
@@ -49,6 +52,18 @@ public :
     
     //## auto_generated
     void setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    ANGELS* getItsANGELS_1() const;
+    
+    //## auto_generated
+    void setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    Charging_System* getItsCharging_System() const;
+    
+    //## auto_generated
+    void setItsCharging_System(Charging_System* p_Charging_System);
 
 protected :
 
@@ -58,6 +73,10 @@ protected :
     ////    Relations and components    ////
     
     ANGELS* itsANGELS;		//## link itsANGELS
+    
+    ANGELS* itsANGELS_1;		//## link itsANGELS_1
+    
+    Charging_System* itsCharging_System;		//## link itsCharging_System
     
     ////    Framework operations    ////
 
@@ -71,6 +90,24 @@ public :
     
     //## auto_generated
     void _clearItsANGELS();
+    
+    //## auto_generated
+    void __setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    void _clearItsANGELS_1();
+    
+    //## auto_generated
+    void __setItsCharging_System(Charging_System* p_Charging_System);
+    
+    //## auto_generated
+    void _setItsCharging_System(Charging_System* p_Charging_System);
+    
+    //## auto_generated
+    void _clearItsCharging_System();
 };
 
 #ifdef _OMINSTRUMENT

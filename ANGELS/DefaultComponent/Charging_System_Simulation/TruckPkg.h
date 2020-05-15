@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: TruckPkg
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\TruckPkg.h
 *********************************************************************/
 
@@ -22,7 +22,7 @@
 //## auto_generated
 class Truck;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::TruckPkg
+//## package ANGELSPkg::TruckPkg
 
 
 

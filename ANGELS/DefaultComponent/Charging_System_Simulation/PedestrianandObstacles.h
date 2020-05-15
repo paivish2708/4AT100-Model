@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: PedestrianandObstacles
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\PedestrianandObstacles.h
 *********************************************************************/
 
@@ -27,7 +27,7 @@ class ANGELS;
 //## auto_generated
 class Collision_Detection;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## package ANGELSPkg::ActorPkg
 
 //## actor PedestrianandObstacles
 class PedestrianandObstacles : public Obstacle {

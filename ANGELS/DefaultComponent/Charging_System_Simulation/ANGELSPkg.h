@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: ANGELSPkg
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\ANGELSPkg.h
 *********************************************************************/
 
@@ -18,8 +18,6 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include "UseCaseAnalysisPkg.h"
-//## auto_generated
 class ANGELS;
 
 //## auto_generated
@@ -31,10 +29,7 @@ class Localization;
 //## auto_generated
 class ObjectDetecttion;
 
-//## auto_generated
-class Truck1;
-
-//## package UseCaseAnalysisPkg::ANGELSPkg
+//## package ANGELSPkg
 
 
 

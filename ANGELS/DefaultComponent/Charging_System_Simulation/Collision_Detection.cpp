@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Collision_Detection
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Collision_Detection.cpp
 *********************************************************************/
 
@@ -16,22 +16,22 @@
 #include "Collision_Detection.h"
 //## link itsANGELS
 #include "ANGELS.h"
-//## link itsDocking_Process
-#include "Docking_Process.h"
+//## link itsDockingProcess
+#include "DockingProcess.h"
 //## link itsObstacle
 #include "Obstacle.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_ObstacleDetectionPkg_Collision_Detection_Collision_Detection_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ObstacleDetectionPkg_Collision_Detection_Collision_Detection_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ObstacleDetectionPkg
+//## package ANGELSPkg::ObstacleDetectionPkg
 
 //## class Collision_Detection
 Collision_Detection::Collision_Detection() {
-    NOTIFY_CONSTRUCTOR(Collision_Detection, Collision_Detection(), 0, UseCaseAnalysisPkg_ANGELSPkg_ObstacleDetectionPkg_Collision_Detection_Collision_Detection_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(Collision_Detection, Collision_Detection(), 0, ANGELSPkg_ObstacleDetectionPkg_Collision_Detection_Collision_Detection_SERIALIZE);
     itsANGELS = NULL;
     itsANGELS_1 = NULL;
-    itsDocking_Process = NULL;
+    itsDockingProcess = NULL;
     itsObstacle = NULL;
 }
 
@@ -45,11 +45,15 @@ ANGELS* Collision_Detection::getItsANGELS() const {
 }
 
 void Collision_Detection::setItsANGELS(ANGELS* p_ANGELS) {
+    itsANGELS = p_ANGELS;
     if(p_ANGELS != NULL)
         {
-            p_ANGELS->_setItsCollision_Detection(this);
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
         }
-    _setItsANGELS(p_ANGELS);
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+        }
 }
 
 ANGELS* Collision_Detection::getItsANGELS_1() const {
@@ -68,19 +72,19 @@ void Collision_Detection::setItsANGELS_1(ANGELS* p_ANGELS) {
         }
 }
 
-Docking_Process* Collision_Detection::getItsDocking_Process() const {
-    return itsDocking_Process;
+DockingProcess* Collision_Detection::getItsDockingProcess() const {
+    return itsDockingProcess;
 }
 
-void Collision_Detection::setItsDocking_Process(Docking_Process* p_Docking_Process) {
-    itsDocking_Process = p_Docking_Process;
-    if(p_Docking_Process != NULL)
+void Collision_Detection::setItsDockingProcess(DockingProcess* p_DockingProcess) {
+    itsDockingProcess = p_DockingProcess;
+    if(p_DockingProcess != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsDocking_Process", p_Docking_Process, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcess", p_DockingProcess, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsDocking_Process");
+            NOTIFY_RELATION_CLEARED("itsDockingProcess");
         }
 }
 
@@ -100,11 +104,6 @@ void Collision_Detection::cleanUpRelations() {
     if(itsANGELS != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsANGELS");
-            Collision_Detection* p_Collision_Detection = itsANGELS->getItsCollision_Detection();
-            if(p_Collision_Detection != NULL)
-                {
-                    itsANGELS->__setItsCollision_Detection(NULL);
-                }
             itsANGELS = NULL;
         }
     if(itsANGELS_1 != NULL)
@@ -112,10 +111,10 @@ void Collision_Detection::cleanUpRelations() {
             NOTIFY_RELATION_CLEARED("itsANGELS_1");
             itsANGELS_1 = NULL;
         }
-    if(itsDocking_Process != NULL)
+    if(itsDockingProcess != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsDocking_Process");
-            itsDocking_Process = NULL;
+            NOTIFY_RELATION_CLEARED("itsDockingProcess");
+            itsDockingProcess = NULL;
         }
     if(itsObstacle != NULL)
         {
@@ -127,31 +126,6 @@ void Collision_Detection::cleanUpRelations() {
                 }
             itsObstacle = NULL;
         }
-}
-
-void Collision_Detection::__setItsANGELS(ANGELS* p_ANGELS) {
-    itsANGELS = p_ANGELS;
-    if(p_ANGELS != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
-        }
-}
-
-void Collision_Detection::_setItsANGELS(ANGELS* p_ANGELS) {
-    if(itsANGELS != NULL)
-        {
-            itsANGELS->__setItsCollision_Detection(NULL);
-        }
-    __setItsANGELS(p_ANGELS);
-}
-
-void Collision_Detection::_clearItsANGELS() {
-    NOTIFY_RELATION_CLEARED("itsANGELS");
-    itsANGELS = NULL;
 }
 
 void Collision_Detection::__setItsObstacle(Obstacle* p_Obstacle) {
@@ -197,15 +171,15 @@ void OMAnimatedCollision_Detection::serializeRelations(AOMSRelations* aomsRelati
         {
             aomsRelations->ADD_ITEM(myReal->itsObstacle);
         }
-    aomsRelations->addRelation("itsDocking_Process", false, true);
-    if(myReal->itsDocking_Process)
+    aomsRelations->addRelation("itsDockingProcess", false, true);
+    if(myReal->itsDockingProcess)
         {
-            aomsRelations->ADD_ITEM(myReal->itsDocking_Process);
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcess);
         }
 }
 //#]
 
-IMPLEMENT_META_P(Collision_Detection, UseCaseAnalysisPkg_ANGELSPkg_ObstacleDetectionPkg, UseCaseAnalysisPkg::ANGELSPkg::ObstacleDetectionPkg, false, OMAnimatedCollision_Detection)
+IMPLEMENT_META_P(Collision_Detection, ANGELSPkg_ObstacleDetectionPkg, ANGELSPkg::ObstacleDetectionPkg, false, OMAnimatedCollision_Detection)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: PedestrianandObstacles
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\PedestrianandObstacles.cpp
 *********************************************************************/
 
@@ -19,14 +19,14 @@
 //## auto_generated
 #include "Collision_Detection.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_PedestrianandObstacles_PedestrianandObstacles_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ActorPkg_PedestrianandObstacles_PedestrianandObstacles_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## package ANGELSPkg::ActorPkg
 
 //## actor PedestrianandObstacles
 PedestrianandObstacles::PedestrianandObstacles() {
-    NOTIFY_CONSTRUCTOR(PedestrianandObstacles, PedestrianandObstacles(), 0, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_PedestrianandObstacles_PedestrianandObstacles_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(PedestrianandObstacles, PedestrianandObstacles(), 0, ANGELSPkg_ActorPkg_PedestrianandObstacles_PedestrianandObstacles_SERIALIZE);
 }
 
 PedestrianandObstacles::~PedestrianandObstacles() {
@@ -44,7 +44,7 @@ void OMAnimatedPedestrianandObstacles::serializeRelations(AOMSRelations* aomsRel
 }
 //#]
 
-IMPLEMENT_META_S_P(PedestrianandObstacles, UseCaseAnalysisPkg::ANGELSPkg::ActorPkg, false, Obstacle, OMAnimatedObstacle, OMAnimatedPedestrianandObstacles)
+IMPLEMENT_META_S_P(PedestrianandObstacles, ANGELSPkg::ActorPkg, false, Obstacle, OMAnimatedObstacle, OMAnimatedPedestrianandObstacles)
 
 OMINIT_SUPERCLASS(Obstacle, OMAnimatedObstacle)
 

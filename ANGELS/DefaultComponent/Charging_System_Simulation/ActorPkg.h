@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: ActorPkg
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\ActorPkg.h
 *********************************************************************/
 
@@ -19,7 +19,7 @@
 #include <aom\aom.h>
 //## auto_generated
 #include "ANGELSPkg.h"
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## package ANGELSPkg::ActorPkg
 
 
 

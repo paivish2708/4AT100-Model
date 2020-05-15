@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Driver
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Driver.cpp
 *********************************************************************/
 
@@ -16,18 +16,17 @@
 #include "Driver.h"
 //## auto_generated
 #include "ANGELS.h"
-//## auto_generated
-#include "Docking_Process.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_Driver_Driver_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ActorPkg_Driver_Driver_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## package ANGELSPkg::ActorPkg
 
 //## actor Driver
 Driver::Driver() {
-    NOTIFY_CONSTRUCTOR(Driver, Driver(), 0, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_Driver_Driver_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(Driver, Driver(), 0, ANGELSPkg_ActorPkg_Driver_Driver_SERIALIZE);
     itsANGELS_1 = NULL;
+    itsANGELS_3 = NULL;
     itsTruck_4 = NULL;
 }
 
@@ -41,49 +40,6 @@ ANGELS* Driver::getItsANGELS_1() const {
 }
 
 void Driver::setItsANGELS_1(ANGELS* p_ANGELS) {
-    if(p_ANGELS != NULL)
-        {
-            p_ANGELS->_setItsDriver(this);
-        }
-    _setItsANGELS_1(p_ANGELS);
-}
-
-Truck* Driver::getItsTruck_4() const {
-    return itsTruck_4;
-}
-
-void Driver::setItsTruck_4(Truck* p_Truck) {
-    if(p_Truck != NULL)
-        {
-            p_Truck->_setItsDriver(this);
-        }
-    _setItsTruck_4(p_Truck);
-}
-
-void Driver::cleanUpRelations() {
-    if(itsANGELS_1 != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS_1");
-            Driver* p_Driver = itsANGELS_1->getItsDriver();
-            if(p_Driver != NULL)
-                {
-                    itsANGELS_1->__setItsDriver(NULL);
-                }
-            itsANGELS_1 = NULL;
-        }
-    if(itsTruck_4 != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsTruck_4");
-            Driver* p_Driver = itsTruck_4->getItsDriver();
-            if(p_Driver != NULL)
-                {
-                    itsTruck_4->__setItsDriver(NULL);
-                }
-            itsTruck_4 = NULL;
-        }
-}
-
-void Driver::__setItsANGELS_1(ANGELS* p_ANGELS) {
     itsANGELS_1 = p_ANGELS;
     if(p_ANGELS != NULL)
         {
@@ -95,20 +51,23 @@ void Driver::__setItsANGELS_1(ANGELS* p_ANGELS) {
         }
 }
 
-void Driver::_setItsANGELS_1(ANGELS* p_ANGELS) {
-    if(itsANGELS_1 != NULL)
+ANGELS* Driver::getItsANGELS_3() const {
+    return itsANGELS_3;
+}
+
+void Driver::setItsANGELS_3(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
         {
-            itsANGELS_1->__setItsDriver(NULL);
+            p_ANGELS->_setItsDriver(this);
         }
-    __setItsANGELS_1(p_ANGELS);
+    _setItsANGELS_3(p_ANGELS);
 }
 
-void Driver::_clearItsANGELS_1() {
-    NOTIFY_RELATION_CLEARED("itsANGELS_1");
-    itsANGELS_1 = NULL;
+Truck* Driver::getItsTruck_4() const {
+    return itsTruck_4;
 }
 
-void Driver::__setItsTruck_4(Truck* p_Truck) {
+void Driver::setItsTruck_4(Truck* p_Truck) {
     itsTruck_4 = p_Truck;
     if(p_Truck != NULL)
         {
@@ -120,17 +79,52 @@ void Driver::__setItsTruck_4(Truck* p_Truck) {
         }
 }
 
-void Driver::_setItsTruck_4(Truck* p_Truck) {
+void Driver::cleanUpRelations() {
+    if(itsANGELS_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+            itsANGELS_1 = NULL;
+        }
+    if(itsANGELS_3 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_3");
+            Driver* p_Driver = itsANGELS_3->getItsDriver();
+            if(p_Driver != NULL)
+                {
+                    itsANGELS_3->__setItsDriver(NULL);
+                }
+            itsANGELS_3 = NULL;
+        }
     if(itsTruck_4 != NULL)
         {
-            itsTruck_4->__setItsDriver(NULL);
+            NOTIFY_RELATION_CLEARED("itsTruck_4");
+            itsTruck_4 = NULL;
         }
-    __setItsTruck_4(p_Truck);
 }
 
-void Driver::_clearItsTruck_4() {
-    NOTIFY_RELATION_CLEARED("itsTruck_4");
-    itsTruck_4 = NULL;
+void Driver::__setItsANGELS_3(ANGELS* p_ANGELS) {
+    itsANGELS_3 = p_ANGELS;
+    if(p_ANGELS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS_3", p_ANGELS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_3");
+        }
+}
+
+void Driver::_setItsANGELS_3(ANGELS* p_ANGELS) {
+    if(itsANGELS_3 != NULL)
+        {
+            itsANGELS_3->__setItsDriver(NULL);
+        }
+    __setItsANGELS_3(p_ANGELS);
+}
+
+void Driver::_clearItsANGELS_3() {
+    NOTIFY_RELATION_CLEARED("itsANGELS_3");
+    itsANGELS_3 = NULL;
 }
 
 #ifdef _OMINSTRUMENT
@@ -150,11 +144,16 @@ void OMAnimatedDriver::serializeRelations(AOMSRelations* aomsRelations) const {
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS_1);
         }
+    aomsRelations->addRelation("itsANGELS_3", false, true);
+    if(myReal->itsANGELS_3)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsANGELS_3);
+        }
     OMAnimatedTruck::serializeRelations(aomsRelations);
 }
 //#]
 
-IMPLEMENT_META_S_P(Driver, UseCaseAnalysisPkg::ANGELSPkg::ActorPkg, false, Truck, OMAnimatedTruck, OMAnimatedDriver)
+IMPLEMENT_META_S_P(Driver, ANGELSPkg::ActorPkg, false, Truck, OMAnimatedTruck, OMAnimatedDriver)
 
 OMINIT_SUPERCLASS(Truck, OMAnimatedTruck)
 

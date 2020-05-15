@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: CommunicationPkg
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\CommunicationPkg.h
 *********************************************************************/
 
@@ -20,9 +20,9 @@
 //## auto_generated
 #include "ANGELSPkg.h"
 //## auto_generated
-class Communication_System;
+class CommunicationSystemBlock;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::CommunicationPkg
+//## package ANGELSPkg::CommunicationPkg
 
 
 

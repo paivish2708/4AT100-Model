@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\DCOperator.cpp
 *********************************************************************/
 
@@ -18,24 +18,26 @@
 #include "ANGELS.h"
 //## link itsCharging_System
 #include "Charging_System.h"
-//## link itsDocking_Process
-#include "Docking_Process.h"
-//## link itsLoading_Process
-#include "Loading_Process.h"
+//## link itsDockingProcess
+#include "DockingProcess.h"
+//## link itsLoadingProcessBlock
+#include "LoadingProcessBlock.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_DCOperator_DCOperator_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ActorPkg_DCOperator_DCOperator_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## package ANGELSPkg::ActorPkg
 
 //## actor DCOperator
 DCOperator::DCOperator() {
-    NOTIFY_CONSTRUCTOR(DCOperator, DCOperator(), 0, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_DCOperator_DCOperator_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(DCOperator, DCOperator(), 0, ANGELSPkg_ActorPkg_DCOperator_DCOperator_SERIALIZE);
     itsANGELS = NULL;
+    itsANGELS_1 = NULL;
     itsCharging_System = NULL;
-    itsDocking_Process = NULL;
-    itsDocking_Process_1 = NULL;
-    itsLoading_Process = NULL;
+    itsDockingProcess = NULL;
+    itsDockingProcess_1 = NULL;
+    itsDockingProcess_2 = NULL;
+    itsLoadingProcessBlock = NULL;
 }
 
 DCOperator::~DCOperator() {
@@ -48,11 +50,27 @@ ANGELS* DCOperator::getItsANGELS() const {
 }
 
 void DCOperator::setItsANGELS(ANGELS* p_ANGELS) {
+    itsANGELS = p_ANGELS;
+    if(p_ANGELS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+        }
+}
+
+ANGELS* DCOperator::getItsANGELS_1() const {
+    return itsANGELS_1;
+}
+
+void DCOperator::setItsANGELS_1(ANGELS* p_ANGELS) {
     if(p_ANGELS != NULL)
         {
             p_ANGELS->_setItsDCOperator(this);
         }
-    _setItsANGELS(p_ANGELS);
+    _setItsANGELS_1(p_ANGELS);
 }
 
 Charging_System* DCOperator::getItsCharging_System() const {
@@ -67,56 +85,77 @@ void DCOperator::setItsCharging_System(Charging_System* p_Charging_System) {
     _setItsCharging_System(p_Charging_System);
 }
 
-Docking_Process* DCOperator::getItsDocking_Process() const {
-    return itsDocking_Process;
+DockingProcess* DCOperator::getItsDockingProcess() const {
+    return itsDockingProcess;
 }
 
-void DCOperator::setItsDocking_Process(Docking_Process* p_Docking_Process) {
-    if(p_Docking_Process != NULL)
+void DCOperator::setItsDockingProcess(DockingProcess* p_DockingProcess) {
+    itsDockingProcess = p_DockingProcess;
+    if(p_DockingProcess != NULL)
         {
-            p_Docking_Process->_setItsDCOperator(this);
-        }
-    _setItsDocking_Process(p_Docking_Process);
-}
-
-Docking_Process* DCOperator::getItsDocking_Process_1() const {
-    return itsDocking_Process_1;
-}
-
-void DCOperator::setItsDocking_Process_1(Docking_Process* p_Docking_Process) {
-    itsDocking_Process_1 = p_Docking_Process;
-    if(p_Docking_Process != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsDocking_Process_1", p_Docking_Process, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcess", p_DockingProcess, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsDocking_Process_1");
+            NOTIFY_RELATION_CLEARED("itsDockingProcess");
         }
 }
 
-Loading_Process* DCOperator::getItsLoading_Process() const {
-    return itsLoading_Process;
+DockingProcess* DCOperator::getItsDockingProcess_1() const {
+    return itsDockingProcess_1;
 }
 
-void DCOperator::setItsLoading_Process(Loading_Process* p_Loading_Process) {
-    if(p_Loading_Process != NULL)
+void DCOperator::setItsDockingProcess_1(DockingProcess* p_DockingProcess) {
+    if(p_DockingProcess != NULL)
         {
-            p_Loading_Process->_setItsDCOperator(this);
+            p_DockingProcess->_setItsDCOperator(this);
         }
-    _setItsLoading_Process(p_Loading_Process);
+    _setItsDockingProcess_1(p_DockingProcess);
+}
+
+DockingProcess* DCOperator::getItsDockingProcess_2() const {
+    return itsDockingProcess_2;
+}
+
+void DCOperator::setItsDockingProcess_2(DockingProcess* p_DockingProcess) {
+    itsDockingProcess_2 = p_DockingProcess;
+    if(p_DockingProcess != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcess_2", p_DockingProcess, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcess_2");
+        }
+}
+
+LoadingProcessBlock* DCOperator::getItsLoadingProcessBlock() const {
+    return itsLoadingProcessBlock;
+}
+
+void DCOperator::setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock) {
+    if(p_LoadingProcessBlock != NULL)
+        {
+            p_LoadingProcessBlock->_setItsDCOperator(this);
+        }
+    _setItsLoadingProcessBlock(p_LoadingProcessBlock);
 }
 
 void DCOperator::cleanUpRelations() {
     if(itsANGELS != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsANGELS");
-            DCOperator* p_DCOperator = itsANGELS->getItsDCOperator();
+            itsANGELS = NULL;
+        }
+    if(itsANGELS_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+            DCOperator* p_DCOperator = itsANGELS_1->getItsDCOperator();
             if(p_DCOperator != NULL)
                 {
-                    itsANGELS->__setItsDCOperator(NULL);
+                    itsANGELS_1->__setItsDCOperator(NULL);
                 }
-            itsANGELS = NULL;
+            itsANGELS_1 = NULL;
         }
     if(itsCharging_System != NULL)
         {
@@ -128,56 +167,61 @@ void DCOperator::cleanUpRelations() {
                 }
             itsCharging_System = NULL;
         }
-    if(itsDocking_Process != NULL)
+    if(itsDockingProcess != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsDocking_Process");
-            DCOperator* p_DCOperator = itsDocking_Process->getItsDCOperator();
+            NOTIFY_RELATION_CLEARED("itsDockingProcess");
+            itsDockingProcess = NULL;
+        }
+    if(itsDockingProcess_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcess_1");
+            DCOperator* p_DCOperator = itsDockingProcess_1->getItsDCOperator();
             if(p_DCOperator != NULL)
                 {
-                    itsDocking_Process->__setItsDCOperator(NULL);
+                    itsDockingProcess_1->__setItsDCOperator(NULL);
                 }
-            itsDocking_Process = NULL;
+            itsDockingProcess_1 = NULL;
         }
-    if(itsDocking_Process_1 != NULL)
+    if(itsDockingProcess_2 != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsDocking_Process_1");
-            itsDocking_Process_1 = NULL;
+            NOTIFY_RELATION_CLEARED("itsDockingProcess_2");
+            itsDockingProcess_2 = NULL;
         }
-    if(itsLoading_Process != NULL)
+    if(itsLoadingProcessBlock != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsLoading_Process");
-            DCOperator* p_DCOperator = itsLoading_Process->getItsDCOperator();
+            NOTIFY_RELATION_CLEARED("itsLoadingProcessBlock");
+            DCOperator* p_DCOperator = itsLoadingProcessBlock->getItsDCOperator();
             if(p_DCOperator != NULL)
                 {
-                    itsLoading_Process->__setItsDCOperator(NULL);
+                    itsLoadingProcessBlock->__setItsDCOperator(NULL);
                 }
-            itsLoading_Process = NULL;
+            itsLoadingProcessBlock = NULL;
         }
 }
 
-void DCOperator::__setItsANGELS(ANGELS* p_ANGELS) {
-    itsANGELS = p_ANGELS;
+void DCOperator::__setItsANGELS_1(ANGELS* p_ANGELS) {
+    itsANGELS_1 = p_ANGELS;
     if(p_ANGELS != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS_1", p_ANGELS, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
         }
 }
 
-void DCOperator::_setItsANGELS(ANGELS* p_ANGELS) {
-    if(itsANGELS != NULL)
+void DCOperator::_setItsANGELS_1(ANGELS* p_ANGELS) {
+    if(itsANGELS_1 != NULL)
         {
-            itsANGELS->__setItsDCOperator(NULL);
+            itsANGELS_1->__setItsDCOperator(NULL);
         }
-    __setItsANGELS(p_ANGELS);
+    __setItsANGELS_1(p_ANGELS);
 }
 
-void DCOperator::_clearItsANGELS() {
-    NOTIFY_RELATION_CLEARED("itsANGELS");
-    itsANGELS = NULL;
+void DCOperator::_clearItsANGELS_1() {
+    NOTIFY_RELATION_CLEARED("itsANGELS_1");
+    itsANGELS_1 = NULL;
 }
 
 void DCOperator::__setItsCharging_System(Charging_System* p_Charging_System) {
@@ -205,88 +249,98 @@ void DCOperator::_clearItsCharging_System() {
     itsCharging_System = NULL;
 }
 
-void DCOperator::__setItsDocking_Process(Docking_Process* p_Docking_Process) {
-    itsDocking_Process = p_Docking_Process;
-    if(p_Docking_Process != NULL)
+void DCOperator::__setItsDockingProcess_1(DockingProcess* p_DockingProcess) {
+    itsDockingProcess_1 = p_DockingProcess;
+    if(p_DockingProcess != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsDocking_Process", p_Docking_Process, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcess_1", p_DockingProcess, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsDocking_Process");
+            NOTIFY_RELATION_CLEARED("itsDockingProcess_1");
         }
 }
 
-void DCOperator::_setItsDocking_Process(Docking_Process* p_Docking_Process) {
-    if(itsDocking_Process != NULL)
+void DCOperator::_setItsDockingProcess_1(DockingProcess* p_DockingProcess) {
+    if(itsDockingProcess_1 != NULL)
         {
-            itsDocking_Process->__setItsDCOperator(NULL);
+            itsDockingProcess_1->__setItsDCOperator(NULL);
         }
-    __setItsDocking_Process(p_Docking_Process);
+    __setItsDockingProcess_1(p_DockingProcess);
 }
 
-void DCOperator::_clearItsDocking_Process() {
-    NOTIFY_RELATION_CLEARED("itsDocking_Process");
-    itsDocking_Process = NULL;
+void DCOperator::_clearItsDockingProcess_1() {
+    NOTIFY_RELATION_CLEARED("itsDockingProcess_1");
+    itsDockingProcess_1 = NULL;
 }
 
-void DCOperator::__setItsLoading_Process(Loading_Process* p_Loading_Process) {
-    itsLoading_Process = p_Loading_Process;
-    if(p_Loading_Process != NULL)
+void DCOperator::__setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock) {
+    itsLoadingProcessBlock = p_LoadingProcessBlock;
+    if(p_LoadingProcessBlock != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsLoading_Process", p_Loading_Process, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsLoadingProcessBlock", p_LoadingProcessBlock, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsLoading_Process");
+            NOTIFY_RELATION_CLEARED("itsLoadingProcessBlock");
         }
 }
 
-void DCOperator::_setItsLoading_Process(Loading_Process* p_Loading_Process) {
-    if(itsLoading_Process != NULL)
+void DCOperator::_setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock) {
+    if(itsLoadingProcessBlock != NULL)
         {
-            itsLoading_Process->__setItsDCOperator(NULL);
+            itsLoadingProcessBlock->__setItsDCOperator(NULL);
         }
-    __setItsLoading_Process(p_Loading_Process);
+    __setItsLoadingProcessBlock(p_LoadingProcessBlock);
 }
 
-void DCOperator::_clearItsLoading_Process() {
-    NOTIFY_RELATION_CLEARED("itsLoading_Process");
-    itsLoading_Process = NULL;
+void DCOperator::_clearItsLoadingProcessBlock() {
+    NOTIFY_RELATION_CLEARED("itsLoadingProcessBlock");
+    itsLoadingProcessBlock = NULL;
 }
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedDCOperator::serializeRelations(AOMSRelations* aomsRelations) const {
-    aomsRelations->addRelation("itsLoading_Process", false, true);
-    if(myReal->itsLoading_Process)
+    aomsRelations->addRelation("itsLoadingProcessBlock", false, true);
+    if(myReal->itsLoadingProcessBlock)
         {
-            aomsRelations->ADD_ITEM(myReal->itsLoading_Process);
+            aomsRelations->ADD_ITEM(myReal->itsLoadingProcessBlock);
         }
     aomsRelations->addRelation("itsANGELS", false, true);
     if(myReal->itsANGELS)
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS);
         }
-    aomsRelations->addRelation("itsDocking_Process", false, true);
-    if(myReal->itsDocking_Process)
+    aomsRelations->addRelation("itsDockingProcess_1", false, true);
+    if(myReal->itsDockingProcess_1)
         {
-            aomsRelations->ADD_ITEM(myReal->itsDocking_Process);
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcess_1);
         }
-    aomsRelations->addRelation("itsDocking_Process_1", false, true);
-    if(myReal->itsDocking_Process_1)
+    aomsRelations->addRelation("itsDockingProcess_2", false, true);
+    if(myReal->itsDockingProcess_2)
         {
-            aomsRelations->ADD_ITEM(myReal->itsDocking_Process_1);
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcess_2);
         }
     aomsRelations->addRelation("itsCharging_System", false, true);
     if(myReal->itsCharging_System)
         {
             aomsRelations->ADD_ITEM(myReal->itsCharging_System);
         }
+    aomsRelations->addRelation("itsANGELS_1", false, true);
+    if(myReal->itsANGELS_1)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsANGELS_1);
+        }
+    aomsRelations->addRelation("itsDockingProcess", false, true);
+    if(myReal->itsDockingProcess)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcess);
+        }
 }
 //#]
 
-IMPLEMENT_META_P(DCOperator, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg, UseCaseAnalysisPkg::ANGELSPkg::ActorPkg, false, OMAnimatedDCOperator)
+IMPLEMENT_META_P(DCOperator, ANGELSPkg_ActorPkg, ANGELSPkg::ActorPkg, false, OMAnimatedDCOperator)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

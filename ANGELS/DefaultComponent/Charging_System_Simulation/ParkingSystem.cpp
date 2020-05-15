@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: ParkingSystem
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\ParkingSystem.cpp
 *********************************************************************/
 
@@ -17,14 +17,14 @@
 //## link itsANGELS
 #include "ANGELS.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_ParkingProcessPkg_ParkingSystem_ParkingSystem_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ParkingProcessPkg_ParkingSystem_ParkingSystem_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ParkingProcessPkg
+//## package ANGELSPkg::ParkingProcessPkg
 
 //## class ParkingSystem
 ParkingSystem::ParkingSystem() {
-    NOTIFY_CONSTRUCTOR(ParkingSystem, ParkingSystem(), 0, UseCaseAnalysisPkg_ANGELSPkg_ParkingProcessPkg_ParkingSystem_ParkingSystem_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(ParkingSystem, ParkingSystem(), 0, ANGELSPkg_ParkingProcessPkg_ParkingSystem_ParkingSystem_SERIALIZE);
     itsANGELS = NULL;
 }
 
@@ -38,27 +38,6 @@ ANGELS* ParkingSystem::getItsANGELS() const {
 }
 
 void ParkingSystem::setItsANGELS(ANGELS* p_ANGELS) {
-    if(p_ANGELS != NULL)
-        {
-            p_ANGELS->_setItsParkingSystem(this);
-        }
-    _setItsANGELS(p_ANGELS);
-}
-
-void ParkingSystem::cleanUpRelations() {
-    if(itsANGELS != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
-            ParkingSystem* p_ParkingSystem = itsANGELS->getItsParkingSystem();
-            if(p_ParkingSystem != NULL)
-                {
-                    itsANGELS->__setItsParkingSystem(NULL);
-                }
-            itsANGELS = NULL;
-        }
-}
-
-void ParkingSystem::__setItsANGELS(ANGELS* p_ANGELS) {
     itsANGELS = p_ANGELS;
     if(p_ANGELS != NULL)
         {
@@ -70,17 +49,12 @@ void ParkingSystem::__setItsANGELS(ANGELS* p_ANGELS) {
         }
 }
 
-void ParkingSystem::_setItsANGELS(ANGELS* p_ANGELS) {
+void ParkingSystem::cleanUpRelations() {
     if(itsANGELS != NULL)
         {
-            itsANGELS->__setItsParkingSystem(NULL);
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+            itsANGELS = NULL;
         }
-    __setItsANGELS(p_ANGELS);
-}
-
-void ParkingSystem::_clearItsANGELS() {
-    NOTIFY_RELATION_CLEARED("itsANGELS");
-    itsANGELS = NULL;
 }
 
 #ifdef _OMINSTRUMENT
@@ -94,7 +68,7 @@ void OMAnimatedParkingSystem::serializeRelations(AOMSRelations* aomsRelations) c
 }
 //#]
 
-IMPLEMENT_META_P(ParkingSystem, UseCaseAnalysisPkg_ANGELSPkg_ParkingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::ParkingProcessPkg, false, OMAnimatedParkingSystem)
+IMPLEMENT_META_P(ParkingSystem, ANGELSPkg_ParkingProcessPkg, ANGELSPkg::ParkingProcessPkg, false, OMAnimatedParkingSystem)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

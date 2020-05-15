@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Localization
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Localization.cpp
 *********************************************************************/
 
@@ -14,18 +14,18 @@
 
 //## auto_generated
 #include "Localization.h"
-//## link itsANGELS
+//## link itsANGELS_1
 #include "ANGELS.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_Localization_Localization_SERIALIZE OM_NO_OP
+#define ANGELSPkg_Localization_Localization_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg
+//## package ANGELSPkg
 
 //## class Localization
 Localization::Localization() {
-    NOTIFY_CONSTRUCTOR(Localization, Localization(), 0, UseCaseAnalysisPkg_ANGELSPkg_Localization_Localization_SERIALIZE);
-    itsANGELS = NULL;
+    NOTIFY_CONSTRUCTOR(Localization, Localization(), 0, ANGELSPkg_Localization_Localization_SERIALIZE);
+    itsANGELS_1 = NULL;
 }
 
 Localization::~Localization() {
@@ -33,68 +33,68 @@ Localization::~Localization() {
     cleanUpRelations();
 }
 
-ANGELS* Localization::getItsANGELS() const {
-    return itsANGELS;
+ANGELS* Localization::getItsANGELS_1() const {
+    return itsANGELS_1;
 }
 
-void Localization::setItsANGELS(ANGELS* p_ANGELS) {
+void Localization::setItsANGELS_1(ANGELS* p_ANGELS) {
     if(p_ANGELS != NULL)
         {
             p_ANGELS->_setItsLocalization(this);
         }
-    _setItsANGELS(p_ANGELS);
+    _setItsANGELS_1(p_ANGELS);
 }
 
 void Localization::cleanUpRelations() {
-    if(itsANGELS != NULL)
+    if(itsANGELS_1 != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
-            Localization* p_Localization = itsANGELS->getItsLocalization();
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+            Localization* p_Localization = itsANGELS_1->getItsLocalization();
             if(p_Localization != NULL)
                 {
-                    itsANGELS->__setItsLocalization(NULL);
+                    itsANGELS_1->__setItsLocalization(NULL);
                 }
-            itsANGELS = NULL;
+            itsANGELS_1 = NULL;
         }
 }
 
-void Localization::__setItsANGELS(ANGELS* p_ANGELS) {
-    itsANGELS = p_ANGELS;
+void Localization::__setItsANGELS_1(ANGELS* p_ANGELS) {
+    itsANGELS_1 = p_ANGELS;
     if(p_ANGELS != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS_1", p_ANGELS, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
         }
 }
 
-void Localization::_setItsANGELS(ANGELS* p_ANGELS) {
-    if(itsANGELS != NULL)
+void Localization::_setItsANGELS_1(ANGELS* p_ANGELS) {
+    if(itsANGELS_1 != NULL)
         {
-            itsANGELS->__setItsLocalization(NULL);
+            itsANGELS_1->__setItsLocalization(NULL);
         }
-    __setItsANGELS(p_ANGELS);
+    __setItsANGELS_1(p_ANGELS);
 }
 
-void Localization::_clearItsANGELS() {
-    NOTIFY_RELATION_CLEARED("itsANGELS");
-    itsANGELS = NULL;
+void Localization::_clearItsANGELS_1() {
+    NOTIFY_RELATION_CLEARED("itsANGELS_1");
+    itsANGELS_1 = NULL;
 }
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedLocalization::serializeRelations(AOMSRelations* aomsRelations) const {
-    aomsRelations->addRelation("itsANGELS", false, true);
-    if(myReal->itsANGELS)
+    aomsRelations->addRelation("itsANGELS_1", false, true);
+    if(myReal->itsANGELS_1)
         {
-            aomsRelations->ADD_ITEM(myReal->itsANGELS);
+            aomsRelations->ADD_ITEM(myReal->itsANGELS_1);
         }
 }
 //#]
 
-IMPLEMENT_META_P(Localization, UseCaseAnalysisPkg_ANGELSPkg, UseCaseAnalysisPkg::ANGELSPkg, false, OMAnimatedLocalization)
+IMPLEMENT_META_P(Localization, ANGELSPkg, ANGELSPkg, false, OMAnimatedLocalization)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Docking_Process
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Docking_Process.h
 *********************************************************************/
 
@@ -37,7 +37,7 @@ class DCOperator;
 //## link itsANGELS
 class ANGELS;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::DockingProcessPkg
+//## package ANGELSPkg::DockingProcessPkg
 
 //## class Docking_Process
 class Docking_Process : public OMReactive {

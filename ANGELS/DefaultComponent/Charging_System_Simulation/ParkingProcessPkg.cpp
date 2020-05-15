@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: ParkingProcessPkg
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\ParkingProcessPkg.cpp
 *********************************************************************/
 
@@ -16,13 +16,13 @@
 #include "ParkingProcessPkg.h"
 //## auto_generated
 #include "ParkingSystem.h"
-//## package UseCaseAnalysisPkg::ANGELSPkg::ParkingProcessPkg
+//## package ANGELSPkg::ParkingProcessPkg
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_ANGELSPkg_ParkingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::ParkingProcessPkg)
+IMPLEMENT_META_PACKAGE(ANGELSPkg_ParkingProcessPkg, ANGELSPkg::ParkingProcessPkg)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }

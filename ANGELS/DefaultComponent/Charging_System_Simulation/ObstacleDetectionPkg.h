@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: ObstacleDetectionPkg
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\ObstacleDetectionPkg.h
 *********************************************************************/
 
@@ -22,7 +22,7 @@
 //## auto_generated
 class Collision_Detection;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ObstacleDetectionPkg
+//## package ANGELSPkg::ObstacleDetectionPkg
 
 
 

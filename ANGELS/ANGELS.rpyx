@@ -96,8 +96,8 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">4.30.2020::10:7:3</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.30.2020::10:7:3</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.15.2020::12:28:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2020::12:28:27</_modifiedTime>
 			<_lastID type="a">15</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">
@@ -179,6 +179,7 @@
 				<value>GUID d9689b73-885e-44c4-896b-de43defa0a33</value>
 				<value>GUID 7223f5d4-866f-4e39-bcbe-96f2132ff31f</value>
 				<value>GUID de656d0c-824e-401d-88a2-a108a59b1b85</value>
+				<value>GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11</value>
 				<value>GUID 7dba1274-9404-4f0f-b93c-831e00073cf1</value>
 			</AggregatesList>
 		</IProject>
@@ -195,6 +196,10 @@
 		<ISubsystem type="e">
 			<fileName type="a">UseCaseAnalysisPkg</fileName>
 			<_id type="a">GUID de656d0c-824e-401d-88a2-a108a59b1b85</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">ANGELSPkg</fileName>
+			<_id type="a">GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11</_id>
 		</ISubsystem>
 		<IComponent type="e">
 			<fileName type="a">DefaultComponent</fileName>

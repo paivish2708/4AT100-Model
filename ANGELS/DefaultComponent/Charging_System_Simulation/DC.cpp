@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: DC
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\DC.cpp
 *********************************************************************/
 
@@ -16,20 +16,21 @@
 #include "DC.h"
 //## link itsANGELS
 #include "ANGELS.h"
-//## link itsLoading_Process
-#include "Loading_Process.h"
+//## link itsLoadingProcessBlock
+#include "LoadingProcessBlock.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_DC_DC_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ActorPkg_DC_DC_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## package ANGELSPkg::ActorPkg
 
 //## actor DC
 DC::DC() {
-    NOTIFY_CONSTRUCTOR(DC, DC(), 0, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_DC_DC_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(DC, DC(), 0, ANGELSPkg_ActorPkg_DC_DC_SERIALIZE);
     itsANGELS = NULL;
     itsANGELS_1 = NULL;
-    itsLoading_Process = NULL;
+    itsANGELS_2 = NULL;
+    itsLoadingProcessBlock = NULL;
 }
 
 DC::~DC() {
@@ -42,71 +43,6 @@ ANGELS* DC::getItsANGELS() const {
 }
 
 void DC::setItsANGELS(ANGELS* p_ANGELS) {
-    if(p_ANGELS != NULL)
-        {
-            p_ANGELS->_setItsDC(this);
-        }
-    _setItsANGELS(p_ANGELS);
-}
-
-ANGELS* DC::getItsANGELS_1() const {
-    return itsANGELS_1;
-}
-
-void DC::setItsANGELS_1(ANGELS* p_ANGELS) {
-    if(p_ANGELS != NULL)
-        {
-            p_ANGELS->_setItsDC_1(this);
-        }
-    _setItsANGELS_1(p_ANGELS);
-}
-
-Loading_Process* DC::getItsLoading_Process() const {
-    return itsLoading_Process;
-}
-
-void DC::setItsLoading_Process(Loading_Process* p_Loading_Process) {
-    if(p_Loading_Process != NULL)
-        {
-            p_Loading_Process->_setItsDC(this);
-        }
-    _setItsLoading_Process(p_Loading_Process);
-}
-
-void DC::cleanUpRelations() {
-    if(itsANGELS != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
-            DC* p_DC = itsANGELS->getItsDC();
-            if(p_DC != NULL)
-                {
-                    itsANGELS->__setItsDC(NULL);
-                }
-            itsANGELS = NULL;
-        }
-    if(itsANGELS_1 != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS_1");
-            DC* p_DC = itsANGELS_1->getItsDC_1();
-            if(p_DC != NULL)
-                {
-                    itsANGELS_1->__setItsDC_1(NULL);
-                }
-            itsANGELS_1 = NULL;
-        }
-    if(itsLoading_Process != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsLoading_Process");
-            DC* p_DC = itsLoading_Process->getItsDC();
-            if(p_DC != NULL)
-                {
-                    itsLoading_Process->__setItsDC(NULL);
-                }
-            itsLoading_Process = NULL;
-        }
-}
-
-void DC::__setItsANGELS(ANGELS* p_ANGELS) {
     itsANGELS = p_ANGELS;
     if(p_ANGELS != NULL)
         {
@@ -118,20 +54,11 @@ void DC::__setItsANGELS(ANGELS* p_ANGELS) {
         }
 }
 
-void DC::_setItsANGELS(ANGELS* p_ANGELS) {
-    if(itsANGELS != NULL)
-        {
-            itsANGELS->__setItsDC(NULL);
-        }
-    __setItsANGELS(p_ANGELS);
+ANGELS* DC::getItsANGELS_1() const {
+    return itsANGELS_1;
 }
 
-void DC::_clearItsANGELS() {
-    NOTIFY_RELATION_CLEARED("itsANGELS");
-    itsANGELS = NULL;
-}
-
-void DC::__setItsANGELS_1(ANGELS* p_ANGELS) {
+void DC::setItsANGELS_1(ANGELS* p_ANGELS) {
     itsANGELS_1 = p_ANGELS;
     if(p_ANGELS != NULL)
         {
@@ -143,51 +70,120 @@ void DC::__setItsANGELS_1(ANGELS* p_ANGELS) {
         }
 }
 
-void DC::_setItsANGELS_1(ANGELS* p_ANGELS) {
+ANGELS* DC::getItsANGELS_2() const {
+    return itsANGELS_2;
+}
+
+void DC::setItsANGELS_2(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
+        {
+            p_ANGELS->_setItsDC(this);
+        }
+    _setItsANGELS_2(p_ANGELS);
+}
+
+LoadingProcessBlock* DC::getItsLoadingProcessBlock() const {
+    return itsLoadingProcessBlock;
+}
+
+void DC::setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock) {
+    if(p_LoadingProcessBlock != NULL)
+        {
+            p_LoadingProcessBlock->_setItsDC(this);
+        }
+    _setItsLoadingProcessBlock(p_LoadingProcessBlock);
+}
+
+void DC::cleanUpRelations() {
+    if(itsANGELS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+            itsANGELS = NULL;
+        }
     if(itsANGELS_1 != NULL)
         {
-            itsANGELS_1->__setItsDC_1(NULL);
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+            itsANGELS_1 = NULL;
         }
-    __setItsANGELS_1(p_ANGELS);
-}
-
-void DC::_clearItsANGELS_1() {
-    NOTIFY_RELATION_CLEARED("itsANGELS_1");
-    itsANGELS_1 = NULL;
-}
-
-void DC::__setItsLoading_Process(Loading_Process* p_Loading_Process) {
-    itsLoading_Process = p_Loading_Process;
-    if(p_Loading_Process != NULL)
+    if(itsANGELS_2 != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsLoading_Process", p_Loading_Process, false, true);
+            NOTIFY_RELATION_CLEARED("itsANGELS_2");
+            DC* p_DC = itsANGELS_2->getItsDC();
+            if(p_DC != NULL)
+                {
+                    itsANGELS_2->__setItsDC(NULL);
+                }
+            itsANGELS_2 = NULL;
+        }
+    if(itsLoadingProcessBlock != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsLoadingProcessBlock");
+            DC* p_DC = itsLoadingProcessBlock->getItsDC();
+            if(p_DC != NULL)
+                {
+                    itsLoadingProcessBlock->__setItsDC(NULL);
+                }
+            itsLoadingProcessBlock = NULL;
+        }
+}
+
+void DC::__setItsANGELS_2(ANGELS* p_ANGELS) {
+    itsANGELS_2 = p_ANGELS;
+    if(p_ANGELS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS_2", p_ANGELS, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsLoading_Process");
+            NOTIFY_RELATION_CLEARED("itsANGELS_2");
         }
 }
 
-void DC::_setItsLoading_Process(Loading_Process* p_Loading_Process) {
-    if(itsLoading_Process != NULL)
+void DC::_setItsANGELS_2(ANGELS* p_ANGELS) {
+    if(itsANGELS_2 != NULL)
         {
-            itsLoading_Process->__setItsDC(NULL);
+            itsANGELS_2->__setItsDC(NULL);
         }
-    __setItsLoading_Process(p_Loading_Process);
+    __setItsANGELS_2(p_ANGELS);
 }
 
-void DC::_clearItsLoading_Process() {
-    NOTIFY_RELATION_CLEARED("itsLoading_Process");
-    itsLoading_Process = NULL;
+void DC::_clearItsANGELS_2() {
+    NOTIFY_RELATION_CLEARED("itsANGELS_2");
+    itsANGELS_2 = NULL;
+}
+
+void DC::__setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock) {
+    itsLoadingProcessBlock = p_LoadingProcessBlock;
+    if(p_LoadingProcessBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsLoadingProcessBlock", p_LoadingProcessBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsLoadingProcessBlock");
+        }
+}
+
+void DC::_setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock) {
+    if(itsLoadingProcessBlock != NULL)
+        {
+            itsLoadingProcessBlock->__setItsDC(NULL);
+        }
+    __setItsLoadingProcessBlock(p_LoadingProcessBlock);
+}
+
+void DC::_clearItsLoadingProcessBlock() {
+    NOTIFY_RELATION_CLEARED("itsLoadingProcessBlock");
+    itsLoadingProcessBlock = NULL;
 }
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedDC::serializeRelations(AOMSRelations* aomsRelations) const {
-    aomsRelations->addRelation("itsLoading_Process", false, true);
-    if(myReal->itsLoading_Process)
+    aomsRelations->addRelation("itsLoadingProcessBlock", false, true);
+    if(myReal->itsLoadingProcessBlock)
         {
-            aomsRelations->ADD_ITEM(myReal->itsLoading_Process);
+            aomsRelations->ADD_ITEM(myReal->itsLoadingProcessBlock);
         }
     aomsRelations->addRelation("itsANGELS", false, true);
     if(myReal->itsANGELS)
@@ -199,10 +195,15 @@ void OMAnimatedDC::serializeRelations(AOMSRelations* aomsRelations) const {
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS_1);
         }
+    aomsRelations->addRelation("itsANGELS_2", false, true);
+    if(myReal->itsANGELS_2)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsANGELS_2);
+        }
 }
 //#]
 
-IMPLEMENT_META_P(DC, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg, UseCaseAnalysisPkg::ANGELSPkg::ActorPkg, false, OMAnimatedDC)
+IMPLEMENT_META_P(DC, ANGELSPkg_ActorPkg, ANGELSPkg::ActorPkg, false, OMAnimatedDC)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

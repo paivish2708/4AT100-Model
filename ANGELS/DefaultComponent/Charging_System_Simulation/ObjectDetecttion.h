@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: ObjectDetecttion
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\ObjectDetecttion.h
 *********************************************************************/
 
@@ -22,7 +22,7 @@
 //## link itsANGELS
 class ANGELS;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg
+//## package ANGELSPkg
 
 //## class ObjectDetecttion
 class ObjectDetecttion {
@@ -49,12 +49,6 @@ public :
     
     //## auto_generated
     void setItsANGELS(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    ANGELS* getItsANGELS_1() const;
-    
-    //## auto_generated
-    void setItsANGELS_1(ANGELS* p_ANGELS);
 
 protected :
 
@@ -64,8 +58,6 @@ protected :
     ////    Relations and components    ////
     
     ANGELS* itsANGELS;		//## link itsANGELS
-    
-    ANGELS* itsANGELS_1;		//## link itsANGELS_1
     
     ////    Framework operations    ////
 
@@ -79,15 +71,6 @@ public :
     
     //## auto_generated
     void _clearItsANGELS();
-    
-    //## auto_generated
-    void __setItsANGELS_1(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _setItsANGELS_1(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _clearItsANGELS_1();
 };
 
 #ifdef _OMINSTRUMENT

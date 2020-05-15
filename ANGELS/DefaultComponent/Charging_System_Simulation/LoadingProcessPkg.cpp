@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: LoadingProcessPkg
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\LoadingProcessPkg.cpp
 *********************************************************************/
 
@@ -15,7 +15,7 @@
 //## auto_generated
 #include "LoadingProcessPkg.h"
 //## auto_generated
-#include "Loading_Process.h"
+#include "LoadingProcessBlock.h"
 //#[ ignore
 #define AlertDCManager_SERIALIZE OM_NO_OP
 
@@ -66,13 +66,13 @@
 #define ReturnToDockedState_CONSTRUCTOR ReturnToDockedState()
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg
+//## package ANGELSPkg::LoadingProcessPkg
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg)
+IMPLEMENT_META_PACKAGE(ANGELSPkg_LoadingProcessPkg, ANGELSPkg::LoadingProcessPkg)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }
@@ -81,98 +81,98 @@ static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 //## event AlertDCManager()
 AlertDCManager::AlertDCManager() {
     NOTIFY_EVENT_CONSTRUCTOR(AlertDCManager)
-    setId(AlertDCManager_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+    setId(AlertDCManager_LoadingProcessPkg_ANGELSPkg_id);
 }
 
 bool AlertDCManager::isTypeOf(const short id) const {
-    return (AlertDCManager_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+    return (AlertDCManager_LoadingProcessPkg_ANGELSPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(AlertDCManager, UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg, AlertDCManager())
+IMPLEMENT_META_EVENT_P(AlertDCManager, ANGELSPkg_LoadingProcessPkg, ANGELSPkg::LoadingProcessPkg, AlertDCManager())
 
 //## event CloseDoors(double)
 CloseDoors::CloseDoors(double p_doorstate) : doorstate(p_doorstate) {
     NOTIFY_EVENT_CONSTRUCTOR(CloseDoors)
-    setId(CloseDoors_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+    setId(CloseDoors_LoadingProcessPkg_ANGELSPkg_id);
 }
 
 bool CloseDoors::isTypeOf(const short id) const {
-    return (CloseDoors_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+    return (CloseDoors_LoadingProcessPkg_ANGELSPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(CloseDoors, UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg, CloseDoors(double))
+IMPLEMENT_META_EVENT_P(CloseDoors, ANGELSPkg_LoadingProcessPkg, ANGELSPkg::LoadingProcessPkg, CloseDoors(double))
 
 //## event OpenDoors()
 OpenDoors::OpenDoors() {
     NOTIFY_EVENT_CONSTRUCTOR(OpenDoors)
-    setId(OpenDoors_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+    setId(OpenDoors_LoadingProcessPkg_ANGELSPkg_id);
 }
 
 bool OpenDoors::isTypeOf(const short id) const {
-    return (OpenDoors_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+    return (OpenDoors_LoadingProcessPkg_ANGELSPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(OpenDoors, UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg, OpenDoors())
+IMPLEMENT_META_EVENT_P(OpenDoors, ANGELSPkg_LoadingProcessPkg, ANGELSPkg::LoadingProcessPkg, OpenDoors())
 
 //## event StartLoadingProcedure()
 StartLoadingProcedure::StartLoadingProcedure() {
     NOTIFY_EVENT_CONSTRUCTOR(StartLoadingProcedure)
-    setId(StartLoadingProcedure_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+    setId(StartLoadingProcedure_LoadingProcessPkg_ANGELSPkg_id);
 }
 
 bool StartLoadingProcedure::isTypeOf(const short id) const {
-    return (StartLoadingProcedure_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+    return (StartLoadingProcedure_LoadingProcessPkg_ANGELSPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(StartLoadingProcedure, UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg, StartLoadingProcedure())
+IMPLEMENT_META_EVENT_P(StartLoadingProcedure, ANGELSPkg_LoadingProcessPkg, ANGELSPkg::LoadingProcessPkg, StartLoadingProcedure())
 
 //## event StopLoadingProc()
 StopLoadingProc::StopLoadingProc() {
     NOTIFY_EVENT_CONSTRUCTOR(StopLoadingProc)
-    setId(StopLoadingProc_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+    setId(StopLoadingProc_LoadingProcessPkg_ANGELSPkg_id);
 }
 
 bool StopLoadingProc::isTypeOf(const short id) const {
-    return (StopLoadingProc_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+    return (StopLoadingProc_LoadingProcessPkg_ANGELSPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(StopLoadingProc, UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg, StopLoadingProc())
+IMPLEMENT_META_EVENT_P(StopLoadingProc, ANGELSPkg_LoadingProcessPkg, ANGELSPkg::LoadingProcessPkg, StopLoadingProc())
 
 //## event DoorStatus()
 DoorStatus::DoorStatus() {
     NOTIFY_EVENT_CONSTRUCTOR(DoorStatus)
-    setId(DoorStatus_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+    setId(DoorStatus_LoadingProcessPkg_ANGELSPkg_id);
 }
 
 bool DoorStatus::isTypeOf(const short id) const {
-    return (DoorStatus_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+    return (DoorStatus_LoadingProcessPkg_ANGELSPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(DoorStatus, UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg, DoorStatus())
+IMPLEMENT_META_EVENT_P(DoorStatus, ANGELSPkg_LoadingProcessPkg, ANGELSPkg::LoadingProcessPkg, DoorStatus())
 
 //## event LoadingProcess()
 LoadingProcess::LoadingProcess() {
     NOTIFY_EVENT_CONSTRUCTOR(LoadingProcess)
-    setId(LoadingProcess_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+    setId(LoadingProcess_LoadingProcessPkg_ANGELSPkg_id);
 }
 
 bool LoadingProcess::isTypeOf(const short id) const {
-    return (LoadingProcess_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+    return (LoadingProcess_LoadingProcessPkg_ANGELSPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(LoadingProcess, UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg, LoadingProcess())
+IMPLEMENT_META_EVENT_P(LoadingProcess, ANGELSPkg_LoadingProcessPkg, ANGELSPkg::LoadingProcessPkg, LoadingProcess())
 
 //## event ReturnToDockedState()
 ReturnToDockedState::ReturnToDockedState() {
     NOTIFY_EVENT_CONSTRUCTOR(ReturnToDockedState)
-    setId(ReturnToDockedState_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+    setId(ReturnToDockedState_LoadingProcessPkg_ANGELSPkg_id);
 }
 
 bool ReturnToDockedState::isTypeOf(const short id) const {
-    return (ReturnToDockedState_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+    return (ReturnToDockedState_LoadingProcessPkg_ANGELSPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(ReturnToDockedState, UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg, ReturnToDockedState())
+IMPLEMENT_META_EVENT_P(ReturnToDockedState, ANGELSPkg_LoadingProcessPkg, ANGELSPkg::LoadingProcessPkg, ReturnToDockedState())
 
 /*********************************************************************
 	File Path	: DefaultComponent\Charging_System_Simulation\LoadingProcessPkg.cpp

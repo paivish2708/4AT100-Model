@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Loading_Process
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Loading_Process.h
 *********************************************************************/
 
@@ -38,7 +38,7 @@ class DC;
 //## link itsDCOperator
 class DCOperator;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg
+//## package ANGELSPkg::LoadingProcessPkg
 
 //## class Loading_Process
 class Loading_Process : public OMReactive {
@@ -141,15 +141,6 @@ protected :
 
 public :
 
-    //## auto_generated
-    void __setItsANGELS(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _setItsANGELS(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _clearItsANGELS();
-    
     //## auto_generated
     void __setItsDC(DC* p_DC);
     

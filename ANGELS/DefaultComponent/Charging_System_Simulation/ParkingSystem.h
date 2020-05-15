@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: ParkingSystem
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\ParkingSystem.h
 *********************************************************************/
 
@@ -22,7 +22,7 @@
 //## link itsANGELS
 class ANGELS;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ParkingProcessPkg
+//## package ANGELSPkg::ParkingProcessPkg
 
 //## class ParkingSystem
 class ParkingSystem {
@@ -58,19 +58,6 @@ protected :
     ////    Relations and components    ////
     
     ANGELS* itsANGELS;		//## link itsANGELS
-    
-    ////    Framework operations    ////
-
-public :
-
-    //## auto_generated
-    void __setItsANGELS(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _setItsANGELS(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _clearItsANGELS();
 };
 
 #ifdef _OMINSTRUMENT

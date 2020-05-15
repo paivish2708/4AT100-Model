@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: ANGELSPkg
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\ANGELSPkg.cpp
 *********************************************************************/
 
@@ -22,15 +22,13 @@
 #include "Localization.h"
 //## auto_generated
 #include "ObjectDetecttion.h"
-//## auto_generated
-#include "Truck1.h"
-//## package UseCaseAnalysisPkg::ANGELSPkg
+//## package ANGELSPkg
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_ANGELSPkg, UseCaseAnalysisPkg::ANGELSPkg)
+IMPLEMENT_META_PACKAGE(ANGELSPkg, ANGELSPkg)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }

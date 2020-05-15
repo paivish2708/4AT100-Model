@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: LoadingProcessPkg
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\LoadingProcessPkg.h
 *********************************************************************/
 
@@ -22,27 +22,27 @@
 //## auto_generated
 #include "ANGELSPkg.h"
 //## auto_generated
-class Loading_Process;
+class LoadingProcessBlock;
 
 //#[ ignore
-#define AlertDCManager_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14201
+#define AlertDCManager_LoadingProcessPkg_ANGELSPkg_id 14201
 
-#define CloseDoors_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14202
+#define CloseDoors_LoadingProcessPkg_ANGELSPkg_id 14202
 
-#define OpenDoors_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14203
+#define OpenDoors_LoadingProcessPkg_ANGELSPkg_id 14203
 
-#define StartLoadingProcedure_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14204
+#define StartLoadingProcedure_LoadingProcessPkg_ANGELSPkg_id 14204
 
-#define StopLoadingProc_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14205
+#define StopLoadingProc_LoadingProcessPkg_ANGELSPkg_id 14205
 
-#define DoorStatus_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14206
+#define DoorStatus_LoadingProcessPkg_ANGELSPkg_id 14206
 
-#define LoadingProcess_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14207
+#define LoadingProcess_LoadingProcessPkg_ANGELSPkg_id 14207
 
-#define ReturnToDockedState_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 14208
+#define ReturnToDockedState_LoadingProcessPkg_ANGELSPkg_id 14208
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg
+//## package ANGELSPkg::LoadingProcessPkg
 
 
 

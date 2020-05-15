@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: DockingProcessPkg
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\DockingProcessPkg.h
 *********************************************************************/
 
@@ -22,25 +22,25 @@
 //## auto_generated
 #include "ANGELSPkg.h"
 //## auto_generated
-class Docking_Process;
+class DockingProcess;
 
 //#[ ignore
-#define StartDockingProcedure_DockingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18201
+#define StartDockingProcedure_DockingProcessPkg_ANGELSPkg_id 18201
 
-#define BeginTruckMovement_DockingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18202
+#define BeginTruckMovement_DockingProcessPkg_ANGELSPkg_id 18202
 
-#define DCManagerInput_DockingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18203
+#define DCManagerInput_DockingProcessPkg_ANGELSPkg_id 18203
 
-#define Autonomousmode_DockingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18204
+#define Autonomousmode_DockingProcessPkg_ANGELSPkg_id 18204
 
-#define EndDocking_DockingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18205
+#define EndDocking_DockingProcessPkg_ANGELSPkg_id 18205
 
-#define TruckDocking_DockingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18206
+#define TruckDocking_DockingProcessPkg_ANGELSPkg_id 18206
 
-#define DockInput_DockingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id 18207
+#define DockInput_DockingProcessPkg_ANGELSPkg_id 18207
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::DockingProcessPkg
+//## package ANGELSPkg::DockingProcessPkg
 
 
 

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Environment
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Environment.cpp
 *********************************************************************/
 
@@ -17,16 +17,17 @@
 //## link itsANGELS
 #include "ANGELS.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_Environment_Environment_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ActorPkg_Environment_Environment_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## package ANGELSPkg::ActorPkg
 
 //## actor Environment
 Environment::Environment() {
-    NOTIFY_CONSTRUCTOR(Environment, Environment(), 0, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_Environment_Environment_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(Environment, Environment(), 0, ANGELSPkg_ActorPkg_Environment_Environment_SERIALIZE);
     itsANGELS = NULL;
     itsANGELS_1 = NULL;
+    itsANGELS_2 = NULL;
 }
 
 Environment::~Environment() {
@@ -39,49 +40,6 @@ ANGELS* Environment::getItsANGELS() const {
 }
 
 void Environment::setItsANGELS(ANGELS* p_ANGELS) {
-    if(p_ANGELS != NULL)
-        {
-            p_ANGELS->_setItsEnvironment(this);
-        }
-    _setItsANGELS(p_ANGELS);
-}
-
-ANGELS* Environment::getItsANGELS_1() const {
-    return itsANGELS_1;
-}
-
-void Environment::setItsANGELS_1(ANGELS* p_ANGELS) {
-    if(p_ANGELS != NULL)
-        {
-            p_ANGELS->_setItsEnvironment_1(this);
-        }
-    _setItsANGELS_1(p_ANGELS);
-}
-
-void Environment::cleanUpRelations() {
-    if(itsANGELS != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
-            Environment* p_Environment = itsANGELS->getItsEnvironment();
-            if(p_Environment != NULL)
-                {
-                    itsANGELS->__setItsEnvironment(NULL);
-                }
-            itsANGELS = NULL;
-        }
-    if(itsANGELS_1 != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS_1");
-            Environment* p_Environment = itsANGELS_1->getItsEnvironment_1();
-            if(p_Environment != NULL)
-                {
-                    itsANGELS_1->__setItsEnvironment_1(NULL);
-                }
-            itsANGELS_1 = NULL;
-        }
-}
-
-void Environment::__setItsANGELS(ANGELS* p_ANGELS) {
     itsANGELS = p_ANGELS;
     if(p_ANGELS != NULL)
         {
@@ -93,20 +51,11 @@ void Environment::__setItsANGELS(ANGELS* p_ANGELS) {
         }
 }
 
-void Environment::_setItsANGELS(ANGELS* p_ANGELS) {
-    if(itsANGELS != NULL)
-        {
-            itsANGELS->__setItsEnvironment(NULL);
-        }
-    __setItsANGELS(p_ANGELS);
+ANGELS* Environment::getItsANGELS_1() const {
+    return itsANGELS_1;
 }
 
-void Environment::_clearItsANGELS() {
-    NOTIFY_RELATION_CLEARED("itsANGELS");
-    itsANGELS = NULL;
-}
-
-void Environment::__setItsANGELS_1(ANGELS* p_ANGELS) {
+void Environment::setItsANGELS_1(ANGELS* p_ANGELS) {
     itsANGELS_1 = p_ANGELS;
     if(p_ANGELS != NULL)
         {
@@ -118,17 +67,64 @@ void Environment::__setItsANGELS_1(ANGELS* p_ANGELS) {
         }
 }
 
-void Environment::_setItsANGELS_1(ANGELS* p_ANGELS) {
-    if(itsANGELS_1 != NULL)
-        {
-            itsANGELS_1->__setItsEnvironment_1(NULL);
-        }
-    __setItsANGELS_1(p_ANGELS);
+ANGELS* Environment::getItsANGELS_2() const {
+    return itsANGELS_2;
 }
 
-void Environment::_clearItsANGELS_1() {
-    NOTIFY_RELATION_CLEARED("itsANGELS_1");
-    itsANGELS_1 = NULL;
+void Environment::setItsANGELS_2(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
+        {
+            p_ANGELS->_setItsEnvironment(this);
+        }
+    _setItsANGELS_2(p_ANGELS);
+}
+
+void Environment::cleanUpRelations() {
+    if(itsANGELS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+            itsANGELS = NULL;
+        }
+    if(itsANGELS_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+            itsANGELS_1 = NULL;
+        }
+    if(itsANGELS_2 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_2");
+            Environment* p_Environment = itsANGELS_2->getItsEnvironment();
+            if(p_Environment != NULL)
+                {
+                    itsANGELS_2->__setItsEnvironment(NULL);
+                }
+            itsANGELS_2 = NULL;
+        }
+}
+
+void Environment::__setItsANGELS_2(ANGELS* p_ANGELS) {
+    itsANGELS_2 = p_ANGELS;
+    if(p_ANGELS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS_2", p_ANGELS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_2");
+        }
+}
+
+void Environment::_setItsANGELS_2(ANGELS* p_ANGELS) {
+    if(itsANGELS_2 != NULL)
+        {
+            itsANGELS_2->__setItsEnvironment(NULL);
+        }
+    __setItsANGELS_2(p_ANGELS);
+}
+
+void Environment::_clearItsANGELS_2() {
+    NOTIFY_RELATION_CLEARED("itsANGELS_2");
+    itsANGELS_2 = NULL;
 }
 
 #ifdef _OMINSTRUMENT
@@ -144,10 +140,15 @@ void OMAnimatedEnvironment::serializeRelations(AOMSRelations* aomsRelations) con
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS_1);
         }
+    aomsRelations->addRelation("itsANGELS_2", false, true);
+    if(myReal->itsANGELS_2)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsANGELS_2);
+        }
 }
 //#]
 
-IMPLEMENT_META_P(Environment, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg, UseCaseAnalysisPkg::ANGELSPkg::ActorPkg, false, OMAnimatedEnvironment)
+IMPLEMENT_META_P(Environment, ANGELSPkg_ActorPkg, ANGELSPkg::ActorPkg, false, OMAnimatedEnvironment)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Government
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Government.cpp
 *********************************************************************/
 
@@ -17,16 +17,17 @@
 //## link itsANGELS
 #include "ANGELS.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_Government_Government_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ActorPkg_Government_Government_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## package ANGELSPkg::ActorPkg
 
 //## actor Government
 Government::Government() {
-    NOTIFY_CONSTRUCTOR(Government, Government(), 0, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg_Government_Government_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(Government, Government(), 0, ANGELSPkg_ActorPkg_Government_Government_SERIALIZE);
     itsANGELS = NULL;
     itsANGELS_1 = NULL;
+    itsANGELS_2 = NULL;
 }
 
 Government::~Government() {
@@ -39,49 +40,6 @@ ANGELS* Government::getItsANGELS() const {
 }
 
 void Government::setItsANGELS(ANGELS* p_ANGELS) {
-    if(p_ANGELS != NULL)
-        {
-            p_ANGELS->_setItsGovernment(this);
-        }
-    _setItsANGELS(p_ANGELS);
-}
-
-ANGELS* Government::getItsANGELS_1() const {
-    return itsANGELS_1;
-}
-
-void Government::setItsANGELS_1(ANGELS* p_ANGELS) {
-    if(p_ANGELS != NULL)
-        {
-            p_ANGELS->_setItsGovernment_1(this);
-        }
-    _setItsANGELS_1(p_ANGELS);
-}
-
-void Government::cleanUpRelations() {
-    if(itsANGELS != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
-            Government* p_Government = itsANGELS->getItsGovernment();
-            if(p_Government != NULL)
-                {
-                    itsANGELS->__setItsGovernment(NULL);
-                }
-            itsANGELS = NULL;
-        }
-    if(itsANGELS_1 != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS_1");
-            Government* p_Government = itsANGELS_1->getItsGovernment_1();
-            if(p_Government != NULL)
-                {
-                    itsANGELS_1->__setItsGovernment_1(NULL);
-                }
-            itsANGELS_1 = NULL;
-        }
-}
-
-void Government::__setItsANGELS(ANGELS* p_ANGELS) {
     itsANGELS = p_ANGELS;
     if(p_ANGELS != NULL)
         {
@@ -93,20 +51,11 @@ void Government::__setItsANGELS(ANGELS* p_ANGELS) {
         }
 }
 
-void Government::_setItsANGELS(ANGELS* p_ANGELS) {
-    if(itsANGELS != NULL)
-        {
-            itsANGELS->__setItsGovernment(NULL);
-        }
-    __setItsANGELS(p_ANGELS);
+ANGELS* Government::getItsANGELS_1() const {
+    return itsANGELS_1;
 }
 
-void Government::_clearItsANGELS() {
-    NOTIFY_RELATION_CLEARED("itsANGELS");
-    itsANGELS = NULL;
-}
-
-void Government::__setItsANGELS_1(ANGELS* p_ANGELS) {
+void Government::setItsANGELS_1(ANGELS* p_ANGELS) {
     itsANGELS_1 = p_ANGELS;
     if(p_ANGELS != NULL)
         {
@@ -118,17 +67,64 @@ void Government::__setItsANGELS_1(ANGELS* p_ANGELS) {
         }
 }
 
-void Government::_setItsANGELS_1(ANGELS* p_ANGELS) {
-    if(itsANGELS_1 != NULL)
-        {
-            itsANGELS_1->__setItsGovernment_1(NULL);
-        }
-    __setItsANGELS_1(p_ANGELS);
+ANGELS* Government::getItsANGELS_2() const {
+    return itsANGELS_2;
 }
 
-void Government::_clearItsANGELS_1() {
-    NOTIFY_RELATION_CLEARED("itsANGELS_1");
-    itsANGELS_1 = NULL;
+void Government::setItsANGELS_2(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
+        {
+            p_ANGELS->_setItsGovernment(this);
+        }
+    _setItsANGELS_2(p_ANGELS);
+}
+
+void Government::cleanUpRelations() {
+    if(itsANGELS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+            itsANGELS = NULL;
+        }
+    if(itsANGELS_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+            itsANGELS_1 = NULL;
+        }
+    if(itsANGELS_2 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_2");
+            Government* p_Government = itsANGELS_2->getItsGovernment();
+            if(p_Government != NULL)
+                {
+                    itsANGELS_2->__setItsGovernment(NULL);
+                }
+            itsANGELS_2 = NULL;
+        }
+}
+
+void Government::__setItsANGELS_2(ANGELS* p_ANGELS) {
+    itsANGELS_2 = p_ANGELS;
+    if(p_ANGELS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS_2", p_ANGELS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_2");
+        }
+}
+
+void Government::_setItsANGELS_2(ANGELS* p_ANGELS) {
+    if(itsANGELS_2 != NULL)
+        {
+            itsANGELS_2->__setItsGovernment(NULL);
+        }
+    __setItsANGELS_2(p_ANGELS);
+}
+
+void Government::_clearItsANGELS_2() {
+    NOTIFY_RELATION_CLEARED("itsANGELS_2");
+    itsANGELS_2 = NULL;
 }
 
 #ifdef _OMINSTRUMENT
@@ -144,10 +140,15 @@ void OMAnimatedGovernment::serializeRelations(AOMSRelations* aomsRelations) cons
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS_1);
         }
+    aomsRelations->addRelation("itsANGELS_2", false, true);
+    if(myReal->itsANGELS_2)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsANGELS_2);
+        }
 }
 //#]
 
-IMPLEMENT_META_P(Government, UseCaseAnalysisPkg_ANGELSPkg_ActorPkg, UseCaseAnalysisPkg::ANGELSPkg::ActorPkg, false, OMAnimatedGovernment)
+IMPLEMENT_META_P(Government, ANGELSPkg_ActorPkg, ANGELSPkg::ActorPkg, false, OMAnimatedGovernment)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

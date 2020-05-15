@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Loading_Process
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Loading_Process.cpp
 *********************************************************************/
 
@@ -23,20 +23,20 @@
 //## link itsDCOperator
 #include "DCOperator.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg_Loading_Process_Loading_Process_SERIALIZE OM_NO_OP
+#define ANGELSPkg_LoadingProcessPkg_Loading_Process_Loading_Process_SERIALIZE OM_NO_OP
 
-#define UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg_Loading_Process_LoadingProcess_SERIALIZE OM_NO_OP
+#define ANGELSPkg_LoadingProcessPkg_Loading_Process_LoadingProcess_SERIALIZE OM_NO_OP
 
-#define UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg_Loading_Process_OpenDoors_SERIALIZE aomsmethod->addAttribute("Doorstate", x2String(Doorstate));
+#define ANGELSPkg_LoadingProcessPkg_Loading_Process_OpenDoors_SERIALIZE aomsmethod->addAttribute("Doorstate", x2String(Doorstate));
 
-#define UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg_Loading_Process_StoptheTruck_SERIALIZE aomsmethod->addAttribute("speed", x2String(speed));
+#define ANGELSPkg_LoadingProcessPkg_Loading_Process_StoptheTruck_SERIALIZE aomsmethod->addAttribute("speed", x2String(speed));
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg
+//## package ANGELSPkg::LoadingProcessPkg
 
 //## class Loading_Process
 Loading_Process::Loading_Process(IOxfActive* theActiveContext) : Doorstatus(0), LoadingTime(0) {
-    NOTIFY_REACTIVE_CONSTRUCTOR(Loading_Process, Loading_Process(), 0, UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg_Loading_Process_Loading_Process_SERIALIZE);
+    NOTIFY_REACTIVE_CONSTRUCTOR(Loading_Process, Loading_Process(), 0, ANGELSPkg_LoadingProcessPkg_Loading_Process_Loading_Process_SERIALIZE);
     setActiveContext(theActiveContext, false);
     itsANGELS = NULL;
     itsDC = NULL;
@@ -51,13 +51,13 @@ Loading_Process::~Loading_Process() {
 }
 
 void Loading_Process::LoadingProcess() {
-    NOTIFY_OPERATION(LoadingProcess, LoadingProcess(), 0, UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg_Loading_Process_LoadingProcess_SERIALIZE);
+    NOTIFY_OPERATION(LoadingProcess, LoadingProcess(), 0, ANGELSPkg_LoadingProcessPkg_Loading_Process_LoadingProcess_SERIALIZE);
     //#[ operation LoadingProcess()
     //#]
 }
 
 void Loading_Process::OpenDoors(RhpBoolean Doorstate) {
-    NOTIFY_OPERATION(OpenDoors, OpenDoors(RhpBoolean), 1, UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg_Loading_Process_OpenDoors_SERIALIZE);
+    NOTIFY_OPERATION(OpenDoors, OpenDoors(RhpBoolean), 1, ANGELSPkg_LoadingProcessPkg_Loading_Process_OpenDoors_SERIALIZE);
     //#[ operation OpenDoors(RhpBoolean)
     if (Doorstatus != Doorstate)
     {Doorstatus=1;}
@@ -65,7 +65,7 @@ void Loading_Process::OpenDoors(RhpBoolean Doorstate) {
 }
 
 void Loading_Process::StoptheTruck(double speed) {
-    NOTIFY_OPERATION(StoptheTruck, StoptheTruck(double), 1, UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg_Loading_Process_StoptheTruck_SERIALIZE);
+    NOTIFY_OPERATION(StoptheTruck, StoptheTruck(double), 1, ANGELSPkg_LoadingProcessPkg_Loading_Process_StoptheTruck_SERIALIZE);
     //#[ operation StoptheTruck(double)
     speed = 0;
     double Speed = speed;
@@ -94,11 +94,15 @@ ANGELS* Loading_Process::getItsANGELS() const {
 }
 
 void Loading_Process::setItsANGELS(ANGELS* p_ANGELS) {
+    itsANGELS = p_ANGELS;
     if(p_ANGELS != NULL)
         {
-            p_ANGELS->_setItsLoading_Process_1(this);
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
         }
-    _setItsANGELS(p_ANGELS);
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+        }
 }
 
 DC* Loading_Process::getItsDC() const {
@@ -146,11 +150,6 @@ void Loading_Process::cleanUpRelations() {
     if(itsANGELS != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsANGELS");
-            Loading_Process* p_Loading_Process = itsANGELS->getItsLoading_Process_1();
-            if(p_Loading_Process != NULL)
-                {
-                    itsANGELS->__setItsLoading_Process_1(NULL);
-                }
             itsANGELS = NULL;
         }
     if(itsDC != NULL)
@@ -187,31 +186,6 @@ bool Loading_Process::cancelTimeout(const IOxfTimeout* arg) {
             res = true;
         }
     return res;
-}
-
-void Loading_Process::__setItsANGELS(ANGELS* p_ANGELS) {
-    itsANGELS = p_ANGELS;
-    if(p_ANGELS != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
-        }
-}
-
-void Loading_Process::_setItsANGELS(ANGELS* p_ANGELS) {
-    if(itsANGELS != NULL)
-        {
-            itsANGELS->__setItsLoading_Process_1(NULL);
-        }
-    __setItsANGELS(p_ANGELS);
-}
-
-void Loading_Process::_clearItsANGELS() {
-    NOTIFY_RELATION_CLEARED("itsANGELS");
-    itsANGELS = NULL;
 }
 
 void Loading_Process::__setItsDC(DC* p_DC) {
@@ -281,7 +255,7 @@ IOxfReactive::TakeEventStatus Loading_Process::rootState_processEvent() {
         // State IdleState
         case IdleState:
         {
-            if(IS_EVENT_TYPE_OF(StartLoadingProcedure_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(StartLoadingProcedure_LoadingProcessPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("0");
                     NOTIFY_STATE_EXITED("ROOT.IdleState");
@@ -300,7 +274,7 @@ IOxfReactive::TakeEventStatus Loading_Process::rootState_processEvent() {
         // State LoadedState
         case LoadedState:
         {
-            if(IS_EVENT_TYPE_OF(ReturnToDockedState_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(ReturnToDockedState_LoadingProcessPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("4");
                     switch (LoadingState_subState) {
@@ -336,7 +310,7 @@ IOxfReactive::TakeEventStatus Loading_Process::rootState_processEvent() {
         // State StartLoading
         case StartLoading:
         {
-            if(IS_EVENT_TYPE_OF(StopLoadingProc_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(StopLoadingProc_LoadingProcessPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("1");
                     cancel(LoadingState_timeout);
@@ -372,7 +346,7 @@ IOxfReactive::TakeEventStatus Loading_Process::rootState_processEvent() {
         // State DoorsClosed
         case DoorsClosed:
         {
-            if(IS_EVENT_TYPE_OF(LoadingProcess_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(LoadingProcess_LoadingProcessPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("5");
                     NOTIFY_STATE_EXITED("ROOT.DoorsClosed");
@@ -403,7 +377,7 @@ IOxfReactive::TakeEventStatus Loading_Process::rootState_processEvent() {
         // State DockedState
         case DockedState:
         {
-            if(IS_EVENT_TYPE_OF(AlertDCManager_LoadingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(AlertDCManager_LoadingProcessPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("2");
                     NOTIFY_STATE_EXITED("ROOT.DockedState");
@@ -546,7 +520,7 @@ void OMAnimatedLoading_Process::DockedState_serializeStates(AOMSState* aomsState
 }
 //#]
 
-IMPLEMENT_REACTIVE_META_P(Loading_Process, UseCaseAnalysisPkg_ANGELSPkg_LoadingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::LoadingProcessPkg, false, OMAnimatedLoading_Process)
+IMPLEMENT_REACTIVE_META_P(Loading_Process, ANGELSPkg_LoadingProcessPkg, ANGELSPkg::LoadingProcessPkg, false, OMAnimatedLoading_Process)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

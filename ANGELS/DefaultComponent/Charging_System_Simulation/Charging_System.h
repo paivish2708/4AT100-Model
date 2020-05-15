@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Charging_System
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Charging_System.h
 *********************************************************************/
 
@@ -32,10 +32,16 @@
 //## link itsANGELS
 class ANGELS;
 
+//## link itsChargingInfrastructure
+class ChargingInfrastructure;
+
+//## link itsCommunicationSystemBlock
+class CommunicationSystemBlock;
+
 //## link itsDCOperator
 class DCOperator;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg
+//## package ANGELSPkg::ChargingSystemPkg
 
 //## class Charging_System
 class Charging_System : public OMReactive {
@@ -75,6 +81,18 @@ public :
     void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
+    ChargingInfrastructure* getItsChargingInfrastructure() const;
+    
+    //## auto_generated
+    void setItsChargingInfrastructure(ChargingInfrastructure* p_ChargingInfrastructure);
+    
+    //## auto_generated
+    CommunicationSystemBlock* getItsCommunicationSystemBlock() const;
+    
+    //## auto_generated
+    void setItsCommunicationSystemBlock(CommunicationSystemBlock* p_CommunicationSystemBlock);
+    
+    //## auto_generated
     DCOperator* getItsDCOperator() const;
     
     //## auto_generated
@@ -108,6 +126,10 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
+    ChargingInfrastructure* itsChargingInfrastructure;		//## link itsChargingInfrastructure
+    
+    CommunicationSystemBlock* itsCommunicationSystemBlock;		//## link itsCommunicationSystemBlock
+    
     DCOperator* itsDCOperator;		//## link itsDCOperator
     
     Truck itsTruck;		//## classInstance itsTruck
@@ -116,6 +138,24 @@ protected :
 
 public :
 
+    //## auto_generated
+    void __setItsChargingInfrastructure(ChargingInfrastructure* p_ChargingInfrastructure);
+    
+    //## auto_generated
+    void _setItsChargingInfrastructure(ChargingInfrastructure* p_ChargingInfrastructure);
+    
+    //## auto_generated
+    void _clearItsChargingInfrastructure();
+    
+    //## auto_generated
+    void __setItsCommunicationSystemBlock(CommunicationSystemBlock* p_CommunicationSystemBlock);
+    
+    //## auto_generated
+    void _setItsCommunicationSystemBlock(CommunicationSystemBlock* p_CommunicationSystemBlock);
+    
+    //## auto_generated
+    void _clearItsCommunicationSystemBlock();
+    
     //## auto_generated
     void __setItsDCOperator(DCOperator* p_DCOperator);
     

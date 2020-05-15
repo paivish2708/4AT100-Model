@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Loading_systemPkg
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Loading_systemPkg.cpp
 *********************************************************************/
 
@@ -16,13 +16,13 @@
 #include "Loading_systemPkg.h"
 //## auto_generated
 #include "LoadingSystem.h"
-//## package UseCaseAnalysisPkg::ANGELSPkg::Loading_systemPkg
+//## package ANGELSPkg::Loading_systemPkg
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_ANGELSPkg_Loading_systemPkg, UseCaseAnalysisPkg::ANGELSPkg::Loading_systemPkg)
+IMPLEMENT_META_PACKAGE(ANGELSPkg_Loading_systemPkg, ANGELSPkg::Loading_systemPkg)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }

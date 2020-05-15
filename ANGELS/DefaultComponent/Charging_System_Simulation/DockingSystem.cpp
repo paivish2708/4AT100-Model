@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: DockingSystem
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\DockingSystem.cpp
 *********************************************************************/
 
@@ -17,27 +17,28 @@
 //## link itsANGELS
 #include "ANGELS.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_DockingSystem_DockingSystem_DockingSystem_SERIALIZE OM_NO_OP
+#define ANGELSPkg_DockingSystem_DockingSystem_DockingSystem_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::DockingSystem
+//## package ANGELSPkg::DockingSystem
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_ANGELSPkg_DockingSystem, UseCaseAnalysisPkg::ANGELSPkg::DockingSystem)
+IMPLEMENT_META_PACKAGE(ANGELSPkg_DockingSystem, ANGELSPkg::DockingSystem)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }
 #endif // _OMINSTRUMENT
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::DockingSystem
+//## package ANGELSPkg::DockingSystem
 
 //## class DockingSystem
 DockingSystem::DockingSystem() {
-    NOTIFY_CONSTRUCTOR(DockingSystem, DockingSystem(), 0, UseCaseAnalysisPkg_ANGELSPkg_DockingSystem_DockingSystem_DockingSystem_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(DockingSystem, DockingSystem(), 0, ANGELSPkg_DockingSystem_DockingSystem_DockingSystem_SERIALIZE);
     itsANGELS = NULL;
+    itsANGELS_1 = NULL;
 }
 
 DockingSystem::~DockingSystem() {
@@ -50,27 +51,6 @@ ANGELS* DockingSystem::getItsANGELS() const {
 }
 
 void DockingSystem::setItsANGELS(ANGELS* p_ANGELS) {
-    if(p_ANGELS != NULL)
-        {
-            p_ANGELS->_setItsDockingSystem(this);
-        }
-    _setItsANGELS(p_ANGELS);
-}
-
-void DockingSystem::cleanUpRelations() {
-    if(itsANGELS != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
-            DockingSystem* p_DockingSystem = itsANGELS->getItsDockingSystem();
-            if(p_DockingSystem != NULL)
-                {
-                    itsANGELS->__setItsDockingSystem(NULL);
-                }
-            itsANGELS = NULL;
-        }
-}
-
-void DockingSystem::__setItsANGELS(ANGELS* p_ANGELS) {
     itsANGELS = p_ANGELS;
     if(p_ANGELS != NULL)
         {
@@ -82,17 +62,59 @@ void DockingSystem::__setItsANGELS(ANGELS* p_ANGELS) {
         }
 }
 
-void DockingSystem::_setItsANGELS(ANGELS* p_ANGELS) {
-    if(itsANGELS != NULL)
-        {
-            itsANGELS->__setItsDockingSystem(NULL);
-        }
-    __setItsANGELS(p_ANGELS);
+ANGELS* DockingSystem::getItsANGELS_1() const {
+    return itsANGELS_1;
 }
 
-void DockingSystem::_clearItsANGELS() {
-    NOTIFY_RELATION_CLEARED("itsANGELS");
-    itsANGELS = NULL;
+void DockingSystem::setItsANGELS_1(ANGELS* p_ANGELS) {
+    if(p_ANGELS != NULL)
+        {
+            p_ANGELS->_setItsDockingSystem(this);
+        }
+    _setItsANGELS_1(p_ANGELS);
+}
+
+void DockingSystem::cleanUpRelations() {
+    if(itsANGELS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+            itsANGELS = NULL;
+        }
+    if(itsANGELS_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+            DockingSystem* p_DockingSystem = itsANGELS_1->getItsDockingSystem();
+            if(p_DockingSystem != NULL)
+                {
+                    itsANGELS_1->__setItsDockingSystem(NULL);
+                }
+            itsANGELS_1 = NULL;
+        }
+}
+
+void DockingSystem::__setItsANGELS_1(ANGELS* p_ANGELS) {
+    itsANGELS_1 = p_ANGELS;
+    if(p_ANGELS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS_1", p_ANGELS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS_1");
+        }
+}
+
+void DockingSystem::_setItsANGELS_1(ANGELS* p_ANGELS) {
+    if(itsANGELS_1 != NULL)
+        {
+            itsANGELS_1->__setItsDockingSystem(NULL);
+        }
+    __setItsANGELS_1(p_ANGELS);
+}
+
+void DockingSystem::_clearItsANGELS_1() {
+    NOTIFY_RELATION_CLEARED("itsANGELS_1");
+    itsANGELS_1 = NULL;
 }
 
 #ifdef _OMINSTRUMENT
@@ -103,10 +125,15 @@ void OMAnimatedDockingSystem::serializeRelations(AOMSRelations* aomsRelations) c
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS);
         }
+    aomsRelations->addRelation("itsANGELS_1", false, true);
+    if(myReal->itsANGELS_1)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsANGELS_1);
+        }
 }
 //#]
 
-IMPLEMENT_META_P(DockingSystem, UseCaseAnalysisPkg_ANGELSPkg_DockingSystem, UseCaseAnalysisPkg::ANGELSPkg::DockingSystem, false, OMAnimatedDockingSystem)
+IMPLEMENT_META_P(DockingSystem, ANGELSPkg_DockingSystem, ANGELSPkg::DockingSystem, false, OMAnimatedDockingSystem)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

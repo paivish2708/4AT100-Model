@@ -11,10 +11,10 @@
 			<_id type="a">GUID 9959afde-c6d9-42a2-9292-804607287d27</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DockingSystem</_name>
-			<_modifiedTimeWeak type="a">5.14.2020::12:45:57</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.14.2020::12:49:34</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.15.2020::12:29:44</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2020::12:29:44</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">5.14.2020::12:45:57</weakCGTime>
+			<weakCGTime type="a">5.15.2020::12:29:44</weakCGTime>
 			<strongCGTime type="a">5.14.2020::12:45:57</strongCGTime>
 			<_defaultComposite type="s">GUID 86eb6a67-090b-4d8c-b4cb-1f25c4cfd599</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -56,18 +56,18 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.14.2020::11:11:39</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.15.2020::12:30:10</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg</_hsubsystem>
+					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
 					<_hname type="a">System_context</_hname>
 					<_hid type="a">GUID 58673645-b6cb-4922-86fc-9d3cdafdd2c4</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.14.2020::11:11:39</_modifiedTime>
-			<weakCGTime type="a">5.14.2020::11:11:39</weakCGTime>
+			<_modifiedTime type="a">5.15.2020::12:30:10</_modifiedTime>
+			<weakCGTime type="a">5.15.2020::12:30:10</weakCGTime>
 			<strongCGTime type="a">5.14.2020::10:48:25</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -76,20 +76,44 @@
 			<_classModifier type="a">Unspecified</_classModifier>
 			<AggregatesList type="e">
 				<value>GUID 3188b830-8c38-414c-8515-bad724453a67</value>
+				<value>GUID b42212a4-1baf-4eb7-b2fd-95f28fe4f28c</value>
 			</AggregatesList>
 		</IClass>
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 3188b830-8c38-414c-8515-bad724453a67</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsANGELS</_name>
-			<_modifiedTimeWeak type="a">5.14.2020::11:11:39</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.14.2020::11:11:39</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.15.2020::12:29:44</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2020::12:29:44</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
 					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg</_hsubsystem>
+					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+					<_hname type="a">ANGELS</_hname>
+					<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID b42212a4-1baf-4eb7-b2fd-95f28fe4f28c</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsANGELS_1</_name>
+			<_modifiedTimeWeak type="a">5.15.2020::12:30:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.15.2020::12:30:10</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
 					<_hname type="a">ANGELS</_hname>
 					<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
 				</IClassifierHandle>
@@ -98,10 +122,10 @@
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">UseCaseAnalysisPkg::ANGELSPkg</_hsubsystem>
+					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
 					<_hclass type="a">ANGELS</_hclass>
 					<_hname type="a">itsDockingSystem</_hname>
-					<_hid type="a">GUID 1571182a-3a38-4f19-b5c9-562e7edd5839</_hid>
+					<_hid type="a">GUID 34865ef8-5990-464f-91c0-98701910fd6b</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>

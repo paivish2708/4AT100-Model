@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Obstacle
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Obstacle.h
 *********************************************************************/
 
@@ -25,7 +25,7 @@ class ANGELS;
 //## link itsCollision_Detection_1
 class Collision_Detection;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## package ANGELSPkg::ActorPkg
 
 //## actor Obstacle
 class Obstacle {
@@ -60,6 +60,12 @@ public :
     void setItsANGELS_1(ANGELS* p_ANGELS);
     
     //## auto_generated
+    ANGELS* getItsANGELS_2() const;
+    
+    //## auto_generated
+    void setItsANGELS_2(ANGELS* p_ANGELS);
+    
+    //## auto_generated
     Collision_Detection* getItsCollision_Detection_1() const;
     
     //## auto_generated
@@ -76,6 +82,8 @@ protected :
     
     ANGELS* itsANGELS_1;		//## link itsANGELS_1
     
+    ANGELS* itsANGELS_2;		//## link itsANGELS_2
+    
     Collision_Detection* itsCollision_Detection_1;		//## link itsCollision_Detection_1
     
     ////    Framework operations    ////
@@ -83,22 +91,13 @@ protected :
 public :
 
     //## auto_generated
-    void __setItsANGELS(ANGELS* p_ANGELS);
+    void __setItsANGELS_2(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _setItsANGELS(ANGELS* p_ANGELS);
+    void _setItsANGELS_2(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _clearItsANGELS();
-    
-    //## auto_generated
-    void __setItsANGELS_1(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _setItsANGELS_1(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _clearItsANGELS_1();
+    void _clearItsANGELS_2();
     
     //## auto_generated
     void __setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);

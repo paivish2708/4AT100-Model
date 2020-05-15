@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: DC
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\DC.h
 *********************************************************************/
 
@@ -22,10 +22,10 @@
 //## link itsANGELS
 class ANGELS;
 
-//## link itsLoading_Process
-class Loading_Process;
+//## link itsLoadingProcessBlock
+class LoadingProcessBlock;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## package ANGELSPkg::ActorPkg
 
 //## actor DC
 class DC {
@@ -60,10 +60,16 @@ public :
     void setItsANGELS_1(ANGELS* p_ANGELS);
     
     //## auto_generated
-    Loading_Process* getItsLoading_Process() const;
+    ANGELS* getItsANGELS_2() const;
     
     //## auto_generated
-    void setItsLoading_Process(Loading_Process* p_Loading_Process);
+    void setItsANGELS_2(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    LoadingProcessBlock* getItsLoadingProcessBlock() const;
+    
+    //## auto_generated
+    void setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
 
 protected :
 
@@ -76,38 +82,31 @@ protected :
     
     ANGELS* itsANGELS_1;		//## link itsANGELS_1
     
-    Loading_Process* itsLoading_Process;		//## link itsLoading_Process
+    ANGELS* itsANGELS_2;		//## link itsANGELS_2
+    
+    LoadingProcessBlock* itsLoadingProcessBlock;		//## link itsLoadingProcessBlock
     
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsANGELS(ANGELS* p_ANGELS);
+    void __setItsANGELS_2(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _setItsANGELS(ANGELS* p_ANGELS);
+    void _setItsANGELS_2(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _clearItsANGELS();
+    void _clearItsANGELS_2();
     
     //## auto_generated
-    void __setItsANGELS_1(ANGELS* p_ANGELS);
+    void __setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
     
     //## auto_generated
-    void _setItsANGELS_1(ANGELS* p_ANGELS);
+    void _setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
     
     //## auto_generated
-    void _clearItsANGELS_1();
-    
-    //## auto_generated
-    void __setItsLoading_Process(Loading_Process* p_Loading_Process);
-    
-    //## auto_generated
-    void _setItsLoading_Process(Loading_Process* p_Loading_Process);
-    
-    //## auto_generated
-    void _clearItsLoading_Process();
+    void _clearItsLoadingProcessBlock();
 };
 
 #ifdef _OMINSTRUMENT

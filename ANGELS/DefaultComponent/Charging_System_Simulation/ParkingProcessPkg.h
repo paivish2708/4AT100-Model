@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: ParkingProcessPkg
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\ParkingProcessPkg.h
 *********************************************************************/
 
@@ -22,7 +22,7 @@
 //## auto_generated
 class ParkingSystem;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ParkingProcessPkg
+//## package ANGELSPkg::ParkingProcessPkg
 
 
 

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Docking_Process
-//!	Generated Date	: Thu, 14, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Docking_Process.cpp
 *********************************************************************/
 
@@ -21,22 +21,22 @@
 //## auto_generated
 #include "Docking_Process.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_DockingProcessPkg_Docking_Process_MoveTruck_SERIALIZE \
+#define ANGELSPkg_DockingProcessPkg_Docking_Process_MoveTruck_SERIALIZE \
     aomsmethod->addAttribute("SteeringAngle", x2String(SteeringAngle));\
     aomsmethod->addAttribute("speed", x2String(speed));\
     aomsmethod->addAttribute("DockingState", x2String(DockingState));
-#define UseCaseAnalysisPkg_ANGELSPkg_DockingProcessPkg_Docking_Process_Docking_Process_SERIALIZE OM_NO_OP
+#define ANGELSPkg_DockingProcessPkg_Docking_Process_Docking_Process_SERIALIZE OM_NO_OP
 
-#define UseCaseAnalysisPkg_ANGELSPkg_DockingProcessPkg_Docking_Process_CheckDockingStatus_SERIALIZE OM_NO_OP
+#define ANGELSPkg_DockingProcessPkg_Docking_Process_CheckDockingStatus_SERIALIZE OM_NO_OP
 
-#define UseCaseAnalysisPkg_ANGELSPkg_DockingProcessPkg_Docking_Process_DockInput_SERIALIZE aomsmethod->addAttribute("DS", x2String(DS));
+#define ANGELSPkg_DockingProcessPkg_Docking_Process_DockInput_SERIALIZE aomsmethod->addAttribute("DS", x2String(DS));
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::DockingProcessPkg
+//## package ANGELSPkg::DockingProcessPkg
 
 //## class Docking_Process
 void Docking_Process::MoveTruck(double SteeringAngle, double speed, double DockingState) {
-    NOTIFY_OPERATION(MoveTruck, MoveTruck(double,double,double), 3, UseCaseAnalysisPkg_ANGELSPkg_DockingProcessPkg_Docking_Process_MoveTruck_SERIALIZE);
+    NOTIFY_OPERATION(MoveTruck, MoveTruck(double,double,double), 3, ANGELSPkg_DockingProcessPkg_Docking_Process_MoveTruck_SERIALIZE);
     //#[ operation MoveTruck(double,double,double)
     if (DockingStatus !=1)
     {SteeringAngle = SteerAngle;
@@ -175,7 +175,7 @@ void Docking_Process::_clearItsDCOperator() {
 }
 
 Docking_Process::Docking_Process(IOxfActive* theActiveContext) : DSInput(1), DockingStatus(1), DockingTime(10), Doorstatus(1), Speed(15), SteerAngle(10) {
-    NOTIFY_REACTIVE_CONSTRUCTOR(Docking_Process, Docking_Process(), 0, UseCaseAnalysisPkg_ANGELSPkg_DockingProcessPkg_Docking_Process_Docking_Process_SERIALIZE);
+    NOTIFY_REACTIVE_CONSTRUCTOR(Docking_Process, Docking_Process(), 0, ANGELSPkg_DockingProcessPkg_Docking_Process_Docking_Process_SERIALIZE);
     setActiveContext(theActiveContext, false);
     {
         {
@@ -195,7 +195,7 @@ Docking_Process::~Docking_Process() {
 }
 
 void Docking_Process::CheckDockingStatus() {
-    NOTIFY_OPERATION(CheckDockingStatus, CheckDockingStatus(), 0, UseCaseAnalysisPkg_ANGELSPkg_DockingProcessPkg_Docking_Process_CheckDockingStatus_SERIALIZE);
+    NOTIFY_OPERATION(CheckDockingStatus, CheckDockingStatus(), 0, ANGELSPkg_DockingProcessPkg_Docking_Process_CheckDockingStatus_SERIALIZE);
     //#[ operation CheckDockingStatus()
     if (DockingStatus != 0)
     {   Speed = 0;
@@ -205,7 +205,7 @@ void Docking_Process::CheckDockingStatus() {
 }
 
 void Docking_Process::DockInput(double DS) {
-    NOTIFY_OPERATION(DockInput, DockInput(double), 1, UseCaseAnalysisPkg_ANGELSPkg_DockingProcessPkg_Docking_Process_DockInput_SERIALIZE);
+    NOTIFY_OPERATION(DockInput, DockInput(double), 1, ANGELSPkg_DockingProcessPkg_Docking_Process_DockInput_SERIALIZE);
     //#[ operation DockInput(double)
     DSInput = DS;
     //#]
@@ -292,7 +292,7 @@ IOxfReactive::TakeEventStatus Docking_Process::rootState_processEvent() {
         // State ManualState
         case ManualState:
         {
-            if(IS_EVENT_TYPE_OF(Autonomousmode_DockingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(Autonomousmode_DockingProcessPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("1");
                     NOTIFY_STATE_EXITED("ROOT.ManualState");
@@ -308,7 +308,7 @@ IOxfReactive::TakeEventStatus Docking_Process::rootState_processEvent() {
         // State AutonomousState
         case AutonomousState:
         {
-            if(IS_EVENT_TYPE_OF(StartDockingProcedure_DockingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(StartDockingProcedure_DockingProcessPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("2");
                     NOTIFY_STATE_EXITED("ROOT.AutonomousState");
@@ -325,7 +325,7 @@ IOxfReactive::TakeEventStatus Docking_Process::rootState_processEvent() {
         // State MoveTheTruck
         case MoveTheTruck:
         {
-            if(IS_EVENT_TYPE_OF(EndDocking_DockingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(EndDocking_DockingProcessPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("6");
                     switch (Docking_subState) {
@@ -389,7 +389,7 @@ IOxfReactive::TakeEventStatus Docking_Process::rootState_processEvent() {
         // State BeginMovement
         case BeginMovement:
         {
-            if(IS_EVENT_TYPE_OF(BeginTruckMovement_DockingProcessPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(BeginTruckMovement_DockingProcessPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("4");
                     NOTIFY_STATE_EXITED("ROOT.Docking.BeginMovement");
@@ -547,7 +547,7 @@ void OMAnimatedDocking_Process::AutonomousState_serializeStates(AOMSState* aomsS
 }
 //#]
 
-IMPLEMENT_REACTIVE_META_P(Docking_Process, UseCaseAnalysisPkg_ANGELSPkg_DockingProcessPkg, UseCaseAnalysisPkg::ANGELSPkg::DockingProcessPkg, false, OMAnimatedDocking_Process)
+IMPLEMENT_REACTIVE_META_P(Docking_Process, ANGELSPkg_DockingProcessPkg, ANGELSPkg::DockingProcessPkg, false, OMAnimatedDocking_Process)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

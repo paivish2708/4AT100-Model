@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Charging_System
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Charging_System.cpp
 *********************************************************************/
 
@@ -18,21 +18,27 @@
 #include "Charging_System.h"
 //## link itsANGELS
 #include "ANGELS.h"
+//## link itsChargingInfrastructure
+#include "ChargingInfrastructure.h"
+//## link itsCommunicationSystemBlock
+#include "CommunicationSystemBlock.h"
 //## link itsDCOperator
 #include "DCOperator.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_ChargingSystemPkg_Charging_System_Charging_System_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ChargingSystemPkg_Charging_System_Charging_System_SERIALIZE OM_NO_OP
 
-#define UseCaseAnalysisPkg_ANGELSPkg_ChargingSystemPkg_Charging_System_ChargingProcess_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ChargingSystemPkg_Charging_System_ChargingProcess_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg
+//## package ANGELSPkg::ChargingSystemPkg
 
 //## class Charging_System
 Charging_System::Charging_System(IOxfActive* theActiveContext) : TruckChargeState(15) {
-    NOTIFY_REACTIVE_CONSTRUCTOR(Charging_System, Charging_System(), 0, UseCaseAnalysisPkg_ANGELSPkg_ChargingSystemPkg_Charging_System_Charging_System_SERIALIZE);
+    NOTIFY_REACTIVE_CONSTRUCTOR(Charging_System, Charging_System(), 0, ANGELSPkg_ChargingSystemPkg_Charging_System_Charging_System_SERIALIZE);
     setActiveContext(theActiveContext, false);
     itsANGELS = NULL;
+    itsChargingInfrastructure = NULL;
+    itsCommunicationSystemBlock = NULL;
     itsDCOperator = NULL;
     initStatechart();
 }
@@ -44,7 +50,7 @@ Charging_System::~Charging_System() {
 }
 
 void Charging_System::ChargingProcess() {
-    NOTIFY_OPERATION(ChargingProcess, ChargingProcess(), 0, UseCaseAnalysisPkg_ANGELSPkg_ChargingSystemPkg_Charging_System_ChargingProcess_SERIALIZE);
+    NOTIFY_OPERATION(ChargingProcess, ChargingProcess(), 0, ANGELSPkg_ChargingSystemPkg_Charging_System_ChargingProcess_SERIALIZE);
     //#[ operation ChargingProcess()
     //#]
 }
@@ -71,6 +77,30 @@ void Charging_System::setItsANGELS(ANGELS* p_ANGELS) {
         {
             NOTIFY_RELATION_CLEARED("itsANGELS");
         }
+}
+
+ChargingInfrastructure* Charging_System::getItsChargingInfrastructure() const {
+    return itsChargingInfrastructure;
+}
+
+void Charging_System::setItsChargingInfrastructure(ChargingInfrastructure* p_ChargingInfrastructure) {
+    if(p_ChargingInfrastructure != NULL)
+        {
+            p_ChargingInfrastructure->_setItsCharging_System(this);
+        }
+    _setItsChargingInfrastructure(p_ChargingInfrastructure);
+}
+
+CommunicationSystemBlock* Charging_System::getItsCommunicationSystemBlock() const {
+    return itsCommunicationSystemBlock;
+}
+
+void Charging_System::setItsCommunicationSystemBlock(CommunicationSystemBlock* p_CommunicationSystemBlock) {
+    if(p_CommunicationSystemBlock != NULL)
+        {
+            p_CommunicationSystemBlock->_setItsCharging_System(this);
+        }
+    _setItsCommunicationSystemBlock(p_CommunicationSystemBlock);
 }
 
 DCOperator* Charging_System::getItsDCOperator() const {
@@ -108,6 +138,26 @@ void Charging_System::cleanUpRelations() {
             NOTIFY_RELATION_CLEARED("itsANGELS");
             itsANGELS = NULL;
         }
+    if(itsChargingInfrastructure != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsChargingInfrastructure");
+            Charging_System* p_Charging_System = itsChargingInfrastructure->getItsCharging_System();
+            if(p_Charging_System != NULL)
+                {
+                    itsChargingInfrastructure->__setItsCharging_System(NULL);
+                }
+            itsChargingInfrastructure = NULL;
+        }
+    if(itsCommunicationSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsCommunicationSystemBlock");
+            Charging_System* p_Charging_System = itsCommunicationSystemBlock->getItsCharging_System();
+            if(p_Charging_System != NULL)
+                {
+                    itsCommunicationSystemBlock->__setItsCharging_System(NULL);
+                }
+            itsCommunicationSystemBlock = NULL;
+        }
     if(itsDCOperator != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsDCOperator");
@@ -132,6 +182,56 @@ bool Charging_System::cancelTimeout(const IOxfTimeout* arg) {
             res = true;
         }
     return res;
+}
+
+void Charging_System::__setItsChargingInfrastructure(ChargingInfrastructure* p_ChargingInfrastructure) {
+    itsChargingInfrastructure = p_ChargingInfrastructure;
+    if(p_ChargingInfrastructure != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsChargingInfrastructure", p_ChargingInfrastructure, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsChargingInfrastructure");
+        }
+}
+
+void Charging_System::_setItsChargingInfrastructure(ChargingInfrastructure* p_ChargingInfrastructure) {
+    if(itsChargingInfrastructure != NULL)
+        {
+            itsChargingInfrastructure->__setItsCharging_System(NULL);
+        }
+    __setItsChargingInfrastructure(p_ChargingInfrastructure);
+}
+
+void Charging_System::_clearItsChargingInfrastructure() {
+    NOTIFY_RELATION_CLEARED("itsChargingInfrastructure");
+    itsChargingInfrastructure = NULL;
+}
+
+void Charging_System::__setItsCommunicationSystemBlock(CommunicationSystemBlock* p_CommunicationSystemBlock) {
+    itsCommunicationSystemBlock = p_CommunicationSystemBlock;
+    if(p_CommunicationSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsCommunicationSystemBlock", p_CommunicationSystemBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsCommunicationSystemBlock");
+        }
+}
+
+void Charging_System::_setItsCommunicationSystemBlock(CommunicationSystemBlock* p_CommunicationSystemBlock) {
+    if(itsCommunicationSystemBlock != NULL)
+        {
+            itsCommunicationSystemBlock->__setItsCharging_System(NULL);
+        }
+    __setItsCommunicationSystemBlock(p_CommunicationSystemBlock);
+}
+
+void Charging_System::_clearItsCommunicationSystemBlock() {
+    NOTIFY_RELATION_CLEARED("itsCommunicationSystemBlock");
+    itsCommunicationSystemBlock = NULL;
 }
 
 void Charging_System::__setItsDCOperator(DCOperator* p_DCOperator) {
@@ -176,7 +276,7 @@ IOxfReactive::TakeEventStatus Charging_System::rootState_processEvent() {
         // State IdleState
         case IdleState:
         {
-            if(IS_EVENT_TYPE_OF(Beginthecharging_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(Beginthecharging_ChargingSystemPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("1");
                     NOTIFY_STATE_EXITED("ROOT.IdleState");
@@ -192,7 +292,7 @@ IOxfReactive::TakeEventStatus Charging_System::rootState_processEvent() {
         // State BeginCharging
         case BeginCharging:
         {
-            if(IS_EVENT_TYPE_OF(StartTheCharging_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(StartTheCharging_ChargingSystemPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("2");
                     NOTIFY_STATE_EXITED("ROOT.BeginCharging");
@@ -206,7 +306,7 @@ IOxfReactive::TakeEventStatus Charging_System::rootState_processEvent() {
         // State StartCharging
         case StartCharging:
         {
-            if(IS_EVENT_TYPE_OF(InitiateChargingProcess_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            if(IS_EVENT_TYPE_OF(InitiateChargingProcess_ChargingSystemPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("4");
                     NOTIFY_STATE_EXITED("ROOT.Charging.StartCharging");
@@ -242,7 +342,7 @@ IOxfReactive::TakeEventStatus Charging_System::rootState_processEvent() {
                             res = eventConsumed;
                         }
                 }
-            else if(IS_EVENT_TYPE_OF(EndCharging_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id))
+            else if(IS_EVENT_TYPE_OF(EndCharging_ChargingSystemPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("6");
                     switch (Charging_subState) {
@@ -331,6 +431,16 @@ void OMAnimatedCharging_System::serializeRelations(AOMSRelations* aomsRelations)
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS);
         }
+    aomsRelations->addRelation("itsChargingInfrastructure", false, true);
+    if(myReal->itsChargingInfrastructure)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsChargingInfrastructure);
+        }
+    aomsRelations->addRelation("itsCommunicationSystemBlock", false, true);
+    if(myReal->itsCommunicationSystemBlock)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsCommunicationSystemBlock);
+        }
 }
 
 void OMAnimatedCharging_System::rootState_serializeStates(AOMSState* aomsState) const {
@@ -409,7 +519,7 @@ void OMAnimatedCharging_System::BeginCharging_serializeStates(AOMSState* aomsSta
 }
 //#]
 
-IMPLEMENT_REACTIVE_META_P(Charging_System, UseCaseAnalysisPkg_ANGELSPkg_ChargingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg, false, OMAnimatedCharging_System)
+IMPLEMENT_REACTIVE_META_P(Charging_System, ANGELSPkg_ChargingSystemPkg, ANGELSPkg::ChargingSystemPkg, false, OMAnimatedCharging_System)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

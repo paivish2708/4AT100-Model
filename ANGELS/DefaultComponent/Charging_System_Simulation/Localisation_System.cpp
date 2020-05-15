@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Charging_System_Simulation
 	Model Element	: Localisation_System
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Fri, 15, May 2020  
 	File Path	: DefaultComponent\Charging_System_Simulation\Localisation_System.cpp
 *********************************************************************/
 
@@ -17,14 +17,14 @@
 //## link itsANGELS
 #include "ANGELS.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_LocalisationPkg_Localisation_System_Localisation_System_SERIALIZE OM_NO_OP
+#define ANGELSPkg_LocalisationPkg_Localisation_System_Localisation_System_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::LocalisationPkg
+//## package ANGELSPkg::LocalisationPkg
 
 //## class Localisation_System
 Localisation_System::Localisation_System() {
-    NOTIFY_CONSTRUCTOR(Localisation_System, Localisation_System(), 0, UseCaseAnalysisPkg_ANGELSPkg_LocalisationPkg_Localisation_System_Localisation_System_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(Localisation_System, Localisation_System(), 0, ANGELSPkg_LocalisationPkg_Localisation_System_Localisation_System_SERIALIZE);
     itsANGELS = NULL;
 }
 
@@ -38,27 +38,6 @@ ANGELS* Localisation_System::getItsANGELS() const {
 }
 
 void Localisation_System::setItsANGELS(ANGELS* p_ANGELS) {
-    if(p_ANGELS != NULL)
-        {
-            p_ANGELS->_setItsLocalisation_System(this);
-        }
-    _setItsANGELS(p_ANGELS);
-}
-
-void Localisation_System::cleanUpRelations() {
-    if(itsANGELS != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
-            Localisation_System* p_Localisation_System = itsANGELS->getItsLocalisation_System();
-            if(p_Localisation_System != NULL)
-                {
-                    itsANGELS->__setItsLocalisation_System(NULL);
-                }
-            itsANGELS = NULL;
-        }
-}
-
-void Localisation_System::__setItsANGELS(ANGELS* p_ANGELS) {
     itsANGELS = p_ANGELS;
     if(p_ANGELS != NULL)
         {
@@ -70,17 +49,12 @@ void Localisation_System::__setItsANGELS(ANGELS* p_ANGELS) {
         }
 }
 
-void Localisation_System::_setItsANGELS(ANGELS* p_ANGELS) {
+void Localisation_System::cleanUpRelations() {
     if(itsANGELS != NULL)
         {
-            itsANGELS->__setItsLocalisation_System(NULL);
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+            itsANGELS = NULL;
         }
-    __setItsANGELS(p_ANGELS);
-}
-
-void Localisation_System::_clearItsANGELS() {
-    NOTIFY_RELATION_CLEARED("itsANGELS");
-    itsANGELS = NULL;
 }
 
 #ifdef _OMINSTRUMENT
@@ -94,7 +68,7 @@ void OMAnimatedLocalisation_System::serializeRelations(AOMSRelations* aomsRelati
 }
 //#]
 
-IMPLEMENT_META_P(Localisation_System, UseCaseAnalysisPkg_ANGELSPkg_LocalisationPkg, UseCaseAnalysisPkg::ANGELSPkg::LocalisationPkg, false, OMAnimatedLocalisation_System)
+IMPLEMENT_META_P(Localisation_System, ANGELSPkg_LocalisationPkg, ANGELSPkg::LocalisationPkg, false, OMAnimatedLocalisation_System)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************
