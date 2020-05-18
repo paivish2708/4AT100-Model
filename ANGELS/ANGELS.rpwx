@@ -34,7 +34,7 @@
 								<m_nBottom type="a">443</m_nBottom>
 							</CCommon_WINDOWPLACEMENT>
 						</_placement>
-						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_wasOpenedOnCloseProject type="a">0</_wasOpenedOnCloseProject>
 						<_theDiagram type="r">
 							<IHandle type="e">
 								<_hm2Class type="a">IDiagram</_hm2Class>
@@ -44,9 +44,9 @@
 								<_hid type="a">GUID 144a2d42-71ff-4c69-be8d-4de46139cd39</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 160 </_UpLeft>
-						<_DownRight type="a">994 413 </_DownRight>
-						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<_UpLeft type="a">0 30 </_UpLeft>
+						<_DownRight type="a">994 283 </_DownRight>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -54,8 +54,8 @@
 						<_placement type="p">
 							<CCommon_WINDOWPLACEMENT type="e">
 								<m_nLength type="a">44</m_nLength>
-								<m_nFlags type="a">2</m_nFlags>
-								<m_showCmd type="a">3</m_showCmd>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
 								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
 								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
@@ -66,7 +66,7 @@
 								<m_nBottom type="a">308</m_nBottom>
 							</CCommon_WINDOWPLACEMENT>
 						</_placement>
-						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_wasOpenedOnCloseProject type="a">0</_wasOpenedOnCloseProject>
 						<_theDiagram type="r">
 							<IHandle type="e">
 								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
@@ -78,10 +78,10 @@
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">1140 422 </_DownRight>
+						<_DownRight type="a">2397 535 </_DownRight>
 						<_instanceName type="a">Charging_System[0]</_instanceName>
 						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
-						<m_bIsActiveView type="a">1</m_bIsActiveView>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 					<CGEMdiDiagramParams type="e">
@@ -113,7 +113,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">0 20 </_UpLeft>
 						<_DownRight type="a">994 273 </_DownRight>
-						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -121,8 +121,8 @@
 						<_placement type="p">
 							<CCommon_WINDOWPLACEMENT type="e">
 								<m_nLength type="a">44</m_nLength>
-								<m_nFlags type="a">0</m_nFlags>
-								<m_showCmd type="a">1</m_showCmd>
+								<m_nFlags type="a">2</m_nFlags>
+								<m_showCmd type="a">3</m_showCmd>
 								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
 								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
@@ -145,10 +145,10 @@
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">994 222 </_DownRight>
+						<_DownRight type="a">1140 422 </_DownRight>
 						<_instanceName type="a">Docking_System[0]</_instanceName>
-						<m_nDiagramIndex type="a">4</m_nDiagramIndex>
-						<m_bIsActiveView type="a">0</m_bIsActiveView>
+						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
+						<m_bIsActiveView type="a">1</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 					<CGEMdiDiagramParams type="e">
@@ -178,15 +178,15 @@
 								<_hid type="a">GUID ce639e7a-358e-4c5d-b010-4d1f20912785</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 -4 </_UpLeft>
-						<_DownRight type="a">994 249 </_DownRight>
-						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">994 253 </_DownRight>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 				</IRPYRawContainer>
 			</myViewsWithID>
-			<_fullName type="a">C:\Users\LAPTOP\Documents\TUE\Q4\Automotive Systems engg\4AT100-Model(with AD)\ANGELS\ANGELS</_fullName>
+			<_fullName type="a">C:\Users\LAPTOP\Documents\TUE\Q3\Automotive Systems project\4AT100 Model\ANGELS\ANGELS</_fullName>
 			<m_SearchScopeList type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -215,7 +215,7 @@
 				<name type="a">DS</name>
 				<idOrFolder type="a">#startHnd# INObjectHandle 
 	- _m2Class = &quot;IArgument&quot;#hndSem#
-	- _filename = &quot;C:\\Users\\LAPTOP\\Documents\\TUE\\Q4\\Automotive Systems engg\\4AT100-Model(with AD)\\ANGELS\\ANGELS_rpy\\DockingProcessPkg.sbsx&quot;#hndSem#
+	- _filename = &quot;C:\\Users\\LAPTOP\\Documents\\TUE\\Q3\\Automotive Systems project\\4AT100 Model\\ANGELS\\ANGELS_rpy\\DockingProcessPkg.sbsx&quot;#hndSem#
 	- _subsystem = &quot;ANGELSPkg::DockingProcessPkg&quot;#hndSem#
 	- _name = &quot;DockInput(double).0&quot;#hndSem#
 	- _id = GUID 1a093f53-9ef2-48aa-b317-07542a23447c#hndSem#
