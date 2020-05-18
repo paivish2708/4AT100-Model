@@ -11,7 +11,7 @@
 			<_id type="a">GUID 661c23ef-e37c-4d88-8aea-2af717860b40</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ObstacleDetectionPkg</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.18.2020::10:35:59</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -21,8 +21,8 @@
 					<_hid type="a">GUID 58673645-b6cb-4922-86fc-9d3cdafdd2c4</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
-			<weakCGTime type="a">5.15.2020::12:34:19</weakCGTime>
+			<_modifiedTime type="a">5.18.2020::10:35:59</_modifiedTime>
+			<weakCGTime type="a">5.18.2020::10:35:59</weakCGTime>
 			<strongCGTime type="a">4.30.2020::9:44:44</strongCGTime>
 			<_defaultComposite type="s">GUID 26163699-8f59-40a6-a0fa-4b670a654fab</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -64,10 +64,19 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::10:37:4</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+					<_hname type="a">System_context</_hname>
+					<_hid type="a">GUID 58673645-b6cb-4922-86fc-9d3cdafdd2c4</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">5.18.2020::10:37:4</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">5.15.2020::12:34:19</weakCGTime>
+			<weakCGTime type="a">5.18.2020::10:37:4</weakCGTime>
 			<strongCGTime type="a">4.30.2020::10:1:56</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -75,18 +84,15 @@
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<AggregatesList type="e">
-				<value>GUID 655ce593-d29c-4676-82c3-d6f6c9ac3127</value>
-				<value>GUID 08f5a78d-289e-46e6-9c1c-905ba4ac5ac4</value>
-				<value>GUID fca2de36-2755-48d5-b436-cce7fa62fbb4</value>
-				<value>GUID 1be106a9-6af0-495a-a114-839ed1ff271c</value>
+				<value>GUID 45b27862-1963-414c-baf5-b55683b034a2</value>
 			</AggregatesList>
 		</IClass>
 		<IAssociationEnd type="e">
-			<_id type="a">GUID 655ce593-d29c-4676-82c3-d6f6c9ac3127</_id>
+			<_id type="a">GUID 45b27862-1963-414c-baf5-b55683b034a2</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsANGELS</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:29:44</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:29:44</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::10:37:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::10:37:4</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -95,85 +101,16 @@
 					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
 					<_hname type="a">ANGELS</_hname>
 					<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 08f5a78d-289e-46e6-9c1c-905ba4ac5ac4</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsANGELS_1</_name>
-			<_modifiedTimeWeak type="a">5.12.2020::20:19:26</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.12.2020::20:19:26</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
-					<_hname type="a">ANGELS</_hname>
-					<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID fca2de36-2755-48d5-b436-cce7fa62fbb4</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsObstacle</_name>
-			<_modifiedTimeWeak type="a">4.30.2020::10:19:22</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.30.2020::10:19:22</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IActor</_hm2Class>
-					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
-					<_hname type="a">Obstacle</_hname>
-					<_hid type="a">GUID 6c39ba65-f02e-46e1-8062-78d3fd6e2b1c</_hid>
 				</IClassifierHandle>
 			</_otherClass>
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
-					<_hclass type="a">Obstacle</_hclass>
-					<_hname type="a">itsCollision_Detection_1</_hname>
-					<_hid type="a">GUID 934a53b0-5661-4591-a17d-91cd94ab2760</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 1be106a9-6af0-495a-a114-839ed1ff271c</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsDockingProcess</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\DockingProcessPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::DockingProcessPkg</_hsubsystem>
-					<_hname type="a">DockingProcess</_hname>
-					<_hid type="a">GUID 419eb000-a805-48d7-8cc1-6b18694ad318</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
+					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+					<_hclass type="a">ANGELS</_hclass>
+					<_hname type="a">itsCollision_Detection</_hname>
+					<_hid type="a">GUID 35aa9e0a-bd85-4639-9162-26d878130777</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>

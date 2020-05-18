@@ -11,10 +11,10 @@
 			<_id type="a">GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:40:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:40:17</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::10:39:18</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::10:35:59</_modifiedTime>
 			<_lastID type="a">16</_lastID>
-			<weakCGTime type="a">5.15.2020::12:40:17</weakCGTime>
+			<weakCGTime type="a">5.18.2020::10:39:18</weakCGTime>
 			<strongCGTime type="a">5.14.2020::12:41:19</strongCGTime>
 			<_defaultComposite type="s">GUID fabbb408-de82-424e-8fce-216617ff1ef0</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -1052,9 +1052,9 @@
 			<_id type="a">GUID 6c39ba65-f02e-46e1-8062-78d3fd6e2b1c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Obstacle</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:30:20</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:30:20</_modifiedTime>
-			<weakCGTime type="a">5.15.2020::12:30:20</weakCGTime>
+			<_modifiedTimeWeak type="a">5.18.2020::10:39:18</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::10:39:18</_modifiedTime>
+			<weakCGTime type="a">5.18.2020::10:39:18</weakCGTime>
 			<strongCGTime type="a">4.1.2020::15:5:13</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -1062,18 +1062,35 @@
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<AggregatesList type="e">
+				<value>GUID 6d238bb5-0beb-42b8-99c2-7f792d23a42a</value>
 				<value>GUID 934a53b0-5661-4591-a17d-91cd94ab2760</value>
 				<value>GUID 3ed0c738-29f4-4e3a-9a1b-255571340b9c</value>
 				<value>GUID 94f8951d-142f-4a5a-b74b-379d1ef96283</value>
 				<value>GUID 73af1c9d-1ff5-4310-a654-cccc82f203de</value>
 			</AggregatesList>
 		</IActor>
+		<IGeneralization type="e">
+			<_id type="a">GUID 6d238bb5-0beb-42b8-99c2-7f792d23a42a</_id>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\ObstacleDetectionPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::ObstacleDetectionPkg</_hsubsystem>
+					<_hname type="a">Collision_Detection</_hname>
+					<_hid type="a">GUID 365879c1-dcdd-4999-979a-ce422be9b964</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_inheritanceType type="a">iPublic</_inheritanceType>
+			<_isVirtual type="a">0</_isVirtual>
+		</IGeneralization>
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 934a53b0-5661-4591-a17d-91cd94ab2760</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsCollision_Detection_1</_name>
-			<_modifiedTimeWeak type="a">4.30.2020::10:19:22</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.30.2020::10:19:22</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::10:35:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::10:35:59</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -1086,12 +1103,6 @@
 			</_otherClass>
 			<_inverse type="r">
 				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ObstacleDetectionPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::ObstacleDetectionPkg</_hsubsystem>
-					<_hclass type="a">Collision_Detection</_hclass>
-					<_hname type="a">itsObstacle</_hname>
-					<_hid type="a">GUID fca2de36-2755-48d5-b436-cce7fa62fbb4</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>

@@ -11,10 +11,10 @@
 			<_id type="a">GUID de656d0c-824e-401d-88a2-a108a59b1b85</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCaseAnalysisPkg</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:29:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:29:17</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::10:44:47</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::10:44:47</_modifiedTime>
 			<_lastID type="a">32</_lastID>
-			<weakCGTime type="a">5.15.2020::12:29:17</weakCGTime>
+			<weakCGTime type="a">5.18.2020::10:44:47</weakCGTime>
 			<strongCGTime type="a">4.30.2020::9:51:17</strongCGTime>
 			<_defaultComposite type="s">GUID 66af33e9-98b9-483e-9515-0798c195b3d2</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -570,8 +570,8 @@
 			</_properties>
 			<_name type="a">Docking_System</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:29:17</_modifiedTime>
-			<_lastModifiedTime type="a">5.15.2020::12:29:17</_lastModifiedTime>
+			<_modifiedTime type="a">5.18.2020::10:41:59</_modifiedTime>
+			<_lastModifiedTime type="a">5.18.2020::10:41:59</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -809,7 +809,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Move Forward</m_str>
+					<m_str type="a">Move Forward</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -891,7 +891,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Reverse Truck manually</m_str>
+					<m_str type="a">Reverse Truck manually</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -973,7 +973,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Obstacle detection</m_str>
+					<m_str type="a">Obstacle detection</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1055,7 +1055,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Obstacle Avoidance</m_str>
+					<m_str type="a">Obstacle Avoidance</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1137,7 +1137,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Load Goods</m_str>
+					<m_str type="a">Load Goods</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1219,7 +1219,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Request for Loading</m_str>
+					<m_str type="a">Request for Loading</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1471,7 +1471,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Parking</m_str>
+					<m_str type="a">Parking</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1553,7 +1553,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Check for obstacles</m_str>
+					<m_str type="a">Check for obstacles</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1664,9 +1664,9 @@
 				</IObjectLinkHandle>
 			</m_pInverseInstance>
 			<m_bShowSourceMultiplicity type="a">0</m_bShowSourceMultiplicity>
-			<m_bShowSourceRole type="a">1</m_bShowSourceRole>
+			<m_bShowSourceRole type="a">0</m_bShowSourceRole>
 			<m_bShowTargetMultiplicity type="a">0</m_bShowTargetMultiplicity>
-			<m_bShowTargetRole type="a">1</m_bShowTargetRole>
+			<m_bShowTargetRole type="a">0</m_bShowTargetRole>
 			<m_bShowLinkName type="a">1</m_bShowLinkName>
 			<m_bShowSpecificType type="a">0</m_bShowSpecificType>
 			<m_bInstance type="a">0</m_bInstance>
@@ -1843,9 +1843,9 @@
 				</IObjectLinkHandle>
 			</m_pInverseInstance>
 			<m_bShowSourceMultiplicity type="a">0</m_bShowSourceMultiplicity>
-			<m_bShowSourceRole type="a">1</m_bShowSourceRole>
+			<m_bShowSourceRole type="a">0</m_bShowSourceRole>
 			<m_bShowTargetMultiplicity type="a">0</m_bShowTargetMultiplicity>
-			<m_bShowTargetRole type="a">1</m_bShowTargetRole>
+			<m_bShowTargetRole type="a">0</m_bShowTargetRole>
 			<m_bShowLinkName type="a">1</m_bShowLinkName>
 			<m_bShowSpecificType type="a">0</m_bShowSpecificType>
 			<m_bInstance type="a">0</m_bInstance>
@@ -1999,7 +1999,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Stop Truck</m_str>
+					<m_str type="a">Stop Truck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2163,9 +2163,9 @@
 				</IObjectLinkHandle>
 			</m_pInverseInstance>
 			<m_bShowSourceMultiplicity type="a">0</m_bShowSourceMultiplicity>
-			<m_bShowSourceRole type="a">1</m_bShowSourceRole>
+			<m_bShowSourceRole type="a">0</m_bShowSourceRole>
 			<m_bShowTargetMultiplicity type="a">0</m_bShowTargetMultiplicity>
-			<m_bShowTargetRole type="a">1</m_bShowTargetRole>
+			<m_bShowTargetRole type="a">0</m_bShowTargetRole>
 			<m_bShowLinkName type="a">1</m_bShowLinkName>
 			<m_bShowSpecificType type="a">0</m_bShowSpecificType>
 			<m_bInstance type="a">0</m_bInstance>
@@ -2182,9 +2182,12 @@
 							<m_bgFlag type="a">0</m_bgFlag>
 						</IColor>
 					</m_color>
-					<m_position type="a">1 0 0  </m_position>
+					<m_position type="a">4 -6 -9  114 -9  114 5  -6 5  </m_position>
 					<m_nIdent type="a">2</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_transform type="a">1 0 0 1 703 79 </m_transform>
+					<m_nHorizontalSpacing type="a">-1</m_nHorizontalSpacing>
+					<m_nVerticalSpacing type="a">-38</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">0</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_sourceRole>
@@ -2202,6 +2205,7 @@
 					<m_position type="a">1 0 0  </m_position>
 					<m_nIdent type="a">3</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nHorizontalSpacing type="a">-7</m_nHorizontalSpacing>
 					<m_nOrientationCtrlPt type="a">2</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_targetRole>
@@ -2344,9 +2348,9 @@
 				</IObjectLinkHandle>
 			</m_pInverseInstance>
 			<m_bShowSourceMultiplicity type="a">0</m_bShowSourceMultiplicity>
-			<m_bShowSourceRole type="a">1</m_bShowSourceRole>
+			<m_bShowSourceRole type="a">0</m_bShowSourceRole>
 			<m_bShowTargetMultiplicity type="a">0</m_bShowTargetMultiplicity>
-			<m_bShowTargetRole type="a">1</m_bShowTargetRole>
+			<m_bShowTargetRole type="a">0</m_bShowTargetRole>
 			<m_bShowLinkName type="a">1</m_bShowLinkName>
 			<m_bShowSpecificType type="a">0</m_bShowSpecificType>
 			<m_bInstance type="a">0</m_bInstance>
@@ -3025,7 +3029,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Open Loading Doors</m_str>
+					<m_str type="a">Open Loading Doors</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3807,7 +3811,7 @@
 			<m_pParent type="s">GUID 69add057-7c9b-40e3-8112-bf6ca2a6bda0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Load Goods</m_str>
+					<m_str type="a">Load Goods</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3889,7 +3893,7 @@
 			<m_pParent type="s">GUID 69add057-7c9b-40e3-8112-bf6ca2a6bda0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Stop Truck</m_str>
+					<m_str type="a">Stop Truck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4029,7 +4033,7 @@
 			<m_pParent type="s">GUID 69add057-7c9b-40e3-8112-bf6ca2a6bda0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Open Loading Doors</m_str>
+					<m_str type="a">Open Loading Doors</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4169,7 +4173,7 @@
 			<m_pParent type="s">GUID 69add057-7c9b-40e3-8112-bf6ca2a6bda0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Close Loading doors</m_str>
+					<m_str type="a">Close Loading doors</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4333,9 +4337,9 @@
 				</IObjectLinkHandle>
 			</m_pInverseInstance>
 			<m_bShowSourceMultiplicity type="a">0</m_bShowSourceMultiplicity>
-			<m_bShowSourceRole type="a">1</m_bShowSourceRole>
+			<m_bShowSourceRole type="a">0</m_bShowSourceRole>
 			<m_bShowTargetMultiplicity type="a">0</m_bShowTargetMultiplicity>
-			<m_bShowTargetRole type="a">1</m_bShowTargetRole>
+			<m_bShowTargetRole type="a">0</m_bShowTargetRole>
 			<m_bShowLinkName type="a">1</m_bShowLinkName>
 			<m_bShowSpecificType type="a">0</m_bShowSpecificType>
 			<m_bInstance type="a">0</m_bInstance>
@@ -4931,8 +4935,8 @@
 			</_properties>
 			<_name type="a">Obstacle_detection</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:29:17</_modifiedTime>
-			<_lastModifiedTime type="a">5.15.2020::12:29:17</_lastModifiedTime>
+			<_modifiedTime type="a">5.18.2020::10:43:20</_modifiedTime>
+			<_lastModifiedTime type="a">5.18.2020::10:43:20</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -5235,7 +5239,7 @@
 			<m_pParent type="s">GUID dfce76db-4766-443f-8188-6d15ac306afe</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Receive obstacle positions</m_str>
+					<m_str type="a">Receive obstacle positions</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5285,7 +5289,7 @@
 			<m_pParent type="s">GUID dfce76db-4766-443f-8188-6d15ac306afe</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Compare to predicted truck position</m_str>
+					<m_str type="a">Compare to predicted truck position</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5396,9 +5400,9 @@
 				</IObjectLinkHandle>
 			</m_pInverseInstance>
 			<m_bShowSourceMultiplicity type="a">0</m_bShowSourceMultiplicity>
-			<m_bShowSourceRole type="a">1</m_bShowSourceRole>
+			<m_bShowSourceRole type="a">0</m_bShowSourceRole>
 			<m_bShowTargetMultiplicity type="a">0</m_bShowTargetMultiplicity>
-			<m_bShowTargetRole type="a">1</m_bShowTargetRole>
+			<m_bShowTargetRole type="a">0</m_bShowTargetRole>
 			<m_bShowLinkName type="a">1</m_bShowLinkName>
 			<m_bShowSpecificType type="a">0</m_bShowSpecificType>
 			<m_bInstance type="a">0</m_bInstance>
@@ -5547,9 +5551,12 @@
 							<m_bgFlag type="a">0</m_bgFlag>
 						</IColor>
 					</m_color>
-					<m_position type="a">1 0 0  </m_position>
+					<m_position type="a">4 -6 -9  52 -9  52 5  -6 5  </m_position>
 					<m_nIdent type="a">0</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_transform type="a">1 0 0 1 379 158 </m_transform>
+					<m_nHorizontalSpacing type="a">19</m_nHorizontalSpacing>
+					<m_nVerticalSpacing type="a">2</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
@@ -5573,7 +5580,7 @@
 			<m_pParent type="s">GUID dfce76db-4766-443f-8188-6d15ac306afe</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Avoid obstacle</m_str>
+					<m_str type="a">Avoid obstacle</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5656,9 +5663,11 @@
 							<m_bgFlag type="a">0</m_bgFlag>
 						</IColor>
 					</m_color>
-					<m_position type="a">1 0 0  </m_position>
+					<m_position type="a">4 -6 -9  51 -9  51 5  -6 5  </m_position>
 					<m_nIdent type="a">0</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_transform type="a">1 0 0 1 386 270 </m_transform>
+					<m_nHorizontalSpacing type="a">20</m_nHorizontalSpacing>
 					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
@@ -6070,8 +6079,8 @@
 			</_properties>
 			<_name type="a">Manual_Parking_System</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:29:17</_modifiedTime>
-			<_lastModifiedTime type="a">5.15.2020::12:29:17</_lastModifiedTime>
+			<_modifiedTime type="a">5.18.2020::10:43:33</_modifiedTime>
+			<_lastModifiedTime type="a">5.18.2020::10:43:33</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -6295,7 +6304,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Stop Truck</m_str>
+					<m_str type="a">Stop Truck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6377,7 +6386,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Reverse Truck manually</m_str>
+					<m_str type="a">Reverse Truck manually</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6459,7 +6468,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Move Forward</m_str>
+					<m_str type="a">Move Forward</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6509,7 +6518,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Parking Spot Input</m_str>
+					<m_str type="a">Parking Spot Input</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6726,9 +6735,9 @@
 				</IObjectLinkHandle>
 			</m_pInverseInstance>
 			<m_bShowSourceMultiplicity type="a">0</m_bShowSourceMultiplicity>
-			<m_bShowSourceRole type="a">1</m_bShowSourceRole>
+			<m_bShowSourceRole type="a">0</m_bShowSourceRole>
 			<m_bShowTargetMultiplicity type="a">0</m_bShowTargetMultiplicity>
-			<m_bShowTargetRole type="a">1</m_bShowTargetRole>
+			<m_bShowTargetRole type="a">0</m_bShowTargetRole>
 			<m_bShowLinkName type="a">1</m_bShowLinkName>
 			<m_bShowSpecificType type="a">0</m_bShowSpecificType>
 			<m_bInstance type="a">0</m_bInstance>
@@ -6909,7 +6918,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Steer Truck</m_str>
+					<m_str type="a">Steer Truck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6992,9 +7001,12 @@
 							<m_bgFlag type="a">0</m_bgFlag>
 						</IColor>
 					</m_color>
-					<m_position type="a">1 0 0  </m_position>
+					<m_position type="a">4 -6 -9  51 -9  51 5  -6 5  </m_position>
 					<m_nIdent type="a">0</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_transform type="a">1 0 0 1 369 200 </m_transform>
+					<m_nHorizontalSpacing type="a">-11</m_nHorizontalSpacing>
+					<m_nVerticalSpacing type="a">-4</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
@@ -7177,9 +7189,12 @@
 							<m_bgFlag type="a">0</m_bgFlag>
 						</IColor>
 					</m_color>
-					<m_position type="a">1 0 0  </m_position>
+					<m_position type="a">4 -6 -9  51 -9  51 5  -6 5  </m_position>
 					<m_nIdent type="a">0</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_transform type="a">1 0 0 1 459 82 </m_transform>
+					<m_nHorizontalSpacing type="a">-20</m_nHorizontalSpacing>
+					<m_nVerticalSpacing type="a">-30</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
@@ -7264,9 +7279,9 @@
 				</IObjectLinkHandle>
 			</m_pInverseInstance>
 			<m_bShowSourceMultiplicity type="a">0</m_bShowSourceMultiplicity>
-			<m_bShowSourceRole type="a">1</m_bShowSourceRole>
+			<m_bShowSourceRole type="a">0</m_bShowSourceRole>
 			<m_bShowTargetMultiplicity type="a">0</m_bShowTargetMultiplicity>
-			<m_bShowTargetRole type="a">1</m_bShowTargetRole>
+			<m_bShowTargetRole type="a">0</m_bShowTargetRole>
 			<m_bShowLinkName type="a">1</m_bShowLinkName>
 			<m_bShowSpecificType type="a">0</m_bShowSpecificType>
 			<m_bInstance type="a">0</m_bInstance>
@@ -7415,9 +7430,12 @@
 							<m_bgFlag type="a">0</m_bgFlag>
 						</IColor>
 					</m_color>
-					<m_position type="a">1 0 0  </m_position>
+					<m_position type="a">4 -6 -9  51 -9  51 5  -6 5  </m_position>
 					<m_nIdent type="a">0</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_transform type="a">1 0 0 1 459 226 </m_transform>
+					<m_nHorizontalSpacing type="a">-33</m_nHorizontalSpacing>
+					<m_nVerticalSpacing type="a">5</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
@@ -7827,10 +7845,10 @@
 				</Subjects>
 			</IPropertyContainer>
 			</_properties>
-			<_name type="a">Steer truck</_name>
+			<_name type="a">Steer_Truck</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:29:17</_modifiedTime>
-			<_lastModifiedTime type="a">5.15.2020::12:29:17</_lastModifiedTime>
+			<_modifiedTime type="a">5.18.2020::10:44:47</_modifiedTime>
+			<_lastModifiedTime type="a">5.18.2020::10:44:47</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -8165,7 +8183,7 @@
 			<m_pParent type="s">GUID d012160c-e93d-4606-b080-fb0c05d23070</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Check next reference point</m_str>
+					<m_str type="a">Check next reference point</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -8247,7 +8265,7 @@
 			<m_pParent type="s">GUID d012160c-e93d-4606-b080-fb0c05d23070</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Compare current position to reference</m_str>
+					<m_str type="a">Compare current position to reference</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -8329,7 +8347,7 @@
 			<m_pParent type="s">GUID d012160c-e93d-4606-b080-fb0c05d23070</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::Provide new steering input</m_str>
+					<m_str type="a">Provide new steering input</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -8440,9 +8458,9 @@
 				</IObjectLinkHandle>
 			</m_pInverseInstance>
 			<m_bShowSourceMultiplicity type="a">0</m_bShowSourceMultiplicity>
-			<m_bShowSourceRole type="a">1</m_bShowSourceRole>
+			<m_bShowSourceRole type="a">0</m_bShowSourceRole>
 			<m_bShowTargetMultiplicity type="a">0</m_bShowTargetMultiplicity>
-			<m_bShowTargetRole type="a">1</m_bShowTargetRole>
+			<m_bShowTargetRole type="a">0</m_bShowTargetRole>
 			<m_bShowLinkName type="a">1</m_bShowLinkName>
 			<m_bShowSpecificType type="a">0</m_bShowSpecificType>
 			<m_bInstance type="a">0</m_bInstance>
@@ -8594,9 +8612,12 @@
 							<m_bgFlag type="a">0</m_bgFlag>
 						</IColor>
 					</m_color>
-					<m_position type="a">1 0 0  </m_position>
+					<m_position type="a">4 -6 -9  52 -9  52 5  -6 5  </m_position>
 					<m_nIdent type="a">0</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_transform type="a">1 0 0 1 354 308 </m_transform>
+					<m_nHorizontalSpacing type="a">28</m_nHorizontalSpacing>
+					<m_nVerticalSpacing type="a">-5</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
@@ -8653,9 +8674,12 @@
 							<m_bgFlag type="a">0</m_bgFlag>
 						</IColor>
 					</m_color>
-					<m_position type="a">1 0 0  </m_position>
+					<m_position type="a">4 -6 -9  52 -9  52 5  -6 5  </m_position>
 					<m_nIdent type="a">0</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_transform type="a">1 0 0 1 353 208 </m_transform>
+					<m_nHorizontalSpacing type="a">28</m_nHorizontalSpacing>
+					<m_nVerticalSpacing type="a">2</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
