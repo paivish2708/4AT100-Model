@@ -11,9 +11,9 @@
 			<_id type="a">GUID 7554a74b-52bb-4caa-90d3-744b41cefafd</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ObstacleAvoidancePkg</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
-			<weakCGTime type="a">5.15.2020::12:34:19</weakCGTime>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
+			<weakCGTime type="a">5.18.2020::12:10:42</weakCGTime>
 			<strongCGTime type="a">4.30.2020::9:59:30</strongCGTime>
 			<_defaultComposite type="s">GUID ac6d35e3-00c3-4dfd-ae38-40460cdcd78c</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -55,9 +55,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
-			<weakCGTime type="a">5.15.2020::12:34:19</weakCGTime>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
+			<weakCGTime type="a">5.18.2020::12:10:42</weakCGTime>
 			<strongCGTime type="a">4.30.2020::10:1:47</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -95,16 +95,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 5582d46a-a20c-42ff-93f5-0080d4382c92</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDockingProcess</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
+			<_name type="a">itsDockingProcessBlock</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
 					<_hfilename type="a">.\DockingProcessPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::DockingProcessPkg</_hsubsystem>
-					<_hname type="a">DockingProcess</_hname>
+					<_hname type="a">DockingProcessBlock</_hname>
 					<_hid type="a">GUID 419eb000-a805-48d7-8cc1-6b18694ad318</_hid>
 				</IClassifierHandle>
 			</_otherClass>

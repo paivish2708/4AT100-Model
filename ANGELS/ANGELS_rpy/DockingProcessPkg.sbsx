@@ -11,10 +11,10 @@
 			<_id type="a">GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DockingProcessPkg</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:40:17</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.15.2020::12:40:17</_modifiedTime>
 			<_lastID type="a">17</_lastID>
-			<weakCGTime type="a">5.15.2020::12:40:17</weakCGTime>
+			<weakCGTime type="a">5.18.2020::12:10:42</weakCGTime>
 			<strongCGTime type="a">5.14.2020::12:41:19</strongCGTime>
 			<_defaultComposite type="s">GUID 54392d4f-99be-431f-8cc9-fdca96262d90</_defaultComposite>
 			<_eventsBaseID type="a">18201</_eventsBaseID>
@@ -338,8 +338,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">5.3.2020::17:55:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:29</_modifiedTime>
-			<_lastModifiedTime type="a">5.15.2020::12:34:29</_lastModifiedTime>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
+			<_lastModifiedTime type="a">5.18.2020::12:10:42</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -522,7 +522,7 @@
 			<m_pParent type="s">GUID 790347d5-fe2a-4fd5-adfb-ffd89fce5cc4</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">DockingProcess</m_str>
+					<m_str type="a">DockingProcessBlock</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -616,7 +616,7 @@
 			<m_pParent type="s">GUID 790347d5-fe2a-4fd5-adfb-ffd89fce5cc4</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">UseCaseAnalysisPkg::ANGELSPkg::ActorPkg::DCOperator</m_str>
+					<m_str type="a">ANGELSPkg::ActorPkg::DCOperator</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -757,7 +757,7 @@
 					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
 					<_hclass type="a">ANGELS</_hclass>
-					<_hname type="a">itsDockingProcess_1</_hname>
+					<_hname type="a">itsDockingProcessBlock_1</_hname>
 					<_hid type="a">GUID 0d4f9198-0ba9-49ea-aeca-1bc70afd481c</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -940,7 +940,7 @@
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">DCOperator</_hclass>
-					<_hname type="a">itsDockingProcess</_hname>
+					<_hname type="a">itsDockingProcessBlock</_hname>
 					<_hid type="a">GUID 772afe1a-0017-4cc9-91a2-1e5aae0de17c</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -1130,7 +1130,7 @@
 			<_id type="a">GUID 419eb000-a805-48d7-8cc1-6b18694ad318</_id>
 			<_myState type="a">8192</_myState>
 			<_rmmServerID type="a">-1</_rmmServerID>
-			<_name type="a">DockingProcess</_name>
+			<_name type="a">DockingProcessBlock</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -1145,11 +1145,11 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.15.2020::12:40:17</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:40:17</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<_lastID type="a">12</_lastID>
-			<weakCGTime type="a">5.15.2020::12:40:17</weakCGTime>
-			<strongCGTime type="a">5.15.2020::12:34:19</strongCGTime>
+			<weakCGTime type="a">5.18.2020::12:10:42</weakCGTime>
+			<strongCGTime type="a">5.18.2020::12:10:42</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IStateChart</_hm2Class>
@@ -1812,9 +1812,9 @@ DockingStatus = DockingState;}  %0D
 		<IFile type="e">
 			<_id type="a">GUID 069759c4-dcc9-42f7-b0e4-2379620075e7</_id>
 			<_myState type="a">139264</_myState>
-			<_name type="a">DockingProcess</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:29</_modifiedTime>
+			<_name type="a">DockingProcessBlock</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<m_type type="a">specFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 6d8c41f1-046d-4a32-8df3-204171a3dfdc</value>
@@ -2026,9 +2026,9 @@ DockingStatus = DockingState;}  %0D
 		</IFileFragment>
 		<IFileFragment type="e">
 			<_id type="a">GUID a2f86417-5cb6-4262-9028-d9f6f94bc704</_id>
-			<_name type="a">DockingProcess</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:29</_modifiedTime>
+			<_name type="a">DockingProcessBlock</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<m_type type="a">specFragment</m_type>
 			<m_startRow type="a">45</m_startRow>
 			<m_startCol_Short type="a">1</m_startCol_Short>
@@ -2614,9 +2614,9 @@ DockingStatus = DockingState;}  %0D
 		</IFileFragment>
 		<IFileFragment type="e">
 			<_id type="a">GUID 7a634110-78bf-4104-9f66-d5801e45bad4</_id>
-			<_name type="a">itsDockingProcess_1</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
+			<_name type="a">itsDockingProcessBlock_2</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<m_type type="a">specFragment</m_type>
 			<m_startRow type="a">153</m_startRow>
 			<m_startCol_Short type="a">17</m_startCol_Short>
@@ -2906,9 +2906,9 @@ DockingStatus = DockingState;}  %0D
 		<IFile type="e">
 			<_id type="a">GUID e14c37c8-8184-4ca0-a979-34403e60fc5e</_id>
 			<_myState type="a">139264</_myState>
-			<_name type="a">DockingProcess</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:29</_modifiedTime>
+			<_name type="a">DockingProcessBlock</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<m_type type="a">implFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 69e23c65-9c2f-4547-9d4a-675758b5c9cb</value>
@@ -2967,9 +2967,9 @@ DockingStatus = DockingState;}  %0D
 		</IFileFragment>
 		<IFileFragment type="e">
 			<_id type="a">GUID 0485a914-de0f-4f71-b658-014d85eb5b3b</_id>
-			<_name type="a">DockingProcess</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:29</_modifiedTime>
+			<_name type="a">DockingProcessBlock</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<m_type type="a">implFragment</m_type>
 			<m_startRow type="a">36</m_startRow>
 			<m_startCol_Short type="a">17</m_startCol_Short>
@@ -5758,10 +5758,10 @@ DockingStatus = DockingState;}  %0D
 			<_id type="a">GUID 87fa70e8-ceb3-445d-a3ad-7fcf46ca9f32</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">MainFlow</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<_lastID type="a">36</_lastID>
-			<weakCGTime type="a">5.15.2020::12:34:19</weakCGTime>
+			<weakCGTime type="a">5.18.2020::12:10:42</weakCGTime>
 			<strongCGTime type="a">5.13.2020::14:37:23</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -6656,9 +6656,9 @@ DockingStatus = DockingState;}  %0D
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">activitydiagram_0</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
-			<_lastModifiedTime type="a">5.15.2020::12:34:19</_lastModifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
+			<_lastModifiedTime type="a">5.18.2020::12:10:42</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -8347,10 +8347,10 @@ DockingStatus = DockingState;}  %0D
 			<_id type="a">GUID 1040bd39-ed81-4ea9-8562-1e670fee5b38</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">MoveTruckForward</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.13.2020::13:18:27</_modifiedTime>
 			<_lastID type="a">27</_lastID>
-			<weakCGTime type="a">5.15.2020::12:34:19</weakCGTime>
+			<weakCGTime type="a">5.18.2020::12:10:42</weakCGTime>
 			<strongCGTime type="a">5.13.2020::14:37:23</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -9097,9 +9097,9 @@ DockingStatus = DockingState;}  %0D
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">activitydiagram_0</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
-			<_lastModifiedTime type="a">5.15.2020::12:34:19</_lastModifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
+			<_lastModifiedTime type="a">5.18.2020::12:10:42</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -9961,10 +9961,10 @@ DockingStatus = DockingState;}  %0D
 			<_id type="a">GUID 1f316acc-73a7-47b3-b87e-2ee38f4de438</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DockingSpot</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.10.2020::21:20:38</_modifiedTime>
 			<_lastID type="a">22</_lastID>
-			<weakCGTime type="a">5.15.2020::12:34:19</weakCGTime>
+			<weakCGTime type="a">5.18.2020::12:10:42</weakCGTime>
 			<strongCGTime type="a">5.13.2020::14:37:23</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -10457,9 +10457,9 @@ DockingStatus = DockingState;}  %0D
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">activitydiagram_0</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
-			<_lastModifiedTime type="a">5.15.2020::12:34:19</_lastModifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
+			<_lastModifiedTime type="a">5.18.2020::12:10:42</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -11011,10 +11011,10 @@ DockingStatus = DockingState;}  %0D
 			<_id type="a">GUID ddd55c5f-69d2-4df1-a928-cd97b2e384c6</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Docking</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<_lastID type="a">12</_lastID>
-			<weakCGTime type="a">5.15.2020::12:34:19</weakCGTime>
+			<weakCGTime type="a">5.18.2020::12:10:42</weakCGTime>
 			<strongCGTime type="a">5.13.2020::14:37:23</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -11554,9 +11554,9 @@ DockingTime++;</_body>
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">statechartdiagram_0</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
-			<_lastModifiedTime type="a">5.15.2020::12:34:19</_lastModifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
+			<_lastModifiedTime type="a">5.18.2020::12:10:42</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -12823,8 +12823,8 @@ DockingTime++;</m_str>
 			<_id type="a">GUID 2a7ba911-513a-40d4-b9c9-123cb3f95265</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDCOperator</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -12841,7 +12841,7 @@ DockingTime++;</m_str>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">DCOperator</_hclass>
-					<_hname type="a">itsDockingProcess_1</_hname>
+					<_hname type="a">itsDockingProcessBlock_2</_hname>
 					<_hid type="a">GUID 43407466-752a-4062-8d53-544509c5b1c3</_hid>
 				</IHandle>
 			</_inverse>

@@ -11,9 +11,9 @@
 			<_id type="a">GUID e1960b35-b5e1-417a-8195-97ab799fd210</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CommunicationPkg</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:42:51</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:42:51</_modifiedTime>
-			<weakCGTime type="a">5.15.2020::12:42:51</weakCGTime>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:59</_modifiedTime>
+			<weakCGTime type="a">5.18.2020::12:10:59</weakCGTime>
 			<strongCGTime type="a">4.30.2020::10:0:20</strongCGTime>
 			<_defaultComposite type="s">GUID 3d6d6801-106c-42a2-878e-f58035eb79aa</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -55,7 +55,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.15.2020::12:43:41</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:59</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -65,8 +65,8 @@
 					<_hid type="a">GUID 144a2d42-71ff-4c69-be8d-4de46139cd39</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.15.2020::12:43:41</_modifiedTime>
-			<weakCGTime type="a">5.15.2020::12:43:41</weakCGTime>
+			<_modifiedTime type="a">5.18.2020::12:10:59</_modifiedTime>
+			<weakCGTime type="a">5.18.2020::12:10:59</weakCGTime>
 			<strongCGTime type="a">5.15.2020::12:43:30</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -80,16 +80,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 430a1059-7a3a-4ae9-a898-037cf018860d</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsCharging_System</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:43:41</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:43:41</_modifiedTime>
+			<_name type="a">itsChargingSystemBlock</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:59</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
 					<_hfilename type="a">.\ChargingSystemPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ChargingSystemPkg</_hsubsystem>
-					<_hname type="a">Charging_System</_hname>
+					<_hname type="a">ChargingSystemBlock</_hname>
 					<_hid type="a">GUID a793ceb4-ff4d-4df9-a88a-619d8991be61</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -98,7 +98,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ChargingSystemPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ChargingSystemPkg</_hsubsystem>
-					<_hclass type="a">Charging_System</_hclass>
+					<_hclass type="a">ChargingSystemBlock</_hclass>
 					<_hname type="a">itsCommunicationSystemBlock</_hname>
 					<_hid type="a">GUID 26333258-3711-4e0f-b6a9-b58098edea57</_hid>
 				</IHandle>

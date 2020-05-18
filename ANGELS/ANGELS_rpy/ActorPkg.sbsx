@@ -11,10 +11,10 @@
 			<_id type="a">GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::10:39:18</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::10:35:59</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.18.2020::12:14:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<_lastID type="a">16</_lastID>
-			<weakCGTime type="a">5.18.2020::10:39:18</weakCGTime>
+			<weakCGTime type="a">5.18.2020::12:14:37</weakCGTime>
 			<strongCGTime type="a">5.14.2020::12:41:19</strongCGTime>
 			<_defaultComposite type="s">GUID fabbb408-de82-424e-8fce-216617ff1ef0</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -49,7 +49,7 @@
 			<_id type="a">GUID 7ff30776-c3a5-45fc-820c-bff3158c6232</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DC</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:40:17</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.18.2020::12:14:49</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -59,9 +59,9 @@
 					<_hid type="a">GUID ce9a3377-92ac-48bb-84b7-6803479e8f0d</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.15.2020::12:40:17</_modifiedTime>
+			<_modifiedTime type="a">5.18.2020::12:14:49</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">5.15.2020::12:40:17</weakCGTime>
+			<weakCGTime type="a">5.18.2020::12:14:49</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:28:56</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -73,6 +73,7 @@
 				<value>GUID e7645b55-71c9-4c3a-b037-823c2357f712</value>
 				<value>GUID ac06f0d6-df52-4164-843e-d08fc7c45e77</value>
 				<value>GUID 466af49a-abf7-4045-9de0-ed0a84ce3334</value>
+				<value>GUID c52aa628-c2e5-460d-a9a1-ea30a91c743a</value>
 			</AggregatesList>
 		</IActor>
 		<IAssociationEnd type="e">
@@ -179,11 +180,40 @@
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID c52aa628-c2e5-460d-a9a1-ea30a91c743a</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsParkingSystemBlock</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:14:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:14:49</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\ParkingProcessPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::ParkingProcessPkg</_hsubsystem>
+					<_hname type="a">ParkingSystemBlock</_hname>
+					<_hid type="a">GUID b61a4aaf-a0ac-4e13-802f-fe5b11fb7b99</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\ParkingProcessPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::ParkingProcessPkg</_hsubsystem>
+					<_hclass type="a">ParkingSystemBlock</_hclass>
+					<_hname type="a">itsDC</_hname>
+					<_hid type="a">GUID 82611f97-d78e-4367-90c9-8d38fdbdf306</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IActor type="e">
 			<_id type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DCOperator</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:40:17</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.18.2020::12:15:4</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -193,9 +223,9 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.15.2020::12:40:17</_modifiedTime>
+			<_modifiedTime type="a">5.18.2020::12:15:4</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">5.15.2020::12:40:17</weakCGTime>
+			<weakCGTime type="a">5.18.2020::12:15:4</weakCGTime>
 			<strongCGTime type="a">4.29.2020::15:2:18</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -214,6 +244,7 @@
 				<value>GUID aa75b22b-ad70-4c35-a702-17d02bbe4604</value>
 				<value>GUID 20226fbf-0b43-4727-af53-418024538c60</value>
 				<value>GUID 772afe1a-0017-4cc9-91a2-1e5aae0de17c</value>
+				<value>GUID 2cca4d9d-3c54-4c76-8146-85ffa6fcea80</value>
 			</AggregatesList>
 		</IActor>
 		<IInformationFlow type="e">
@@ -381,16 +412,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 43407466-752a-4062-8d53-544509c5b1c3</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDockingProcess_1</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
+			<_name type="a">itsDockingProcessBlock_2</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
 					<_hfilename type="a">.\DockingProcessPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::DockingProcessPkg</_hsubsystem>
-					<_hname type="a">DockingProcess</_hname>
+					<_hname type="a">DockingProcessBlock</_hname>
 					<_hid type="a">GUID 419eb000-a805-48d7-8cc1-6b18694ad318</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -399,7 +430,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\DockingProcessPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::DockingProcessPkg</_hsubsystem>
-					<_hclass type="a">DockingProcess</_hclass>
+					<_hclass type="a">DockingProcessBlock</_hclass>
 					<_hname type="a">itsDCOperator</_hname>
 					<_hid type="a">GUID 2a7ba911-513a-40d4-b9c9-123cb3f95265</_hid>
 				</IHandle>
@@ -410,16 +441,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 9b9e8841-8888-480d-ab43-afe7107f8da4</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDockingProcess_2</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:19</_modifiedTime>
+			<_name type="a">itsDockingProcessBlock_1</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
 					<_hfilename type="a">.\DockingProcessPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::DockingProcessPkg</_hsubsystem>
-					<_hname type="a">DockingProcess</_hname>
+					<_hname type="a">DockingProcessBlock</_hname>
 					<_hid type="a">GUID 419eb000-a805-48d7-8cc1-6b18694ad318</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -433,16 +464,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID aa75b22b-ad70-4c35-a702-17d02bbe4604</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsCharging_System</_name>
-			<_modifiedTimeWeak type="a">5.13.2020::13:25:46</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.13.2020::13:25:46</_modifiedTime>
+			<_name type="a">itsChargingSystemBlock</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:59</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
 					<_hfilename type="a">.\ChargingSystemPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ChargingSystemPkg</_hsubsystem>
-					<_hname type="a">Charging_System</_hname>
+					<_hname type="a">ChargingSystemBlock</_hname>
 					<_hid type="a">GUID a793ceb4-ff4d-4df9-a88a-619d8991be61</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -451,7 +482,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\ChargingSystemPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ChargingSystemPkg</_hsubsystem>
-					<_hclass type="a">Charging_System</_hclass>
+					<_hclass type="a">ChargingSystemBlock</_hclass>
 					<_hname type="a">itsDCOperator</_hname>
 					<_hid type="a">GUID 60ff92a9-7de2-4c64-9e24-08d5d71e45ff</_hid>
 				</IHandle>
@@ -491,16 +522,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 772afe1a-0017-4cc9-91a2-1e5aae0de17c</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDockingProcess</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:34:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:34:29</_modifiedTime>
+			<_name type="a">itsDockingProcessBlock</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
 					<_hfilename type="a">.\DockingProcessPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::DockingProcessPkg</_hsubsystem>
-					<_hname type="a">DockingProcess</_hname>
+					<_hname type="a">DockingProcessBlock</_hname>
 					<_hid type="a">GUID 419eb000-a805-48d7-8cc1-6b18694ad318</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -511,11 +542,40 @@
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 2cca4d9d-3c54-4c76-8146-85ffa6fcea80</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsParkingSystemBlock</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:15:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:15:4</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\ParkingProcessPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::ParkingProcessPkg</_hsubsystem>
+					<_hname type="a">ParkingSystemBlock</_hname>
+					<_hid type="a">GUID b61a4aaf-a0ac-4e13-802f-fe5b11fb7b99</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\ParkingProcessPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::ParkingProcessPkg</_hsubsystem>
+					<_hclass type="a">ParkingSystemBlock</_hclass>
+					<_hname type="a">itsDCOperator</_hname>
+					<_hid type="a">GUID 094ffcd3-e9cd-480d-9c70-f930ec7bdf48</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IActor type="e">
 			<_id type="a">GUID 516c76cb-338f-40c3-a898-f904221cfb96</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:36:30</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.18.2020::12:14:37</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -525,9 +585,9 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.15.2020::12:36:30</_modifiedTime>
+			<_modifiedTime type="a">5.18.2020::12:14:37</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">5.15.2020::12:36:30</weakCGTime>
+			<weakCGTime type="a">5.18.2020::12:14:37</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:28:56</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -544,6 +604,7 @@
 				<value>GUID 0e526007-c040-4375-aa08-d4af66c56a6e</value>
 				<value>GUID 9e10837a-5b5f-4012-88ec-eb8717576935</value>
 				<value>GUID e8849883-6318-4dc6-a945-cadb8cca76c4</value>
+				<value>GUID 75508adc-240a-4468-b70f-a587b16294ea</value>
 			</AggregatesList>
 		</IActor>
 		<IInformationFlow type="e">
@@ -771,6 +832,35 @@
 					<_hclass type="a">ANGELS</_hclass>
 					<_hname type="a">itsDriver</_hname>
 					<_hid type="a">GUID 00153a5e-ecdb-4e97-900b-2609199750f7</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 75508adc-240a-4468-b70f-a587b16294ea</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsParkingSystemBlock</_name>
+			<_modifiedTimeWeak type="a">5.18.2020::12:14:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.18.2020::12:14:37</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\ParkingProcessPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::ParkingProcessPkg</_hsubsystem>
+					<_hname type="a">ParkingSystemBlock</_hname>
+					<_hid type="a">GUID b61a4aaf-a0ac-4e13-802f-fe5b11fb7b99</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\ParkingProcessPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::ParkingProcessPkg</_hsubsystem>
+					<_hclass type="a">ParkingSystemBlock</_hclass>
+					<_hname type="a">itsDriver</_hname>
+					<_hid type="a">GUID 6be444dd-53c1-470d-b647-e5a11b52d51f</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -1072,7 +1162,7 @@
 		<IGeneralization type="e">
 			<_id type="a">GUID 6d238bb5-0beb-42b8-99c2-7f792d23a42a</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
