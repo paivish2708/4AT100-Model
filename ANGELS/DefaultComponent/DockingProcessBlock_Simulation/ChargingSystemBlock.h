@@ -41,6 +41,12 @@ class CommunicationSystemBlock;
 //## link itsDCOperator
 class DCOperator;
 
+//## link itsDockingProcessBlock
+class DockingProcessBlock;
+
+//## link itsLoadingProcessBlock
+class LoadingProcessBlock;
+
 //## package ANGELSPkg::ChargingSystemPkg
 
 //## class ChargingSystemBlock
@@ -99,6 +105,18 @@ public :
     void setItsDCOperator(DCOperator* p_DCOperator);
     
     //## auto_generated
+    DockingProcessBlock* getItsDockingProcessBlock() const;
+    
+    //## auto_generated
+    void setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    LoadingProcessBlock* getItsLoadingProcessBlock() const;
+    
+    //## auto_generated
+    void setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
+    
+    //## auto_generated
     Truck* getItsTruck() const;
     
     //## auto_generated
@@ -132,6 +150,10 @@ protected :
     
     DCOperator* itsDCOperator;		//## link itsDCOperator
     
+    DockingProcessBlock* itsDockingProcessBlock;		//## link itsDockingProcessBlock
+    
+    LoadingProcessBlock* itsLoadingProcessBlock;		//## link itsLoadingProcessBlock
+    
     Truck itsTruck;		//## classInstance itsTruck
     
     ////    Framework operations    ////
@@ -164,6 +186,24 @@ public :
     
     //## auto_generated
     void _clearItsDCOperator();
+    
+    //## auto_generated
+    void __setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    void _setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    void _clearItsDockingProcessBlock();
+    
+    //## auto_generated
+    void __setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
+    
+    //## auto_generated
+    void _setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
+    
+    //## auto_generated
+    void _clearItsLoadingProcessBlock();
     
     // rootState:
     //## statechart_method

@@ -1,0 +1,371 @@
+I-Logix-RPY-Archive version 8.15.0 * 9841247
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 68;
+	- value = "DefaultComponent\\ChargingSystemBlock_Simulation\\ANGELS.cpp" 5.21.2020::20:33:1
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ANGELS.h" 5.21.2020::20:33:1
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ANGELSPkg.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ANGELSPkg.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ActorPkg.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ActorPkg.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ChargingInfrastructure.cpp" 5.21.2020::20:33:1
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ChargingInfrastructure.h" 5.21.2020::20:33:1
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ChargingSystemBlock.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ChargingSystemBlock.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ChargingSystemPkg.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ChargingSystemPkg.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Collision_Avoidance.cpp" 5.21.2020::20:32:59
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Collision_Avoidance.h" 5.21.2020::20:32:59
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Collision_Detection.cpp" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Collision_Detection.h" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\CommunicationPkg.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\CommunicationPkg.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\CommunicationSystemBlock.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\CommunicationSystemBlock.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\DC.cpp" 5.21.2020::20:32:59
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\DC.h" 5.21.2020::20:32:59
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\DCOperator.cpp" 5.21.2020::20:32:59
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\DCOperator.h" 5.21.2020::20:32:59
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\DockingPkg.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\DockingPkg.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\DockingProcessBlock.cpp" 5.21.2020::20:44:15
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\DockingProcessBlock.h" 5.21.2020::20:44:15
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\DockingSystem.cpp" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\DockingSystem.h" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\DockingSystemPkg.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\DockingSystemPkg.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Driver.cpp" 5.21.2020::20:32:59
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Driver.h" 5.21.2020::20:32:59
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Environment.cpp" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Environment.h" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Government.cpp" 5.21.2020::20:33:1
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Government.h" 5.21.2020::20:33:1
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\LoadingProcessBlock.cpp" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\LoadingProcessBlock.h" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\LoadingProcessPkg.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\LoadingProcessPkg.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\LoadingSystem.cpp" 5.21.2020::20:33:1
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\LoadingSystem.h" 5.21.2020::20:33:1
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\LoadingSystemPkg.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\LoadingSystemPkg.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\LocalizationArchitecture.cpp" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\LocalizationArchitecture.h" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Obstacle.cpp" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Obstacle.h" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ObstacleAvoidancePkg.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ObstacleAvoidancePkg.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ObstacleDetectionPkg.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ObstacleDetectionPkg.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ParkingProcessPkg.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ParkingProcessPkg.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ParkingSystemBlock.cpp" 5.21.2020::20:32:59
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\ParkingSystemBlock.h" 5.21.2020::20:32:59
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\PedestrianandObstacles.cpp" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\PedestrianandObstacles.h" 5.21.2020::20:33:0
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\SafetyStandards.cpp" 5.21.2020::20:33:1
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\SafetyStandards.h" 5.21.2020::20:33:1
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Truck.cpp" 5.21.2020::20:32:58
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\Truck.h" 5.21.2020::20:32:58
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\TruckPkg.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\TruckPkg.h" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\UseCaseAnalysisPkg.cpp" 5.21.2020::20:33:2
+	"DefaultComponent\\ChargingSystemBlock_Simulation\\UseCaseAnalysisPkg.h" 5.21.2020::20:33:2
+	
+}
+- m_saveUnitAndOwnerSaveUnit = { IRPYRawContainer 
+	- size = 14;
+	- value = "GUID 363e27a5-edb8-44a5-82c4-8353be709de0" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
+	"GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11" "GUID 6b13b22f-8127-4059-b45b-ca0a2f88d807"
+	"GUID 661c23ef-e37c-4d88-8aea-2af717860b40" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
+	"GUID 7554a74b-52bb-4caa-90d3-744b41cefafd" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
+	"GUID 7dba1274-9404-4f0f-b93c-831e00073cf1" "GUID 6b13b22f-8127-4059-b45b-ca0a2f88d807"
+	"GUID 8abba9a9-dec0-4547-b62d-d3de41f38a0a" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
+	"GUID 8d35c598-0266-49a6-8637-7cada356574a" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
+	"GUID 9959afde-c6d9-42a2-9292-804607287d27" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
+	"GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
+	"GUID b04eae3d-15f2-48b0-8105-15f20d0ee279" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
+	"GUID dd55cabb-699e-4724-9d69-dcc932a50bcc" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
+	"GUID de656d0c-824e-401d-88a2-a108a59b1b85" "GUID 6b13b22f-8127-4059-b45b-ca0a2f88d807"
+	"GUID e1960b35-b5e1-417a-8195-97ab799fd210" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
+	"GUID fac390a0-ea0b-487d-8594-4a339b172cf8" "GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11"
+	
+}
+- size = 35;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ParkingProcessPkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "ParkingProcessPkg";
+	- _id = GUID 363e27a5-edb8-44a5-82c4-8353be709de0;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\TruckPkg.sbsx";
+	- _subsystem = "ANGELSPkg::TruckPkg";
+	- _name = "Truck";
+	- _id = GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ChargingSystemPkg.sbsx";
+	- _subsystem = "ANGELSPkg::ChargingSystemPkg";
+	- _name = "ChargingSystemBlock";
+	- _id = GUID a793ceb4-ff4d-4df9-a88a-619d8991be61;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
+	- _subsystem = "ANGELSPkg::ActorPkg";
+	- _name = "Government";
+	- _id = GUID 8a324cdf-404e-469e-8e07-d8bcf2dec122;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ObstacleAvoidancePkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "ObstacleAvoidancePkg";
+	- _id = GUID 7554a74b-52bb-4caa-90d3-744b41cefafd;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\TruckPkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "TruckPkg";
+	- _id = GUID fac390a0-ea0b-487d-8594-4a339b172cf8;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\CommunicationPkg.sbsx";
+	- _subsystem = "ANGELSPkg::CommunicationPkg";
+	- _name = "CommunicationSystemBlock";
+	- _id = GUID 9f39a54a-16f7-462c-9042-179f5cec7ca6;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\DockingPkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "DockingPkg";
+	- _id = GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\CommunicationPkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "CommunicationPkg";
+	- _id = GUID e1960b35-b5e1-417a-8195-97ab799fd210;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ObstacleAvoidancePkg.sbsx";
+	- _subsystem = "ANGELSPkg::ObstacleAvoidancePkg";
+	- _name = "Collision_Avoidance";
+	- _id = GUID 5119c251-6ddc-4989-81dc-cd28be013ef0;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ANGELSPkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "ChargingInfrastructure";
+	- _id = GUID d9cb50c6-bf4a-4e89-9407-4fd5beedf032;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ANGELSPkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "LocalizationArchitecture";
+	- _id = GUID db190386-1007-4530-a2a1-1bbac6903dfe;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\UseCaseAnalysisPkg.sbsx";
+	- _name = "UseCaseAnalysisPkg";
+	- _id = GUID de656d0c-824e-401d-88a2-a108a59b1b85;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ObstacleDetectionPkg.sbsx";
+	- _subsystem = "ANGELSPkg::ObstacleDetectionPkg";
+	- _name = "Collision_Detection";
+	- _id = GUID 365879c1-dcdd-4999-979a-ce422be9b964;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
+	- _subsystem = "ANGELSPkg::ActorPkg";
+	- _name = "Obstacle";
+	- _id = GUID 6c39ba65-f02e-46e1-8062-78d3fd6e2b1c;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ParkingProcessPkg.sbsx";
+	- _subsystem = "ANGELSPkg::ParkingProcessPkg";
+	- _name = "ParkingSystemBlock";
+	- _id = GUID b61a4aaf-a0ac-4e13-802f-fe5b11fb7b99;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\LoadingProcessPkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "LoadingProcessPkg";
+	- _id = GUID dd55cabb-699e-4724-9d69-dcc932a50bcc;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
+	- _subsystem = "ANGELSPkg::ActorPkg";
+	- _name = "Driver";
+	- _id = GUID 516c76cb-338f-40c3-a898-f904221cfb96;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\LoadingProcessPkg.sbsx";
+	- _subsystem = "ANGELSPkg::LoadingProcessPkg";
+	- _name = "LoadingProcessBlock";
+	- _id = GUID 0f2dc8c4-a324-4500-bc76-7190e7a8a4e2;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ChargingSystemPkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "ChargingSystemPkg";
+	- _id = GUID 8abba9a9-dec0-4547-b62d-d3de41f38a0a;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
+	- _subsystem = "ANGELSPkg::ActorPkg";
+	- _name = "PedestrianandObstacles";
+	- _id = GUID d1815240-c7ca-42c7-8552-c599700d0b3c;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "ActorPkg";
+	- _id = GUID b04eae3d-15f2-48b0-8105-15f20d0ee279;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\DockingPkg.sbsx";
+	- _subsystem = "ANGELSPkg::DockingPkg";
+	- _name = "DockingProcessBlock";
+	- _id = GUID 419eb000-a805-48d7-8cc1-6b18694ad318;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\LoadingSystemPkg.sbsx";
+	- _subsystem = "ANGELSPkg::LoadingSystemPkg";
+	- _name = "LoadingSystem";
+	- _id = GUID 1536ad51-7bb4-489a-b944-e60014781331;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\DockingSystemPkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "DockingSystemPkg";
+	- _id = GUID 9959afde-c6d9-42a2-9292-804607287d27;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ANGELSPkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "ANGELS";
+	- _id = GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
+	- _subsystem = "ANGELSPkg::ActorPkg";
+	- _name = "DCOperator";
+	- _id = GUID 1363a688-b2df-4751-bd7d-7353a11cd859;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ObstacleDetectionPkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "ObstacleDetectionPkg";
+	- _id = GUID 661c23ef-e37c-4d88-8aea-2af717860b40;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
+	- _subsystem = "ANGELSPkg::ActorPkg";
+	- _name = "DC";
+	- _id = GUID 7ff30776-c3a5-45fc-820c-bff3158c6232;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\LoadingSystemPkg.sbsx";
+	- _subsystem = "ANGELSPkg";
+	- _name = "LoadingSystemPkg";
+	- _id = GUID 8d35c598-0266-49a6-8637-7cada356574a;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ANGELSPkg.sbsx";
+	- _name = "ANGELSPkg";
+	- _id = GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\DefaultComponent.cmpx";
+	- _name = "DefaultComponent\\ChargingSystemBlock_Simulation";
+	- _id = GUID 913b658e-3a5a-474a-9ff0-d61c26be56f6;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
+	- _subsystem = "ANGELSPkg::ActorPkg";
+	- _name = "Environment";
+	- _id = GUID 7c19c8c8-634c-4300-8c7f-39b2756b2adc;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\ActorPkg.sbsx";
+	- _subsystem = "ANGELSPkg::ActorPkg";
+	- _name = "SafetyStandards";
+	- _id = GUID 23c972f4-cc30-419c-a741-5d23c4eb9568;
+}
+- genTime = 5.21.2020::20:44:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = ".\\..\\..\\ANGELS_rpy\\DockingSystemPkg.sbsx";
+	- _subsystem = "ANGELSPkg::DockingSystemPkg";
+	- _name = "DockingSystem";
+	- _id = GUID edf71c2f-534d-415b-8dea-e7709fb0e353;
+}
+- genTime = 5.21.2020::20:44:17;
+

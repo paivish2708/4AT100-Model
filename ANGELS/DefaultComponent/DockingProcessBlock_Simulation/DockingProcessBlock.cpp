@@ -30,6 +30,10 @@
 #define ANGELSPkg_DockingPkg_DockingProcessBlock_CheckDockingStatus_SERIALIZE OM_NO_OP
 
 #define ANGELSPkg_DockingPkg_DockingProcessBlock_DockInput_SERIALIZE aomsmethod->addAttribute("DS", x2String(DS));
+
+#define OMAnim_ANGELSPkg_DockingPkg_DockingProcessBlock_setDSInput_double_UNSERIALIZE_ARGS OP_UNSER(OMDestructiveString2X,p_DSInput)
+
+#define OMAnim_ANGELSPkg_DockingPkg_DockingProcessBlock_setDSInput_double_SERIALIZE_RET_VAL
 //#]
 
 //## package ANGELSPkg::DockingPkg
@@ -84,7 +88,9 @@ Truck* DockingProcessBlock::getItsTruck() const {
 
 bool DockingProcessBlock::startBehavior() {
     bool done = true;
+    done &= itsChargingSystemBlock_2.startBehavior();
     done &= itsLoadingProcessBlock.startBehavior();
+    done &= itsParkingSystemBlock.startBehavior();
     done &= OMReactive::startBehavior();
     return done;
 }
@@ -101,6 +107,16 @@ void DockingProcessBlock::cleanUpRelations() {
         {
             NOTIFY_RELATION_CLEARED("itsANGELS");
             itsANGELS = NULL;
+        }
+    if(itsChargingSystemBlock_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock_1");
+            DockingProcessBlock* p_DockingProcessBlock = itsChargingSystemBlock_1->getItsDockingProcessBlock();
+            if(p_DockingProcessBlock != NULL)
+                {
+                    itsChargingSystemBlock_1->__setItsDockingProcessBlock(NULL);
+                }
+            itsChargingSystemBlock_1 = NULL;
         }
     if(itsDCOperator != NULL)
         {
@@ -170,8 +186,15 @@ DockingProcessBlock::DockingProcessBlock(IOxfActive* theActiveContext) : DSInput
         {
             itsLoadingProcessBlock.setShouldDelete(false);
         }
+        {
+            itsParkingSystemBlock.setShouldDelete(false);
+        }
+        {
+            itsChargingSystemBlock_2.setShouldDelete(false);
+        }
     }
     itsANGELS = NULL;
+    itsChargingSystemBlock_1 = NULL;
     itsDCOperator = NULL;
     itsDCOperator_1 = NULL;
     initStatechart();
@@ -206,6 +229,7 @@ double DockingProcessBlock::getDSInput() const {
 
 void DockingProcessBlock::setDSInput(double p_DSInput) {
     DSInput = p_DSInput;
+    NOTIFY_SET_OPERATION;
 }
 
 double DockingProcessBlock::getDockingStatus() const {
@@ -248,6 +272,22 @@ void DockingProcessBlock::setSteerAngle(double p_SteerAngle) {
     SteerAngle = p_SteerAngle;
 }
 
+ChargingSystemBlock* DockingProcessBlock::getItsChargingSystemBlock_1() const {
+    return itsChargingSystemBlock_1;
+}
+
+void DockingProcessBlock::setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(p_ChargingSystemBlock != NULL)
+        {
+            p_ChargingSystemBlock->_setItsDockingProcessBlock(this);
+        }
+    _setItsChargingSystemBlock_1(p_ChargingSystemBlock);
+}
+
+ChargingSystemBlock* DockingProcessBlock::getItsChargingSystemBlock_2() const {
+    return (ChargingSystemBlock*) &itsChargingSystemBlock_2;
+}
+
 DCOperator* DockingProcessBlock::getItsDCOperator_1() const {
     return itsDCOperator_1;
 }
@@ -262,6 +302,35 @@ void DockingProcessBlock::setItsDCOperator_1(DCOperator* p_DCOperator) {
 
 LoadingProcessBlock* DockingProcessBlock::getItsLoadingProcessBlock() const {
     return (LoadingProcessBlock*) &itsLoadingProcessBlock;
+}
+
+ParkingSystemBlock* DockingProcessBlock::getItsParkingSystemBlock() const {
+    return (ParkingSystemBlock*) &itsParkingSystemBlock;
+}
+
+void DockingProcessBlock::__setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock) {
+    itsChargingSystemBlock_1 = p_ChargingSystemBlock;
+    if(p_ChargingSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsChargingSystemBlock_1", p_ChargingSystemBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock_1");
+        }
+}
+
+void DockingProcessBlock::_setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(itsChargingSystemBlock_1 != NULL)
+        {
+            itsChargingSystemBlock_1->__setItsDockingProcessBlock(NULL);
+        }
+    __setItsChargingSystemBlock_1(p_ChargingSystemBlock);
+}
+
+void DockingProcessBlock::_clearItsChargingSystemBlock_1() {
+    NOTIFY_RELATION_CLEARED("itsChargingSystemBlock_1");
+    itsChargingSystemBlock_1 = NULL;
 }
 
 void DockingProcessBlock::__setItsDCOperator_1(DCOperator* p_DCOperator) {
@@ -293,11 +362,15 @@ void DockingProcessBlock::setActiveContext(IOxfActive* theActiveContext, bool ac
     OMReactive::setActiveContext(theActiveContext, activeInstance);
     {
         itsLoadingProcessBlock.setActiveContext(theActiveContext, false);
+        itsParkingSystemBlock.setActiveContext(theActiveContext, false);
+        itsChargingSystemBlock_2.setActiveContext(theActiveContext, false);
     }
 }
 
 void DockingProcessBlock::destroy() {
+    itsChargingSystemBlock_2.destroy();
     itsLoadingProcessBlock.destroy();
+    itsParkingSystemBlock.destroy();
     OMReactive::destroy();
 }
 
@@ -495,6 +568,15 @@ void OMAnimatedDockingProcessBlock::serializeRelations(AOMSRelations* aomsRelati
         {
             aomsRelations->ADD_ITEM(myReal->itsDCOperator_1);
         }
+    aomsRelations->addRelation("itsChargingSystemBlock_1", false, true);
+    if(myReal->itsChargingSystemBlock_1)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsChargingSystemBlock_1);
+        }
+    aomsRelations->addRelation("itsParkingSystemBlock", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsParkingSystemBlock);
+    aomsRelations->addRelation("itsChargingSystemBlock_2", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsChargingSystemBlock_2);
 }
 
 void OMAnimatedDockingProcessBlock::rootState_serializeStates(AOMSState* aomsState) const {
@@ -574,6 +656,10 @@ void OMAnimatedDockingProcessBlock::AutonomousState_serializeStates(AOMSState* a
 //#]
 
 IMPLEMENT_REACTIVE_META_P(DockingProcessBlock, ANGELSPkg_DockingPkg, ANGELSPkg::DockingPkg, false, OMAnimatedDockingProcessBlock)
+
+IMPLEMENT_META_OP(OMAnimatedDockingProcessBlock, ANGELSPkg_DockingPkg_DockingProcessBlock_setDSInput_double, "setDSInput", FALSE, "setDSInput(double)", 1)
+
+IMPLEMENT_OP_CALL(ANGELSPkg_DockingPkg_DockingProcessBlock_setDSInput_double, DockingProcessBlock, setDSInput(p_DSInput), NO_OP())
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

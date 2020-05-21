@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ParkingSystemBlock_Simulation
 	Model Element	: ParkingSystemBlock
-//!	Generated Date	: Mon, 18, May 2020  
+//!	Generated Date	: Thu, 21, May 2020  
 	File Path	: DefaultComponent\ParkingSystemBlock_Simulation\ParkingSystemBlock.cpp
 *********************************************************************/
 
@@ -64,7 +64,8 @@ void ParkingSystemBlock::StopTruck() {
     NOTIFY_OPERATION(StopTruck, StopTruck(), 0, ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_StopTruck_SERIALIZE);
     //#[ operation StopTruck()
     Speed = 0;
-    SteerAngle = 0;
+    SteerAngle = 0;    
+    ParkingStatus = 1;
     //#]
 }
 

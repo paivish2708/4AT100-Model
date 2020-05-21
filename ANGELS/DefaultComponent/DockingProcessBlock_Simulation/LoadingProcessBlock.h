@@ -27,8 +27,13 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
+//## classInstance itsParkingSystemBlock
+#include "ParkingSystemBlock.h"
 //## classInstance itsTruck
 #include "Truck.h"
+//## link itsChargingSystemBlock
+class ChargingSystemBlock;
+
 //## link itsDC
 class DC;
 
@@ -81,6 +86,12 @@ public :
     void setLoadingTime(int p_LoadingTime);
     
     //## auto_generated
+    ChargingSystemBlock* getItsChargingSystemBlock() const;
+    
+    //## auto_generated
+    void setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
     DC* getItsDC() const;
     
     //## auto_generated
@@ -91,6 +102,9 @@ public :
     
     //## auto_generated
     void setItsDCOperator(DCOperator* p_DCOperator);
+    
+    //## auto_generated
+    ParkingSystemBlock* getItsParkingSystemBlock() const;
     
     //## auto_generated
     Truck* getItsTruck() const;
@@ -120,9 +134,13 @@ protected :
     
     ////    Relations and components    ////
     
+    ChargingSystemBlock* itsChargingSystemBlock;		//## link itsChargingSystemBlock
+    
     DC* itsDC;		//## link itsDC
     
     DCOperator* itsDCOperator;		//## link itsDCOperator
+    
+    ParkingSystemBlock itsParkingSystemBlock;		//## classInstance itsParkingSystemBlock
     
     Truck itsTruck;		//## classInstance itsTruck
     
@@ -130,6 +148,15 @@ protected :
 
 public :
 
+    //## auto_generated
+    void __setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
+    void _setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
+    void _clearItsChargingSystemBlock();
+    
     //## auto_generated
     void __setItsDC(DC* p_DC);
     
@@ -147,6 +174,12 @@ public :
     
     //## auto_generated
     void _clearItsDCOperator();
+    
+    //## auto_generated
+    void setActiveContext(IOxfActive* theActiveContext, bool activeInstance);
+    
+    //## auto_generated
+    virtual void destroy();
     
     // rootState:
     //## statechart_method

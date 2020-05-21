@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ParkingSystemBlock_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Mon, 18, May 2020  
+//!	Generated Date	: Thu, 21, May 2020  
 	File Path	: DefaultComponent\ParkingSystemBlock_Simulation\DCOperator.h
 *********************************************************************/
 
@@ -93,6 +93,12 @@ public :
     void setItsDockingProcessBlock_2(DockingProcessBlock* p_DockingProcessBlock);
     
     //## auto_generated
+    DockingProcessBlock* getItsDockingProcessBlock_3() const;
+    
+    //## auto_generated
+    void setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
     LoadingProcessBlock* getItsLoadingProcessBlock() const;
     
     //## auto_generated
@@ -122,6 +128,8 @@ protected :
     DockingProcessBlock* itsDockingProcessBlock_1;		//## link itsDockingProcessBlock_1
     
     DockingProcessBlock* itsDockingProcessBlock_2;		//## link itsDockingProcessBlock_2
+    
+    DockingProcessBlock* itsDockingProcessBlock_3;		//## link itsDockingProcessBlock_3
     
     LoadingProcessBlock* itsLoadingProcessBlock;		//## link itsLoadingProcessBlock
     
@@ -157,6 +165,15 @@ public :
     
     //## auto_generated
     void _clearItsDockingProcessBlock_2();
+    
+    //## auto_generated
+    void __setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    void _setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    void _clearItsDockingProcessBlock_3();
     
     //## auto_generated
     void __setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);

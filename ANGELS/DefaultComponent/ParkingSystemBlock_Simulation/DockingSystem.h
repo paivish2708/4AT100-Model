@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ParkingSystemBlock_Simulation
 	Model Element	: DockingSystem
-//!	Generated Date	: Mon, 18, May 2020  
+//!	Generated Date	: Thu, 21, May 2020  
 	File Path	: DefaultComponent\ParkingSystemBlock_Simulation\DockingSystem.h
 *********************************************************************/
 
@@ -18,18 +18,11 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include "ANGELSPkg.h"
+#include "DockingSystemPkg.h"
 //## link itsANGELS
 class ANGELS;
 
-//## auto_generated
-class DockingSystem;
-
-//## package ANGELSPkg::DockingSystem
-
-
-
-//## package ANGELSPkg::DockingSystem
+//## package ANGELSPkg::DockingSystemPkg
 
 //## class DockingSystem
 class DockingSystem {

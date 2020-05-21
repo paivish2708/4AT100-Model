@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ParkingSystemBlock_Simulation
 	Model Element	: DockingProcessBlock
-//!	Generated Date	: Mon, 18, May 2020  
+//!	Generated Date	: Thu, 21, May 2020  
 	File Path	: DefaultComponent\ParkingSystemBlock_Simulation\DockingProcessBlock.cpp
 *********************************************************************/
 
@@ -21,22 +21,22 @@
 //## auto_generated
 #include "DockingProcessBlock.h"
 //#[ ignore
-#define ANGELSPkg_DockingProcessPkg_DockingProcessBlock_MoveTruck_SERIALIZE \
+#define ANGELSPkg_DockingPkg_DockingProcessBlock_MoveTruck_SERIALIZE \
     aomsmethod->addAttribute("SteeringAngle", x2String(SteeringAngle));\
     aomsmethod->addAttribute("speed", x2String(speed));\
     aomsmethod->addAttribute("DockingState", x2String(DockingState));
-#define ANGELSPkg_DockingProcessPkg_DockingProcessBlock_DockingProcessBlock_SERIALIZE OM_NO_OP
+#define ANGELSPkg_DockingPkg_DockingProcessBlock_DockingProcessBlock_SERIALIZE OM_NO_OP
 
-#define ANGELSPkg_DockingProcessPkg_DockingProcessBlock_CheckDockingStatus_SERIALIZE OM_NO_OP
+#define ANGELSPkg_DockingPkg_DockingProcessBlock_CheckDockingStatus_SERIALIZE OM_NO_OP
 
-#define ANGELSPkg_DockingProcessPkg_DockingProcessBlock_DockInput_SERIALIZE aomsmethod->addAttribute("DS", x2String(DS));
+#define ANGELSPkg_DockingPkg_DockingProcessBlock_DockInput_SERIALIZE aomsmethod->addAttribute("DS", x2String(DS));
 //#]
 
-//## package ANGELSPkg::DockingProcessPkg
+//## package ANGELSPkg::DockingPkg
 
 //## class DockingProcessBlock
 void DockingProcessBlock::MoveTruck(double SteeringAngle, double speed, double DockingState) {
-    NOTIFY_OPERATION(MoveTruck, MoveTruck(double,double,double), 3, ANGELSPkg_DockingProcessPkg_DockingProcessBlock_MoveTruck_SERIALIZE);
+    NOTIFY_OPERATION(MoveTruck, MoveTruck(double,double,double), 3, ANGELSPkg_DockingPkg_DockingProcessBlock_MoveTruck_SERIALIZE);
     //#[ operation MoveTruck(double,double,double)
     if (DockingStatus !=1)
     {SteeringAngle = SteerAngle;
@@ -84,6 +84,7 @@ Truck* DockingProcessBlock::getItsTruck() const {
 
 bool DockingProcessBlock::startBehavior() {
     bool done = true;
+    done &= itsChargingSystemBlock.startBehavior();
     done &= itsLoadingProcessBlock.startBehavior();
     done &= OMReactive::startBehavior();
     return done;
@@ -102,6 +103,16 @@ void DockingProcessBlock::cleanUpRelations() {
             NOTIFY_RELATION_CLEARED("itsANGELS");
             itsANGELS = NULL;
         }
+    if(itsChargingSystemBlock_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock_1");
+            DockingProcessBlock* p_DockingProcessBlock = itsChargingSystemBlock_1->getItsDockingProcessBlock();
+            if(p_DockingProcessBlock != NULL)
+                {
+                    itsChargingSystemBlock_1->__setItsDockingProcessBlock(NULL);
+                }
+            itsChargingSystemBlock_1 = NULL;
+        }
     if(itsDCOperator != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsDCOperator");
@@ -111,6 +122,16 @@ void DockingProcessBlock::cleanUpRelations() {
                     itsDCOperator->__setItsDockingProcessBlock_2(NULL);
                 }
             itsDCOperator = NULL;
+        }
+    if(itsDCOperator_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDCOperator_1");
+            DockingProcessBlock* p_DockingProcessBlock = itsDCOperator_1->getItsDockingProcessBlock_3();
+            if(p_DockingProcessBlock != NULL)
+                {
+                    itsDCOperator_1->__setItsDockingProcessBlock_3(NULL);
+                }
+            itsDCOperator_1 = NULL;
         }
 }
 
@@ -154,15 +175,20 @@ void DockingProcessBlock::_clearItsDCOperator() {
 }
 
 DockingProcessBlock::DockingProcessBlock(IOxfActive* theActiveContext) : DSInput(1), DockingStatus(1), DockingTime(10), Doorstatus(1), Speed(15), SteerAngle(10) {
-    NOTIFY_REACTIVE_CONSTRUCTOR(DockingProcessBlock, DockingProcessBlock(), 0, ANGELSPkg_DockingProcessPkg_DockingProcessBlock_DockingProcessBlock_SERIALIZE);
+    NOTIFY_REACTIVE_CONSTRUCTOR(DockingProcessBlock, DockingProcessBlock(), 0, ANGELSPkg_DockingPkg_DockingProcessBlock_DockingProcessBlock_SERIALIZE);
     setActiveContext(theActiveContext, false);
     {
         {
             itsLoadingProcessBlock.setShouldDelete(false);
         }
+        {
+            itsChargingSystemBlock.setShouldDelete(false);
+        }
     }
     itsANGELS = NULL;
+    itsChargingSystemBlock_1 = NULL;
     itsDCOperator = NULL;
+    itsDCOperator_1 = NULL;
     initStatechart();
 }
 
@@ -173,7 +199,7 @@ DockingProcessBlock::~DockingProcessBlock() {
 }
 
 void DockingProcessBlock::CheckDockingStatus() {
-    NOTIFY_OPERATION(CheckDockingStatus, CheckDockingStatus(), 0, ANGELSPkg_DockingProcessPkg_DockingProcessBlock_CheckDockingStatus_SERIALIZE);
+    NOTIFY_OPERATION(CheckDockingStatus, CheckDockingStatus(), 0, ANGELSPkg_DockingPkg_DockingProcessBlock_CheckDockingStatus_SERIALIZE);
     //#[ operation CheckDockingStatus()
     if (DockingStatus != 0)
     {   Speed = 0;
@@ -183,7 +209,7 @@ void DockingProcessBlock::CheckDockingStatus() {
 }
 
 void DockingProcessBlock::DockInput(double DS) {
-    NOTIFY_OPERATION(DockInput, DockInput(double), 1, ANGELSPkg_DockingProcessPkg_DockingProcessBlock_DockInput_SERIALIZE);
+    NOTIFY_OPERATION(DockInput, DockInput(double), 1, ANGELSPkg_DockingPkg_DockingProcessBlock_DockInput_SERIALIZE);
     //#[ operation DockInput(double)
     DSInput = DS;
     //#]
@@ -195,6 +221,7 @@ double DockingProcessBlock::getDSInput() const {
 
 void DockingProcessBlock::setDSInput(double p_DSInput) {
     DSInput = p_DSInput;
+    NOTIFY_SET_OPERATION;
 }
 
 double DockingProcessBlock::getDockingStatus() const {
@@ -237,18 +264,98 @@ void DockingProcessBlock::setSteerAngle(double p_SteerAngle) {
     SteerAngle = p_SteerAngle;
 }
 
+ChargingSystemBlock* DockingProcessBlock::getItsChargingSystemBlock() const {
+    return (ChargingSystemBlock*) &itsChargingSystemBlock;
+}
+
+ChargingSystemBlock* DockingProcessBlock::getItsChargingSystemBlock_1() const {
+    return itsChargingSystemBlock_1;
+}
+
+void DockingProcessBlock::setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(p_ChargingSystemBlock != NULL)
+        {
+            p_ChargingSystemBlock->_setItsDockingProcessBlock(this);
+        }
+    _setItsChargingSystemBlock_1(p_ChargingSystemBlock);
+}
+
+DCOperator* DockingProcessBlock::getItsDCOperator_1() const {
+    return itsDCOperator_1;
+}
+
+void DockingProcessBlock::setItsDCOperator_1(DCOperator* p_DCOperator) {
+    if(p_DCOperator != NULL)
+        {
+            p_DCOperator->_setItsDockingProcessBlock_3(this);
+        }
+    _setItsDCOperator_1(p_DCOperator);
+}
+
 LoadingProcessBlock* DockingProcessBlock::getItsLoadingProcessBlock() const {
     return (LoadingProcessBlock*) &itsLoadingProcessBlock;
+}
+
+void DockingProcessBlock::__setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock) {
+    itsChargingSystemBlock_1 = p_ChargingSystemBlock;
+    if(p_ChargingSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsChargingSystemBlock_1", p_ChargingSystemBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock_1");
+        }
+}
+
+void DockingProcessBlock::_setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(itsChargingSystemBlock_1 != NULL)
+        {
+            itsChargingSystemBlock_1->__setItsDockingProcessBlock(NULL);
+        }
+    __setItsChargingSystemBlock_1(p_ChargingSystemBlock);
+}
+
+void DockingProcessBlock::_clearItsChargingSystemBlock_1() {
+    NOTIFY_RELATION_CLEARED("itsChargingSystemBlock_1");
+    itsChargingSystemBlock_1 = NULL;
+}
+
+void DockingProcessBlock::__setItsDCOperator_1(DCOperator* p_DCOperator) {
+    itsDCOperator_1 = p_DCOperator;
+    if(p_DCOperator != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDCOperator_1", p_DCOperator, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDCOperator_1");
+        }
+}
+
+void DockingProcessBlock::_setItsDCOperator_1(DCOperator* p_DCOperator) {
+    if(itsDCOperator_1 != NULL)
+        {
+            itsDCOperator_1->__setItsDockingProcessBlock_3(NULL);
+        }
+    __setItsDCOperator_1(p_DCOperator);
+}
+
+void DockingProcessBlock::_clearItsDCOperator_1() {
+    NOTIFY_RELATION_CLEARED("itsDCOperator_1");
+    itsDCOperator_1 = NULL;
 }
 
 void DockingProcessBlock::setActiveContext(IOxfActive* theActiveContext, bool activeInstance) {
     OMReactive::setActiveContext(theActiveContext, activeInstance);
     {
         itsLoadingProcessBlock.setActiveContext(theActiveContext, false);
+        itsChargingSystemBlock.setActiveContext(theActiveContext, false);
     }
 }
 
 void DockingProcessBlock::destroy() {
+    itsChargingSystemBlock.destroy();
     itsLoadingProcessBlock.destroy();
     OMReactive::destroy();
 }
@@ -270,7 +377,7 @@ IOxfReactive::TakeEventStatus DockingProcessBlock::rootState_processEvent() {
         // State ManualState
         case ManualState:
         {
-            if(IS_EVENT_TYPE_OF(Autonomousmode_DockingProcessPkg_ANGELSPkg_id))
+            if(IS_EVENT_TYPE_OF(Autonomousmode_DockingPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("1");
                     NOTIFY_STATE_EXITED("ROOT.ManualState");
@@ -286,7 +393,7 @@ IOxfReactive::TakeEventStatus DockingProcessBlock::rootState_processEvent() {
         // State AutonomousState
         case AutonomousState:
         {
-            if(IS_EVENT_TYPE_OF(StartDockingProcedure_DockingProcessPkg_ANGELSPkg_id))
+            if(IS_EVENT_TYPE_OF(StartDockingProcedure_DockingPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("2");
                     NOTIFY_STATE_EXITED("ROOT.AutonomousState");
@@ -303,7 +410,7 @@ IOxfReactive::TakeEventStatus DockingProcessBlock::rootState_processEvent() {
         // State MoveTheTruck
         case MoveTheTruck:
         {
-            if(IS_EVENT_TYPE_OF(EndDocking_DockingProcessPkg_ANGELSPkg_id))
+            if(IS_EVENT_TYPE_OF(EndDocking_DockingPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("6");
                     switch (Docking_subState) {
@@ -367,7 +474,7 @@ IOxfReactive::TakeEventStatus DockingProcessBlock::rootState_processEvent() {
         // State BeginMovement
         case BeginMovement:
         {
-            if(IS_EVENT_TYPE_OF(BeginTruckMovement_DockingProcessPkg_ANGELSPkg_id))
+            if(IS_EVENT_TYPE_OF(BeginTruckMovement_DockingPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("4");
                     NOTIFY_STATE_EXITED("ROOT.Docking.BeginMovement");
@@ -441,6 +548,18 @@ void OMAnimatedDockingProcessBlock::serializeRelations(AOMSRelations* aomsRelati
     if(myReal->itsANGELS)
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS);
+        }
+    aomsRelations->addRelation("itsDCOperator_1", false, true);
+    if(myReal->itsDCOperator_1)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDCOperator_1);
+        }
+    aomsRelations->addRelation("itsChargingSystemBlock", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsChargingSystemBlock);
+    aomsRelations->addRelation("itsChargingSystemBlock_1", false, true);
+    if(myReal->itsChargingSystemBlock_1)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsChargingSystemBlock_1);
         }
 }
 
@@ -520,7 +639,7 @@ void OMAnimatedDockingProcessBlock::AutonomousState_serializeStates(AOMSState* a
 }
 //#]
 
-IMPLEMENT_REACTIVE_META_P(DockingProcessBlock, ANGELSPkg_DockingProcessPkg, ANGELSPkg::DockingProcessPkg, false, OMAnimatedDockingProcessBlock)
+IMPLEMENT_REACTIVE_META_P(DockingProcessBlock, ANGELSPkg_DockingPkg, ANGELSPkg::DockingPkg, false, OMAnimatedDockingProcessBlock)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

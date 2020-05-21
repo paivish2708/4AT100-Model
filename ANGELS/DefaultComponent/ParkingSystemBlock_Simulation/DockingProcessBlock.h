@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ParkingSystemBlock_Simulation
 	Model Element	: DockingProcessBlock
-//!	Generated Date	: Mon, 18, May 2020  
+//!	Generated Date	: Thu, 21, May 2020  
 	File Path	: DefaultComponent\ParkingSystemBlock_Simulation\DockingProcessBlock.h
 *********************************************************************/
 
@@ -28,7 +28,9 @@
 //## classInstance itsTruck
 #include "Truck.h"
 //## auto_generated
-#include "DockingProcessPkg.h"
+#include "DockingPkg.h"
+//## classInstance itsChargingSystemBlock
+#include "ChargingSystemBlock.h"
 //## classInstance itsLoadingProcessBlock
 #include "LoadingProcessBlock.h"
 //## link itsDCOperator
@@ -37,7 +39,7 @@ class DCOperator;
 //## link itsANGELS
 class ANGELS;
 
-//## package ANGELSPkg::DockingProcessPkg
+//## package ANGELSPkg::DockingPkg
 
 //## class DockingProcessBlock
 class DockingProcessBlock : public OMReactive {
@@ -158,6 +160,21 @@ public :
     void setSteerAngle(double p_SteerAngle);
     
     //## auto_generated
+    ChargingSystemBlock* getItsChargingSystemBlock() const;
+    
+    //## auto_generated
+    ChargingSystemBlock* getItsChargingSystemBlock_1() const;
+    
+    //## auto_generated
+    void setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
+    DCOperator* getItsDCOperator_1() const;
+    
+    //## auto_generated
+    void setItsDCOperator_1(DCOperator* p_DCOperator);
+    
+    //## auto_generated
     LoadingProcessBlock* getItsLoadingProcessBlock() const;
 
 protected :
@@ -176,12 +193,36 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
+    ChargingSystemBlock itsChargingSystemBlock;		//## classInstance itsChargingSystemBlock
+    
+    ChargingSystemBlock* itsChargingSystemBlock_1;		//## link itsChargingSystemBlock_1
+    
+    DCOperator* itsDCOperator_1;		//## link itsDCOperator_1
+    
     LoadingProcessBlock itsLoadingProcessBlock;		//## classInstance itsLoadingProcessBlock
     
     Truck itsTruck;		//## classInstance itsTruck
 
 public :
 
+    //## auto_generated
+    void __setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
+    void _setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
+    void _clearItsChargingSystemBlock_1();
+    
+    //## auto_generated
+    void __setItsDCOperator_1(DCOperator* p_DCOperator);
+    
+    //## auto_generated
+    void _setItsDCOperator_1(DCOperator* p_DCOperator);
+    
+    //## auto_generated
+    void _clearItsDCOperator_1();
+    
     //## auto_generated
     void setActiveContext(IOxfActive* theActiveContext, bool activeInstance);
     

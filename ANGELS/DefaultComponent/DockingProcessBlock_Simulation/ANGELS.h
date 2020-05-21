@@ -35,18 +35,12 @@
 #include "Collision_Avoidance.h"
 //## classInstance itsCollision_Detection_2
 #include "Collision_Detection.h"
-//## classInstance itsCommunicationSystemBlock
-#include "CommunicationSystemBlock.h"
 //## classInstance itsDockingProcessBlock
 #include "DockingProcessBlock.h"
 //## classInstance itsLoadingProcessBlock
 #include "LoadingProcessBlock.h"
-//## classInstance itsLocalisation_System_1
-#include "Localisation_System.h"
 //## classInstance itsParkingSystemBlock
 #include "ParkingSystemBlock.h"
-//## classInstance itsTruck_1
-#include "Truck.h"
 //## link itsChargingInfrastructure
 class ChargingInfrastructure;
 
@@ -79,6 +73,9 @@ class Obstacle;
 
 //## link itsSafetyStandards
 class SafetyStandards;
+
+//## link itsTruck
+class Truck;
 
 //## package ANGELSPkg
 
@@ -184,9 +181,6 @@ public :
     ChargingSystemBlock* getItsChargingSystemBlock() const;
     
     //## auto_generated
-    ChargingSystemBlock* getItsChargingSystemBlock_1() const;
-    
-    //## auto_generated
     Collision_Avoidance* getItsCollision_Avoidance_1() const;
     
     //## auto_generated
@@ -200,9 +194,6 @@ public :
     
     //## auto_generated
     Collision_Detection* getItsCollision_Detection_3() const;
-    
-    //## auto_generated
-    CommunicationSystemBlock* getItsCommunicationSystemBlock() const;
     
     //## auto_generated
     DC* getItsDC() const;
@@ -250,16 +241,10 @@ public :
     LoadingProcessBlock* getItsLoadingProcessBlock() const;
     
     //## auto_generated
-    LoadingProcessBlock* getItsLoadingProcessBlock_1() const;
-    
-    //## auto_generated
     LoadingSystem* getItsLoadingSystem() const;
     
     //## auto_generated
     void setItsLoadingSystem(LoadingSystem* p_LoadingSystem);
-    
-    //## auto_generated
-    Localisation_System* getItsLocalisation_System_1() const;
     
     //## auto_generated
     LocalizationArchitecture* getItsLocalizationArchitecture() const;
@@ -277,9 +262,6 @@ public :
     ParkingSystemBlock* getItsParkingSystemBlock() const;
     
     //## auto_generated
-    ParkingSystemBlock* getItsParkingSystemBlock_1() const;
-    
-    //## auto_generated
     SafetyStandards* getItsSafetyStandards() const;
     
     //## auto_generated
@@ -290,9 +272,6 @@ public :
     
     //## auto_generated
     void setItsTruck(Truck* p_Truck);
-    
-    //## auto_generated
-    Truck* getItsTruck_1() const;
     
     //## auto_generated
     virtual bool startBehavior();
@@ -334,8 +313,6 @@ protected :
     
     ChargingSystemBlock itsChargingSystemBlock;		//## classInstance itsChargingSystemBlock
     
-    ChargingSystemBlock itsChargingSystemBlock_1;		//## classInstance itsChargingSystemBlock_1
-    
     Collision_Avoidance itsCollision_Avoidance_1;		//## classInstance itsCollision_Avoidance_1
     
     Collision_Detection* itsCollision_Detection;		//## link itsCollision_Detection
@@ -343,8 +320,6 @@ protected :
     Collision_Detection itsCollision_Detection_2;		//## classInstance itsCollision_Detection_2
     
     Collision_Detection itsCollision_Detection_3;		//## classInstance itsCollision_Detection_3
-    
-    CommunicationSystemBlock itsCommunicationSystemBlock;		//## classInstance itsCommunicationSystemBlock
     
     DC* itsDC;		//## link itsDC
     
@@ -364,11 +339,7 @@ protected :
     
     LoadingProcessBlock itsLoadingProcessBlock;		//## classInstance itsLoadingProcessBlock
     
-    LoadingProcessBlock itsLoadingProcessBlock_1;		//## classInstance itsLoadingProcessBlock_1
-    
     LoadingSystem* itsLoadingSystem;		//## link itsLoadingSystem
-    
-    Localisation_System itsLocalisation_System_1;		//## classInstance itsLocalisation_System_1
     
     LocalizationArchitecture* itsLocalizationArchitecture;		//## link itsLocalizationArchitecture
     
@@ -376,13 +347,9 @@ protected :
     
     ParkingSystemBlock itsParkingSystemBlock;		//## classInstance itsParkingSystemBlock
     
-    ParkingSystemBlock itsParkingSystemBlock_1;		//## classInstance itsParkingSystemBlock_1
-    
     SafetyStandards* itsSafetyStandards;		//## link itsSafetyStandards
     
     Truck* itsTruck;		//## link itsTruck
-    
-    Truck itsTruck_1;		//## classInstance itsTruck_1
     
     ////    Framework operations    ////
 

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ParkingSystemBlock_Simulation
 	Model Element	: ANGELS
-//!	Generated Date	: Mon, 18, May 2020  
+//!	Generated Date	: Thu, 21, May 2020  
 	File Path	: DefaultComponent\ParkingSystemBlock_Simulation\ANGELS.cpp
 *********************************************************************/
 
@@ -36,6 +36,8 @@
 #include "Obstacle.h"
 //## link itsSafetyStandards
 #include "SafetyStandards.h"
+//## link itsTruck
+#include "Truck.h"
 //#[ ignore
 #define ANGELSPkg_ANGELS_ANGELS_SERIALIZE OM_NO_OP
 //#]
@@ -48,28 +50,19 @@ ANGELS::ANGELS(IOxfActive* theActiveContext) : ChargeState(15), LoadingTime(0), 
     setActiveContext(theActiveContext, false);
     {
         {
-            itsLoadingProcessBlock.setShouldDelete(false);
+            itsChargingSystemBlock.setShouldDelete(false);
         }
         {
             itsDockingProcessBlock.setShouldDelete(false);
         }
         {
-            itsParkingSystemBlock.setShouldDelete(false);
-        }
-        {
-            itsChargingSystemBlock.setShouldDelete(false);
-        }
-        {
-            itsChargingSystemBlock_1.setShouldDelete(false);
-        }
-        {
             itsDockingProcessBlock_1.setShouldDelete(false);
         }
         {
-            itsLoadingProcessBlock_1.setShouldDelete(false);
+            itsLoadingProcessBlock.setShouldDelete(false);
         }
         {
-            itsParkingSystemBlock_1.setShouldDelete(false);
+            itsParkingSystemBlock.setShouldDelete(false);
         }
     }
     itsChargingInfrastructure = NULL;
@@ -205,10 +198,6 @@ ChargingSystemBlock* ANGELS::getItsChargingSystemBlock() const {
     return (ChargingSystemBlock*) &itsChargingSystemBlock;
 }
 
-ChargingSystemBlock* ANGELS::getItsChargingSystemBlock_1() const {
-    return (ChargingSystemBlock*) &itsChargingSystemBlock_1;
-}
-
 Collision_Avoidance* ANGELS::getItsCollision_Avoidance_1() const {
     return (Collision_Avoidance*) &itsCollision_Avoidance_1;
 }
@@ -231,10 +220,6 @@ Collision_Detection* ANGELS::getItsCollision_Detection_2() const {
 
 Collision_Detection* ANGELS::getItsCollision_Detection_3() const {
     return (Collision_Detection*) &itsCollision_Detection_3;
-}
-
-CommunicationSystemBlock* ANGELS::getItsCommunicationSystemBlock() const {
-    return (CommunicationSystemBlock*) &itsCommunicationSystemBlock;
 }
 
 DC* ANGELS::getItsDC() const {
@@ -321,10 +306,6 @@ LoadingProcessBlock* ANGELS::getItsLoadingProcessBlock() const {
     return (LoadingProcessBlock*) &itsLoadingProcessBlock;
 }
 
-LoadingProcessBlock* ANGELS::getItsLoadingProcessBlock_1() const {
-    return (LoadingProcessBlock*) &itsLoadingProcessBlock_1;
-}
-
 LoadingSystem* ANGELS::getItsLoadingSystem() const {
     return itsLoadingSystem;
 }
@@ -335,10 +316,6 @@ void ANGELS::setItsLoadingSystem(LoadingSystem* p_LoadingSystem) {
             p_LoadingSystem->_setItsANGELS_1(this);
         }
     _setItsLoadingSystem(p_LoadingSystem);
-}
-
-Localisation_System* ANGELS::getItsLocalisation_System_1() const {
-    return (Localisation_System*) &itsLocalisation_System_1;
 }
 
 LocalizationArchitecture* ANGELS::getItsLocalizationArchitecture() const {
@@ -369,10 +346,6 @@ ParkingSystemBlock* ANGELS::getItsParkingSystemBlock() const {
     return (ParkingSystemBlock*) &itsParkingSystemBlock;
 }
 
-ParkingSystemBlock* ANGELS::getItsParkingSystemBlock_1() const {
-    return (ParkingSystemBlock*) &itsParkingSystemBlock_1;
-}
-
 SafetyStandards* ANGELS::getItsSafetyStandards() const {
     return itsSafetyStandards;
 }
@@ -397,20 +370,13 @@ void ANGELS::setItsTruck(Truck* p_Truck) {
     _setItsTruck(p_Truck);
 }
 
-Truck* ANGELS::getItsTruck_1() const {
-    return (Truck*) &itsTruck_1;
-}
-
 bool ANGELS::startBehavior() {
     bool done = true;
     done &= itsChargingSystemBlock.startBehavior();
-    done &= itsChargingSystemBlock_1.startBehavior();
     done &= itsDockingProcessBlock.startBehavior();
     done &= itsDockingProcessBlock_1.startBehavior();
     done &= itsLoadingProcessBlock.startBehavior();
-    done &= itsLoadingProcessBlock_1.startBehavior();
     done &= itsParkingSystemBlock.startBehavior();
-    done &= itsParkingSystemBlock_1.startBehavior();
     done &= OMReactive::startBehavior();
     return done;
 }
@@ -876,26 +842,20 @@ void ANGELS::_clearItsTruck() {
 void ANGELS::setActiveContext(IOxfActive* theActiveContext, bool activeInstance) {
     OMReactive::setActiveContext(theActiveContext, activeInstance);
     {
-        itsLoadingProcessBlock.setActiveContext(theActiveContext, false);
-        itsDockingProcessBlock.setActiveContext(theActiveContext, false);
-        itsParkingSystemBlock.setActiveContext(theActiveContext, false);
         itsChargingSystemBlock.setActiveContext(theActiveContext, false);
-        itsChargingSystemBlock_1.setActiveContext(theActiveContext, false);
+        itsDockingProcessBlock.setActiveContext(theActiveContext, false);
         itsDockingProcessBlock_1.setActiveContext(theActiveContext, false);
-        itsLoadingProcessBlock_1.setActiveContext(theActiveContext, false);
-        itsParkingSystemBlock_1.setActiveContext(theActiveContext, false);
+        itsLoadingProcessBlock.setActiveContext(theActiveContext, false);
+        itsParkingSystemBlock.setActiveContext(theActiveContext, false);
     }
 }
 
 void ANGELS::destroy() {
     itsChargingSystemBlock.destroy();
-    itsChargingSystemBlock_1.destroy();
     itsDockingProcessBlock.destroy();
     itsDockingProcessBlock_1.destroy();
     itsLoadingProcessBlock.destroy();
-    itsLoadingProcessBlock_1.destroy();
     itsParkingSystemBlock.destroy();
-    itsParkingSystemBlock_1.destroy();
     OMReactive::destroy();
 }
 
@@ -919,24 +879,10 @@ void OMAnimatedANGELS::serializeAttributes(AOMSAttributes* aomsAttributes) const
 void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
     aomsRelations->addRelation("itsCollision_Avoidance_1", true, true);
     aomsRelations->ADD_ITEM(&myReal->itsCollision_Avoidance_1);
-    aomsRelations->addRelation("itsLoadingProcessBlock", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsLoadingProcessBlock);
-    aomsRelations->addRelation("itsCommunicationSystemBlock", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCommunicationSystemBlock);
     aomsRelations->addRelation("itsCollision_Detection_2", true, true);
     aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_2);
-    aomsRelations->addRelation("itsDockingProcessBlock", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsDockingProcessBlock);
-    aomsRelations->addRelation("itsLocalisation_System_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsLocalisation_System_1);
     aomsRelations->addRelation("itsCollision_Detection_3", true, true);
     aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_3);
-    aomsRelations->addRelation("itsParkingSystemBlock", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsParkingSystemBlock);
-    aomsRelations->addRelation("itsTruck_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsTruck_1);
-    aomsRelations->addRelation("itsChargingSystemBlock", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsChargingSystemBlock);
     aomsRelations->addRelation("itsEnvironment", false, true);
     if(myReal->itsEnvironment)
         {
@@ -992,12 +938,6 @@ void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
         {
             aomsRelations->ADD_ITEM(myReal->itsDriver);
         }
-    aomsRelations->addRelation("itsChargingSystemBlock_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsChargingSystemBlock_1);
-    aomsRelations->addRelation("itsDockingProcessBlock_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsDockingProcessBlock_1);
-    aomsRelations->addRelation("itsLoadingProcessBlock_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsLoadingProcessBlock_1);
     aomsRelations->addRelation("itsTruck", false, true);
     if(myReal->itsTruck)
         {
@@ -1008,8 +948,16 @@ void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
         {
             aomsRelations->ADD_ITEM(myReal->itsCollision_Detection);
         }
-    aomsRelations->addRelation("itsParkingSystemBlock_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsParkingSystemBlock_1);
+    aomsRelations->addRelation("itsChargingSystemBlock", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsChargingSystemBlock);
+    aomsRelations->addRelation("itsDockingProcessBlock", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsDockingProcessBlock);
+    aomsRelations->addRelation("itsDockingProcessBlock_1", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsDockingProcessBlock_1);
+    aomsRelations->addRelation("itsLoadingProcessBlock", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsLoadingProcessBlock);
+    aomsRelations->addRelation("itsParkingSystemBlock", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsParkingSystemBlock);
 }
 //#]
 

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ParkingSystemBlock_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Mon, 18, May 2020  
+//!	Generated Date	: Thu, 21, May 2020  
 	File Path	: DefaultComponent\ParkingSystemBlock_Simulation\DCOperator.cpp
 *********************************************************************/
 
@@ -39,6 +39,7 @@ DCOperator::DCOperator() {
     itsDockingProcessBlock = NULL;
     itsDockingProcessBlock_1 = NULL;
     itsDockingProcessBlock_2 = NULL;
+    itsDockingProcessBlock_3 = NULL;
     itsLoadingProcessBlock = NULL;
     itsParkingSystemBlock = NULL;
 }
@@ -132,6 +133,18 @@ void DCOperator::setItsDockingProcessBlock_2(DockingProcessBlock* p_DockingProce
     _setItsDockingProcessBlock_2(p_DockingProcessBlock);
 }
 
+DockingProcessBlock* DCOperator::getItsDockingProcessBlock_3() const {
+    return itsDockingProcessBlock_3;
+}
+
+void DCOperator::setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProcessBlock) {
+    if(p_DockingProcessBlock != NULL)
+        {
+            p_DockingProcessBlock->_setItsDCOperator_1(this);
+        }
+    _setItsDockingProcessBlock_3(p_DockingProcessBlock);
+}
+
 LoadingProcessBlock* DCOperator::getItsLoadingProcessBlock() const {
     return itsLoadingProcessBlock;
 }
@@ -201,6 +214,16 @@ void DCOperator::cleanUpRelations() {
                     itsDockingProcessBlock_2->__setItsDCOperator(NULL);
                 }
             itsDockingProcessBlock_2 = NULL;
+        }
+    if(itsDockingProcessBlock_3 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_3");
+            DCOperator* p_DCOperator = itsDockingProcessBlock_3->getItsDCOperator_1();
+            if(p_DCOperator != NULL)
+                {
+                    itsDockingProcessBlock_3->__setItsDCOperator_1(NULL);
+                }
+            itsDockingProcessBlock_3 = NULL;
         }
     if(itsLoadingProcessBlock != NULL)
         {
@@ -299,6 +322,31 @@ void DCOperator::_clearItsDockingProcessBlock_2() {
     itsDockingProcessBlock_2 = NULL;
 }
 
+void DCOperator::__setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProcessBlock) {
+    itsDockingProcessBlock_3 = p_DockingProcessBlock;
+    if(p_DockingProcessBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcessBlock_3", p_DockingProcessBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_3");
+        }
+}
+
+void DCOperator::_setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProcessBlock) {
+    if(itsDockingProcessBlock_3 != NULL)
+        {
+            itsDockingProcessBlock_3->__setItsDCOperator_1(NULL);
+        }
+    __setItsDockingProcessBlock_3(p_DockingProcessBlock);
+}
+
+void DCOperator::_clearItsDockingProcessBlock_3() {
+    NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_3");
+    itsDockingProcessBlock_3 = NULL;
+}
+
 void DCOperator::__setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock) {
     itsLoadingProcessBlock = p_LoadingProcessBlock;
     if(p_LoadingProcessBlock != NULL)
@@ -391,6 +439,11 @@ void OMAnimatedDCOperator::serializeRelations(AOMSRelations* aomsRelations) cons
     if(myReal->itsParkingSystemBlock)
         {
             aomsRelations->ADD_ITEM(myReal->itsParkingSystemBlock);
+        }
+    aomsRelations->addRelation("itsDockingProcessBlock_3", false, true);
+    if(myReal->itsDockingProcessBlock_3)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcessBlock_3);
         }
 }
 //#]

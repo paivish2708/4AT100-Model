@@ -29,10 +29,18 @@
 #include "Truck.h"
 //## auto_generated
 #include "DockingPkg.h"
+//## classInstance itsChargingSystemBlock_2
+#include "ChargingSystemBlock.h"
 //## classInstance itsLoadingProcessBlock
 #include "LoadingProcessBlock.h"
+//## classInstance itsParkingSystemBlock
+#include "ParkingSystemBlock.h"
 //## link itsDCOperator
 class DCOperator;
+
+//#[ ignore
+#define OMAnim_ANGELSPkg_DockingPkg_DockingProcessBlock_setDSInput_double_ARGS_DECLARATION double p_DSInput;
+//#]
 
 //## link itsANGELS
 class ANGELS;
@@ -158,6 +166,15 @@ public :
     void setSteerAngle(double p_SteerAngle);
     
     //## auto_generated
+    ChargingSystemBlock* getItsChargingSystemBlock_1() const;
+    
+    //## auto_generated
+    void setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
+    ChargingSystemBlock* getItsChargingSystemBlock_2() const;
+    
+    //## auto_generated
     DCOperator* getItsDCOperator_1() const;
     
     //## auto_generated
@@ -165,6 +182,9 @@ public :
     
     //## auto_generated
     LoadingProcessBlock* getItsLoadingProcessBlock() const;
+    
+    //## auto_generated
+    ParkingSystemBlock* getItsParkingSystemBlock() const;
 
 protected :
 
@@ -182,14 +202,29 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
+    ChargingSystemBlock* itsChargingSystemBlock_1;		//## link itsChargingSystemBlock_1
+    
+    ChargingSystemBlock itsChargingSystemBlock_2;		//## classInstance itsChargingSystemBlock_2
+    
     DCOperator* itsDCOperator_1;		//## link itsDCOperator_1
     
     LoadingProcessBlock itsLoadingProcessBlock;		//## classInstance itsLoadingProcessBlock
+    
+    ParkingSystemBlock itsParkingSystemBlock;		//## classInstance itsParkingSystemBlock
     
     Truck itsTruck;		//## classInstance itsTruck
 
 public :
 
+    //## auto_generated
+    void __setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
+    void _setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
+    void _clearItsChargingSystemBlock_1();
+    
     //## auto_generated
     void __setItsDCOperator_1(DCOperator* p_DCOperator);
     
@@ -274,9 +309,13 @@ protected :
 };
 
 #ifdef _OMINSTRUMENT
+DECLARE_OPERATION_CLASS(ANGELSPkg_DockingPkg_DockingProcessBlock_setDSInput_double)
+
 //#[ ignore
 class OMAnimatedDockingProcessBlock : virtual public AOMInstance {
     DECLARE_REACTIVE_META(DockingProcessBlock, OMAnimatedDockingProcessBlock)
+    
+    DECLARE_META_OP(ANGELSPkg_DockingPkg_DockingProcessBlock_setDSInput_double)
     
     ////    Framework operations    ////
     

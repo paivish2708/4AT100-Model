@@ -1,8 +1,8 @@
 [Op Calls]
 [Events]
-ParkingSystemBlock[0]->GEN(ChangeMode())`ParkingSystemBlock
-ParkingSystemBlock[0]->GEN(EndParking())`ParkingSystemBlock
-ParkingSystemBlock[0]->GEN(StartParking())`ParkingSystemBlock
-ParkingSystemBlock[0]->GEN(InitiateParkingProcess())`ParkingSystemBlock
-ParkingSystemBlock[0]->GEN(AlertDCManager())`ParkingSystemBlock
+DockingProcessBlock[0]->GEN(EndDocking())`ANGELSPkg::DockingPkg::DockingProcessBlock
+DockingProcessBlock[0]->GEN(BeginTruckMovement())`ANGELSPkg::DockingPkg::DockingProcessBlock
+DockingProcessBlock[0]->GEN(DockInput(2))`ANGELSPkg::DockingPkg::DockingProcessBlock
+DockingProcessBlock[0]->GEN(StartDockingProcedure())`ANGELSPkg::DockingPkg::DockingProcessBlock
+DockingProcessBlock[0]->GEN(Autonomousmode())`ANGELSPkg::DockingPkg::DockingProcessBlock
 [Breakpoints]

@@ -16,6 +16,8 @@
 
 //## auto_generated
 #include "LoadingProcessBlock.h"
+//## link itsChargingSystemBlock
+#include "ChargingSystemBlock.h"
 //## link itsDC
 #include "DC.h"
 //## link itsDCOperator
@@ -36,6 +38,12 @@
 LoadingProcessBlock::LoadingProcessBlock(IOxfActive* theActiveContext) : Doorstatus(0), LoadingTime(0) {
     NOTIFY_REACTIVE_CONSTRUCTOR(LoadingProcessBlock, LoadingProcessBlock(), 0, ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_LoadingProcessBlock_SERIALIZE);
     setActiveContext(theActiveContext, false);
+    {
+        {
+            itsParkingSystemBlock.setShouldDelete(false);
+        }
+    }
+    itsChargingSystemBlock = NULL;
     itsDC = NULL;
     itsDCOperator = NULL;
     initStatechart();
@@ -86,6 +94,18 @@ void LoadingProcessBlock::setLoadingTime(int p_LoadingTime) {
     LoadingTime = p_LoadingTime;
 }
 
+ChargingSystemBlock* LoadingProcessBlock::getItsChargingSystemBlock() const {
+    return itsChargingSystemBlock;
+}
+
+void LoadingProcessBlock::setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(p_ChargingSystemBlock != NULL)
+        {
+            p_ChargingSystemBlock->_setItsLoadingProcessBlock(this);
+        }
+    _setItsChargingSystemBlock(p_ChargingSystemBlock);
+}
+
 DC* LoadingProcessBlock::getItsDC() const {
     return itsDC;
 }
@@ -110,12 +130,17 @@ void LoadingProcessBlock::setItsDCOperator(DCOperator* p_DCOperator) {
     _setItsDCOperator(p_DCOperator);
 }
 
+ParkingSystemBlock* LoadingProcessBlock::getItsParkingSystemBlock() const {
+    return (ParkingSystemBlock*) &itsParkingSystemBlock;
+}
+
 Truck* LoadingProcessBlock::getItsTruck() const {
     return (Truck*) &itsTruck;
 }
 
 bool LoadingProcessBlock::startBehavior() {
     bool done = true;
+    done &= itsParkingSystemBlock.startBehavior();
     done &= OMReactive::startBehavior();
     return done;
 }
@@ -128,6 +153,16 @@ void LoadingProcessBlock::initStatechart() {
 }
 
 void LoadingProcessBlock::cleanUpRelations() {
+    if(itsChargingSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
+            LoadingProcessBlock* p_LoadingProcessBlock = itsChargingSystemBlock->getItsLoadingProcessBlock();
+            if(p_LoadingProcessBlock != NULL)
+                {
+                    itsChargingSystemBlock->__setItsLoadingProcessBlock(NULL);
+                }
+            itsChargingSystemBlock = NULL;
+        }
     if(itsDC != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsDC");
@@ -162,6 +197,31 @@ bool LoadingProcessBlock::cancelTimeout(const IOxfTimeout* arg) {
             res = true;
         }
     return res;
+}
+
+void LoadingProcessBlock::__setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    itsChargingSystemBlock = p_ChargingSystemBlock;
+    if(p_ChargingSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsChargingSystemBlock", p_ChargingSystemBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
+        }
+}
+
+void LoadingProcessBlock::_setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(itsChargingSystemBlock != NULL)
+        {
+            itsChargingSystemBlock->__setItsLoadingProcessBlock(NULL);
+        }
+    __setItsChargingSystemBlock(p_ChargingSystemBlock);
+}
+
+void LoadingProcessBlock::_clearItsChargingSystemBlock() {
+    NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
+    itsChargingSystemBlock = NULL;
 }
 
 void LoadingProcessBlock::__setItsDC(DC* p_DC) {
@@ -212,6 +272,18 @@ void LoadingProcessBlock::_setItsDCOperator(DCOperator* p_DCOperator) {
 void LoadingProcessBlock::_clearItsDCOperator() {
     NOTIFY_RELATION_CLEARED("itsDCOperator");
     itsDCOperator = NULL;
+}
+
+void LoadingProcessBlock::setActiveContext(IOxfActive* theActiveContext, bool activeInstance) {
+    OMReactive::setActiveContext(theActiveContext, activeInstance);
+    {
+        itsParkingSystemBlock.setActiveContext(theActiveContext, false);
+    }
+}
+
+void LoadingProcessBlock::destroy() {
+    itsParkingSystemBlock.destroy();
+    OMReactive::destroy();
 }
 
 void LoadingProcessBlock::rootState_entDef() {
@@ -404,6 +476,13 @@ void OMAnimatedLoadingProcessBlock::serializeRelations(AOMSRelations* aomsRelati
         }
     aomsRelations->addRelation("itsTruck", true, true);
     aomsRelations->ADD_ITEM(&myReal->itsTruck);
+    aomsRelations->addRelation("itsParkingSystemBlock", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsParkingSystemBlock);
+    aomsRelations->addRelation("itsChargingSystemBlock", false, true);
+    if(myReal->itsChargingSystemBlock)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsChargingSystemBlock);
+        }
 }
 
 void OMAnimatedLoadingProcessBlock::rootState_serializeStates(AOMSState* aomsState) const {
