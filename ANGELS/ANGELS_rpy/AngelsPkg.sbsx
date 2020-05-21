@@ -11,10 +11,10 @@
 			<_id type="a">GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ANGELSPkg</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::12:50:51</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:59:37</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.21.2020::13:59:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.21.2020::13:59:14</_modifiedTime>
 			<_lastID type="a">13</_lastID>
-			<weakCGTime type="a">5.18.2020::12:50:51</weakCGTime>
+			<weakCGTime type="a">5.21.2020::13:59:14</weakCGTime>
 			<strongCGTime type="a">5.14.2020::12:41:19</strongCGTime>
 			<_defaultComposite type="s">GUID 6b6ca664-289a-46cc-8bec-9fb31e27b22c</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -41,7 +41,7 @@
 			</AggregatesList>
 		</ISubsystem>
 		<ISubsystem type="e">
-			<fileName type="a">DockingProcessPkg</fileName>
+			<fileName type="a">DockingPkg</fileName>
 			<_id type="a">GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</_id>
 		</ISubsystem>
 		<ISubsystem type="e">
@@ -474,8 +474,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::10:44:22</_modifiedTime>
-			<_lastModifiedTime type="a">5.18.2020::10:44:22</_lastModifiedTime>
+			<_modifiedTime type="a">5.21.2020::13:59:31</_modifiedTime>
+			<_lastModifiedTime type="a">5.21.2020::13:59:31</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -904,8 +904,8 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\DockingSystem.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::DockingSystem</_hsubsystem>
+					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::DockingSystemPkg</_hsubsystem>
 					<_hname type="a">DockingSystem</_hname>
 					<_hid type="a">GUID edf71c2f-534d-415b-8dea-e7709fb0e353</_hid>
 				</IHandle>
@@ -913,7 +913,7 @@
 			<m_pParent type="s">GUID 25cf6b56-5150-498d-9808-c996a346bd05</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">DockingSystem::DockingSystem</m_str>
+					<m_str type="a">DockingSystemPkg::DockingSystem</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2110,8 +2110,8 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\DockingSystem.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::DockingSystem</_hsubsystem>
+					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::DockingSystemPkg</_hsubsystem>
 					<_hclass type="a">DockingSystem</_hclass>
 					<_hname type="a">itsANGELS_1</_hname>
 					<_hid type="a">GUID b42212a4-1baf-4eb7-b2fd-95f28fe4f28c</_hid>
@@ -4287,7 +4287,7 @@
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
 		</CGIInheritance>
 		<ISubsystem type="e">
-			<fileName type="a">DockingSystem</fileName>
+			<fileName type="a">DockingSystemPkg</fileName>
 			<_id type="a">GUID 9959afde-c6d9-42a2-9292-804607287d27</_id>
 		</ISubsystem>
 		<ISubsystem type="e">
@@ -4927,8 +4927,8 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\DockingProcessPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::DockingProcessPkg</_hsubsystem>
+					<_hfilename type="a">.\DockingPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::DockingPkg</_hsubsystem>
 					<_hname type="a">DockingProcessBlock</_hname>
 					<_hid type="a">GUID 419eb000-a805-48d7-8cc1-6b18694ad318</_hid>
 				</IClassifierHandle>
@@ -5104,8 +5104,8 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\DockingSystem.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::DockingSystem</_hsubsystem>
+					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::DockingSystemPkg</_hsubsystem>
 					<_hname type="a">DockingSystem</_hname>
 					<_hid type="a">GUID edf71c2f-534d-415b-8dea-e7709fb0e353</_hid>
 				</IClassifierHandle>
@@ -5113,8 +5113,8 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\DockingSystem.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::DockingSystem</_hsubsystem>
+					<_hfilename type="a">.\DockingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::DockingSystemPkg</_hsubsystem>
 					<_hclass type="a">DockingSystem</_hclass>
 					<_hname type="a">itsANGELS_1</_hname>
 					<_hid type="a">GUID b42212a4-1baf-4eb7-b2fd-95f28fe4f28c</_hid>
@@ -5379,8 +5379,8 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\DockingProcessPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::DockingProcessPkg</_hsubsystem>
+					<_hfilename type="a">.\DockingPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::DockingPkg</_hsubsystem>
 					<_hname type="a">DockingProcessBlock</_hname>
 					<_hid type="a">GUID 419eb000-a805-48d7-8cc1-6b18694ad318</_hid>
 				</IClassifierHandle>
