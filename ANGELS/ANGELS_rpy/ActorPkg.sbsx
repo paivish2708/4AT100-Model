@@ -11,10 +11,10 @@
 			<_id type="a">GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
-			<_modifiedTimeWeak type="a">5.21.2020::14:0:54</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.22.2020::20:47:4</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
 			<_lastID type="a">16</_lastID>
-			<weakCGTime type="a">5.21.2020::14:0:54</weakCGTime>
+			<weakCGTime type="a">5.22.2020::20:47:4</weakCGTime>
 			<strongCGTime type="a">5.14.2020::12:41:19</strongCGTime>
 			<_defaultComposite type="s">GUID fabbb408-de82-424e-8fce-216617ff1ef0</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -49,7 +49,7 @@
 			<_id type="a">GUID 7ff30776-c3a5-45fc-820c-bff3158c6232</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DC</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::12:14:49</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.22.2020::20:47:4</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -59,9 +59,9 @@
 					<_hid type="a">GUID ce9a3377-92ac-48bb-84b7-6803479e8f0d</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.18.2020::12:14:49</_modifiedTime>
+			<_modifiedTime type="a">5.22.2020::20:47:4</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">5.18.2020::12:14:49</weakCGTime>
+			<weakCGTime type="a">5.22.2020::20:47:4</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:28:56</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -74,6 +74,7 @@
 				<value>GUID ac06f0d6-df52-4164-843e-d08fc7c45e77</value>
 				<value>GUID 466af49a-abf7-4045-9de0-ed0a84ce3334</value>
 				<value>GUID c52aa628-c2e5-460d-a9a1-ea30a91c743a</value>
+				<value>GUID 7a62482e-49b7-4aec-8d14-2df8777e58b8</value>
 			</AggregatesList>
 		</IActor>
 		<IAssociationEnd type="e">
@@ -204,6 +205,35 @@
 					<_hclass type="a">ParkingSystemBlock</_hclass>
 					<_hname type="a">itsDC</_hname>
 					<_hid type="a">GUID 82611f97-d78e-4367-90c9-8d38fdbdf306</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 7a62482e-49b7-4aec-8d14-2df8777e58b8</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsDockingProcessBlock</_name>
+			<_modifiedTimeWeak type="a">5.22.2020::20:47:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.22.2020::20:47:4</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\DockingPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::DockingPkg</_hsubsystem>
+					<_hname type="a">DockingProcessBlock</_hname>
+					<_hid type="a">GUID 419eb000-a805-48d7-8cc1-6b18694ad318</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\DockingPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::DockingPkg</_hsubsystem>
+					<_hclass type="a">DockingProcessBlock</_hclass>
+					<_hname type="a">itsDC</_hname>
+					<_hid type="a">GUID 7b677e99-3e9b-42de-b546-fb8cbcfcc72a</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -605,7 +635,7 @@
 			<_id type="a">GUID 516c76cb-338f-40c3-a898-f904221cfb96</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::12:14:37</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.22.2020::20:47:18</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -615,9 +645,9 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.18.2020::12:14:37</_modifiedTime>
+			<_modifiedTime type="a">5.22.2020::20:47:18</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">5.18.2020::12:14:37</weakCGTime>
+			<weakCGTime type="a">5.22.2020::20:47:18</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:28:56</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -635,6 +665,7 @@
 				<value>GUID 9e10837a-5b5f-4012-88ec-eb8717576935</value>
 				<value>GUID e8849883-6318-4dc6-a945-cadb8cca76c4</value>
 				<value>GUID 75508adc-240a-4468-b70f-a587b16294ea</value>
+				<value>GUID 9cebf266-d665-4150-9129-c91ff38d62c3</value>
 			</AggregatesList>
 		</IActor>
 		<IInformationFlow type="e">
@@ -891,6 +922,35 @@
 					<_hclass type="a">ParkingSystemBlock</_hclass>
 					<_hname type="a">itsDriver</_hname>
 					<_hid type="a">GUID 6be444dd-53c1-470d-b647-e5a11b52d51f</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 9cebf266-d665-4150-9129-c91ff38d62c3</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsDockingProcessBlock_1</_name>
+			<_modifiedTimeWeak type="a">5.22.2020::20:47:18</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.22.2020::20:47:18</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\DockingPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::DockingPkg</_hsubsystem>
+					<_hname type="a">DockingProcessBlock</_hname>
+					<_hid type="a">GUID 419eb000-a805-48d7-8cc1-6b18694ad318</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\DockingPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::DockingPkg</_hsubsystem>
+					<_hclass type="a">DockingProcessBlock</_hclass>
+					<_hname type="a">itsDriver</_hname>
+					<_hid type="a">GUID daac86e3-12a3-4b8b-920f-cfa34932eafd</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>

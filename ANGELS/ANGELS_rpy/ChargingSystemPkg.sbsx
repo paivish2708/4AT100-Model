@@ -11,10 +11,10 @@
 			<_id type="a">GUID 8abba9a9-dec0-4547-b62d-d3de41f38a0a</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ChargingSystemPkg</_name>
-			<_modifiedTimeWeak type="a">5.21.2020::20:14:18</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.21.2020::20:33:39</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.22.2020::20:55:9</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.22.2020::20:55:9</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">5.21.2020::20:14:18</weakCGTime>
+			<weakCGTime type="a">5.22.2020::20:55:9</weakCGTime>
 			<strongCGTime type="a">4.30.2020::10:4:51</strongCGTime>
 			<_defaultComposite type="s">GUID 41c6160a-5be6-4a5a-ba95-61a59bad59f5</_defaultComposite>
 			<_eventsBaseID type="a">7401</_eventsBaseID>
@@ -368,8 +368,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.21.2020::20:41:56</_modifiedTime>
-			<_lastModifiedTime type="a">5.21.2020::20:41:56</_lastModifiedTime>
+			<_modifiedTime type="a">5.22.2020::20:55:20</_modifiedTime>
+			<_lastModifiedTime type="a">5.22.2020::20:55:20</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -434,8 +434,8 @@
 				<value>GUID ba9d1599-2bc2-42dd-bd02-08def7f1fbec</value>
 				<value>GUID 70b6d2a8-6f40-4552-b24a-21ffcc3e1473</value>
 				<value>GUID b5a8e01b-7c82-4af5-af2d-1c71fd3ff49d</value>
-				<value>GUID 1a3408fb-5267-45d5-8179-7a37758fa3df</value>
-				<value>GUID 725a7cdc-c4bb-4261-8578-2c84534fd4ba</value>
+				<value>GUID 8c817bb2-7dac-40c6-9519-c3538e0fc338</value>
+				<value>GUID 68f7faf6-48b7-4b85-a780-db30b69c08f3</value>
 			</AggregatesList>
 		</CGIClassChart>
 		<CGIClass type="e">
@@ -522,7 +522,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">3.81944 0 0 4.60606 20 20 </m_transform>
+			<m_transform type="a">3.81944 0 0 4.65909 20 20 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1455,21 +1455,21 @@
 			<m_specificType type="a">symmetric_type</m_specificType>
 		</CGIAssociationEnd>
 		<CGIClass type="e">
-			<_id type="a">GUID 1a3408fb-5267-45d5-8179-7a37758fa3df</_id>
+			<_id type="a">GUID 8c817bb2-7dac-40c6-9519-c3538e0fc338</_id>
 			<m_type type="a">87</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\DockingPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::DockingPkg</_hsubsystem>
-					<_hname type="a">DockingProcessBlock</_hname>
-					<_hid type="a">GUID 419eb000-a805-48d7-8cc1-6b18694ad318</_hid>
+					<_hfilename type="a">.\TruckPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::TruckPkg</_hsubsystem>
+					<_hname type="a">Truck</_hname>
+					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID ee8742a8-96ee-4c9c-877a-cec30f92314e</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">ANGELSPkg::DockingPkg::DockingProcessBlock</m_str>
+					<m_str type="a">ANGELSPkg::TruckPkg::Truck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1485,7 +1485,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.299339 0 0 0.123886 48.4013 408.242 </m_transform>
+			<m_transform type="a">0.184136 0 0 0.123886 39.6317 445.242 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1520,12 +1520,12 @@
 				</IRPYRawContainer>
 			</Operations>
 			<AggregatesList type="e">
-				<value>GUID 2084bec3-6da4-4d5c-9a97-312cd6b320ff</value>
-				<value>GUID 8817bde0-6486-4667-8946-d87e99b8451d</value>
+				<value>GUID 60d494b0-0b29-4611-a52d-a2e10280af34</value>
+				<value>GUID 7758bee9-d8bc-4b90-aa7d-cabe7b940762</value>
 			</AggregatesList>
 		</CGIClass>
 		<CGICompartment type="e">
-			<_id type="a">GUID 2084bec3-6da4-4d5c-9a97-312cd6b320ff</_id>
+			<_id type="a">GUID 60d494b0-0b29-4611-a52d-a2e10280af34</_id>
 			<m_name type="a">Attribute</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
@@ -1537,7 +1537,7 @@
 			</Items>
 		</CGICompartment>
 		<CGICompartment type="e">
-			<_id type="a">GUID 8817bde0-6486-4667-8946-d87e99b8451d</_id>
+			<_id type="a">GUID 7758bee9-d8bc-4b90-aa7d-cabe7b940762</_id>
 			<m_name type="a">Operation</m_name>
 			<m_displayOption type="a">Explicit</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
@@ -1549,16 +1549,12 @@
 			</Items>
 		</CGICompartment>
 		<CGIAssociationEnd type="e">
-			<_id type="a">GUID 725a7cdc-c4bb-4261-8578-2c84534fd4ba</_id>
-			<m_type type="a">36</m_type>
+			<_id type="a">GUID 68f7faf6-48b7-4b85-a780-db30b69c08f3</_id>
+			<m_type type="a">92</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
-					<_hm2Class type="a">IPart</_hm2Class>
-					<_hfilename type="a">.\DockingPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::DockingPkg</_hsubsystem>
-					<_hclass type="a">DockingProcessBlock</_hclass>
-					<_hname type="a">itsChargingSystemBlock_2</_hname>
-					<_hid type="a">GUID cc6ff289-4992-4573-997b-61c415a5e4d9</_hid>
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID e9d5907a-aaa5-4952-b07d-ad638b530fc8</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s"></m_pParent>
@@ -1580,9 +1576,9 @@
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_pSource type="s">GUID 1a3408fb-5267-45d5-8179-7a37758fa3df</m_pSource>
+			<m_pSource type="s">GUID e30d4d64-64c5-4ae9-9173-17f73a8682b1</m_pSource>
 			<m_sourceType type="a">'F'</m_sourceType>
-			<m_pTarget type="s">GUID e30d4d64-64c5-4ae9-9173-17f73a8682b1</m_pTarget>
+			<m_pTarget type="s">GUID 8c817bb2-7dac-40c6-9519-c3538e0fc338</m_pTarget>
 			<m_targetType type="a">'T'</m_targetType>
 			<m_direction type="a">' '</m_direction>
 			<m_rpn type="p">
@@ -1601,14 +1597,20 @@
 					<m_nOrientationCtrlPt type="a">7</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
-			<m_arrow type="a">1 248 343  </m_arrow>
+			<m_arrow type="a">1 91 386  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">2</m_line_style>
-			<m_SourcePort type="a">667 329 </m_SourcePort>
-			<m_TargetPort type="a">2 971 </m_TargetPort>
+			<m_SourcePort type="a">2 1321 </m_SourcePort>
+			<m_TargetPort type="a">279 329 </m_TargetPort>
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\TruckPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::TruckPkg</_hsubsystem>
+					<_hclass type="a">Truck</_hclass>
+					<_hname type="a">itsChargingSystemBlock</_hname>
+					<_hid type="a">GUID f9a9437e-089b-4685-baed-2ab4d2a08534</_hid>
 				</IAssociationEndHandle>
 			</m_pInverseModelObject>
 			<m_pInstance type="r">
@@ -1630,6 +1632,7 @@
 			<m_bShowQualifier2 type="a">1</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
+					<m_str type="a">itsChargingSystemBlock</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1641,13 +1644,12 @@
 					<m_position type="a">1 0 0  </m_position>
 					<m_nIdent type="a">2</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nVerticalSpacing type="a">-7</m_nVerticalSpacing>
-					<m_nOrientationCtrlPt type="a">4</m_nOrientationCtrlPt>
+					<m_nOrientationCtrlPt type="a">2</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsChargingSystemBlock_2</m_str>
+					<m_str type="a">itsTruck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1656,17 +1658,15 @@
 							<m_bgFlag type="a">0</m_bgFlag>
 						</IColor>
 					</m_color>
-					<m_position type="a">4 -6 -9  140 -9  140 5  -6 5  </m_position>
+					<m_position type="a">1 0 0  </m_position>
 					<m_nIdent type="a">3</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_transform type="a">1 0 0 1 103 361 </m_transform>
-					<m_nHorizontalSpacing type="a">-78</m_nHorizontalSpacing>
-					<m_nVerticalSpacing type="a">9</m_nVerticalSpacing>
-					<m_nOrientationCtrlPt type="a">2</m_nOrientationCtrlPt>
+					<m_nOrientationCtrlPt type="a">4</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_targetRole>
 			<m_sourceMultiplicity type="p">
 				<CGIText type="e">
+					<m_str type="a">1</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1678,8 +1678,7 @@
 					<m_position type="a">1 0 0  </m_position>
 					<m_nIdent type="a">4</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nVerticalSpacing type="a">-7</m_nVerticalSpacing>
-					<m_nOrientationCtrlPt type="a">6</m_nOrientationCtrlPt>
+					<m_nOrientationCtrlPt type="a">4</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_sourceMultiplicity>
 			<m_targetMultiplicity type="p">
@@ -1696,8 +1695,7 @@
 					<m_position type="a">1 0 0  </m_position>
 					<m_nIdent type="a">5</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nHorizontalSpacing type="a">-7</m_nHorizontalSpacing>
-					<m_nOrientationCtrlPt type="a">4</m_nOrientationCtrlPt>
+					<m_nOrientationCtrlPt type="a">6</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_targetMultiplicity>
 			<m_sourceQualifier type="p">
@@ -1732,7 +1730,7 @@
 					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_targetQualifier>
-			<m_specificType type="a">type_122</m_specificType>
+			<m_specificType type="a">symmetric_type</m_specificType>
 		</CGIAssociationEnd>
 		<IClass type="e">
 			<_id type="a">GUID 41c6160a-5be6-4a5a-ba95-61a59bad59f5</_id>
@@ -1766,16 +1764,16 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.21.2020::20:28:56</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.22.2020::20:55:20</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID 144a2d42-71ff-4c69-be8d-4de46139cd39</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.21.2020::20:28:56</_modifiedTime>
+			<_modifiedTime type="a">5.22.2020::20:55:20</_modifiedTime>
 			<_lastID type="a">3</_lastID>
-			<weakCGTime type="a">5.21.2020::20:28:56</weakCGTime>
+			<weakCGTime type="a">5.22.2020::20:55:20</weakCGTime>
 			<strongCGTime type="a">5.18.2020::12:10:59</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -1792,13 +1790,13 @@
 				<value>GUID 7ef07626-5fc4-4dde-850a-406271fbee14</value>
 				<value>GUID 1ecfcbe3-646b-4a85-8adb-3b1a8daa5559</value>
 				<value>GUID 02e22d13-1dfa-4385-b954-5163183f89db</value>
-				<value>GUID 07000e9c-6066-4caa-a48b-059c904d5df8</value>
 				<value>GUID 60ff92a9-7de2-4c64-9e24-08d5d71e45ff</value>
 				<value>GUID 84e62e35-0958-45e2-b2e3-5eb9a1009cc0</value>
 				<value>GUID 4e8191f8-4ba0-4572-ae3a-cf9a5c82e130</value>
 				<value>GUID 26333258-3711-4e0f-b6a9-b58098edea57</value>
 				<value>GUID ccd8ab55-c0c8-4084-82f0-06671f4c9093</value>
 				<value>GUID f70dd4a3-f0ef-4d00-8c22-b351838c0c36</value>
+				<value>GUID e9d5907a-aaa5-4952-b07d-ad638b530fc8</value>
 			</AggregatesList>
 		</IClass>
 		<IReception type="e">
@@ -3648,27 +3646,6 @@
 			<m_nInheritanceMask type="a">0</m_nInheritanceMask>
 			<m_bShowName type="a">1</m_bShowName>
 		</CGITrans>
-		<IPart type="e">
-			<_id type="a">GUID 07000e9c-6066-4caa-a48b-059c904d5df8</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsTruck</_name>
-			<_modifiedTimeWeak type="a">5.13.2020::13:6:24</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.13.2020::13:6:24</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\TruckPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::TruckPkg</_hsubsystem>
-					<_hname type="a">Truck</_hname>
-					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-				</IHandle>
-			</_inverse>
-		</IPart>
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 60ff92a9-7de2-4c64-9e24-08d5d71e45ff</_id>
 			<_myState type="a">10240</_myState>
@@ -3832,6 +3809,35 @@
 					<_hclass type="a">DockingProcessBlock</_hclass>
 					<_hname type="a">itsChargingSystemBlock_1</_hname>
 					<_hid type="a">GUID fbf1960a-3dc1-4010-a335-0d18483b8d1b</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID e9d5907a-aaa5-4952-b07d-ad638b530fc8</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsTruck</_name>
+			<_modifiedTimeWeak type="a">5.22.2020::20:55:20</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.22.2020::20:55:20</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\TruckPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::TruckPkg</_hsubsystem>
+					<_hname type="a">Truck</_hname>
+					<_hid type="a">GUID 2fec9dcd-e82e-4cbe-af0d-ff681b029109</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\TruckPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::TruckPkg</_hsubsystem>
+					<_hclass type="a">Truck</_hclass>
+					<_hname type="a">itsChargingSystemBlock</_hname>
+					<_hid type="a">GUID f9a9437e-089b-4685-baed-2ab4d2a08534</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>

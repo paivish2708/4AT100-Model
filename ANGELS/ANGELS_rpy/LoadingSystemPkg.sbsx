@@ -11,10 +11,10 @@
 			<_id type="a">GUID 8d35c598-0266-49a6-8637-7cada356574a</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">LoadingSystemPkg</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:35:47</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.22.2020::20:56:3</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.15.2020::12:35:47</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">5.15.2020::12:35:47</weakCGTime>
+			<weakCGTime type="a">5.22.2020::20:56:3</weakCGTime>
 			<strongCGTime type="a">5.15.2020::12:35:47</strongCGTime>
 			<_defaultComposite type="s">GUID dc74bc05-15cb-49aa-a412-16ab395410fd</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -41,7 +41,7 @@
 		<IClass type="e">
 			<_id type="a">GUID 1536ad51-7bb4-489a-b944-e60014781331</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">LoadingSystem</_name>
+			<_name type="a">LoadingSystemBlock</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -56,7 +56,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.15.2020::12:30:11</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.22.2020::20:56:11</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -66,9 +66,9 @@
 					<_hid type="a">GUID 58673645-b6cb-4922-86fc-9d3cdafdd2c4</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.15.2020::12:30:11</_modifiedTime>
-			<weakCGTime type="a">5.15.2020::12:30:11</weakCGTime>
-			<strongCGTime type="a">5.14.2020::10:48:44</strongCGTime>
+			<_modifiedTime type="a">5.22.2020::20:56:11</_modifiedTime>
+			<weakCGTime type="a">5.22.2020::20:56:11</weakCGTime>
+			<strongCGTime type="a">5.22.2020::20:56:3</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -77,6 +77,7 @@
 			<AggregatesList type="e">
 				<value>GUID 2dba1adf-b1fd-4cb3-99af-582add589f2c</value>
 				<value>GUID bea0a17d-f7b0-42c8-8eb3-d383e5f78279</value>
+				<value>GUID 0ff24511-9d88-4a6f-ba37-8ac61bb410cd</value>
 			</AggregatesList>
 		</IClass>
 		<IAssociationEnd type="e">
@@ -106,8 +107,8 @@
 			<_id type="a">GUID bea0a17d-f7b0-42c8-8eb3-d383e5f78279</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsANGELS_1</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:30:11</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:30:11</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.22.2020::20:56:3</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.22.2020::20:56:3</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -124,8 +125,37 @@
 					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
 					<_hclass type="a">ANGELS</_hclass>
-					<_hname type="a">itsLoadingSystem</_hname>
+					<_hname type="a">itsLoadingSystemBlock</_hname>
 					<_hid type="a">GUID 4043eae4-d59a-45e3-b946-f32617a2e904</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 0ff24511-9d88-4a6f-ba37-8ac61bb410cd</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsLoadingProcessBlock</_name>
+			<_modifiedTimeWeak type="a">5.22.2020::20:56:11</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.22.2020::20:56:11</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\LoadingProcessPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::LoadingProcessPkg</_hsubsystem>
+					<_hname type="a">LoadingProcessBlock</_hname>
+					<_hid type="a">GUID 0f2dc8c4-a324-4500-bc76-7190e7a8a4e2</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\LoadingProcessPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::LoadingProcessPkg</_hsubsystem>
+					<_hclass type="a">LoadingProcessBlock</_hclass>
+					<_hname type="a">itsLoadingSystemBlock</_hname>
+					<_hid type="a">GUID 817605a0-cacd-473c-ad94-ffffb57b19ca</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
