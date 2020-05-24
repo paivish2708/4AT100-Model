@@ -11,14 +11,14 @@
 			<_id type="a">GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ANGELSPkg</_name>
-			<_modifiedTimeWeak type="a">5.22.2020::20:56:48</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.22.2020::21:16:16</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.24.2020::15:43:41</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.24.2020::16:0:46</_modifiedTime>
 			<_lastID type="a">15</_lastID>
-			<weakCGTime type="a">5.22.2020::20:56:48</weakCGTime>
+			<weakCGTime type="a">5.24.2020::15:43:41</weakCGTime>
 			<strongCGTime type="a">5.14.2020::12:41:19</strongCGTime>
 			<_defaultComposite type="s">GUID 6b6ca664-289a-46cc-8bec-9fb31e27b22c</_defaultComposite>
 			<_eventsBaseID type="a">23201</_eventsBaseID>
-			<_configurationRelatedTime type="a">5.18.2020::10:35:50</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">5.24.2020::15:43:41</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</value>
 				<value>GUID dd55cabb-699e-4724-9d69-dcc932a50bcc</value>
@@ -39,7 +39,6 @@
 				<value>GUID 6b6ca664-289a-46cc-8bec-9fb31e27b22c</value>
 				<value>GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</value>
 				<value>GUID db190386-1007-4530-a2a1-1bbac6903dfe</value>
-				<value>GUID d9cb50c6-bf4a-4e89-9407-4fd5beedf032</value>
 				<value>GUID 3edeaa94-647e-470a-a791-4d3c89b201c4</value>
 				<value>GUID 5e630760-df70-4ebb-8634-74ce5e9232d2</value>
 				<value>GUID 6bdaa209-aba0-4bfc-a174-9d808617fde8</value>
@@ -479,8 +478,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.22.2020::20:56:3</_modifiedTime>
-			<_lastModifiedTime type="a">5.22.2020::20:56:3</_lastModifiedTime>
+			<_modifiedTime type="a">5.24.2020::15:43:41</_modifiedTime>
+			<_lastModifiedTime type="a">5.24.2020::15:43:41</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -1543,13 +1542,16 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\ChargingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::ChargingSystemPkg</_hsubsystem>
+					<_hname type="a">ChargingInfrastructure</_hname>
 					<_hid type="a">GUID d9cb50c6-bf4a-4e89-9407-4fd5beedf032</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 25cf6b56-5150-498d-9808-c996a346bd05</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">ChargingInfrastructure</m_str>
+					<m_str type="a">ChargingSystemPkg::ChargingInfrastructure</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2479,6 +2481,10 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\ChargingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::ChargingSystemPkg</_hsubsystem>
+					<_hclass type="a">ChargingInfrastructure</_hclass>
+					<_hname type="a">itsANGELS_1</_hname>
 					<_hid type="a">GUID 9be1c3ae-2bee-4a35-9a0a-7196f8e27ef9</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -4515,8 +4521,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.22.2020::20:52:30</_modifiedTime>
-			<_lastModifiedTime type="a">5.22.2020::20:52:30</_lastModifiedTime>
+			<_modifiedTime type="a">5.24.2020::15:43:41</_modifiedTime>
+			<_lastModifiedTime type="a">5.24.2020::15:43:41</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -6010,8 +6016,8 @@
 			</_properties>
 			<_name type="a">InitiateSystem</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.22.2020::21:25:2</_modifiedTime>
-			<_lastModifiedTime type="a">5.22.2020::21:25:2</_lastModifiedTime>
+			<_modifiedTime type="a">5.24.2020::15:43:41</_modifiedTime>
+			<_lastModifiedTime type="a">5.24.2020::15:43:41</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -6158,7 +6164,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">3.80556 0 0 5.89394 20 20 </m_transform>
+			<m_transform type="a">6.0787 0 0 4.98485 20 20 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -6212,7 +6218,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 89 174.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 113 426.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -6270,7 +6276,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 93 246.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 117 498.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -6328,7 +6334,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 90 330.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 114 582.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -6386,7 +6392,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 236 366.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 260 618.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -6476,7 +6482,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.000296317 260 222.33 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.000296317 284 474.33 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -6551,6 +6557,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">1 0 0 1 417 -360 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">2 340 499  340 499  </m_points>
 		</CGIFreeShape>
@@ -6636,7 +6643,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.125461 0 0 0.0456204 60 83.8631 </m_transform>
+			<m_transform type="a">0.125461 0 0 0.0456204 84 335.863 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -6662,8 +6669,7 @@
 			<m_pNoteText type="p"><IDescription type="e">
 				<_textRTF type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\froman\fprq12\fcharset0 Tahoma;}}%0D
 \viewkind4\uc1\pard\f0\fs50 Docking\par%0D
-}%0D
-</_textRTF>
+}</_textRTF>
 			</IDescription>
 			</m_pNoteText>
 		</CGIAnnotation>
@@ -6749,7 +6755,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.125461 0 0 0.0456204 696 119.863 </m_transform>
+			<m_transform type="a">0.154981 0 0 0.0456204 1155 383.863 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -6812,7 +6818,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 510 138.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 969 402.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -6870,7 +6876,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 517 222.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 976 486.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -6928,7 +6934,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 515 306.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 974 570.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -7018,7 +7024,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000951641 0 0 0.000662356 705 198.738 </m_transform>
+			<m_transform type="a">0.000951641 0 0 0.000662356 1164 462.738 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -7072,7 +7078,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 698 306.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 1157 570.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -7162,7 +7168,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.0923361 0 0 0.0448833 251.908 281.955 </m_transform>
+			<m_transform type="a">0.0923361 0 0 0.0448833 275.908 533.955 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 1 1  1 1115  1084 1115  1084 1  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -7248,7 +7254,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.110701 0 0 0.0547445 93 419.836 </m_transform>
+			<m_transform type="a">0.110701 0 0 0.0547445 510 59.836 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -7307,7 +7313,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 94 522.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 511 162.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -7355,7 +7361,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 256 522.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 673 162.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -7403,7 +7409,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 100 606.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 517 246.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -7487,7 +7493,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00132064 0 0 0.000261456 246 162.291 </m_transform>
+			<m_transform type="a">0.00132064 0 0 0.000261456 270 414.291 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -7576,7 +7582,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00157312 0 0 0.000278887 241 102.311 </m_transform>
+			<m_transform type="a">0.00157312 0 0 0.000278887 265 354.311 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -7659,7 +7665,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.143911 0 0 0.0456204 504 395.863 </m_transform>
+			<m_transform type="a">0.143911 0 0 0.0456204 660 323.863 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -7722,7 +7728,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 505 486.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 517 378.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -7780,7 +7786,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 502 563.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 526 450.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -7838,7 +7844,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 505 654.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 519 534.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -7928,7 +7934,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.0886427 0 0 0.043088 683.911 563.957 </m_transform>
+			<m_transform type="a">0.0886427 0 0 0.043088 695.911 449.957 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 1 1  1 1115  1084 1115  1084 1  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -8052,7 +8058,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00157312 0 0 0.000278887 655 486.311 </m_transform>
+			<m_transform type="a">0.00157312 0 0 0.000278887 667 402.311 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -8109,7 +8115,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 690 738.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 702 594.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -8199,7 +8205,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00078656 0 0 0.000278887 687 654.311 </m_transform>
+			<m_transform type="a">0.00078656 0 0 0.000278887 711 534.311 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -8256,7 +8262,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000971062 0 0 0.00043576 502 731.485 </m_transform>
+			<m_transform type="a">0.000971062 0 0 0.00043576 530 606.485 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -8320,6 +8326,7 @@
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\ChargingSystemPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ChargingSystemPkg</_hsubsystem>
+					<_hclass type="a">ChargingSystemBlock</_hclass>
 					<_hname type="a">Charging</_hname>
 					<_hid type="a">GUID 144a2d42-71ff-4c69-be8d-4de46139cd39</_hid>
 				</IHandle>
@@ -8375,7 +8382,7 @@
 			<_id type="a">GUID 2a6708c4-21d0-413a-a7c3-e0843e364680</_id>
 			<_myState type="a">8192</_myState>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
 				<IRPYRawContainer type="e">
@@ -8393,7 +8400,7 @@
 			<_id type="a">GUID 9f8f9ead-be4c-4baa-8404-f3c4cbe546dd</_id>
 			<_myState type="a">8192</_myState>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
 				<IRPYRawContainer type="e">
@@ -8411,7 +8418,7 @@
 			<_id type="a">GUID 62385410-7a26-495b-8b80-8501cc930fea</_id>
 			<_myState type="a">8192</_myState>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
 				<IRPYRawContainer type="e">
@@ -8887,7 +8894,7 @@
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_defNumber type="a">4</_defNumber>
 			<_version type="a">5.22.2020::22:49:25</_version>
-			<_baseVersion type="a">1.1.1970::1:0:0</_baseVersion>
+			<_baseVersion type="a">1.2.1990::0:0:0</_baseVersion>
 			<_diagram type="s">GUID a5d8ad5f-77d6-4237-86f5-ba11bab01a5b</_diagram>
 			<AggregatesList type="e">
 				<value>GUID 01e93928-d215-4fed-953e-22491f4aca18</value>
@@ -8919,7 +8926,7 @@
 		<ILabel type="e">
 			<_id type="a">GUID cdb8361a-405e-47c2-baa7-f20afbd6068e</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_itsTrigger>NULL</_itsTrigger>
 			<_itsGuard>NULL</_itsGuard>
 			<_itsAction>NULL</_itsAction>
@@ -8950,7 +8957,7 @@
 		<IInterfaceItemTrigger type="e">
 			<_id type="a">GUID 2eba3b92-f6b2-4dce-a8d6-528d2f116e0f</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_body type="a">SwitchOnANGELS</_body>
 			<_itsInterfaceItem type="r">
 				<IHandle type="e">
@@ -8985,7 +8992,7 @@
 		<IInterfaceItemTrigger type="e">
 			<_id type="a">GUID 003ceba5-9395-4db8-a426-4e5d39c0728e</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_body type="a">SwitchOffANGELS</_body>
 			<_itsInterfaceItem type="r">
 				<IHandle type="e">
@@ -9020,7 +9027,7 @@
 		<IInterfaceItemTrigger type="e">
 			<_id type="a">GUID bbed91d3-4ef0-42fd-bf64-0938b42c95ae</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_body type="a">TurnOffANGELS</_body>
 			<_itsInterfaceItem type="r">
 				<IHandle type="e">
@@ -10001,12 +10008,19 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\ChargingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::ChargingSystemPkg</_hsubsystem>
+					<_hname type="a">ChargingInfrastructure</_hname>
 					<_hid type="a">GUID d9cb50c6-bf4a-4e89-9407-4fd5beedf032</_hid>
 				</IClassifierHandle>
 			</_otherClass>
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\ChargingSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::ChargingSystemPkg</_hsubsystem>
+					<_hclass type="a">ChargingInfrastructure</_hclass>
+					<_hname type="a">itsANGELS_1</_hname>
 					<_hid type="a">GUID 9be1c3ae-2bee-4a35-9a0a-7196f8e27ef9</_hid>
 				</IHandle>
 			</_inverse>
@@ -10388,122 +10402,12 @@
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
-		<IClass type="e">
-			<_id type="a">GUID d9cb50c6-bf4a-4e89-9407-4fd5beedf032</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">ChargingInfrastructure</_name>
-			<Stereotypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">1</size>
-					
-						<IHandle type="e">
-							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
-							<_hsubsystem type="a">SysML::Blocks</_hsubsystem>
-							<_hname type="a">Block</_hname>
-							<_hid type="a">GUID f685432f-691e-4ff1-be70-4d09d19457e1</_hid>
-						</IHandle>
-					
-				</IRPYRawContainer>
-			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.18.2020::12:15:57</_modifiedTimeWeak>
-			<_theMainDiagram type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hid type="a">GUID 58673645-b6cb-4922-86fc-9d3cdafdd2c4</_hid>
-				</IHandle>
-			</_theMainDiagram>
-			<_modifiedTime type="a">5.18.2020::12:15:57</_modifiedTime>
-			<weakCGTime type="a">5.18.2020::12:15:57</weakCGTime>
-			<strongCGTime type="a">5.14.2020::12:46:50</strongCGTime>
-			<_itsStateChart type="r">
-				<IHandle type="e">
-				</IHandle>
-			</_itsStateChart>
-			<_classModifier type="a">Unspecified</_classModifier>
-			<AggregatesList type="e">
-				<value>GUID 9be1c3ae-2bee-4a35-9a0a-7196f8e27ef9</value>
-				<value>GUID 8a9d939a-4692-4319-93f1-b8f35d15b98a</value>
-				<value>GUID 71e606fb-902b-4bcb-82e3-c94eba6ed511</value>
-			</AggregatesList>
-		</IClass>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 9be1c3ae-2bee-4a35-9a0a-7196f8e27ef9</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsANGELS_1</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:30:13</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:30:13</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hid type="a">GUID 2c34d2eb-f12c-4b89-82e4-97482f7881f6</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 8a9d939a-4692-4319-93f1-b8f35d15b98a</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsChargingSystemBlock</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::12:10:59</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:10:59</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ChargingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::ChargingSystemPkg</_hsubsystem>
-					<_hname type="a">ChargingSystemBlock</_hname>
-					<_hid type="a">GUID a793ceb4-ff4d-4df9-a88a-619d8991be61</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ChargingSystemPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::ChargingSystemPkg</_hsubsystem>
-					<_hclass type="a">ChargingSystemBlock</_hclass>
-					<_hname type="a">itsChargingInfrastructure</_hname>
-					<_hid type="a">GUID 4e8191f8-4ba0-4572-ae3a-cf9a5c82e130</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 71e606fb-902b-4bcb-82e3-c94eba6ed511</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsANGELS</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::12:15:57</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:15:57</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
 		<IEvent type="e">
 			<_id type="a">GUID 3edeaa94-647e-470a-a791-4d3c89b201c4</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">SwitchOnANGELS</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
 				<IRPYRawContainer type="e">
@@ -10516,7 +10420,7 @@
 			<_myState type="a">8192</_myState>
 			<_name type="a">SwitchOffANGELS</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
 				<IRPYRawContainer type="e">
@@ -10529,7 +10433,7 @@
 			<_myState type="a">8192</_myState>
 			<_name type="a">TurnOffANGELS</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_virtual type="a">0</_virtual>
 			<Args type="c">
 				<IRPYRawContainer type="e">
