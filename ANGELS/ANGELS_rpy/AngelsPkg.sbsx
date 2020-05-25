@@ -11,14 +11,14 @@
 			<_id type="a">GUID 470273a1-25f0-4506-9a7e-c54f44b9fc11</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ANGELSPkg</_name>
-			<_modifiedTimeWeak type="a">5.24.2020::15:43:41</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.24.2020::16:0:46</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.25.2020::20:33:18</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.25.2020::20:37:36</_modifiedTime>
 			<_lastID type="a">15</_lastID>
-			<weakCGTime type="a">5.24.2020::15:43:41</weakCGTime>
+			<weakCGTime type="a">5.25.2020::20:33:18</weakCGTime>
 			<strongCGTime type="a">5.14.2020::12:41:19</strongCGTime>
 			<_defaultComposite type="s">GUID 6b6ca664-289a-46cc-8bec-9fb31e27b22c</_defaultComposite>
 			<_eventsBaseID type="a">23201</_eventsBaseID>
-			<_configurationRelatedTime type="a">5.24.2020::15:43:41</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">5.25.2020::20:33:18</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 996cc3eb-e0a5-4e38-8ae9-a6d10181c507</value>
 				<value>GUID dd55cabb-699e-4724-9d69-dcc932a50bcc</value>
@@ -38,7 +38,6 @@
 				<value>GUID 02d7986b-14f0-4242-a61e-e1f905b53f9f</value>
 				<value>GUID 6b6ca664-289a-46cc-8bec-9fb31e27b22c</value>
 				<value>GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</value>
-				<value>GUID db190386-1007-4530-a2a1-1bbac6903dfe</value>
 				<value>GUID 3edeaa94-647e-470a-a791-4d3c89b201c4</value>
 				<value>GUID 5e630760-df70-4ebb-8634-74ce5e9232d2</value>
 				<value>GUID 6bdaa209-aba0-4bfc-a174-9d808617fde8</value>
@@ -478,8 +477,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.24.2020::15:43:41</_modifiedTime>
-			<_lastModifiedTime type="a">5.24.2020::15:43:41</_lastModifiedTime>
+			<_modifiedTime type="a">5.25.2020::20:33:18</_modifiedTime>
+			<_lastModifiedTime type="a">5.25.2020::20:33:18</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -1421,13 +1420,16 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\LocalisationPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::LocalisationPkg</_hsubsystem>
+					<_hname type="a">LocalizationArchitecture</_hname>
 					<_hid type="a">GUID db190386-1007-4530-a2a1-1bbac6903dfe</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID 25cf6b56-5150-498d-9808-c996a346bd05</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">LocalizationArchitecture</m_str>
+					<m_str type="a">LocalisationPkg::LocalizationArchitecture</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1939,6 +1941,10 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\LocalisationPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::LocalisationPkg</_hsubsystem>
+					<_hclass type="a">LocalizationArchitecture</_hclass>
+					<_hname type="a">itsANGELS_1</_hname>
 					<_hid type="a">GUID 1c4b6c69-ff2f-4b97-8df3-8a0903e8a955</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -4521,8 +4527,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.24.2020::15:43:41</_modifiedTime>
-			<_lastModifiedTime type="a">5.24.2020::15:43:41</_lastModifiedTime>
+			<_modifiedTime type="a">5.25.2020::20:33:18</_modifiedTime>
+			<_lastModifiedTime type="a">5.25.2020::20:33:18</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -6016,8 +6022,8 @@
 			</_properties>
 			<_name type="a">InitiateSystem</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.24.2020::15:43:41</_modifiedTime>
-			<_lastModifiedTime type="a">5.24.2020::15:43:41</_lastModifiedTime>
+			<_modifiedTime type="a">5.25.2020::20:33:18</_modifiedTime>
+			<_lastModifiedTime type="a">5.25.2020::20:33:18</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -9928,12 +9934,19 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\LocalisationPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::LocalisationPkg</_hsubsystem>
+					<_hname type="a">LocalizationArchitecture</_hname>
 					<_hid type="a">GUID db190386-1007-4530-a2a1-1bbac6903dfe</_hid>
 				</IClassifierHandle>
 			</_otherClass>
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\LocalisationPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::LocalisationPkg</_hsubsystem>
+					<_hclass type="a">LocalizationArchitecture</_hclass>
+					<_hname type="a">itsANGELS_1</_hname>
 					<_hid type="a">GUID 1c4b6c69-ff2f-4b97-8df3-8a0903e8a955</_hid>
 				</IHandle>
 			</_inverse>
@@ -10343,65 +10356,6 @@
 				</IHandle>
 			</_inverse>
 		</IPart>
-		<IClass type="e">
-			<_id type="a">GUID db190386-1007-4530-a2a1-1bbac6903dfe</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">LocalizationArchitecture</_name>
-			<Stereotypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">1</size>
-					
-						<IHandle type="e">
-							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
-							<_hsubsystem type="a">SysML::Blocks</_hsubsystem>
-							<_hname type="a">Block</_hname>
-							<_hid type="a">GUID f685432f-691e-4ff1-be70-4d09d19457e1</_hid>
-						</IHandle>
-					
-				</IRPYRawContainer>
-			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.18.2020::10:34:57</_modifiedTimeWeak>
-			<_theMainDiagram type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hid type="a">GUID 58673645-b6cb-4922-86fc-9d3cdafdd2c4</_hid>
-				</IHandle>
-			</_theMainDiagram>
-			<_modifiedTime type="a">5.18.2020::10:34:57</_modifiedTime>
-			<weakCGTime type="a">5.18.2020::10:34:57</weakCGTime>
-			<strongCGTime type="a">5.18.2020::10:34:57</strongCGTime>
-			<_itsStateChart type="r">
-				<IHandle type="e">
-				</IHandle>
-			</_itsStateChart>
-			<_classModifier type="a">Unspecified</_classModifier>
-			<AggregatesList type="e">
-				<value>GUID 1c4b6c69-ff2f-4b97-8df3-8a0903e8a955</value>
-			</AggregatesList>
-		</IClass>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 1c4b6c69-ff2f-4b97-8df3-8a0903e8a955</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsANGELS_1</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::10:34:57</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::10:34:57</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hid type="a">GUID 8ee58b60-b217-4320-beed-66cb0b87a90b</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
 		<IEvent type="e">
 			<_id type="a">GUID 3edeaa94-647e-470a-a791-4d3c89b201c4</_id>
 			<_myState type="a">8192</_myState>

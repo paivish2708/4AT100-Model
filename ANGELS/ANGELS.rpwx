@@ -28,6 +28,39 @@
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
 								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
 								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
+								<m_nLeft type="a">0</m_nLeft>
+								<m_nTop type="a">0</m_nTop>
+								<m_nRight type="a">763</m_nRight>
+								<m_nBottom type="a">313</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IMSC</_hm2Class>
+								<_hfilename type="a">.\ANGELS_rpy\Dock_the_Truck.mscx</_hfilename>
+								<_hsubsystem type="a">ANGELSPkg::DockingPkg</_hsubsystem>
+								<_hclass type="a">DockingProcessBlock</_hclass>
+								<_hname type="a">Dock the Truck</_hname>
+								<_hid type="a">GUID df0dd088-b430-4ee7-a94e-3e2d2849dd92</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">872 402 </_DownRight>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<m_bIsActiveView type="a">1</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
 								<m_nLeft type="a">52</m_nLeft>
 								<m_nTop type="a">52</m_nTop>
 								<m_nRight type="a">952</m_nRight>
@@ -45,41 +78,8 @@
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">2575 1017 </_DownRight>
+						<_DownRight type="a">5076 1600 </_DownRight>
 						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
-						<m_bIsActiveView type="a">1</m_bIsActiveView>
-					</CGEMdiDiagramParams>
-					
-					<CGEMdiDiagramParams type="e">
-						<_placement type="p">
-							<CCommon_WINDOWPLACEMENT type="e">
-								<m_nLength type="a">44</m_nLength>
-								<m_nFlags type="a">0</m_nFlags>
-								<m_showCmd type="a">1</m_showCmd>
-								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
-								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
-								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
-								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
-								<m_nLeft type="a">130</m_nLeft>
-								<m_nTop type="a">130</m_nTop>
-								<m_nRight type="a">1089</m_nRight>
-								<m_nBottom type="a">443</m_nBottom>
-							</CCommon_WINDOWPLACEMENT>
-						</_placement>
-						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
-						<_theDiagram type="r">
-							<IHandle type="e">
-								<_hm2Class type="a">IMSC</_hm2Class>
-								<_hfilename type="a">.\ANGELS_rpy\LoadingProcessPkg.sbsx</_hfilename>
-								<_hsubsystem type="a">ANGELSPkg::LoadingProcessPkg</_hsubsystem>
-								<_hclass type="a">LoadingProcessBlock</_hclass>
-								<_hname type="a">Loading</_hname>
-								<_hid type="a">GUID 7d178af0-a30d-4898-b605-da77600cb1df</_hid>
-							</IHandle>
-						</_theDiagram>
-						<_UpLeft type="a">0 560 </_UpLeft>
-						<_DownRight type="a">922 793 </_DownRight>
-						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
