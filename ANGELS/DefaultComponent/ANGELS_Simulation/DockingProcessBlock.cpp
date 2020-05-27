@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: DockingProcessBlock
-//!	Generated Date	: Fri, 22, May 2020  
+//!	Generated Date	: Wed, 27, May 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\DockingProcessBlock.cpp
 *********************************************************************/
 
@@ -332,6 +332,7 @@ double DockingProcessBlock::getSteerAngle() const {
 
 void DockingProcessBlock::setSteerAngle(double p_SteerAngle) {
     SteerAngle = p_SteerAngle;
+    NOTIFY_SET_OPERATION;
 }
 
 ChargingSystemBlock* DockingProcessBlock::getItsChargingSystemBlock_1() const {

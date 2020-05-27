@@ -22,32 +22,33 @@
 						<_placement type="p">
 							<CCommon_WINDOWPLACEMENT type="e">
 								<m_nLength type="a">44</m_nLength>
-								<m_nFlags type="a">2</m_nFlags>
-								<m_showCmd type="a">3</m_showCmd>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
 								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
 								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
 								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
-								<m_nLeft type="a">0</m_nLeft>
-								<m_nTop type="a">0</m_nTop>
-								<m_nRight type="a">763</m_nRight>
-								<m_nBottom type="a">313</m_nBottom>
+								<m_nLeft type="a">12</m_nLeft>
+								<m_nTop type="a">8</m_nTop>
+								<m_nRight type="a">401</m_nRight>
+								<m_nBottom type="a">162</m_nBottom>
 							</CCommon_WINDOWPLACEMENT>
 						</_placement>
 						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
 						<_theDiagram type="r">
 							<IHandle type="e">
-								<_hm2Class type="a">IMSC</_hm2Class>
-								<_hfilename type="a">.\ANGELS_rpy\Dock_the_Truck.mscx</_hfilename>
-								<_hsubsystem type="a">ANGELSPkg::DockingPkg</_hsubsystem>
-								<_hclass type="a">DockingProcessBlock</_hclass>
-								<_hname type="a">Dock the Truck</_hname>
-								<_hid type="a">GUID df0dd088-b430-4ee7-a94e-3e2d2849dd92</_hid>
+								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hfilename type="a">.\ANGELS_rpy\ANGELSPkg.sbsx</_hfilename>
+								<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+								<_hclass type="a">ANGELS</_hclass>
+								<_hname type="a">ANGELS_System</_hname>
+								<_hid type="a">GUID a5d8ad5f-77d6-4237-86f5-ba11bab01a5b</_hid>
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">872 402 </_DownRight>
-						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<_DownRight type="a">352 94 </_DownRight>
+						<_instanceName type="a">ANGELS[0]</_instanceName>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
 						<m_bIsActiveView type="a">1</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -61,10 +62,10 @@
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
 								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
 								<m_ptMaxPositionY type="a">-31</m_ptMaxPositionY>
-								<m_nLeft type="a">52</m_nLeft>
-								<m_nTop type="a">52</m_nTop>
-								<m_nRight type="a">952</m_nRight>
-								<m_nBottom type="a">384</m_nBottom>
+								<m_nLeft type="a">5</m_nLeft>
+								<m_nTop type="a">172</m_nTop>
+								<m_nRight type="a">394</m_nRight>
+								<m_nBottom type="a">403</m_nBottom>
 							</CCommon_WINDOWPLACEMENT>
 						</_placement>
 						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
@@ -78,8 +79,8 @@
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">5076 1600 </_DownRight>
-						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<_DownRight type="a">457 222 </_DownRight>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					

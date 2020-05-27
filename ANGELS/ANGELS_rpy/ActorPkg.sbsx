@@ -11,10 +11,10 @@
 			<_id type="a">GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
-			<_modifiedTimeWeak type="a">5.22.2020::20:47:4</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.27.2020::9:43:46</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.27.2020::9:43:46</_modifiedTime>
 			<_lastID type="a">16</_lastID>
-			<weakCGTime type="a">5.22.2020::20:47:4</weakCGTime>
+			<weakCGTime type="a">5.27.2020::9:43:46</weakCGTime>
 			<strongCGTime type="a">5.14.2020::12:41:19</strongCGTime>
 			<_defaultComposite type="s">GUID fabbb408-de82-424e-8fce-216617ff1ef0</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -55,7 +55,7 @@
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hfilename type="a">.\LoadingProcessPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::LoadingProcessPkg</_hsubsystem>
-					<_hname type="a">LoadingSystemPkg</_hname>
+					<_hname type="a">LoadingProcessBlock</_hname>
 					<_hid type="a">GUID ce9a3377-92ac-48bb-84b7-6803479e8f0d</_hid>
 				</IHandle>
 			</_theMainDiagram>
@@ -243,7 +243,7 @@
 			<_id type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DCOperator</_name>
-			<_modifiedTimeWeak type="a">5.21.2020::14:0:54</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.27.2020::9:45:33</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -253,9 +253,9 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.21.2020::14:0:54</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:33</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">5.21.2020::14:0:54</weakCGTime>
+			<weakCGTime type="a">5.27.2020::9:45:33</weakCGTime>
 			<strongCGTime type="a">4.29.2020::15:2:18</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -281,9 +281,9 @@
 		<IInformationFlow type="e">
 			<_id type="a">GUID 72f34318-abcf-4437-bb8b-f5924d92c6f7</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">DCOperator_Request for Loading</_name>
+			<_name type="a">DCOperator_Request_for_Loading</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:2:18</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:20</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IActor</_hm2Class>
@@ -295,7 +295,7 @@
 					<_hm2Class type="a">IUseCase</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hname type="a">Request for Loading</_hname>
+					<_hname type="a">Request_for_Loading</_hname>
 					<_hid type="a">GUID b841351b-f70c-4140-8ccf-0dec17a008d1</_hid>
 				</IHandle>
 			</end2_>
@@ -304,16 +304,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 51d2a73a-107c-496d-a2c1-b5927590389e</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsRequest for Loading</_name>
+			<_name type="a">itsRequest_for_Loading</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:2:18</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:20</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hname type="a">Request for Loading</_hname>
+					<_hname type="a">Request_for_Loading</_hname>
 					<_hid type="a">GUID b841351b-f70c-4140-8ccf-0dec17a008d1</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -322,7 +322,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hclass type="a">Request for Loading</_hclass>
+					<_hclass type="a">Request_for_Loading</_hclass>
 					<_hname type="a">itsDCOperator</_hname>
 					<_hid type="a">GUID bb0e92f4-a386-4973-b97b-9c970ff330db</_hid>
 				</IHandle>
@@ -333,16 +333,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 139a2800-c09b-439e-9304-21a1700c14a3</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsParking Spot Input</_name>
+			<_name type="a">itsParking_Spot_Input</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:2:18</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:43</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hname type="a">Parking Spot Input</_hname>
+					<_hname type="a">Parking_Spot_Input</_hname>
 					<_hid type="a">GUID 374d1e8a-432d-4233-834d-f21fe317a9d1</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -351,7 +351,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hclass type="a">Parking Spot Input</_hclass>
+					<_hclass type="a">Parking_Spot_Input</_hclass>
 					<_hname type="a">itsDCOperator</_hname>
 					<_hid type="a">GUID ea8ce77b-d7bc-4805-81de-3a42ff842f11</_hid>
 				</IHandle>
@@ -362,16 +362,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 663c47fd-a02b-4b3f-a7d1-48b3c38f2b18</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsOpen Loading Doors</_name>
+			<_name type="a">itsOpen_Loading_Doors</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:2:18</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:33</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hname type="a">Open Loading Doors</_hname>
+					<_hname type="a">Open_Loading_Doors</_hname>
 					<_hid type="a">GUID c2741669-efd0-4c0e-9620-22f08fcffc33</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -380,7 +380,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hclass type="a">Open Loading Doors</_hclass>
+					<_hclass type="a">Open_Loading_Doors</_hclass>
 					<_hname type="a">itsDCOperator</_hname>
 					<_hid type="a">GUID f40facf6-2309-464d-912c-aadacce8de34</_hid>
 				</IHandle>
@@ -635,7 +635,7 @@
 			<_id type="a">GUID 516c76cb-338f-40c3-a898-f904221cfb96</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver</_name>
-			<_modifiedTimeWeak type="a">5.22.2020::20:47:18</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.27.2020::9:45:15</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -645,9 +645,9 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.22.2020::20:47:18</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">5.22.2020::20:47:18</weakCGTime>
+			<weakCGTime type="a">5.27.2020::9:45:15</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:28:56</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -739,16 +739,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 7333a00c-2adb-48c4-8187-639b641587b6</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsMove Forward</_name>
+			<_name type="a">itsMove_Forward_1</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:32:44</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hname type="a">Move Forward</_hname>
+					<_hname type="a">Move_Forward</_hname>
 					<_hid type="a">GUID 2353c088-cdfa-4be0-9042-24068a09d195</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -757,7 +757,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hclass type="a">Move Forward</_hclass>
+					<_hclass type="a">Move_Forward</_hclass>
 					<_hname type="a">itsDriver</_hname>
 					<_hid type="a">GUID 52866805-26bb-4595-a257-cfc7bf77348b</_hid>
 				</IHandle>
@@ -768,16 +768,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID d3fa922c-1a05-4fb4-acec-74eec64ebb8b</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsMove Forward_1</_name>
+			<_name type="a">itsMove_Forward</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:35:38</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hname type="a">Move Forward</_hname>
+					<_hname type="a">Move_Forward</_hname>
 					<_hid type="a">GUID 2353c088-cdfa-4be0-9042-24068a09d195</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -786,7 +786,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hclass type="a">Move Forward</_hclass>
+					<_hclass type="a">Move_Forward</_hclass>
 					<_hname type="a">itsDriver_1</_hname>
 					<_hid type="a">GUID ae5ce0d7-8ecd-4002-be4b-79f8148f8d34</_hid>
 				</IHandle>
@@ -797,16 +797,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID afcd9261-8b3a-4e7c-bbcb-5d7eae02f319</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsCheck next reference point</_name>
+			<_name type="a">itsCheck_next_reference_point</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:31:53</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:47:24</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hname type="a">Check next reference point</_hname>
+					<_hname type="a">Check_next_reference_point</_hname>
 					<_hid type="a">GUID c2298a95-f3f8-4163-a983-97f2c73ca86b</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -815,7 +815,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hclass type="a">Check next reference point</_hclass>
+					<_hclass type="a">Check_next_reference_point</_hclass>
 					<_hname type="a">itsDriver</_hname>
 					<_hid type="a">GUID d0498221-084b-49e0-b962-e3d44a89cd64</_hid>
 				</IHandle>
@@ -1133,7 +1133,7 @@
 			<_id type="a">GUID d1815240-c7ca-42c7-8552-c599700d0b3c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">PedestrianandObstacles</_name>
-			<_modifiedTimeWeak type="a">4.29.2020::15:2:34</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.27.2020::9:43:46</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -1143,8 +1143,8 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">4.29.2020::15:2:34</_modifiedTime>
-			<weakCGTime type="a">4.29.2020::15:2:34</weakCGTime>
+			<_modifiedTime type="a">5.27.2020::9:43:46</_modifiedTime>
+			<weakCGTime type="a">5.27.2020::9:43:46</weakCGTime>
 			<strongCGTime type="a">4.29.2020::15:2:34</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -1173,16 +1173,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID bb83dbb4-a0eb-499f-a1ee-60bbb98be464</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsCheck for obstacles</_name>
+			<_name type="a">itsCheck_for_obstacles</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:2:34</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:43:46</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hname type="a">Check for obstacles</_hname>
+					<_hname type="a">Check_for_obstacles</_hname>
 					<_hid type="a">GUID 38945419-5402-4cbe-a1ae-811425b6f8ad</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -1191,7 +1191,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hclass type="a">Check for obstacles</_hclass>
+					<_hclass type="a">Check_for_obstacles</_hclass>
 					<_hname type="a">itsPedestrianandObstacles</_hname>
 					<_hid type="a">GUID f3263c86-b76b-444c-85e8-6f80a7f9e2fd</_hid>
 				</IHandle>
@@ -1202,16 +1202,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID ad8842b8-a5cb-422e-be6f-31a3f131981d</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsReceive obstacle positions</_name>
+			<_name type="a">itsReceive_Obstacle_positions</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:2:34</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:11</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hname type="a">Receive obstacle positions</_hname>
+					<_hname type="a">Receive_Obstacle_positions</_hname>
 					<_hid type="a">GUID 630266d3-81fc-4e1f-ad20-83d1cbcd7200</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -1220,7 +1220,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\UseCaseAnalysisPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">UseCaseAnalysisPkg</_hsubsystem>
-					<_hclass type="a">Receive obstacle positions</_hclass>
+					<_hclass type="a">Receive_Obstacle_positions</_hclass>
 					<_hname type="a">itsPedestrianandObstacles</_hname>
 					<_hid type="a">GUID ad1d1793-0b41-4cc5-87ac-d395598cf3e0</_hid>
 				</IHandle>

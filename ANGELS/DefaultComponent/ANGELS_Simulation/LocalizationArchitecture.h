@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: LocalizationArchitecture
-//!	Generated Date	: Fri, 22, May 2020  
+//!	Generated Date	: Wed, 27, May 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\LocalizationArchitecture.h
 *********************************************************************/
 
@@ -18,11 +18,11 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include "ANGELSPkg.h"
+#include "LocalisationPkg.h"
 //## link itsANGELS_1
 class ANGELS;
 
-//## package ANGELSPkg
+//## package ANGELSPkg::LocalisationPkg
 
 //## class LocalizationArchitecture
 class LocalizationArchitecture {

@@ -11,10 +11,10 @@
 			<_id type="a">GUID de656d0c-824e-401d-88a2-a108a59b1b85</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UseCaseAnalysisPkg</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::10:44:47</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.27.2020::9:43:37</_modifiedTimeWeak>
 			<_modifiedTime type="a">5.18.2020::10:44:47</_modifiedTime>
 			<_lastID type="a">32</_lastID>
-			<weakCGTime type="a">5.18.2020::10:44:47</weakCGTime>
+			<weakCGTime type="a">5.27.2020::9:43:37</weakCGTime>
 			<strongCGTime type="a">4.30.2020::9:51:17</strongCGTime>
 			<_defaultComposite type="s">GUID 66af33e9-98b9-483e-9515-0798c195b3d2</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -570,8 +570,8 @@
 			</_properties>
 			<_name type="a">Docking_System</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::10:41:59</_modifiedTime>
-			<_lastModifiedTime type="a">5.18.2020::10:41:59</_lastModifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:45</_modifiedTime>
+			<_lastModifiedTime type="a">5.27.2020::9:46:45</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -809,7 +809,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Move Forward</m_str>
+					<m_str type="a">Move_Forward</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -891,7 +891,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Reverse Truck manually</m_str>
+					<m_str type="a">Reverse_Truck_manually</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1055,7 +1055,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Obstacle Avoidance</m_str>
+					<m_str type="a">Obstacle_Avoidance</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1137,7 +1137,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Load Goods</m_str>
+					<m_str type="a">Load_Goods</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1219,7 +1219,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Request for Loading</m_str>
+					<m_str type="a">Request_for_Loading</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1553,7 +1553,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Check for obstacles</m_str>
+					<m_str type="a">Check_for_obstacles</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1674,7 +1674,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsDriver</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1691,7 +1690,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsParking</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1779,7 +1777,7 @@
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">DCOperator</_hclass>
-					<_hname type="a">itsRequest for Loading</_hname>
+					<_hname type="a">itsRequest_for_Loading</_hname>
 					<_hid type="a">GUID 51d2a73a-107c-496d-a2c1-b5927590389e</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -1853,7 +1851,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsDCOperator</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1873,7 +1870,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsRequest for Loading</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1999,7 +1995,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Stop Truck</m_str>
+					<m_str type="a">Stop_Truck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2150,7 +2146,7 @@
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">PedestrianandObstacles</_hclass>
-					<_hname type="a">itsCheck for obstacles</_hname>
+					<_hname type="a">itsCheck_for_obstacles</_hname>
 					<_hid type="a">GUID bb83dbb4-a0eb-499f-a1ee-60bbb98be464</_hid>
 				</IAssociationEndHandle>
 			</m_pInverseModelObject>
@@ -2173,7 +2169,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCheck for obstacles</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2193,7 +2188,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsPedestrianandObstacles</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2284,7 +2278,7 @@
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">Driver</_hclass>
-					<_hname type="a">itsMove Forward</_hname>
+					<_hname type="a">itsMove_Forward_1</_hname>
 					<_hid type="a">GUID 7333a00c-2adb-48c4-8187-639b641587b6</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -2358,7 +2352,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsDriver</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2375,7 +2368,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsMove Forward</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3029,7 +3021,7 @@
 			<m_pParent type="s">GUID f9ae05d6-84b2-4acd-a840-9a07361a4955</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Open Loading Doors</m_str>
+					<m_str type="a">Open_Loading_Doors</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3526,8 +3518,8 @@
 			</_properties>
 			<_name type="a">Loading_system</_name>
 			<_modifiedTimeWeak type="a">4.30.2020::9:48:32</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:29:17</_modifiedTime>
-			<_lastModifiedTime type="a">5.15.2020::12:29:17</_lastModifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:45</_modifiedTime>
+			<_lastModifiedTime type="a">5.27.2020::9:46:45</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -3811,7 +3803,7 @@
 			<m_pParent type="s">GUID 69add057-7c9b-40e3-8112-bf6ca2a6bda0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Load Goods</m_str>
+					<m_str type="a">Load_Goods</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3893,7 +3885,7 @@
 			<m_pParent type="s">GUID 69add057-7c9b-40e3-8112-bf6ca2a6bda0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Stop Truck</m_str>
+					<m_str type="a">Stop_Truck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4033,7 +4025,7 @@
 			<m_pParent type="s">GUID 69add057-7c9b-40e3-8112-bf6ca2a6bda0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Open Loading Doors</m_str>
+					<m_str type="a">Open_Loading_Doors</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4173,7 +4165,7 @@
 			<m_pParent type="s">GUID 69add057-7c9b-40e3-8112-bf6ca2a6bda0</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Close Loading doors</m_str>
+					<m_str type="a">Close_Loading_doors</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4273,7 +4265,7 @@
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">DCOperator</_hclass>
-					<_hname type="a">itsOpen Loading Doors</_hname>
+					<_hname type="a">itsOpen_Loading_Doors</_hname>
 					<_hid type="a">GUID 663c47fd-a02b-4b3f-a7d1-48b3c38f2b18</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -4347,7 +4339,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsDCOperator</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4364,7 +4355,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsOpen Loading Doors</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4935,8 +4925,8 @@
 			</_properties>
 			<_name type="a">Obstacle_detection</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::10:43:20</_modifiedTime>
-			<_lastModifiedTime type="a">5.18.2020::10:43:20</_lastModifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:47:4</_modifiedTime>
+			<_lastModifiedTime type="a">5.27.2020::9:47:4</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -5239,7 +5229,7 @@
 			<m_pParent type="s">GUID dfce76db-4766-443f-8188-6d15ac306afe</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Receive obstacle positions</m_str>
+					<m_str type="a">Receive_Obstacle_positions</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5289,7 +5279,7 @@
 			<m_pParent type="s">GUID dfce76db-4766-443f-8188-6d15ac306afe</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Compare to predicted truck position</m_str>
+					<m_str type="a">Compare_to_predicted_truck_position</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5336,7 +5326,7 @@
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">PedestrianandObstacles</_hclass>
-					<_hname type="a">itsReceive obstacle positions</_hname>
+					<_hname type="a">itsReceive_Obstacle_positions</_hname>
 					<_hid type="a">GUID ad8842b8-a5cb-422e-be6f-31a3f131981d</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -5410,7 +5400,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsPedestrianandObstacles</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5427,7 +5416,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsReceive obstacle positions</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5580,7 +5568,7 @@
 			<m_pParent type="s">GUID dfce76db-4766-443f-8188-6d15ac306afe</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Avoid obstacle</m_str>
+					<m_str type="a">Avoid_Obstacle</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6079,8 +6067,8 @@
 			</_properties>
 			<_name type="a">Manual_Parking_System</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::10:43:33</_modifiedTime>
-			<_lastModifiedTime type="a">5.18.2020::10:43:33</_lastModifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:45</_modifiedTime>
+			<_lastModifiedTime type="a">5.27.2020::9:46:45</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -6304,7 +6292,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Stop Truck</m_str>
+					<m_str type="a">Stop_Truck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6386,7 +6374,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Reverse Truck manually</m_str>
+					<m_str type="a">Reverse_Truck_manually</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6468,7 +6456,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Move Forward</m_str>
+					<m_str type="a">Move_Forward</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6518,7 +6506,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Parking Spot Input</m_str>
+					<m_str type="a">Parking_Spot_Input</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6671,7 +6659,7 @@
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">DCOperator</_hclass>
-					<_hname type="a">itsParking Spot Input</_hname>
+					<_hname type="a">itsParking_Spot_Input</_hname>
 					<_hid type="a">GUID 139a2800-c09b-439e-9304-21a1700c14a3</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -6745,7 +6733,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsDCOperator</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6765,7 +6752,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsParking Spot Input</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6918,7 +6904,7 @@
 			<m_pParent type="s">GUID 62e478a0-6296-4dcc-9f93-f380cbed4344</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Steer Truck</m_str>
+					<m_str type="a">Steer_Truck</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -7215,7 +7201,7 @@
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">Driver</_hclass>
-					<_hname type="a">itsMove Forward_1</_hname>
+					<_hname type="a">itsMove_Forward</_hname>
 					<_hid type="a">GUID d3fa922c-1a05-4fb4-acec-74eec64ebb8b</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -7289,7 +7275,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsDriver_1</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -7306,7 +7291,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsMove Forward_1</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -7847,8 +7831,8 @@
 			</_properties>
 			<_name type="a">Steer_Truck</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::10:44:47</_modifiedTime>
-			<_lastModifiedTime type="a">5.18.2020::10:44:47</_lastModifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:47:24</_modifiedTime>
+			<_lastModifiedTime type="a">5.27.2020::9:47:24</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -8183,7 +8167,7 @@
 			<m_pParent type="s">GUID d012160c-e93d-4606-b080-fb0c05d23070</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Check next reference point</m_str>
+					<m_str type="a">Check_next_reference_point</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -8265,7 +8249,7 @@
 			<m_pParent type="s">GUID d012160c-e93d-4606-b080-fb0c05d23070</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Compare current position to reference</m_str>
+					<m_str type="a">Compare_current_position_to_reference</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -8347,7 +8331,7 @@
 			<m_pParent type="s">GUID d012160c-e93d-4606-b080-fb0c05d23070</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Provide new steering input</m_str>
+					<m_str type="a">Provide_new_steering_input</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -8445,7 +8429,7 @@
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">Driver</_hclass>
-					<_hname type="a">itsCheck next reference point</_hname>
+					<_hname type="a">itsCheck_next_reference_point</_hname>
 					<_hid type="a">GUID afcd9261-8b3a-4e7c-bbcb-5d7eae02f319</_hid>
 				</IAssociationEndHandle>
 			</m_pInverseModelObject>
@@ -8468,7 +8452,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCheck next reference point</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -8488,7 +8471,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsDriver</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -8708,7 +8690,7 @@
 		<IUseCase type="e">
 			<_id type="a">GUID 2353c088-cdfa-4be0-9042-24068a09d195</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Move Forward</_name>
+			<_name type="a">Move_Forward</_name>
 			<_modifiedTimeWeak type="a">4.6.2020::14:46:31</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
@@ -8737,7 +8719,7 @@ The driver goes reverse if necessary.%0D
 The driver brings the truck to a stop.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_lastID type="a">12</_lastID>
 			<weakCGTime type="a">4.6.2020::14:46:31</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -8803,7 +8785,7 @@ The driver brings the truck to a stop.</_text>
 		<IDependency type="e">
 			<_id type="a">GUID 01a81d07-09e6-49ad-a1ee-138e82b87f4f</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Parking Spot Input</_name>
+			<_name type="a">Parking_Spot_Input_0</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -8818,7 +8800,7 @@ The driver brings the truck to a stop.</_text>
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.2.2020::15:39:20</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::15:39:20</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:43</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -8835,7 +8817,7 @@ The driver brings the truck to a stop.</_text>
 		<IDependency type="e">
 			<_id type="a">GUID d0a1a5c4-2783-4a95-ad86-52eaa2919079</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Steer Truck</_name>
+			<_name type="a">Steer_Truck</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -8850,7 +8832,7 @@ The driver brings the truck to a stop.</_text>
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.2.2020::15:40:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::15:40:0</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:38</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -8867,7 +8849,7 @@ The driver brings the truck to a stop.</_text>
 		<IDependency type="e">
 			<_id type="a">GUID bdf523ac-910c-4fd0-927b-00c0085f6d21</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Reverse Truck manually</_name>
+			<_name type="a">Reverse_Truck_manually</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -8882,7 +8864,7 @@ The driver brings the truck to a stop.</_text>
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.2.2020::15:40:8</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.10.2020::14:47:35</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:31</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -8899,7 +8881,7 @@ The driver brings the truck to a stop.</_text>
 		<IDependency type="e">
 			<_id type="a">GUID 87f43a02-8554-453d-9f00-1757d09c8829</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Parking Spot Input_0</_name>
+			<_name type="a">Parking_Spot_Input</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -8914,7 +8896,7 @@ The driver brings the truck to a stop.</_text>
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.2.2020::15:43:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::15:43:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:43</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -8931,9 +8913,9 @@ The driver brings the truck to a stop.</_text>
 		<IDependency type="e">
 			<_id type="a">GUID 218a3197-e2db-4910-af42-0a224adf89ad</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Stop Truck</_name>
+			<_name type="a">Stop_Truck_0</_name>
 			<_modifiedTimeWeak type="a">4.6.2020::14:33:21</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:33:21</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:45</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -8950,7 +8932,7 @@ The driver brings the truck to a stop.</_text>
 		<IDependency type="e">
 			<_id type="a">GUID 2c8f954d-5f52-42c4-81b4-4b7edb516df4</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Stop Truck_0</_name>
+			<_name type="a">Stop_Truck</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -8965,7 +8947,7 @@ The driver brings the truck to a stop.</_text>
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.6.2020::14:35:16</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:35:16</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:45</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -8982,7 +8964,7 @@ The driver brings the truck to a stop.</_text>
 		<IDependency type="e">
 			<_id type="a">GUID f000c405-4559-43d9-a8b6-e5f7412ba899</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Request for Loading</_name>
+			<_name type="a">Request_for_Loading</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -8997,7 +8979,7 @@ The driver brings the truck to a stop.</_text>
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.6.2020::14:38:45</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:38:45</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:20</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9014,7 +8996,7 @@ The driver brings the truck to a stop.</_text>
 		<IDependency type="e">
 			<_id type="a">GUID 76097055-f47a-4fc1-b598-938310231d7b</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Obstacle Avoidance</_name>
+			<_name type="a">Obstacle_Avoidance</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -9029,7 +9011,7 @@ The driver brings the truck to a stop.</_text>
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.6.2020::14:44:28</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:44:28</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:23</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9078,7 +9060,7 @@ The driver brings the truck to a stop.</_text>
 		<IDependency type="e">
 			<_id type="a">GUID 39141c15-eddb-4707-a99f-21862fe8ded4</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Load Goods</_name>
+			<_name type="a">Load_Goods</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -9093,7 +9075,7 @@ The driver brings the truck to a stop.</_text>
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.6.2020::14:46:31</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:46:31</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:44:25</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9110,9 +9092,9 @@ The driver brings the truck to a stop.</_text>
 		<IInformationFlow type="e">
 			<_id type="a">GUID d94afb77-3e95-40ad-a93a-97d980ab6718</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Move Forward_Obstacle detection</_name>
+			<_name type="a">Move_Forward_Obstacle detection</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::18:36:45</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9132,7 +9114,7 @@ The driver brings the truck to a stop.</_text>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDriver</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:32:44</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -9149,7 +9131,7 @@ The driver brings the truck to a stop.</_text>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">Driver</_hclass>
-					<_hname type="a">itsMove Forward</_hname>
+					<_hname type="a">itsMove_Forward_1</_hname>
 					<_hid type="a">GUID 7333a00c-2adb-48c4-8187-639b641587b6</_hid>
 				</IHandle>
 			</_inverse>
@@ -9161,7 +9143,7 @@ The driver brings the truck to a stop.</_text>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDriver_1</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:35:38</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -9178,7 +9160,7 @@ The driver brings the truck to a stop.</_text>
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">Driver</_hclass>
-					<_hname type="a">itsMove Forward_1</_hname>
+					<_hname type="a">itsMove_Forward</_hname>
 					<_hid type="a">GUID d3fa922c-1a05-4fb4-acec-74eec64ebb8b</_hid>
 				</IHandle>
 			</_inverse>
@@ -9188,7 +9170,7 @@ The driver brings the truck to a stop.</_text>
 		<IUseCase type="e">
 			<_id type="a">GUID c4f77424-ee3a-4f6e-8800-d1b4ca6c37a6</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Reverse Truck manually</_name>
+			<_name type="a">Reverse_Truck_manually</_name>
 			<_modifiedTimeWeak type="a">4.6.2020::14:45:29</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
@@ -9225,7 +9207,7 @@ Alternative Scenario:%0D
 1.3 The driver continues with the main scenario in step 3</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.22.2020::13:4:40</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:31</_modifiedTime>
 			<_lastID type="a">8</_lastID>
 			<weakCGTime type="a">4.6.2020::14:45:29</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -9253,7 +9235,7 @@ Alternative Scenario:%0D
 		<IDependency type="e">
 			<_id type="a">GUID 50ae6842-951e-4c67-b527-584aca691bdd</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Load Goods</_name>
+			<_name type="a">Load_Goods</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -9268,7 +9250,7 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.1.2020::18:27:8</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::18:27:8</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:44:25</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9285,7 +9267,7 @@ Alternative Scenario:%0D
 		<IDependency type="e">
 			<_id type="a">GUID e83d1169-b8d3-42ee-aa42-f4bb6aceffce</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Stop Truck</_name>
+			<_name type="a">Stop_Truck</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -9300,7 +9282,7 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.1.2020::18:39:13</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::18:39:13</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:45</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9317,7 +9299,7 @@ Alternative Scenario:%0D
 		<IDependency type="e">
 			<_id type="a">GUID de5f96ce-97d1-4027-9b0d-8e854b2c6fd4</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Steer Truck</_name>
+			<_name type="a">Steer_Truck</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -9332,7 +9314,7 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.2.2020::15:40:12</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.2.2020::15:40:12</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:38</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9349,7 +9331,7 @@ Alternative Scenario:%0D
 		<IDependency type="e">
 			<_id type="a">GUID f33e4293-d873-42b3-addf-93776b2bffde</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Move Forward</_name>
+			<_name type="a">Move_Forward</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -9364,7 +9346,7 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.6.2020::14:33:26</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:33:26</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9381,7 +9363,7 @@ Alternative Scenario:%0D
 		<IDependency type="e">
 			<_id type="a">GUID c1e0bfae-f016-45e1-ac6d-94742e39ab40</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Move Forward_0</_name>
+			<_name type="a">Move_Forward_0</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -9396,7 +9378,7 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.6.2020::14:45:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:45:29</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9413,9 +9395,9 @@ Alternative Scenario:%0D
 		<IInformationFlow type="e">
 			<_id type="a">GUID 2b17674a-2443-45ec-a0f6-421d42b35c82</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Reverse Truck manually_Load Goods_0</_name>
+			<_name type="a">Reverse_Truck_manually_Load_Goods_0</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.10.2020::14:47:35</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:31</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9433,9 +9415,9 @@ Alternative Scenario:%0D
 		<IInformationFlow type="e">
 			<_id type="a">GUID 85a3b348-da6f-4990-8a89-9a7d26ff96c1</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Reverse Truck manually_Load Goods_1</_name>
+			<_name type="a">Reverse_Truck_manually_Load_Goods_1</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.10.2020::14:47:35</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:31</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9453,9 +9435,9 @@ Alternative Scenario:%0D
 		<IInformationFlow type="e">
 			<_id type="a">GUID b583b41e-5816-41ee-9a35-41f49cb7e9d1</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Reverse Truck manually_Load Goods</_name>
+			<_name type="a">Reverse_Truck_manually_Load_Goods</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.10.2020::14:47:35</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:31</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9509,7 +9491,7 @@ Alternative Scenario:%0D
 8. The driver can leave the parking spot.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_lastID type="a">3</_lastID>
 			<weakCGTime type="a">4.1.2020::18:25:34</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -9531,9 +9513,9 @@ Alternative Scenario:%0D
 		<IInformationFlow type="e">
 			<_id type="a">GUID cfd7157d-767c-4aee-aed7-54c170a3f0b6</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Parking_Move Forward</_name>
+			<_name type="a">Parking_Move_Forward</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::18:36:45</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9608,7 +9590,7 @@ Alternative Scenario:\par%0D
 }</_textRTF>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:43:46</_modifiedTime>
 			<_lastID type="a">5</_lastID>
 			<weakCGTime type="a">4.6.2020::14:44:12</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -9633,7 +9615,7 @@ Alternative Scenario:\par%0D
 		<IDependency type="e">
 			<_id type="a">GUID 88bd8e0b-fd19-4db1-a73b-eb38ba0711c4</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Check for obstacles</_name>
+			<_name type="a">Check_for_obstacles</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -9648,7 +9630,7 @@ Alternative Scenario:\par%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.1.2020::11:44:50</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::11:44:50</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:43:46</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9665,7 +9647,7 @@ Alternative Scenario:\par%0D
 		<IDependency type="e">
 			<_id type="a">GUID 88ed7bef-2402-4dae-9fb7-578eced09ba7</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Obstacle Avoidance</_name>
+			<_name type="a">Obstacle_Avoidance</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -9680,7 +9662,7 @@ Alternative Scenario:\par%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.6.2020::14:39:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:39:15</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:23</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9697,7 +9679,7 @@ Alternative Scenario:\par%0D
 		<IDependency type="e">
 			<_id type="a">GUID 2a9880d2-128f-47bc-8363-728c29fc0a55</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Obstacle Avoidance_0</_name>
+			<_name type="a">Obstacle_Avoidance_0</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -9712,7 +9694,7 @@ Alternative Scenario:\par%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.6.2020::14:39:24</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:39:24</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:23</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9729,7 +9711,7 @@ Alternative Scenario:\par%0D
 		<IDependency type="e">
 			<_id type="a">GUID 928a2533-1178-4f42-90cb-c65fc6d1100c</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Move Forward</_name>
+			<_name type="a">Move_Forward</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -9744,7 +9726,7 @@ Alternative Scenario:\par%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.6.2020::14:44:12</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:44:12</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9761,9 +9743,9 @@ Alternative Scenario:\par%0D
 		<IInformationFlow type="e">
 			<_id type="a">GUID 45af51c4-9b47-440b-ad6e-02ca7a3fa449</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Obstacle detection_Reverse Truck manually</_name>
+			<_name type="a">Obstacle detection_Reverse_Truck_manually</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.10.2020::14:47:35</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:31</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9781,7 +9763,7 @@ Alternative Scenario:\par%0D
 		<IUseCase type="e">
 			<_id type="a">GUID 28daacca-c99b-464d-bee7-3bb30ea3af3a</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Obstacle Avoidance</_name>
+			<_name type="a">Obstacle_Avoidance</_name>
 			<_modifiedTimeWeak type="a">4.1.2020::18:47:48</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
 				<_text type="a">Scope: %0D
@@ -9807,7 +9789,7 @@ Alternative Scenario:%0D
 2.1 In case of time to collision is less than 5 seconds, then the truck must come to a halt.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:23</_modifiedTime>
 			<_lastID type="a">6</_lastID>
 			<weakCGTime type="a">4.1.2020::18:47:48</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -9865,7 +9847,7 @@ Alternative Scenario:%0D
 		<IDependency type="e">
 			<_id type="a">GUID d0322f19-e78c-4f89-bfd5-262071505413</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Reverse Truck manually</_name>
+			<_name type="a">Reverse_Truck_manually</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -9880,7 +9862,7 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.1.2020::18:25:54</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.10.2020::14:47:35</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:31</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9929,9 +9911,9 @@ Alternative Scenario:%0D
 		<IInformationFlow type="e">
 			<_id type="a">GUID ef65f1da-e254-4b00-8e7f-b3ebff9e4a80</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Obstacle Avoidance_Reverse Truck manually_0</_name>
+			<_name type="a">Obstacle_Avoidance_Reverse_Truck_manually_0</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.10.2020::14:47:35</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:31</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9949,9 +9931,9 @@ Alternative Scenario:%0D
 		<IInformationFlow type="e">
 			<_id type="a">GUID 065b9d3e-4cc7-4056-9415-e2a11c87895a</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Obstacle Avoidance_Reverse Truck manually</_name>
+			<_name type="a">Obstacle_Avoidance_Reverse_Truck_manually</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.10.2020::14:47:35</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:31</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9969,9 +9951,9 @@ Alternative Scenario:%0D
 		<IInformationFlow type="e">
 			<_id type="a">GUID 1b37af9c-4c74-4f7b-9e2b-292a1c98a691</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Obstacle Avoidance_Reverse Truck manually_1</_name>
+			<_name type="a">Obstacle_Avoidance_Reverse_Truck_manually_1</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.10.2020::14:47:35</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:31</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -9989,7 +9971,7 @@ Alternative Scenario:%0D
 		<IUseCase type="e">
 			<_id type="a">GUID 181d9f1a-6f9b-4033-9613-54f41547e205</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Load Goods</_name>
+			<_name type="a">Load_Goods</_name>
 			<_modifiedTimeWeak type="a">4.22.2020::13:13:41</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
@@ -10025,7 +10007,7 @@ Alternative Scenario:%0D
  1.2  System must check if the state of the trailer doors has changed.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:44:25</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">4.22.2020::13:13:41</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -10046,7 +10028,7 @@ Alternative Scenario:%0D
 		<IDependency type="e">
 			<_id type="a">GUID 0333713e-fcd1-4275-a3e8-ce1eae852c51</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Close Loading doors</_name>
+			<_name type="a">Close_Loading_doors</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -10061,7 +10043,7 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.22.2020::13:13:41</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::13:13:41</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:44:2</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -10078,7 +10060,7 @@ Alternative Scenario:%0D
 		<IUseCase type="e">
 			<_id type="a">GUID b841351b-f70c-4140-8ccf-0dec17a008d1</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Request for Loading</_name>
+			<_name type="a">Request_for_Loading</_name>
 			<_modifiedTimeWeak type="a">4.6.2020::14:32:50</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
@@ -10117,7 +10099,7 @@ Alternative Scenario:\par%0D
 }</_textRTF>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:20</_modifiedTime>
 			<_lastID type="a">4</_lastID>
 			<weakCGTime type="a">4.6.2020::14:32:50</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -10140,7 +10122,7 @@ Alternative Scenario:\par%0D
 		<IDependency type="e">
 			<_id type="a">GUID a9093c21-bb25-4646-b80b-ce0d1305c108</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Move Forward</_name>
+			<_name type="a">Move_Forward</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -10155,7 +10137,7 @@ Alternative Scenario:\par%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.6.2020::14:32:50</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:32:50</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -10172,9 +10154,9 @@ Alternative Scenario:\par%0D
 		<IInformationFlow type="e">
 			<_id type="a">GUID eadfa35a-2d8a-46d0-b4c0-e5c3d1d3e5bc</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Request for Loading_Parking</_name>
+			<_name type="a">Request_for_Loading_Parking</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::11:40:30</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:20</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -10194,7 +10176,7 @@ Alternative Scenario:\par%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDCOperator</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:2:18</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:20</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -10211,7 +10193,7 @@ Alternative Scenario:\par%0D
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">DCOperator</_hclass>
-					<_hname type="a">itsRequest for Loading</_hname>
+					<_hname type="a">itsRequest_for_Loading</_hname>
 					<_hid type="a">GUID 51d2a73a-107c-496d-a2c1-b5927590389e</_hid>
 				</IHandle>
 			</_inverse>
@@ -10221,9 +10203,9 @@ Alternative Scenario:\par%0D
 		<IUseCase type="e">
 			<_id type="a">GUID 38945419-5402-4cbe-a1ae-811425b6f8ad</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Check for obstacles</_name>
+			<_name type="a">Check_for_obstacles</_name>
 			<_modifiedTimeWeak type="a">4.6.2020::14:47:49</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:43:46</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<weakCGTime type="a">4.6.2020::14:47:49</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -10278,9 +10260,9 @@ Alternative Scenario:\par%0D
 		<IInformationFlow type="e">
 			<_id type="a">GUID a1de355f-0029-4d5a-b35d-4da098fcefb0</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Check for obstacles_Obstacle detection</_name>
+			<_name type="a">Check_for_obstacles_Obstacle detection</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::11:44:40</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:43:46</_modifiedTime>
 			<end1_ type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -10300,7 +10282,7 @@ Alternative Scenario:\par%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsPedestrianandObstacles</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:2:34</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:43:46</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -10317,7 +10299,7 @@ Alternative Scenario:\par%0D
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">PedestrianandObstacles</_hclass>
-					<_hname type="a">itsCheck for obstacles</_hname>
+					<_hname type="a">itsCheck_for_obstacles</_hname>
 					<_hid type="a">GUID bb83dbb4-a0eb-499f-a1ee-60bbb98be464</_hid>
 				</IHandle>
 			</_inverse>
@@ -10327,7 +10309,7 @@ Alternative Scenario:\par%0D
 		<IUseCase type="e">
 			<_id type="a">GUID 74cbb2dd-e33f-4154-afac-91ee21114314</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Stop Truck</_name>
+			<_name type="a">Stop_Truck</_name>
 			<_modifiedTimeWeak type="a">4.8.2020::10:42:10</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
@@ -10356,7 +10338,7 @@ Alternate Scenario:%0D
 The driver stops the truck if they see an obstacle.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:45</_modifiedTime>
 			<_lastID type="a">4</_lastID>
 			<weakCGTime type="a">4.8.2020::10:42:10</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -10380,7 +10362,7 @@ The driver stops the truck if they see an obstacle.</_text>
 		<IDependency type="e">
 			<_id type="a">GUID 32ac108a-377a-427a-ac10-342eacd864a7</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Load Goods</_name>
+			<_name type="a">Load_Goods</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -10395,7 +10377,7 @@ The driver stops the truck if they see an obstacle.</_text>
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.1.2020::18:39:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.1.2020::18:39:15</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:44:25</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -10444,7 +10426,7 @@ The driver stops the truck if they see an obstacle.</_text>
 		<IDependency type="e">
 			<_id type="a">GUID 4183cc22-30c9-44b6-adfc-1ff24fc312bf</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Move Forward</_name>
+			<_name type="a">Move_Forward_0</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -10459,7 +10441,7 @@ The driver stops the truck if they see an obstacle.</_text>
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.6.2020::14:46:25</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:46:25</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -10476,7 +10458,7 @@ The driver stops the truck if they see an obstacle.</_text>
 		<IDependency type="e">
 			<_id type="a">GUID 962fc81b-827a-4eac-9446-403c92e56d9c</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Move Forward_0</_name>
+			<_name type="a">Move_Forward</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -10491,7 +10473,7 @@ The driver stops the truck if they see an obstacle.</_text>
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.8.2020::10:42:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.8.2020::10:42:10</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -10508,7 +10490,7 @@ The driver stops the truck if they see an obstacle.</_text>
 		<IUseCase type="e">
 			<_id type="a">GUID 374d1e8a-432d-4233-834d-f21fe317a9d1</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Parking Spot Input</_name>
+			<_name type="a">Parking_Spot_Input</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 			<_description type="p"><IDescription type="e">
 				<_text type="a">Scope: %0D
@@ -10527,7 +10509,7 @@ Alternative Scenario:%0D
 2.2 Once a spot has been vacated by another driver, the DC operator will allocate the parking spot. </_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.29.2020::15:2:18</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:43</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
@@ -10549,7 +10531,7 @@ Alternative Scenario:%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDCOperator</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:2:18</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:43</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -10566,7 +10548,7 @@ Alternative Scenario:%0D
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">DCOperator</_hclass>
-					<_hname type="a">itsParking Spot Input</_hname>
+					<_hname type="a">itsParking_Spot_Input</_hname>
 					<_hid type="a">GUID 139a2800-c09b-439e-9304-21a1700c14a3</_hid>
 				</IHandle>
 			</_inverse>
@@ -10576,7 +10558,7 @@ Alternative Scenario:%0D
 		<IUseCase type="e">
 			<_id type="a">GUID 0523d1df-89cb-420f-b501-93587b55ddd3</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Steer Truck</_name>
+			<_name type="a">Steer_Truck</_name>
 			<_modifiedTimeWeak type="a">4.6.2020::14:33:29</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
@@ -10602,7 +10584,7 @@ Main flow: \par%0D
 </_textRTF>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.7.2020::10:37:44</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:38</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">4.6.2020::14:33:29</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -10623,7 +10605,7 @@ Main flow: \par%0D
 		<IDependency type="e">
 			<_id type="a">GUID 61618d21-e215-4079-ab9d-3378ca8e30ca</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Move Forward</_name>
+			<_name type="a">Move_Forward</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -10638,7 +10620,7 @@ Main flow: \par%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.6.2020::14:33:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:33:29</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -10655,7 +10637,7 @@ Main flow: \par%0D
 		<IUseCase type="e">
 			<_id type="a">GUID c2741669-efd0-4c0e-9620-22f08fcffc33</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Open Loading Doors</_name>
+			<_name type="a">Open_Loading_Doors</_name>
 			<_modifiedTimeWeak type="a">4.6.2020::14:48:30</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
@@ -10682,7 +10664,7 @@ Alternative Scenario:%0D
       1.2  The Driver must check if the state of the trailer doors has changed sufficiently.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:33</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">4.6.2020::14:48:30</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -10704,7 +10686,7 @@ Alternative Scenario:%0D
 		<IDependency type="e">
 			<_id type="a">GUID 636121a5-f39b-4286-9421-032abb6074e5</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Load Goods</_name>
+			<_name type="a">Load_Goods</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -10719,7 +10701,7 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.6.2020::14:48:30</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.6.2020::14:48:30</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:44:25</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -10738,7 +10720,7 @@ Alternative Scenario:%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDCOperator</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:2:18</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:33</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -10755,7 +10737,7 @@ Alternative Scenario:%0D
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">DCOperator</_hclass>
-					<_hname type="a">itsOpen Loading Doors</_hname>
+					<_hname type="a">itsOpen_Loading_Doors</_hname>
 					<_hid type="a">GUID 663c47fd-a02b-4b3f-a7d1-48b3c38f2b18</_hid>
 				</IHandle>
 			</_inverse>
@@ -10765,9 +10747,9 @@ Alternative Scenario:%0D
 		<IUseCase type="e">
 			<_id type="a">GUID c2298a95-f3f8-4163-a983-97f2c73ca86b</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Check next reference point</_name>
+			<_name type="a">Check_next_reference_point</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:31:53</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:47:24</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
@@ -10789,7 +10771,7 @@ Alternative Scenario:%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDriver</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:31:53</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:47:24</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -10806,7 +10788,7 @@ Alternative Scenario:%0D
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">Driver</_hclass>
-					<_hname type="a">itsCheck next reference point</_hname>
+					<_hname type="a">itsCheck_next_reference_point</_hname>
 					<_hid type="a">GUID afcd9261-8b3a-4e7c-bbcb-5d7eae02f319</_hid>
 				</IHandle>
 			</_inverse>
@@ -10816,9 +10798,9 @@ Alternative Scenario:%0D
 		<IUseCase type="e">
 			<_id type="a">GUID 89e88da2-d013-4c6f-bce6-f68a6b57f2d3</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Compare current position to reference</_name>
+			<_name type="a">Compare_current_position_to_reference</_name>
 			<_modifiedTimeWeak type="a">4.7.2020::10:32:41</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:44:19</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">4.7.2020::10:32:41</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -10839,7 +10821,7 @@ Alternative Scenario:%0D
 		<IDependency type="e">
 			<_id type="a">GUID c73e2979-fcaa-469c-b215-c41616e3fd61</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Check next reference point</_name>
+			<_name type="a">Check_next_reference_point</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -10854,7 +10836,7 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.7.2020::10:32:41</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:32:41</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:47:24</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -10871,9 +10853,9 @@ Alternative Scenario:%0D
 		<IUseCase type="e">
 			<_id type="a">GUID 02f8c657-6954-4782-a675-28508384fa45</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Provide new steering input</_name>
+			<_name type="a">Provide_new_steering_input</_name>
 			<_modifiedTimeWeak type="a">4.7.2020::10:32:30</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:45:57</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">4.7.2020::10:32:30</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -10894,7 +10876,7 @@ Alternative Scenario:%0D
 		<IDependency type="e">
 			<_id type="a">GUID 51591bcd-738f-4a9c-be86-a8af5c67ce85</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Compare current position to reference</_name>
+			<_name type="a">Compare_current_position_to_reference</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -10909,7 +10891,7 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.7.2020::10:32:30</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:32:30</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:44:19</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -10926,9 +10908,9 @@ Alternative Scenario:%0D
 		<IUseCase type="e">
 			<_id type="a">GUID 630266d3-81fc-4e1f-ad20-83d1cbcd7200</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Receive obstacle positions</_name>
+			<_name type="a">Receive_Obstacle_positions</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:11</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
@@ -10950,7 +10932,7 @@ Alternative Scenario:%0D
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsPedestrianandObstacles</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.29.2020::15:2:34</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:11</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -10967,7 +10949,7 @@ Alternative Scenario:%0D
 					<_hfilename type="a">.\ActorPkg.sbsx</_hfilename>
 					<_hsubsystem type="a">ANGELSPkg::ActorPkg</_hsubsystem>
 					<_hclass type="a">PedestrianandObstacles</_hclass>
-					<_hname type="a">itsReceive obstacle positions</_hname>
+					<_hname type="a">itsReceive_Obstacle_positions</_hname>
 					<_hid type="a">GUID ad8842b8-a5cb-422e-be6f-31a3f131981d</_hid>
 				</IHandle>
 			</_inverse>
@@ -10977,9 +10959,9 @@ Alternative Scenario:%0D
 		<IUseCase type="e">
 			<_id type="a">GUID 5562caec-49cb-4b93-b649-dbc529091ef5</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Compare to predicted truck position</_name>
+			<_name type="a">Compare_to_predicted_truck_position</_name>
 			<_modifiedTimeWeak type="a">4.7.2020::10:43:4</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:43:4</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:47:4</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">4.7.2020::10:43:4</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -11000,7 +10982,7 @@ Alternative Scenario:%0D
 		<IDependency type="e">
 			<_id type="a">GUID 154a4977-460e-4bd3-a143-a7f803e3ef7c</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Receive obstacle positions</_name>
+			<_name type="a">Receive_Obstacle_positions</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -11015,7 +10997,7 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.7.2020::10:43:4</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:43:4</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:46:11</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -11032,9 +11014,9 @@ Alternative Scenario:%0D
 		<IUseCase type="e">
 			<_id type="a">GUID f77893aa-6963-47d9-94de-83fe976eeca9</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Avoid obstacle</_name>
+			<_name type="a">Avoid_Obstacle</_name>
 			<_modifiedTimeWeak type="a">4.7.2020::10:43:36</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:43:36</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:43:37</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">4.7.2020::10:43:36</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -11055,7 +11037,7 @@ Alternative Scenario:%0D
 		<IDependency type="e">
 			<_id type="a">GUID bd27c602-dff4-4635-95dd-0ff88adcae52</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Compare to predicted truck position</_name>
+			<_name type="a">Compare_to_predicted_truck_position</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -11070,7 +11052,7 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.7.2020::10:43:36</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.7.2020::10:43:36</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:47:4</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -11087,7 +11069,7 @@ Alternative Scenario:%0D
 		<IUseCase type="e">
 			<_id type="a">GUID 107b1941-b17f-49ca-9469-947ac2b179fe</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Close Loading doors</_name>
+			<_name type="a">Close_Loading_doors</_name>
 			<_modifiedTimeWeak type="a">4.22.2020::13:26:5</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
@@ -11114,7 +11096,7 @@ Alternative Scenario:%0D
 4.1  In case of docking spot change, the truck must move to the other spot for further loading.</_text>
 			</IDescription>
 			</_description>
-			<_modifiedTime type="a">4.30.2020::10:3:19</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:44:2</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">4.22.2020::13:26:5</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -11135,7 +11117,7 @@ Alternative Scenario:%0D
 		<IDependency type="e">
 			<_id type="a">GUID fc2d9b46-d53e-4cb9-8842-78d3f36d1f6c</_id>
 			<_myState type="a">2048</_myState>
-			<_name type="a">Load Goods</_name>
+			<_name type="a">Load_Goods</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
@@ -11150,7 +11132,7 @@ Alternative Scenario:%0D
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">4.22.2020::13:26:5</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.22.2020::13:26:5</_modifiedTime>
+			<_modifiedTime type="a">5.27.2020::9:44:25</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>

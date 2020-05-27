@@ -106,6 +106,7 @@ OBJS= \
   SafetyStandards.obj \
   ANGELSPkg.obj \
   ActorPkg.obj \
+  LocalisationPkg.obj \
   DockingSystemPkg.obj \
   LoadingSystemPkg.obj \
   LoadingProcessPkg.obj \
@@ -198,7 +199,7 @@ SOCK_LIB=
 
 
 
-ANGELS.obj : ANGELS.cpp ANGELS.h    ANGELSPkg.h Environment.h LocalizationArchitecture.h DockingSystem.h LoadingSystemBlock.h ChargingInfrastructure.h Obstacle.h Government.h SafetyStandards.h DCOperator.h DC.h Driver.h Truck.h Collision_Detection.h ChargingSystemBlock.h DockingProcessBlock.h LoadingProcessBlock.h ParkingSystemBlock.h 
+ANGELS.obj : ANGELS.cpp ANGELS.h    ANGELSPkg.h Environment.h LocalizationArchitecture.h DockingSystem.h LoadingSystemBlock.h ChargingInfrastructure.h Obstacle.h Government.h SafetyStandards.h DCOperator.h DC.h Driver.h Truck.h Collision_Detection.h ChargingSystemBlock.h LoadingProcessBlock.h ParkingSystemBlock.h DockingProcessBlock.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ANGELS.obj" "ANGELS.cpp" 
 
@@ -210,7 +211,7 @@ Environment.obj : Environment.cpp Environment.h    ActorPkg.h ANGELS.h
 
 
 
-LocalizationArchitecture.obj : LocalizationArchitecture.cpp LocalizationArchitecture.h    ANGELSPkg.h ANGELS.h 
+LocalizationArchitecture.obj : LocalizationArchitecture.cpp LocalizationArchitecture.h    LocalisationPkg.h ANGELS.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LocalizationArchitecture.obj" "LocalizationArchitecture.cpp" 
 
@@ -288,7 +289,7 @@ ChargingSystemBlock.obj : ChargingSystemBlock.cpp ChargingSystemBlock.h    Charg
 
 
 
-ChargingInfrastructure.obj : ChargingInfrastructure.cpp ChargingInfrastructure.h    ANGELSPkg.h ANGELS.h ChargingSystemBlock.h 
+ChargingInfrastructure.obj : ChargingInfrastructure.cpp ChargingInfrastructure.h    ChargingSystemPkg.h ANGELS.h ChargingSystemBlock.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ChargingInfrastructure.obj" "ChargingInfrastructure.cpp" 
 
@@ -318,7 +319,7 @@ SafetyStandards.obj : SafetyStandards.cpp SafetyStandards.h    ActorPkg.h ANGELS
 
 
 
-ANGELSPkg.obj : ANGELSPkg.cpp ANGELSPkg.h    ANGELS.h LocalizationArchitecture.h ChargingInfrastructure.h 
+ANGELSPkg.obj : ANGELSPkg.cpp ANGELSPkg.h    ANGELS.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ANGELSPkg.obj" "ANGELSPkg.cpp" 
 
@@ -327,6 +328,12 @@ ANGELSPkg.obj : ANGELSPkg.cpp ANGELSPkg.h    ANGELS.h LocalizationArchitecture.h
 ActorPkg.obj : ActorPkg.cpp ActorPkg.h    ANGELSPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ActorPkg.obj" "ActorPkg.cpp" 
+
+
+
+LocalisationPkg.obj : LocalisationPkg.cpp LocalisationPkg.h    LocalizationArchitecture.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LocalisationPkg.obj" "LocalisationPkg.cpp" 
 
 
 
@@ -372,7 +379,7 @@ DockingPkg.obj : DockingPkg.cpp DockingPkg.h    DockingProcessBlock.h ANGELSPkg.
 
 
 
-ChargingSystemPkg.obj : ChargingSystemPkg.cpp ChargingSystemPkg.h    ChargingSystemBlock.h ANGELSPkg.h 
+ChargingSystemPkg.obj : ChargingSystemPkg.cpp ChargingSystemPkg.h    ChargingSystemBlock.h ChargingInfrastructure.h ANGELSPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ChargingSystemPkg.obj" "ChargingSystemPkg.cpp" 
 
@@ -439,6 +446,7 @@ clean:
 	if exist SafetyStandards.obj erase SafetyStandards.obj
 	if exist ANGELSPkg.obj erase ANGELSPkg.obj
 	if exist ActorPkg.obj erase ActorPkg.obj
+	if exist LocalisationPkg.obj erase LocalisationPkg.obj
 	if exist DockingSystemPkg.obj erase DockingSystemPkg.obj
 	if exist LoadingSystemPkg.obj erase LoadingSystemPkg.obj
 	if exist LoadingProcessPkg.obj erase LoadingProcessPkg.obj

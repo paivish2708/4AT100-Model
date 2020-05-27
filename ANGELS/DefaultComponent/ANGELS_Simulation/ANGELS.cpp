@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: ANGELS
-//!	Generated Date	: Fri, 22, May 2020  
+//!	Generated Date	: Wed, 27, May 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\ANGELS.cpp
 *********************************************************************/
 
@@ -57,13 +57,13 @@ ANGELS::ANGELS(IOxfActive* theActiveContext) : ChargeState(15), LoadingTime(0), 
             itsChargingSystemBlock.setShouldDelete(false);
         }
         {
-            itsDockingProcessBlock.setShouldDelete(false);
-        }
-        {
             itsLoadingProcessBlock.setShouldDelete(false);
         }
         {
             itsParkingSystemBlock.setShouldDelete(false);
+        }
+        {
+            itsDockingProcessBlock.setShouldDelete(false);
         }
     }
     itsChargingInfrastructure = NULL;
@@ -833,9 +833,9 @@ void ANGELS::setActiveContext(IOxfActive* theActiveContext, bool activeInstance)
     OMReactive::setActiveContext(theActiveContext, activeInstance);
     {
         itsChargingSystemBlock.setActiveContext(theActiveContext, false);
-        itsDockingProcessBlock.setActiveContext(theActiveContext, false);
         itsLoadingProcessBlock.setActiveContext(theActiveContext, false);
         itsParkingSystemBlock.setActiveContext(theActiveContext, false);
+        itsDockingProcessBlock.setActiveContext(theActiveContext, false);
     }
 }
 
@@ -880,7 +880,7 @@ IOxfReactive::TakeEventStatus ANGELS::rootState_processEvent() {
         // State ON
         case ON:
         {
-            if(IS_EVENT_TYPE_OF(SwitchOffANGELS_ANGELSPkg_id))
+            if(IS_EVENT_TYPE_OF(SwitchOffANGELSFunc_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("2");
                     NOTIFY_STATE_EXITED("ROOT.ON");
@@ -1001,12 +1001,12 @@ void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
         }
     aomsRelations->addRelation("itsChargingSystemBlock", true, true);
     aomsRelations->ADD_ITEM(&myReal->itsChargingSystemBlock);
-    aomsRelations->addRelation("itsDockingProcessBlock", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsDockingProcessBlock);
     aomsRelations->addRelation("itsLoadingProcessBlock", true, true);
     aomsRelations->ADD_ITEM(&myReal->itsLoadingProcessBlock);
     aomsRelations->addRelation("itsParkingSystemBlock", true, true);
     aomsRelations->ADD_ITEM(&myReal->itsParkingSystemBlock);
+    aomsRelations->addRelation("itsDockingProcessBlock", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsDockingProcessBlock);
 }
 
 void OMAnimatedANGELS::rootState_serializeStates(AOMSState* aomsState) const {

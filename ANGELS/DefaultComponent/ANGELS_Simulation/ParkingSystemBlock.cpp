@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: ParkingSystemBlock
-//!	Generated Date	: Fri, 22, May 2020  
+//!	Generated Date	: Wed, 27, May 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\ParkingSystemBlock.cpp
 *********************************************************************/
 
@@ -99,6 +99,7 @@ double ParkingSystemBlock::getSpeed() const {
 
 void ParkingSystemBlock::setSpeed(double p_Speed) {
     Speed = p_Speed;
+    NOTIFY_SET_OPERATION;
 }
 
 double ParkingSystemBlock::getSteerAngle() const {
@@ -107,6 +108,7 @@ double ParkingSystemBlock::getSteerAngle() const {
 
 void ParkingSystemBlock::setSteerAngle(double p_SteerAngle) {
     SteerAngle = p_SteerAngle;
+    NOTIFY_SET_OPERATION;
 }
 
 double ParkingSystemBlock::getDt() const {

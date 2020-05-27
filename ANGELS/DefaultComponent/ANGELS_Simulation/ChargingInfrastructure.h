@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: ChargingInfrastructure
-//!	Generated Date	: Fri, 22, May 2020  
+//!	Generated Date	: Wed, 27, May 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\ChargingInfrastructure.h
 *********************************************************************/
 
@@ -18,14 +18,14 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include "ANGELSPkg.h"
+#include "ChargingSystemPkg.h"
 //## link itsANGELS
 class ANGELS;
 
 //## link itsChargingSystemBlock
 class ChargingSystemBlock;
 
-//## package ANGELSPkg
+//## package ANGELSPkg::ChargingSystemPkg
 
 //## class ChargingInfrastructure
 class ChargingInfrastructure {

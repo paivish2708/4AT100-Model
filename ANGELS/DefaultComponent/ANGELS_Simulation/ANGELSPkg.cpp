@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: ANGELSPkg
-//!	Generated Date	: Fri, 22, May 2020  
+//!	Generated Date	: Wed, 27, May 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\ANGELSPkg.cpp
 *********************************************************************/
 
@@ -16,10 +16,6 @@
 #include "ANGELSPkg.h"
 //## auto_generated
 #include "ANGELS.h"
-//## auto_generated
-#include "ChargingInfrastructure.h"
-//## auto_generated
-#include "LocalizationArchitecture.h"
 //#[ ignore
 #define SwitchOnANGELS_SERIALIZE OM_NO_OP
 
@@ -38,6 +34,12 @@
 #define TurnOffANGELS_UNSERIALIZE OM_NO_OP
 
 #define TurnOffANGELS_CONSTRUCTOR TurnOffANGELS()
+
+#define SwitchOffANGELSFunc_SERIALIZE OM_NO_OP
+
+#define SwitchOffANGELSFunc_UNSERIALIZE OM_NO_OP
+
+#define SwitchOffANGELSFunc_CONSTRUCTOR SwitchOffANGELSFunc()
 //#]
 
 //## package ANGELSPkg
@@ -87,6 +89,18 @@ bool TurnOffANGELS::isTypeOf(const short id) const {
 }
 
 IMPLEMENT_META_EVENT_P(TurnOffANGELS, ANGELSPkg, ANGELSPkg, TurnOffANGELS())
+
+//## event SwitchOffANGELSFunc()
+SwitchOffANGELSFunc::SwitchOffANGELSFunc() {
+    NOTIFY_EVENT_CONSTRUCTOR(SwitchOffANGELSFunc)
+    setId(SwitchOffANGELSFunc_ANGELSPkg_id);
+}
+
+bool SwitchOffANGELSFunc::isTypeOf(const short id) const {
+    return (SwitchOffANGELSFunc_ANGELSPkg_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(SwitchOffANGELSFunc, ANGELSPkg, ANGELSPkg, SwitchOffANGELSFunc())
 
 /*********************************************************************
 	File Path	: DefaultComponent\ANGELS_Simulation\ANGELSPkg.cpp

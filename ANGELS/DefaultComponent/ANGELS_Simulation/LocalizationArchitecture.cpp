@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: LocalizationArchitecture
-//!	Generated Date	: Fri, 22, May 2020  
+//!	Generated Date	: Wed, 27, May 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\LocalizationArchitecture.cpp
 *********************************************************************/
 
@@ -17,14 +17,14 @@
 //## link itsANGELS_1
 #include "ANGELS.h"
 //#[ ignore
-#define ANGELSPkg_LocalizationArchitecture_LocalizationArchitecture_SERIALIZE OM_NO_OP
+#define ANGELSPkg_LocalisationPkg_LocalizationArchitecture_LocalizationArchitecture_SERIALIZE OM_NO_OP
 //#]
 
-//## package ANGELSPkg
+//## package ANGELSPkg::LocalisationPkg
 
 //## class LocalizationArchitecture
 LocalizationArchitecture::LocalizationArchitecture() {
-    NOTIFY_CONSTRUCTOR(LocalizationArchitecture, LocalizationArchitecture(), 0, ANGELSPkg_LocalizationArchitecture_LocalizationArchitecture_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(LocalizationArchitecture, LocalizationArchitecture(), 0, ANGELSPkg_LocalisationPkg_LocalizationArchitecture_LocalizationArchitecture_SERIALIZE);
     itsANGELS_1 = NULL;
 }
 
@@ -94,7 +94,7 @@ void OMAnimatedLocalizationArchitecture::serializeRelations(AOMSRelations* aomsR
 }
 //#]
 
-IMPLEMENT_META_P(LocalizationArchitecture, ANGELSPkg, ANGELSPkg, false, OMAnimatedLocalizationArchitecture)
+IMPLEMENT_META_P(LocalizationArchitecture, ANGELSPkg_LocalisationPkg, ANGELSPkg::LocalisationPkg, false, OMAnimatedLocalizationArchitecture)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

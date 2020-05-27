@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: ChargingSystemPkg
-//!	Generated Date	: Fri, 22, May 2020  
+//!	Generated Date	: Wed, 27, May 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\ChargingSystemPkg.cpp
 *********************************************************************/
 
@@ -14,6 +14,8 @@
 
 //## auto_generated
 #include "ChargingSystemPkg.h"
+//## auto_generated
+#include "ChargingInfrastructure.h"
 //## auto_generated
 #include "ChargingSystemBlock.h"
 //#[ ignore

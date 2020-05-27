@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: ChargingSystemPkg
-//!	Generated Date	: Fri, 22, May 2020  
+//!	Generated Date	: Wed, 27, May 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\ChargingSystemPkg.h
 *********************************************************************/
 
@@ -21,6 +21,9 @@
 #include <oxf\event.h>
 //## auto_generated
 #include "ANGELSPkg.h"
+//## auto_generated
+class ChargingInfrastructure;
+
 //## auto_generated
 class ChargingSystemBlock;
 
