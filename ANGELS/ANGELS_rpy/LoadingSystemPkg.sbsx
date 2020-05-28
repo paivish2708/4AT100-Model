@@ -11,11 +11,20 @@
 			<_id type="a">GUID 8d35c598-0266-49a6-8637-7cada356574a</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">LoadingSystemPkg</_name>
-			<_modifiedTimeWeak type="a">5.22.2020::20:56:3</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.15.2020::12:35:47</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.28.2020::9:30:41</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+					<_hname type="a">PKGDiagram</_hname>
+					<_hid type="a">GUID 56208a7b-266a-493a-bf3e-293543ebfa59</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">5.28.2020::9:51:35</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">5.22.2020::20:56:3</weakCGTime>
-			<strongCGTime type="a">5.15.2020::12:35:47</strongCGTime>
+			<weakCGTime type="a">5.28.2020::9:30:41</weakCGTime>
+			<strongCGTime type="a">5.28.2020::9:30:41</strongCGTime>
 			<_defaultComposite type="s">GUID dc74bc05-15cb-49aa-a412-16ab395410fd</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>

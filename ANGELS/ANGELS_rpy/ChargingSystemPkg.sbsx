@@ -11,11 +11,20 @@
 			<_id type="a">GUID 8abba9a9-dec0-4547-b62d-d3de41f38a0a</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ChargingSystemPkg</_name>
-			<_modifiedTimeWeak type="a">5.24.2020::15:43:41</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.24.2020::16:0:46</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.28.2020::9:30:41</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+					<_hname type="a">PKGDiagram</_hname>
+					<_hid type="a">GUID 56208a7b-266a-493a-bf3e-293543ebfa59</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">5.28.2020::9:51:35</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">5.24.2020::15:43:41</weakCGTime>
-			<strongCGTime type="a">4.30.2020::10:4:51</strongCGTime>
+			<weakCGTime type="a">5.28.2020::9:30:41</weakCGTime>
+			<strongCGTime type="a">5.28.2020::9:30:41</strongCGTime>
 			<_defaultComposite type="s">GUID 41c6160a-5be6-4a5a-ba95-61a59bad59f5</_defaultComposite>
 			<_eventsBaseID type="a">7401</_eventsBaseID>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
@@ -61,16 +70,16 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.24.2020::15:43:27</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.28.2020::9:56:38</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID 144a2d42-71ff-4c69-be8d-4de46139cd39</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.24.2020::15:43:27</_modifiedTime>
+			<_modifiedTime type="a">5.28.2020::9:56:38</_modifiedTime>
 			<_lastID type="a">4</_lastID>
-			<weakCGTime type="a">5.24.2020::15:43:27</weakCGTime>
+			<weakCGTime type="a">5.28.2020::9:56:38</weakCGTime>
 			<strongCGTime type="a">5.18.2020::12:10:59</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -2463,7 +2472,7 @@
 				<_name type="a">Charge</_name>
 				<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 				<_modifiedTime type="a">5.24.2020::15:56:42</_modifiedTime>
-				<m_szSequence type="a">5.</m_szSequence>
+				<m_szSequence type="a">4.</m_szSequence>
 				<m_pCommunicationConnection type="r">
 					<IHandle type="e">
 					</IHandle>
@@ -2499,7 +2508,7 @@
 				<_name type="a">Charging</_name>
 				<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
 				<_modifiedTime type="a">5.24.2020::15:56:58</_modifiedTime>
-				<m_szSequence type="a">4.</m_szSequence>
+				<m_szSequence type="a">5.</m_szSequence>
 				<m_pCommunicationConnection type="r">
 					<IHandle type="e">
 					</IHandle>
@@ -4061,8 +4070,8 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.21.2020::20:28:56</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.21.2020::20:28:56</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.28.2020::9:56:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.28.2020::9:56:38</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>

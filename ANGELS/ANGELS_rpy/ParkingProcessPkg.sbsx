@@ -11,11 +11,20 @@
 			<_id type="a">GUID 363e27a5-edb8-44a5-82c4-8353be709de0</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ParkingProcessPkg</_name>
-			<_modifiedTimeWeak type="a">5.25.2020::20:44:32</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.25.2020::20:44:32</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.28.2020::9:30:41</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+					<_hname type="a">PKGDiagram</_hname>
+					<_hid type="a">GUID 56208a7b-266a-493a-bf3e-293543ebfa59</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">5.28.2020::9:51:35</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">5.25.2020::20:44:32</weakCGTime>
-			<strongCGTime type="a">5.14.2020::10:46:26</strongCGTime>
+			<weakCGTime type="a">5.28.2020::9:30:41</weakCGTime>
+			<strongCGTime type="a">5.28.2020::9:30:41</strongCGTime>
 			<_defaultComposite type="s">GUID fd3dcb46-e9fd-4786-bce3-79f972efc280</_defaultComposite>
 			<_eventsBaseID type="a">9001</_eventsBaseID>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
@@ -60,16 +69,16 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.25.2020::20:44:32</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">5.28.2020::9:57:30</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID b89222af-caa2-4e62-893a-7a2e47a9c5ca</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.25.2020::20:44:32</_modifiedTime>
+			<_modifiedTime type="a">5.28.2020::9:57:30</_modifiedTime>
 			<_lastID type="a">5</_lastID>
-			<weakCGTime type="a">5.25.2020::20:44:32</weakCGTime>
+			<weakCGTime type="a">5.28.2020::9:57:30</weakCGTime>
 			<strongCGTime type="a">5.18.2020::12:59:15</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -2562,11 +2571,6 @@
 				<_name type="a">interactionOperand_0</_name>
 				<_modifiedTimeWeak type="a">5.25.2020::20:45:16</_modifiedTimeWeak>
 				<_modifiedTime type="a">5.25.2020::20:45:16</_modifiedTime>
-				<CombinedFragments type="c">
-					<IRPYRawContainer type="e">
-						<size type="a">0</size>
-					</IRPYRawContainer>
-				</CombinedFragments>
 				<_interactionConstraint type="a">ParkingStatus!=1(1 for completed)</_interactionConstraint>
 			</IInteractionOperand>
 			<ICombinedFragment type="e">
@@ -4515,8 +4519,8 @@ ParkingStatus = 1;</_bodyData>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.18.2020::12:59:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:58:57</_modifiedTime>
+			<_modifiedTimeWeak type="a">5.28.2020::9:57:30</_modifiedTimeWeak>
+			<_modifiedTime type="a">5.28.2020::9:57:30</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
