@@ -1,8 +1,5 @@
 [Op Calls]
 [Events]
-DockingProcessBlock[0]->GEN(EndDocking())`ANGELSPkg::DockingPkg::DockingProcessBlock
-DockingProcessBlock[0]->GEN(BeginTruckMovement())`ANGELSPkg::DockingPkg::DockingProcessBlock
-DockingProcessBlock[0]->GEN(DockInput(2))`ANGELSPkg::DockingPkg::DockingProcessBlock
-DockingProcessBlock[0]->GEN(StartDockingProcedure())`ANGELSPkg::DockingPkg::DockingProcessBlock
-DockingProcessBlock[0]->GEN(Autonomousmode())`ANGELSPkg::DockingPkg::DockingProcessBlock
+EmergencyOverrideBlock[0]->GEN(DefaultMode())`EmergencyOverrideBlock
+EmergencyOverrideBlock[0]->GEN(SwitchOnANGELS())`EmergencyOverrideBlock
 [Breakpoints]
