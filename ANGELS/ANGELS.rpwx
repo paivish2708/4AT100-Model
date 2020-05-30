@@ -22,8 +22,8 @@
 						<_placement type="p">
 							<CCommon_WINDOWPLACEMENT type="e">
 								<m_nLength type="a">44</m_nLength>
-								<m_nFlags type="a">2</m_nFlags>
-								<m_showCmd type="a">3</m_showCmd>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
 								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
 								<m_ptMaxPositionX type="a">-8</m_ptMaxPositionX>
@@ -45,10 +45,10 @@
 								<_hid type="a">GUID 1e30e7fc-fcf6-4975-a4b5-4f40b469db84</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">824 422 </_DownRight>
-						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
-						<m_bIsActiveView type="a">1</m_bIsActiveView>
+						<_UpLeft type="a">-15 0 </_UpLeft>
+						<_DownRight type="a">1620 610 </_DownRight>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 					<CGEMdiDiagramParams type="e">
@@ -80,7 +80,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
 						<_DownRight type="a">678 253 </_DownRight>
-						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -114,7 +114,7 @@
 						<_UpLeft type="a">0 0 </_UpLeft>
 						<_DownRight type="a">678 222 </_DownRight>
 						<_instanceName type="a">EmergencyOverrideBlock[0]</_instanceName>
-						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">4</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -146,13 +146,13 @@
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
 						<_DownRight type="a">678 222 </_DownRight>
-						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 				</IRPYRawContainer>
 			</myViewsWithID>
-			<_fullName type="a">C:\Users\LAPTOP\Documents\TUE\Q4\Automotive Systems engg\4AT100-Model(with AD)\ANGELS\ANGELS</_fullName>
+			<_fullName type="a">C:\Users\LAPTOP\Documents\TUE\Q3\Automotive Systems project\4AT100 Model\ANGELS\ANGELS</_fullName>
 			<m_SearchScopeList type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -181,7 +181,7 @@
 				<name type="a">DS</name>
 				<idOrFolder type="a">#startHnd# INObjectHandle 
 	- _m2Class = &quot;IArgument&quot;#hndSem#
-	- _filename = &quot;C:\\Users\\LAPTOP\\Documents\\TUE\\Q4\\Automotive Systems engg\\4AT100-Model(with AD)\\ANGELS\\ANGELS_rpy\\DockingPkg.sbsx&quot;#hndSem#
+	- _filename = &quot;C:\\Users\\LAPTOP\\Documents\\TUE\\Q3\\Automotive Systems project\\4AT100 Model\\ANGELS\\ANGELS_rpy\\DockingPkg.sbsx&quot;#hndSem#
 	- _subsystem = &quot;ANGELSPkg::DockingPkg&quot;#hndSem#
 	- _name = &quot;DockInput(double).0&quot;#hndSem#
 	- _id = GUID 1a093f53-9ef2-48aa-b317-07542a23447c#hndSem#
