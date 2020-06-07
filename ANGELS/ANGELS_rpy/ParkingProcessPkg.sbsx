@@ -11,7 +11,7 @@
 			<_id type="a">GUID 363e27a5-edb8-44a5-82c4-8353be709de0</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ParkingProcessPkg</_name>
-			<_modifiedTimeWeak type="a">5.28.2020::9:30:41</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.5.2020::7:49:32</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -21,9 +21,9 @@
 					<_hid type="a">GUID 56208a7b-266a-493a-bf3e-293543ebfa59</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.28.2020::9:51:35</_modifiedTime>
+			<_modifiedTime type="a">6.7.2020::20:17:5</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">5.28.2020::9:30:41</weakCGTime>
+			<weakCGTime type="a">6.5.2020::7:49:32</weakCGTime>
 			<strongCGTime type="a">5.28.2020::9:30:41</strongCGTime>
 			<_defaultComposite type="s">GUID fd3dcb46-e9fd-4786-bce3-79f972efc280</_defaultComposite>
 			<_eventsBaseID type="a">9001</_eventsBaseID>
@@ -69,16 +69,16 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.28.2020::9:57:30</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.7.2020::19:8:9</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID b89222af-caa2-4e62-893a-7a2e47a9c5ca</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.28.2020::9:57:30</_modifiedTime>
-			<_lastID type="a">5</_lastID>
-			<weakCGTime type="a">5.28.2020::9:57:30</weakCGTime>
+			<_modifiedTime type="a">6.7.2020::19:8:9</_modifiedTime>
+			<_lastID type="a">6</_lastID>
+			<weakCGTime type="a">6.7.2020::19:8:9</weakCGTime>
 			<strongCGTime type="a">5.18.2020::12:59:15</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -103,6 +103,7 @@
 				<value>GUID a809fd3e-011a-4fa7-b16d-62083ba92e64</value>
 				<value>GUID b55ea5a3-5a3e-4b93-a511-1f6247f851af</value>
 				<value>GUID cde790c0-e345-4646-9717-9f9c54d455f7</value>
+				<value>GUID 3f52e37d-8cc5-4d36-b783-307c0d090133</value>
 				<value>GUID f452b5d8-ab1c-4edc-9e3c-d87a2ef6d6b5</value>
 				<value>GUID 6be444dd-53c1-470d-b647-e5a11b52d51f</value>
 				<value>GUID 82611f97-d78e-4367-90c9-8d38fdbdf306</value>
@@ -448,8 +449,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.25.2020::20:33:31</_modifiedTime>
-			<_lastModifiedTime type="a">5.25.2020::20:33:31</_lastModifiedTime>
+			<_modifiedTime type="a">6.5.2020::7:49:51</_modifiedTime>
+			<_lastModifiedTime type="a">6.5.2020::7:49:51</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -4476,8 +4477,8 @@ ParkingStatus = 1;</_bodyData>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.18.2020::12:59:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:59:1</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.7.2020::19:8:9</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.7.2020::19:8:9</_modifiedTime>
 			<_typeOf type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IType</_hm2Class>
@@ -4588,6 +4589,40 @@ ParkingStatus = 1;</_bodyData>
 			<_modifiedTime type="a">5.18.2020::12:36:8</_modifiedTime>
 			<_value type="a">0</_value>
 		</ILiteralSpecification>
+		<IAttribute type="e">
+			<_id type="a">GUID 3f52e37d-8cc5-4d36-b783-307c0d090133</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ParkingSpot</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
+							<_hsubsystem type="a">SysML::Blocks</_hsubsystem>
+							<_hname type="a">ValueProperty</_hname>
+							<_hid type="a">GUID 04164f8c-01a3-4eab-b4a4-c37aae7a46e9</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">6.5.2020::7:50:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.5.2020::7:50:22</_modifiedTime>
+			<_typeOf type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypesCpp</_hsubsystem>
+					<_hname type="a">double</_hname>
+					<_hid type="a">GUID 02ef7294-6849-47b9-9fb2-cfb87b56d2ad</_hid>
+				</IHandle>
+			</_typeOf>
+			<_isOrdered type="a">0</_isOrdered>
+			<_protection type="a">iPublic</_protection>
+			<_static type="a">0</_static>
+			<_isReferenceAttr type="a">0</_isReferenceAttr>
+			<_isConstant type="a">0</_isConstant>
+		</IAttribute>
 		<IStateChart type="e">
 			<_id type="a">GUID f452b5d8-ab1c-4edc-9e3c-d87a2ef6d6b5</_id>
 			<_myState type="a">8192</_myState>

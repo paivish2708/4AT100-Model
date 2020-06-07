@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: kevin
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: Collision_Detection
-//!	Generated Date	: Fri, 22, May 2020  
+//!	Generated Date	: Fri, 29, May 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\Collision_Detection.cpp
 *********************************************************************/
 

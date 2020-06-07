@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: LAPTOP
+	Login		: kevin
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: LocalisationPkg
-//!	Generated Date	: Wed, 27, May 2020  
+//!	Generated Date	: Fri, 29, May 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\LocalisationPkg.h
 *********************************************************************/
 
