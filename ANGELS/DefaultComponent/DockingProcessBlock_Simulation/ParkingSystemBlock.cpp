@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DockingProcessBlock_Simulation
 	Model Element	: ParkingSystemBlock
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\DockingProcessBlock_Simulation\ParkingSystemBlock.cpp
 *********************************************************************/
 
@@ -30,6 +30,10 @@
 #define ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_CheckParkingStatus_SERIALIZE OM_NO_OP
 
 #define ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_StopTruck_SERIALIZE OM_NO_OP
+
+#define OMAnim_ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_setParkingSpot_double_UNSERIALIZE_ARGS OP_UNSER(OMDestructiveString2X,p_ParkingSpot)
+
+#define OMAnim_ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_setParkingSpot_double_SERIALIZE_RET_VAL
 //#]
 
 //## package ANGELSPkg::ParkingProcessPkg
@@ -77,6 +81,15 @@ void ParkingSystemBlock::setChargeState(double p_ChargeState) {
     ChargeState = p_ChargeState;
 }
 
+double ParkingSystemBlock::getParkingSpot() const {
+    return ParkingSpot;
+}
+
+void ParkingSystemBlock::setParkingSpot(double p_ParkingSpot) {
+    ParkingSpot = p_ParkingSpot;
+    NOTIFY_SET_OPERATION;
+}
+
 double ParkingSystemBlock::getParkingStatus() const {
     return ParkingStatus;
 }
@@ -99,6 +112,7 @@ double ParkingSystemBlock::getSpeed() const {
 
 void ParkingSystemBlock::setSpeed(double p_Speed) {
     Speed = p_Speed;
+    NOTIFY_SET_OPERATION;
 }
 
 double ParkingSystemBlock::getSteerAngle() const {
@@ -107,6 +121,7 @@ double ParkingSystemBlock::getSteerAngle() const {
 
 void ParkingSystemBlock::setSteerAngle(double p_SteerAngle) {
     SteerAngle = p_SteerAngle;
+    NOTIFY_SET_OPERATION;
 }
 
 double ParkingSystemBlock::getDt() const {
@@ -472,6 +487,7 @@ void OMAnimatedParkingSystemBlock::serializeAttributes(AOMSAttributes* aomsAttri
     aomsAttributes->addAttribute("Speed", x2String(myReal->Speed));
     aomsAttributes->addAttribute("SteerAngle", x2String(myReal->SteerAngle));
     aomsAttributes->addAttribute("ParkingTime", x2String(myReal->ParkingTime));
+    aomsAttributes->addAttribute("ParkingSpot", x2String(myReal->ParkingSpot));
 }
 
 void OMAnimatedParkingSystemBlock::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -578,6 +594,10 @@ void OMAnimatedParkingSystemBlock::AutonomousMode_serializeStates(AOMSState* aom
 //#]
 
 IMPLEMENT_REACTIVE_META_P(ParkingSystemBlock, ANGELSPkg_ParkingProcessPkg, ANGELSPkg::ParkingProcessPkg, false, OMAnimatedParkingSystemBlock)
+
+IMPLEMENT_META_OP(OMAnimatedParkingSystemBlock, ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_setParkingSpot_double, "setParkingSpot", FALSE, "setParkingSpot(double)", 1)
+
+IMPLEMENT_OP_CALL(ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_setParkingSpot_double, ParkingSystemBlock, setParkingSpot(p_ParkingSpot), NO_OP())
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

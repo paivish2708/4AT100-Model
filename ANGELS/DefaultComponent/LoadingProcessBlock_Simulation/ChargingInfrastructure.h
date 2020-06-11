@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: ChargingInfrastructure
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\ChargingInfrastructure.h
 *********************************************************************/
 
@@ -18,14 +18,14 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include "ANGELSPkg.h"
+#include "ChargingSystemPkg.h"
 //## link itsANGELS
 class ANGELS;
 
-//## link itsCharging_System
-class Charging_System;
+//## link itsChargingSystemBlock
+class ChargingSystemBlock;
 
-//## package ANGELSPkg
+//## package ANGELSPkg::ChargingSystemPkg
 
 //## class ChargingInfrastructure
 class ChargingInfrastructure {
@@ -60,10 +60,10 @@ public :
     void setItsANGELS_1(ANGELS* p_ANGELS);
     
     //## auto_generated
-    Charging_System* getItsCharging_System() const;
+    ChargingSystemBlock* getItsChargingSystemBlock() const;
     
     //## auto_generated
-    void setItsCharging_System(Charging_System* p_Charging_System);
+    void setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
 
 protected :
 
@@ -76,21 +76,12 @@ protected :
     
     ANGELS* itsANGELS_1;		//## link itsANGELS_1
     
-    Charging_System* itsCharging_System;		//## link itsCharging_System
+    ChargingSystemBlock* itsChargingSystemBlock;		//## link itsChargingSystemBlock
     
     ////    Framework operations    ////
 
 public :
 
-    //## auto_generated
-    void __setItsANGELS(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _setItsANGELS(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    void _clearItsANGELS();
-    
     //## auto_generated
     void __setItsANGELS_1(ANGELS* p_ANGELS);
     
@@ -101,13 +92,13 @@ public :
     void _clearItsANGELS_1();
     
     //## auto_generated
-    void __setItsCharging_System(Charging_System* p_Charging_System);
+    void __setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
     
     //## auto_generated
-    void _setItsCharging_System(Charging_System* p_Charging_System);
+    void _setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
     
     //## auto_generated
-    void _clearItsCharging_System();
+    void _clearItsChargingSystemBlock();
 };
 
 #ifdef _OMINSTRUMENT

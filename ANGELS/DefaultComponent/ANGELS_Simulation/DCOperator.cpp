@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\DCOperator.cpp
 *********************************************************************/
 
@@ -20,6 +20,8 @@
 #include "ChargingSystemBlock.h"
 //## link itsDockingProcessBlock
 #include "DockingProcessBlock.h"
+//## link itsEBS
+#include "EBS.h"
 //## link itsLoadingProcessBlock
 #include "LoadingProcessBlock.h"
 //## link itsParkingSystemBlock
@@ -40,6 +42,7 @@ DCOperator::DCOperator() {
     itsDockingProcessBlock_1 = NULL;
     itsDockingProcessBlock_2 = NULL;
     itsDockingProcessBlock_3 = NULL;
+    itsEBS = NULL;
     itsLoadingProcessBlock = NULL;
     itsParkingSystemBlock = NULL;
 }
@@ -145,6 +148,18 @@ void DCOperator::setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProce
     _setItsDockingProcessBlock_3(p_DockingProcessBlock);
 }
 
+EBS* DCOperator::getItsEBS() const {
+    return itsEBS;
+}
+
+void DCOperator::setItsEBS(EBS* p_EBS) {
+    if(p_EBS != NULL)
+        {
+            p_EBS->_setItsDCOperator(this);
+        }
+    _setItsEBS(p_EBS);
+}
+
 LoadingProcessBlock* DCOperator::getItsLoadingProcessBlock() const {
     return itsLoadingProcessBlock;
 }
@@ -224,6 +239,16 @@ void DCOperator::cleanUpRelations() {
                     itsDockingProcessBlock_3->__setItsDCOperator_1(NULL);
                 }
             itsDockingProcessBlock_3 = NULL;
+        }
+    if(itsEBS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+            DCOperator* p_DCOperator = itsEBS->getItsDCOperator();
+            if(p_DCOperator != NULL)
+                {
+                    itsEBS->__setItsDCOperator(NULL);
+                }
+            itsEBS = NULL;
         }
     if(itsLoadingProcessBlock != NULL)
         {
@@ -347,6 +372,31 @@ void DCOperator::_clearItsDockingProcessBlock_3() {
     itsDockingProcessBlock_3 = NULL;
 }
 
+void DCOperator::__setItsEBS(EBS* p_EBS) {
+    itsEBS = p_EBS;
+    if(p_EBS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsEBS", p_EBS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+        }
+}
+
+void DCOperator::_setItsEBS(EBS* p_EBS) {
+    if(itsEBS != NULL)
+        {
+            itsEBS->__setItsDCOperator(NULL);
+        }
+    __setItsEBS(p_EBS);
+}
+
+void DCOperator::_clearItsEBS() {
+    NOTIFY_RELATION_CLEARED("itsEBS");
+    itsEBS = NULL;
+}
+
 void DCOperator::__setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock) {
     itsLoadingProcessBlock = p_LoadingProcessBlock;
     if(p_LoadingProcessBlock != NULL)
@@ -444,6 +494,11 @@ void OMAnimatedDCOperator::serializeRelations(AOMSRelations* aomsRelations) cons
     if(myReal->itsDockingProcessBlock_3)
         {
             aomsRelations->ADD_ITEM(myReal->itsDockingProcessBlock_3);
+        }
+    aomsRelations->addRelation("itsEBS", false, true);
+    if(myReal->itsEBS)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsEBS);
         }
 }
 //#]

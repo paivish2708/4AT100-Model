@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: ChargingSystemPkg
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\ChargingSystemPkg.h
 *********************************************************************/
 
@@ -22,7 +22,10 @@
 //## auto_generated
 #include "ANGELSPkg.h"
 //## auto_generated
-class Charging_System;
+class ChargingInfrastructure;
+
+//## auto_generated
+class ChargingSystemBlock;
 
 //#[ ignore
 #define Beginthecharging_ChargingSystemPkg_ANGELSPkg_id 7401

@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\DCOperator.h
 *********************************************************************/
 
@@ -27,6 +27,9 @@ class ChargingSystemBlock;
 
 //## link itsDockingProcessBlock
 class DockingProcessBlock;
+
+//## link itsEBS
+class EBS;
 
 //## link itsLoadingProcessBlock
 class LoadingProcessBlock;
@@ -99,6 +102,12 @@ public :
     void setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProcessBlock);
     
     //## auto_generated
+    EBS* getItsEBS() const;
+    
+    //## auto_generated
+    void setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
     LoadingProcessBlock* getItsLoadingProcessBlock() const;
     
     //## auto_generated
@@ -130,6 +139,8 @@ protected :
     DockingProcessBlock* itsDockingProcessBlock_2;		//## link itsDockingProcessBlock_2
     
     DockingProcessBlock* itsDockingProcessBlock_3;		//## link itsDockingProcessBlock_3
+    
+    EBS* itsEBS;		//## link itsEBS
     
     LoadingProcessBlock* itsLoadingProcessBlock;		//## link itsLoadingProcessBlock
     
@@ -174,6 +185,15 @@ public :
     
     //## auto_generated
     void _clearItsDockingProcessBlock_3();
+    
+    //## auto_generated
+    void __setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _clearItsEBS();
     
     //## auto_generated
     void __setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);

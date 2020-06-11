@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ChargingSystemBlock_Simulation
 	Model Element	: ChargingSystemBlock
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ChargingSystemBlock_Simulation\ChargingSystemBlock.cpp
 *********************************************************************/
 
@@ -18,6 +18,8 @@
 #include "ChargingSystemBlock.h"
 //## link itsANGELS
 #include "ANGELS.h"
+//## event SwitchOffANGELSFunc()
+#include "ANGELSPkg.h"
 //## link itsChargingInfrastructure
 #include "ChargingInfrastructure.h"
 //## link itsCommunicationSystemBlock
@@ -28,6 +30,8 @@
 #include "DockingProcessBlock.h"
 //## link itsLoadingProcessBlock
 #include "LoadingProcessBlock.h"
+//## link itsTruck
+#include "Truck.h"
 //#[ ignore
 #define ANGELSPkg_ChargingSystemPkg_ChargingSystemBlock_ChargingSystemBlock_SERIALIZE OM_NO_OP
 
@@ -46,6 +50,7 @@ ChargingSystemBlock::ChargingSystemBlock(IOxfActive* theActiveContext) : TruckCh
     itsDCOperator = NULL;
     itsDockingProcessBlock = NULL;
     itsLoadingProcessBlock = NULL;
+    itsTruck = NULL;
     initStatechart();
 }
 
@@ -147,12 +152,20 @@ void ChargingSystemBlock::setItsLoadingProcessBlock(LoadingProcessBlock* p_Loadi
 }
 
 Truck* ChargingSystemBlock::getItsTruck() const {
-    return (Truck*) &itsTruck;
+    return itsTruck;
+}
+
+void ChargingSystemBlock::setItsTruck(Truck* p_Truck) {
+    if(p_Truck != NULL)
+        {
+            p_Truck->_setItsChargingSystemBlock(this);
+        }
+    _setItsTruck(p_Truck);
 }
 
 bool ChargingSystemBlock::startBehavior() {
-    bool done = true;
-    done &= OMReactive::startBehavior();
+    bool done = false;
+    done = OMReactive::startBehavior();
     return done;
 }
 
@@ -218,6 +231,16 @@ void ChargingSystemBlock::cleanUpRelations() {
                     itsLoadingProcessBlock->__setItsChargingSystemBlock(NULL);
                 }
             itsLoadingProcessBlock = NULL;
+        }
+    if(itsTruck != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsTruck");
+            ChargingSystemBlock* p_ChargingSystemBlock = itsTruck->getItsChargingSystemBlock();
+            if(p_ChargingSystemBlock != NULL)
+                {
+                    itsTruck->__setItsChargingSystemBlock(NULL);
+                }
+            itsTruck = NULL;
         }
 }
 
@@ -360,6 +383,31 @@ void ChargingSystemBlock::_clearItsLoadingProcessBlock() {
     itsLoadingProcessBlock = NULL;
 }
 
+void ChargingSystemBlock::__setItsTruck(Truck* p_Truck) {
+    itsTruck = p_Truck;
+    if(p_Truck != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsTruck", p_Truck, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsTruck");
+        }
+}
+
+void ChargingSystemBlock::_setItsTruck(Truck* p_Truck) {
+    if(itsTruck != NULL)
+        {
+            itsTruck->__setItsChargingSystemBlock(NULL);
+        }
+    __setItsTruck(p_Truck);
+}
+
+void ChargingSystemBlock::_clearItsTruck() {
+    NOTIFY_RELATION_CLEARED("itsTruck");
+    itsTruck = NULL;
+}
+
 void ChargingSystemBlock::rootState_entDef() {
     {
         NOTIFY_STATE_ENTERED("ROOT");
@@ -414,7 +462,7 @@ IOxfReactive::TakeEventStatus ChargingSystemBlock::rootState_processEvent() {
                     NOTIFY_STATE_ENTERED("ROOT.Charging.ChargingMode");
                     Charging_subState = ChargingMode;
                     rootState_active = ChargingMode;
-                    Charging_timeout = scheduleTimeout(1000, "ROOT.Charging.ChargingMode");
+                    Charging_timeout = scheduleTimeout(2000, "ROOT.Charging.ChargingMode");
                     NOTIFY_TRANSITION_TERMINATED("4");
                     res = eventConsumed;
                 }
@@ -425,58 +473,7 @@ IOxfReactive::TakeEventStatus ChargingSystemBlock::rootState_processEvent() {
         // State ChargingMode
         case ChargingMode:
         {
-            if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
-                {
-                    if(getCurrentEvent() == Charging_timeout)
-                        {
-                            NOTIFY_TRANSITION_STARTED("5");
-                            cancel(Charging_timeout);
-                            NOTIFY_STATE_EXITED("ROOT.Charging.ChargingMode");
-                            //#[ transition 5 
-                            TruckChargeState++;
-                            //#]
-                            NOTIFY_STATE_ENTERED("ROOT.Charging.ChargingMode");
-                            Charging_subState = ChargingMode;
-                            rootState_active = ChargingMode;
-                            Charging_timeout = scheduleTimeout(1000, "ROOT.Charging.ChargingMode");
-                            NOTIFY_TRANSITION_TERMINATED("5");
-                            res = eventConsumed;
-                        }
-                }
-            else if(IS_EVENT_TYPE_OF(EndCharging_ChargingSystemPkg_ANGELSPkg_id))
-                {
-                    NOTIFY_TRANSITION_STARTED("6");
-                    switch (Charging_subState) {
-                        // State StartCharging
-                        case StartCharging:
-                        {
-                            NOTIFY_STATE_EXITED("ROOT.Charging.StartCharging");
-                        }
-                        break;
-                        // State ChargingMode
-                        case ChargingMode:
-                        {
-                            cancel(Charging_timeout);
-                            NOTIFY_STATE_EXITED("ROOT.Charging.ChargingMode");
-                        }
-                        break;
-                        default:
-                            break;
-                    }
-                    Charging_subState = OMNonState;
-                    NOTIFY_STATE_EXITED("ROOT.Charging");
-                    //#[ transition 6 
-                    ChargingProcess();
-                    //#]
-                    NOTIFY_STATE_ENTERED("ROOT.ChargedState");
-                    pushNullTransition();
-                    rootState_subState = ChargedState;
-                    rootState_active = ChargedState;
-                    NOTIFY_TRANSITION_TERMINATED("6");
-                    res = eventConsumed;
-                }
-            
-            
+            res = ChargingMode_handleEvent();
         }
         break;
         // State ChargedState
@@ -513,6 +510,91 @@ void ChargingSystemBlock::Charging_entDef() {
     NOTIFY_TRANSITION_TERMINATED("3");
 }
 
+IOxfReactive::TakeEventStatus ChargingSystemBlock::ChargingMode_handleEvent() {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(SwitchOffANGELSFunc_ANGELSPkg_id))
+        {
+            NOTIFY_TRANSITION_STARTED("8");
+            switch (Charging_subState) {
+                // State StartCharging
+                case StartCharging:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.Charging.StartCharging");
+                }
+                break;
+                // State ChargingMode
+                case ChargingMode:
+                {
+                    cancel(Charging_timeout);
+                    NOTIFY_STATE_EXITED("ROOT.Charging.ChargingMode");
+                }
+                break;
+                default:
+                    break;
+            }
+            Charging_subState = OMNonState;
+            NOTIFY_STATE_EXITED("ROOT.Charging");
+            NOTIFY_STATE_ENTERED("ROOT.terminationstate_6");
+            rootState_subState = terminationstate_6;
+            rootState_active = terminationstate_6;
+            NOTIFY_TRANSITION_TERMINATED("8");
+            res = eventConsumed;
+        }
+    else if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
+        {
+            if(getCurrentEvent() == Charging_timeout)
+                {
+                    NOTIFY_TRANSITION_STARTED("5");
+                    cancel(Charging_timeout);
+                    NOTIFY_STATE_EXITED("ROOT.Charging.ChargingMode");
+                    //#[ transition 5 
+                    TruckChargeState++;
+                    //#]
+                    NOTIFY_STATE_ENTERED("ROOT.Charging.ChargingMode");
+                    Charging_subState = ChargingMode;
+                    rootState_active = ChargingMode;
+                    Charging_timeout = scheduleTimeout(2000, "ROOT.Charging.ChargingMode");
+                    NOTIFY_TRANSITION_TERMINATED("5");
+                    res = eventConsumed;
+                }
+        }
+    else if(IS_EVENT_TYPE_OF(EndCharging_ChargingSystemPkg_ANGELSPkg_id))
+        {
+            NOTIFY_TRANSITION_STARTED("6");
+            switch (Charging_subState) {
+                // State StartCharging
+                case StartCharging:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.Charging.StartCharging");
+                }
+                break;
+                // State ChargingMode
+                case ChargingMode:
+                {
+                    cancel(Charging_timeout);
+                    NOTIFY_STATE_EXITED("ROOT.Charging.ChargingMode");
+                }
+                break;
+                default:
+                    break;
+            }
+            Charging_subState = OMNonState;
+            NOTIFY_STATE_EXITED("ROOT.Charging");
+            //#[ transition 6 
+            ChargingProcess();
+            //#]
+            NOTIFY_STATE_ENTERED("ROOT.ChargedState");
+            pushNullTransition();
+            rootState_subState = ChargedState;
+            rootState_active = ChargedState;
+            NOTIFY_TRANSITION_TERMINATED("6");
+            res = eventConsumed;
+        }
+    
+    
+    return res;
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedChargingSystemBlock::serializeAttributes(AOMSAttributes* aomsAttributes) const {
@@ -520,8 +602,6 @@ void OMAnimatedChargingSystemBlock::serializeAttributes(AOMSAttributes* aomsAttr
 }
 
 void OMAnimatedChargingSystemBlock::serializeRelations(AOMSRelations* aomsRelations) const {
-    aomsRelations->addRelation("itsTruck", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsTruck);
     aomsRelations->addRelation("itsDCOperator", false, true);
     if(myReal->itsDCOperator)
         {
@@ -551,6 +631,11 @@ void OMAnimatedChargingSystemBlock::serializeRelations(AOMSRelations* aomsRelati
     if(myReal->itsDockingProcessBlock)
         {
             aomsRelations->ADD_ITEM(myReal->itsDockingProcessBlock);
+        }
+    aomsRelations->addRelation("itsTruck", false, true);
+    if(myReal->itsTruck)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsTruck);
         }
 }
 

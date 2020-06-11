@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: DC
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\DC.h
 *********************************************************************/
 
@@ -24,6 +24,9 @@ class ANGELS;
 
 //## link itsDockingProcessBlock
 class DockingProcessBlock;
+
+//## link itsEBS
+class EBS;
 
 //## link itsLoadingProcessBlock
 class LoadingProcessBlock;
@@ -78,6 +81,12 @@ public :
     void setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
     
     //## auto_generated
+    EBS* getItsEBS() const;
+    
+    //## auto_generated
+    void setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
     LoadingProcessBlock* getItsLoadingProcessBlock() const;
     
     //## auto_generated
@@ -104,6 +113,8 @@ protected :
     
     DockingProcessBlock* itsDockingProcessBlock;		//## link itsDockingProcessBlock
     
+    EBS* itsEBS;		//## link itsEBS
+    
     LoadingProcessBlock* itsLoadingProcessBlock;		//## link itsLoadingProcessBlock
     
     ParkingSystemBlock* itsParkingSystemBlock;		//## link itsParkingSystemBlock
@@ -129,6 +140,15 @@ public :
     
     //## auto_generated
     void _clearItsDockingProcessBlock();
+    
+    //## auto_generated
+    void __setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _clearItsEBS();
     
     //## auto_generated
     void __setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);

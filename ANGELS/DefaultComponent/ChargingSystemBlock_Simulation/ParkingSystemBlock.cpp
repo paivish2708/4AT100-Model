@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ChargingSystemBlock_Simulation
 	Model Element	: ParkingSystemBlock
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ChargingSystemBlock_Simulation\ParkingSystemBlock.cpp
 *********************************************************************/
 
@@ -16,6 +16,8 @@
 
 //## auto_generated
 #include "ParkingSystemBlock.h"
+//## event SwitchOffANGELSFunc()
+#include "ANGELSPkg.h"
 //## link itsDC
 #include "DC.h"
 //## link itsDCOperator
@@ -30,6 +32,10 @@
 #define ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_CheckParkingStatus_SERIALIZE OM_NO_OP
 
 #define ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_StopTruck_SERIALIZE OM_NO_OP
+
+#define OMAnim_ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_setParkingSpot_double_UNSERIALIZE_ARGS OP_UNSER(OMDestructiveString2X,p_ParkingSpot)
+
+#define OMAnim_ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_setParkingSpot_double_SERIALIZE_RET_VAL
 //#]
 
 //## package ANGELSPkg::ParkingProcessPkg
@@ -77,6 +83,15 @@ void ParkingSystemBlock::setChargeState(double p_ChargeState) {
     ChargeState = p_ChargeState;
 }
 
+double ParkingSystemBlock::getParkingSpot() const {
+    return ParkingSpot;
+}
+
+void ParkingSystemBlock::setParkingSpot(double p_ParkingSpot) {
+    ParkingSpot = p_ParkingSpot;
+    NOTIFY_SET_OPERATION;
+}
+
 double ParkingSystemBlock::getParkingStatus() const {
     return ParkingStatus;
 }
@@ -99,6 +114,7 @@ double ParkingSystemBlock::getSpeed() const {
 
 void ParkingSystemBlock::setSpeed(double p_Speed) {
     Speed = p_Speed;
+    NOTIFY_SET_OPERATION;
 }
 
 double ParkingSystemBlock::getSteerAngle() const {
@@ -342,7 +358,7 @@ IOxfReactive::TakeEventStatus ParkingSystemBlock::rootState_processEvent() {
                     NOTIFY_STATE_ENTERED("ROOT.Parking.BeginParking");
                     Parking_subState = BeginParking;
                     rootState_active = BeginParking;
-                    Parking_timeout = scheduleTimeout(100, "ROOT.Parking.BeginParking");
+                    Parking_timeout = scheduleTimeout(1000, "ROOT.Parking.BeginParking");
                     NOTIFY_TRANSITION_TERMINATED("4");
                     res = eventConsumed;
                 }
@@ -353,63 +369,7 @@ IOxfReactive::TakeEventStatus ParkingSystemBlock::rootState_processEvent() {
         // State BeginParking
         case BeginParking:
         {
-            if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
-                {
-                    if(getCurrentEvent() == Parking_timeout)
-                        {
-                            NOTIFY_TRANSITION_STARTED("5");
-                            cancel(Parking_timeout);
-                            //#[ state Parking.BeginParking.(Exit) 
-                            CheckParkingStatus();
-                            //#]
-                            NOTIFY_STATE_EXITED("ROOT.Parking.BeginParking");
-                            //#[ transition 5 
-                             ParkingTime++;
-                            //#]
-                            NOTIFY_STATE_ENTERED("ROOT.Parking.BeginParking");
-                            Parking_subState = BeginParking;
-                            rootState_active = BeginParking;
-                            Parking_timeout = scheduleTimeout(100, "ROOT.Parking.BeginParking");
-                            NOTIFY_TRANSITION_TERMINATED("5");
-                            res = eventConsumed;
-                        }
-                }
-            else if(IS_EVENT_TYPE_OF(EndParking_ParkingProcessPkg_ANGELSPkg_id))
-                {
-                    NOTIFY_TRANSITION_STARTED("6");
-                    switch (Parking_subState) {
-                        // State IdleState
-                        case IdleState:
-                        {
-                            NOTIFY_STATE_EXITED("ROOT.Parking.IdleState");
-                        }
-                        break;
-                        // State BeginParking
-                        case BeginParking:
-                        {
-                            cancel(Parking_timeout);
-                            //#[ state Parking.BeginParking.(Exit) 
-                            CheckParkingStatus();
-                            //#]
-                            NOTIFY_STATE_EXITED("ROOT.Parking.BeginParking");
-                        }
-                        break;
-                        default:
-                            break;
-                    }
-                    Parking_subState = OMNonState;
-                    NOTIFY_STATE_EXITED("ROOT.Parking");
-                    //#[ transition 6 
-                    StopTruck();
-                    //#]
-                    NOTIFY_STATE_ENTERED("ROOT.ParkedState");
-                    rootState_subState = ParkedState;
-                    rootState_active = ParkedState;
-                    NOTIFY_TRANSITION_TERMINATED("6");
-                    res = eventConsumed;
-                }
-            
-            
+            res = BeginParking_handleEvent();
         }
         break;
         // State ParkedState
@@ -463,6 +423,99 @@ void ParkingSystemBlock::Parking_entDef() {
     NOTIFY_TRANSITION_TERMINATED("3");
 }
 
+IOxfReactive::TakeEventStatus ParkingSystemBlock::BeginParking_handleEvent() {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(SwitchOffANGELSFunc_ANGELSPkg_id))
+        {
+            NOTIFY_TRANSITION_STARTED("9");
+            switch (Parking_subState) {
+                // State IdleState
+                case IdleState:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.Parking.IdleState");
+                }
+                break;
+                // State BeginParking
+                case BeginParking:
+                {
+                    cancel(Parking_timeout);
+                    //#[ state Parking.BeginParking.(Exit) 
+                    CheckParkingStatus();
+                    //#]
+                    NOTIFY_STATE_EXITED("ROOT.Parking.BeginParking");
+                }
+                break;
+                default:
+                    break;
+            }
+            Parking_subState = OMNonState;
+            NOTIFY_STATE_EXITED("ROOT.Parking");
+            NOTIFY_STATE_ENTERED("ROOT.terminationstate_8");
+            rootState_subState = terminationstate_8;
+            rootState_active = terminationstate_8;
+            NOTIFY_TRANSITION_TERMINATED("9");
+            res = eventConsumed;
+        }
+    else if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
+        {
+            if(getCurrentEvent() == Parking_timeout)
+                {
+                    NOTIFY_TRANSITION_STARTED("5");
+                    cancel(Parking_timeout);
+                    //#[ state Parking.BeginParking.(Exit) 
+                    CheckParkingStatus();
+                    //#]
+                    NOTIFY_STATE_EXITED("ROOT.Parking.BeginParking");
+                    //#[ transition 5 
+                     ParkingTime++;
+                    //#]
+                    NOTIFY_STATE_ENTERED("ROOT.Parking.BeginParking");
+                    Parking_subState = BeginParking;
+                    rootState_active = BeginParking;
+                    Parking_timeout = scheduleTimeout(1000, "ROOT.Parking.BeginParking");
+                    NOTIFY_TRANSITION_TERMINATED("5");
+                    res = eventConsumed;
+                }
+        }
+    else if(IS_EVENT_TYPE_OF(EndParking_ParkingProcessPkg_ANGELSPkg_id))
+        {
+            NOTIFY_TRANSITION_STARTED("6");
+            switch (Parking_subState) {
+                // State IdleState
+                case IdleState:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.Parking.IdleState");
+                }
+                break;
+                // State BeginParking
+                case BeginParking:
+                {
+                    cancel(Parking_timeout);
+                    //#[ state Parking.BeginParking.(Exit) 
+                    CheckParkingStatus();
+                    //#]
+                    NOTIFY_STATE_EXITED("ROOT.Parking.BeginParking");
+                }
+                break;
+                default:
+                    break;
+            }
+            Parking_subState = OMNonState;
+            NOTIFY_STATE_EXITED("ROOT.Parking");
+            //#[ transition 6 
+            StopTruck();
+            //#]
+            NOTIFY_STATE_ENTERED("ROOT.ParkedState");
+            rootState_subState = ParkedState;
+            rootState_active = ParkedState;
+            NOTIFY_TRANSITION_TERMINATED("6");
+            res = eventConsumed;
+        }
+    
+    
+    return res;
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedParkingSystemBlock::serializeAttributes(AOMSAttributes* aomsAttributes) const {
@@ -472,6 +525,7 @@ void OMAnimatedParkingSystemBlock::serializeAttributes(AOMSAttributes* aomsAttri
     aomsAttributes->addAttribute("Speed", x2String(myReal->Speed));
     aomsAttributes->addAttribute("SteerAngle", x2String(myReal->SteerAngle));
     aomsAttributes->addAttribute("ParkingTime", x2String(myReal->ParkingTime));
+    aomsAttributes->addAttribute("ParkingSpot", x2String(myReal->ParkingSpot));
 }
 
 void OMAnimatedParkingSystemBlock::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -578,6 +632,10 @@ void OMAnimatedParkingSystemBlock::AutonomousMode_serializeStates(AOMSState* aom
 //#]
 
 IMPLEMENT_REACTIVE_META_P(ParkingSystemBlock, ANGELSPkg_ParkingProcessPkg, ANGELSPkg::ParkingProcessPkg, false, OMAnimatedParkingSystemBlock)
+
+IMPLEMENT_META_OP(OMAnimatedParkingSystemBlock, ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_setParkingSpot_double, "setParkingSpot", FALSE, "setParkingSpot(double)", 1)
+
+IMPLEMENT_OP_CALL(ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_setParkingSpot_double, ParkingSystemBlock, setParkingSpot(p_ParkingSpot), NO_OP())
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

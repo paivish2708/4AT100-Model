@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: CommunicationSystemBlock
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\CommunicationSystemBlock.h
 *********************************************************************/
 
@@ -19,8 +19,8 @@
 #include <aom\aom.h>
 //## auto_generated
 #include "CommunicationPkg.h"
-//## link itsCharging_System
-class Charging_System;
+//## link itsChargingSystemBlock
+class ChargingSystemBlock;
 
 //## package ANGELSPkg::CommunicationPkg
 
@@ -45,10 +45,10 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
-    Charging_System* getItsCharging_System() const;
+    ChargingSystemBlock* getItsChargingSystemBlock() const;
     
     //## auto_generated
-    void setItsCharging_System(Charging_System* p_Charging_System);
+    void setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
 
 protected :
 
@@ -57,20 +57,20 @@ protected :
     
     ////    Relations and components    ////
     
-    Charging_System* itsCharging_System;		//## link itsCharging_System
+    ChargingSystemBlock* itsChargingSystemBlock;		//## link itsChargingSystemBlock
     
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsCharging_System(Charging_System* p_Charging_System);
+    void __setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
     
     //## auto_generated
-    void _setItsCharging_System(Charging_System* p_Charging_System);
+    void _setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
     
     //## auto_generated
-    void _clearItsCharging_System();
+    void _clearItsChargingSystemBlock();
 };
 
 #ifdef _OMINSTRUMENT

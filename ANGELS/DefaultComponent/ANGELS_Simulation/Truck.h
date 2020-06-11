@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: Truck
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\Truck.h
 *********************************************************************/
 
@@ -27,6 +27,9 @@ class ChargingSystemBlock;
 
 //## link itsDockingProcessBlock
 class DockingProcessBlock;
+
+//## link itsEBS
+class EBS;
 
 //## package ANGELSPkg::TruckPkg
 
@@ -67,6 +70,12 @@ public :
     
     //## auto_generated
     void setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    EBS* getItsEBS() const;
+    
+    //## auto_generated
+    void setItsEBS(EBS* p_EBS);
 
 protected :
 
@@ -80,6 +89,8 @@ protected :
     ChargingSystemBlock* itsChargingSystemBlock;		//## link itsChargingSystemBlock
     
     DockingProcessBlock* itsDockingProcessBlock;		//## link itsDockingProcessBlock
+    
+    EBS* itsEBS;		//## link itsEBS
     
     ////    Framework operations    ////
 
@@ -111,6 +122,15 @@ public :
     
     //## auto_generated
     void _clearItsDockingProcessBlock();
+    
+    //## auto_generated
+    void __setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _clearItsEBS();
 };
 
 #ifdef _OMINSTRUMENT

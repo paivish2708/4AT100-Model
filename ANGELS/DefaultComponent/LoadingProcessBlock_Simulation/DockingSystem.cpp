@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: DockingSystem
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\DockingSystem.cpp
 *********************************************************************/
 
@@ -17,26 +17,14 @@
 //## link itsANGELS
 #include "ANGELS.h"
 //#[ ignore
-#define ANGELSPkg_DockingSystem_DockingSystem_DockingSystem_SERIALIZE OM_NO_OP
+#define ANGELSPkg_DockingSystemPkg_DockingSystem_DockingSystem_SERIALIZE OM_NO_OP
 //#]
 
-//## package ANGELSPkg::DockingSystem
-
-
-#ifdef _OMINSTRUMENT
-static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
-
-IMPLEMENT_META_PACKAGE(ANGELSPkg_DockingSystem, ANGELSPkg::DockingSystem)
-
-static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
-}
-#endif // _OMINSTRUMENT
-
-//## package ANGELSPkg::DockingSystem
+//## package ANGELSPkg::DockingSystemPkg
 
 //## class DockingSystem
 DockingSystem::DockingSystem() {
-    NOTIFY_CONSTRUCTOR(DockingSystem, DockingSystem(), 0, ANGELSPkg_DockingSystem_DockingSystem_DockingSystem_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(DockingSystem, DockingSystem(), 0, ANGELSPkg_DockingSystemPkg_DockingSystem_DockingSystem_SERIALIZE);
     itsANGELS = NULL;
     itsANGELS_1 = NULL;
 }
@@ -133,7 +121,7 @@ void OMAnimatedDockingSystem::serializeRelations(AOMSRelations* aomsRelations) c
 }
 //#]
 
-IMPLEMENT_META_P(DockingSystem, ANGELSPkg_DockingSystem, ANGELSPkg::DockingSystem, false, OMAnimatedDockingSystem)
+IMPLEMENT_META_P(DockingSystem, ANGELSPkg_DockingSystemPkg, ANGELSPkg::DockingSystemPkg, false, OMAnimatedDockingSystem)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

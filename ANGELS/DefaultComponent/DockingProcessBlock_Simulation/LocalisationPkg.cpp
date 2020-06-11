@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DockingProcessBlock_Simulation
 	Model Element	: LocalisationPkg
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\DockingProcessBlock_Simulation\LocalisationPkg.cpp
 *********************************************************************/
 
@@ -15,7 +15,7 @@
 //## auto_generated
 #include "LocalisationPkg.h"
 //## auto_generated
-#include "Localisation_System.h"
+#include "LocalizationArchitecture.h"
 //## package ANGELSPkg::LocalisationPkg
 
 

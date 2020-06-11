@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: DockingSystem
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\DockingSystem.h
 *********************************************************************/
 
@@ -18,18 +18,11 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include "ANGELSPkg.h"
+#include "DockingSystemPkg.h"
 //## link itsANGELS
 class ANGELS;
 
-//## auto_generated
-class DockingSystem;
-
-//## package ANGELSPkg::DockingSystem
-
-
-
-//## package ANGELSPkg::DockingSystem
+//## package ANGELSPkg::DockingSystemPkg
 
 //## class DockingSystem
 class DockingSystem {

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: CommunicationSystemBlock
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\CommunicationSystemBlock.cpp
 *********************************************************************/
 
@@ -14,8 +14,8 @@
 
 //## auto_generated
 #include "CommunicationSystemBlock.h"
-//## link itsCharging_System
-#include "Charging_System.h"
+//## link itsChargingSystemBlock
+#include "ChargingSystemBlock.h"
 //#[ ignore
 #define ANGELSPkg_CommunicationPkg_CommunicationSystemBlock_CommunicationSystemBlock_SERIALIZE OM_NO_OP
 //#]
@@ -25,7 +25,7 @@
 //## class CommunicationSystemBlock
 CommunicationSystemBlock::CommunicationSystemBlock() {
     NOTIFY_CONSTRUCTOR(CommunicationSystemBlock, CommunicationSystemBlock(), 0, ANGELSPkg_CommunicationPkg_CommunicationSystemBlock_CommunicationSystemBlock_SERIALIZE);
-    itsCharging_System = NULL;
+    itsChargingSystemBlock = NULL;
 }
 
 CommunicationSystemBlock::~CommunicationSystemBlock() {
@@ -33,63 +33,63 @@ CommunicationSystemBlock::~CommunicationSystemBlock() {
     cleanUpRelations();
 }
 
-Charging_System* CommunicationSystemBlock::getItsCharging_System() const {
-    return itsCharging_System;
+ChargingSystemBlock* CommunicationSystemBlock::getItsChargingSystemBlock() const {
+    return itsChargingSystemBlock;
 }
 
-void CommunicationSystemBlock::setItsCharging_System(Charging_System* p_Charging_System) {
-    if(p_Charging_System != NULL)
+void CommunicationSystemBlock::setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(p_ChargingSystemBlock != NULL)
         {
-            p_Charging_System->_setItsCommunicationSystemBlock(this);
+            p_ChargingSystemBlock->_setItsCommunicationSystemBlock(this);
         }
-    _setItsCharging_System(p_Charging_System);
+    _setItsChargingSystemBlock(p_ChargingSystemBlock);
 }
 
 void CommunicationSystemBlock::cleanUpRelations() {
-    if(itsCharging_System != NULL)
+    if(itsChargingSystemBlock != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsCharging_System");
-            CommunicationSystemBlock* p_CommunicationSystemBlock = itsCharging_System->getItsCommunicationSystemBlock();
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
+            CommunicationSystemBlock* p_CommunicationSystemBlock = itsChargingSystemBlock->getItsCommunicationSystemBlock();
             if(p_CommunicationSystemBlock != NULL)
                 {
-                    itsCharging_System->__setItsCommunicationSystemBlock(NULL);
+                    itsChargingSystemBlock->__setItsCommunicationSystemBlock(NULL);
                 }
-            itsCharging_System = NULL;
+            itsChargingSystemBlock = NULL;
         }
 }
 
-void CommunicationSystemBlock::__setItsCharging_System(Charging_System* p_Charging_System) {
-    itsCharging_System = p_Charging_System;
-    if(p_Charging_System != NULL)
+void CommunicationSystemBlock::__setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    itsChargingSystemBlock = p_ChargingSystemBlock;
+    if(p_ChargingSystemBlock != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsCharging_System", p_Charging_System, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsChargingSystemBlock", p_ChargingSystemBlock, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsCharging_System");
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
         }
 }
 
-void CommunicationSystemBlock::_setItsCharging_System(Charging_System* p_Charging_System) {
-    if(itsCharging_System != NULL)
+void CommunicationSystemBlock::_setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(itsChargingSystemBlock != NULL)
         {
-            itsCharging_System->__setItsCommunicationSystemBlock(NULL);
+            itsChargingSystemBlock->__setItsCommunicationSystemBlock(NULL);
         }
-    __setItsCharging_System(p_Charging_System);
+    __setItsChargingSystemBlock(p_ChargingSystemBlock);
 }
 
-void CommunicationSystemBlock::_clearItsCharging_System() {
-    NOTIFY_RELATION_CLEARED("itsCharging_System");
-    itsCharging_System = NULL;
+void CommunicationSystemBlock::_clearItsChargingSystemBlock() {
+    NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
+    itsChargingSystemBlock = NULL;
 }
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedCommunicationSystemBlock::serializeRelations(AOMSRelations* aomsRelations) const {
-    aomsRelations->addRelation("itsCharging_System", false, true);
-    if(myReal->itsCharging_System)
+    aomsRelations->addRelation("itsChargingSystemBlock", false, true);
+    if(myReal->itsChargingSystemBlock)
         {
-            aomsRelations->ADD_ITEM(myReal->itsCharging_System);
+            aomsRelations->ADD_ITEM(myReal->itsChargingSystemBlock);
         }
 }
 //#]

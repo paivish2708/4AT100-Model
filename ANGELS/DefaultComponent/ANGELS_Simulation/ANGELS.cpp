@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: ANGELS
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\ANGELS.cpp
 *********************************************************************/
 
@@ -64,6 +64,9 @@ ANGELS::ANGELS(IOxfActive* theActiveContext) : ChargeState(15), LoadingTime(0), 
         }
         {
             itsDockingProcessBlock.setShouldDelete(false);
+        }
+        {
+            itsEBS.setShouldDelete(false);
         }
     }
     itsChargingInfrastructure = NULL;
@@ -264,6 +267,10 @@ void ANGELS::setItsDriver(Driver* p_Driver) {
     _setItsDriver(p_Driver);
 }
 
+EBS* ANGELS::getItsEBS() const {
+    return (EBS*) &itsEBS;
+}
+
 Environment* ANGELS::getItsEnvironment() const {
     return itsEnvironment;
 }
@@ -360,6 +367,7 @@ bool ANGELS::startBehavior() {
     bool done = true;
     done &= itsChargingSystemBlock.startBehavior();
     done &= itsDockingProcessBlock.startBehavior();
+    done &= itsEBS.startBehavior();
     done &= itsLoadingProcessBlock.startBehavior();
     done &= itsParkingSystemBlock.startBehavior();
     done &= OMReactive::startBehavior();
@@ -836,12 +844,14 @@ void ANGELS::setActiveContext(IOxfActive* theActiveContext, bool activeInstance)
         itsLoadingProcessBlock.setActiveContext(theActiveContext, false);
         itsParkingSystemBlock.setActiveContext(theActiveContext, false);
         itsDockingProcessBlock.setActiveContext(theActiveContext, false);
+        itsEBS.setActiveContext(theActiveContext, false);
     }
 }
 
 void ANGELS::destroy() {
     itsChargingSystemBlock.destroy();
     itsDockingProcessBlock.destroy();
+    itsEBS.destroy();
     itsLoadingProcessBlock.destroy();
     itsParkingSystemBlock.destroy();
     OMReactive::destroy();
@@ -1007,6 +1017,8 @@ void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
     aomsRelations->ADD_ITEM(&myReal->itsParkingSystemBlock);
     aomsRelations->addRelation("itsDockingProcessBlock", true, true);
     aomsRelations->ADD_ITEM(&myReal->itsDockingProcessBlock);
+    aomsRelations->addRelation("itsEBS", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsEBS);
 }
 
 void OMAnimatedANGELS::rootState_serializeStates(AOMSState* aomsState) const {

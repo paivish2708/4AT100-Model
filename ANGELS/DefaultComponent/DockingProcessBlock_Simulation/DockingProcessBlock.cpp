@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DockingProcessBlock_Simulation
 	Model Element	: DockingProcessBlock
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\DockingProcessBlock_Simulation\DockingProcessBlock.cpp
 *********************************************************************/
 
@@ -20,6 +20,14 @@
 #include "DCOperator.h"
 //## auto_generated
 #include "DockingProcessBlock.h"
+//## link itsChargingSystemBlock_1
+#include "ChargingSystemBlock.h"
+//## link itsDC
+#include "DC.h"
+//## link itsDriver
+#include "Driver.h"
+//## link itsTruck_1
+#include "Truck.h"
 //#[ ignore
 #define ANGELSPkg_DockingPkg_DockingProcessBlock_MoveTruck_SERIALIZE \
     aomsmethod->addAttribute("SteeringAngle", x2String(SteeringAngle));\
@@ -82,16 +90,21 @@ void DockingProcessBlock::setItsDCOperator(DCOperator* p_DCOperator) {
     _setItsDCOperator(p_DCOperator);
 }
 
-Truck* DockingProcessBlock::getItsTruck() const {
-    return (Truck*) &itsTruck;
+Truck* DockingProcessBlock::getItsTruck_1() const {
+    return itsTruck_1;
+}
+
+void DockingProcessBlock::setItsTruck_1(Truck* p_Truck) {
+    if(p_Truck != NULL)
+        {
+            p_Truck->_setItsDockingProcessBlock(this);
+        }
+    _setItsTruck_1(p_Truck);
 }
 
 bool DockingProcessBlock::startBehavior() {
-    bool done = true;
-    done &= itsChargingSystemBlock_2.startBehavior();
-    done &= itsLoadingProcessBlock.startBehavior();
-    done &= itsParkingSystemBlock.startBehavior();
-    done &= OMReactive::startBehavior();
+    bool done = false;
+    done = OMReactive::startBehavior();
     return done;
 }
 
@@ -118,6 +131,16 @@ void DockingProcessBlock::cleanUpRelations() {
                 }
             itsChargingSystemBlock_1 = NULL;
         }
+    if(itsDC != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDC");
+            DockingProcessBlock* p_DockingProcessBlock = itsDC->getItsDockingProcessBlock();
+            if(p_DockingProcessBlock != NULL)
+                {
+                    itsDC->__setItsDockingProcessBlock(NULL);
+                }
+            itsDC = NULL;
+        }
     if(itsDCOperator != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsDCOperator");
@@ -137,6 +160,26 @@ void DockingProcessBlock::cleanUpRelations() {
                     itsDCOperator_1->__setItsDockingProcessBlock_3(NULL);
                 }
             itsDCOperator_1 = NULL;
+        }
+    if(itsDriver != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDriver");
+            DockingProcessBlock* p_DockingProcessBlock = itsDriver->getItsDockingProcessBlock_1();
+            if(p_DockingProcessBlock != NULL)
+                {
+                    itsDriver->__setItsDockingProcessBlock_1(NULL);
+                }
+            itsDriver = NULL;
+        }
+    if(itsTruck_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsTruck_1");
+            DockingProcessBlock* p_DockingProcessBlock = itsTruck_1->getItsDockingProcessBlock();
+            if(p_DockingProcessBlock != NULL)
+                {
+                    itsTruck_1->__setItsDockingProcessBlock(NULL);
+                }
+            itsTruck_1 = NULL;
         }
 }
 
@@ -179,24 +222,41 @@ void DockingProcessBlock::_clearItsDCOperator() {
     itsDCOperator = NULL;
 }
 
+void DockingProcessBlock::__setItsTruck_1(Truck* p_Truck) {
+    itsTruck_1 = p_Truck;
+    if(p_Truck != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsTruck_1", p_Truck, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsTruck_1");
+        }
+}
+
+void DockingProcessBlock::_setItsTruck_1(Truck* p_Truck) {
+    if(itsTruck_1 != NULL)
+        {
+            itsTruck_1->__setItsDockingProcessBlock(NULL);
+        }
+    __setItsTruck_1(p_Truck);
+}
+
+void DockingProcessBlock::_clearItsTruck_1() {
+    NOTIFY_RELATION_CLEARED("itsTruck_1");
+    itsTruck_1 = NULL;
+}
+
 DockingProcessBlock::DockingProcessBlock(IOxfActive* theActiveContext) : DSInput(1), DockingStatus(1), DockingTime(10), Doorstatus(1), Speed(15), SteerAngle(10) {
     NOTIFY_REACTIVE_CONSTRUCTOR(DockingProcessBlock, DockingProcessBlock(), 0, ANGELSPkg_DockingPkg_DockingProcessBlock_DockingProcessBlock_SERIALIZE);
     setActiveContext(theActiveContext, false);
-    {
-        {
-            itsLoadingProcessBlock.setShouldDelete(false);
-        }
-        {
-            itsParkingSystemBlock.setShouldDelete(false);
-        }
-        {
-            itsChargingSystemBlock_2.setShouldDelete(false);
-        }
-    }
     itsANGELS = NULL;
     itsChargingSystemBlock_1 = NULL;
+    itsDC = NULL;
     itsDCOperator = NULL;
     itsDCOperator_1 = NULL;
+    itsDriver = NULL;
+    itsTruck_1 = NULL;
     initStatechart();
 }
 
@@ -246,6 +306,7 @@ double DockingProcessBlock::getDockingTime() const {
 
 void DockingProcessBlock::setDockingTime(double p_DockingTime) {
     DockingTime = p_DockingTime;
+    NOTIFY_SET_OPERATION;
 }
 
 RhpBoolean DockingProcessBlock::getDoorstatus() const {
@@ -262,6 +323,7 @@ double DockingProcessBlock::getSpeed() const {
 
 void DockingProcessBlock::setSpeed(double p_Speed) {
     Speed = p_Speed;
+    NOTIFY_SET_OPERATION;
 }
 
 double DockingProcessBlock::getSteerAngle() const {
@@ -270,6 +332,7 @@ double DockingProcessBlock::getSteerAngle() const {
 
 void DockingProcessBlock::setSteerAngle(double p_SteerAngle) {
     SteerAngle = p_SteerAngle;
+    NOTIFY_SET_OPERATION;
 }
 
 ChargingSystemBlock* DockingProcessBlock::getItsChargingSystemBlock_1() const {
@@ -284,8 +347,16 @@ void DockingProcessBlock::setItsChargingSystemBlock_1(ChargingSystemBlock* p_Cha
     _setItsChargingSystemBlock_1(p_ChargingSystemBlock);
 }
 
-ChargingSystemBlock* DockingProcessBlock::getItsChargingSystemBlock_2() const {
-    return (ChargingSystemBlock*) &itsChargingSystemBlock_2;
+DC* DockingProcessBlock::getItsDC() const {
+    return itsDC;
+}
+
+void DockingProcessBlock::setItsDC(DC* p_DC) {
+    if(p_DC != NULL)
+        {
+            p_DC->_setItsDockingProcessBlock(this);
+        }
+    _setItsDC(p_DC);
 }
 
 DCOperator* DockingProcessBlock::getItsDCOperator_1() const {
@@ -300,12 +371,16 @@ void DockingProcessBlock::setItsDCOperator_1(DCOperator* p_DCOperator) {
     _setItsDCOperator_1(p_DCOperator);
 }
 
-LoadingProcessBlock* DockingProcessBlock::getItsLoadingProcessBlock() const {
-    return (LoadingProcessBlock*) &itsLoadingProcessBlock;
+Driver* DockingProcessBlock::getItsDriver() const {
+    return itsDriver;
 }
 
-ParkingSystemBlock* DockingProcessBlock::getItsParkingSystemBlock() const {
-    return (ParkingSystemBlock*) &itsParkingSystemBlock;
+void DockingProcessBlock::setItsDriver(Driver* p_Driver) {
+    if(p_Driver != NULL)
+        {
+            p_Driver->_setItsDockingProcessBlock_1(this);
+        }
+    _setItsDriver(p_Driver);
 }
 
 void DockingProcessBlock::__setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock) {
@@ -333,6 +408,31 @@ void DockingProcessBlock::_clearItsChargingSystemBlock_1() {
     itsChargingSystemBlock_1 = NULL;
 }
 
+void DockingProcessBlock::__setItsDC(DC* p_DC) {
+    itsDC = p_DC;
+    if(p_DC != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDC", p_DC, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDC");
+        }
+}
+
+void DockingProcessBlock::_setItsDC(DC* p_DC) {
+    if(itsDC != NULL)
+        {
+            itsDC->__setItsDockingProcessBlock(NULL);
+        }
+    __setItsDC(p_DC);
+}
+
+void DockingProcessBlock::_clearItsDC() {
+    NOTIFY_RELATION_CLEARED("itsDC");
+    itsDC = NULL;
+}
+
 void DockingProcessBlock::__setItsDCOperator_1(DCOperator* p_DCOperator) {
     itsDCOperator_1 = p_DCOperator;
     if(p_DCOperator != NULL)
@@ -358,20 +458,29 @@ void DockingProcessBlock::_clearItsDCOperator_1() {
     itsDCOperator_1 = NULL;
 }
 
-void DockingProcessBlock::setActiveContext(IOxfActive* theActiveContext, bool activeInstance) {
-    OMReactive::setActiveContext(theActiveContext, activeInstance);
-    {
-        itsLoadingProcessBlock.setActiveContext(theActiveContext, false);
-        itsParkingSystemBlock.setActiveContext(theActiveContext, false);
-        itsChargingSystemBlock_2.setActiveContext(theActiveContext, false);
-    }
+void DockingProcessBlock::__setItsDriver(Driver* p_Driver) {
+    itsDriver = p_Driver;
+    if(p_Driver != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDriver", p_Driver, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDriver");
+        }
 }
 
-void DockingProcessBlock::destroy() {
-    itsChargingSystemBlock_2.destroy();
-    itsLoadingProcessBlock.destroy();
-    itsParkingSystemBlock.destroy();
-    OMReactive::destroy();
+void DockingProcessBlock::_setItsDriver(Driver* p_Driver) {
+    if(itsDriver != NULL)
+        {
+            itsDriver->__setItsDockingProcessBlock_1(NULL);
+        }
+    __setItsDriver(p_Driver);
+}
+
+void DockingProcessBlock::_clearItsDriver() {
+    NOTIFY_RELATION_CLEARED("itsDriver");
+    itsDriver = NULL;
 }
 
 void DockingProcessBlock::rootState_entDef() {
@@ -554,10 +663,6 @@ void OMAnimatedDockingProcessBlock::serializeRelations(AOMSRelations* aomsRelati
         {
             aomsRelations->ADD_ITEM(myReal->itsDCOperator);
         }
-    aomsRelations->addRelation("itsTruck", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsTruck);
-    aomsRelations->addRelation("itsLoadingProcessBlock", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsLoadingProcessBlock);
     aomsRelations->addRelation("itsANGELS", false, true);
     if(myReal->itsANGELS)
         {
@@ -573,10 +678,21 @@ void OMAnimatedDockingProcessBlock::serializeRelations(AOMSRelations* aomsRelati
         {
             aomsRelations->ADD_ITEM(myReal->itsChargingSystemBlock_1);
         }
-    aomsRelations->addRelation("itsParkingSystemBlock", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsParkingSystemBlock);
-    aomsRelations->addRelation("itsChargingSystemBlock_2", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsChargingSystemBlock_2);
+    aomsRelations->addRelation("itsTruck_1", false, true);
+    if(myReal->itsTruck_1)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsTruck_1);
+        }
+    aomsRelations->addRelation("itsDC", false, true);
+    if(myReal->itsDC)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDC);
+        }
+    aomsRelations->addRelation("itsDriver", false, true);
+    if(myReal->itsDriver)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDriver);
+        }
 }
 
 void OMAnimatedDockingProcessBlock::rootState_serializeStates(AOMSState* aomsState) const {

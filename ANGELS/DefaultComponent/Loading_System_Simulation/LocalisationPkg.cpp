@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: LocalisationPkg
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\LocalisationPkg.cpp
 *********************************************************************/
 
@@ -15,14 +15,14 @@
 //## auto_generated
 #include "LocalisationPkg.h"
 //## auto_generated
-#include "Localisation_System.h"
-//## package UseCaseAnalysisPkg::ANGELSPkg::LocalisationPkg
+#include "LocalizationArchitecture.h"
+//## package ANGELSPkg::LocalisationPkg
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_ANGELSPkg_LocalisationPkg, UseCaseAnalysisPkg::ANGELSPkg::LocalisationPkg)
+IMPLEMENT_META_PACKAGE(ANGELSPkg_LocalisationPkg, ANGELSPkg::LocalisationPkg)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }

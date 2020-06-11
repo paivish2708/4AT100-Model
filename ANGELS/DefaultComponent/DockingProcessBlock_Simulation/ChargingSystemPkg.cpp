@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DockingProcessBlock_Simulation
 	Model Element	: ChargingSystemPkg
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\DockingProcessBlock_Simulation\ChargingSystemPkg.cpp
 *********************************************************************/
 
@@ -14,6 +14,8 @@
 
 //## auto_generated
 #include "ChargingSystemPkg.h"
+//## auto_generated
+#include "ChargingInfrastructure.h"
 //## auto_generated
 #include "ChargingSystemBlock.h"
 //#[ ignore

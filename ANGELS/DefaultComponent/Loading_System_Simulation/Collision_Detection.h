@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Collision_Detection
-//!	Generated Date	: Tue, 12, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\Collision_Detection.h
 *********************************************************************/
 
@@ -22,13 +22,10 @@
 //## link itsANGELS
 class ANGELS;
 
-//## link itsDocking_System
-class Docking_System;
+//## link itsEBS
+class EBS;
 
-//## link itsObstacle
-class Obstacle;
-
-//## package UseCaseAnalysisPkg::ANGELSPkg::ObstacleDetectionPkg
+//## package ANGELSPkg::ObstacleDetectionPkg
 
 //## class Collision_Detection
 class Collision_Detection {
@@ -57,22 +54,10 @@ public :
     void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    ANGELS* getItsANGELS_1() const;
+    EBS* getItsEBS() const;
     
     //## auto_generated
-    void setItsANGELS_1(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    Docking_System* getItsDocking_System() const;
-    
-    //## auto_generated
-    void setItsDocking_System(Docking_System* p_Docking_System);
-    
-    //## auto_generated
-    Obstacle* getItsObstacle() const;
-    
-    //## auto_generated
-    void setItsObstacle(Obstacle* p_Obstacle);
+    void setItsEBS(EBS* p_EBS);
 
 protected :
 
@@ -83,11 +68,7 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
-    ANGELS* itsANGELS_1;		//## link itsANGELS_1
-    
-    Docking_System* itsDocking_System;		//## link itsDocking_System
-    
-    Obstacle* itsObstacle;		//## link itsObstacle
+    EBS* itsEBS;		//## link itsEBS
     
     ////    Framework operations    ////
 
@@ -103,22 +84,13 @@ public :
     void _clearItsANGELS();
     
     //## auto_generated
-    void __setItsDocking_System(Docking_System* p_Docking_System);
+    void __setItsEBS(EBS* p_EBS);
     
     //## auto_generated
-    void _setItsDocking_System(Docking_System* p_Docking_System);
+    void _setItsEBS(EBS* p_EBS);
     
     //## auto_generated
-    void _clearItsDocking_System();
-    
-    //## auto_generated
-    void __setItsObstacle(Obstacle* p_Obstacle);
-    
-    //## auto_generated
-    void _setItsObstacle(Obstacle* p_Obstacle);
-    
-    //## auto_generated
-    void _clearItsObstacle();
+    void _clearItsEBS();
 };
 
 #ifdef _OMINSTRUMENT

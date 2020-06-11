@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: Obstacle
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\Obstacle.cpp
 *********************************************************************/
 
@@ -16,6 +16,8 @@
 #include "Obstacle.h"
 //## auto_generated
 #include "ANGELS.h"
+//## auto_generated
+#include "EBS.h"
 //#[ ignore
 #define ANGELSPkg_ActorPkg_Obstacle_Obstacle_SERIALIZE OM_NO_OP
 //#]

@@ -11,7 +11,7 @@
 			<_id type="a">GUID b04eae3d-15f2-48b0-8105-15f20d0ee279</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ActorPkg</_name>
-			<_modifiedTimeWeak type="a">5.28.2020::9:30:41</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:23</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -21,9 +21,9 @@
 					<_hid type="a">GUID 56208a7b-266a-493a-bf3e-293543ebfa59</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.28.2020::9:51:35</_modifiedTime>
+			<_modifiedTime type="a">6.11.2020::8:20:37</_modifiedTime>
 			<_lastID type="a">16</_lastID>
-			<weakCGTime type="a">5.28.2020::9:30:41</weakCGTime>
+			<weakCGTime type="a">6.11.2020::8:24:23</weakCGTime>
 			<strongCGTime type="a">5.28.2020::9:30:41</strongCGTime>
 			<_defaultComposite type="s">GUID fabbb408-de82-424e-8fce-216617ff1ef0</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -58,7 +58,7 @@
 			<_id type="a">GUID 7ff30776-c3a5-45fc-820c-bff3158c6232</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DC</_name>
-			<_modifiedTimeWeak type="a">5.22.2020::20:47:4</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:23</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -68,9 +68,9 @@
 					<_hid type="a">GUID ce9a3377-92ac-48bb-84b7-6803479e8f0d</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.22.2020::20:47:4</_modifiedTime>
+			<_modifiedTime type="a">6.11.2020::8:24:23</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">5.22.2020::20:47:4</weakCGTime>
+			<weakCGTime type="a">6.11.2020::8:24:23</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:28:56</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -84,6 +84,7 @@
 				<value>GUID 466af49a-abf7-4045-9de0-ed0a84ce3334</value>
 				<value>GUID c52aa628-c2e5-460d-a9a1-ea30a91c743a</value>
 				<value>GUID 7a62482e-49b7-4aec-8d14-2df8777e58b8</value>
+				<value>GUID e5505d4e-f470-4b4a-9fa7-c2269529cb5e</value>
 			</AggregatesList>
 		</IActor>
 		<IAssociationEnd type="e">
@@ -248,11 +249,40 @@
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID e5505d4e-f470-4b4a-9fa7-c2269529cb5e</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsEBS</_name>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:23</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::8:24:23</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hname type="a">EBS</_hname>
+					<_hid type="a">GUID 9ae76f2b-7412-42c5-adcf-9fbbdd3025fa</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">itsDC</_hname>
+					<_hid type="a">GUID 897539ae-cfae-4c59-9062-6486a08e90c1</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IActor type="e">
 			<_id type="a">GUID 1363a688-b2df-4751-bd7d-7353a11cd859</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DCOperator</_name>
-			<_modifiedTimeWeak type="a">5.27.2020::9:45:33</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:27</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -262,9 +292,9 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.27.2020::9:45:33</_modifiedTime>
+			<_modifiedTime type="a">6.11.2020::8:24:27</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">5.27.2020::9:45:33</weakCGTime>
+			<weakCGTime type="a">6.11.2020::8:24:27</weakCGTime>
 			<strongCGTime type="a">4.29.2020::15:2:18</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -285,6 +315,7 @@
 				<value>GUID 772afe1a-0017-4cc9-91a2-1e5aae0de17c</value>
 				<value>GUID 2cca4d9d-3c54-4c76-8146-85ffa6fcea80</value>
 				<value>GUID 998e0c91-e801-4ad1-888e-402b4ae8ce50</value>
+				<value>GUID d94ccd69-dc55-43d7-b080-ff5bc9e2f1a7</value>
 			</AggregatesList>
 		</IActor>
 		<IInformationFlow type="e">
@@ -640,11 +671,40 @@
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID d94ccd69-dc55-43d7-b080-ff5bc9e2f1a7</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsEBS</_name>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::8:24:27</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hname type="a">EBS</_hname>
+					<_hid type="a">GUID 9ae76f2b-7412-42c5-adcf-9fbbdd3025fa</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">itsDCOperator</_hname>
+					<_hid type="a">GUID 8f081883-abbe-4d60-9fff-3e3c4b4b0d75</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IActor type="e">
 			<_id type="a">GUID 516c76cb-338f-40c3-a898-f904221cfb96</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Driver</_name>
-			<_modifiedTimeWeak type="a">5.27.2020::9:45:15</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.11.2020::8:20:38</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -654,9 +714,9 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.27.2020::9:45:15</_modifiedTime>
+			<_modifiedTime type="a">6.11.2020::8:20:38</_modifiedTime>
 			<_lastID type="a">2</_lastID>
-			<weakCGTime type="a">5.27.2020::9:45:15</weakCGTime>
+			<weakCGTime type="a">6.11.2020::8:20:38</weakCGTime>
 			<strongCGTime type="a">3.31.2020::21:28:56</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -1142,7 +1202,7 @@
 			<_id type="a">GUID d1815240-c7ca-42c7-8552-c599700d0b3c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">PedestrianandObstacles</_name>
-			<_modifiedTimeWeak type="a">5.27.2020::9:43:46</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:31</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -1152,8 +1212,8 @@
 					<_hid type="a">GUID b50b8171-60eb-41fd-a773-449c8d94d20f</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.27.2020::9:43:46</_modifiedTime>
-			<weakCGTime type="a">5.27.2020::9:43:46</weakCGTime>
+			<_modifiedTime type="a">6.11.2020::8:24:31</_modifiedTime>
+			<weakCGTime type="a">6.11.2020::8:24:31</weakCGTime>
 			<strongCGTime type="a">4.29.2020::15:2:34</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -1164,6 +1224,7 @@
 				<value>GUID 35e590fd-3a28-47ae-aeaf-fd0e539f5ff1</value>
 				<value>GUID bb83dbb4-a0eb-499f-a1ee-60bbb98be464</value>
 				<value>GUID ad8842b8-a5cb-422e-be6f-31a3f131981d</value>
+				<value>GUID b76f297d-ef4b-4f7e-a568-3d2592fc6e34</value>
 			</AggregatesList>
 		</IActor>
 		<IGeneralization type="e">
@@ -1232,6 +1293,35 @@
 					<_hclass type="a">Receive_Obstacle_positions</_hclass>
 					<_hname type="a">itsPedestrianandObstacles</_hname>
 					<_hid type="a">GUID ad1d1793-0b41-4cc5-87ac-d395598cf3e0</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID b76f297d-ef4b-4f7e-a568-3d2592fc6e34</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsEBS_1</_name>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::8:24:31</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hname type="a">EBS</_hname>
+					<_hid type="a">GUID 9ae76f2b-7412-42c5-adcf-9fbbdd3025fa</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">itsPedestrianandObstacles</_hname>
+					<_hid type="a">GUID 99688ba0-446f-4355-bc96-5928f95accaa</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -1376,7 +1466,7 @@
 			<_id type="a">GUID 7c19c8c8-634c-4300-8c7f-39b2756b2adc</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Environment</_name>
-			<_modifiedTimeWeak type="a">5.15.2020::12:30:4</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:35</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -1386,8 +1476,8 @@
 					<_hid type="a">GUID 58673645-b6cb-4922-86fc-9d3cdafdd2c4</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.15.2020::12:30:4</_modifiedTime>
-			<weakCGTime type="a">5.15.2020::12:30:4</weakCGTime>
+			<_modifiedTime type="a">6.11.2020::8:24:35</_modifiedTime>
+			<weakCGTime type="a">6.11.2020::8:24:35</weakCGTime>
 			<strongCGTime type="a">5.14.2020::10:49:10</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -1398,6 +1488,7 @@
 				<value>GUID 5ff69265-fe4a-453b-8747-55b4567cd273</value>
 				<value>GUID 64065d96-d8dd-41b7-94de-e239d7250e4d</value>
 				<value>GUID e0ab490c-55b7-4a39-b5a0-b4f69d9e1619</value>
+				<value>GUID a9493f17-2ed4-4f7d-a585-b00f962d457f</value>
 			</AggregatesList>
 		</IActor>
 		<IAssociationEnd type="e">
@@ -1470,6 +1561,35 @@
 					<_hclass type="a">ANGELS</_hclass>
 					<_hname type="a">itsEnvironment</_hname>
 					<_hid type="a">GUID 3311da30-d15a-4bae-9e0e-4b51713ef9ab</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID a9493f17-2ed4-4f7d-a585-b00f962d457f</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsEBS</_name>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::8:24:35</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hname type="a">EBS</_hname>
+					<_hid type="a">GUID 9ae76f2b-7412-42c5-adcf-9fbbdd3025fa</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">itsEnvironment</_hname>
+					<_hid type="a">GUID 999dfe7a-d9da-4fdf-af3e-f98d5419e47e</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>

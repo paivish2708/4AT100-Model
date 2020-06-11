@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DockingProcessBlock_Simulation
 	Model Element	: Truck
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\DockingProcessBlock_Simulation\Truck.cpp
 *********************************************************************/
 
@@ -16,6 +16,10 @@
 #include "Truck.h"
 //## link itsANGELS
 #include "ANGELS.h"
+//## link itsChargingSystemBlock
+#include "ChargingSystemBlock.h"
+//## link itsDockingProcessBlock
+#include "DockingProcessBlock.h"
 //#[ ignore
 #define ANGELSPkg_TruckPkg_Truck_Truck_SERIALIZE OM_NO_OP
 //#]
@@ -26,6 +30,8 @@
 Truck::Truck() {
     NOTIFY_CONSTRUCTOR(Truck, Truck(), 0, ANGELSPkg_TruckPkg_Truck_Truck_SERIALIZE);
     itsANGELS = NULL;
+    itsChargingSystemBlock = NULL;
+    itsDockingProcessBlock = NULL;
 }
 
 Truck::~Truck() {
@@ -45,6 +51,30 @@ void Truck::setItsANGELS(ANGELS* p_ANGELS) {
     _setItsANGELS(p_ANGELS);
 }
 
+ChargingSystemBlock* Truck::getItsChargingSystemBlock() const {
+    return itsChargingSystemBlock;
+}
+
+void Truck::setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(p_ChargingSystemBlock != NULL)
+        {
+            p_ChargingSystemBlock->_setItsTruck(this);
+        }
+    _setItsChargingSystemBlock(p_ChargingSystemBlock);
+}
+
+DockingProcessBlock* Truck::getItsDockingProcessBlock() const {
+    return itsDockingProcessBlock;
+}
+
+void Truck::setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock) {
+    if(p_DockingProcessBlock != NULL)
+        {
+            p_DockingProcessBlock->_setItsTruck_1(this);
+        }
+    _setItsDockingProcessBlock(p_DockingProcessBlock);
+}
+
 void Truck::cleanUpRelations() {
     if(itsANGELS != NULL)
         {
@@ -55,6 +85,26 @@ void Truck::cleanUpRelations() {
                     itsANGELS->__setItsTruck(NULL);
                 }
             itsANGELS = NULL;
+        }
+    if(itsChargingSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
+            Truck* p_Truck = itsChargingSystemBlock->getItsTruck();
+            if(p_Truck != NULL)
+                {
+                    itsChargingSystemBlock->__setItsTruck(NULL);
+                }
+            itsChargingSystemBlock = NULL;
+        }
+    if(itsDockingProcessBlock != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock");
+            Truck* p_Truck = itsDockingProcessBlock->getItsTruck_1();
+            if(p_Truck != NULL)
+                {
+                    itsDockingProcessBlock->__setItsTruck_1(NULL);
+                }
+            itsDockingProcessBlock = NULL;
         }
 }
 
@@ -83,6 +133,56 @@ void Truck::_clearItsANGELS() {
     itsANGELS = NULL;
 }
 
+void Truck::__setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    itsChargingSystemBlock = p_ChargingSystemBlock;
+    if(p_ChargingSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsChargingSystemBlock", p_ChargingSystemBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
+        }
+}
+
+void Truck::_setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(itsChargingSystemBlock != NULL)
+        {
+            itsChargingSystemBlock->__setItsTruck(NULL);
+        }
+    __setItsChargingSystemBlock(p_ChargingSystemBlock);
+}
+
+void Truck::_clearItsChargingSystemBlock() {
+    NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
+    itsChargingSystemBlock = NULL;
+}
+
+void Truck::__setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock) {
+    itsDockingProcessBlock = p_DockingProcessBlock;
+    if(p_DockingProcessBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcessBlock", p_DockingProcessBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock");
+        }
+}
+
+void Truck::_setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock) {
+    if(itsDockingProcessBlock != NULL)
+        {
+            itsDockingProcessBlock->__setItsTruck_1(NULL);
+        }
+    __setItsDockingProcessBlock(p_DockingProcessBlock);
+}
+
+void Truck::_clearItsDockingProcessBlock() {
+    NOTIFY_RELATION_CLEARED("itsDockingProcessBlock");
+    itsDockingProcessBlock = NULL;
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedTruck::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -90,6 +190,16 @@ void OMAnimatedTruck::serializeRelations(AOMSRelations* aomsRelations) const {
     if(myReal->itsANGELS)
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS);
+        }
+    aomsRelations->addRelation("itsDockingProcessBlock", false, true);
+    if(myReal->itsDockingProcessBlock)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcessBlock);
+        }
+    aomsRelations->addRelation("itsChargingSystemBlock", false, true);
+    if(myReal->itsChargingSystemBlock)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsChargingSystemBlock);
         }
 }
 //#]

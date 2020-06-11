@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: Driver
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\Driver.cpp
 *********************************************************************/
 
@@ -16,6 +16,14 @@
 #include "Driver.h"
 //## auto_generated
 #include "ANGELS.h"
+//## auto_generated
+#include "ChargingSystemBlock.h"
+//## auto_generated
+#include "DockingProcessBlock.h"
+//## auto_generated
+#include "EBS.h"
+//## link itsParkingSystemBlock
+#include "ParkingSystemBlock.h"
 //#[ ignore
 #define ANGELSPkg_ActorPkg_Driver_Driver_SERIALIZE OM_NO_OP
 //#]
@@ -27,6 +35,8 @@ Driver::Driver() {
     NOTIFY_CONSTRUCTOR(Driver, Driver(), 0, ANGELSPkg_ActorPkg_Driver_Driver_SERIALIZE);
     itsANGELS_1 = NULL;
     itsANGELS_3 = NULL;
+    itsDockingProcessBlock_1 = NULL;
+    itsParkingSystemBlock = NULL;
     itsTruck_4 = NULL;
 }
 
@@ -63,6 +73,30 @@ void Driver::setItsANGELS_3(ANGELS* p_ANGELS) {
     _setItsANGELS_3(p_ANGELS);
 }
 
+DockingProcessBlock* Driver::getItsDockingProcessBlock_1() const {
+    return itsDockingProcessBlock_1;
+}
+
+void Driver::setItsDockingProcessBlock_1(DockingProcessBlock* p_DockingProcessBlock) {
+    if(p_DockingProcessBlock != NULL)
+        {
+            p_DockingProcessBlock->_setItsDriver(this);
+        }
+    _setItsDockingProcessBlock_1(p_DockingProcessBlock);
+}
+
+ParkingSystemBlock* Driver::getItsParkingSystemBlock() const {
+    return itsParkingSystemBlock;
+}
+
+void Driver::setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock) {
+    if(p_ParkingSystemBlock != NULL)
+        {
+            p_ParkingSystemBlock->_setItsDriver(this);
+        }
+    _setItsParkingSystemBlock(p_ParkingSystemBlock);
+}
+
 Truck* Driver::getItsTruck_4() const {
     return itsTruck_4;
 }
@@ -94,6 +128,26 @@ void Driver::cleanUpRelations() {
                     itsANGELS_3->__setItsDriver(NULL);
                 }
             itsANGELS_3 = NULL;
+        }
+    if(itsDockingProcessBlock_1 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_1");
+            Driver* p_Driver = itsDockingProcessBlock_1->getItsDriver();
+            if(p_Driver != NULL)
+                {
+                    itsDockingProcessBlock_1->__setItsDriver(NULL);
+                }
+            itsDockingProcessBlock_1 = NULL;
+        }
+    if(itsParkingSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsParkingSystemBlock");
+            Driver* p_Driver = itsParkingSystemBlock->getItsDriver();
+            if(p_Driver != NULL)
+                {
+                    itsParkingSystemBlock->__setItsDriver(NULL);
+                }
+            itsParkingSystemBlock = NULL;
         }
     if(itsTruck_4 != NULL)
         {
@@ -127,6 +181,56 @@ void Driver::_clearItsANGELS_3() {
     itsANGELS_3 = NULL;
 }
 
+void Driver::__setItsDockingProcessBlock_1(DockingProcessBlock* p_DockingProcessBlock) {
+    itsDockingProcessBlock_1 = p_DockingProcessBlock;
+    if(p_DockingProcessBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcessBlock_1", p_DockingProcessBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_1");
+        }
+}
+
+void Driver::_setItsDockingProcessBlock_1(DockingProcessBlock* p_DockingProcessBlock) {
+    if(itsDockingProcessBlock_1 != NULL)
+        {
+            itsDockingProcessBlock_1->__setItsDriver(NULL);
+        }
+    __setItsDockingProcessBlock_1(p_DockingProcessBlock);
+}
+
+void Driver::_clearItsDockingProcessBlock_1() {
+    NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_1");
+    itsDockingProcessBlock_1 = NULL;
+}
+
+void Driver::__setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock) {
+    itsParkingSystemBlock = p_ParkingSystemBlock;
+    if(p_ParkingSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsParkingSystemBlock", p_ParkingSystemBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsParkingSystemBlock");
+        }
+}
+
+void Driver::_setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock) {
+    if(itsParkingSystemBlock != NULL)
+        {
+            itsParkingSystemBlock->__setItsDriver(NULL);
+        }
+    __setItsParkingSystemBlock(p_ParkingSystemBlock);
+}
+
+void Driver::_clearItsParkingSystemBlock() {
+    NOTIFY_RELATION_CLEARED("itsParkingSystemBlock");
+    itsParkingSystemBlock = NULL;
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedDriver::serializeAttributes(AOMSAttributes* aomsAttributes) const {
@@ -148,6 +252,16 @@ void OMAnimatedDriver::serializeRelations(AOMSRelations* aomsRelations) const {
     if(myReal->itsANGELS_3)
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS_3);
+        }
+    aomsRelations->addRelation("itsParkingSystemBlock", false, true);
+    if(myReal->itsParkingSystemBlock)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsParkingSystemBlock);
+        }
+    aomsRelations->addRelation("itsDockingProcessBlock_1", false, true);
+    if(myReal->itsDockingProcessBlock_1)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcessBlock_1);
         }
     OMAnimatedTruck::serializeRelations(aomsRelations);
 }

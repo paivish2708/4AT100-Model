@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ChargingSystemBlock_Simulation
 	Model Element	: ChargingInfrastructure
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ChargingSystemBlock_Simulation\ChargingInfrastructure.cpp
 *********************************************************************/
 
@@ -19,14 +19,14 @@
 //## link itsChargingSystemBlock
 #include "ChargingSystemBlock.h"
 //#[ ignore
-#define ANGELSPkg_ChargingInfrastructure_ChargingInfrastructure_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ChargingSystemPkg_ChargingInfrastructure_ChargingInfrastructure_SERIALIZE OM_NO_OP
 //#]
 
-//## package ANGELSPkg
+//## package ANGELSPkg::ChargingSystemPkg
 
 //## class ChargingInfrastructure
 ChargingInfrastructure::ChargingInfrastructure() {
-    NOTIFY_CONSTRUCTOR(ChargingInfrastructure, ChargingInfrastructure(), 0, ANGELSPkg_ChargingInfrastructure_ChargingInfrastructure_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(ChargingInfrastructure, ChargingInfrastructure(), 0, ANGELSPkg_ChargingSystemPkg_ChargingInfrastructure_ChargingInfrastructure_SERIALIZE);
     itsANGELS = NULL;
     itsANGELS_1 = NULL;
     itsChargingSystemBlock = NULL;
@@ -176,7 +176,7 @@ void OMAnimatedChargingInfrastructure::serializeRelations(AOMSRelations* aomsRel
 }
 //#]
 
-IMPLEMENT_META_P(ChargingInfrastructure, ANGELSPkg, ANGELSPkg, false, OMAnimatedChargingInfrastructure)
+IMPLEMENT_META_P(ChargingInfrastructure, ANGELSPkg_ChargingSystemPkg, ANGELSPkg::ChargingSystemPkg, false, OMAnimatedChargingInfrastructure)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

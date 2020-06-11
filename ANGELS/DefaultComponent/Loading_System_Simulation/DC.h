@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: DC
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\DC.h
 *********************************************************************/
 
@@ -22,10 +22,19 @@
 //## link itsANGELS
 class ANGELS;
 
-//## link itsLoading_System
-class Loading_System;
+//## link itsDockingProcessBlock
+class DockingProcessBlock;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## link itsEBS
+class EBS;
+
+//## link itsLoadingProcessBlock
+class LoadingProcessBlock;
+
+//## link itsParkingSystemBlock
+class ParkingSystemBlock;
+
+//## package ANGELSPkg::ActorPkg
 
 //## actor DC
 class DC {
@@ -54,10 +63,40 @@ public :
     void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    Loading_System* getItsLoading_System() const;
+    ANGELS* getItsANGELS_1() const;
     
     //## auto_generated
-    void setItsLoading_System(Loading_System* p_Loading_System);
+    void setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    ANGELS* getItsANGELS_2() const;
+    
+    //## auto_generated
+    void setItsANGELS_2(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    DockingProcessBlock* getItsDockingProcessBlock() const;
+    
+    //## auto_generated
+    void setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    EBS* getItsEBS() const;
+    
+    //## auto_generated
+    void setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    LoadingProcessBlock* getItsLoadingProcessBlock() const;
+    
+    //## auto_generated
+    void setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
+    
+    //## auto_generated
+    ParkingSystemBlock* getItsParkingSystemBlock() const;
+    
+    //## auto_generated
+    void setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock);
 
 protected :
 
@@ -68,29 +107,66 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
-    Loading_System* itsLoading_System;		//## link itsLoading_System
+    ANGELS* itsANGELS_1;		//## link itsANGELS_1
+    
+    ANGELS* itsANGELS_2;		//## link itsANGELS_2
+    
+    DockingProcessBlock* itsDockingProcessBlock;		//## link itsDockingProcessBlock
+    
+    EBS* itsEBS;		//## link itsEBS
+    
+    LoadingProcessBlock* itsLoadingProcessBlock;		//## link itsLoadingProcessBlock
+    
+    ParkingSystemBlock* itsParkingSystemBlock;		//## link itsParkingSystemBlock
     
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsANGELS(ANGELS* p_ANGELS);
+    void __setItsANGELS_2(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _setItsANGELS(ANGELS* p_ANGELS);
+    void _setItsANGELS_2(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _clearItsANGELS();
+    void _clearItsANGELS_2();
     
     //## auto_generated
-    void __setItsLoading_System(Loading_System* p_Loading_System);
+    void __setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
     
     //## auto_generated
-    void _setItsLoading_System(Loading_System* p_Loading_System);
+    void _setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
     
     //## auto_generated
-    void _clearItsLoading_System();
+    void _clearItsDockingProcessBlock();
+    
+    //## auto_generated
+    void __setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _clearItsEBS();
+    
+    //## auto_generated
+    void __setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
+    
+    //## auto_generated
+    void _setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
+    
+    //## auto_generated
+    void _clearItsLoadingProcessBlock();
+    
+    //## auto_generated
+    void __setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock);
+    
+    //## auto_generated
+    void _setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock);
+    
+    //## auto_generated
+    void _clearItsParkingSystemBlock();
 };
 
 #ifdef _OMINSTRUMENT

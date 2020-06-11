@@ -11,9 +11,9 @@
 			<_id type="a">GUID 7554a74b-52bb-4caa-90d3-744b41cefafd</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ObstacleAvoidancePkg</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
-			<weakCGTime type="a">5.18.2020::12:10:42</weakCGTime>
+			<_modifiedTimeWeak type="a">6.11.2020::8:23:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::8:20:37</_modifiedTime>
+			<weakCGTime type="a">6.11.2020::8:23:21</weakCGTime>
 			<strongCGTime type="a">4.30.2020::9:59:30</strongCGTime>
 			<_defaultComposite type="s">GUID ac6d35e3-00c3-4dfd-ae38-40460cdcd78c</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -55,9 +55,19 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.18.2020::12:10:42</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:10:42</_modifiedTime>
-			<weakCGTime type="a">5.18.2020::12:10:42</weakCGTime>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:10</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">EBSArchtecture</_hname>
+					<_hid type="a">GUID c24c772e-99df-4ee4-a181-73525a8f1037</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">6.11.2020::8:24:10</_modifiedTime>
+			<weakCGTime type="a">6.11.2020::8:24:10</weakCGTime>
 			<strongCGTime type="a">4.30.2020::10:1:47</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -67,6 +77,7 @@
 			<AggregatesList type="e">
 				<value>GUID 17453d6a-f606-4013-b41a-a5fffac3b5b7</value>
 				<value>GUID 5582d46a-a20c-42ff-93f5-0080d4382c92</value>
+				<value>GUID 55c10da5-3f03-4b68-94c9-73a08c8773c9</value>
 			</AggregatesList>
 		</IClass>
 		<IAssociationEnd type="e">
@@ -102,14 +113,43 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\DockingProcessPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::DockingProcessPkg</_hsubsystem>
+					<_hfilename type="a">.\DockingPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::DockingPkg</_hsubsystem>
 					<_hname type="a">DockingProcessBlock</_hname>
 					<_hid type="a">GUID 419eb000-a805-48d7-8cc1-6b18694ad318</_hid>
 				</IClassifierHandle>
 			</_otherClass>
 			<_inverse type="r">
 				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 55c10da5-3f03-4b68-94c9-73a08c8773c9</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsEBS</_name>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:10</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::8:24:10</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hname type="a">EBS</_hname>
+					<_hid type="a">GUID 9ae76f2b-7412-42c5-adcf-9fbbdd3025fa</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">itsCollision_Avoidance</_hname>
+					<_hid type="a">GUID 9841c7c9-2a9e-4a11-acb1-2830c394e4ea</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>

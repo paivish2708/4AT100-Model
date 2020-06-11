@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: ChargingSystemBlock
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\ChargingSystemBlock.cpp
 *********************************************************************/
 
@@ -18,6 +18,8 @@
 #include "ChargingSystemBlock.h"
 //## link itsANGELS
 #include "ANGELS.h"
+//## event SwitchOffANGELSFunc()
+#include "ANGELSPkg.h"
 //## link itsChargingInfrastructure
 #include "ChargingInfrastructure.h"
 //## link itsCommunicationSystemBlock
@@ -460,7 +462,7 @@ IOxfReactive::TakeEventStatus ChargingSystemBlock::rootState_processEvent() {
                     NOTIFY_STATE_ENTERED("ROOT.Charging.ChargingMode");
                     Charging_subState = ChargingMode;
                     rootState_active = ChargingMode;
-                    Charging_timeout = scheduleTimeout(1000, "ROOT.Charging.ChargingMode");
+                    Charging_timeout = scheduleTimeout(2000, "ROOT.Charging.ChargingMode");
                     NOTIFY_TRANSITION_TERMINATED("4");
                     res = eventConsumed;
                 }
@@ -471,58 +473,7 @@ IOxfReactive::TakeEventStatus ChargingSystemBlock::rootState_processEvent() {
         // State ChargingMode
         case ChargingMode:
         {
-            if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
-                {
-                    if(getCurrentEvent() == Charging_timeout)
-                        {
-                            NOTIFY_TRANSITION_STARTED("5");
-                            cancel(Charging_timeout);
-                            NOTIFY_STATE_EXITED("ROOT.Charging.ChargingMode");
-                            //#[ transition 5 
-                            TruckChargeState++;
-                            //#]
-                            NOTIFY_STATE_ENTERED("ROOT.Charging.ChargingMode");
-                            Charging_subState = ChargingMode;
-                            rootState_active = ChargingMode;
-                            Charging_timeout = scheduleTimeout(1000, "ROOT.Charging.ChargingMode");
-                            NOTIFY_TRANSITION_TERMINATED("5");
-                            res = eventConsumed;
-                        }
-                }
-            else if(IS_EVENT_TYPE_OF(EndCharging_ChargingSystemPkg_ANGELSPkg_id))
-                {
-                    NOTIFY_TRANSITION_STARTED("6");
-                    switch (Charging_subState) {
-                        // State StartCharging
-                        case StartCharging:
-                        {
-                            NOTIFY_STATE_EXITED("ROOT.Charging.StartCharging");
-                        }
-                        break;
-                        // State ChargingMode
-                        case ChargingMode:
-                        {
-                            cancel(Charging_timeout);
-                            NOTIFY_STATE_EXITED("ROOT.Charging.ChargingMode");
-                        }
-                        break;
-                        default:
-                            break;
-                    }
-                    Charging_subState = OMNonState;
-                    NOTIFY_STATE_EXITED("ROOT.Charging");
-                    //#[ transition 6 
-                    ChargingProcess();
-                    //#]
-                    NOTIFY_STATE_ENTERED("ROOT.ChargedState");
-                    pushNullTransition();
-                    rootState_subState = ChargedState;
-                    rootState_active = ChargedState;
-                    NOTIFY_TRANSITION_TERMINATED("6");
-                    res = eventConsumed;
-                }
-            
-            
+            res = ChargingMode_handleEvent();
         }
         break;
         // State ChargedState
@@ -557,6 +508,91 @@ void ChargingSystemBlock::Charging_entDef() {
     Charging_subState = StartCharging;
     rootState_active = StartCharging;
     NOTIFY_TRANSITION_TERMINATED("3");
+}
+
+IOxfReactive::TakeEventStatus ChargingSystemBlock::ChargingMode_handleEvent() {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(SwitchOffANGELSFunc_ANGELSPkg_id))
+        {
+            NOTIFY_TRANSITION_STARTED("8");
+            switch (Charging_subState) {
+                // State StartCharging
+                case StartCharging:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.Charging.StartCharging");
+                }
+                break;
+                // State ChargingMode
+                case ChargingMode:
+                {
+                    cancel(Charging_timeout);
+                    NOTIFY_STATE_EXITED("ROOT.Charging.ChargingMode");
+                }
+                break;
+                default:
+                    break;
+            }
+            Charging_subState = OMNonState;
+            NOTIFY_STATE_EXITED("ROOT.Charging");
+            NOTIFY_STATE_ENTERED("ROOT.terminationstate_6");
+            rootState_subState = terminationstate_6;
+            rootState_active = terminationstate_6;
+            NOTIFY_TRANSITION_TERMINATED("8");
+            res = eventConsumed;
+        }
+    else if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
+        {
+            if(getCurrentEvent() == Charging_timeout)
+                {
+                    NOTIFY_TRANSITION_STARTED("5");
+                    cancel(Charging_timeout);
+                    NOTIFY_STATE_EXITED("ROOT.Charging.ChargingMode");
+                    //#[ transition 5 
+                    TruckChargeState++;
+                    //#]
+                    NOTIFY_STATE_ENTERED("ROOT.Charging.ChargingMode");
+                    Charging_subState = ChargingMode;
+                    rootState_active = ChargingMode;
+                    Charging_timeout = scheduleTimeout(2000, "ROOT.Charging.ChargingMode");
+                    NOTIFY_TRANSITION_TERMINATED("5");
+                    res = eventConsumed;
+                }
+        }
+    else if(IS_EVENT_TYPE_OF(EndCharging_ChargingSystemPkg_ANGELSPkg_id))
+        {
+            NOTIFY_TRANSITION_STARTED("6");
+            switch (Charging_subState) {
+                // State StartCharging
+                case StartCharging:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.Charging.StartCharging");
+                }
+                break;
+                // State ChargingMode
+                case ChargingMode:
+                {
+                    cancel(Charging_timeout);
+                    NOTIFY_STATE_EXITED("ROOT.Charging.ChargingMode");
+                }
+                break;
+                default:
+                    break;
+            }
+            Charging_subState = OMNonState;
+            NOTIFY_STATE_EXITED("ROOT.Charging");
+            //#[ transition 6 
+            ChargingProcess();
+            //#]
+            NOTIFY_STATE_ENTERED("ROOT.ChargedState");
+            pushNullTransition();
+            rootState_subState = ChargedState;
+            rootState_active = ChargedState;
+            NOTIFY_TRANSITION_TERMINATED("6");
+            res = eventConsumed;
+        }
+    
+    
+    return res;
 }
 
 #ifdef _OMINSTRUMENT

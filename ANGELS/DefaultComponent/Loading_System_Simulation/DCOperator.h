@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\DCOperator.h
 *********************************************************************/
 
@@ -22,16 +22,22 @@
 //## link itsANGELS
 class ANGELS;
 
-//## link itsCharging_System
-class Charging_System;
+//## link itsChargingSystemBlock
+class ChargingSystemBlock;
 
-//## link itsDocking_System
-class Docking_System;
+//## link itsDockingProcessBlock
+class DockingProcessBlock;
 
-//## link itsLoading_System
-class Loading_System;
+//## link itsEBS
+class EBS;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## link itsLoadingProcessBlock
+class LoadingProcessBlock;
+
+//## link itsParkingSystemBlock
+class ParkingSystemBlock;
+
+//## package ANGELSPkg::ActorPkg
 
 //## actor DCOperator
 class DCOperator {
@@ -60,28 +66,58 @@ public :
     void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    Charging_System* getItsCharging_System() const;
+    ANGELS* getItsANGELS_1() const;
     
     //## auto_generated
-    void setItsCharging_System(Charging_System* p_Charging_System);
+    void setItsANGELS_1(ANGELS* p_ANGELS);
     
     //## auto_generated
-    Docking_System* getItsDocking_System() const;
+    ChargingSystemBlock* getItsChargingSystemBlock() const;
     
     //## auto_generated
-    void setItsDocking_System(Docking_System* p_Docking_System);
+    void setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
     
     //## auto_generated
-    Docking_System* getItsDocking_System_1() const;
+    DockingProcessBlock* getItsDockingProcessBlock() const;
     
     //## auto_generated
-    void setItsDocking_System_1(Docking_System* p_Docking_System);
+    void setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
     
     //## auto_generated
-    Loading_System* getItsLoading_System() const;
+    DockingProcessBlock* getItsDockingProcessBlock_1() const;
     
     //## auto_generated
-    void setItsLoading_System(Loading_System* p_Loading_System);
+    void setItsDockingProcessBlock_1(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    DockingProcessBlock* getItsDockingProcessBlock_2() const;
+    
+    //## auto_generated
+    void setItsDockingProcessBlock_2(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    DockingProcessBlock* getItsDockingProcessBlock_3() const;
+    
+    //## auto_generated
+    void setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    EBS* getItsEBS() const;
+    
+    //## auto_generated
+    void setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    LoadingProcessBlock* getItsLoadingProcessBlock() const;
+    
+    //## auto_generated
+    void setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
+    
+    //## auto_generated
+    ParkingSystemBlock* getItsParkingSystemBlock() const;
+    
+    //## auto_generated
+    void setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock);
 
 protected :
 
@@ -92,62 +128,90 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
-    Charging_System* itsCharging_System;		//## link itsCharging_System
+    ANGELS* itsANGELS_1;		//## link itsANGELS_1
     
-    Docking_System* itsDocking_System;		//## link itsDocking_System
+    ChargingSystemBlock* itsChargingSystemBlock;		//## link itsChargingSystemBlock
     
-    Docking_System* itsDocking_System_1;		//## link itsDocking_System_1
+    DockingProcessBlock* itsDockingProcessBlock;		//## link itsDockingProcessBlock
     
-    Loading_System* itsLoading_System;		//## link itsLoading_System
+    DockingProcessBlock* itsDockingProcessBlock_1;		//## link itsDockingProcessBlock_1
+    
+    DockingProcessBlock* itsDockingProcessBlock_2;		//## link itsDockingProcessBlock_2
+    
+    DockingProcessBlock* itsDockingProcessBlock_3;		//## link itsDockingProcessBlock_3
+    
+    EBS* itsEBS;		//## link itsEBS
+    
+    LoadingProcessBlock* itsLoadingProcessBlock;		//## link itsLoadingProcessBlock
+    
+    ParkingSystemBlock* itsParkingSystemBlock;		//## link itsParkingSystemBlock
     
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsANGELS(ANGELS* p_ANGELS);
+    void __setItsANGELS_1(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _setItsANGELS(ANGELS* p_ANGELS);
+    void _setItsANGELS_1(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _clearItsANGELS();
+    void _clearItsANGELS_1();
     
     //## auto_generated
-    void __setItsCharging_System(Charging_System* p_Charging_System);
+    void __setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
     
     //## auto_generated
-    void _setItsCharging_System(Charging_System* p_Charging_System);
+    void _setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
     
     //## auto_generated
-    void _clearItsCharging_System();
+    void _clearItsChargingSystemBlock();
     
     //## auto_generated
-    void __setItsDocking_System(Docking_System* p_Docking_System);
+    void __setItsDockingProcessBlock_2(DockingProcessBlock* p_DockingProcessBlock);
     
     //## auto_generated
-    void _setItsDocking_System(Docking_System* p_Docking_System);
+    void _setItsDockingProcessBlock_2(DockingProcessBlock* p_DockingProcessBlock);
     
     //## auto_generated
-    void _clearItsDocking_System();
+    void _clearItsDockingProcessBlock_2();
     
     //## auto_generated
-    void __setItsDocking_System_1(Docking_System* p_Docking_System);
+    void __setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProcessBlock);
     
     //## auto_generated
-    void _setItsDocking_System_1(Docking_System* p_Docking_System);
+    void _setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProcessBlock);
     
     //## auto_generated
-    void _clearItsDocking_System_1();
+    void _clearItsDockingProcessBlock_3();
     
     //## auto_generated
-    void __setItsLoading_System(Loading_System* p_Loading_System);
+    void __setItsEBS(EBS* p_EBS);
     
     //## auto_generated
-    void _setItsLoading_System(Loading_System* p_Loading_System);
+    void _setItsEBS(EBS* p_EBS);
     
     //## auto_generated
-    void _clearItsLoading_System();
+    void _clearItsEBS();
+    
+    //## auto_generated
+    void __setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
+    
+    //## auto_generated
+    void _setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
+    
+    //## auto_generated
+    void _clearItsLoadingProcessBlock();
+    
+    //## auto_generated
+    void __setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock);
+    
+    //## auto_generated
+    void _setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock);
+    
+    //## auto_generated
+    void _clearItsParkingSystemBlock();
 };
 
 #ifdef _OMINSTRUMENT

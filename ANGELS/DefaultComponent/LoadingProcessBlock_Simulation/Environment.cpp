@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: Environment
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\Environment.cpp
 *********************************************************************/
 
@@ -16,6 +16,8 @@
 #include "Environment.h"
 //## link itsANGELS
 #include "ANGELS.h"
+//## link itsEBS
+#include "EBS.h"
 //#[ ignore
 #define ANGELSPkg_ActorPkg_Environment_Environment_SERIALIZE OM_NO_OP
 //#]
@@ -28,6 +30,7 @@ Environment::Environment() {
     itsANGELS = NULL;
     itsANGELS_1 = NULL;
     itsANGELS_2 = NULL;
+    itsEBS = NULL;
 }
 
 Environment::~Environment() {
@@ -79,6 +82,18 @@ void Environment::setItsANGELS_2(ANGELS* p_ANGELS) {
     _setItsANGELS_2(p_ANGELS);
 }
 
+EBS* Environment::getItsEBS() const {
+    return itsEBS;
+}
+
+void Environment::setItsEBS(EBS* p_EBS) {
+    if(p_EBS != NULL)
+        {
+            p_EBS->_setItsEnvironment(this);
+        }
+    _setItsEBS(p_EBS);
+}
+
 void Environment::cleanUpRelations() {
     if(itsANGELS != NULL)
         {
@@ -99,6 +114,16 @@ void Environment::cleanUpRelations() {
                     itsANGELS_2->__setItsEnvironment(NULL);
                 }
             itsANGELS_2 = NULL;
+        }
+    if(itsEBS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+            Environment* p_Environment = itsEBS->getItsEnvironment();
+            if(p_Environment != NULL)
+                {
+                    itsEBS->__setItsEnvironment(NULL);
+                }
+            itsEBS = NULL;
         }
 }
 
@@ -127,6 +152,31 @@ void Environment::_clearItsANGELS_2() {
     itsANGELS_2 = NULL;
 }
 
+void Environment::__setItsEBS(EBS* p_EBS) {
+    itsEBS = p_EBS;
+    if(p_EBS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsEBS", p_EBS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+        }
+}
+
+void Environment::_setItsEBS(EBS* p_EBS) {
+    if(itsEBS != NULL)
+        {
+            itsEBS->__setItsEnvironment(NULL);
+        }
+    __setItsEBS(p_EBS);
+}
+
+void Environment::_clearItsEBS() {
+    NOTIFY_RELATION_CLEARED("itsEBS");
+    itsEBS = NULL;
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedEnvironment::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -144,6 +194,11 @@ void OMAnimatedEnvironment::serializeRelations(AOMSRelations* aomsRelations) con
     if(myReal->itsANGELS_2)
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS_2);
+        }
+    aomsRelations->addRelation("itsEBS", false, true);
+    if(myReal->itsEBS)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsEBS);
         }
 }
 //#]

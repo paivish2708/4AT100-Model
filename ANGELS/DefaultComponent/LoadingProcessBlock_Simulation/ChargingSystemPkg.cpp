@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: ChargingSystemPkg
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\ChargingSystemPkg.cpp
 *********************************************************************/
 
@@ -15,7 +15,9 @@
 //## auto_generated
 #include "ChargingSystemPkg.h"
 //## auto_generated
-#include "Charging_System.h"
+#include "ChargingInfrastructure.h"
+//## auto_generated
+#include "ChargingSystemBlock.h"
 //#[ ignore
 #define Beginthecharging_SERIALIZE OM_NO_OP
 

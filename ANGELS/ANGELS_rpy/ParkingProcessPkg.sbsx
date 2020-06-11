@@ -11,7 +11,7 @@
 			<_id type="a">GUID 363e27a5-edb8-44a5-82c4-8353be709de0</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ParkingProcessPkg</_name>
-			<_modifiedTimeWeak type="a">6.5.2020::7:49:32</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.11.2020::12:40:33</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -23,7 +23,7 @@
 			</_theMainDiagram>
 			<_modifiedTime type="a">6.7.2020::20:17:5</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">6.5.2020::7:49:32</weakCGTime>
+			<weakCGTime type="a">6.11.2020::12:40:33</weakCGTime>
 			<strongCGTime type="a">5.28.2020::9:30:41</strongCGTime>
 			<_defaultComposite type="s">GUID fd3dcb46-e9fd-4786-bce3-79f972efc280</_defaultComposite>
 			<_eventsBaseID type="a">9001</_eventsBaseID>
@@ -69,16 +69,16 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">6.7.2020::19:8:9</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.11.2020::12:41:8</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID b89222af-caa2-4e62-893a-7a2e47a9c5ca</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">6.7.2020::19:8:9</_modifiedTime>
+			<_modifiedTime type="a">6.11.2020::12:40:42</_modifiedTime>
 			<_lastID type="a">6</_lastID>
-			<weakCGTime type="a">6.7.2020::19:8:9</weakCGTime>
+			<weakCGTime type="a">6.11.2020::12:41:8</weakCGTime>
 			<strongCGTime type="a">5.18.2020::12:59:15</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -97,6 +97,7 @@
 				<value>GUID 3bfd69bb-5f45-40cb-8c01-fa6232cf2f03</value>
 				<value>GUID e2a1db48-3c5a-4766-ae79-cdf4b038a6bb</value>
 				<value>GUID 6507841a-a767-4f9c-9832-5b4ea7ff120f</value>
+				<value>GUID 17cf7dfa-36f8-4f6f-9395-e80262dddd40</value>
 				<value>GUID 3a63b7d4-e525-4100-83aa-84fef1294cf5</value>
 				<value>GUID 31af57af-478d-400c-9bc7-d82262c7cecc</value>
 				<value>GUID 315596d8-f667-4a37-8d53-18fac417f816</value>
@@ -449,8 +450,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.5.2020::7:49:51</_modifiedTime>
-			<_lastModifiedTime type="a">6.5.2020::7:49:51</_lastModifiedTime>
+			<_modifiedTime type="a">6.11.2020::12:40:42</_modifiedTime>
+			<_lastModifiedTime type="a">6.11.2020::12:40:42</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -4336,6 +4337,27 @@ ParkingStatus = 1;</_bodyData>
 				</IHandle>
 			</_event>
 		</IReception>
+		<IReception type="e">
+			<_id type="a">GUID 17cf7dfa-36f8-4f6f-9395-e80262dddd40</_id>
+			<_myState type="a">8192</_myState>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_virtual type="a">0</_virtual>
+			<Args type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Args>
+			<_event type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IEvent</_hm2Class>
+					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+					<_hname type="a">SwitchOffANGELSFunc()</_hname>
+					<_hid type="a">GUID 190c4dab-f3c4-4a31-b281-3c09805197e6</_hid>
+				</IHandle>
+			</_event>
+		</IReception>
 		<IAttribute type="e">
 			<_id type="a">GUID 3a63b7d4-e525-4100-83aa-84fef1294cf5</_id>
 			<_myState type="a">8192</_myState>
@@ -4627,10 +4649,10 @@ ParkingStatus = 1;</_bodyData>
 			<_id type="a">GUID f452b5d8-ab1c-4edc-9e3c-d87a2ef6d6b5</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ParkingProcessDiagram</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::12:59:15</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:56:18</_modifiedTime>
-			<_lastID type="a">12</_lastID>
-			<weakCGTime type="a">5.18.2020::12:59:15</weakCGTime>
+			<_modifiedTimeWeak type="a">6.11.2020::12:41:8</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::12:41:8</_modifiedTime>
+			<_lastID type="a">13</_lastID>
+			<weakCGTime type="a">6.11.2020::12:41:8</weakCGTime>
 			<strongCGTime type="a">5.18.2020::12:59:15</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -4638,7 +4660,7 @@ ParkingStatus = 1;</_bodyData>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<_defNumber type="a">11</_defNumber>
-			<_version type="a">5.18.2020::14:58:48</_version>
+			<_version type="a">6.11.2020::14:41:8</_version>
 			<_baseVersion type="a">1.2.1990::0:0:0</_baseVersion>
 			<_diagram type="s">GUID c8551424-d3c8-410c-bf4b-5ef871e0c16b</_diagram>
 			<AggregatesList type="e">
@@ -4651,6 +4673,7 @@ ParkingStatus = 1;</_bodyData>
 				<value>GUID a5e9ac8a-ae18-4143-b550-fd2caa4c7561</value>
 				<value>GUID fd1a9736-2d92-4c97-83fd-44855f50b8bb</value>
 				<value>GUID a07f9629-f13f-4d61-8a66-73b658fcb33e</value>
+				<value>GUID ab43d5ed-74c1-4fcd-9b79-4f02d6d90946</value>
 				<value>GUID ccf4e4b0-0972-4a34-9b20-6cde24a001db</value>
 				<value>GUID 77d04ec4-2939-414c-a255-c346aa5373ba</value>
 				<value>GUID 60212f42-1d91-4cde-a827-26d392a108ff</value>
@@ -4819,8 +4842,8 @@ ParkingStatus = 1;</_bodyData>
 			<_id type="a">GUID 99dcb91f-e910-4e05-8948-4e88bab94637</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">transition_7</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::12:56:18</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:56:18</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.11.2020::12:41:8</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::12:41:8</_modifiedTime>
 			<_itsTarget type="s">GUID 4e70554b-9021-457e-badb-70e80f138688</_itsTarget>
 			<_staticReaction type="a">0</_staticReaction>
 			<_itsSource type="s">GUID 4e70554b-9021-457e-badb-70e80f138688</_itsSource>
@@ -4830,8 +4853,8 @@ ParkingStatus = 1;</_bodyData>
 		</ITransition>
 		<ILabel type="e">
 			<_id type="a">GUID b441c5d5-64ca-449e-a76c-0240c67396e0</_id>
-			<_modifiedTimeWeak type="a">5.18.2020::12:56:18</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:56:18</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.11.2020::12:41:8</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::12:41:8</_modifiedTime>
 			<_itsGuard>NULL</_itsGuard>
 			<AggregatesList type="e">
 				<value>GUID 4d584a30-b37c-429d-986e-724d096b5db4</value>
@@ -4840,10 +4863,10 @@ ParkingStatus = 1;</_bodyData>
 		</ILabel>
 		<ITimeout type="e">
 			<_id type="a">GUID 4d584a30-b37c-429d-986e-724d096b5db4</_id>
-			<_modifiedTimeWeak type="a">5.18.2020::12:54:54</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:54:54</_modifiedTime>
-			<_body type="a">tm(100)</_body>
-			<_time type="a">100</_time>
+			<_modifiedTimeWeak type="a">6.11.2020::12:41:8</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::12:41:8</_modifiedTime>
+			<_body type="a">tm(1000)</_body>
+			<_time type="a">1000</_time>
 		</ITimeout>
 		<IAction type="e">
 			<_id type="a">GUID 0c8ab619-ce1d-4370-9cba-334b17d8723e</_id>
@@ -4948,6 +4971,44 @@ ParkingStatus = 1;</_bodyData>
 			<_itsGuard>NULL</_itsGuard>
 			<_itsAction>NULL</_itsAction>
 		</ILabel>
+		<ITransition type="e">
+			<_id type="a">GUID ab43d5ed-74c1-4fcd-9b79-4f02d6d90946</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">transition_12</_name>
+			<_modifiedTimeWeak type="a">6.11.2020::12:40:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::12:40:42</_modifiedTime>
+			<_itsTarget type="s">GUID c5f013b9-a0cf-4df7-a9f1-5b23ca2bee21</_itsTarget>
+			<_staticReaction type="a">0</_staticReaction>
+			<_itsSource type="s">GUID 4e70554b-9021-457e-badb-70e80f138688</_itsSource>
+			<AggregatesList type="e">
+				<value>GUID 0aea347c-b4f5-4ed5-8415-5f221de29adf</value>
+			</AggregatesList>
+		</ITransition>
+		<ILabel type="e">
+			<_id type="a">GUID 0aea347c-b4f5-4ed5-8415-5f221de29adf</_id>
+			<_modifiedTimeWeak type="a">6.11.2020::12:40:42</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::12:40:42</_modifiedTime>
+			<_itsGuard>NULL</_itsGuard>
+			<_itsAction>NULL</_itsAction>
+			<AggregatesList type="e">
+				<value>GUID 77c42b71-d99b-4dc0-84cf-7ed8204a98a2</value>
+			</AggregatesList>
+		</ILabel>
+		<IInterfaceItemTrigger type="e">
+			<_id type="a">GUID 77c42b71-d99b-4dc0-84cf-7ed8204a98a2</_id>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_body type="a">SwitchOffANGELSFunc</_body>
+			<_itsInterfaceItem type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IEvent</_hm2Class>
+					<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+					<_hname type="a">SwitchOffANGELSFunc()</_hname>
+					<_hid type="a">GUID 190c4dab-f3c4-4a31-b281-3c09805197e6</_hid>
+				</IHandle>
+			</_itsInterfaceItem>
+		</IInterfaceItemTrigger>
 		<IState type="e">
 			<_id type="a">GUID ccf4e4b0-0972-4a34-9b20-6cde24a001db</_id>
 			<_modifiedTimeWeak type="a">5.18.2020::12:45:29</_modifiedTimeWeak>
@@ -4990,8 +5051,8 @@ ParkingStatus = 1;</_bodyData>
 		<IState type="e">
 			<_id type="a">GUID 4e70554b-9021-457e-badb-70e80f138688</_id>
 			<_name type="a">BeginParking</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::12:55:14</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:55:14</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.11.2020::12:40:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::12:40:38</_modifiedTime>
 			<_parent type="s">GUID 2a9fec3c-8a52-46df-931c-3bfb8e82b1bf</_parent>
 			<_defaultTrans type="s"></_defaultTrans>
 			<_exitAction type="p"><IAction type="e">
@@ -5022,8 +5083,8 @@ ParkingStatus = 1;</_bodyData>
 			<_id type="a">GUID c5f013b9-a0cf-4df7-a9f1-5b23ca2bee21</_id>
 			<_myState type="a">2048</_myState>
 			<_name type="a">terminationstate_8</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::12:44:18</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:44:18</_modifiedTime>
+			<_modifiedTimeWeak type="a">6.11.2020::12:40:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::12:40:38</_modifiedTime>
 			<_parent type="s">GUID ccf4e4b0-0972-4a34-9b20-6cde24a001db</_parent>
 			<_stateType type="a">LocalTermination</_stateType>
 			<_defaultTrans type="s"></_defaultTrans>
@@ -5211,9 +5272,9 @@ ParkingStatus = 1;</_bodyData>
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">ParkingProcessDiagram</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::12:50:23</_modifiedTimeWeak>
-			<_modifiedTime type="a">5.18.2020::12:52:35</_modifiedTime>
-			<_lastModifiedTime type="a">5.18.2020::12:58:48</_lastModifiedTime>
+			<_modifiedTimeWeak type="a">6.11.2020::12:40:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::12:40:42</_modifiedTime>
+			<_lastModifiedTime type="a">6.11.2020::12:41:8</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -5250,7 +5311,7 @@ ParkingStatus = 1;</_bodyData>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<elementList type="a">19</elementList>
+			<elementList type="a">20</elementList>
 			
 			<m_access type="a">'Z'</m_access>
 			<m_modified type="a">'N'</m_modified>
@@ -5286,6 +5347,7 @@ ParkingStatus = 1;</_bodyData>
 				<value>GUID 6f9baa75-f36a-4545-a498-f6eef4734994</value>
 				<value>GUID 2f18d529-56f8-4390-a5ce-fd67d01f7674</value>
 				<value>GUID 619294aa-117d-4879-abf0-5bbea25ff374</value>
+				<value>GUID 482a9f6e-5fb0-44c5-8c8f-5678aabf4048</value>
 			</AggregatesList>
 		</CGIStateChart>
 		<CGIState type="e">
@@ -5369,7 +5431,7 @@ ParkingStatus = 1;</_bodyData>
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">2.86111 0 0 5.7803 20 20 </m_transform>
+			<m_transform type="a">2.86111 0 0 5.97727 20 20 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -6126,7 +6188,7 @@ ParkingStatus = 1;</_bodyData>
 			<m_direction type="a">' '</m_direction>
 			<m_rpn type="p">
 				<CGIText type="e">
-					<m_str type="a">tm(100)/ ParkingTime++;</m_str>
+					<m_str type="a">tm(1000)/ ParkingTime++;</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6185,7 +6247,7 @@ ParkingStatus = 1;</_bodyData>
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.0875912 0 0 0.0566038 469 531 </m_transform>
+			<m_transform type="a">0.0875912 0 0 0.0566038 505 531 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -6261,15 +6323,16 @@ ParkingStatus = 1;</_bodyData>
 					<m_position type="a">4 -6 -9  129 -9  129 5  -6 5  </m_position>
 					<m_nIdent type="a">0</m_nIdent>
 					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_transform type="a">1 0 0 1 528 494 </m_transform>
-					<m_nHorizontalSpacing type="a">-1</m_nHorizontalSpacing>
-					<m_nVerticalSpacing type="a">11</m_nVerticalSpacing>
+					<m_transform type="a">1 0 0 1 555 503 </m_transform>
+					<m_nHorizontalSpacing type="a">23</m_nHorizontalSpacing>
+					<m_nVerticalSpacing type="a">34</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">0</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
+			<m_arrow type="a">2 508 475  544 475  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
-			<m_line_style type="a">1</m_line_style>
+			<m_line_style type="a">2</m_line_style>
 			<m_SourcePort type="a">464 1060 </m_SourcePort>
 			<m_TargetPort type="a">445 0 </m_TargetPort>
 			<m_pInheritsFrom type="r">
@@ -6307,7 +6370,7 @@ ParkingStatus = 1;</_bodyData>
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.0875912 0 0 0.0566038 469 644 </m_transform>
+			<m_transform type="a">0.0875912 0 0 0.0566038 505 644 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -6386,7 +6449,7 @@ ParkingStatus = 1;</_bodyData>
 					<m_nOrientationCtrlPt type="a">0</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
-			<m_arrow type="a">2 518 617  519 617  </m_arrow>
+			<m_arrow type="a">2 554 617  555 617  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">2</m_line_style>
@@ -6426,7 +6489,7 @@ ParkingStatus = 1;</_bodyData>
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">0</m_drawBehavior>
-			<m_transform type="a">1 0 0 1.04 505 747 </m_transform>
+			<m_transform type="a">1 0 0 1.04 505 773 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_position type="a">4 0 0  0 25  25 25  25 0  </m_position>
 			<m_pInheritsFrom type="r">
@@ -6485,12 +6548,78 @@ ParkingStatus = 1;</_bodyData>
 					<m_nOrientationCtrlPt type="a">0</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
-			<m_arrow type="a">2 523 725  517 725  </m_arrow>
+			<m_arrow type="a">2 559 751  517 751  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">2</m_line_style>
 			<m_SourcePort type="a">617 1060 </m_SourcePort>
 			<m_TargetPort type="a">12 0 </m_TargetPort>
+			<m_pInheritsFrom type="r">
+				<IHandle type="e">
+				</IHandle>
+			</m_pInheritsFrom>
+			<m_nInheritanceMask type="a">0</m_nInheritanceMask>
+			<m_bShowName type="a">1</m_bShowName>
+		</CGITrans>
+		<CGITrans type="e">
+			<_id type="a">GUID 482a9f6e-5fb0-44c5-8c8f-5678aabf4048</_id>
+			<m_type type="a">28</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">ITransition</_hm2Class>
+					<_hid type="a">GUID ab43d5ed-74c1-4fcd-9b79-4f02d6d90946</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s"></m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_pSource type="s">GUID d1ca939a-c19e-410c-89c3-7826909f0c43</m_pSource>
+			<m_sourceType type="a">'F'</m_sourceType>
+			<m_pTarget type="s">GUID 2f18d529-56f8-4390-a5ce-fd67d01f7674</m_pTarget>
+			<m_targetType type="a">'T'</m_targetType>
+			<m_direction type="a">' '</m_direction>
+			<m_rpn type="p">
+				<CGIText type="e">
+					<m_str type="a">SwitchOffANGELSFunc</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">4 -59 -6  73 -6  73 8  -59 8  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_transform type="a">1 0 0 1 389 637 </m_transform>
+					<m_nHorizontalSpacing type="a">-144</m_nHorizontalSpacing>
+					<m_nVerticalSpacing type="a">6</m_nVerticalSpacing>
+					<m_nOrientationCtrlPt type="a">0</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_rpn>
+			<m_arrow type="a">1 459 786  </m_arrow>
+			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
+			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
+			<m_line_style type="a">2</m_line_style>
+			<m_SourcePort type="a">21 1060 </m_SourcePort>
+			<m_TargetPort type="a">0 13 </m_TargetPort>
 			<m_pInheritsFrom type="r">
 				<IHandle type="e">
 				</IHandle>

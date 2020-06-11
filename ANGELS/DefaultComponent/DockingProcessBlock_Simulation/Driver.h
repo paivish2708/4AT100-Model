@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DockingProcessBlock_Simulation
 	Model Element	: Driver
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\DockingProcessBlock_Simulation\Driver.h
 *********************************************************************/
 
@@ -23,6 +23,12 @@
 #include "Truck.h"
 //## auto_generated
 class ANGELS;
+
+//## auto_generated
+class ChargingSystemBlock;
+
+//## auto_generated
+class DockingProcessBlock;
 
 //## link itsParkingSystemBlock
 class ParkingSystemBlock;
@@ -62,6 +68,12 @@ public :
     void setItsANGELS_3(ANGELS* p_ANGELS);
     
     //## auto_generated
+    DockingProcessBlock* getItsDockingProcessBlock_1() const;
+    
+    //## auto_generated
+    void setItsDockingProcessBlock_1(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
     ParkingSystemBlock* getItsParkingSystemBlock() const;
     
     //## auto_generated
@@ -84,6 +96,8 @@ protected :
     
     ANGELS* itsANGELS_3;		//## link itsANGELS_3
     
+    DockingProcessBlock* itsDockingProcessBlock_1;		//## link itsDockingProcessBlock_1
+    
     ParkingSystemBlock* itsParkingSystemBlock;		//## link itsParkingSystemBlock
     
     Truck* itsTruck_4;		//## link itsTruck_4
@@ -100,6 +114,15 @@ public :
     
     //## auto_generated
     void _clearItsANGELS_3();
+    
+    //## auto_generated
+    void __setItsDockingProcessBlock_1(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    void _setItsDockingProcessBlock_1(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    void _clearItsDockingProcessBlock_1();
     
     //## auto_generated
     void __setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock);

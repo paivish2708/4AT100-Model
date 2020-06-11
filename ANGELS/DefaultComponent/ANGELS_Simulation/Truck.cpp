@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: Truck
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\Truck.cpp
 *********************************************************************/
 
@@ -20,6 +20,8 @@
 #include "ChargingSystemBlock.h"
 //## link itsDockingProcessBlock
 #include "DockingProcessBlock.h"
+//## link itsEBS
+#include "EBS.h"
 //#[ ignore
 #define ANGELSPkg_TruckPkg_Truck_Truck_SERIALIZE OM_NO_OP
 //#]
@@ -32,6 +34,7 @@ Truck::Truck() {
     itsANGELS = NULL;
     itsChargingSystemBlock = NULL;
     itsDockingProcessBlock = NULL;
+    itsEBS = NULL;
 }
 
 Truck::~Truck() {
@@ -75,6 +78,18 @@ void Truck::setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock
     _setItsDockingProcessBlock(p_DockingProcessBlock);
 }
 
+EBS* Truck::getItsEBS() const {
+    return itsEBS;
+}
+
+void Truck::setItsEBS(EBS* p_EBS) {
+    if(p_EBS != NULL)
+        {
+            p_EBS->_setItsTruck(this);
+        }
+    _setItsEBS(p_EBS);
+}
+
 void Truck::cleanUpRelations() {
     if(itsANGELS != NULL)
         {
@@ -105,6 +120,16 @@ void Truck::cleanUpRelations() {
                     itsDockingProcessBlock->__setItsTruck_1(NULL);
                 }
             itsDockingProcessBlock = NULL;
+        }
+    if(itsEBS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+            Truck* p_Truck = itsEBS->getItsTruck();
+            if(p_Truck != NULL)
+                {
+                    itsEBS->__setItsTruck(NULL);
+                }
+            itsEBS = NULL;
         }
 }
 
@@ -183,6 +208,31 @@ void Truck::_clearItsDockingProcessBlock() {
     itsDockingProcessBlock = NULL;
 }
 
+void Truck::__setItsEBS(EBS* p_EBS) {
+    itsEBS = p_EBS;
+    if(p_EBS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsEBS", p_EBS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+        }
+}
+
+void Truck::_setItsEBS(EBS* p_EBS) {
+    if(itsEBS != NULL)
+        {
+            itsEBS->__setItsTruck(NULL);
+        }
+    __setItsEBS(p_EBS);
+}
+
+void Truck::_clearItsEBS() {
+    NOTIFY_RELATION_CLEARED("itsEBS");
+    itsEBS = NULL;
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedTruck::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -200,6 +250,11 @@ void OMAnimatedTruck::serializeRelations(AOMSRelations* aomsRelations) const {
     if(myReal->itsChargingSystemBlock)
         {
             aomsRelations->ADD_ITEM(myReal->itsChargingSystemBlock);
+        }
+    aomsRelations->addRelation("itsEBS", false, true);
+    if(myReal->itsEBS)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsEBS);
         }
 }
 //#]

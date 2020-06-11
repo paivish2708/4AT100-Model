@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Government
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\Government.h
 *********************************************************************/
 
@@ -22,7 +22,7 @@
 //## link itsANGELS
 class ANGELS;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## package ANGELSPkg::ActorPkg
 
 //## actor Government
 class Government {
@@ -49,6 +49,18 @@ public :
     
     //## auto_generated
     void setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    ANGELS* getItsANGELS_1() const;
+    
+    //## auto_generated
+    void setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    ANGELS* getItsANGELS_2() const;
+    
+    //## auto_generated
+    void setItsANGELS_2(ANGELS* p_ANGELS);
 
 protected :
 
@@ -59,18 +71,22 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
+    ANGELS* itsANGELS_1;		//## link itsANGELS_1
+    
+    ANGELS* itsANGELS_2;		//## link itsANGELS_2
+    
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsANGELS(ANGELS* p_ANGELS);
+    void __setItsANGELS_2(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _setItsANGELS(ANGELS* p_ANGELS);
+    void _setItsANGELS_2(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _clearItsANGELS();
+    void _clearItsANGELS_2();
 };
 
 #ifdef _OMINSTRUMENT

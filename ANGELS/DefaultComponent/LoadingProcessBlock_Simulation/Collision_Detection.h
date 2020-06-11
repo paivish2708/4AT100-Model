@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: Collision_Detection
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\Collision_Detection.h
 *********************************************************************/
 
@@ -22,11 +22,8 @@
 //## link itsANGELS
 class ANGELS;
 
-//## link itsDockingProcess
-class DockingProcess;
-
-//## link itsObstacle
-class Obstacle;
+//## link itsEBS
+class EBS;
 
 //## package ANGELSPkg::ObstacleDetectionPkg
 
@@ -57,22 +54,10 @@ public :
     void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    ANGELS* getItsANGELS_1() const;
+    EBS* getItsEBS() const;
     
     //## auto_generated
-    void setItsANGELS_1(ANGELS* p_ANGELS);
-    
-    //## auto_generated
-    DockingProcess* getItsDockingProcess() const;
-    
-    //## auto_generated
-    void setItsDockingProcess(DockingProcess* p_DockingProcess);
-    
-    //## auto_generated
-    Obstacle* getItsObstacle() const;
-    
-    //## auto_generated
-    void setItsObstacle(Obstacle* p_Obstacle);
+    void setItsEBS(EBS* p_EBS);
 
 protected :
 
@@ -83,24 +68,29 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
-    ANGELS* itsANGELS_1;		//## link itsANGELS_1
-    
-    DockingProcess* itsDockingProcess;		//## link itsDockingProcess
-    
-    Obstacle* itsObstacle;		//## link itsObstacle
+    EBS* itsEBS;		//## link itsEBS
     
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsObstacle(Obstacle* p_Obstacle);
+    void __setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _setItsObstacle(Obstacle* p_Obstacle);
+    void _setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _clearItsObstacle();
+    void _clearItsANGELS();
+    
+    //## auto_generated
+    void __setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _clearItsEBS();
 };
 
 #ifdef _OMINSTRUMENT

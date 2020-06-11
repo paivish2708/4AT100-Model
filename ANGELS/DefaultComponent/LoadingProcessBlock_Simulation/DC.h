@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: DC
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\DC.h
 *********************************************************************/
 
@@ -22,8 +22,17 @@
 //## link itsANGELS
 class ANGELS;
 
+//## link itsDockingProcessBlock
+class DockingProcessBlock;
+
+//## link itsEBS
+class EBS;
+
 //## link itsLoadingProcessBlock
 class LoadingProcessBlock;
+
+//## link itsParkingSystemBlock
+class ParkingSystemBlock;
 
 //## package ANGELSPkg::ActorPkg
 
@@ -66,10 +75,28 @@ public :
     void setItsANGELS_2(ANGELS* p_ANGELS);
     
     //## auto_generated
+    DockingProcessBlock* getItsDockingProcessBlock() const;
+    
+    //## auto_generated
+    void setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    EBS* getItsEBS() const;
+    
+    //## auto_generated
+    void setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
     LoadingProcessBlock* getItsLoadingProcessBlock() const;
     
     //## auto_generated
     void setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
+    
+    //## auto_generated
+    ParkingSystemBlock* getItsParkingSystemBlock() const;
+    
+    //## auto_generated
+    void setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock);
 
 protected :
 
@@ -84,7 +111,13 @@ protected :
     
     ANGELS* itsANGELS_2;		//## link itsANGELS_2
     
+    DockingProcessBlock* itsDockingProcessBlock;		//## link itsDockingProcessBlock
+    
+    EBS* itsEBS;		//## link itsEBS
+    
     LoadingProcessBlock* itsLoadingProcessBlock;		//## link itsLoadingProcessBlock
+    
+    ParkingSystemBlock* itsParkingSystemBlock;		//## link itsParkingSystemBlock
     
     ////    Framework operations    ////
 
@@ -100,6 +133,24 @@ public :
     void _clearItsANGELS_2();
     
     //## auto_generated
+    void __setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    void _setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    void _clearItsDockingProcessBlock();
+    
+    //## auto_generated
+    void __setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _clearItsEBS();
+    
+    //## auto_generated
     void __setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);
     
     //## auto_generated
@@ -107,6 +158,15 @@ public :
     
     //## auto_generated
     void _clearItsLoadingProcessBlock();
+    
+    //## auto_generated
+    void __setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock);
+    
+    //## auto_generated
+    void _setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock);
+    
+    //## auto_generated
+    void _clearItsParkingSystemBlock();
 };
 
 #ifdef _OMINSTRUMENT

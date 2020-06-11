@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ChargingSystemBlock_Simulation
 	Model Element	: LoadingProcessBlock
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ChargingSystemBlock_Simulation\LoadingProcessBlock.cpp
 *********************************************************************/
 
@@ -16,12 +16,16 @@
 
 //## auto_generated
 #include "LoadingProcessBlock.h"
+//## event SwitchOffANGELSFunc()
+#include "ANGELSPkg.h"
 //## link itsChargingSystemBlock
 #include "ChargingSystemBlock.h"
 //## link itsDC
 #include "DC.h"
 //## link itsDCOperator
 #include "DCOperator.h"
+//## link itsLoadingSystemBlock
+#include "LoadingSystemBlock.h"
 //#[ ignore
 #define ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_LoadingProcessBlock_SERIALIZE OM_NO_OP
 
@@ -30,6 +34,10 @@
 #define ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_OpenDoors_SERIALIZE aomsmethod->addAttribute("Doorstate", x2String(Doorstate));
 
 #define ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_StoptheTruck_SERIALIZE aomsmethod->addAttribute("speed", x2String(speed));
+
+#define OMAnim_ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_setDoorstatus_RhpBoolean_UNSERIALIZE_ARGS OP_UNSER(OMDestructiveString2X,p_Doorstatus)
+
+#define OMAnim_ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_setDoorstatus_RhpBoolean_SERIALIZE_RET_VAL
 //#]
 
 //## package ANGELSPkg::LoadingProcessPkg
@@ -38,14 +46,10 @@
 LoadingProcessBlock::LoadingProcessBlock(IOxfActive* theActiveContext) : Doorstatus(0), LoadingTime(0) {
     NOTIFY_REACTIVE_CONSTRUCTOR(LoadingProcessBlock, LoadingProcessBlock(), 0, ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_LoadingProcessBlock_SERIALIZE);
     setActiveContext(theActiveContext, false);
-    {
-        {
-            itsParkingSystemBlock.setShouldDelete(false);
-        }
-    }
     itsChargingSystemBlock = NULL;
     itsDC = NULL;
     itsDCOperator = NULL;
+    itsLoadingSystemBlock = NULL;
     initStatechart();
 }
 
@@ -84,6 +88,7 @@ RhpBoolean LoadingProcessBlock::getDoorstatus() const {
 
 void LoadingProcessBlock::setDoorstatus(RhpBoolean p_Doorstatus) {
     Doorstatus = p_Doorstatus;
+    NOTIFY_SET_OPERATION;
 }
 
 int LoadingProcessBlock::getLoadingTime() const {
@@ -92,6 +97,7 @@ int LoadingProcessBlock::getLoadingTime() const {
 
 void LoadingProcessBlock::setLoadingTime(int p_LoadingTime) {
     LoadingTime = p_LoadingTime;
+    NOTIFY_SET_OPERATION;
 }
 
 ChargingSystemBlock* LoadingProcessBlock::getItsChargingSystemBlock() const {
@@ -130,18 +136,21 @@ void LoadingProcessBlock::setItsDCOperator(DCOperator* p_DCOperator) {
     _setItsDCOperator(p_DCOperator);
 }
 
-ParkingSystemBlock* LoadingProcessBlock::getItsParkingSystemBlock() const {
-    return (ParkingSystemBlock*) &itsParkingSystemBlock;
+LoadingSystemBlock* LoadingProcessBlock::getItsLoadingSystemBlock() const {
+    return itsLoadingSystemBlock;
 }
 
-Truck* LoadingProcessBlock::getItsTruck() const {
-    return (Truck*) &itsTruck;
+void LoadingProcessBlock::setItsLoadingSystemBlock(LoadingSystemBlock* p_LoadingSystemBlock) {
+    if(p_LoadingSystemBlock != NULL)
+        {
+            p_LoadingSystemBlock->_setItsLoadingProcessBlock(this);
+        }
+    _setItsLoadingSystemBlock(p_LoadingSystemBlock);
 }
 
 bool LoadingProcessBlock::startBehavior() {
-    bool done = true;
-    done &= itsParkingSystemBlock.startBehavior();
-    done &= OMReactive::startBehavior();
+    bool done = false;
+    done = OMReactive::startBehavior();
     return done;
 }
 
@@ -182,6 +191,16 @@ void LoadingProcessBlock::cleanUpRelations() {
                     itsDCOperator->__setItsLoadingProcessBlock(NULL);
                 }
             itsDCOperator = NULL;
+        }
+    if(itsLoadingSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsLoadingSystemBlock");
+            LoadingProcessBlock* p_LoadingProcessBlock = itsLoadingSystemBlock->getItsLoadingProcessBlock();
+            if(p_LoadingProcessBlock != NULL)
+                {
+                    itsLoadingSystemBlock->__setItsLoadingProcessBlock(NULL);
+                }
+            itsLoadingSystemBlock = NULL;
         }
 }
 
@@ -274,16 +293,29 @@ void LoadingProcessBlock::_clearItsDCOperator() {
     itsDCOperator = NULL;
 }
 
-void LoadingProcessBlock::setActiveContext(IOxfActive* theActiveContext, bool activeInstance) {
-    OMReactive::setActiveContext(theActiveContext, activeInstance);
-    {
-        itsParkingSystemBlock.setActiveContext(theActiveContext, false);
-    }
+void LoadingProcessBlock::__setItsLoadingSystemBlock(LoadingSystemBlock* p_LoadingSystemBlock) {
+    itsLoadingSystemBlock = p_LoadingSystemBlock;
+    if(p_LoadingSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsLoadingSystemBlock", p_LoadingSystemBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsLoadingSystemBlock");
+        }
 }
 
-void LoadingProcessBlock::destroy() {
-    itsParkingSystemBlock.destroy();
-    OMReactive::destroy();
+void LoadingProcessBlock::_setItsLoadingSystemBlock(LoadingSystemBlock* p_LoadingSystemBlock) {
+    if(itsLoadingSystemBlock != NULL)
+        {
+            itsLoadingSystemBlock->__setItsLoadingProcessBlock(NULL);
+        }
+    __setItsLoadingSystemBlock(p_LoadingSystemBlock);
+}
+
+void LoadingProcessBlock::_clearItsLoadingSystemBlock() {
+    NOTIFY_RELATION_CLEARED("itsLoadingSystemBlock");
+    itsLoadingSystemBlock = NULL;
 }
 
 void LoadingProcessBlock::rootState_entDef() {
@@ -322,7 +354,35 @@ IOxfReactive::TakeEventStatus LoadingProcessBlock::rootState_processEvent() {
         // State LoadedState
         case LoadedState:
         {
-            if(IS_EVENT_TYPE_OF(ReturnToDockedState_LoadingProcessPkg_ANGELSPkg_id))
+            if(IS_EVENT_TYPE_OF(SwitchOffANGELSFunc_ANGELSPkg_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("9");
+                    switch (LoadingState_subState) {
+                        // State LoadedState
+                        case LoadedState:
+                        {
+                            NOTIFY_STATE_EXITED("ROOT.LoadingState.LoadedState");
+                        }
+                        break;
+                        // State StartLoading
+                        case StartLoading:
+                        {
+                            cancel(LoadingState_timeout);
+                            NOTIFY_STATE_EXITED("ROOT.LoadingState.StartLoading");
+                        }
+                        break;
+                        default:
+                            break;
+                    }
+                    LoadingState_subState = OMNonState;
+                    NOTIFY_STATE_EXITED("ROOT.LoadingState");
+                    NOTIFY_STATE_ENTERED("ROOT.terminationstate_9");
+                    rootState_subState = terminationstate_9;
+                    rootState_active = terminationstate_9;
+                    NOTIFY_TRANSITION_TERMINATED("9");
+                    res = eventConsumed;
+                }
+            else if(IS_EVENT_TYPE_OF(ReturnToDockedState_LoadingProcessPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("4");
                     switch (LoadingState_subState) {
@@ -382,7 +442,7 @@ IOxfReactive::TakeEventStatus LoadingProcessBlock::rootState_processEvent() {
                             NOTIFY_STATE_ENTERED("ROOT.LoadingState.StartLoading");
                             LoadingState_subState = StartLoading;
                             rootState_active = StartLoading;
-                            LoadingState_timeout = scheduleTimeout(100, "ROOT.LoadingState.StartLoading");
+                            LoadingState_timeout = scheduleTimeout(1000, "ROOT.LoadingState.StartLoading");
                             NOTIFY_TRANSITION_TERMINATED("7");
                             res = eventConsumed;
                         }
@@ -452,7 +512,7 @@ void LoadingProcessBlock::LoadingState_entDef() {
     NOTIFY_STATE_ENTERED("ROOT.LoadingState.StartLoading");
     LoadingState_subState = StartLoading;
     rootState_active = StartLoading;
-    LoadingState_timeout = scheduleTimeout(100, "ROOT.LoadingState.StartLoading");
+    LoadingState_timeout = scheduleTimeout(1000, "ROOT.LoadingState.StartLoading");
     NOTIFY_TRANSITION_TERMINATED("6");
 }
 
@@ -474,14 +534,15 @@ void OMAnimatedLoadingProcessBlock::serializeRelations(AOMSRelations* aomsRelati
         {
             aomsRelations->ADD_ITEM(myReal->itsDCOperator);
         }
-    aomsRelations->addRelation("itsTruck", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsTruck);
-    aomsRelations->addRelation("itsParkingSystemBlock", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsParkingSystemBlock);
     aomsRelations->addRelation("itsChargingSystemBlock", false, true);
     if(myReal->itsChargingSystemBlock)
         {
             aomsRelations->ADD_ITEM(myReal->itsChargingSystemBlock);
+        }
+    aomsRelations->addRelation("itsLoadingSystemBlock", false, true);
+    if(myReal->itsLoadingSystemBlock)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsLoadingSystemBlock);
         }
 }
 
@@ -571,6 +632,10 @@ void OMAnimatedLoadingProcessBlock::DockedState_serializeStates(AOMSState* aomsS
 //#]
 
 IMPLEMENT_REACTIVE_META_P(LoadingProcessBlock, ANGELSPkg_LoadingProcessPkg, ANGELSPkg::LoadingProcessPkg, false, OMAnimatedLoadingProcessBlock)
+
+IMPLEMENT_META_OP(OMAnimatedLoadingProcessBlock, ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_setDoorstatus_RhpBoolean, "setDoorstatus", FALSE, "setDoorstatus(RhpBoolean)", 1)
+
+IMPLEMENT_OP_CALL(ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_setDoorstatus_RhpBoolean, LoadingProcessBlock, setDoorstatus(p_Doorstatus), NO_OP())
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

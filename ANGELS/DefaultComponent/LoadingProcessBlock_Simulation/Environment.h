@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: Environment
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\Environment.h
 *********************************************************************/
 
@@ -21,6 +21,9 @@
 #include "ActorPkg.h"
 //## link itsANGELS
 class ANGELS;
+
+//## link itsEBS
+class EBS;
 
 //## package ANGELSPkg::ActorPkg
 
@@ -61,6 +64,12 @@ public :
     
     //## auto_generated
     void setItsANGELS_2(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    EBS* getItsEBS() const;
+    
+    //## auto_generated
+    void setItsEBS(EBS* p_EBS);
 
 protected :
 
@@ -75,6 +84,8 @@ protected :
     
     ANGELS* itsANGELS_2;		//## link itsANGELS_2
     
+    EBS* itsEBS;		//## link itsEBS
+    
     ////    Framework operations    ////
 
 public :
@@ -87,6 +98,15 @@ public :
     
     //## auto_generated
     void _clearItsANGELS_2();
+    
+    //## auto_generated
+    void __setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _clearItsEBS();
 };
 
 #ifdef _OMINSTRUMENT

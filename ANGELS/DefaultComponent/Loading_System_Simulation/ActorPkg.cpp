@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: ActorPkg
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\ActorPkg.cpp
 *********************************************************************/
 
@@ -14,13 +14,13 @@
 
 //## auto_generated
 #include "ActorPkg.h"
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## package ANGELSPkg::ActorPkg
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_ANGELSPkg_ActorPkg, UseCaseAnalysisPkg::ANGELSPkg::ActorPkg)
+IMPLEMENT_META_PACKAGE(ANGELSPkg_ActorPkg, ANGELSPkg::ActorPkg)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DockingProcessBlock_Simulation
 	Model Element	: DC
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\DockingProcessBlock_Simulation\DC.cpp
 *********************************************************************/
 
@@ -16,6 +16,8 @@
 #include "DC.h"
 //## link itsANGELS
 #include "ANGELS.h"
+//## link itsDockingProcessBlock
+#include "DockingProcessBlock.h"
 //## link itsLoadingProcessBlock
 #include "LoadingProcessBlock.h"
 //## link itsParkingSystemBlock
@@ -32,6 +34,7 @@ DC::DC() {
     itsANGELS = NULL;
     itsANGELS_1 = NULL;
     itsANGELS_2 = NULL;
+    itsDockingProcessBlock = NULL;
     itsLoadingProcessBlock = NULL;
     itsParkingSystemBlock = NULL;
 }
@@ -85,6 +88,18 @@ void DC::setItsANGELS_2(ANGELS* p_ANGELS) {
     _setItsANGELS_2(p_ANGELS);
 }
 
+DockingProcessBlock* DC::getItsDockingProcessBlock() const {
+    return itsDockingProcessBlock;
+}
+
+void DC::setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock) {
+    if(p_DockingProcessBlock != NULL)
+        {
+            p_DockingProcessBlock->_setItsDC(this);
+        }
+    _setItsDockingProcessBlock(p_DockingProcessBlock);
+}
+
 LoadingProcessBlock* DC::getItsLoadingProcessBlock() const {
     return itsLoadingProcessBlock;
 }
@@ -129,6 +144,16 @@ void DC::cleanUpRelations() {
                     itsANGELS_2->__setItsDC(NULL);
                 }
             itsANGELS_2 = NULL;
+        }
+    if(itsDockingProcessBlock != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock");
+            DC* p_DC = itsDockingProcessBlock->getItsDC();
+            if(p_DC != NULL)
+                {
+                    itsDockingProcessBlock->__setItsDC(NULL);
+                }
+            itsDockingProcessBlock = NULL;
         }
     if(itsLoadingProcessBlock != NULL)
         {
@@ -175,6 +200,31 @@ void DC::_setItsANGELS_2(ANGELS* p_ANGELS) {
 void DC::_clearItsANGELS_2() {
     NOTIFY_RELATION_CLEARED("itsANGELS_2");
     itsANGELS_2 = NULL;
+}
+
+void DC::__setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock) {
+    itsDockingProcessBlock = p_DockingProcessBlock;
+    if(p_DockingProcessBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcessBlock", p_DockingProcessBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock");
+        }
+}
+
+void DC::_setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock) {
+    if(itsDockingProcessBlock != NULL)
+        {
+            itsDockingProcessBlock->__setItsDC(NULL);
+        }
+    __setItsDockingProcessBlock(p_DockingProcessBlock);
+}
+
+void DC::_clearItsDockingProcessBlock() {
+    NOTIFY_RELATION_CLEARED("itsDockingProcessBlock");
+    itsDockingProcessBlock = NULL;
 }
 
 void DC::__setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock) {
@@ -254,6 +304,11 @@ void OMAnimatedDC::serializeRelations(AOMSRelations* aomsRelations) const {
     if(myReal->itsParkingSystemBlock)
         {
             aomsRelations->ADD_ITEM(myReal->itsParkingSystemBlock);
+        }
+    aomsRelations->addRelation("itsDockingProcessBlock", false, true);
+    if(myReal->itsDockingProcessBlock)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcessBlock);
         }
 }
 //#]

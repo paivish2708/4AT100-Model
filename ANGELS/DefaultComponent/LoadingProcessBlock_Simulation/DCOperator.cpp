@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: DCOperator
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\DCOperator.cpp
 *********************************************************************/
 
@@ -16,12 +16,16 @@
 #include "DCOperator.h"
 //## link itsANGELS
 #include "ANGELS.h"
-//## link itsCharging_System
-#include "Charging_System.h"
-//## link itsDockingProcess
-#include "DockingProcess.h"
+//## link itsChargingSystemBlock
+#include "ChargingSystemBlock.h"
+//## link itsDockingProcessBlock
+#include "DockingProcessBlock.h"
+//## link itsEBS
+#include "EBS.h"
 //## link itsLoadingProcessBlock
 #include "LoadingProcessBlock.h"
+//## link itsParkingSystemBlock
+#include "ParkingSystemBlock.h"
 //#[ ignore
 #define ANGELSPkg_ActorPkg_DCOperator_DCOperator_SERIALIZE OM_NO_OP
 //#]
@@ -33,11 +37,14 @@ DCOperator::DCOperator() {
     NOTIFY_CONSTRUCTOR(DCOperator, DCOperator(), 0, ANGELSPkg_ActorPkg_DCOperator_DCOperator_SERIALIZE);
     itsANGELS = NULL;
     itsANGELS_1 = NULL;
-    itsCharging_System = NULL;
-    itsDockingProcess = NULL;
-    itsDockingProcess_1 = NULL;
-    itsDockingProcess_2 = NULL;
+    itsChargingSystemBlock = NULL;
+    itsDockingProcessBlock = NULL;
+    itsDockingProcessBlock_1 = NULL;
+    itsDockingProcessBlock_2 = NULL;
+    itsDockingProcessBlock_3 = NULL;
+    itsEBS = NULL;
     itsLoadingProcessBlock = NULL;
+    itsParkingSystemBlock = NULL;
 }
 
 DCOperator::~DCOperator() {
@@ -73,60 +80,84 @@ void DCOperator::setItsANGELS_1(ANGELS* p_ANGELS) {
     _setItsANGELS_1(p_ANGELS);
 }
 
-Charging_System* DCOperator::getItsCharging_System() const {
-    return itsCharging_System;
+ChargingSystemBlock* DCOperator::getItsChargingSystemBlock() const {
+    return itsChargingSystemBlock;
 }
 
-void DCOperator::setItsCharging_System(Charging_System* p_Charging_System) {
-    if(p_Charging_System != NULL)
+void DCOperator::setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(p_ChargingSystemBlock != NULL)
         {
-            p_Charging_System->_setItsDCOperator(this);
+            p_ChargingSystemBlock->_setItsDCOperator(this);
         }
-    _setItsCharging_System(p_Charging_System);
+    _setItsChargingSystemBlock(p_ChargingSystemBlock);
 }
 
-DockingProcess* DCOperator::getItsDockingProcess() const {
-    return itsDockingProcess;
+DockingProcessBlock* DCOperator::getItsDockingProcessBlock() const {
+    return itsDockingProcessBlock;
 }
 
-void DCOperator::setItsDockingProcess(DockingProcess* p_DockingProcess) {
-    itsDockingProcess = p_DockingProcess;
-    if(p_DockingProcess != NULL)
+void DCOperator::setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock) {
+    itsDockingProcessBlock = p_DockingProcessBlock;
+    if(p_DockingProcessBlock != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcess", p_DockingProcess, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsDockingProcess");
-        }
-}
-
-DockingProcess* DCOperator::getItsDockingProcess_1() const {
-    return itsDockingProcess_1;
-}
-
-void DCOperator::setItsDockingProcess_1(DockingProcess* p_DockingProcess) {
-    if(p_DockingProcess != NULL)
-        {
-            p_DockingProcess->_setItsDCOperator(this);
-        }
-    _setItsDockingProcess_1(p_DockingProcess);
-}
-
-DockingProcess* DCOperator::getItsDockingProcess_2() const {
-    return itsDockingProcess_2;
-}
-
-void DCOperator::setItsDockingProcess_2(DockingProcess* p_DockingProcess) {
-    itsDockingProcess_2 = p_DockingProcess;
-    if(p_DockingProcess != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcess_2", p_DockingProcess, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcessBlock", p_DockingProcessBlock, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsDockingProcess_2");
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock");
         }
+}
+
+DockingProcessBlock* DCOperator::getItsDockingProcessBlock_1() const {
+    return itsDockingProcessBlock_1;
+}
+
+void DCOperator::setItsDockingProcessBlock_1(DockingProcessBlock* p_DockingProcessBlock) {
+    itsDockingProcessBlock_1 = p_DockingProcessBlock;
+    if(p_DockingProcessBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcessBlock_1", p_DockingProcessBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_1");
+        }
+}
+
+DockingProcessBlock* DCOperator::getItsDockingProcessBlock_2() const {
+    return itsDockingProcessBlock_2;
+}
+
+void DCOperator::setItsDockingProcessBlock_2(DockingProcessBlock* p_DockingProcessBlock) {
+    if(p_DockingProcessBlock != NULL)
+        {
+            p_DockingProcessBlock->_setItsDCOperator(this);
+        }
+    _setItsDockingProcessBlock_2(p_DockingProcessBlock);
+}
+
+DockingProcessBlock* DCOperator::getItsDockingProcessBlock_3() const {
+    return itsDockingProcessBlock_3;
+}
+
+void DCOperator::setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProcessBlock) {
+    if(p_DockingProcessBlock != NULL)
+        {
+            p_DockingProcessBlock->_setItsDCOperator_1(this);
+        }
+    _setItsDockingProcessBlock_3(p_DockingProcessBlock);
+}
+
+EBS* DCOperator::getItsEBS() const {
+    return itsEBS;
+}
+
+void DCOperator::setItsEBS(EBS* p_EBS) {
+    if(p_EBS != NULL)
+        {
+            p_EBS->_setItsDCOperator(this);
+        }
+    _setItsEBS(p_EBS);
 }
 
 LoadingProcessBlock* DCOperator::getItsLoadingProcessBlock() const {
@@ -139,6 +170,18 @@ void DCOperator::setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcess
             p_LoadingProcessBlock->_setItsDCOperator(this);
         }
     _setItsLoadingProcessBlock(p_LoadingProcessBlock);
+}
+
+ParkingSystemBlock* DCOperator::getItsParkingSystemBlock() const {
+    return itsParkingSystemBlock;
+}
+
+void DCOperator::setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock) {
+    if(p_ParkingSystemBlock != NULL)
+        {
+            p_ParkingSystemBlock->_setItsDCOperator(this);
+        }
+    _setItsParkingSystemBlock(p_ParkingSystemBlock);
 }
 
 void DCOperator::cleanUpRelations() {
@@ -157,35 +200,55 @@ void DCOperator::cleanUpRelations() {
                 }
             itsANGELS_1 = NULL;
         }
-    if(itsCharging_System != NULL)
+    if(itsChargingSystemBlock != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsCharging_System");
-            DCOperator* p_DCOperator = itsCharging_System->getItsDCOperator();
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
+            DCOperator* p_DCOperator = itsChargingSystemBlock->getItsDCOperator();
             if(p_DCOperator != NULL)
                 {
-                    itsCharging_System->__setItsDCOperator(NULL);
+                    itsChargingSystemBlock->__setItsDCOperator(NULL);
                 }
-            itsCharging_System = NULL;
+            itsChargingSystemBlock = NULL;
         }
-    if(itsDockingProcess != NULL)
+    if(itsDockingProcessBlock != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsDockingProcess");
-            itsDockingProcess = NULL;
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock");
+            itsDockingProcessBlock = NULL;
         }
-    if(itsDockingProcess_1 != NULL)
+    if(itsDockingProcessBlock_1 != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsDockingProcess_1");
-            DCOperator* p_DCOperator = itsDockingProcess_1->getItsDCOperator();
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_1");
+            itsDockingProcessBlock_1 = NULL;
+        }
+    if(itsDockingProcessBlock_2 != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_2");
+            DCOperator* p_DCOperator = itsDockingProcessBlock_2->getItsDCOperator();
             if(p_DCOperator != NULL)
                 {
-                    itsDockingProcess_1->__setItsDCOperator(NULL);
+                    itsDockingProcessBlock_2->__setItsDCOperator(NULL);
                 }
-            itsDockingProcess_1 = NULL;
+            itsDockingProcessBlock_2 = NULL;
         }
-    if(itsDockingProcess_2 != NULL)
+    if(itsDockingProcessBlock_3 != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsDockingProcess_2");
-            itsDockingProcess_2 = NULL;
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_3");
+            DCOperator* p_DCOperator = itsDockingProcessBlock_3->getItsDCOperator_1();
+            if(p_DCOperator != NULL)
+                {
+                    itsDockingProcessBlock_3->__setItsDCOperator_1(NULL);
+                }
+            itsDockingProcessBlock_3 = NULL;
+        }
+    if(itsEBS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+            DCOperator* p_DCOperator = itsEBS->getItsDCOperator();
+            if(p_DCOperator != NULL)
+                {
+                    itsEBS->__setItsDCOperator(NULL);
+                }
+            itsEBS = NULL;
         }
     if(itsLoadingProcessBlock != NULL)
         {
@@ -196,6 +259,16 @@ void DCOperator::cleanUpRelations() {
                     itsLoadingProcessBlock->__setItsDCOperator(NULL);
                 }
             itsLoadingProcessBlock = NULL;
+        }
+    if(itsParkingSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsParkingSystemBlock");
+            DCOperator* p_DCOperator = itsParkingSystemBlock->getItsDCOperator();
+            if(p_DCOperator != NULL)
+                {
+                    itsParkingSystemBlock->__setItsDCOperator(NULL);
+                }
+            itsParkingSystemBlock = NULL;
         }
 }
 
@@ -224,54 +297,104 @@ void DCOperator::_clearItsANGELS_1() {
     itsANGELS_1 = NULL;
 }
 
-void DCOperator::__setItsCharging_System(Charging_System* p_Charging_System) {
-    itsCharging_System = p_Charging_System;
-    if(p_Charging_System != NULL)
+void DCOperator::__setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    itsChargingSystemBlock = p_ChargingSystemBlock;
+    if(p_ChargingSystemBlock != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsCharging_System", p_Charging_System, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsChargingSystemBlock", p_ChargingSystemBlock, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsCharging_System");
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
         }
 }
 
-void DCOperator::_setItsCharging_System(Charging_System* p_Charging_System) {
-    if(itsCharging_System != NULL)
+void DCOperator::_setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(itsChargingSystemBlock != NULL)
         {
-            itsCharging_System->__setItsDCOperator(NULL);
+            itsChargingSystemBlock->__setItsDCOperator(NULL);
         }
-    __setItsCharging_System(p_Charging_System);
+    __setItsChargingSystemBlock(p_ChargingSystemBlock);
 }
 
-void DCOperator::_clearItsCharging_System() {
-    NOTIFY_RELATION_CLEARED("itsCharging_System");
-    itsCharging_System = NULL;
+void DCOperator::_clearItsChargingSystemBlock() {
+    NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
+    itsChargingSystemBlock = NULL;
 }
 
-void DCOperator::__setItsDockingProcess_1(DockingProcess* p_DockingProcess) {
-    itsDockingProcess_1 = p_DockingProcess;
-    if(p_DockingProcess != NULL)
+void DCOperator::__setItsDockingProcessBlock_2(DockingProcessBlock* p_DockingProcessBlock) {
+    itsDockingProcessBlock_2 = p_DockingProcessBlock;
+    if(p_DockingProcessBlock != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcess_1", p_DockingProcess, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcessBlock_2", p_DockingProcessBlock, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsDockingProcess_1");
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_2");
         }
 }
 
-void DCOperator::_setItsDockingProcess_1(DockingProcess* p_DockingProcess) {
-    if(itsDockingProcess_1 != NULL)
+void DCOperator::_setItsDockingProcessBlock_2(DockingProcessBlock* p_DockingProcessBlock) {
+    if(itsDockingProcessBlock_2 != NULL)
         {
-            itsDockingProcess_1->__setItsDCOperator(NULL);
+            itsDockingProcessBlock_2->__setItsDCOperator(NULL);
         }
-    __setItsDockingProcess_1(p_DockingProcess);
+    __setItsDockingProcessBlock_2(p_DockingProcessBlock);
 }
 
-void DCOperator::_clearItsDockingProcess_1() {
-    NOTIFY_RELATION_CLEARED("itsDockingProcess_1");
-    itsDockingProcess_1 = NULL;
+void DCOperator::_clearItsDockingProcessBlock_2() {
+    NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_2");
+    itsDockingProcessBlock_2 = NULL;
+}
+
+void DCOperator::__setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProcessBlock) {
+    itsDockingProcessBlock_3 = p_DockingProcessBlock;
+    if(p_DockingProcessBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcessBlock_3", p_DockingProcessBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_3");
+        }
+}
+
+void DCOperator::_setItsDockingProcessBlock_3(DockingProcessBlock* p_DockingProcessBlock) {
+    if(itsDockingProcessBlock_3 != NULL)
+        {
+            itsDockingProcessBlock_3->__setItsDCOperator_1(NULL);
+        }
+    __setItsDockingProcessBlock_3(p_DockingProcessBlock);
+}
+
+void DCOperator::_clearItsDockingProcessBlock_3() {
+    NOTIFY_RELATION_CLEARED("itsDockingProcessBlock_3");
+    itsDockingProcessBlock_3 = NULL;
+}
+
+void DCOperator::__setItsEBS(EBS* p_EBS) {
+    itsEBS = p_EBS;
+    if(p_EBS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsEBS", p_EBS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+        }
+}
+
+void DCOperator::_setItsEBS(EBS* p_EBS) {
+    if(itsEBS != NULL)
+        {
+            itsEBS->__setItsDCOperator(NULL);
+        }
+    __setItsEBS(p_EBS);
+}
+
+void DCOperator::_clearItsEBS() {
+    NOTIFY_RELATION_CLEARED("itsEBS");
+    itsEBS = NULL;
 }
 
 void DCOperator::__setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock) {
@@ -299,6 +422,31 @@ void DCOperator::_clearItsLoadingProcessBlock() {
     itsLoadingProcessBlock = NULL;
 }
 
+void DCOperator::__setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock) {
+    itsParkingSystemBlock = p_ParkingSystemBlock;
+    if(p_ParkingSystemBlock != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsParkingSystemBlock", p_ParkingSystemBlock, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsParkingSystemBlock");
+        }
+}
+
+void DCOperator::_setItsParkingSystemBlock(ParkingSystemBlock* p_ParkingSystemBlock) {
+    if(itsParkingSystemBlock != NULL)
+        {
+            itsParkingSystemBlock->__setItsDCOperator(NULL);
+        }
+    __setItsParkingSystemBlock(p_ParkingSystemBlock);
+}
+
+void DCOperator::_clearItsParkingSystemBlock() {
+    NOTIFY_RELATION_CLEARED("itsParkingSystemBlock");
+    itsParkingSystemBlock = NULL;
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedDCOperator::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -312,30 +460,45 @@ void OMAnimatedDCOperator::serializeRelations(AOMSRelations* aomsRelations) cons
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS);
         }
-    aomsRelations->addRelation("itsDockingProcess_1", false, true);
-    if(myReal->itsDockingProcess_1)
+    aomsRelations->addRelation("itsDockingProcessBlock_2", false, true);
+    if(myReal->itsDockingProcessBlock_2)
         {
-            aomsRelations->ADD_ITEM(myReal->itsDockingProcess_1);
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcessBlock_2);
         }
-    aomsRelations->addRelation("itsDockingProcess_2", false, true);
-    if(myReal->itsDockingProcess_2)
+    aomsRelations->addRelation("itsDockingProcessBlock_1", false, true);
+    if(myReal->itsDockingProcessBlock_1)
         {
-            aomsRelations->ADD_ITEM(myReal->itsDockingProcess_2);
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcessBlock_1);
         }
-    aomsRelations->addRelation("itsCharging_System", false, true);
-    if(myReal->itsCharging_System)
+    aomsRelations->addRelation("itsChargingSystemBlock", false, true);
+    if(myReal->itsChargingSystemBlock)
         {
-            aomsRelations->ADD_ITEM(myReal->itsCharging_System);
+            aomsRelations->ADD_ITEM(myReal->itsChargingSystemBlock);
         }
     aomsRelations->addRelation("itsANGELS_1", false, true);
     if(myReal->itsANGELS_1)
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS_1);
         }
-    aomsRelations->addRelation("itsDockingProcess", false, true);
-    if(myReal->itsDockingProcess)
+    aomsRelations->addRelation("itsDockingProcessBlock", false, true);
+    if(myReal->itsDockingProcessBlock)
         {
-            aomsRelations->ADD_ITEM(myReal->itsDockingProcess);
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcessBlock);
+        }
+    aomsRelations->addRelation("itsParkingSystemBlock", false, true);
+    if(myReal->itsParkingSystemBlock)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsParkingSystemBlock);
+        }
+    aomsRelations->addRelation("itsDockingProcessBlock_3", false, true);
+    if(myReal->itsDockingProcessBlock_3)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcessBlock_3);
+        }
+    aomsRelations->addRelation("itsEBS", false, true);
+    if(myReal->itsEBS)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsEBS);
         }
 }
 //#]

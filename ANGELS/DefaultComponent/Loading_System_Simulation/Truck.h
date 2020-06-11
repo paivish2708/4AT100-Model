@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Truck
-//!	Generated Date	: Sun, 10, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\Truck.h
 *********************************************************************/
 
@@ -22,13 +22,16 @@
 //## link itsANGELS
 class ANGELS;
 
-//## link itsDocking_System
-class Docking_System;
+//## link itsChargingSystemBlock
+class ChargingSystemBlock;
 
-//## link itsDriver
-class Driver;
+//## link itsDockingProcessBlock
+class DockingProcessBlock;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::TruckPkg
+//## link itsEBS
+class EBS;
+
+//## package ANGELSPkg::TruckPkg
 
 //## class Truck
 class Truck {
@@ -57,16 +60,22 @@ public :
     void setItsANGELS(ANGELS* p_ANGELS);
     
     //## auto_generated
-    Docking_System* getItsDocking_System() const;
+    ChargingSystemBlock* getItsChargingSystemBlock() const;
     
     //## auto_generated
-    void setItsDocking_System(Docking_System* p_Docking_System);
+    void setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
     
     //## auto_generated
-    Driver* getItsDriver() const;
+    DockingProcessBlock* getItsDockingProcessBlock() const;
     
     //## auto_generated
-    void setItsDriver(Driver* p_Driver);
+    void setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    EBS* getItsEBS() const;
+    
+    //## auto_generated
+    void setItsEBS(EBS* p_EBS);
 
 protected :
 
@@ -77,9 +86,11 @@ protected :
     
     ANGELS* itsANGELS;		//## link itsANGELS
     
-    Docking_System* itsDocking_System;		//## link itsDocking_System
+    ChargingSystemBlock* itsChargingSystemBlock;		//## link itsChargingSystemBlock
     
-    Driver* itsDriver;		//## link itsDriver
+    DockingProcessBlock* itsDockingProcessBlock;		//## link itsDockingProcessBlock
+    
+    EBS* itsEBS;		//## link itsEBS
     
     ////    Framework operations    ////
 
@@ -95,22 +106,31 @@ public :
     void _clearItsANGELS();
     
     //## auto_generated
-    void __setItsDocking_System(Docking_System* p_Docking_System);
+    void __setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
     
     //## auto_generated
-    void _setItsDocking_System(Docking_System* p_Docking_System);
+    void _setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
     
     //## auto_generated
-    void _clearItsDocking_System();
+    void _clearItsChargingSystemBlock();
     
     //## auto_generated
-    void __setItsDriver(Driver* p_Driver);
+    void __setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
     
     //## auto_generated
-    void _setItsDriver(Driver* p_Driver);
+    void _setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
     
     //## auto_generated
-    void _clearItsDriver();
+    void _clearItsDockingProcessBlock();
+    
+    //## auto_generated
+    void __setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _clearItsEBS();
 };
 
 #ifdef _OMINSTRUMENT

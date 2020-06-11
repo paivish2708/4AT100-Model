@@ -85,38 +85,41 @@ ADDITIONAL_OBJS=
 
 OBJS= \
   ChargingSystemBlock.obj \
-  Truck.obj \
-  ANGELS.obj \
-  Collision_Avoidance.obj \
-  DockingProcessBlock.obj \
   DCOperator.obj \
   Driver.obj \
-  ParkingSystemBlock.obj \
+  Truck.obj \
+  ANGELS.obj \
+  Environment.obj \
+  EBS.obj \
+  Collision_Avoidance.obj \
+  DockingProcessBlock.obj \
   DC.obj \
   LoadingProcessBlock.obj \
+  LoadingSystemBlock.obj \
+  ParkingSystemBlock.obj \
+  Collision_Detection.obj \
   PedestrianandObstacles.obj \
   Obstacle.obj \
-  Collision_Detection.obj \
-  Environment.obj \
   LocalizationArchitecture.obj \
   DockingSystem.obj \
-  LoadingSystem.obj \
   ChargingInfrastructure.obj \
   Government.obj \
   SafetyStandards.obj \
   CommunicationSystemBlock.obj \
   ChargingSystemPkg.obj \
-  TruckPkg.obj \
-  ANGELSPkg.obj \
-  ObstacleAvoidancePkg.obj \
-  DockingPkg.obj \
   ActorPkg.obj \
   UseCaseAnalysisPkg.obj \
-  ParkingProcessPkg.obj \
+  ANGELSPkg.obj \
+  TruckPkg.obj \
+  EmergencyOverrideSystemPkg.obj \
+  ObstacleAvoidancePkg.obj \
+  DockingPkg.obj \
   LoadingProcessPkg.obj \
-  ObstacleDetectionPkg.obj \
-  DockingSystemPkg.obj \
   LoadingSystemPkg.obj \
+  ParkingProcessPkg.obj \
+  ObstacleDetectionPkg.obj \
+  LocalisationPkg.obj \
+  DockingSystemPkg.obj \
   CommunicationPkg.obj
 
 
@@ -200,91 +203,103 @@ SOCK_LIB=
 
 
 
-ChargingSystemBlock.obj : ChargingSystemBlock.cpp ChargingSystemBlock.h    ChargingSystemPkg.h Truck.h DCOperator.h ANGELS.h ChargingInfrastructure.h CommunicationSystemBlock.h LoadingProcessBlock.h DockingProcessBlock.h 
+ChargingSystemBlock.obj : ChargingSystemBlock.cpp ChargingSystemBlock.h    ChargingSystemPkg.h DCOperator.h ANGELS.h ChargingInfrastructure.h CommunicationSystemBlock.h LoadingProcessBlock.h DockingProcessBlock.h Truck.h ANGELSPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ChargingSystemBlock.obj" "ChargingSystemBlock.cpp" 
 
 
 
-Truck.obj : Truck.cpp Truck.h    TruckPkg.h ANGELS.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Truck.obj" "Truck.cpp" 
-
-
-
-ANGELS.obj : ANGELS.cpp ANGELS.h    ANGELSPkg.h Collision_Avoidance.h Collision_Detection.h Environment.h LocalizationArchitecture.h DockingSystem.h LoadingSystem.h ChargingInfrastructure.h Obstacle.h Government.h SafetyStandards.h DCOperator.h DC.h Driver.h Truck.h ChargingSystemBlock.h DockingProcessBlock.h LoadingProcessBlock.h ParkingSystemBlock.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ANGELS.obj" "ANGELS.cpp" 
-
-
-
-Collision_Avoidance.obj : Collision_Avoidance.cpp Collision_Avoidance.h    ObstacleAvoidancePkg.h ANGELS.h DockingProcessBlock.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Collision_Avoidance.obj" "Collision_Avoidance.cpp" 
-
-
-
-DockingProcessBlock.obj : DockingProcessBlock.cpp DockingProcessBlock.h    DockingPkg.h DCOperator.h Truck.h LoadingProcessBlock.h ANGELS.h ChargingSystemBlock.h ParkingSystemBlock.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DockingProcessBlock.obj" "DockingProcessBlock.cpp" 
-
-
-
-DCOperator.obj : DCOperator.cpp DCOperator.h    ActorPkg.h LoadingProcessBlock.h ANGELS.h DockingProcessBlock.h ChargingSystemBlock.h ParkingSystemBlock.h 
+DCOperator.obj : DCOperator.cpp DCOperator.h    ActorPkg.h LoadingProcessBlock.h ANGELS.h DockingProcessBlock.h ChargingSystemBlock.h ParkingSystemBlock.h EBS.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DCOperator.obj" "DCOperator.cpp" 
 
 
 
-Driver.obj : Driver.cpp Driver.h    ActorPkg.h Truck.h ANGELS.h ParkingSystemBlock.h 
+Driver.obj : Driver.cpp Driver.h    ActorPkg.h Truck.h ANGELS.h ParkingSystemBlock.h DockingProcessBlock.h ChargingSystemBlock.h EBS.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Driver.obj" "Driver.cpp" 
 
 
 
-ParkingSystemBlock.obj : ParkingSystemBlock.cpp ParkingSystemBlock.h    ParkingProcessPkg.h Driver.h DC.h DCOperator.h LoadingProcessPkg.h 
+Truck.obj : Truck.cpp Truck.h    TruckPkg.h ANGELS.h DockingProcessBlock.h ChargingSystemBlock.h EBS.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ParkingSystemBlock.obj" "ParkingSystemBlock.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Truck.obj" "Truck.cpp" 
 
 
 
-DC.obj : DC.cpp DC.h    ActorPkg.h LoadingProcessBlock.h ANGELS.h ParkingSystemBlock.h 
+ANGELS.obj : ANGELS.cpp ANGELS.h    ANGELSPkg.h Environment.h LocalizationArchitecture.h DockingSystem.h LoadingSystemBlock.h ChargingInfrastructure.h Obstacle.h Government.h SafetyStandards.h DCOperator.h DC.h Driver.h Truck.h Collision_Detection.h ChargingSystemBlock.h LoadingProcessBlock.h ParkingSystemBlock.h DockingProcessBlock.h EBS.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DC.obj" "DC.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ANGELS.obj" "ANGELS.cpp" 
 
 
 
-LoadingProcessBlock.obj : LoadingProcessBlock.cpp LoadingProcessBlock.h    LoadingProcessPkg.h DC.h DCOperator.h Truck.h ParkingSystemBlock.h ChargingSystemBlock.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LoadingProcessBlock.obj" "LoadingProcessBlock.cpp" 
-
-
-
-PedestrianandObstacles.obj : PedestrianandObstacles.cpp PedestrianandObstacles.h    ActorPkg.h Obstacle.h Collision_Detection.h ANGELS.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PedestrianandObstacles.obj" "PedestrianandObstacles.cpp" 
-
-
-
-Obstacle.obj : Obstacle.cpp Obstacle.h    ActorPkg.h Collision_Detection.h ANGELS.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Obstacle.obj" "Obstacle.cpp" 
-
-
-
-Collision_Detection.obj : Collision_Detection.cpp Collision_Detection.h    ObstacleDetectionPkg.h ANGELS.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Collision_Detection.obj" "Collision_Detection.cpp" 
-
-
-
-Environment.obj : Environment.cpp Environment.h    ActorPkg.h ANGELS.h 
+Environment.obj : Environment.cpp Environment.h    ActorPkg.h ANGELS.h EBS.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Environment.obj" "Environment.cpp" 
 
 
 
-LocalizationArchitecture.obj : LocalizationArchitecture.cpp LocalizationArchitecture.h    ANGELSPkg.h ANGELS.h 
+EBS.obj : EBS.cpp EBS.h    EmergencyOverrideSystemPkg.h Truck.h Collision_Avoidance.h Collision_Detection.h DC.h DCOperator.h PedestrianandObstacles.h Environment.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"EBS.obj" "EBS.cpp" 
+
+
+
+Collision_Avoidance.obj : Collision_Avoidance.cpp Collision_Avoidance.h    ObstacleAvoidancePkg.h ANGELS.h DockingProcessBlock.h EBS.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Collision_Avoidance.obj" "Collision_Avoidance.cpp" 
+
+
+
+DockingProcessBlock.obj : DockingProcessBlock.cpp DockingProcessBlock.h    DockingPkg.h DCOperator.h ANGELS.h ChargingSystemBlock.h Truck.h DC.h Driver.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DockingProcessBlock.obj" "DockingProcessBlock.cpp" 
+
+
+
+DC.obj : DC.cpp DC.h    ActorPkg.h LoadingProcessBlock.h ANGELS.h ParkingSystemBlock.h DockingProcessBlock.h EBS.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DC.obj" "DC.cpp" 
+
+
+
+LoadingProcessBlock.obj : LoadingProcessBlock.cpp LoadingProcessBlock.h    LoadingProcessPkg.h DC.h DCOperator.h ChargingSystemBlock.h LoadingSystemBlock.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LoadingProcessBlock.obj" "LoadingProcessBlock.cpp" 
+
+
+
+LoadingSystemBlock.obj : LoadingSystemBlock.cpp LoadingSystemBlock.h    LoadingSystemPkg.h ANGELS.h LoadingProcessBlock.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LoadingSystemBlock.obj" "LoadingSystemBlock.cpp" 
+
+
+
+ParkingSystemBlock.obj : ParkingSystemBlock.cpp ParkingSystemBlock.h    ParkingProcessPkg.h Driver.h DC.h DCOperator.h LoadingProcessPkg.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ParkingSystemBlock.obj" "ParkingSystemBlock.cpp" 
+
+
+
+Collision_Detection.obj : Collision_Detection.cpp Collision_Detection.h    ObstacleDetectionPkg.h ANGELS.h EBS.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Collision_Detection.obj" "Collision_Detection.cpp" 
+
+
+
+PedestrianandObstacles.obj : PedestrianandObstacles.cpp PedestrianandObstacles.h    ActorPkg.h EBS.h Obstacle.h Collision_Detection.h ANGELS.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PedestrianandObstacles.obj" "PedestrianandObstacles.cpp" 
+
+
+
+Obstacle.obj : Obstacle.cpp Obstacle.h    ActorPkg.h Collision_Detection.h ANGELS.h EBS.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Obstacle.obj" "Obstacle.cpp" 
+
+
+
+LocalizationArchitecture.obj : LocalizationArchitecture.cpp LocalizationArchitecture.h    LocalisationPkg.h ANGELS.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LocalizationArchitecture.obj" "LocalizationArchitecture.cpp" 
 
@@ -296,13 +311,7 @@ DockingSystem.obj : DockingSystem.cpp DockingSystem.h    DockingSystemPkg.h ANGE
 
 
 
-LoadingSystem.obj : LoadingSystem.cpp LoadingSystem.h    LoadingSystemPkg.h ANGELS.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LoadingSystem.obj" "LoadingSystem.cpp" 
-
-
-
-ChargingInfrastructure.obj : ChargingInfrastructure.cpp ChargingInfrastructure.h    ANGELSPkg.h ANGELS.h ChargingSystemBlock.h 
+ChargingInfrastructure.obj : ChargingInfrastructure.cpp ChargingInfrastructure.h    ChargingSystemPkg.h ANGELS.h ChargingSystemBlock.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ChargingInfrastructure.obj" "ChargingInfrastructure.cpp" 
 
@@ -326,33 +335,9 @@ CommunicationSystemBlock.obj : CommunicationSystemBlock.cpp CommunicationSystemB
 
 
 
-ChargingSystemPkg.obj : ChargingSystemPkg.cpp ChargingSystemPkg.h    ChargingSystemBlock.h ANGELSPkg.h 
+ChargingSystemPkg.obj : ChargingSystemPkg.cpp ChargingSystemPkg.h    ChargingSystemBlock.h ChargingInfrastructure.h ANGELSPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ChargingSystemPkg.obj" "ChargingSystemPkg.cpp" 
-
-
-
-TruckPkg.obj : TruckPkg.cpp TruckPkg.h    Truck.h ANGELSPkg.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"TruckPkg.obj" "TruckPkg.cpp" 
-
-
-
-ANGELSPkg.obj : ANGELSPkg.cpp ANGELSPkg.h    ANGELS.h LocalizationArchitecture.h ChargingInfrastructure.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ANGELSPkg.obj" "ANGELSPkg.cpp" 
-
-
-
-ObstacleAvoidancePkg.obj : ObstacleAvoidancePkg.cpp ObstacleAvoidancePkg.h    Collision_Avoidance.h ANGELSPkg.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ObstacleAvoidancePkg.obj" "ObstacleAvoidancePkg.cpp" 
-
-
-
-DockingPkg.obj : DockingPkg.cpp DockingPkg.h    DockingProcessBlock.h ANGELSPkg.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DockingPkg.obj" "DockingPkg.cpp" 
 
 
 
@@ -368,9 +353,33 @@ UseCaseAnalysisPkg.obj : UseCaseAnalysisPkg.cpp UseCaseAnalysisPkg.h
 
 
 
-ParkingProcessPkg.obj : ParkingProcessPkg.cpp ParkingProcessPkg.h    ParkingSystemBlock.h ANGELSPkg.h 
+ANGELSPkg.obj : ANGELSPkg.cpp ANGELSPkg.h    ANGELS.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ParkingProcessPkg.obj" "ParkingProcessPkg.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ANGELSPkg.obj" "ANGELSPkg.cpp" 
+
+
+
+TruckPkg.obj : TruckPkg.cpp TruckPkg.h    Truck.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"TruckPkg.obj" "TruckPkg.cpp" 
+
+
+
+EmergencyOverrideSystemPkg.obj : EmergencyOverrideSystemPkg.cpp EmergencyOverrideSystemPkg.h    EBS.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"EmergencyOverrideSystemPkg.obj" "EmergencyOverrideSystemPkg.cpp" 
+
+
+
+ObstacleAvoidancePkg.obj : ObstacleAvoidancePkg.cpp ObstacleAvoidancePkg.h    Collision_Avoidance.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ObstacleAvoidancePkg.obj" "ObstacleAvoidancePkg.cpp" 
+
+
+
+DockingPkg.obj : DockingPkg.cpp DockingPkg.h    DockingProcessBlock.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DockingPkg.obj" "DockingPkg.cpp" 
 
 
 
@@ -380,21 +389,33 @@ LoadingProcessPkg.obj : LoadingProcessPkg.cpp LoadingProcessPkg.h    LoadingProc
 
 
 
+LoadingSystemPkg.obj : LoadingSystemPkg.cpp LoadingSystemPkg.h    LoadingSystemBlock.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LoadingSystemPkg.obj" "LoadingSystemPkg.cpp" 
+
+
+
+ParkingProcessPkg.obj : ParkingProcessPkg.cpp ParkingProcessPkg.h    ParkingSystemBlock.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ParkingProcessPkg.obj" "ParkingProcessPkg.cpp" 
+
+
+
 ObstacleDetectionPkg.obj : ObstacleDetectionPkg.cpp ObstacleDetectionPkg.h    Collision_Detection.h ANGELSPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ObstacleDetectionPkg.obj" "ObstacleDetectionPkg.cpp" 
 
 
 
+LocalisationPkg.obj : LocalisationPkg.cpp LocalisationPkg.h    LocalizationArchitecture.h ANGELSPkg.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LocalisationPkg.obj" "LocalisationPkg.cpp" 
+
+
+
 DockingSystemPkg.obj : DockingSystemPkg.cpp DockingSystemPkg.h    DockingSystem.h ANGELSPkg.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DockingSystemPkg.obj" "DockingSystemPkg.cpp" 
-
-
-
-LoadingSystemPkg.obj : LoadingSystemPkg.cpp LoadingSystemPkg.h    LoadingSystem.h ANGELSPkg.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LoadingSystemPkg.obj" "LoadingSystemPkg.cpp" 
 
 
 
@@ -432,38 +453,41 @@ $(TARGET_NAME)$(LIB_EXT) : $(OBJS) $(ADDITIONAL_OBJS) DefaultComponent.mak
 clean:
 	@echo Cleanup
 	if exist ChargingSystemBlock.obj erase ChargingSystemBlock.obj
-	if exist Truck.obj erase Truck.obj
-	if exist ANGELS.obj erase ANGELS.obj
-	if exist Collision_Avoidance.obj erase Collision_Avoidance.obj
-	if exist DockingProcessBlock.obj erase DockingProcessBlock.obj
 	if exist DCOperator.obj erase DCOperator.obj
 	if exist Driver.obj erase Driver.obj
-	if exist ParkingSystemBlock.obj erase ParkingSystemBlock.obj
+	if exist Truck.obj erase Truck.obj
+	if exist ANGELS.obj erase ANGELS.obj
+	if exist Environment.obj erase Environment.obj
+	if exist EBS.obj erase EBS.obj
+	if exist Collision_Avoidance.obj erase Collision_Avoidance.obj
+	if exist DockingProcessBlock.obj erase DockingProcessBlock.obj
 	if exist DC.obj erase DC.obj
 	if exist LoadingProcessBlock.obj erase LoadingProcessBlock.obj
+	if exist LoadingSystemBlock.obj erase LoadingSystemBlock.obj
+	if exist ParkingSystemBlock.obj erase ParkingSystemBlock.obj
+	if exist Collision_Detection.obj erase Collision_Detection.obj
 	if exist PedestrianandObstacles.obj erase PedestrianandObstacles.obj
 	if exist Obstacle.obj erase Obstacle.obj
-	if exist Collision_Detection.obj erase Collision_Detection.obj
-	if exist Environment.obj erase Environment.obj
 	if exist LocalizationArchitecture.obj erase LocalizationArchitecture.obj
 	if exist DockingSystem.obj erase DockingSystem.obj
-	if exist LoadingSystem.obj erase LoadingSystem.obj
 	if exist ChargingInfrastructure.obj erase ChargingInfrastructure.obj
 	if exist Government.obj erase Government.obj
 	if exist SafetyStandards.obj erase SafetyStandards.obj
 	if exist CommunicationSystemBlock.obj erase CommunicationSystemBlock.obj
 	if exist ChargingSystemPkg.obj erase ChargingSystemPkg.obj
-	if exist TruckPkg.obj erase TruckPkg.obj
-	if exist ANGELSPkg.obj erase ANGELSPkg.obj
-	if exist ObstacleAvoidancePkg.obj erase ObstacleAvoidancePkg.obj
-	if exist DockingPkg.obj erase DockingPkg.obj
 	if exist ActorPkg.obj erase ActorPkg.obj
 	if exist UseCaseAnalysisPkg.obj erase UseCaseAnalysisPkg.obj
-	if exist ParkingProcessPkg.obj erase ParkingProcessPkg.obj
+	if exist ANGELSPkg.obj erase ANGELSPkg.obj
+	if exist TruckPkg.obj erase TruckPkg.obj
+	if exist EmergencyOverrideSystemPkg.obj erase EmergencyOverrideSystemPkg.obj
+	if exist ObstacleAvoidancePkg.obj erase ObstacleAvoidancePkg.obj
+	if exist DockingPkg.obj erase DockingPkg.obj
 	if exist LoadingProcessPkg.obj erase LoadingProcessPkg.obj
-	if exist ObstacleDetectionPkg.obj erase ObstacleDetectionPkg.obj
-	if exist DockingSystemPkg.obj erase DockingSystemPkg.obj
 	if exist LoadingSystemPkg.obj erase LoadingSystemPkg.obj
+	if exist ParkingProcessPkg.obj erase ParkingProcessPkg.obj
+	if exist ObstacleDetectionPkg.obj erase ObstacleDetectionPkg.obj
+	if exist LocalisationPkg.obj erase LocalisationPkg.obj
+	if exist DockingSystemPkg.obj erase DockingSystemPkg.obj
 	if exist CommunicationPkg.obj erase CommunicationPkg.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)

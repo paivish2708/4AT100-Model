@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: ChargingInfrastructure
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\ChargingInfrastructure.cpp
 *********************************************************************/
 
@@ -16,20 +16,20 @@
 #include "ChargingInfrastructure.h"
 //## link itsANGELS
 #include "ANGELS.h"
-//## link itsCharging_System
-#include "Charging_System.h"
+//## link itsChargingSystemBlock
+#include "ChargingSystemBlock.h"
 //#[ ignore
-#define ANGELSPkg_ChargingInfrastructure_ChargingInfrastructure_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ChargingSystemPkg_ChargingInfrastructure_ChargingInfrastructure_SERIALIZE OM_NO_OP
 //#]
 
-//## package ANGELSPkg
+//## package ANGELSPkg::ChargingSystemPkg
 
 //## class ChargingInfrastructure
 ChargingInfrastructure::ChargingInfrastructure() {
-    NOTIFY_CONSTRUCTOR(ChargingInfrastructure, ChargingInfrastructure(), 0, ANGELSPkg_ChargingInfrastructure_ChargingInfrastructure_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(ChargingInfrastructure, ChargingInfrastructure(), 0, ANGELSPkg_ChargingSystemPkg_ChargingInfrastructure_ChargingInfrastructure_SERIALIZE);
     itsANGELS = NULL;
     itsANGELS_1 = NULL;
-    itsCharging_System = NULL;
+    itsChargingSystemBlock = NULL;
 }
 
 ChargingInfrastructure::~ChargingInfrastructure() {
@@ -42,11 +42,15 @@ ANGELS* ChargingInfrastructure::getItsANGELS() const {
 }
 
 void ChargingInfrastructure::setItsANGELS(ANGELS* p_ANGELS) {
+    itsANGELS = p_ANGELS;
     if(p_ANGELS != NULL)
         {
-            p_ANGELS->_setItsChargingInfrastructure_1(this);
+            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
         }
-    _setItsANGELS(p_ANGELS);
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+        }
 }
 
 ANGELS* ChargingInfrastructure::getItsANGELS_1() const {
@@ -61,27 +65,22 @@ void ChargingInfrastructure::setItsANGELS_1(ANGELS* p_ANGELS) {
     _setItsANGELS_1(p_ANGELS);
 }
 
-Charging_System* ChargingInfrastructure::getItsCharging_System() const {
-    return itsCharging_System;
+ChargingSystemBlock* ChargingInfrastructure::getItsChargingSystemBlock() const {
+    return itsChargingSystemBlock;
 }
 
-void ChargingInfrastructure::setItsCharging_System(Charging_System* p_Charging_System) {
-    if(p_Charging_System != NULL)
+void ChargingInfrastructure::setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(p_ChargingSystemBlock != NULL)
         {
-            p_Charging_System->_setItsChargingInfrastructure(this);
+            p_ChargingSystemBlock->_setItsChargingInfrastructure(this);
         }
-    _setItsCharging_System(p_Charging_System);
+    _setItsChargingSystemBlock(p_ChargingSystemBlock);
 }
 
 void ChargingInfrastructure::cleanUpRelations() {
     if(itsANGELS != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsANGELS");
-            ChargingInfrastructure* p_ChargingInfrastructure = itsANGELS->getItsChargingInfrastructure_1();
-            if(p_ChargingInfrastructure != NULL)
-                {
-                    itsANGELS->__setItsChargingInfrastructure_1(NULL);
-                }
             itsANGELS = NULL;
         }
     if(itsANGELS_1 != NULL)
@@ -94,41 +93,16 @@ void ChargingInfrastructure::cleanUpRelations() {
                 }
             itsANGELS_1 = NULL;
         }
-    if(itsCharging_System != NULL)
+    if(itsChargingSystemBlock != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsCharging_System");
-            ChargingInfrastructure* p_ChargingInfrastructure = itsCharging_System->getItsChargingInfrastructure();
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
+            ChargingInfrastructure* p_ChargingInfrastructure = itsChargingSystemBlock->getItsChargingInfrastructure();
             if(p_ChargingInfrastructure != NULL)
                 {
-                    itsCharging_System->__setItsChargingInfrastructure(NULL);
+                    itsChargingSystemBlock->__setItsChargingInfrastructure(NULL);
                 }
-            itsCharging_System = NULL;
+            itsChargingSystemBlock = NULL;
         }
-}
-
-void ChargingInfrastructure::__setItsANGELS(ANGELS* p_ANGELS) {
-    itsANGELS = p_ANGELS;
-    if(p_ANGELS != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsANGELS", p_ANGELS, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
-        }
-}
-
-void ChargingInfrastructure::_setItsANGELS(ANGELS* p_ANGELS) {
-    if(itsANGELS != NULL)
-        {
-            itsANGELS->__setItsChargingInfrastructure_1(NULL);
-        }
-    __setItsANGELS(p_ANGELS);
-}
-
-void ChargingInfrastructure::_clearItsANGELS() {
-    NOTIFY_RELATION_CLEARED("itsANGELS");
-    itsANGELS = NULL;
 }
 
 void ChargingInfrastructure::__setItsANGELS_1(ANGELS* p_ANGELS) {
@@ -156,29 +130,29 @@ void ChargingInfrastructure::_clearItsANGELS_1() {
     itsANGELS_1 = NULL;
 }
 
-void ChargingInfrastructure::__setItsCharging_System(Charging_System* p_Charging_System) {
-    itsCharging_System = p_Charging_System;
-    if(p_Charging_System != NULL)
+void ChargingInfrastructure::__setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    itsChargingSystemBlock = p_ChargingSystemBlock;
+    if(p_ChargingSystemBlock != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsCharging_System", p_Charging_System, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsChargingSystemBlock", p_ChargingSystemBlock, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsCharging_System");
+            NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
         }
 }
 
-void ChargingInfrastructure::_setItsCharging_System(Charging_System* p_Charging_System) {
-    if(itsCharging_System != NULL)
+void ChargingInfrastructure::_setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock) {
+    if(itsChargingSystemBlock != NULL)
         {
-            itsCharging_System->__setItsChargingInfrastructure(NULL);
+            itsChargingSystemBlock->__setItsChargingInfrastructure(NULL);
         }
-    __setItsCharging_System(p_Charging_System);
+    __setItsChargingSystemBlock(p_ChargingSystemBlock);
 }
 
-void ChargingInfrastructure::_clearItsCharging_System() {
-    NOTIFY_RELATION_CLEARED("itsCharging_System");
-    itsCharging_System = NULL;
+void ChargingInfrastructure::_clearItsChargingSystemBlock() {
+    NOTIFY_RELATION_CLEARED("itsChargingSystemBlock");
+    itsChargingSystemBlock = NULL;
 }
 
 #ifdef _OMINSTRUMENT
@@ -189,10 +163,10 @@ void OMAnimatedChargingInfrastructure::serializeRelations(AOMSRelations* aomsRel
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS_1);
         }
-    aomsRelations->addRelation("itsCharging_System", false, true);
-    if(myReal->itsCharging_System)
+    aomsRelations->addRelation("itsChargingSystemBlock", false, true);
+    if(myReal->itsChargingSystemBlock)
         {
-            aomsRelations->ADD_ITEM(myReal->itsCharging_System);
+            aomsRelations->ADD_ITEM(myReal->itsChargingSystemBlock);
         }
     aomsRelations->addRelation("itsANGELS", false, true);
     if(myReal->itsANGELS)
@@ -202,7 +176,7 @@ void OMAnimatedChargingInfrastructure::serializeRelations(AOMSRelations* aomsRel
 }
 //#]
 
-IMPLEMENT_META_P(ChargingInfrastructure, ANGELSPkg, ANGELSPkg, false, OMAnimatedChargingInfrastructure)
+IMPLEMENT_META_P(ChargingInfrastructure, ANGELSPkg_ChargingSystemPkg, ANGELSPkg::ChargingSystemPkg, false, OMAnimatedChargingInfrastructure)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

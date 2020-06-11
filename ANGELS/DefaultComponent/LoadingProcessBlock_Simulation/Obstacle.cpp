@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: Obstacle
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\Obstacle.cpp
 *********************************************************************/
 
@@ -14,10 +14,10 @@
 
 //## auto_generated
 #include "Obstacle.h"
-//## link itsANGELS
+//## auto_generated
 #include "ANGELS.h"
-//## link itsCollision_Detection_1
-#include "Collision_Detection.h"
+//## auto_generated
+#include "EBS.h"
 //#[ ignore
 #define ANGELSPkg_ActorPkg_Obstacle_Obstacle_SERIALIZE OM_NO_OP
 //#]
@@ -34,7 +34,7 @@ Obstacle::Obstacle() {
 }
 
 Obstacle::~Obstacle() {
-    NOTIFY_DESTRUCTOR(~Obstacle, true);
+    NOTIFY_DESTRUCTOR(~Obstacle, false);
     cleanUpRelations();
 }
 
@@ -87,11 +87,15 @@ Collision_Detection* Obstacle::getItsCollision_Detection_1() const {
 }
 
 void Obstacle::setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection) {
+    itsCollision_Detection_1 = p_Collision_Detection;
     if(p_Collision_Detection != NULL)
         {
-            p_Collision_Detection->_setItsObstacle(this);
+            NOTIFY_RELATION_ITEM_ADDED("itsCollision_Detection_1", p_Collision_Detection, false, true);
         }
-    _setItsCollision_Detection_1(p_Collision_Detection);
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsCollision_Detection_1");
+        }
 }
 
 void Obstacle::cleanUpRelations() {
@@ -118,11 +122,6 @@ void Obstacle::cleanUpRelations() {
     if(itsCollision_Detection_1 != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsCollision_Detection_1");
-            Obstacle* p_Obstacle = itsCollision_Detection_1->getItsObstacle();
-            if(p_Obstacle != NULL)
-                {
-                    itsCollision_Detection_1->__setItsObstacle(NULL);
-                }
             itsCollision_Detection_1 = NULL;
         }
 }
@@ -152,33 +151,12 @@ void Obstacle::_clearItsANGELS_2() {
     itsANGELS_2 = NULL;
 }
 
-void Obstacle::__setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection) {
-    itsCollision_Detection_1 = p_Collision_Detection;
-    if(p_Collision_Detection != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsCollision_Detection_1", p_Collision_Detection, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsCollision_Detection_1");
-        }
-}
-
-void Obstacle::_setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection) {
-    if(itsCollision_Detection_1 != NULL)
-        {
-            itsCollision_Detection_1->__setItsObstacle(NULL);
-        }
-    __setItsCollision_Detection_1(p_Collision_Detection);
-}
-
-void Obstacle::_clearItsCollision_Detection_1() {
-    NOTIFY_RELATION_CLEARED("itsCollision_Detection_1");
-    itsCollision_Detection_1 = NULL;
-}
-
 #ifdef _OMINSTRUMENT
 //#[ ignore
+void OMAnimatedObstacle::serializeAttributes(AOMSAttributes* aomsAttributes) const {
+    OMAnimatedCollision_Detection::serializeAttributes(aomsAttributes);
+}
+
 void OMAnimatedObstacle::serializeRelations(AOMSRelations* aomsRelations) const {
     aomsRelations->addRelation("itsCollision_Detection_1", false, true);
     if(myReal->itsCollision_Detection_1)
@@ -200,10 +178,15 @@ void OMAnimatedObstacle::serializeRelations(AOMSRelations* aomsRelations) const 
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS_2);
         }
+    OMAnimatedCollision_Detection::serializeRelations(aomsRelations);
 }
 //#]
 
-IMPLEMENT_META_P(Obstacle, ANGELSPkg_ActorPkg, ANGELSPkg::ActorPkg, false, OMAnimatedObstacle)
+IMPLEMENT_META_S_P(Obstacle, ANGELSPkg::ActorPkg, false, Collision_Detection, OMAnimatedCollision_Detection, OMAnimatedObstacle)
+
+OMINIT_SUPERCLASS(Collision_Detection, OMAnimatedCollision_Detection)
+
+OMREGISTER_CLASS
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

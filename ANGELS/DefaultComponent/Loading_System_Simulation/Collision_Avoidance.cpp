@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Collision_Avoidance
-//!	Generated Date	: Sun, 10, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\Collision_Avoidance.cpp
 *********************************************************************/
 
@@ -16,19 +16,22 @@
 #include "Collision_Avoidance.h"
 //## link itsANGELS
 #include "ANGELS.h"
-//## link itsDocking_System
-#include "Docking_System.h"
+//## link itsDockingProcessBlock
+#include "DockingProcessBlock.h"
+//## link itsEBS
+#include "EBS.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_ObstacleAvoidancePkg_Collision_Avoidance_Collision_Avoidance_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ObstacleAvoidancePkg_Collision_Avoidance_Collision_Avoidance_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ObstacleAvoidancePkg
+//## package ANGELSPkg::ObstacleAvoidancePkg
 
 //## class Collision_Avoidance
 Collision_Avoidance::Collision_Avoidance() {
-    NOTIFY_CONSTRUCTOR(Collision_Avoidance, Collision_Avoidance(), 0, UseCaseAnalysisPkg_ANGELSPkg_ObstacleAvoidancePkg_Collision_Avoidance_Collision_Avoidance_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(Collision_Avoidance, Collision_Avoidance(), 0, ANGELSPkg_ObstacleAvoidancePkg_Collision_Avoidance_Collision_Avoidance_SERIALIZE);
     itsANGELS = NULL;
-    itsDocking_System = NULL;
+    itsDockingProcessBlock = NULL;
+    itsEBS = NULL;
 }
 
 Collision_Avoidance::~Collision_Avoidance() {
@@ -41,49 +44,6 @@ ANGELS* Collision_Avoidance::getItsANGELS() const {
 }
 
 void Collision_Avoidance::setItsANGELS(ANGELS* p_ANGELS) {
-    if(p_ANGELS != NULL)
-        {
-            p_ANGELS->_setItsCollision_Avoidance(this);
-        }
-    _setItsANGELS(p_ANGELS);
-}
-
-Docking_System* Collision_Avoidance::getItsDocking_System() const {
-    return itsDocking_System;
-}
-
-void Collision_Avoidance::setItsDocking_System(Docking_System* p_Docking_System) {
-    if(p_Docking_System != NULL)
-        {
-            p_Docking_System->_setItsCollision_Avoidance_1(this);
-        }
-    _setItsDocking_System(p_Docking_System);
-}
-
-void Collision_Avoidance::cleanUpRelations() {
-    if(itsANGELS != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsANGELS");
-            Collision_Avoidance* p_Collision_Avoidance = itsANGELS->getItsCollision_Avoidance();
-            if(p_Collision_Avoidance != NULL)
-                {
-                    itsANGELS->__setItsCollision_Avoidance(NULL);
-                }
-            itsANGELS = NULL;
-        }
-    if(itsDocking_System != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsDocking_System");
-            Collision_Avoidance* p_Collision_Avoidance = itsDocking_System->getItsCollision_Avoidance_1();
-            if(p_Collision_Avoidance != NULL)
-                {
-                    itsDocking_System->__setItsCollision_Avoidance_1(NULL);
-                }
-            itsDocking_System = NULL;
-        }
-}
-
-void Collision_Avoidance::__setItsANGELS(ANGELS* p_ANGELS) {
     itsANGELS = p_ANGELS;
     if(p_ANGELS != NULL)
         {
@@ -95,42 +55,80 @@ void Collision_Avoidance::__setItsANGELS(ANGELS* p_ANGELS) {
         }
 }
 
-void Collision_Avoidance::_setItsANGELS(ANGELS* p_ANGELS) {
-    if(itsANGELS != NULL)
-        {
-            itsANGELS->__setItsCollision_Avoidance(NULL);
-        }
-    __setItsANGELS(p_ANGELS);
+DockingProcessBlock* Collision_Avoidance::getItsDockingProcessBlock() const {
+    return itsDockingProcessBlock;
 }
 
-void Collision_Avoidance::_clearItsANGELS() {
-    NOTIFY_RELATION_CLEARED("itsANGELS");
-    itsANGELS = NULL;
-}
-
-void Collision_Avoidance::__setItsDocking_System(Docking_System* p_Docking_System) {
-    itsDocking_System = p_Docking_System;
-    if(p_Docking_System != NULL)
+void Collision_Avoidance::setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock) {
+    itsDockingProcessBlock = p_DockingProcessBlock;
+    if(p_DockingProcessBlock != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsDocking_System", p_Docking_System, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcessBlock", p_DockingProcessBlock, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsDocking_System");
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock");
         }
 }
 
-void Collision_Avoidance::_setItsDocking_System(Docking_System* p_Docking_System) {
-    if(itsDocking_System != NULL)
+EBS* Collision_Avoidance::getItsEBS() const {
+    return itsEBS;
+}
+
+void Collision_Avoidance::setItsEBS(EBS* p_EBS) {
+    if(p_EBS != NULL)
         {
-            itsDocking_System->__setItsCollision_Avoidance_1(NULL);
+            p_EBS->_setItsCollision_Avoidance(this);
         }
-    __setItsDocking_System(p_Docking_System);
+    _setItsEBS(p_EBS);
 }
 
-void Collision_Avoidance::_clearItsDocking_System() {
-    NOTIFY_RELATION_CLEARED("itsDocking_System");
-    itsDocking_System = NULL;
+void Collision_Avoidance::cleanUpRelations() {
+    if(itsANGELS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsANGELS");
+            itsANGELS = NULL;
+        }
+    if(itsDockingProcessBlock != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock");
+            itsDockingProcessBlock = NULL;
+        }
+    if(itsEBS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+            Collision_Avoidance* p_Collision_Avoidance = itsEBS->getItsCollision_Avoidance();
+            if(p_Collision_Avoidance != NULL)
+                {
+                    itsEBS->__setItsCollision_Avoidance(NULL);
+                }
+            itsEBS = NULL;
+        }
+}
+
+void Collision_Avoidance::__setItsEBS(EBS* p_EBS) {
+    itsEBS = p_EBS;
+    if(p_EBS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsEBS", p_EBS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+        }
+}
+
+void Collision_Avoidance::_setItsEBS(EBS* p_EBS) {
+    if(itsEBS != NULL)
+        {
+            itsEBS->__setItsCollision_Avoidance(NULL);
+        }
+    __setItsEBS(p_EBS);
+}
+
+void Collision_Avoidance::_clearItsEBS() {
+    NOTIFY_RELATION_CLEARED("itsEBS");
+    itsEBS = NULL;
 }
 
 #ifdef _OMINSTRUMENT
@@ -141,15 +139,20 @@ void OMAnimatedCollision_Avoidance::serializeRelations(AOMSRelations* aomsRelati
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS);
         }
-    aomsRelations->addRelation("itsDocking_System", false, true);
-    if(myReal->itsDocking_System)
+    aomsRelations->addRelation("itsDockingProcessBlock", false, true);
+    if(myReal->itsDockingProcessBlock)
         {
-            aomsRelations->ADD_ITEM(myReal->itsDocking_System);
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcessBlock);
+        }
+    aomsRelations->addRelation("itsEBS", false, true);
+    if(myReal->itsEBS)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsEBS);
         }
 }
 //#]
 
-IMPLEMENT_META_P(Collision_Avoidance, UseCaseAnalysisPkg_ANGELSPkg_ObstacleAvoidancePkg, UseCaseAnalysisPkg::ANGELSPkg::ObstacleAvoidancePkg, false, OMAnimatedCollision_Avoidance)
+IMPLEMENT_META_P(Collision_Avoidance, ANGELSPkg_ObstacleAvoidancePkg, ANGELSPkg::ObstacleAvoidancePkg, false, OMAnimatedCollision_Avoidance)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

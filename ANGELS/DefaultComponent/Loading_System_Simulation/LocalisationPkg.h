@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: LocalisationPkg
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\LocalisationPkg.h
 *********************************************************************/
 
@@ -20,9 +20,9 @@
 //## auto_generated
 #include "ANGELSPkg.h"
 //## auto_generated
-class Localisation_System;
+class LocalizationArchitecture;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::LocalisationPkg
+//## package ANGELSPkg::LocalisationPkg
 
 
 

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: Collision_Avoidance
-//!	Generated Date	: Fri, 22, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\Collision_Avoidance.h
 *********************************************************************/
 
@@ -24,6 +24,9 @@ class ANGELS;
 
 //## link itsDockingProcessBlock
 class DockingProcessBlock;
+
+//## link itsEBS
+class EBS;
 
 //## package ANGELSPkg::ObstacleAvoidancePkg
 
@@ -58,6 +61,12 @@ public :
     
     //## auto_generated
     void setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    EBS* getItsEBS() const;
+    
+    //## auto_generated
+    void setItsEBS(EBS* p_EBS);
 
 protected :
 
@@ -69,6 +78,21 @@ protected :
     ANGELS* itsANGELS;		//## link itsANGELS
     
     DockingProcessBlock* itsDockingProcessBlock;		//## link itsDockingProcessBlock
+    
+    EBS* itsEBS;		//## link itsEBS
+    
+    ////    Framework operations    ////
+
+public :
+
+    //## auto_generated
+    void __setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _clearItsEBS();
 };
 
 #ifdef _OMINSTRUMENT

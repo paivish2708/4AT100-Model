@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: DockingProcessBlock
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\DockingProcessBlock.h
 *********************************************************************/
 
@@ -304,6 +304,9 @@ public :
     // MoveTheTruck:
     //## statechart_method
     inline bool MoveTheTruck_IN() const;
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus MoveTheTruck_handleEvent();
     
     // BeginMovement:
     //## statechart_method

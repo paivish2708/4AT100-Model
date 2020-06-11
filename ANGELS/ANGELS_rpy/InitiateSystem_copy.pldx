@@ -364,9 +364,9 @@
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">InitiateSystem_copy</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">6.7.2020::21:7:46</_modifiedTime>
-			<_lastModifiedTime type="a">6.7.2020::21:7:46</_lastModifiedTime>
+			<_modifiedTimeWeak type="a">6.11.2020::12:32:17</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::13:38:58</_modifiedTime>
+			<_lastModifiedTime type="a">6.11.2020::13:38:58</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -412,7 +412,7 @@
 			</m_name>
 			<m_drawBehavior type="a">0</m_drawBehavior>
 			<m_bIsPreferencesInitialized type="a">0</m_bIsPreferencesInitialized>
-			<elementList type="a">55</elementList>
+			<elementList type="a">64</elementList>
 			
 			<m_access type="a">'Z'</m_access>
 			<m_modified type="a">'N'</m_modified>
@@ -430,7 +430,6 @@
 				<value>GUID dd290db0-1ee5-4b12-977f-b2792626116d</value>
 				<value>GUID 501c9845-66f5-455b-8fd5-47c37441ab3b</value>
 				<value>GUID c78f9d27-94c0-4bba-9f13-ef7569ee7587</value>
-				<value>GUID 412c3b48-dfe9-4158-a872-381c7db9e252</value>
 				<value>GUID 627156b7-a691-42ee-9111-a46cbe0f75b2</value>
 				<value>GUID 40089bf6-41fc-4891-9524-0c336f7e3d9b</value>
 				<value>GUID 420d2619-ec36-49fa-8a72-77efa2591dbc</value>
@@ -466,7 +465,6 @@
 				<value>GUID 0424f60d-4272-486b-b41c-904b4f69b945</value>
 				<value>GUID bfa91119-b65b-41fe-b789-43c664e4a848</value>
 				<value>GUID bdba8abc-f29b-4594-b230-acd0a839bbc6</value>
-				<value>GUID c4af9d84-3396-442d-99d5-d59d787516f1</value>
 				<value>GUID fc3ccecd-68e0-4675-b582-bf58f9683653</value>
 				<value>GUID 2cb04339-8242-49b5-b216-5ca2eb4b54a5</value>
 				<value>GUID d7e1ffa2-2d98-4ecb-8268-0314504f5f1b</value>
@@ -480,6 +478,17 @@
 				<value>GUID 8c0d2c65-a8a1-4ca6-9793-764a051568ee</value>
 				<value>GUID 79188e6e-e540-4d2e-9ad3-c9b7e4f4c603</value>
 				<value>GUID 7374da2e-f158-448b-81bb-a20a0f079281</value>
+				<value>GUID a074ab49-d754-4fc9-a345-16ff64622d13</value>
+				<value>GUID b1875168-418d-4be5-a667-22aadb6cc445</value>
+				<value>GUID 47cbc511-657d-43b1-88f2-ec9ecc6ca2ac</value>
+				<value>GUID 988adedc-d927-4276-a520-97da82054b0e</value>
+				<value>GUID 45b34476-15eb-49ab-ba05-2c350d61ee21</value>
+				<value>GUID e0b1e8e9-8254-4368-b06b-0562db5bb2a9</value>
+				<value>GUID 84c3e37b-7d2c-4857-9449-03e79c5615d8</value>
+				<value>GUID bd8a9583-083d-4374-bcea-2b3676973124</value>
+				<value>GUID 0214c3bf-e871-4443-8b74-cf5c74ea262a</value>
+				<value>GUID 0c40d603-7b3e-4254-9324-3a5b8806fbb9</value>
+				<value>GUID 8def5c31-f29b-4785-b9b3-e0b67758ffdc</value>
 			</AggregatesList>
 		</CGIClassChart>
 		<CGIBox type="e">
@@ -543,7 +552,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">4.83333 0 0 6.10606 14 20 </m_transform>
+			<m_transform type="a">4.92593 0 0 9.33333 14 20 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -590,7 +599,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1.63461 0 0 10.75 -50.4616 -603 </m_transform>
+			<m_transform type="a">1.67307 0 0 15.75 -56.3078 -837 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 48 60  672 60  672 132  48 132  </m_points>
 		</CGIFreeShape>
@@ -663,7 +672,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1 0 0 </m_transform>
+			<m_transform type="a">1.02353 0 0 1 -0.564705 0 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 24 156  1044 156  1044 240  24 240  </m_points>
 		</CGIFreeShape>
@@ -692,70 +701,9 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 0.933333 0 104 </m_transform>
+			<m_transform type="a">1 0 0 0.933333 0 272 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 448 570  652 570  652 750  448 750  </m_points>
-		</CGIFreeShape>
-		<CGIFreeShape type="e">
-			<_id type="a">GUID 412c3b48-dfe9-4158-a872-381c7db9e252</_id>
-			<_properties type="p"><IPropertyContainer type="e">
-				<Subjects type="c">
-					<IRPYRawContainer type="e">
-						<size type="a">1</size>
-						<IPropertySubject type="e">
-							<_Name type="a">Format</_Name>
-							<Metaclasses type="c">
-								<IRPYRawContainer type="e">
-									<size type="a">1</size>
-									<IPropertyMetaclass type="e">
-										<_Name type="a">Rectangle</_Name>
-										<Properties type="c">
-											<IRPYRawContainer type="e">
-												<size type="a">1</size>
-												<IProperty type="e">
-													<_Name type="a">Fill.FillColor</_Name>
-													<_Value type="a">255,0,0</_Value>
-													<_Type type="a">Color</_Type>
-												</IProperty>
-												
-											</IRPYRawContainer>
-										</Properties>
-									</IPropertyMetaclass>
-									
-								</IRPYRawContainer>
-							</Metaclasses>
-						</IPropertySubject>
-						
-					</IRPYRawContainer>
-				</Subjects>
-			</IPropertyContainer>
-			</_properties>
-			<m_type type="a">185</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.944444 0 0 1.85714 28.6667 -262.286 </m_transform>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_points type="a">4 444 390  660 390  660 474  444 474  </m_points>
 		</CGIFreeShape>
 		<CGIFreeShape type="e">
 			<_id type="a">GUID 627156b7-a691-42ee-9111-a46cbe0f75b2</_id>
@@ -814,7 +762,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1.25 0 0 1 -17 6 </m_transform>
+			<m_transform type="a">1.27941 0 0 1 -22.0588 6 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 36 36  852 36  852 108  36 108  </m_points>
 		</CGIFreeShape>
@@ -843,7 +791,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1.2 124 -145.2 </m_transform>
+			<m_transform type="a">1 0 0 1.2 132 -145.2 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 336 156  516 156  516 216  336 216  </m_points>
 		</CGIFreeShape>
@@ -875,14 +823,6 @@
 			<m_drawBehavior type="a">4096</m_drawBehavior>
 			<m_transform type="a">0.175781 0 0 0.125 460 22.5 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_pImageViewData type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">OMGEElement</_hm2Class>
-					<_hsubsystem type="a">InitiateSystem</_hsubsystem>
-					<_hname type="a">CGIImageData</_hname>
-					<_hid type="a">GUID bde7ea04-a8f4-48bb-acda-0fb8459f9004</_hid>
-				</IHandle>
-			</m_pImageViewData>
 			<m_points type="a">4 0 156  1024 156  1024 732  0 732  </m_points>
 		</CGIImage>
 		<CGIFreeShape type="e">
@@ -1125,7 +1065,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 925 84.126 </m_transform>
+			<m_transform type="a">0.000126238 0 0 0.000113298 933 84.126 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -1223,7 +1163,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 999 84.126 </m_transform>
+			<m_transform type="a">0.000126238 0 0 0.000113298 1007 84.126 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -1338,7 +1278,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00194212 0 0 0.0010894 448 259.214 </m_transform>
+			<m_transform type="a">0.00194212 0 0 0.0010894 448 427.214 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -1439,7 +1379,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00194212 0 0 0.000278887 448 402.311 </m_transform>
+			<m_transform type="a">0.00194212 0 0 0.000278887 448 570.311 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -1496,7 +1436,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1 -8 288 </m_transform>
+			<m_transform type="a">1 0 0 1 -8 456 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">2 36 156  1056 156  </m_points>
 		</CGIFreeShape>
@@ -1579,7 +1519,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00163138 0 0 0.000261457 676 72.2914 </m_transform>
+			<m_transform type="a">0.00163138 0 0 0.000261457 684 72.2914 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -1674,7 +1614,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00163138 0 0 0.000679786 868 252.757 </m_transform>
+			<m_transform type="a">0.00163138 0 0 0.000679786 868 420.757 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -1704,7 +1644,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">Beginthecharging</m_csButtonCaption>
+			<m_csButtonCaption type="a">Begin Charging</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID 5c99a13d-5d04-4131-9df3-ab65ac7f35c4</_id>
@@ -1769,7 +1709,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00163138 0 0 0.000679786 676 348.757 </m_transform>
+			<m_transform type="a">0.00163138 0 0 0.000679786 676 516.757 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -1799,7 +1739,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">StartTheCharging</m_csButtonCaption>
+			<m_csButtonCaption type="a">Start Charging</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID 8aa15c03-4063-47f2-8536-e46393e50859</_id>
@@ -1864,7 +1804,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00163138 0 0 0.000679786 676 252.757 </m_transform>
+			<m_transform type="a">0.00163138 0 0 0.000679786 676 420.757 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -1894,7 +1834,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">InitiateCharging</m_csButtonCaption>
+			<m_csButtonCaption type="a">Initiate Charging System</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID 8c77a82e-d8cb-4e4b-a247-7f15cbef05a4</_id>
@@ -1959,7 +1899,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00163138 0 0 0.000679786 868 348.757 </m_transform>
+			<m_transform type="a">0.00163138 0 0 0.000679786 868 516.757 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -1989,7 +1929,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">EndCharging</m_csButtonCaption>
+			<m_csButtonCaption type="a">End Charging</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID a64374f6-d2d8-4877-8b63-dce6634b08bf</_id>
@@ -2054,7 +1994,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00166052 0 0 0.000679786 60 246.757 </m_transform>
+			<m_transform type="a">0.00168965 0 0 0.000679786 48 426.757 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -2084,7 +2024,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">InitiateParkingProcess</m_csButtonCaption>
+			<m_csButtonCaption type="a">Initiate Parking Process</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID f86c7ab3-3507-47fe-b5e5-9376923f0fc6</_id>
@@ -2149,7 +2089,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00168965 0 0 0.000679786 243 348.757 </m_transform>
+			<m_transform type="a">0.00168965 0 0 0.000679786 243 522.757 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -2179,7 +2119,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">EndParking</m_csButtonCaption>
+			<m_csButtonCaption type="a">End Parking</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID 95e9af1d-50b5-4fb5-9f29-d5a155c67c89</_id>
@@ -2244,7 +2184,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00166052 0 0 0.000679786 245 252.757 </m_transform>
+			<m_transform type="a">0.00168965 0 0 0.000679786 243 426.757 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -2274,7 +2214,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">ChangeMode</m_csButtonCaption>
+			<m_csButtonCaption type="a">Change Mode of Truck</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID 182a48f8-6ee2-46e9-83b7-4fad4a9b47be</_id>
@@ -2294,7 +2234,7 @@
 												<size type="a">1</size>
 												<IProperty type="e">
 													<_Name type="a">ButtonFont</_Name>
-													<_Value type="a">Segoe UI Semilight 10 NoBold NoItalic</_Value>
+													<_Value type="a"> 12 NoBold NoItalic</_Value>
 													<_Type type="a">String</_Type>
 												</IProperty>
 												
@@ -2339,7 +2279,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00194212 0 0 0.000888951 448 504.99 </m_transform>
+			<m_transform type="a">0.00194212 0 0 0.000888951 448 672.99 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -2369,7 +2309,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">AlertDCManager</m_csButtonCaption>
+			<m_csButtonCaption type="a">Alert DC Manager </m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIActiveX type="e">
 			<_id type="a">GUID 97eaf6bc-21a2-4c6b-b313-f2f23c7233dc</_id>
@@ -2389,7 +2329,7 @@
 												<size type="a">1</size>
 												<IProperty type="e">
 													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
-													<_Value type="a">BackColor;16777215;BlackWhenOff;0;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;-1;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
 													<_Type type="a">String</_Type>
 												</IProperty>
 												
@@ -2435,7 +2375,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 76 84.126 </m_transform>
+			<m_transform type="a">0.000126238 0 0 0.000113298 67 90.126 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -2485,7 +2425,7 @@
 												<size type="a">1</size>
 												<IProperty type="e">
 													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
-													<_Value type="a">BackColor;16777215;BlackWhenOff;-1;Blinking;-1;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;-1;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
 													<_Type type="a">String</_Type>
 												</IProperty>
 												
@@ -2531,7 +2471,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 228 84.126 </m_transform>
+			<m_transform type="a">0.000126238 0 0 0.000113298 173 90.126 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -2642,7 +2582,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00163138 0 0 0.000366039 66 474.408 </m_transform>
+			<m_transform type="a">0.00163138 0 0 0.000366039 62 630.408 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -2743,7 +2683,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00174791 0 0 0.000278887 244 468.311 </m_transform>
+			<m_transform type="a">0.00174791 0 0 0.000278887 244 636.311 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -2828,7 +2768,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00166052 0 0 0.000679786 58 342.757 </m_transform>
+			<m_transform type="a">0.00168965 0 0 0.000679786 48 522.757 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -2858,7 +2798,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">StartParking</m_csButtonCaption>
+			<m_csButtonCaption type="a">Start Parking</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIButtonArray type="e">
 			<_id type="a">GUID 2cc64f0c-4228-4d50-824f-80dc22e5de0e</_id>
@@ -2929,7 +2869,7 @@
 			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Dock Spot</m_str>
+					<m_str type="a">Select Dock Spot</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2945,7 +2885,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.332345 0 0 0.0807899 63.6685 521.92 </m_transform>
+			<m_transform type="a">0.332345 0 0 0.0807899 63.6685 689.92 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 1 1  1 1115  1084 1115  1084 1  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -2957,7 +2897,7 @@
 &lt;frame name=ButtonArrayItem3&gt;
 &lt;frame name=ButtonArrayItem4&gt;</frameset>
 			<m_csModelObjPath type="a">ANGELSPkg.ANGELS[0].itsDockingProcessBlock.DSInput</m_csModelObjPath>
-			<m_csName type="a">Dock Spot</m_csName>
+			<m_csName type="a">Select Dock Spot</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">2</size>
@@ -3108,7 +3048,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00166051 0 0 0.000679785 57 630.756 </m_transform>
+			<m_transform type="a">0.00166051 0 0 0.000679785 57 798.756 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -3138,7 +3078,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">Autonomousmode</m_csButtonCaption>
+			<m_csButtonCaption type="a">Autonomous Mode</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID 31734240-f299-4f17-ba90-ef264ba144bf</_id>
@@ -3203,7 +3143,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00168965 0 0 0.000732078 52 726.816 </m_transform>
+			<m_transform type="a">0.00168965 0 0 0.000732078 52 894.816 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -3233,7 +3173,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">StartDockingProcedure</m_csButtonCaption>
+			<m_csButtonCaption type="a">Start Docking Process</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID 953de1bb-1d44-42cb-9011-4f150aef7e5d</_id>
@@ -3298,7 +3238,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00168965 0 0 0.000732078 247 636.816 </m_transform>
+			<m_transform type="a">0.00168965 0 0 0.000732078 243 798.816 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -3393,7 +3333,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00174791 0 0 0.000732077 244 726.815 </m_transform>
+			<m_transform type="a">0.00174791 0 0 0.000732077 244 894.815 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -3423,7 +3363,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">EndDocking</m_csButtonCaption>
+			<m_csButtonCaption type="a">End Docking Process</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIActiveX type="e">
 			<_id type="a">GUID 479975ad-d89c-4a11-afd1-bf862b66f3d0</_id>
@@ -3489,7 +3429,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 540 768.126 </m_transform>
+			<m_transform type="a">0.000126238 0 0 0.000113298 540 936.126 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -3546,7 +3486,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1 0 96 </m_transform>
+			<m_transform type="a">1 0 0 1 0 264 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">2 448 618  652 618  </m_points>
 		</CGIFreeShape>
@@ -3625,7 +3565,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">1 0 0 1.05882 -36 49.7647 </m_transform>
+			<m_transform type="a">1 0 0 1.05882 -36 217.765 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_points type="a">4 484 582  707 582  707 616  484 616  </m_points>
 			<m_text type="a">LOADING STATUS</m_text>
@@ -3709,124 +3649,13 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00163138 0 0 0.000278887 676 468.311 </m_transform>
+			<m_transform type="a">0.00163138 0 0 0.000278887 676 642.311 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
 			<m_csModelObjPath type="a">ANGELSPkg.ANGELS[0].itsLoadingProcessBlock.LoadingTime</m_csModelObjPath>
 			<m_csName type="a">Loading Time</m_csName>
-			<m_PartsArray type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">2</size>
-					
-						<IHandle type="e">
-							<_hm2Class type="a">IPart</_hm2Class>
-							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
-							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
-							<_hclass type="a">ANGELS</_hclass>
-							<_hname type="a">itsLoadingProcessBlock</_hname>
-							<_hid type="a">GUID d886c3d1-70da-4573-8ca7-bba5b432d33d</_hid>
-						</IHandle>
-					
-					
-						<IHandle type="e">
-							<_hm2Class type="a">IClass</_hm2Class>
-							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
-							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
-							<_hname type="a">ANGELS</_hname>
-							<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
-						</IHandle>
-					
-				</IRPYRawContainer>
-			</m_PartsArray>
-		</CGIActiveX>
-		<CGIActiveX type="e">
-			<_id type="a">GUID c4af9d84-3396-442d-99d5-d59d787516f1</_id>
-			<_properties type="p"><IPropertyContainer type="e">
-				<Subjects type="c">
-					<IRPYRawContainer type="e">
-						<size type="a">1</size>
-						<IPropertySubject type="e">
-							<_Name type="a">Format</_Name>
-							<Metaclasses type="c">
-								<IRPYRawContainer type="e">
-									<size type="a">2</size>
-									<IPropertyMetaclass type="e">
-										<_Name type="a">DigitalDisplay</_Name>
-										<Properties type="c">
-											<IRPYRawContainer type="e">
-												<size type="a">1</size>
-												<IProperty type="e">
-													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
-													<_Value type="a">BackColor;16777215;DisplayedString;;Style;4;</_Value>
-													<_Type type="a">String</_Type>
-												</IProperty>
-												
-											</IRPYRawContainer>
-										</Properties>
-									</IPropertyMetaclass>
-									
-									<IPropertyMetaclass type="e">
-										<_Name type="a">ValueProperty</_Name>
-										<Properties type="c">
-											<IRPYRawContainer type="e">
-												<size type="a">1</size>
-												<IProperty type="e">
-													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
-													<_Value type="a">BackColor;16777215;DisplayedString;;Style;1;</_Value>
-													<_Type type="a">String</_Type>
-												</IProperty>
-												
-											</IRPYRawContainer>
-										</Properties>
-									</IPropertyMetaclass>
-									
-								</IRPYRawContainer>
-							</Metaclasses>
-						</IPropertySubject>
-						
-					</IRPYRawContainer>
-				</Subjects>
-			</IPropertyContainer>
-			</_properties>
-			<m_type type="a">221</m_type>
-			<m_pModelObject type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAttribute</_hm2Class>
-					<_hfilename type="a">.\LoadingProcessPkg.sbsx</_hfilename>
-					<_hsubsystem type="a">ANGELSPkg::LoadingProcessPkg</_hsubsystem>
-					<_hclass type="a">LoadingProcessBlock</_hclass>
-					<_hname type="a">Doorstatus</_hname>
-					<_hid type="a">GUID 8462b868-eeb6-41c4-9742-a91d13a4f779</_hid>
-				</IHandle>
-			</m_pModelObject>
-			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
-			<m_name type="p">
-				<CGIText type="e">
-					<m_str type="a">Door Status</m_str>
-					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
-					<m_color type="p">
-						<IColor type="e">
-							<m_fgColor type="a">0</m_fgColor>
-							<m_bgColor type="a">0</m_bgColor>
-							<m_bgFlag type="a">0</m_bgFlag>
-						</IColor>
-					</m_color>
-					<m_position type="a">1 0 0  </m_position>
-					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
-					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
-				</CGIText>
-			</m_name>
-			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00163138 0 0 0.000278887 872 468.311 </m_transform>
-			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
-			<m_nNameFormat type="a">0</m_nNameFormat>
-			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
-			<m_csModelObjPath type="a">ANGELSPkg.ANGELS[0].itsLoadingProcessBlock.Doorstatus</m_csModelObjPath>
-			<m_csName type="a">Door Status</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">2</size>
@@ -3937,7 +3766,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.332411 0 0 0.075404 675.667 527.925 </m_transform>
+			<m_transform type="a">0.332411 0 0 0.075404 675.667 695.925 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 1 1  1 1115  1084 1115  1084 1  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -4067,7 +3896,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00168965 0 0 0.000732077 676 636.815 </m_transform>
+			<m_transform type="a">0.00168965 0 0 0.000732077 676 804.815 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -4097,7 +3926,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">StartLoadingProcedure</m_csButtonCaption>
+			<m_csButtonCaption type="a">Start Loading Procedure</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID d7e1ffa2-2d98-4ecb-8268-0314504f5f1b</_id>
@@ -4162,7 +3991,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00168965 0 0 0.000732077 864 636.815 </m_transform>
+			<m_transform type="a">0.00168965 0 0 0.000732077 864 804.815 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -4192,7 +4021,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">LoadingProcess</m_csButtonCaption>
+			<m_csButtonCaption type="a">Loading</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID 1c0959f9-2fcd-4b4b-accc-b465c2a6d7b5</_id>
@@ -4257,7 +4086,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00168965 0 0 0.000732077 676 726.815 </m_transform>
+			<m_transform type="a">0.00168965 0 0 0.000732077 676 894.815 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -4287,7 +4116,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">StopLoadingProcess</m_csButtonCaption>
+			<m_csButtonCaption type="a">Stop Loading Process</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID 47e79d40-4f86-4f16-8d64-068cd6af324e</_id>
@@ -4352,7 +4181,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.00168965 0 0 0.000732077 864 726.815 </m_transform>
+			<m_transform type="a">0.00168965 0 0 0.000732077 864 894.815 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -4382,7 +4211,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">ReturnToDockedState</m_csButtonCaption>
+			<m_csButtonCaption type="a">Return To Docked State</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIActiveX type="e">
 			<_id type="a">GUID c1e4a743-8534-4065-a49c-5984670d29fa</_id>
@@ -4402,7 +4231,7 @@
 												<size type="a">1</size>
 												<IProperty type="e">
 													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
-													<_Value type="a">BackColor;16777215;BlackWhenOff;0;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;-1;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
 													<_Type type="a">String</_Type>
 												</IProperty>
 												
@@ -4448,7 +4277,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
-			<m_transform type="a">0.000126238 0 0 0.000113298 377 78.1262 </m_transform>
+			<m_transform type="a">0.000126238 0 0 0.000113298 404 90.1262 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
 			<m_nNameFormat type="a">0</m_nNameFormat>
@@ -4506,7 +4335,7 @@
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_points type="a">2 660 156  660 816  </m_points>
+			<m_points type="a">2 660 408  660 840  </m_points>
 		</CGIFreeShape>
 		<CGIFreeShape type="e">
 			<_id type="a">GUID b647d3c7-b6ee-4c01-8455-244956e116a8</_id>
@@ -4611,18 +4440,28 @@
 &lt;frame name=ButtonArrayItem1&gt;
 &lt;frame name=ButtonArrayItem2&gt;
 &lt;frame name=ButtonArrayItem3&gt;</frameset>
-			<m_csModelObjPath type="a">ANGELSPkg.ParkingProcessPkg.ParkingSystemBlock[0].ParkingSpot</m_csModelObjPath>
+			<m_csModelObjPath type="a">ANGELSPkg.ANGELS[0].itsParkingSystemBlock.ParkingSpot</m_csModelObjPath>
 			<m_csName type="a">PARKING SPOT</m_csName>
 			<m_PartsArray type="c">
 				<IRPYRawContainer type="e">
-					<size type="a">1</size>
+					<size type="a">2</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hclass type="a">ANGELS</_hclass>
+							<_hname type="a">itsParkingSystemBlock</_hname>
+							<_hid type="a">GUID 0a439fef-7dc7-4e1c-92d0-5b84d6101d39</_hid>
+						</IHandle>
+					
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IClass</_hm2Class>
-							<_hfilename type="a">.\ParkingProcessPkg.sbsx</_hfilename>
-							<_hsubsystem type="a">ANGELSPkg::ParkingProcessPkg</_hsubsystem>
-							<_hname type="a">ParkingSystemBlock</_hname>
-							<_hid type="a">GUID b61a4aaf-a0ac-4e13-802f-fe5b11fb7b99</_hid>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hname type="a">ANGELS</_hname>
+							<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
@@ -4648,6 +4487,8 @@
 			<AggregatesList type="e">
 				<value>GUID 7e5b3aff-7c7d-4da3-a874-26b581abbf16</value>
 				<value>GUID e6a512ba-4f1b-4a3a-80a5-bb4c3da9272e</value>
+				<value>GUID 3c059557-92d4-4774-936f-288fe80246e9</value>
+				<value>GUID d11e0de2-72a6-46bc-a343-6d3ac8953001</value>
 			</AggregatesList>
 		</CGIButtonArray>
 		<CGICompartment type="e">
@@ -4660,6 +4501,20 @@
 		<CGICompartment type="e">
 			<_id type="a">GUID e6a512ba-4f1b-4a3a-80a5-bb4c3da9272e</_id>
 			<m_name type="a">ButtonArrayItem1</m_name>
+			<m_displayOption type="a">All</m_displayOption>
+			<m_bShowInherited type="a">0</m_bShowInherited>
+			<m_bOrdered type="a">0</m_bOrdered>
+		</CGICompartment>
+		<CGICompartment type="e">
+			<_id type="a">GUID 3c059557-92d4-4774-936f-288fe80246e9</_id>
+			<m_name type="a">ButtonArrayItem2</m_name>
+			<m_displayOption type="a">All</m_displayOption>
+			<m_bShowInherited type="a">0</m_bShowInherited>
+			<m_bOrdered type="a">0</m_bOrdered>
+		</CGICompartment>
+		<CGICompartment type="e">
+			<_id type="a">GUID d11e0de2-72a6-46bc-a343-6d3ac8953001</_id>
+			<m_name type="a">ButtonArrayItem3</m_name>
 			<m_displayOption type="a">All</m_displayOption>
 			<m_bShowInherited type="a">0</m_bShowInherited>
 			<m_bOrdered type="a">0</m_bOrdered>
@@ -4706,7 +4561,7 @@
 												<size type="a">1</size>
 												<IProperty type="e">
 													<_Name type="a">ButtonFont</_Name>
-													<_Value type="a">Segoe UI Light 10 NoBold NoItalic</_Value>
+													<_Value type="a"> 11 NoBold NoItalic</_Value>
 													<_Type type="a">String</_Type>
 												</IProperty>
 												
@@ -4771,7 +4626,7 @@
 					
 				</IRPYRawContainer>
 			</m_PartsArray>
-			<m_csButtonCaption type="a">TurnOffANGELS</m_csButtonCaption>
+			<m_csButtonCaption type="a">Turn Off ANGELS</m_csButtonCaption>
 		</CGIMFCCtrl>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID 8c0d2c65-a8a1-4ca6-9793-764a051568ee</_id>
@@ -4791,7 +4646,7 @@
 												<size type="a">1</size>
 												<IProperty type="e">
 													<_Name type="a">ButtonFont</_Name>
-													<_Value type="a">Segoe UI Light 10 NoBold NoItalic</_Value>
+													<_Value type="a"> 11 NoBold NoItalic</_Value>
 													<_Type type="a">String</_Type>
 												</IProperty>
 												
@@ -4884,7 +4739,7 @@
 			</m_name>
 			<m_drawBehavior type="a">4096</m_drawBehavior>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
-			<m_points type="a">2 432 156  432 816  </m_points>
+			<m_points type="a">2 432 408  432 840  </m_points>
 		</CGIFreeShape>
 		<CGIMFCCtrl type="e">
 			<_id type="a">GUID 7374da2e-f158-448b-81bb-a20a0f079281</_id>
@@ -4904,7 +4759,7 @@
 												<size type="a">1</size>
 												<IProperty type="e">
 													<_Name type="a">ButtonFont</_Name>
-													<_Value type="a">Segoe UI Light 10 NoBold NoItalic</_Value>
+													<_Value type="a"> 11 NoBold NoItalic</_Value>
 													<_Type type="a">String</_Type>
 												</IProperty>
 												
@@ -4971,6 +4826,991 @@
 			</m_PartsArray>
 			<m_csButtonCaption type="a">SwitchOffANGELSFunc</m_csButtonCaption>
 		</CGIMFCCtrl>
+		<CGIFreeShape type="e">
+			<_id type="a">GUID a074ab49-d754-4fc9-a345-16ff64622d13</_id>
+			<m_type type="a">183</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">1 0 0 1 0 168 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_points type="a">2 1044 840  24 840  </m_points>
+		</CGIFreeShape>
+		<CGIFreeShape type="e">
+			<_id type="a">GUID b1875168-418d-4be5-a667-22aadb6cc445</_id>
+			<m_type type="a">183</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">8</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_points type="a">2 24 408  1068 408  </m_points>
+		</CGIFreeShape>
+		<CGIActiveX type="e">
+			<_id type="a">GUID 47cbc511-657d-43b1-88f2-ec9ecc6ca2ac</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Led</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;0;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">219</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IState</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">ROOT.EBSActivated</_hname>
+					<_hid type="a">GUID 3d83b612-3e05-445a-91b4-90c3217debc0</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">EBS Activated</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">0.000126238 0 0 0.000113298 286 90.1262 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">ANGELSPkg.ANGELS[0].itsEBS.statechart_1.EBSActivated</m_csModelObjPath>
+			<m_csName type="a">EBS Activated</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">2</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hclass type="a">ANGELS</_hclass>
+							<_hname type="a">itsEBS</_hname>
+							<_hid type="a">GUID 3cfae270-1e92-42d3-9980-9644fef27ad9</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IClass</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hname type="a">ANGELS</_hname>
+							<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+		</CGIActiveX>
+		<CGIActiveX type="e">
+			<_id type="a">GUID 988adedc-d927-4276-a520-97da82054b0e</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Led</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;-1;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">219</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">CollisionWall</_hname>
+					<_hid type="a">GUID f2fca82a-eb5b-4dea-ae5a-2279b446d366</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">Collision with Wall</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">0.000126238 0 0 0.000113298 335 270.126 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">ANGELSPkg.ANGELS[0].itsEBS.CollisionWall</m_csModelObjPath>
+			<m_csName type="a">Collision with Wall</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">2</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hclass type="a">ANGELS</_hclass>
+							<_hname type="a">itsEBS</_hname>
+							<_hid type="a">GUID 3cfae270-1e92-42d3-9980-9644fef27ad9</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IClass</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hname type="a">ANGELS</_hname>
+							<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+		</CGIActiveX>
+		<CGIActiveX type="e">
+			<_id type="a">GUID 45b34476-15eb-49ab-ba05-2c350d61ee21</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Led</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;0;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">219</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">CollisionObstacle</_hname>
+					<_hid type="a">GUID af854434-c1fc-490f-a08a-31afa7297589</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">Collision with Obstacle</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">0.000126238 0 0 0.000113298 589 270.126 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">ANGELSPkg.ANGELS[0].itsEBS.CollisionObstacle</m_csModelObjPath>
+			<m_csName type="a">Collision with Obstacle</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">2</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hclass type="a">ANGELS</_hclass>
+							<_hname type="a">itsEBS</_hname>
+							<_hid type="a">GUID 3cfae270-1e92-42d3-9980-9644fef27ad9</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IClass</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hname type="a">ANGELS</_hname>
+							<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+		</CGIActiveX>
+		<CGIActiveX type="e">
+			<_id type="a">GUID e0b1e8e9-8254-4368-b06b-0562db5bb2a9</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">2</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Led</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;0;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;0;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">219</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">CollisionFence</_hname>
+					<_hid type="a">GUID 265cdbe6-0470-4587-869c-8b3600d0a4f3</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">Collision with Fence</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">0.000126238 0 0 0.000113298 821 270.126 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">ANGELSPkg.ANGELS[0].itsEBS.CollisionFence</m_csModelObjPath>
+			<m_csName type="a">Collision with Fence</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">2</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hclass type="a">ANGELS</_hclass>
+							<_hname type="a">itsEBS</_hname>
+							<_hid type="a">GUID 3cfae270-1e92-42d3-9980-9644fef27ad9</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IClass</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hname type="a">ANGELS</_hname>
+							<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+		</CGIActiveX>
+		<CGIMFCCtrl type="e">
+			<_id type="a">GUID 84c3e37b-7d2c-4857-9449-03e79c5615d8</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">PanelDiagram</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">PushButton</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">ButtonFont</_Name>
+													<_Value type="a"> 11 NoBold NoItalic</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">227</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IReception</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">DefaultMode()</_hname>
+					<_hid type="a">GUID 8a86e21f-235b-4461-84d0-cbe3a187cae5</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">0.0015634 0 0 0.000522912 154 318.582 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">ANGELSPkg.ANGELS[0].itsEBS.DefaultMode</m_csModelObjPath>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">2</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hclass type="a">ANGELS</_hclass>
+							<_hname type="a">itsEBS</_hname>
+							<_hid type="a">GUID 3cfae270-1e92-42d3-9980-9644fef27ad9</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IClass</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hname type="a">ANGELS</_hname>
+							<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+			<m_csButtonCaption type="a">Reset EBS System</m_csButtonCaption>
+		</CGIMFCCtrl>
+		<CGIActiveX type="e">
+			<_id type="a">GUID bd8a9583-083d-4374-bcea-2b3676973124</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">2</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">MatrixDisplay</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;Caption;;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ValueProperty</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;Caption;;Style;5;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">220</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">WeatherStatus</_hname>
+					<_hid type="a">GUID bee6d11c-acf8-4a89-b045-b0ad160f3470</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">Current Weather Status</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">0.00272869 0 0 0.000278887 384 342.311 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">ANGELSPkg.ANGELS[0].itsEBS.WeatherStatus</m_csModelObjPath>
+			<m_csName type="a">Current Weather Status</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">2</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hclass type="a">ANGELS</_hclass>
+							<_hname type="a">itsEBS</_hname>
+							<_hid type="a">GUID 3cfae270-1e92-42d3-9980-9644fef27ad9</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IClass</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hname type="a">ANGELS</_hname>
+							<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+		</CGIActiveX>
+		<CGIButtonArray type="e">
+			<_id type="a">GUID 0214c3bf-e871-4443-8b74-cf5c74ea262a</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">PanelDiagram</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">ButtonArray</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">CompartmentsLayout</_Name>
+													<_Value type="a">Columns</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">226</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAttribute</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">accn</_hname>
+					<_hid type="a">GUID cd77491c-bc85-42dc-bbe0-5b414ec8ee5d</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">Throttle Input</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">0.170822 0 0 0.043088 755.829 329.957 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 1 1  1 1115  1084 1115  1084 1  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<frameset type="a">&lt;frameset cols=50%25,50%25&gt;
+&lt;frame name=ButtonArrayItem0&gt;
+&lt;frame name=ButtonArrayItem1&gt;</frameset>
+			<m_csModelObjPath type="a">ANGELSPkg.ANGELS[0].itsEBS.accn</m_csModelObjPath>
+			<m_csName type="a">Throttle Input</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">2</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hclass type="a">ANGELS</_hclass>
+							<_hname type="a">itsEBS</_hname>
+							<_hid type="a">GUID 3cfae270-1e92-42d3-9980-9644fef27ad9</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IClass</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hname type="a">ANGELS</_hname>
+							<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+			<m_liButtonNames type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">2</size>
+					<value>Stop Truck</value>
+					<value>Start Truck</value>
+				</IRPYRawContainer>
+			</m_liButtonNames>
+			<m_liButtonValues type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">2</size>
+					<value>0</value>
+					<value>1</value>
+				</IRPYRawContainer>
+			</m_liButtonValues>
+			<AggregatesList type="e">
+				<value>GUID 555dc821-59ce-4f06-ba3e-b1ac6e4e0827</value>
+				<value>GUID 31f79176-7ef3-45b1-adf6-f32f7759033c</value>
+			</AggregatesList>
+		</CGIButtonArray>
+		<CGICompartment type="e">
+			<_id type="a">GUID 555dc821-59ce-4f06-ba3e-b1ac6e4e0827</_id>
+			<m_name type="a">ButtonArrayItem0</m_name>
+			<m_displayOption type="a">All</m_displayOption>
+			<m_bShowInherited type="a">0</m_bShowInherited>
+			<m_bOrdered type="a">0</m_bOrdered>
+		</CGICompartment>
+		<CGICompartment type="e">
+			<_id type="a">GUID 31f79176-7ef3-45b1-adf6-f32f7759033c</_id>
+			<m_name type="a">ButtonArrayItem1</m_name>
+			<m_displayOption type="a">All</m_displayOption>
+			<m_bShowInherited type="a">0</m_bShowInherited>
+			<m_bOrdered type="a">0</m_bOrdered>
+		</CGICompartment>
+		<CGIActiveX type="e">
+			<_id type="a">GUID 0c40d603-7b3e-4254-9324-3a5b8806fbb9</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Led</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;-1;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">219</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IState</_hm2Class>
+					<_hfilename type="a">.\LoadingProcessPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::LoadingProcessPkg</_hsubsystem>
+					<_hclass type="a">LoadingProcessBlock</_hclass>
+					<_hname type="a">ROOT.LoadingState</_hname>
+					<_hid type="a">GUID 8b0dbd02-8973-4854-a1a7-ec65447c87fe</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">Loading</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">0.000126238 0 0 0.000113298 886 653.126 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">ANGELSPkg.ANGELS[0].itsLoadingProcessBlock.Loading.LoadingState</m_csModelObjPath>
+			<m_csName type="a">Loading</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">2</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hclass type="a">ANGELS</_hclass>
+							<_hname type="a">itsLoadingProcessBlock</_hname>
+							<_hid type="a">GUID d886c3d1-70da-4573-8ca7-bba5b432d33d</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IClass</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hname type="a">ANGELS</_hname>
+							<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+		</CGIActiveX>
+		<CGIActiveX type="e">
+			<_id type="a">GUID 8def5c31-f29b-4785-b9b3-e0b67758ffdc</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<size type="a">1</size>
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<size type="a">1</size>
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Led</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<size type="a">1</size>
+												<IProperty type="e">
+													<_Name type="a">ActiveXProperties@Child.ActiveXControl</_Name>
+													<_Value type="a">BackColor;16777215;BlackWhenOff;0;Blinking;0;BlinkingTimeMillisec;300;Color;2;State;0;Style;0;</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
+			<m_type type="a">219</m_type>
+			<m_pModelObject type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IState</_hm2Class>
+					<_hfilename type="a">.\LoadingProcessPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::LoadingProcessPkg</_hsubsystem>
+					<_hclass type="a">LoadingProcessBlock</_hclass>
+					<_hname type="a">ROOT.LoadingState.LoadedState</_hname>
+					<_hid type="a">GUID 3a4b9dab-2818-415f-8605-ceeaebc7c980</_hid>
+				</IHandle>
+			</m_pModelObject>
+			<m_pParent type="s">GUID cef9df9a-7370-4ee9-b3d4-a861971387de</m_pParent>
+			<m_name type="p">
+				<CGIText type="e">
+					<m_str type="a">Loaded State</m_str>
+					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
+					<m_color type="p">
+						<IColor type="e">
+							<m_fgColor type="a">0</m_fgColor>
+							<m_bgColor type="a">0</m_bgColor>
+							<m_bgFlag type="a">0</m_bgFlag>
+						</IColor>
+					</m_color>
+					<m_position type="a">1 0 0  </m_position>
+					<m_nIdent type="a">0</m_nIdent>
+					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_nOrientationCtrlPt type="a">1</m_nOrientationCtrlPt>
+				</CGIText>
+			</m_name>
+			<m_drawBehavior type="a">4096</m_drawBehavior>
+			<m_transform type="a">0.000126238 0 0 0.000113298 998 653.126 </m_transform>
+			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
+			<m_polygon type="a">4 0 -1114  0 113628  102980 113628  102980 -1114  </m_polygon>
+			<m_nNameFormat type="a">0</m_nNameFormat>
+			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
+			<m_csModelObjPath type="a">ANGELSPkg.ANGELS[0].itsLoadingProcessBlock.Loading.LoadedState</m_csModelObjPath>
+			<m_csName type="a">Loaded State</m_csName>
+			<m_PartsArray type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">2</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IPart</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hclass type="a">ANGELS</_hclass>
+							<_hname type="a">itsLoadingProcessBlock</_hname>
+							<_hid type="a">GUID d886c3d1-70da-4573-8ca7-bba5b432d33d</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IClass</_hm2Class>
+							<_hfilename type="a">.\ANGELSPkg.sbsx</_hfilename>
+							<_hsubsystem type="a">ANGELSPkg</_hsubsystem>
+							<_hname type="a">ANGELS</_hname>
+							<_hid type="a">GUID 075776b6-cd4e-4ecb-a7e7-71fc7465a272</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</m_PartsArray>
+		</CGIActiveX>
 		
 	</RHAPSODY-MODEL>
 	<OslcLinks type="c">

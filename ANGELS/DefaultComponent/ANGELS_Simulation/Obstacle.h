@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: Obstacle
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\Obstacle.h
 *********************************************************************/
 
@@ -23,6 +23,9 @@
 #include "Collision_Detection.h"
 //## auto_generated
 class ANGELS;
+
+//## auto_generated
+class EBS;
 
 //## package ANGELSPkg::ActorPkg
 

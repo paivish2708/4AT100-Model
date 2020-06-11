@@ -1,5 +1,14 @@
 [Op Calls]
 [Events]
+LoadingProcessBlock[0]->GEN(StopLoadingProc())`LoadingProcessBlock
+LoadingProcessBlock[0]->GEN(LoadingProcess())`LoadingProcessBlock
+LoadingProcessBlock[0]->GEN(StartLoadingProcedure())`LoadingProcessBlock
+ANGELS[0]->itsLoadingProcessBlock->GEN(AlertDCManager())`LoadingProcessBlock
+ChargingSystemBlock[0]->GEN(SwitchOffANGELSFunc())`ChargingSystemBlock
+ChargingSystemBlock[0]->GEN(InitiateChargingProcess())`ChargingSystemBlock
+ChargingSystemBlock[0]->GEN(StartTheCharging())`ChargingSystemBlock
+ChargingSystemBlock[0]->GEN(Beginthecharging())`ChargingSystemBlock
+EBS[0]->GEN(SwitchOnANGELS())`EBS
 DockingProcessBlock[0]->GEN(EndDocking())`ANGELSPkg::DockingPkg::DockingProcessBlock
 DockingProcessBlock[0]->GEN(BeginTruckMovement())`ANGELSPkg::DockingPkg::DockingProcessBlock
 DockingProcessBlock[0]->GEN(DockInput(2))`ANGELSPkg::DockingPkg::DockingProcessBlock

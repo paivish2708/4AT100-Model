@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ChargingSystemBlock_Simulation
 	Model Element	: Obstacle
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ChargingSystemBlock_Simulation\Obstacle.h
 *********************************************************************/
 
@@ -23,6 +23,9 @@
 #include "Collision_Detection.h"
 //## auto_generated
 class ANGELS;
+
+//## auto_generated
+class EBS;
 
 //## package ANGELSPkg::ActorPkg
 

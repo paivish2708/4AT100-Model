@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DockingProcessBlock_Simulation
 	Model Element	: Truck
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\DockingProcessBlock_Simulation\Truck.h
 *********************************************************************/
 
@@ -21,6 +21,12 @@
 #include "TruckPkg.h"
 //## link itsANGELS
 class ANGELS;
+
+//## link itsChargingSystemBlock
+class ChargingSystemBlock;
+
+//## link itsDockingProcessBlock
+class DockingProcessBlock;
 
 //## package ANGELSPkg::TruckPkg
 
@@ -49,6 +55,18 @@ public :
     
     //## auto_generated
     void setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    ChargingSystemBlock* getItsChargingSystemBlock() const;
+    
+    //## auto_generated
+    void setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
+    DockingProcessBlock* getItsDockingProcessBlock() const;
+    
+    //## auto_generated
+    void setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
 
 protected :
 
@@ -58,6 +76,10 @@ protected :
     ////    Relations and components    ////
     
     ANGELS* itsANGELS;		//## link itsANGELS
+    
+    ChargingSystemBlock* itsChargingSystemBlock;		//## link itsChargingSystemBlock
+    
+    DockingProcessBlock* itsDockingProcessBlock;		//## link itsDockingProcessBlock
     
     ////    Framework operations    ////
 
@@ -71,6 +93,24 @@ public :
     
     //## auto_generated
     void _clearItsANGELS();
+    
+    //## auto_generated
+    void __setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
+    void _setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
+    void _clearItsChargingSystemBlock();
+    
+    //## auto_generated
+    void __setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    void _setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    void _clearItsDockingProcessBlock();
 };
 
 #ifdef _OMINSTRUMENT

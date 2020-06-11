@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: LoadingSystemPkg
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\LoadingSystemPkg.h
 *********************************************************************/
 
@@ -20,7 +20,7 @@
 //## auto_generated
 #include "ANGELSPkg.h"
 //## auto_generated
-class LoadingSystem;
+class LoadingSystemBlock;
 
 //## package ANGELSPkg::LoadingSystemPkg
 

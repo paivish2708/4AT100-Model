@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: ANGELS
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\ANGELS.h
 *********************************************************************/
 
@@ -33,6 +33,8 @@
 #include "ChargingSystemBlock.h"
 //## classInstance itsDockingProcessBlock
 #include "DockingProcessBlock.h"
+//## classInstance itsEBS
+#include "EBS.h"
 //## classInstance itsLoadingProcessBlock
 #include "LoadingProcessBlock.h"
 //## classInstance itsParkingSystemBlock
@@ -213,6 +215,9 @@ public :
     void setItsDriver(Driver* p_Driver);
     
     //## auto_generated
+    EBS* getItsEBS() const;
+    
+    //## auto_generated
     Environment* getItsEnvironment() const;
     
     //## auto_generated
@@ -314,6 +319,8 @@ protected :
     DockingSystem* itsDockingSystem;		//## link itsDockingSystem
     
     Driver* itsDriver;		//## link itsDriver
+    
+    EBS itsEBS;		//## classInstance itsEBS
     
     Environment* itsEnvironment;		//## link itsEnvironment
     

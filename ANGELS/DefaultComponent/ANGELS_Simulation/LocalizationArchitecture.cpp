@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: LocalizationArchitecture
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Tue, 9, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\LocalizationArchitecture.cpp
 *********************************************************************/
 

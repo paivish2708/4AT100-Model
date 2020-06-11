@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ChargingSystemBlock_Simulation
 	Model Element	: ChargingSystemBlock
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ChargingSystemBlock_Simulation\ChargingSystemBlock.h
 *********************************************************************/
 
@@ -27,8 +27,6 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
-//## classInstance itsTruck
-#include "Truck.h"
 //## link itsANGELS
 class ANGELS;
 
@@ -46,6 +44,9 @@ class DockingProcessBlock;
 
 //## link itsLoadingProcessBlock
 class LoadingProcessBlock;
+
+//## link itsTruck
+class Truck;
 
 //## package ANGELSPkg::ChargingSystemPkg
 
@@ -120,6 +121,9 @@ public :
     Truck* getItsTruck() const;
     
     //## auto_generated
+    void setItsTruck(Truck* p_Truck);
+    
+    //## auto_generated
     virtual bool startBehavior();
 
 protected :
@@ -154,7 +158,7 @@ protected :
     
     LoadingProcessBlock* itsLoadingProcessBlock;		//## link itsLoadingProcessBlock
     
-    Truck itsTruck;		//## classInstance itsTruck
+    Truck* itsTruck;		//## link itsTruck
     
     ////    Framework operations    ////
 
@@ -205,6 +209,15 @@ public :
     //## auto_generated
     void _clearItsLoadingProcessBlock();
     
+    //## auto_generated
+    void __setItsTruck(Truck* p_Truck);
+    
+    //## auto_generated
+    void _setItsTruck(Truck* p_Truck);
+    
+    //## auto_generated
+    void _clearItsTruck();
+    
     // rootState:
     //## statechart_method
     inline bool rootState_IN() const;
@@ -240,6 +253,9 @@ public :
     // ChargingMode:
     //## statechart_method
     inline bool ChargingMode_IN() const;
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus ChargingMode_handleEvent();
     
     // ChargedState:
     //## statechart_method

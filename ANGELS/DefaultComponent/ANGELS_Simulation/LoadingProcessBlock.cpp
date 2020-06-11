@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: LoadingProcessBlock
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\LoadingProcessBlock.cpp
 *********************************************************************/
 
@@ -16,6 +16,8 @@
 
 //## auto_generated
 #include "LoadingProcessBlock.h"
+//## event SwitchOffANGELSFunc()
+#include "ANGELSPkg.h"
 //## link itsChargingSystemBlock
 #include "ChargingSystemBlock.h"
 //## link itsDC
@@ -27,9 +29,13 @@
 //#[ ignore
 #define ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_LoadingProcessBlock_SERIALIZE OM_NO_OP
 
+#define ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_DoorState_SERIALIZE OM_NO_OP
+
 #define ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_LoadingProcess_SERIALIZE OM_NO_OP
 
 #define ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_OpenDoors_SERIALIZE aomsmethod->addAttribute("Doorstate", x2String(Doorstate));
+
+#define ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_Operation_6_SERIALIZE OM_NO_OP
 
 #define ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_StoptheTruck_SERIALIZE aomsmethod->addAttribute("speed", x2String(speed));
 
@@ -57,6 +63,16 @@ LoadingProcessBlock::~LoadingProcessBlock() {
     cancelTimeouts();
 }
 
+void LoadingProcessBlock::DoorState() {
+    NOTIFY_OPERATION(DoorState, DoorState(), 0, ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_DoorState_SERIALIZE);
+    //#[ operation DoorState()
+    if (Doorstatus==0)
+    {Doorstatus=1;}
+    else
+    {Doorstatus=1;}
+    //#]
+}
+
 void LoadingProcessBlock::LoadingProcess() {
     NOTIFY_OPERATION(LoadingProcess, LoadingProcess(), 0, ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_LoadingProcess_SERIALIZE);
     //#[ operation LoadingProcess()
@@ -68,6 +84,12 @@ void LoadingProcessBlock::OpenDoors(RhpBoolean Doorstate) {
     //#[ operation OpenDoors(RhpBoolean)
     if (Doorstatus != Doorstate)
     {Doorstatus=1;}
+    //#]
+}
+
+void LoadingProcessBlock::Operation_6() {
+    NOTIFY_OPERATION(Operation_6, Operation_6(), 0, ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_Operation_6_SERIALIZE);
+    //#[ operation Operation_6()
     //#]
 }
 
@@ -352,7 +374,35 @@ IOxfReactive::TakeEventStatus LoadingProcessBlock::rootState_processEvent() {
         // State LoadedState
         case LoadedState:
         {
-            if(IS_EVENT_TYPE_OF(ReturnToDockedState_LoadingProcessPkg_ANGELSPkg_id))
+            if(IS_EVENT_TYPE_OF(SwitchOffANGELSFunc_ANGELSPkg_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("9");
+                    switch (LoadingState_subState) {
+                        // State LoadedState
+                        case LoadedState:
+                        {
+                            NOTIFY_STATE_EXITED("ROOT.LoadingState.LoadedState");
+                        }
+                        break;
+                        // State StartLoading
+                        case StartLoading:
+                        {
+                            cancel(LoadingState_timeout);
+                            NOTIFY_STATE_EXITED("ROOT.LoadingState.StartLoading");
+                        }
+                        break;
+                        default:
+                            break;
+                    }
+                    LoadingState_subState = OMNonState;
+                    NOTIFY_STATE_EXITED("ROOT.LoadingState");
+                    NOTIFY_STATE_ENTERED("ROOT.terminationstate_9");
+                    rootState_subState = terminationstate_9;
+                    rootState_active = terminationstate_9;
+                    NOTIFY_TRANSITION_TERMINATED("9");
+                    res = eventConsumed;
+                }
+            else if(IS_EVENT_TYPE_OF(ReturnToDockedState_LoadingProcessPkg_ANGELSPkg_id))
                 {
                     NOTIFY_TRANSITION_STARTED("4");
                     switch (LoadingState_subState) {
@@ -396,6 +446,9 @@ IOxfReactive::TakeEventStatus LoadingProcessBlock::rootState_processEvent() {
                     NOTIFY_STATE_ENTERED("ROOT.LoadingState.LoadedState");
                     LoadingState_subState = LoadedState;
                     rootState_active = LoadedState;
+                    //#[ state LoadingState.LoadedState.(Entry) 
+                    DoorState();
+                    //#]
                     NOTIFY_TRANSITION_TERMINATED("1");
                     res = eventConsumed;
                 }
@@ -412,7 +465,7 @@ IOxfReactive::TakeEventStatus LoadingProcessBlock::rootState_processEvent() {
                             NOTIFY_STATE_ENTERED("ROOT.LoadingState.StartLoading");
                             LoadingState_subState = StartLoading;
                             rootState_active = StartLoading;
-                            LoadingState_timeout = scheduleTimeout(100, "ROOT.LoadingState.StartLoading");
+                            LoadingState_timeout = scheduleTimeout(1000, "ROOT.LoadingState.StartLoading");
                             NOTIFY_TRANSITION_TERMINATED("7");
                             res = eventConsumed;
                         }
@@ -482,7 +535,7 @@ void LoadingProcessBlock::LoadingState_entDef() {
     NOTIFY_STATE_ENTERED("ROOT.LoadingState.StartLoading");
     LoadingState_subState = StartLoading;
     rootState_active = StartLoading;
-    LoadingState_timeout = scheduleTimeout(100, "ROOT.LoadingState.StartLoading");
+    LoadingState_timeout = scheduleTimeout(1000, "ROOT.LoadingState.StartLoading");
     NOTIFY_TRANSITION_TERMINATED("6");
 }
 

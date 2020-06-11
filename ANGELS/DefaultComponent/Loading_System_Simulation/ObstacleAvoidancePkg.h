@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: ObstacleAvoidancePkg
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\ObstacleAvoidancePkg.h
 *********************************************************************/
 
@@ -22,7 +22,7 @@
 //## auto_generated
 class Collision_Avoidance;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ObstacleAvoidancePkg
+//## package ANGELSPkg::ObstacleAvoidancePkg
 
 
 

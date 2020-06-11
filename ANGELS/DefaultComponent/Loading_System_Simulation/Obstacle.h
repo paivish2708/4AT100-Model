@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: Obstacle
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\Obstacle.h
 *********************************************************************/
 
@@ -19,13 +19,18 @@
 #include <aom\aom.h>
 //## auto_generated
 #include "ActorPkg.h"
-//## link itsCollision_Detection_1
-class Collision_Detection;
+//## actor Obstacle
+#include "Collision_Detection.h"
+//## auto_generated
+class ANGELS;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## auto_generated
+class EBS;
+
+//## package ANGELSPkg::ActorPkg
 
 //## actor Obstacle
-class Obstacle {
+class Obstacle : public Collision_Detection {
     ////    Friends    ////
     
 public :
@@ -45,6 +50,24 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
+    ANGELS* getItsANGELS() const;
+    
+    //## auto_generated
+    void setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    ANGELS* getItsANGELS_1() const;
+    
+    //## auto_generated
+    void setItsANGELS_1(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    ANGELS* getItsANGELS_2() const;
+    
+    //## auto_generated
+    void setItsANGELS_2(ANGELS* p_ANGELS);
+    
+    //## auto_generated
     Collision_Detection* getItsCollision_Detection_1() const;
     
     //## auto_generated
@@ -57,6 +80,12 @@ protected :
     
     ////    Relations and components    ////
     
+    ANGELS* itsANGELS;		//## link itsANGELS
+    
+    ANGELS* itsANGELS_1;		//## link itsANGELS_1
+    
+    ANGELS* itsANGELS_2;		//## link itsANGELS_2
+    
     Collision_Detection* itsCollision_Detection_1;		//## link itsCollision_Detection_1
     
     ////    Framework operations    ////
@@ -64,24 +93,26 @@ protected :
 public :
 
     //## auto_generated
-    void __setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);
+    void __setItsANGELS_2(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);
+    void _setItsANGELS_2(ANGELS* p_ANGELS);
     
     //## auto_generated
-    void _clearItsCollision_Detection_1();
+    void _clearItsANGELS_2();
 };
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedObstacle : virtual public AOMInstance {
+class OMAnimatedObstacle : public OMAnimatedCollision_Detection {
     DECLARE_META(Obstacle, OMAnimatedObstacle)
     
     ////    Framework operations    ////
     
 public :
 
+    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
+    
     virtual void serializeRelations(AOMSRelations* aomsRelations) const;
 };
 //#]

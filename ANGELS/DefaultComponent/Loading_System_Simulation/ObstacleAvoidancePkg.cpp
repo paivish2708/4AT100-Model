@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: ObstacleAvoidancePkg
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\ObstacleAvoidancePkg.cpp
 *********************************************************************/
 
@@ -16,13 +16,13 @@
 #include "ObstacleAvoidancePkg.h"
 //## auto_generated
 #include "Collision_Avoidance.h"
-//## package UseCaseAnalysisPkg::ANGELSPkg::ObstacleAvoidancePkg
+//## package ANGELSPkg::ObstacleAvoidancePkg
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_ANGELSPkg_ObstacleAvoidancePkg, UseCaseAnalysisPkg::ANGELSPkg::ObstacleAvoidancePkg)
+IMPLEMENT_META_PACKAGE(ANGELSPkg_ObstacleAvoidancePkg, ANGELSPkg::ObstacleAvoidancePkg)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }

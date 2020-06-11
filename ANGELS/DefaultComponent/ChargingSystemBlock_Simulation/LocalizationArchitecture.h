@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ChargingSystemBlock_Simulation
 	Model Element	: LocalizationArchitecture
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ChargingSystemBlock_Simulation\LocalizationArchitecture.h
 *********************************************************************/
 
@@ -18,11 +18,11 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include "ANGELSPkg.h"
+#include "LocalisationPkg.h"
 //## link itsANGELS_1
 class ANGELS;
 
-//## package ANGELSPkg
+//## package ANGELSPkg::LocalisationPkg
 
 //## class LocalizationArchitecture
 class LocalizationArchitecture {

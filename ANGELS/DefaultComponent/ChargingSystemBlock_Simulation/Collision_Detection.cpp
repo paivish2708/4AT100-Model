@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ChargingSystemBlock_Simulation
 	Model Element	: Collision_Detection
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ChargingSystemBlock_Simulation\Collision_Detection.cpp
 *********************************************************************/
 
@@ -16,6 +16,8 @@
 #include "Collision_Detection.h"
 //## link itsANGELS
 #include "ANGELS.h"
+//## link itsEBS
+#include "EBS.h"
 //#[ ignore
 #define ANGELSPkg_ObstacleDetectionPkg_Collision_Detection_Collision_Detection_SERIALIZE OM_NO_OP
 //#]
@@ -26,6 +28,7 @@
 Collision_Detection::Collision_Detection() {
     NOTIFY_CONSTRUCTOR(Collision_Detection, Collision_Detection(), 0, ANGELSPkg_ObstacleDetectionPkg_Collision_Detection_Collision_Detection_SERIALIZE);
     itsANGELS = NULL;
+    itsEBS = NULL;
 }
 
 Collision_Detection::~Collision_Detection() {
@@ -45,6 +48,18 @@ void Collision_Detection::setItsANGELS(ANGELS* p_ANGELS) {
     _setItsANGELS(p_ANGELS);
 }
 
+EBS* Collision_Detection::getItsEBS() const {
+    return itsEBS;
+}
+
+void Collision_Detection::setItsEBS(EBS* p_EBS) {
+    if(p_EBS != NULL)
+        {
+            p_EBS->_setItsCollision_Detection(this);
+        }
+    _setItsEBS(p_EBS);
+}
+
 void Collision_Detection::cleanUpRelations() {
     if(itsANGELS != NULL)
         {
@@ -55,6 +70,16 @@ void Collision_Detection::cleanUpRelations() {
                     itsANGELS->__setItsCollision_Detection(NULL);
                 }
             itsANGELS = NULL;
+        }
+    if(itsEBS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+            Collision_Detection* p_Collision_Detection = itsEBS->getItsCollision_Detection();
+            if(p_Collision_Detection != NULL)
+                {
+                    itsEBS->__setItsCollision_Detection(NULL);
+                }
+            itsEBS = NULL;
         }
 }
 
@@ -83,6 +108,31 @@ void Collision_Detection::_clearItsANGELS() {
     itsANGELS = NULL;
 }
 
+void Collision_Detection::__setItsEBS(EBS* p_EBS) {
+    itsEBS = p_EBS;
+    if(p_EBS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsEBS", p_EBS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+        }
+}
+
+void Collision_Detection::_setItsEBS(EBS* p_EBS) {
+    if(itsEBS != NULL)
+        {
+            itsEBS->__setItsCollision_Detection(NULL);
+        }
+    __setItsEBS(p_EBS);
+}
+
+void Collision_Detection::_clearItsEBS() {
+    NOTIFY_RELATION_CLEARED("itsEBS");
+    itsEBS = NULL;
+}
+
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedCollision_Detection::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -90,6 +140,11 @@ void OMAnimatedCollision_Detection::serializeRelations(AOMSRelations* aomsRelati
     if(myReal->itsANGELS)
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS);
+        }
+    aomsRelations->addRelation("itsEBS", false, true);
+    if(myReal->itsEBS)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsEBS);
         }
 }
 //#]

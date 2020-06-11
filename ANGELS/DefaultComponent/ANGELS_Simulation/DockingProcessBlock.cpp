@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: DockingProcessBlock
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\DockingProcessBlock.cpp
 *********************************************************************/
 
@@ -20,6 +20,8 @@
 #include "DCOperator.h"
 //## auto_generated
 #include "DockingProcessBlock.h"
+//## event SwitchOffANGELS()
+#include "ANGELSPkg.h"
 //## link itsChargingSystemBlock_1
 #include "ChargingSystemBlock.h"
 //## link itsDC
@@ -323,7 +325,6 @@ double DockingProcessBlock::getSpeed() const {
 
 void DockingProcessBlock::setSpeed(double p_Speed) {
     Speed = p_Speed;
-    NOTIFY_SET_OPERATION;
 }
 
 double DockingProcessBlock::getSteerAngle() const {
@@ -533,65 +534,7 @@ IOxfReactive::TakeEventStatus DockingProcessBlock::rootState_processEvent() {
         // State MoveTheTruck
         case MoveTheTruck:
         {
-            if(IS_EVENT_TYPE_OF(EndDocking_DockingPkg_ANGELSPkg_id))
-                {
-                    NOTIFY_TRANSITION_STARTED("6");
-                    switch (Docking_subState) {
-                        // State MoveTheTruck
-                        case MoveTheTruck:
-                        {
-                            cancel(Docking_timeout);
-                            //#[ state Docking.MoveTheTruck.(Exit) 
-                            CheckDockingStatus();
-                            //#]
-                            NOTIFY_STATE_EXITED("ROOT.Docking.MoveTheTruck");
-                        }
-                        break;
-                        // State BeginMovement
-                        case BeginMovement:
-                        {
-                            NOTIFY_STATE_EXITED("ROOT.Docking.BeginMovement");
-                        }
-                        break;
-                        default:
-                            break;
-                    }
-                    Docking_subState = OMNonState;
-                    NOTIFY_STATE_EXITED("ROOT.Docking");
-                    //#[ transition 6 
-                    MoveTruck(0,0,1);
-                    //#]
-                    NOTIFY_STATE_ENTERED("ROOT.IdleTruck");
-                    pushNullTransition();
-                    rootState_subState = IdleTruck;
-                    rootState_active = IdleTruck;
-                    NOTIFY_TRANSITION_TERMINATED("6");
-                    res = eventConsumed;
-                }
-            else if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
-                {
-                    if(getCurrentEvent() == Docking_timeout)
-                        {
-                            NOTIFY_TRANSITION_STARTED("5");
-                            cancel(Docking_timeout);
-                            //#[ state Docking.MoveTheTruck.(Exit) 
-                            CheckDockingStatus();
-                            //#]
-                            NOTIFY_STATE_EXITED("ROOT.Docking.MoveTheTruck");
-                            //#[ transition 5 
-                            CheckDockingStatus();
-                            DockingTime++;
-                            //#]
-                            NOTIFY_STATE_ENTERED("ROOT.Docking.MoveTheTruck");
-                            Docking_subState = MoveTheTruck;
-                            rootState_active = MoveTheTruck;
-                            Docking_timeout = scheduleTimeout(1000, "ROOT.Docking.MoveTheTruck");
-                            NOTIFY_TRANSITION_TERMINATED("5");
-                            res = eventConsumed;
-                        }
-                }
-            
-            
+            res = MoveTheTruck_handleEvent();
         }
         break;
         // State BeginMovement
@@ -644,6 +587,101 @@ void DockingProcessBlock::Docking_entDef() {
     Docking_subState = BeginMovement;
     rootState_active = BeginMovement;
     NOTIFY_TRANSITION_TERMINATED("3");
+}
+
+IOxfReactive::TakeEventStatus DockingProcessBlock::MoveTheTruck_handleEvent() {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    if(IS_EVENT_TYPE_OF(SwitchOffANGELSFunc_ANGELSPkg_id))
+        {
+            NOTIFY_TRANSITION_STARTED("8");
+            switch (Docking_subState) {
+                // State MoveTheTruck
+                case MoveTheTruck:
+                {
+                    cancel(Docking_timeout);
+                    //#[ state Docking.MoveTheTruck.(Exit) 
+                    CheckDockingStatus();
+                    //#]
+                    NOTIFY_STATE_EXITED("ROOT.Docking.MoveTheTruck");
+                }
+                break;
+                // State BeginMovement
+                case BeginMovement:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.Docking.BeginMovement");
+                }
+                break;
+                default:
+                    break;
+            }
+            Docking_subState = OMNonState;
+            NOTIFY_STATE_EXITED("ROOT.Docking");
+            NOTIFY_STATE_ENTERED("ROOT.terminationstate_7");
+            rootState_subState = terminationstate_7;
+            rootState_active = terminationstate_7;
+            NOTIFY_TRANSITION_TERMINATED("8");
+            res = eventConsumed;
+        }
+    else if(IS_EVENT_TYPE_OF(EndDocking_DockingPkg_ANGELSPkg_id))
+        {
+            NOTIFY_TRANSITION_STARTED("6");
+            switch (Docking_subState) {
+                // State MoveTheTruck
+                case MoveTheTruck:
+                {
+                    cancel(Docking_timeout);
+                    //#[ state Docking.MoveTheTruck.(Exit) 
+                    CheckDockingStatus();
+                    //#]
+                    NOTIFY_STATE_EXITED("ROOT.Docking.MoveTheTruck");
+                }
+                break;
+                // State BeginMovement
+                case BeginMovement:
+                {
+                    NOTIFY_STATE_EXITED("ROOT.Docking.BeginMovement");
+                }
+                break;
+                default:
+                    break;
+            }
+            Docking_subState = OMNonState;
+            NOTIFY_STATE_EXITED("ROOT.Docking");
+            //#[ transition 6 
+            MoveTruck(0,0,1);
+            //#]
+            NOTIFY_STATE_ENTERED("ROOT.IdleTruck");
+            pushNullTransition();
+            rootState_subState = IdleTruck;
+            rootState_active = IdleTruck;
+            NOTIFY_TRANSITION_TERMINATED("6");
+            res = eventConsumed;
+        }
+    else if(IS_EVENT_TYPE_OF(OMTimeoutEventId))
+        {
+            if(getCurrentEvent() == Docking_timeout)
+                {
+                    NOTIFY_TRANSITION_STARTED("5");
+                    cancel(Docking_timeout);
+                    //#[ state Docking.MoveTheTruck.(Exit) 
+                    CheckDockingStatus();
+                    //#]
+                    NOTIFY_STATE_EXITED("ROOT.Docking.MoveTheTruck");
+                    //#[ transition 5 
+                    CheckDockingStatus();
+                    DockingTime++;
+                    //#]
+                    NOTIFY_STATE_ENTERED("ROOT.Docking.MoveTheTruck");
+                    Docking_subState = MoveTheTruck;
+                    rootState_active = MoveTheTruck;
+                    Docking_timeout = scheduleTimeout(1000, "ROOT.Docking.MoveTheTruck");
+                    NOTIFY_TRANSITION_TERMINATED("5");
+                    res = eventConsumed;
+                }
+        }
+    
+    
+    return res;
 }
 
 #ifdef _OMINSTRUMENT

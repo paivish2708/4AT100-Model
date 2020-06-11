@@ -11,7 +11,7 @@
 			<_id type="a">GUID 661c23ef-e37c-4d88-8aea-2af717860b40</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ObstacleDetectionPkg</_name>
-			<_modifiedTimeWeak type="a">5.18.2020::10:35:59</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:19</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -21,8 +21,8 @@
 					<_hid type="a">GUID 58673645-b6cb-4922-86fc-9d3cdafdd2c4</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.18.2020::10:35:59</_modifiedTime>
-			<weakCGTime type="a">5.18.2020::10:35:59</weakCGTime>
+			<_modifiedTime type="a">6.11.2020::8:20:37</_modifiedTime>
+			<weakCGTime type="a">6.11.2020::8:24:19</weakCGTime>
 			<strongCGTime type="a">4.30.2020::9:44:44</strongCGTime>
 			<_defaultComposite type="s">GUID 26163699-8f59-40a6-a0fa-4b670a654fab</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -64,7 +64,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">5.18.2020::10:37:4</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:19</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -74,9 +74,9 @@
 					<_hid type="a">GUID 58673645-b6cb-4922-86fc-9d3cdafdd2c4</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">5.18.2020::10:37:4</_modifiedTime>
+			<_modifiedTime type="a">6.11.2020::8:24:19</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">5.18.2020::10:37:4</weakCGTime>
+			<weakCGTime type="a">6.11.2020::8:24:19</weakCGTime>
 			<strongCGTime type="a">4.30.2020::10:1:56</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -85,6 +85,7 @@
 			<_classModifier type="a">Unspecified</_classModifier>
 			<AggregatesList type="e">
 				<value>GUID 45b27862-1963-414c-baf5-b55683b034a2</value>
+				<value>GUID 4b8291cb-c95e-4f8b-9062-21cd6d3ca641</value>
 			</AggregatesList>
 		</IClass>
 		<IAssociationEnd type="e">
@@ -111,6 +112,35 @@
 					<_hclass type="a">ANGELS</_hclass>
 					<_hname type="a">itsCollision_Detection</_hname>
 					<_hid type="a">GUID 35aa9e0a-bd85-4639-9162-26d878130777</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 4b8291cb-c95e-4f8b-9062-21cd6d3ca641</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsEBS</_name>
+			<_modifiedTimeWeak type="a">6.11.2020::8:24:19</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.11.2020::8:24:19</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hname type="a">EBS</_hname>
+					<_hid type="a">GUID 9ae76f2b-7412-42c5-adcf-9fbbdd3025fa</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\EmergencyOverrideSystemPkg.sbsx</_hfilename>
+					<_hsubsystem type="a">ANGELSPkg::EmergencyOverrideSystemPkg</_hsubsystem>
+					<_hclass type="a">EBS</_hclass>
+					<_hname type="a">itsCollision_Detection</_hname>
+					<_hid type="a">GUID 9eff90a0-a0fd-447c-b655-c4ab20453f1e</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DockingProcessBlock_Simulation
 	Model Element	: ChargingSystemBlock
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\DockingProcessBlock_Simulation\ChargingSystemBlock.cpp
 *********************************************************************/
 
@@ -28,6 +28,8 @@
 #include "DockingProcessBlock.h"
 //## link itsLoadingProcessBlock
 #include "LoadingProcessBlock.h"
+//## link itsTruck
+#include "Truck.h"
 //#[ ignore
 #define ANGELSPkg_ChargingSystemPkg_ChargingSystemBlock_ChargingSystemBlock_SERIALIZE OM_NO_OP
 
@@ -46,6 +48,7 @@ ChargingSystemBlock::ChargingSystemBlock(IOxfActive* theActiveContext) : TruckCh
     itsDCOperator = NULL;
     itsDockingProcessBlock = NULL;
     itsLoadingProcessBlock = NULL;
+    itsTruck = NULL;
     initStatechart();
 }
 
@@ -147,12 +150,20 @@ void ChargingSystemBlock::setItsLoadingProcessBlock(LoadingProcessBlock* p_Loadi
 }
 
 Truck* ChargingSystemBlock::getItsTruck() const {
-    return (Truck*) &itsTruck;
+    return itsTruck;
+}
+
+void ChargingSystemBlock::setItsTruck(Truck* p_Truck) {
+    if(p_Truck != NULL)
+        {
+            p_Truck->_setItsChargingSystemBlock(this);
+        }
+    _setItsTruck(p_Truck);
 }
 
 bool ChargingSystemBlock::startBehavior() {
-    bool done = true;
-    done &= OMReactive::startBehavior();
+    bool done = false;
+    done = OMReactive::startBehavior();
     return done;
 }
 
@@ -218,6 +229,16 @@ void ChargingSystemBlock::cleanUpRelations() {
                     itsLoadingProcessBlock->__setItsChargingSystemBlock(NULL);
                 }
             itsLoadingProcessBlock = NULL;
+        }
+    if(itsTruck != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsTruck");
+            ChargingSystemBlock* p_ChargingSystemBlock = itsTruck->getItsChargingSystemBlock();
+            if(p_ChargingSystemBlock != NULL)
+                {
+                    itsTruck->__setItsChargingSystemBlock(NULL);
+                }
+            itsTruck = NULL;
         }
 }
 
@@ -358,6 +379,31 @@ void ChargingSystemBlock::_setItsLoadingProcessBlock(LoadingProcessBlock* p_Load
 void ChargingSystemBlock::_clearItsLoadingProcessBlock() {
     NOTIFY_RELATION_CLEARED("itsLoadingProcessBlock");
     itsLoadingProcessBlock = NULL;
+}
+
+void ChargingSystemBlock::__setItsTruck(Truck* p_Truck) {
+    itsTruck = p_Truck;
+    if(p_Truck != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsTruck", p_Truck, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsTruck");
+        }
+}
+
+void ChargingSystemBlock::_setItsTruck(Truck* p_Truck) {
+    if(itsTruck != NULL)
+        {
+            itsTruck->__setItsChargingSystemBlock(NULL);
+        }
+    __setItsTruck(p_Truck);
+}
+
+void ChargingSystemBlock::_clearItsTruck() {
+    NOTIFY_RELATION_CLEARED("itsTruck");
+    itsTruck = NULL;
 }
 
 void ChargingSystemBlock::rootState_entDef() {
@@ -520,8 +566,6 @@ void OMAnimatedChargingSystemBlock::serializeAttributes(AOMSAttributes* aomsAttr
 }
 
 void OMAnimatedChargingSystemBlock::serializeRelations(AOMSRelations* aomsRelations) const {
-    aomsRelations->addRelation("itsTruck", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsTruck);
     aomsRelations->addRelation("itsDCOperator", false, true);
     if(myReal->itsDCOperator)
         {
@@ -551,6 +595,11 @@ void OMAnimatedChargingSystemBlock::serializeRelations(AOMSRelations* aomsRelati
     if(myReal->itsDockingProcessBlock)
         {
             aomsRelations->ADD_ITEM(myReal->itsDockingProcessBlock);
+        }
+    aomsRelations->addRelation("itsTruck", false, true);
+    if(myReal->itsTruck)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsTruck);
         }
 }
 

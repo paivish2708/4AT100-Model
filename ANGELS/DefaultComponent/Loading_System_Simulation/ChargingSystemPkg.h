@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: ChargingSystemPkg
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\ChargingSystemPkg.h
 *********************************************************************/
 
@@ -22,19 +22,22 @@
 //## auto_generated
 #include "ANGELSPkg.h"
 //## auto_generated
-class Charging_System;
+class ChargingInfrastructure;
+
+//## auto_generated
+class ChargingSystemBlock;
 
 //#[ ignore
-#define Beginthecharging_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 7401
+#define Beginthecharging_ChargingSystemPkg_ANGELSPkg_id 7401
 
-#define StartTheCharging_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 7402
+#define StartTheCharging_ChargingSystemPkg_ANGELSPkg_id 7402
 
-#define InitiateChargingProcess_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 7403
+#define InitiateChargingProcess_ChargingSystemPkg_ANGELSPkg_id 7403
 
-#define EndCharging_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id 7404
+#define EndCharging_ChargingSystemPkg_ANGELSPkg_id 7404
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg
+//## package ANGELSPkg::ChargingSystemPkg
 
 
 

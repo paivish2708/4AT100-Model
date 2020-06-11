@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: Obstacle
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\Obstacle.h
 *********************************************************************/
 
@@ -19,16 +19,18 @@
 #include <aom\aom.h>
 //## auto_generated
 #include "ActorPkg.h"
-//## link itsANGELS
+//## actor Obstacle
+#include "Collision_Detection.h"
+//## auto_generated
 class ANGELS;
 
-//## link itsCollision_Detection_1
-class Collision_Detection;
+//## auto_generated
+class EBS;
 
 //## package ANGELSPkg::ActorPkg
 
 //## actor Obstacle
-class Obstacle {
+class Obstacle : public Collision_Detection {
     ////    Friends    ////
     
 public :
@@ -98,26 +100,19 @@ public :
     
     //## auto_generated
     void _clearItsANGELS_2();
-    
-    //## auto_generated
-    void __setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);
-    
-    //## auto_generated
-    void _setItsCollision_Detection_1(Collision_Detection* p_Collision_Detection);
-    
-    //## auto_generated
-    void _clearItsCollision_Detection_1();
 };
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedObstacle : virtual public AOMInstance {
+class OMAnimatedObstacle : public OMAnimatedCollision_Detection {
     DECLARE_META(Obstacle, OMAnimatedObstacle)
     
     ////    Framework operations    ////
     
 public :
 
+    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
+    
     virtual void serializeRelations(AOMSRelations* aomsRelations) const;
 };
 //#]

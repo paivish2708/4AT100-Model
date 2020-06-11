@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: CommunicationPkg
-//!	Generated Date	: Thu, 30, Apr 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\CommunicationPkg.h
 *********************************************************************/
 
@@ -20,9 +20,9 @@
 //## auto_generated
 #include "ANGELSPkg.h"
 //## auto_generated
-class Communication_System;
+class CommunicationSystemBlock;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::CommunicationPkg
+//## package ANGELSPkg::CommunicationPkg
 
 
 

@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: Collision_Detection
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\Collision_Detection.h
 *********************************************************************/
 
@@ -21,6 +21,9 @@
 #include "ObstacleDetectionPkg.h"
 //## link itsANGELS
 class ANGELS;
+
+//## link itsEBS
+class EBS;
 
 //## package ANGELSPkg::ObstacleDetectionPkg
 
@@ -49,6 +52,12 @@ public :
     
     //## auto_generated
     void setItsANGELS(ANGELS* p_ANGELS);
+    
+    //## auto_generated
+    EBS* getItsEBS() const;
+    
+    //## auto_generated
+    void setItsEBS(EBS* p_EBS);
 
 protected :
 
@@ -58,6 +67,8 @@ protected :
     ////    Relations and components    ////
     
     ANGELS* itsANGELS;		//## link itsANGELS
+    
+    EBS* itsEBS;		//## link itsEBS
     
     ////    Framework operations    ////
 
@@ -71,6 +82,15 @@ public :
     
     //## auto_generated
     void _clearItsANGELS();
+    
+    //## auto_generated
+    void __setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _setItsEBS(EBS* p_EBS);
+    
+    //## auto_generated
+    void _clearItsEBS();
 };
 
 #ifdef _OMINSTRUMENT

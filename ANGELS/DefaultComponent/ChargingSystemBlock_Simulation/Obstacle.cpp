@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: ChargingSystemBlock_Simulation
 	Model Element	: Obstacle
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ChargingSystemBlock_Simulation\Obstacle.cpp
 *********************************************************************/
 
@@ -16,6 +16,8 @@
 #include "Obstacle.h"
 //## auto_generated
 #include "ANGELS.h"
+//## auto_generated
+#include "EBS.h"
 //#[ ignore
 #define ANGELSPkg_ActorPkg_Obstacle_Obstacle_SERIALIZE OM_NO_OP
 //#]

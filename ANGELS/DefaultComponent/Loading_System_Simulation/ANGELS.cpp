@@ -4,54 +4,85 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: ANGELS
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\ANGELS.cpp
 *********************************************************************/
 
 //#[ ignore
 #define NAMESPACE_PREFIX
+
+#define _OMSTATECHART_ANIMATED
 //#]
 
 //## auto_generated
 #include "ANGELS.h"
+//## link itsChargingInfrastructure
+#include "ChargingInfrastructure.h"
+//## link itsCollision_Detection
+#include "Collision_Detection.h"
 //## link itsDC
 #include "DC.h"
 //## link itsDCOperator
 #include "DCOperator.h"
+//## link itsDockingSystem
+#include "DockingSystem.h"
+//## link itsDriver
+#include "Driver.h"
+//## link itsEnvironment
+#include "Environment.h"
 //## link itsGovernment
 #include "Government.h"
-//## link itsSafety_Standards
-#include "Safety_Standards.h"
+//## link itsLoadingSystemBlock
+#include "LoadingSystemBlock.h"
+//## link itsLocalizationArchitecture
+#include "LocalizationArchitecture.h"
+//## link itsObstacle
+#include "Obstacle.h"
+//## link itsSafetyStandards
+#include "SafetyStandards.h"
+//## link itsTruck
+#include "Truck.h"
 //#[ ignore
-#define UseCaseAnalysisPkg_ANGELSPkg_ANGELS_ANGELS_SERIALIZE OM_NO_OP
+#define ANGELSPkg_ANGELS_ANGELS_SERIALIZE OM_NO_OP
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg
+//## package ANGELSPkg
 
 //## class ANGELS
-ANGELS::ANGELS(IOxfActive* theActiveContext) : ChargingState(15), dt(10) {
-    NOTIFY_REACTIVE_CONSTRUCTOR(ANGELS, ANGELS(), 0, UseCaseAnalysisPkg_ANGELSPkg_ANGELS_ANGELS_SERIALIZE);
+ANGELS::ANGELS(IOxfActive* theActiveContext) : ChargeState(15), LoadingTime(0), ParkingTime(0), dt(10) {
+    NOTIFY_REACTIVE_CONSTRUCTOR(ANGELS, ANGELS(), 0, ANGELSPkg_ANGELS_ANGELS_SERIALIZE);
     setActiveContext(theActiveContext, false);
     {
         {
-            itsLoading_System_1.setShouldDelete(false);
+            itsChargingSystemBlock.setShouldDelete(false);
         }
         {
-            itsDocking_System_1.setShouldDelete(false);
+            itsLoadingProcessBlock.setShouldDelete(false);
+        }
+        {
+            itsParkingSystemBlock.setShouldDelete(false);
+        }
+        {
+            itsDockingProcessBlock.setShouldDelete(false);
+        }
+        {
+            itsEBS.setShouldDelete(false);
         }
     }
-    itsCollision_Avoidance = NULL;
+    itsChargingInfrastructure = NULL;
     itsCollision_Detection = NULL;
-    itsCommunication_System = NULL;
     itsDC = NULL;
     itsDCOperator = NULL;
-    itsDocking_System = NULL;
+    itsDockingSystem = NULL;
+    itsDriver = NULL;
+    itsEnvironment = NULL;
     itsGovernment = NULL;
-    itsLoading_System = NULL;
-    itsLocalisation_System = NULL;
-    itsParkingSystem = NULL;
-    itsSafety_Standards = NULL;
+    itsLoadingSystemBlock = NULL;
+    itsLocalizationArchitecture = NULL;
+    itsObstacle = NULL;
+    itsSafetyStandards = NULL;
     itsTruck = NULL;
+    initStatechart();
 }
 
 ANGELS::~ANGELS() {
@@ -59,12 +90,12 @@ ANGELS::~ANGELS() {
     cleanUpRelations();
 }
 
-double ANGELS::getChargingState() const {
-    return ChargingState;
+double ANGELS::getChargeState() const {
+    return ChargeState;
 }
 
-void ANGELS::setChargingState(double p_ChargingState) {
-    ChargingState = p_ChargingState;
+void ANGELS::setChargeState(double p_ChargeState) {
+    ChargeState = p_ChargeState;
 }
 
 double ANGELS::getDSInput() const {
@@ -99,12 +130,12 @@ void ANGELS::setDoorstatus(RhpBoolean p_Doorstatus) {
     Doorstatus = p_Doorstatus;
 }
 
-OMIterator<double> ANGELS::getLoadingTime() const {
-    OMIterator<double> iter(LoadingTime);
+OMIterator<int> ANGELS::getLoadingTime() const {
+    OMIterator<int> iter(LoadingTime);
     return iter;
 }
 
-void ANGELS::setLoadingTime(double p_LoadingTime) {
+void ANGELS::setLoadingTime(int p_LoadingTime) {
     LoadingTime.add(p_LoadingTime);
 }
 
@@ -122,6 +153,14 @@ double ANGELS::getParkingStatus() const {
 
 void ANGELS::setParkingStatus(double p_ParkingStatus) {
     ParkingStatus = p_ParkingStatus;
+}
+
+double ANGELS::getParkingTime() const {
+    return ParkingTime;
+}
+
+void ANGELS::setParkingTime(double p_ParkingTime) {
+    ParkingTime = p_ParkingTime;
 }
 
 double ANGELS::getSpeed() const {
@@ -148,20 +187,20 @@ void ANGELS::setDt(double p_dt) {
     dt = p_dt;
 }
 
-Collision_Avoidance* ANGELS::getItsCollision_Avoidance() const {
-    return itsCollision_Avoidance;
+ChargingInfrastructure* ANGELS::getItsChargingInfrastructure() const {
+    return itsChargingInfrastructure;
 }
 
-void ANGELS::setItsCollision_Avoidance(Collision_Avoidance* p_Collision_Avoidance) {
-    if(p_Collision_Avoidance != NULL)
+void ANGELS::setItsChargingInfrastructure(ChargingInfrastructure* p_ChargingInfrastructure) {
+    if(p_ChargingInfrastructure != NULL)
         {
-            p_Collision_Avoidance->_setItsANGELS(this);
+            p_ChargingInfrastructure->_setItsANGELS_1(this);
         }
-    _setItsCollision_Avoidance(p_Collision_Avoidance);
+    _setItsChargingInfrastructure(p_ChargingInfrastructure);
 }
 
-Collision_Avoidance* ANGELS::getItsCollision_Avoidance_1() const {
-    return (Collision_Avoidance*) &itsCollision_Avoidance_1;
+ChargingSystemBlock* ANGELS::getItsChargingSystemBlock() const {
+    return (ChargingSystemBlock*) &itsChargingSystemBlock;
 }
 
 Collision_Detection* ANGELS::getItsCollision_Detection() const {
@@ -176,30 +215,6 @@ void ANGELS::setItsCollision_Detection(Collision_Detection* p_Collision_Detectio
     _setItsCollision_Detection(p_Collision_Detection);
 }
 
-Collision_Detection* ANGELS::getItsCollision_Detection_2() const {
-    return (Collision_Detection*) &itsCollision_Detection_2;
-}
-
-Collision_Detection* ANGELS::getItsCollision_Detection_3() const {
-    return (Collision_Detection*) &itsCollision_Detection_3;
-}
-
-Communication_System* ANGELS::getItsCommunication_System() const {
-    return itsCommunication_System;
-}
-
-void ANGELS::setItsCommunication_System(Communication_System* p_Communication_System) {
-    if(p_Communication_System != NULL)
-        {
-            p_Communication_System->_setItsANGELS(this);
-        }
-    _setItsCommunication_System(p_Communication_System);
-}
-
-Communication_System* ANGELS::getItsCommunication_System_1() const {
-    return (Communication_System*) &itsCommunication_System_1;
-}
-
 DC* ANGELS::getItsDC() const {
     return itsDC;
 }
@@ -207,7 +222,7 @@ DC* ANGELS::getItsDC() const {
 void ANGELS::setItsDC(DC* p_DC) {
     if(p_DC != NULL)
         {
-            p_DC->_setItsANGELS(this);
+            p_DC->_setItsANGELS_2(this);
         }
     _setItsDC(p_DC);
 }
@@ -219,25 +234,53 @@ DCOperator* ANGELS::getItsDCOperator() const {
 void ANGELS::setItsDCOperator(DCOperator* p_DCOperator) {
     if(p_DCOperator != NULL)
         {
-            p_DCOperator->_setItsANGELS(this);
+            p_DCOperator->_setItsANGELS_1(this);
         }
     _setItsDCOperator(p_DCOperator);
 }
 
-Docking_System* ANGELS::getItsDocking_System() const {
-    return itsDocking_System;
+DockingProcessBlock* ANGELS::getItsDockingProcessBlock() const {
+    return (DockingProcessBlock*) &itsDockingProcessBlock;
 }
 
-void ANGELS::setItsDocking_System(Docking_System* p_Docking_System) {
-    if(p_Docking_System != NULL)
+DockingSystem* ANGELS::getItsDockingSystem() const {
+    return itsDockingSystem;
+}
+
+void ANGELS::setItsDockingSystem(DockingSystem* p_DockingSystem) {
+    if(p_DockingSystem != NULL)
         {
-            p_Docking_System->_setItsANGELS(this);
+            p_DockingSystem->_setItsANGELS_1(this);
         }
-    _setItsDocking_System(p_Docking_System);
+    _setItsDockingSystem(p_DockingSystem);
 }
 
-Docking_System* ANGELS::getItsDocking_System_1() const {
-    return (Docking_System*) &itsDocking_System_1;
+Driver* ANGELS::getItsDriver() const {
+    return itsDriver;
+}
+
+void ANGELS::setItsDriver(Driver* p_Driver) {
+    if(p_Driver != NULL)
+        {
+            p_Driver->_setItsANGELS_3(this);
+        }
+    _setItsDriver(p_Driver);
+}
+
+EBS* ANGELS::getItsEBS() const {
+    return (EBS*) &itsEBS;
+}
+
+Environment* ANGELS::getItsEnvironment() const {
+    return itsEnvironment;
+}
+
+void ANGELS::setItsEnvironment(Environment* p_Environment) {
+    if(p_Environment != NULL)
+        {
+            p_Environment->_setItsANGELS_2(this);
+        }
+    _setItsEnvironment(p_Environment);
 }
 
 Government* ANGELS::getItsGovernment() const {
@@ -247,69 +290,65 @@ Government* ANGELS::getItsGovernment() const {
 void ANGELS::setItsGovernment(Government* p_Government) {
     if(p_Government != NULL)
         {
-            p_Government->_setItsANGELS(this);
+            p_Government->_setItsANGELS_2(this);
         }
     _setItsGovernment(p_Government);
 }
 
-Loading_System* ANGELS::getItsLoading_System() const {
-    return itsLoading_System;
+LoadingProcessBlock* ANGELS::getItsLoadingProcessBlock() const {
+    return (LoadingProcessBlock*) &itsLoadingProcessBlock;
 }
 
-void ANGELS::setItsLoading_System(Loading_System* p_Loading_System) {
-    if(p_Loading_System != NULL)
+LoadingSystemBlock* ANGELS::getItsLoadingSystemBlock() const {
+    return itsLoadingSystemBlock;
+}
+
+void ANGELS::setItsLoadingSystemBlock(LoadingSystemBlock* p_LoadingSystemBlock) {
+    if(p_LoadingSystemBlock != NULL)
         {
-            p_Loading_System->_setItsANGELS(this);
+            p_LoadingSystemBlock->_setItsANGELS_1(this);
         }
-    _setItsLoading_System(p_Loading_System);
+    _setItsLoadingSystemBlock(p_LoadingSystemBlock);
 }
 
-Loading_System* ANGELS::getItsLoading_System_1() const {
-    return (Loading_System*) &itsLoading_System_1;
+LocalizationArchitecture* ANGELS::getItsLocalizationArchitecture() const {
+    return itsLocalizationArchitecture;
 }
 
-Localisation_System* ANGELS::getItsLocalisation_System() const {
-    return itsLocalisation_System;
-}
-
-void ANGELS::setItsLocalisation_System(Localisation_System* p_Localisation_System) {
-    if(p_Localisation_System != NULL)
+void ANGELS::setItsLocalizationArchitecture(LocalizationArchitecture* p_LocalizationArchitecture) {
+    if(p_LocalizationArchitecture != NULL)
         {
-            p_Localisation_System->_setItsANGELS(this);
+            p_LocalizationArchitecture->_setItsANGELS_1(this);
         }
-    _setItsLocalisation_System(p_Localisation_System);
+    _setItsLocalizationArchitecture(p_LocalizationArchitecture);
 }
 
-Localisation_System* ANGELS::getItsLocalisation_System_1() const {
-    return (Localisation_System*) &itsLocalisation_System_1;
+Obstacle* ANGELS::getItsObstacle() const {
+    return itsObstacle;
 }
 
-ParkingSystem* ANGELS::getItsParkingSystem() const {
-    return itsParkingSystem;
-}
-
-void ANGELS::setItsParkingSystem(ParkingSystem* p_ParkingSystem) {
-    if(p_ParkingSystem != NULL)
+void ANGELS::setItsObstacle(Obstacle* p_Obstacle) {
+    if(p_Obstacle != NULL)
         {
-            p_ParkingSystem->_setItsANGELS(this);
+            p_Obstacle->_setItsANGELS_2(this);
         }
-    _setItsParkingSystem(p_ParkingSystem);
+    _setItsObstacle(p_Obstacle);
 }
 
-ParkingSystem* ANGELS::getItsParkingSystem_1() const {
-    return (ParkingSystem*) &itsParkingSystem_1;
+ParkingSystemBlock* ANGELS::getItsParkingSystemBlock() const {
+    return (ParkingSystemBlock*) &itsParkingSystemBlock;
 }
 
-Safety_Standards* ANGELS::getItsSafety_Standards() const {
-    return itsSafety_Standards;
+SafetyStandards* ANGELS::getItsSafetyStandards() const {
+    return itsSafetyStandards;
 }
 
-void ANGELS::setItsSafety_Standards(Safety_Standards* p_Safety_Standards) {
-    if(p_Safety_Standards != NULL)
+void ANGELS::setItsSafetyStandards(SafetyStandards* p_SafetyStandards) {
+    if(p_SafetyStandards != NULL)
         {
-            p_Safety_Standards->_setItsANGELS(this);
+            p_SafetyStandards->_setItsANGELS_1(this);
         }
-    _setItsSafety_Standards(p_Safety_Standards);
+    _setItsSafetyStandards(p_SafetyStandards);
 }
 
 Truck* ANGELS::getItsTruck() const {
@@ -324,28 +363,32 @@ void ANGELS::setItsTruck(Truck* p_Truck) {
     _setItsTruck(p_Truck);
 }
 
-Truck* ANGELS::getItsTruck_1() const {
-    return (Truck*) &itsTruck_1;
-}
-
 bool ANGELS::startBehavior() {
     bool done = true;
-    done &= itsDocking_System_1.startBehavior();
-    done &= itsLoading_System_1.startBehavior();
+    done &= itsChargingSystemBlock.startBehavior();
+    done &= itsDockingProcessBlock.startBehavior();
+    done &= itsEBS.startBehavior();
+    done &= itsLoadingProcessBlock.startBehavior();
+    done &= itsParkingSystemBlock.startBehavior();
     done &= OMReactive::startBehavior();
     return done;
 }
 
+void ANGELS::initStatechart() {
+    rootState_subState = OMNonState;
+    rootState_active = OMNonState;
+}
+
 void ANGELS::cleanUpRelations() {
-    if(itsCollision_Avoidance != NULL)
+    if(itsChargingInfrastructure != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsCollision_Avoidance");
-            ANGELS* p_ANGELS = itsCollision_Avoidance->getItsANGELS();
+            NOTIFY_RELATION_CLEARED("itsChargingInfrastructure");
+            ANGELS* p_ANGELS = itsChargingInfrastructure->getItsANGELS_1();
             if(p_ANGELS != NULL)
                 {
-                    itsCollision_Avoidance->__setItsANGELS(NULL);
+                    itsChargingInfrastructure->__setItsANGELS_1(NULL);
                 }
-            itsCollision_Avoidance = NULL;
+            itsChargingInfrastructure = NULL;
         }
     if(itsCollision_Detection != NULL)
         {
@@ -357,95 +400,105 @@ void ANGELS::cleanUpRelations() {
                 }
             itsCollision_Detection = NULL;
         }
-    if(itsCommunication_System != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsCommunication_System");
-            ANGELS* p_ANGELS = itsCommunication_System->getItsANGELS();
-            if(p_ANGELS != NULL)
-                {
-                    itsCommunication_System->__setItsANGELS(NULL);
-                }
-            itsCommunication_System = NULL;
-        }
     if(itsDC != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsDC");
-            ANGELS* p_ANGELS = itsDC->getItsANGELS();
+            ANGELS* p_ANGELS = itsDC->getItsANGELS_2();
             if(p_ANGELS != NULL)
                 {
-                    itsDC->__setItsANGELS(NULL);
+                    itsDC->__setItsANGELS_2(NULL);
                 }
             itsDC = NULL;
         }
     if(itsDCOperator != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsDCOperator");
-            ANGELS* p_ANGELS = itsDCOperator->getItsANGELS();
+            ANGELS* p_ANGELS = itsDCOperator->getItsANGELS_1();
             if(p_ANGELS != NULL)
                 {
-                    itsDCOperator->__setItsANGELS(NULL);
+                    itsDCOperator->__setItsANGELS_1(NULL);
                 }
             itsDCOperator = NULL;
         }
-    if(itsDocking_System != NULL)
+    if(itsDockingSystem != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsDocking_System");
-            ANGELS* p_ANGELS = itsDocking_System->getItsANGELS();
+            NOTIFY_RELATION_CLEARED("itsDockingSystem");
+            ANGELS* p_ANGELS = itsDockingSystem->getItsANGELS_1();
             if(p_ANGELS != NULL)
                 {
-                    itsDocking_System->__setItsANGELS(NULL);
+                    itsDockingSystem->__setItsANGELS_1(NULL);
                 }
-            itsDocking_System = NULL;
+            itsDockingSystem = NULL;
+        }
+    if(itsDriver != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDriver");
+            ANGELS* p_ANGELS = itsDriver->getItsANGELS_3();
+            if(p_ANGELS != NULL)
+                {
+                    itsDriver->__setItsANGELS_3(NULL);
+                }
+            itsDriver = NULL;
+        }
+    if(itsEnvironment != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsEnvironment");
+            ANGELS* p_ANGELS = itsEnvironment->getItsANGELS_2();
+            if(p_ANGELS != NULL)
+                {
+                    itsEnvironment->__setItsANGELS_2(NULL);
+                }
+            itsEnvironment = NULL;
         }
     if(itsGovernment != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsGovernment");
-            ANGELS* p_ANGELS = itsGovernment->getItsANGELS();
+            ANGELS* p_ANGELS = itsGovernment->getItsANGELS_2();
             if(p_ANGELS != NULL)
                 {
-                    itsGovernment->__setItsANGELS(NULL);
+                    itsGovernment->__setItsANGELS_2(NULL);
                 }
             itsGovernment = NULL;
         }
-    if(itsLoading_System != NULL)
+    if(itsLoadingSystemBlock != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsLoading_System");
-            ANGELS* p_ANGELS = itsLoading_System->getItsANGELS();
+            NOTIFY_RELATION_CLEARED("itsLoadingSystemBlock");
+            ANGELS* p_ANGELS = itsLoadingSystemBlock->getItsANGELS_1();
             if(p_ANGELS != NULL)
                 {
-                    itsLoading_System->__setItsANGELS(NULL);
+                    itsLoadingSystemBlock->__setItsANGELS_1(NULL);
                 }
-            itsLoading_System = NULL;
+            itsLoadingSystemBlock = NULL;
         }
-    if(itsLocalisation_System != NULL)
+    if(itsLocalizationArchitecture != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsLocalisation_System");
-            ANGELS* p_ANGELS = itsLocalisation_System->getItsANGELS();
+            NOTIFY_RELATION_CLEARED("itsLocalizationArchitecture");
+            ANGELS* p_ANGELS = itsLocalizationArchitecture->getItsANGELS_1();
             if(p_ANGELS != NULL)
                 {
-                    itsLocalisation_System->__setItsANGELS(NULL);
+                    itsLocalizationArchitecture->__setItsANGELS_1(NULL);
                 }
-            itsLocalisation_System = NULL;
+            itsLocalizationArchitecture = NULL;
         }
-    if(itsParkingSystem != NULL)
+    if(itsObstacle != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsParkingSystem");
-            ANGELS* p_ANGELS = itsParkingSystem->getItsANGELS();
+            NOTIFY_RELATION_CLEARED("itsObstacle");
+            ANGELS* p_ANGELS = itsObstacle->getItsANGELS_2();
             if(p_ANGELS != NULL)
                 {
-                    itsParkingSystem->__setItsANGELS(NULL);
+                    itsObstacle->__setItsANGELS_2(NULL);
                 }
-            itsParkingSystem = NULL;
+            itsObstacle = NULL;
         }
-    if(itsSafety_Standards != NULL)
+    if(itsSafetyStandards != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsSafety_Standards");
-            ANGELS* p_ANGELS = itsSafety_Standards->getItsANGELS();
+            NOTIFY_RELATION_CLEARED("itsSafetyStandards");
+            ANGELS* p_ANGELS = itsSafetyStandards->getItsANGELS_1();
             if(p_ANGELS != NULL)
                 {
-                    itsSafety_Standards->__setItsANGELS(NULL);
+                    itsSafetyStandards->__setItsANGELS_1(NULL);
                 }
-            itsSafety_Standards = NULL;
+            itsSafetyStandards = NULL;
         }
     if(itsTruck != NULL)
         {
@@ -459,29 +512,29 @@ void ANGELS::cleanUpRelations() {
         }
 }
 
-void ANGELS::__setItsCollision_Avoidance(Collision_Avoidance* p_Collision_Avoidance) {
-    itsCollision_Avoidance = p_Collision_Avoidance;
-    if(p_Collision_Avoidance != NULL)
+void ANGELS::__setItsChargingInfrastructure(ChargingInfrastructure* p_ChargingInfrastructure) {
+    itsChargingInfrastructure = p_ChargingInfrastructure;
+    if(p_ChargingInfrastructure != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsCollision_Avoidance", p_Collision_Avoidance, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsChargingInfrastructure", p_ChargingInfrastructure, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsCollision_Avoidance");
+            NOTIFY_RELATION_CLEARED("itsChargingInfrastructure");
         }
 }
 
-void ANGELS::_setItsCollision_Avoidance(Collision_Avoidance* p_Collision_Avoidance) {
-    if(itsCollision_Avoidance != NULL)
+void ANGELS::_setItsChargingInfrastructure(ChargingInfrastructure* p_ChargingInfrastructure) {
+    if(itsChargingInfrastructure != NULL)
         {
-            itsCollision_Avoidance->__setItsANGELS(NULL);
+            itsChargingInfrastructure->__setItsANGELS_1(NULL);
         }
-    __setItsCollision_Avoidance(p_Collision_Avoidance);
+    __setItsChargingInfrastructure(p_ChargingInfrastructure);
 }
 
-void ANGELS::_clearItsCollision_Avoidance() {
-    NOTIFY_RELATION_CLEARED("itsCollision_Avoidance");
-    itsCollision_Avoidance = NULL;
+void ANGELS::_clearItsChargingInfrastructure() {
+    NOTIFY_RELATION_CLEARED("itsChargingInfrastructure");
+    itsChargingInfrastructure = NULL;
 }
 
 void ANGELS::__setItsCollision_Detection(Collision_Detection* p_Collision_Detection) {
@@ -509,31 +562,6 @@ void ANGELS::_clearItsCollision_Detection() {
     itsCollision_Detection = NULL;
 }
 
-void ANGELS::__setItsCommunication_System(Communication_System* p_Communication_System) {
-    itsCommunication_System = p_Communication_System;
-    if(p_Communication_System != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsCommunication_System", p_Communication_System, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsCommunication_System");
-        }
-}
-
-void ANGELS::_setItsCommunication_System(Communication_System* p_Communication_System) {
-    if(itsCommunication_System != NULL)
-        {
-            itsCommunication_System->__setItsANGELS(NULL);
-        }
-    __setItsCommunication_System(p_Communication_System);
-}
-
-void ANGELS::_clearItsCommunication_System() {
-    NOTIFY_RELATION_CLEARED("itsCommunication_System");
-    itsCommunication_System = NULL;
-}
-
 void ANGELS::__setItsDC(DC* p_DC) {
     itsDC = p_DC;
     if(p_DC != NULL)
@@ -549,7 +577,7 @@ void ANGELS::__setItsDC(DC* p_DC) {
 void ANGELS::_setItsDC(DC* p_DC) {
     if(itsDC != NULL)
         {
-            itsDC->__setItsANGELS(NULL);
+            itsDC->__setItsANGELS_2(NULL);
         }
     __setItsDC(p_DC);
 }
@@ -574,7 +602,7 @@ void ANGELS::__setItsDCOperator(DCOperator* p_DCOperator) {
 void ANGELS::_setItsDCOperator(DCOperator* p_DCOperator) {
     if(itsDCOperator != NULL)
         {
-            itsDCOperator->__setItsANGELS(NULL);
+            itsDCOperator->__setItsANGELS_1(NULL);
         }
     __setItsDCOperator(p_DCOperator);
 }
@@ -584,29 +612,79 @@ void ANGELS::_clearItsDCOperator() {
     itsDCOperator = NULL;
 }
 
-void ANGELS::__setItsDocking_System(Docking_System* p_Docking_System) {
-    itsDocking_System = p_Docking_System;
-    if(p_Docking_System != NULL)
+void ANGELS::__setItsDockingSystem(DockingSystem* p_DockingSystem) {
+    itsDockingSystem = p_DockingSystem;
+    if(p_DockingSystem != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsDocking_System", p_Docking_System, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingSystem", p_DockingSystem, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsDocking_System");
+            NOTIFY_RELATION_CLEARED("itsDockingSystem");
         }
 }
 
-void ANGELS::_setItsDocking_System(Docking_System* p_Docking_System) {
-    if(itsDocking_System != NULL)
+void ANGELS::_setItsDockingSystem(DockingSystem* p_DockingSystem) {
+    if(itsDockingSystem != NULL)
         {
-            itsDocking_System->__setItsANGELS(NULL);
+            itsDockingSystem->__setItsANGELS_1(NULL);
         }
-    __setItsDocking_System(p_Docking_System);
+    __setItsDockingSystem(p_DockingSystem);
 }
 
-void ANGELS::_clearItsDocking_System() {
-    NOTIFY_RELATION_CLEARED("itsDocking_System");
-    itsDocking_System = NULL;
+void ANGELS::_clearItsDockingSystem() {
+    NOTIFY_RELATION_CLEARED("itsDockingSystem");
+    itsDockingSystem = NULL;
+}
+
+void ANGELS::__setItsDriver(Driver* p_Driver) {
+    itsDriver = p_Driver;
+    if(p_Driver != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDriver", p_Driver, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDriver");
+        }
+}
+
+void ANGELS::_setItsDriver(Driver* p_Driver) {
+    if(itsDriver != NULL)
+        {
+            itsDriver->__setItsANGELS_3(NULL);
+        }
+    __setItsDriver(p_Driver);
+}
+
+void ANGELS::_clearItsDriver() {
+    NOTIFY_RELATION_CLEARED("itsDriver");
+    itsDriver = NULL;
+}
+
+void ANGELS::__setItsEnvironment(Environment* p_Environment) {
+    itsEnvironment = p_Environment;
+    if(p_Environment != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsEnvironment", p_Environment, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsEnvironment");
+        }
+}
+
+void ANGELS::_setItsEnvironment(Environment* p_Environment) {
+    if(itsEnvironment != NULL)
+        {
+            itsEnvironment->__setItsANGELS_2(NULL);
+        }
+    __setItsEnvironment(p_Environment);
+}
+
+void ANGELS::_clearItsEnvironment() {
+    NOTIFY_RELATION_CLEARED("itsEnvironment");
+    itsEnvironment = NULL;
 }
 
 void ANGELS::__setItsGovernment(Government* p_Government) {
@@ -624,7 +702,7 @@ void ANGELS::__setItsGovernment(Government* p_Government) {
 void ANGELS::_setItsGovernment(Government* p_Government) {
     if(itsGovernment != NULL)
         {
-            itsGovernment->__setItsANGELS(NULL);
+            itsGovernment->__setItsANGELS_2(NULL);
         }
     __setItsGovernment(p_Government);
 }
@@ -634,104 +712,104 @@ void ANGELS::_clearItsGovernment() {
     itsGovernment = NULL;
 }
 
-void ANGELS::__setItsLoading_System(Loading_System* p_Loading_System) {
-    itsLoading_System = p_Loading_System;
-    if(p_Loading_System != NULL)
+void ANGELS::__setItsLoadingSystemBlock(LoadingSystemBlock* p_LoadingSystemBlock) {
+    itsLoadingSystemBlock = p_LoadingSystemBlock;
+    if(p_LoadingSystemBlock != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsLoading_System", p_Loading_System, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsLoadingSystemBlock", p_LoadingSystemBlock, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsLoading_System");
+            NOTIFY_RELATION_CLEARED("itsLoadingSystemBlock");
         }
 }
 
-void ANGELS::_setItsLoading_System(Loading_System* p_Loading_System) {
-    if(itsLoading_System != NULL)
+void ANGELS::_setItsLoadingSystemBlock(LoadingSystemBlock* p_LoadingSystemBlock) {
+    if(itsLoadingSystemBlock != NULL)
         {
-            itsLoading_System->__setItsANGELS(NULL);
+            itsLoadingSystemBlock->__setItsANGELS_1(NULL);
         }
-    __setItsLoading_System(p_Loading_System);
+    __setItsLoadingSystemBlock(p_LoadingSystemBlock);
 }
 
-void ANGELS::_clearItsLoading_System() {
-    NOTIFY_RELATION_CLEARED("itsLoading_System");
-    itsLoading_System = NULL;
+void ANGELS::_clearItsLoadingSystemBlock() {
+    NOTIFY_RELATION_CLEARED("itsLoadingSystemBlock");
+    itsLoadingSystemBlock = NULL;
 }
 
-void ANGELS::__setItsLocalisation_System(Localisation_System* p_Localisation_System) {
-    itsLocalisation_System = p_Localisation_System;
-    if(p_Localisation_System != NULL)
+void ANGELS::__setItsLocalizationArchitecture(LocalizationArchitecture* p_LocalizationArchitecture) {
+    itsLocalizationArchitecture = p_LocalizationArchitecture;
+    if(p_LocalizationArchitecture != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsLocalisation_System", p_Localisation_System, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsLocalizationArchitecture", p_LocalizationArchitecture, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsLocalisation_System");
+            NOTIFY_RELATION_CLEARED("itsLocalizationArchitecture");
         }
 }
 
-void ANGELS::_setItsLocalisation_System(Localisation_System* p_Localisation_System) {
-    if(itsLocalisation_System != NULL)
+void ANGELS::_setItsLocalizationArchitecture(LocalizationArchitecture* p_LocalizationArchitecture) {
+    if(itsLocalizationArchitecture != NULL)
         {
-            itsLocalisation_System->__setItsANGELS(NULL);
+            itsLocalizationArchitecture->__setItsANGELS_1(NULL);
         }
-    __setItsLocalisation_System(p_Localisation_System);
+    __setItsLocalizationArchitecture(p_LocalizationArchitecture);
 }
 
-void ANGELS::_clearItsLocalisation_System() {
-    NOTIFY_RELATION_CLEARED("itsLocalisation_System");
-    itsLocalisation_System = NULL;
+void ANGELS::_clearItsLocalizationArchitecture() {
+    NOTIFY_RELATION_CLEARED("itsLocalizationArchitecture");
+    itsLocalizationArchitecture = NULL;
 }
 
-void ANGELS::__setItsParkingSystem(ParkingSystem* p_ParkingSystem) {
-    itsParkingSystem = p_ParkingSystem;
-    if(p_ParkingSystem != NULL)
+void ANGELS::__setItsObstacle(Obstacle* p_Obstacle) {
+    itsObstacle = p_Obstacle;
+    if(p_Obstacle != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsParkingSystem", p_ParkingSystem, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsObstacle", p_Obstacle, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsParkingSystem");
+            NOTIFY_RELATION_CLEARED("itsObstacle");
         }
 }
 
-void ANGELS::_setItsParkingSystem(ParkingSystem* p_ParkingSystem) {
-    if(itsParkingSystem != NULL)
+void ANGELS::_setItsObstacle(Obstacle* p_Obstacle) {
+    if(itsObstacle != NULL)
         {
-            itsParkingSystem->__setItsANGELS(NULL);
+            itsObstacle->__setItsANGELS_2(NULL);
         }
-    __setItsParkingSystem(p_ParkingSystem);
+    __setItsObstacle(p_Obstacle);
 }
 
-void ANGELS::_clearItsParkingSystem() {
-    NOTIFY_RELATION_CLEARED("itsParkingSystem");
-    itsParkingSystem = NULL;
+void ANGELS::_clearItsObstacle() {
+    NOTIFY_RELATION_CLEARED("itsObstacle");
+    itsObstacle = NULL;
 }
 
-void ANGELS::__setItsSafety_Standards(Safety_Standards* p_Safety_Standards) {
-    itsSafety_Standards = p_Safety_Standards;
-    if(p_Safety_Standards != NULL)
+void ANGELS::__setItsSafetyStandards(SafetyStandards* p_SafetyStandards) {
+    itsSafetyStandards = p_SafetyStandards;
+    if(p_SafetyStandards != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsSafety_Standards", p_Safety_Standards, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsSafetyStandards", p_SafetyStandards, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsSafety_Standards");
+            NOTIFY_RELATION_CLEARED("itsSafetyStandards");
         }
 }
 
-void ANGELS::_setItsSafety_Standards(Safety_Standards* p_Safety_Standards) {
-    if(itsSafety_Standards != NULL)
+void ANGELS::_setItsSafetyStandards(SafetyStandards* p_SafetyStandards) {
+    if(itsSafetyStandards != NULL)
         {
-            itsSafety_Standards->__setItsANGELS(NULL);
+            itsSafetyStandards->__setItsANGELS_1(NULL);
         }
-    __setItsSafety_Standards(p_Safety_Standards);
+    __setItsSafetyStandards(p_SafetyStandards);
 }
 
-void ANGELS::_clearItsSafety_Standards() {
-    NOTIFY_RELATION_CLEARED("itsSafety_Standards");
-    itsSafety_Standards = NULL;
+void ANGELS::_clearItsSafetyStandards() {
+    NOTIFY_RELATION_CLEARED("itsSafetyStandards");
+    itsSafetyStandards = NULL;
 }
 
 void ANGELS::__setItsTruck(Truck* p_Truck) {
@@ -762,15 +840,90 @@ void ANGELS::_clearItsTruck() {
 void ANGELS::setActiveContext(IOxfActive* theActiveContext, bool activeInstance) {
     OMReactive::setActiveContext(theActiveContext, activeInstance);
     {
-        itsLoading_System_1.setActiveContext(theActiveContext, false);
-        itsDocking_System_1.setActiveContext(theActiveContext, false);
+        itsChargingSystemBlock.setActiveContext(theActiveContext, false);
+        itsLoadingProcessBlock.setActiveContext(theActiveContext, false);
+        itsParkingSystemBlock.setActiveContext(theActiveContext, false);
+        itsDockingProcessBlock.setActiveContext(theActiveContext, false);
+        itsEBS.setActiveContext(theActiveContext, false);
     }
 }
 
 void ANGELS::destroy() {
-    itsDocking_System_1.destroy();
-    itsLoading_System_1.destroy();
+    itsChargingSystemBlock.destroy();
+    itsDockingProcessBlock.destroy();
+    itsEBS.destroy();
+    itsLoadingProcessBlock.destroy();
+    itsParkingSystemBlock.destroy();
     OMReactive::destroy();
+}
+
+void ANGELS::rootState_entDef() {
+    {
+        NOTIFY_STATE_ENTERED("ROOT");
+        NOTIFY_TRANSITION_STARTED("0");
+        NOTIFY_STATE_ENTERED("ROOT.InitANGELS");
+        rootState_subState = InitANGELS;
+        rootState_active = InitANGELS;
+        NOTIFY_TRANSITION_TERMINATED("0");
+    }
+}
+
+IOxfReactive::TakeEventStatus ANGELS::rootState_processEvent() {
+    IOxfReactive::TakeEventStatus res = eventNotConsumed;
+    switch (rootState_active) {
+        // State InitANGELS
+        case InitANGELS:
+        {
+            if(IS_EVENT_TYPE_OF(SwitchOnANGELS_ANGELSPkg_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("1");
+                    NOTIFY_STATE_EXITED("ROOT.InitANGELS");
+                    NOTIFY_STATE_ENTERED("ROOT.ON");
+                    rootState_subState = ON;
+                    rootState_active = ON;
+                    NOTIFY_TRANSITION_TERMINATED("1");
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        // State ON
+        case ON:
+        {
+            if(IS_EVENT_TYPE_OF(SwitchOffANGELSFunc_ANGELSPkg_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("2");
+                    NOTIFY_STATE_EXITED("ROOT.ON");
+                    NOTIFY_STATE_ENTERED("ROOT.OFF");
+                    rootState_subState = OFF;
+                    rootState_active = OFF;
+                    NOTIFY_TRANSITION_TERMINATED("2");
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        // State OFF
+        case OFF:
+        {
+            if(IS_EVENT_TYPE_OF(TurnOffANGELS_ANGELSPkg_id))
+                {
+                    NOTIFY_TRANSITION_STARTED("3");
+                    NOTIFY_STATE_EXITED("ROOT.OFF");
+                    NOTIFY_STATE_ENTERED("ROOT.terminationstate_3");
+                    rootState_subState = terminationstate_3;
+                    rootState_active = terminationstate_3;
+                    NOTIFY_TRANSITION_TERMINATED("3");
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
+        
+        default:
+            break;
+    }
+    return res;
 }
 
 #ifdef _OMINSTRUMENT
@@ -786,92 +939,134 @@ void OMAnimatedANGELS::serializeAttributes(AOMSAttributes* aomsAttributes) const
     aomsAttributes->addAttribute("ParkingStatus", x2String(myReal->ParkingStatus));
     aomsAttributes->addAttribute("dt", x2String(myReal->dt));
     aomsAttributes->addAttribute("LoadingTime", UNKNOWN2STRING(myReal->LoadingTime));
-    aomsAttributes->addAttribute("ChargingState", x2String(myReal->ChargingState));
+    aomsAttributes->addAttribute("ChargeState", x2String(myReal->ChargeState));
+    aomsAttributes->addAttribute("ParkingTime", x2String(myReal->ParkingTime));
 }
 
 void OMAnimatedANGELS::serializeRelations(AOMSRelations* aomsRelations) const {
-    aomsRelations->addRelation("itsCollision_Avoidance", false, true);
-    if(myReal->itsCollision_Avoidance)
+    aomsRelations->addRelation("itsEnvironment", false, true);
+    if(myReal->itsEnvironment)
         {
-            aomsRelations->ADD_ITEM(myReal->itsCollision_Avoidance);
+            aomsRelations->ADD_ITEM(myReal->itsEnvironment);
         }
-    aomsRelations->addRelation("itsCommunication_System", false, true);
-    if(myReal->itsCommunication_System)
+    aomsRelations->addRelation("itsLocalizationArchitecture", false, true);
+    if(myReal->itsLocalizationArchitecture)
         {
-            aomsRelations->ADD_ITEM(myReal->itsCommunication_System);
+            aomsRelations->ADD_ITEM(myReal->itsLocalizationArchitecture);
         }
-    aomsRelations->addRelation("itsCollision_Detection", false, true);
-    if(myReal->itsCollision_Detection)
+    aomsRelations->addRelation("itsDockingSystem", false, true);
+    if(myReal->itsDockingSystem)
         {
-            aomsRelations->ADD_ITEM(myReal->itsCollision_Detection);
+            aomsRelations->ADD_ITEM(myReal->itsDockingSystem);
         }
-    aomsRelations->addRelation("itsLoading_System", false, true);
-    if(myReal->itsLoading_System)
+    aomsRelations->addRelation("itsLoadingSystemBlock", false, true);
+    if(myReal->itsLoadingSystemBlock)
         {
-            aomsRelations->ADD_ITEM(myReal->itsLoading_System);
+            aomsRelations->ADD_ITEM(myReal->itsLoadingSystemBlock);
         }
-    aomsRelations->addRelation("itsSafety_Standards", false, true);
-    if(myReal->itsSafety_Standards)
+    aomsRelations->addRelation("itsChargingInfrastructure", false, true);
+    if(myReal->itsChargingInfrastructure)
         {
-            aomsRelations->ADD_ITEM(myReal->itsSafety_Standards);
+            aomsRelations->ADD_ITEM(myReal->itsChargingInfrastructure);
         }
-    aomsRelations->addRelation("itsParkingSystem", false, true);
-    if(myReal->itsParkingSystem)
+    aomsRelations->addRelation("itsObstacle", false, true);
+    if(myReal->itsObstacle)
         {
-            aomsRelations->ADD_ITEM(myReal->itsParkingSystem);
-        }
-    aomsRelations->addRelation("itsTruck", false, true);
-    if(myReal->itsTruck)
-        {
-            aomsRelations->ADD_ITEM(myReal->itsTruck);
-        }
-    aomsRelations->addRelation("itsLocalisation_System", false, true);
-    if(myReal->itsLocalisation_System)
-        {
-            aomsRelations->ADD_ITEM(myReal->itsLocalisation_System);
-        }
-    aomsRelations->addRelation("itsDocking_System", false, true);
-    if(myReal->itsDocking_System)
-        {
-            aomsRelations->ADD_ITEM(myReal->itsDocking_System);
+            aomsRelations->ADD_ITEM(myReal->itsObstacle);
         }
     aomsRelations->addRelation("itsGovernment", false, true);
     if(myReal->itsGovernment)
         {
             aomsRelations->ADD_ITEM(myReal->itsGovernment);
         }
-    aomsRelations->addRelation("itsDC", false, true);
-    if(myReal->itsDC)
+    aomsRelations->addRelation("itsSafetyStandards", false, true);
+    if(myReal->itsSafetyStandards)
         {
-            aomsRelations->ADD_ITEM(myReal->itsDC);
+            aomsRelations->ADD_ITEM(myReal->itsSafetyStandards);
         }
     aomsRelations->addRelation("itsDCOperator", false, true);
     if(myReal->itsDCOperator)
         {
             aomsRelations->ADD_ITEM(myReal->itsDCOperator);
         }
-    aomsRelations->addRelation("itsCollision_Avoidance_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCollision_Avoidance_1);
-    aomsRelations->addRelation("itsLoading_System_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsLoading_System_1);
-    aomsRelations->addRelation("itsCommunication_System_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCommunication_System_1);
-    aomsRelations->addRelation("itsCollision_Detection_2", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_2);
-    aomsRelations->addRelation("itsDocking_System_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsDocking_System_1);
-    aomsRelations->addRelation("itsLocalisation_System_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsLocalisation_System_1);
-    aomsRelations->addRelation("itsCollision_Detection_3", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsCollision_Detection_3);
-    aomsRelations->addRelation("itsParkingSystem_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsParkingSystem_1);
-    aomsRelations->addRelation("itsTruck_1", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsTruck_1);
+    aomsRelations->addRelation("itsDC", false, true);
+    if(myReal->itsDC)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDC);
+        }
+    aomsRelations->addRelation("itsDriver", false, true);
+    if(myReal->itsDriver)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDriver);
+        }
+    aomsRelations->addRelation("itsTruck", false, true);
+    if(myReal->itsTruck)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsTruck);
+        }
+    aomsRelations->addRelation("itsCollision_Detection", false, true);
+    if(myReal->itsCollision_Detection)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsCollision_Detection);
+        }
+    aomsRelations->addRelation("itsChargingSystemBlock", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsChargingSystemBlock);
+    aomsRelations->addRelation("itsLoadingProcessBlock", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsLoadingProcessBlock);
+    aomsRelations->addRelation("itsParkingSystemBlock", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsParkingSystemBlock);
+    aomsRelations->addRelation("itsDockingProcessBlock", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsDockingProcessBlock);
+    aomsRelations->addRelation("itsEBS", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsEBS);
+}
+
+void OMAnimatedANGELS::rootState_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT");
+    switch (myReal->rootState_subState) {
+        case ANGELS::InitANGELS:
+        {
+            InitANGELS_serializeStates(aomsState);
+        }
+        break;
+        case ANGELS::ON:
+        {
+            ON_serializeStates(aomsState);
+        }
+        break;
+        case ANGELS::OFF:
+        {
+            OFF_serializeStates(aomsState);
+        }
+        break;
+        case ANGELS::terminationstate_3:
+        {
+            terminationstate_3_serializeStates(aomsState);
+        }
+        break;
+        default:
+            break;
+    }
+}
+
+void OMAnimatedANGELS::terminationstate_3_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.terminationstate_3");
+}
+
+void OMAnimatedANGELS::ON_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.ON");
+}
+
+void OMAnimatedANGELS::OFF_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.OFF");
+}
+
+void OMAnimatedANGELS::InitANGELS_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.InitANGELS");
 }
 //#]
 
-IMPLEMENT_REACTIVE_META_SIMPLE_P(ANGELS, UseCaseAnalysisPkg_ANGELSPkg, UseCaseAnalysisPkg::ANGELSPkg, false, OMAnimatedANGELS)
+IMPLEMENT_REACTIVE_META_P(ANGELS, ANGELSPkg, ANGELSPkg, false, OMAnimatedANGELS)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

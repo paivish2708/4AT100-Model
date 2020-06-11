@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: LoadingProcessBlock
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\LoadingProcessBlock.h
 *********************************************************************/
 
@@ -27,13 +27,21 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
-//## classInstance itsTruck
-#include "Truck.h"
+//## link itsChargingSystemBlock
+class ChargingSystemBlock;
+
 //## link itsDC
 class DC;
 
 //## link itsDCOperator
 class DCOperator;
+
+//## link itsLoadingSystemBlock
+class LoadingSystemBlock;
+
+//#[ ignore
+#define OMAnim_ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_setDoorstatus_RhpBoolean_ARGS_DECLARATION RhpBoolean p_Doorstatus;
+//#]
 
 //## package ANGELSPkg::LoadingProcessPkg
 
@@ -57,11 +65,17 @@ public :
     
     ////    Operations    ////
     
+    //## operation DoorState()
+    virtual void DoorState();
+    
     //## operation LoadingProcess()
     virtual void LoadingProcess();
     
     //## operation OpenDoors(RhpBoolean)
     virtual void OpenDoors(RhpBoolean Doorstate = 1);
+    
+    //## operation Operation_6()
+    virtual void Operation_6();
     
     //## operation StoptheTruck(double)
     virtual void StoptheTruck(double speed);
@@ -81,6 +95,12 @@ public :
     void setLoadingTime(int p_LoadingTime);
     
     //## auto_generated
+    ChargingSystemBlock* getItsChargingSystemBlock() const;
+    
+    //## auto_generated
+    void setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
     DC* getItsDC() const;
     
     //## auto_generated
@@ -93,7 +113,10 @@ public :
     void setItsDCOperator(DCOperator* p_DCOperator);
     
     //## auto_generated
-    Truck* getItsTruck() const;
+    LoadingSystemBlock* getItsLoadingSystemBlock() const;
+    
+    //## auto_generated
+    void setItsLoadingSystemBlock(LoadingSystemBlock* p_LoadingSystemBlock);
     
     //## auto_generated
     virtual bool startBehavior();
@@ -120,16 +143,27 @@ protected :
     
     ////    Relations and components    ////
     
+    ChargingSystemBlock* itsChargingSystemBlock;		//## link itsChargingSystemBlock
+    
     DC* itsDC;		//## link itsDC
     
     DCOperator* itsDCOperator;		//## link itsDCOperator
     
-    Truck itsTruck;		//## classInstance itsTruck
+    LoadingSystemBlock* itsLoadingSystemBlock;		//## link itsLoadingSystemBlock
     
     ////    Framework operations    ////
 
 public :
 
+    //## auto_generated
+    void __setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
+    void _setItsChargingSystemBlock(ChargingSystemBlock* p_ChargingSystemBlock);
+    
+    //## auto_generated
+    void _clearItsChargingSystemBlock();
+    
     //## auto_generated
     void __setItsDC(DC* p_DC);
     
@@ -147,6 +181,15 @@ public :
     
     //## auto_generated
     void _clearItsDCOperator();
+    
+    //## auto_generated
+    void __setItsLoadingSystemBlock(LoadingSystemBlock* p_LoadingSystemBlock);
+    
+    //## auto_generated
+    void _setItsLoadingSystemBlock(LoadingSystemBlock* p_LoadingSystemBlock);
+    
+    //## auto_generated
+    void _clearItsLoadingSystemBlock();
     
     // rootState:
     //## statechart_method
@@ -224,9 +267,13 @@ protected :
 };
 
 #ifdef _OMINSTRUMENT
+DECLARE_OPERATION_CLASS(ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_setDoorstatus_RhpBoolean)
+
 //#[ ignore
 class OMAnimatedLoadingProcessBlock : virtual public AOMInstance {
     DECLARE_REACTIVE_META(LoadingProcessBlock, OMAnimatedLoadingProcessBlock)
+    
+    DECLARE_META_OP(ANGELSPkg_LoadingProcessPkg_LoadingProcessBlock_setDoorstatus_RhpBoolean)
     
     ////    Framework operations    ////
     

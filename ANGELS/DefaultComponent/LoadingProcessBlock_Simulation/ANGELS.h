@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: ANGELS
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\ANGELS.h
 *********************************************************************/
 
@@ -29,26 +29,21 @@
 #include <oxf\event.h>
 //## auto_generated
 #include <oxf\omcollec.h>
-//## classInstance itsCharging_System
-#include "Charging_System.h"
-//## classInstance itsCollision_Avoidance_1
-#include "Collision_Avoidance.h"
-//## classInstance itsCollision_Detection_2
-#include "Collision_Detection.h"
-//## classInstance itsCommunicationSystemBlock
-#include "CommunicationSystemBlock.h"
-//## classInstance itsDockingProcess
-#include "DockingProcess.h"
+//## classInstance itsChargingSystemBlock
+#include "ChargingSystemBlock.h"
+//## classInstance itsDockingProcessBlock
+#include "DockingProcessBlock.h"
+//## classInstance itsEBS
+#include "EBS.h"
 //## classInstance itsLoadingProcessBlock
 #include "LoadingProcessBlock.h"
-//## classInstance itsLocalisation_System_1
-#include "Localisation_System.h"
-//## classInstance itsParkingSystem_1
-#include "ParkingSystem.h"
-//## classInstance itsTruck_1
-#include "Truck.h"
+//## classInstance itsParkingSystemBlock
+#include "ParkingSystemBlock.h"
 //## link itsChargingInfrastructure
 class ChargingInfrastructure;
+
+//## link itsCollision_Detection
+class Collision_Detection;
 
 //## link itsDC
 class DC;
@@ -68,20 +63,20 @@ class Environment;
 //## link itsGovernment
 class Government;
 
-//## link itsLoadingSystem
-class LoadingSystem;
+//## link itsLoadingSystemBlock
+class LoadingSystemBlock;
 
-//## link itsLocalization
-class Localization;
-
-//## link itsObjectDetecttion
-class ObjectDetecttion;
+//## link itsLocalizationArchitecture
+class LocalizationArchitecture;
 
 //## link itsObstacle
 class Obstacle;
 
 //## link itsSafetyStandards
 class SafetyStandards;
+
+//## link itsTruck
+class Truck;
 
 //## package ANGELSPkg
 
@@ -136,10 +131,10 @@ public :
     void setDoorstatus(RhpBoolean p_Doorstatus);
     
     //## auto_generated
-    OMIterator<double> getLoadingTime() const;
+    OMIterator<int> getLoadingTime() const;
     
     //## auto_generated
-    void setLoadingTime(double p_LoadingTime);
+    void setLoadingTime(int p_LoadingTime);
     
     //## auto_generated
     double getPSInput() const;
@@ -152,6 +147,12 @@ public :
     
     //## auto_generated
     void setParkingStatus(double p_ParkingStatus);
+    
+    //## auto_generated
+    double getParkingTime() const;
+    
+    //## auto_generated
+    void setParkingTime(double p_ParkingTime);
     
     //## auto_generated
     double getSpeed() const;
@@ -178,28 +179,13 @@ public :
     void setItsChargingInfrastructure(ChargingInfrastructure* p_ChargingInfrastructure);
     
     //## auto_generated
-    ChargingInfrastructure* getItsChargingInfrastructure_1() const;
+    ChargingSystemBlock* getItsChargingSystemBlock() const;
     
     //## auto_generated
-    void setItsChargingInfrastructure_1(ChargingInfrastructure* p_ChargingInfrastructure);
+    Collision_Detection* getItsCollision_Detection() const;
     
     //## auto_generated
-    Charging_System* getItsCharging_System() const;
-    
-    //## auto_generated
-    Charging_System* getItsCharging_System_1() const;
-    
-    //## auto_generated
-    Collision_Avoidance* getItsCollision_Avoidance_1() const;
-    
-    //## auto_generated
-    Collision_Detection* getItsCollision_Detection_2() const;
-    
-    //## auto_generated
-    Collision_Detection* getItsCollision_Detection_3() const;
-    
-    //## auto_generated
-    CommunicationSystemBlock* getItsCommunicationSystemBlock() const;
+    void setItsCollision_Detection(Collision_Detection* p_Collision_Detection);
     
     //## auto_generated
     DC* getItsDC() const;
@@ -214,10 +200,7 @@ public :
     void setItsDCOperator(DCOperator* p_DCOperator);
     
     //## auto_generated
-    DockingProcess* getItsDockingProcess() const;
-    
-    //## auto_generated
-    DockingProcess* getItsDockingProcess_1() const;
+    DockingProcessBlock* getItsDockingProcessBlock() const;
     
     //## auto_generated
     DockingSystem* getItsDockingSystem() const;
@@ -230,6 +213,9 @@ public :
     
     //## auto_generated
     void setItsDriver(Driver* p_Driver);
+    
+    //## auto_generated
+    EBS* getItsEBS() const;
     
     //## auto_generated
     Environment* getItsEnvironment() const;
@@ -247,34 +233,16 @@ public :
     LoadingProcessBlock* getItsLoadingProcessBlock() const;
     
     //## auto_generated
-    LoadingProcessBlock* getItsLoadingProcessBlock_1() const;
+    LoadingSystemBlock* getItsLoadingSystemBlock() const;
     
     //## auto_generated
-    LoadingSystem* getItsLoadingSystem() const;
+    void setItsLoadingSystemBlock(LoadingSystemBlock* p_LoadingSystemBlock);
     
     //## auto_generated
-    void setItsLoadingSystem(LoadingSystem* p_LoadingSystem);
+    LocalizationArchitecture* getItsLocalizationArchitecture() const;
     
     //## auto_generated
-    Localisation_System* getItsLocalisation_System_1() const;
-    
-    //## auto_generated
-    Localization* getItsLocalization() const;
-    
-    //## auto_generated
-    void setItsLocalization(Localization* p_Localization);
-    
-    //## auto_generated
-    ObjectDetecttion* getItsObjectDetecttion() const;
-    
-    //## auto_generated
-    void setItsObjectDetecttion(ObjectDetecttion* p_ObjectDetecttion);
-    
-    //## auto_generated
-    ObjectDetecttion* getItsObjectDetecttion_1() const;
-    
-    //## auto_generated
-    void setItsObjectDetecttion_1(ObjectDetecttion* p_ObjectDetecttion);
+    void setItsLocalizationArchitecture(LocalizationArchitecture* p_LocalizationArchitecture);
     
     //## auto_generated
     Obstacle* getItsObstacle() const;
@@ -283,7 +251,7 @@ public :
     void setItsObstacle(Obstacle* p_Obstacle);
     
     //## auto_generated
-    ParkingSystem* getItsParkingSystem_1() const;
+    ParkingSystemBlock* getItsParkingSystemBlock() const;
     
     //## auto_generated
     SafetyStandards* getItsSafetyStandards() const;
@@ -298,19 +266,13 @@ public :
     void setItsTruck(Truck* p_Truck);
     
     //## auto_generated
-    Truck* getItsTruck_1() const;
-    
-    //## auto_generated
-    Truck* getItsTruck_2() const;
-    
-    //## auto_generated
-    void setItsTruck_2(Truck* p_Truck);
-    
-    //## auto_generated
     virtual bool startBehavior();
 
 protected :
 
+    //## auto_generated
+    void initStatechart();
+    
     //## auto_generated
     void cleanUpRelations();
     
@@ -326,11 +288,13 @@ protected :
     
     RhpBoolean Doorstatus;		//## attribute Doorstatus
     
-    OMCollection<double> LoadingTime;		//## attribute LoadingTime
+    OMCollection<int> LoadingTime;		//## attribute LoadingTime
     
     double PSInput;		//## attribute PSInput
     
     double ParkingStatus;		//## attribute ParkingStatus
+    
+    double ParkingTime;		//## attribute ParkingTime
     
     double Speed;		//## attribute Speed
     
@@ -342,31 +306,21 @@ protected :
     
     ChargingInfrastructure* itsChargingInfrastructure;		//## link itsChargingInfrastructure
     
-    ChargingInfrastructure* itsChargingInfrastructure_1;		//## link itsChargingInfrastructure_1
+    ChargingSystemBlock itsChargingSystemBlock;		//## classInstance itsChargingSystemBlock
     
-    Charging_System itsCharging_System;		//## classInstance itsCharging_System
-    
-    Charging_System itsCharging_System_1;		//## classInstance itsCharging_System_1
-    
-    Collision_Avoidance itsCollision_Avoidance_1;		//## classInstance itsCollision_Avoidance_1
-    
-    Collision_Detection itsCollision_Detection_2;		//## classInstance itsCollision_Detection_2
-    
-    Collision_Detection itsCollision_Detection_3;		//## classInstance itsCollision_Detection_3
-    
-    CommunicationSystemBlock itsCommunicationSystemBlock;		//## classInstance itsCommunicationSystemBlock
+    Collision_Detection* itsCollision_Detection;		//## link itsCollision_Detection
     
     DC* itsDC;		//## link itsDC
     
     DCOperator* itsDCOperator;		//## link itsDCOperator
     
-    DockingProcess itsDockingProcess;		//## classInstance itsDockingProcess
-    
-    DockingProcess itsDockingProcess_1;		//## classInstance itsDockingProcess_1
+    DockingProcessBlock itsDockingProcessBlock;		//## classInstance itsDockingProcessBlock
     
     DockingSystem* itsDockingSystem;		//## link itsDockingSystem
     
     Driver* itsDriver;		//## link itsDriver
+    
+    EBS itsEBS;		//## classInstance itsEBS
     
     Environment* itsEnvironment;		//## link itsEnvironment
     
@@ -374,29 +328,17 @@ protected :
     
     LoadingProcessBlock itsLoadingProcessBlock;		//## classInstance itsLoadingProcessBlock
     
-    LoadingProcessBlock itsLoadingProcessBlock_1;		//## classInstance itsLoadingProcessBlock_1
+    LoadingSystemBlock* itsLoadingSystemBlock;		//## link itsLoadingSystemBlock
     
-    LoadingSystem* itsLoadingSystem;		//## link itsLoadingSystem
-    
-    Localisation_System itsLocalisation_System_1;		//## classInstance itsLocalisation_System_1
-    
-    Localization* itsLocalization;		//## link itsLocalization
-    
-    ObjectDetecttion* itsObjectDetecttion;		//## link itsObjectDetecttion
-    
-    ObjectDetecttion* itsObjectDetecttion_1;		//## link itsObjectDetecttion_1
+    LocalizationArchitecture* itsLocalizationArchitecture;		//## link itsLocalizationArchitecture
     
     Obstacle* itsObstacle;		//## link itsObstacle
     
-    ParkingSystem itsParkingSystem_1;		//## classInstance itsParkingSystem_1
+    ParkingSystemBlock itsParkingSystemBlock;		//## classInstance itsParkingSystemBlock
     
     SafetyStandards* itsSafetyStandards;		//## link itsSafetyStandards
     
     Truck* itsTruck;		//## link itsTruck
-    
-    Truck itsTruck_1;		//## classInstance itsTruck_1
-    
-    Truck* itsTruck_2;		//## link itsTruck_2
     
     ////    Framework operations    ////
 
@@ -412,13 +354,13 @@ public :
     void _clearItsChargingInfrastructure();
     
     //## auto_generated
-    void __setItsChargingInfrastructure_1(ChargingInfrastructure* p_ChargingInfrastructure);
+    void __setItsCollision_Detection(Collision_Detection* p_Collision_Detection);
     
     //## auto_generated
-    void _setItsChargingInfrastructure_1(ChargingInfrastructure* p_ChargingInfrastructure);
+    void _setItsCollision_Detection(Collision_Detection* p_Collision_Detection);
     
     //## auto_generated
-    void _clearItsChargingInfrastructure_1();
+    void _clearItsCollision_Detection();
     
     //## auto_generated
     void __setItsDC(DC* p_DC);
@@ -475,31 +417,22 @@ public :
     void _clearItsGovernment();
     
     //## auto_generated
-    void __setItsLoadingSystem(LoadingSystem* p_LoadingSystem);
+    void __setItsLoadingSystemBlock(LoadingSystemBlock* p_LoadingSystemBlock);
     
     //## auto_generated
-    void _setItsLoadingSystem(LoadingSystem* p_LoadingSystem);
+    void _setItsLoadingSystemBlock(LoadingSystemBlock* p_LoadingSystemBlock);
     
     //## auto_generated
-    void _clearItsLoadingSystem();
+    void _clearItsLoadingSystemBlock();
     
     //## auto_generated
-    void __setItsLocalization(Localization* p_Localization);
+    void __setItsLocalizationArchitecture(LocalizationArchitecture* p_LocalizationArchitecture);
     
     //## auto_generated
-    void _setItsLocalization(Localization* p_Localization);
+    void _setItsLocalizationArchitecture(LocalizationArchitecture* p_LocalizationArchitecture);
     
     //## auto_generated
-    void _clearItsLocalization();
-    
-    //## auto_generated
-    void __setItsObjectDetecttion_1(ObjectDetecttion* p_ObjectDetecttion);
-    
-    //## auto_generated
-    void _setItsObjectDetecttion_1(ObjectDetecttion* p_ObjectDetecttion);
-    
-    //## auto_generated
-    void _clearItsObjectDetecttion_1();
+    void _clearItsLocalizationArchitecture();
     
     //## auto_generated
     void __setItsObstacle(Obstacle* p_Obstacle);
@@ -520,25 +453,72 @@ public :
     void _clearItsSafetyStandards();
     
     //## auto_generated
-    void __setItsTruck_2(Truck* p_Truck);
+    void __setItsTruck(Truck* p_Truck);
     
     //## auto_generated
-    void _setItsTruck_2(Truck* p_Truck);
+    void _setItsTruck(Truck* p_Truck);
     
     //## auto_generated
-    void _clearItsTruck_2();
+    void _clearItsTruck();
     
     //## auto_generated
     void setActiveContext(IOxfActive* theActiveContext, bool activeInstance);
     
     //## auto_generated
     virtual void destroy();
+    
+    // rootState:
+    //## statechart_method
+    inline bool rootState_IN() const;
+    
+    //## statechart_method
+    inline bool rootState_isCompleted();
+    
+    //## statechart_method
+    virtual void rootState_entDef();
+    
+    //## statechart_method
+    virtual IOxfReactive::TakeEventStatus rootState_processEvent();
+    
+    // terminationstate_3:
+    //## statechart_method
+    inline bool terminationstate_3_IN() const;
+    
+    // ON:
+    //## statechart_method
+    inline bool ON_IN() const;
+    
+    // OFF:
+    //## statechart_method
+    inline bool OFF_IN() const;
+    
+    // InitANGELS:
+    //## statechart_method
+    inline bool InitANGELS_IN() const;
+    
+    ////    Framework    ////
+
+protected :
+
+//#[ ignore
+    enum ANGELS_Enum {
+        OMNonState = 0,
+        terminationstate_3 = 1,
+        ON = 2,
+        OFF = 3,
+        InitANGELS = 4
+    };
+    
+    int rootState_subState;
+    
+    int rootState_active;
+//#]
 };
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
 class OMAnimatedANGELS : virtual public AOMInstance {
-    DECLARE_META(ANGELS, OMAnimatedANGELS)
+    DECLARE_REACTIVE_META(ANGELS, OMAnimatedANGELS)
     
     ////    Framework operations    ////
     
@@ -547,9 +527,48 @@ public :
     virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
     
     virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+    
+    //## statechart_method
+    void rootState_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void terminationstate_3_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void ON_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void OFF_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void InitANGELS_serializeStates(AOMSState* aomsState) const;
 };
 //#]
 #endif // _OMINSTRUMENT
+
+inline bool ANGELS::rootState_IN() const {
+    return true;
+}
+
+inline bool ANGELS::rootState_isCompleted() {
+    return ( IS_IN(terminationstate_3) );
+}
+
+inline bool ANGELS::terminationstate_3_IN() const {
+    return rootState_subState == terminationstate_3;
+}
+
+inline bool ANGELS::ON_IN() const {
+    return rootState_subState == ON;
+}
+
+inline bool ANGELS::OFF_IN() const {
+    return rootState_subState == OFF;
+}
+
+inline bool ANGELS::InitANGELS_IN() const {
+    return rootState_subState == InitANGELS;
+}
 
 #endif
 /*********************************************************************

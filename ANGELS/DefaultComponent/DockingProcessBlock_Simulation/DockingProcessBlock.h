@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DockingProcessBlock_Simulation
 	Model Element	: DockingProcessBlock
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\DockingProcessBlock_Simulation\DockingProcessBlock.h
 *********************************************************************/
 
@@ -25,22 +25,26 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
-//## classInstance itsTruck
-#include "Truck.h"
 //## auto_generated
 #include "DockingPkg.h"
-//## classInstance itsChargingSystemBlock_2
-#include "ChargingSystemBlock.h"
-//## classInstance itsLoadingProcessBlock
-#include "LoadingProcessBlock.h"
-//## classInstance itsParkingSystemBlock
-#include "ParkingSystemBlock.h"
+//## link itsChargingSystemBlock_1
+class ChargingSystemBlock;
+
+//## link itsDC
+class DC;
+
 //## link itsDCOperator
 class DCOperator;
+
+//## link itsDriver
+class Driver;
 
 //#[ ignore
 #define OMAnim_ANGELSPkg_DockingPkg_DockingProcessBlock_setDSInput_double_ARGS_DECLARATION double p_DSInput;
 //#]
+
+//## link itsTruck_1
+class Truck;
 
 //## link itsANGELS
 class ANGELS;
@@ -79,7 +83,10 @@ public :
     void setItsDCOperator(DCOperator* p_DCOperator);
     
     //## auto_generated
-    Truck* getItsTruck() const;
+    Truck* getItsTruck_1() const;
+    
+    //## auto_generated
+    void setItsTruck_1(Truck* p_Truck);
     
     //## auto_generated
     virtual bool startBehavior();
@@ -114,6 +121,15 @@ public :
     
     //## auto_generated
     void _clearItsDCOperator();
+    
+    //## auto_generated
+    void __setItsTruck_1(Truck* p_Truck);
+    
+    //## auto_generated
+    void _setItsTruck_1(Truck* p_Truck);
+    
+    //## auto_generated
+    void _clearItsTruck_1();
     
     ////    Framework    ////
     
@@ -172,7 +188,10 @@ public :
     void setItsChargingSystemBlock_1(ChargingSystemBlock* p_ChargingSystemBlock);
     
     //## auto_generated
-    ChargingSystemBlock* getItsChargingSystemBlock_2() const;
+    DC* getItsDC() const;
+    
+    //## auto_generated
+    void setItsDC(DC* p_DC);
     
     //## auto_generated
     DCOperator* getItsDCOperator_1() const;
@@ -181,10 +200,10 @@ public :
     void setItsDCOperator_1(DCOperator* p_DCOperator);
     
     //## auto_generated
-    LoadingProcessBlock* getItsLoadingProcessBlock() const;
+    Driver* getItsDriver() const;
     
     //## auto_generated
-    ParkingSystemBlock* getItsParkingSystemBlock() const;
+    void setItsDriver(Driver* p_Driver);
 
 protected :
 
@@ -204,15 +223,13 @@ protected :
     
     ChargingSystemBlock* itsChargingSystemBlock_1;		//## link itsChargingSystemBlock_1
     
-    ChargingSystemBlock itsChargingSystemBlock_2;		//## classInstance itsChargingSystemBlock_2
+    DC* itsDC;		//## link itsDC
     
     DCOperator* itsDCOperator_1;		//## link itsDCOperator_1
     
-    LoadingProcessBlock itsLoadingProcessBlock;		//## classInstance itsLoadingProcessBlock
+    Driver* itsDriver;		//## link itsDriver
     
-    ParkingSystemBlock itsParkingSystemBlock;		//## classInstance itsParkingSystemBlock
-    
-    Truck itsTruck;		//## classInstance itsTruck
+    Truck* itsTruck_1;		//## link itsTruck_1
 
 public :
 
@@ -226,6 +243,15 @@ public :
     void _clearItsChargingSystemBlock_1();
     
     //## auto_generated
+    void __setItsDC(DC* p_DC);
+    
+    //## auto_generated
+    void _setItsDC(DC* p_DC);
+    
+    //## auto_generated
+    void _clearItsDC();
+    
+    //## auto_generated
     void __setItsDCOperator_1(DCOperator* p_DCOperator);
     
     //## auto_generated
@@ -235,10 +261,13 @@ public :
     void _clearItsDCOperator_1();
     
     //## auto_generated
-    void setActiveContext(IOxfActive* theActiveContext, bool activeInstance);
+    void __setItsDriver(Driver* p_Driver);
     
     //## auto_generated
-    virtual void destroy();
+    void _setItsDriver(Driver* p_Driver);
+    
+    //## auto_generated
+    void _clearItsDriver();
     
     // rootState:
     //## statechart_method

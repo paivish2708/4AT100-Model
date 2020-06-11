@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DockingProcessBlock_Simulation
 	Model Element	: ParkingSystemBlock
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\DockingProcessBlock_Simulation\ParkingSystemBlock.h
 *********************************************************************/
 
@@ -35,6 +35,10 @@ class DCOperator;
 
 //## link itsDriver
 class Driver;
+
+//#[ ignore
+#define OMAnim_ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_setParkingSpot_double_ARGS_DECLARATION double p_ParkingSpot;
+//#]
 
 //## package ANGELSPkg::ParkingProcessPkg
 
@@ -71,6 +75,12 @@ public :
     
     //## auto_generated
     void setChargeState(double p_ChargeState);
+    
+    //## auto_generated
+    double getParkingSpot() const;
+    
+    //## auto_generated
+    void setParkingSpot(double p_ParkingSpot);
     
     //## auto_generated
     double getParkingStatus() const;
@@ -140,6 +150,8 @@ protected :
     ////    Attributes    ////
     
     double ChargeState;		//## attribute ChargeState
+    
+    double ParkingSpot;		//## attribute ParkingSpot
     
     double ParkingStatus;		//## attribute ParkingStatus
     
@@ -266,9 +278,13 @@ protected :
 };
 
 #ifdef _OMINSTRUMENT
+DECLARE_OPERATION_CLASS(ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_setParkingSpot_double)
+
 //#[ ignore
 class OMAnimatedParkingSystemBlock : virtual public AOMInstance {
     DECLARE_REACTIVE_META(ParkingSystemBlock, OMAnimatedParkingSystemBlock)
+    
+    DECLARE_META_OP(ANGELSPkg_ParkingProcessPkg_ParkingSystemBlock_setParkingSpot_double)
     
     ////    Framework operations    ////
     

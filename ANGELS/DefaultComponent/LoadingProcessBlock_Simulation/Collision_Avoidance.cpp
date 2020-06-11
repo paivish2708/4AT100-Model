@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: LoadingProcessBlock_Simulation
 	Model Element	: Collision_Avoidance
-//!	Generated Date	: Fri, 15, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\LoadingProcessBlock_Simulation\Collision_Avoidance.cpp
 *********************************************************************/
 
@@ -16,8 +16,10 @@
 #include "Collision_Avoidance.h"
 //## link itsANGELS
 #include "ANGELS.h"
-//## link itsDockingProcess
-#include "DockingProcess.h"
+//## link itsDockingProcessBlock
+#include "DockingProcessBlock.h"
+//## link itsEBS
+#include "EBS.h"
 //#[ ignore
 #define ANGELSPkg_ObstacleAvoidancePkg_Collision_Avoidance_Collision_Avoidance_SERIALIZE OM_NO_OP
 //#]
@@ -28,7 +30,8 @@
 Collision_Avoidance::Collision_Avoidance() {
     NOTIFY_CONSTRUCTOR(Collision_Avoidance, Collision_Avoidance(), 0, ANGELSPkg_ObstacleAvoidancePkg_Collision_Avoidance_Collision_Avoidance_SERIALIZE);
     itsANGELS = NULL;
-    itsDockingProcess = NULL;
+    itsDockingProcessBlock = NULL;
+    itsEBS = NULL;
 }
 
 Collision_Avoidance::~Collision_Avoidance() {
@@ -52,20 +55,32 @@ void Collision_Avoidance::setItsANGELS(ANGELS* p_ANGELS) {
         }
 }
 
-DockingProcess* Collision_Avoidance::getItsDockingProcess() const {
-    return itsDockingProcess;
+DockingProcessBlock* Collision_Avoidance::getItsDockingProcessBlock() const {
+    return itsDockingProcessBlock;
 }
 
-void Collision_Avoidance::setItsDockingProcess(DockingProcess* p_DockingProcess) {
-    itsDockingProcess = p_DockingProcess;
-    if(p_DockingProcess != NULL)
+void Collision_Avoidance::setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock) {
+    itsDockingProcessBlock = p_DockingProcessBlock;
+    if(p_DockingProcessBlock != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcess", p_DockingProcess, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsDockingProcessBlock", p_DockingProcessBlock, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsDockingProcess");
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock");
         }
+}
+
+EBS* Collision_Avoidance::getItsEBS() const {
+    return itsEBS;
+}
+
+void Collision_Avoidance::setItsEBS(EBS* p_EBS) {
+    if(p_EBS != NULL)
+        {
+            p_EBS->_setItsCollision_Avoidance(this);
+        }
+    _setItsEBS(p_EBS);
 }
 
 void Collision_Avoidance::cleanUpRelations() {
@@ -74,11 +89,46 @@ void Collision_Avoidance::cleanUpRelations() {
             NOTIFY_RELATION_CLEARED("itsANGELS");
             itsANGELS = NULL;
         }
-    if(itsDockingProcess != NULL)
+    if(itsDockingProcessBlock != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsDockingProcess");
-            itsDockingProcess = NULL;
+            NOTIFY_RELATION_CLEARED("itsDockingProcessBlock");
+            itsDockingProcessBlock = NULL;
         }
+    if(itsEBS != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+            Collision_Avoidance* p_Collision_Avoidance = itsEBS->getItsCollision_Avoidance();
+            if(p_Collision_Avoidance != NULL)
+                {
+                    itsEBS->__setItsCollision_Avoidance(NULL);
+                }
+            itsEBS = NULL;
+        }
+}
+
+void Collision_Avoidance::__setItsEBS(EBS* p_EBS) {
+    itsEBS = p_EBS;
+    if(p_EBS != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsEBS", p_EBS, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsEBS");
+        }
+}
+
+void Collision_Avoidance::_setItsEBS(EBS* p_EBS) {
+    if(itsEBS != NULL)
+        {
+            itsEBS->__setItsCollision_Avoidance(NULL);
+        }
+    __setItsEBS(p_EBS);
+}
+
+void Collision_Avoidance::_clearItsEBS() {
+    NOTIFY_RELATION_CLEARED("itsEBS");
+    itsEBS = NULL;
 }
 
 #ifdef _OMINSTRUMENT
@@ -89,10 +139,15 @@ void OMAnimatedCollision_Avoidance::serializeRelations(AOMSRelations* aomsRelati
         {
             aomsRelations->ADD_ITEM(myReal->itsANGELS);
         }
-    aomsRelations->addRelation("itsDockingProcess", false, true);
-    if(myReal->itsDockingProcess)
+    aomsRelations->addRelation("itsDockingProcessBlock", false, true);
+    if(myReal->itsDockingProcessBlock)
         {
-            aomsRelations->ADD_ITEM(myReal->itsDockingProcess);
+            aomsRelations->ADD_ITEM(myReal->itsDockingProcessBlock);
+        }
+    aomsRelations->addRelation("itsEBS", false, true);
+    if(myReal->itsEBS)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsEBS);
         }
 }
 //#]

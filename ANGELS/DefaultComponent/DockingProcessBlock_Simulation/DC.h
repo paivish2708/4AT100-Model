@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DockingProcessBlock_Simulation
 	Model Element	: DC
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\DockingProcessBlock_Simulation\DC.h
 *********************************************************************/
 
@@ -21,6 +21,9 @@
 #include "ActorPkg.h"
 //## link itsANGELS
 class ANGELS;
+
+//## link itsDockingProcessBlock
+class DockingProcessBlock;
 
 //## link itsLoadingProcessBlock
 class LoadingProcessBlock;
@@ -69,6 +72,12 @@ public :
     void setItsANGELS_2(ANGELS* p_ANGELS);
     
     //## auto_generated
+    DockingProcessBlock* getItsDockingProcessBlock() const;
+    
+    //## auto_generated
+    void setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
     LoadingProcessBlock* getItsLoadingProcessBlock() const;
     
     //## auto_generated
@@ -93,6 +102,8 @@ protected :
     
     ANGELS* itsANGELS_2;		//## link itsANGELS_2
     
+    DockingProcessBlock* itsDockingProcessBlock;		//## link itsDockingProcessBlock
+    
     LoadingProcessBlock* itsLoadingProcessBlock;		//## link itsLoadingProcessBlock
     
     ParkingSystemBlock* itsParkingSystemBlock;		//## link itsParkingSystemBlock
@@ -109,6 +120,15 @@ public :
     
     //## auto_generated
     void _clearItsANGELS_2();
+    
+    //## auto_generated
+    void __setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    void _setItsDockingProcessBlock(DockingProcessBlock* p_DockingProcessBlock);
+    
+    //## auto_generated
+    void _clearItsDockingProcessBlock();
     
     //## auto_generated
     void __setItsLoadingProcessBlock(LoadingProcessBlock* p_LoadingProcessBlock);

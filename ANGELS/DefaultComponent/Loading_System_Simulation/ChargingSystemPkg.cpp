@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: ChargingSystemPkg
-//!	Generated Date	: Wed, 13, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\ChargingSystemPkg.cpp
 *********************************************************************/
 
@@ -15,7 +15,9 @@
 //## auto_generated
 #include "ChargingSystemPkg.h"
 //## auto_generated
-#include "Charging_System.h"
+#include "ChargingInfrastructure.h"
+//## auto_generated
+#include "ChargingSystemBlock.h"
 //#[ ignore
 #define Beginthecharging_SERIALIZE OM_NO_OP
 
@@ -42,13 +44,13 @@
 #define EndCharging_CONSTRUCTOR EndCharging()
 //#]
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg
+//## package ANGELSPkg::ChargingSystemPkg
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(UseCaseAnalysisPkg_ANGELSPkg_ChargingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg)
+IMPLEMENT_META_PACKAGE(ANGELSPkg_ChargingSystemPkg, ANGELSPkg::ChargingSystemPkg)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }
@@ -57,50 +59,50 @@ static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 //## event Beginthecharging()
 Beginthecharging::Beginthecharging() {
     NOTIFY_EVENT_CONSTRUCTOR(Beginthecharging)
-    setId(Beginthecharging_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+    setId(Beginthecharging_ChargingSystemPkg_ANGELSPkg_id);
 }
 
 bool Beginthecharging::isTypeOf(const short id) const {
-    return (Beginthecharging_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+    return (Beginthecharging_ChargingSystemPkg_ANGELSPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(Beginthecharging, UseCaseAnalysisPkg_ANGELSPkg_ChargingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg, Beginthecharging())
+IMPLEMENT_META_EVENT_P(Beginthecharging, ANGELSPkg_ChargingSystemPkg, ANGELSPkg::ChargingSystemPkg, Beginthecharging())
 
 //## event StartTheCharging()
 StartTheCharging::StartTheCharging() {
     NOTIFY_EVENT_CONSTRUCTOR(StartTheCharging)
-    setId(StartTheCharging_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+    setId(StartTheCharging_ChargingSystemPkg_ANGELSPkg_id);
 }
 
 bool StartTheCharging::isTypeOf(const short id) const {
-    return (StartTheCharging_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+    return (StartTheCharging_ChargingSystemPkg_ANGELSPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(StartTheCharging, UseCaseAnalysisPkg_ANGELSPkg_ChargingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg, StartTheCharging())
+IMPLEMENT_META_EVENT_P(StartTheCharging, ANGELSPkg_ChargingSystemPkg, ANGELSPkg::ChargingSystemPkg, StartTheCharging())
 
 //## event InitiateChargingProcess()
 InitiateChargingProcess::InitiateChargingProcess() {
     NOTIFY_EVENT_CONSTRUCTOR(InitiateChargingProcess)
-    setId(InitiateChargingProcess_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+    setId(InitiateChargingProcess_ChargingSystemPkg_ANGELSPkg_id);
 }
 
 bool InitiateChargingProcess::isTypeOf(const short id) const {
-    return (InitiateChargingProcess_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+    return (InitiateChargingProcess_ChargingSystemPkg_ANGELSPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(InitiateChargingProcess, UseCaseAnalysisPkg_ANGELSPkg_ChargingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg, InitiateChargingProcess())
+IMPLEMENT_META_EVENT_P(InitiateChargingProcess, ANGELSPkg_ChargingSystemPkg, ANGELSPkg::ChargingSystemPkg, InitiateChargingProcess())
 
 //## event EndCharging()
 EndCharging::EndCharging() {
     NOTIFY_EVENT_CONSTRUCTOR(EndCharging)
-    setId(EndCharging_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id);
+    setId(EndCharging_ChargingSystemPkg_ANGELSPkg_id);
 }
 
 bool EndCharging::isTypeOf(const short id) const {
-    return (EndCharging_ChargingSystemPkg_ANGELSPkg_UseCaseAnalysisPkg_id==id);
+    return (EndCharging_ChargingSystemPkg_ANGELSPkg_id==id);
 }
 
-IMPLEMENT_META_EVENT_P(EndCharging, UseCaseAnalysisPkg_ANGELSPkg_ChargingSystemPkg, UseCaseAnalysisPkg::ANGELSPkg::ChargingSystemPkg, EndCharging())
+IMPLEMENT_META_EVENT_P(EndCharging, ANGELSPkg_ChargingSystemPkg, ANGELSPkg::ChargingSystemPkg, EndCharging())
 
 /*********************************************************************
 	File Path	: DefaultComponent\Loading_System_Simulation\ChargingSystemPkg.cpp

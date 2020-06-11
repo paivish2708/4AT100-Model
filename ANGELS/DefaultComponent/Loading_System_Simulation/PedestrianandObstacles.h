@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Loading_System_Simulation
 	Model Element	: PedestrianandObstacles
-//!	Generated Date	: Sun, 10, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\Loading_System_Simulation\PedestrianandObstacles.h
 *********************************************************************/
 
@@ -22,9 +22,15 @@
 //## actor PedestrianandObstacles
 #include "Obstacle.h"
 //## auto_generated
+class ANGELS;
+
+//## auto_generated
 class Collision_Detection;
 
-//## package UseCaseAnalysisPkg::ANGELSPkg::ActorPkg
+//## auto_generated
+class EBS;
+
+//## package ANGELSPkg::ActorPkg
 
 //## actor PedestrianandObstacles
 class PedestrianandObstacles : public Obstacle {
@@ -43,6 +49,36 @@ public :
     
     //## auto_generated
     ~PedestrianandObstacles();
+    
+    ////    Additional operations    ////
+    
+    //## auto_generated
+    EBS* getItsEBS_1() const;
+    
+    //## auto_generated
+    void setItsEBS_1(EBS* p_EBS);
+
+protected :
+
+    //## auto_generated
+    void cleanUpRelations();
+    
+    ////    Relations and components    ////
+    
+    EBS* itsEBS_1;		//## link itsEBS_1
+    
+    ////    Framework operations    ////
+
+public :
+
+    //## auto_generated
+    void __setItsEBS_1(EBS* p_EBS);
+    
+    //## auto_generated
+    void _setItsEBS_1(EBS* p_EBS);
+    
+    //## auto_generated
+    void _clearItsEBS_1();
 };
 
 #ifdef _OMINSTRUMENT

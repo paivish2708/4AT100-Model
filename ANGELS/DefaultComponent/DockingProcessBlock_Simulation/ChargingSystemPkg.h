@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DockingProcessBlock_Simulation
 	Model Element	: ChargingSystemPkg
-//!	Generated Date	: Thu, 21, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\DockingProcessBlock_Simulation\ChargingSystemPkg.h
 *********************************************************************/
 
@@ -21,6 +21,9 @@
 #include <oxf\event.h>
 //## auto_generated
 #include "ANGELSPkg.h"
+//## auto_generated
+class ChargingInfrastructure;
+
 //## auto_generated
 class ChargingSystemBlock;
 

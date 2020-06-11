@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.4 
-	Login		: kevin
+	Login		: LAPTOP
 	Component	: DefaultComponent 
 	Configuration 	: ANGELS_Simulation
 	Model Element	: LoadingProcessBlock
-//!	Generated Date	: Fri, 29, May 2020  
+//!	Generated Date	: Thu, 11, Jun 2020  
 	File Path	: DefaultComponent\ANGELS_Simulation\LoadingProcessBlock.h
 *********************************************************************/
 
@@ -65,11 +65,17 @@ public :
     
     ////    Operations    ////
     
+    //## operation DoorState()
+    virtual void DoorState();
+    
     //## operation LoadingProcess()
     virtual void LoadingProcess();
     
     //## operation OpenDoors(RhpBoolean)
     virtual void OpenDoors(RhpBoolean Doorstate = 1);
+    
+    //## operation Operation_6()
+    virtual void Operation_6();
     
     //## operation StoptheTruck(double)
     virtual void StoptheTruck(double speed);
